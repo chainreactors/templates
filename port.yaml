@@ -1,0 +1,507 @@
+---
+- name: top1
+  ports:
+    - '80'
+    - '443'
+    - '8080'
+  type:
+    - http
+- name: top2
+  ports:
+    - 80-90
+    - '443'
+    - '1080'
+    - 2000-2001
+    - 3000-3001
+    - '4443'
+    - '4430'
+    - 5000-5001
+    - '5601'
+    - 6000-6003
+    - 7000-7003
+    - 9000-9003
+    - 8080-8090
+    - 8000-8020
+    - '6443'
+    - '8443'
+    - '9443'
+    - '8787'
+    - '7080'
+    - '8070'
+    - '7070'
+    - '7443'
+    - 9080-9083
+    - '5555'
+    - '6666'
+    - '7777'
+    - '9999'
+    - '6868'
+    - '8888'
+    - '8889'
+    - 9090-9091
+    - '8091'
+    - '8099'
+    - '8848'
+    - '8161'
+    - '8060'
+    - '8899'
+    - '800'
+    - '801'
+    - '888'
+    - 10000-10001
+    - '10080'
+  type:
+    - http
+- name: top3
+  ports:
+    - '444'
+    - '9443'
+    - '6080'
+    - '6443'
+    - 9092-9093
+    - 7003-7010
+    - 9003-9010
+    - 8100-8110
+    - '8161'
+    - 8021-8030
+    - 8880-8890
+    - 8010-8020
+    - 8090-8100
+    - 8180-8181
+    - '8363'
+    - '8800'
+    - '8761'
+    - '8873'
+    - '8866'
+    - '8900'
+    - '8282'
+    - '8999'
+    - '8989'
+    - '8066'
+    - '8200'
+    - '8111'
+    - '8030'
+    - '8040'
+    - '8060'
+    - '8180'
+    - '10800'
+    - '18081'
+  type:
+    - http
+- name: iis
+  ports:
+    - '47001'
+  type:
+    - http
+- name: jboss
+  ports:
+    - '45566'
+  type:
+    - http
+- name: postgresql
+  ports:
+    - '5432'
+  type:
+    - db
+    - brute
+- name: mssql
+  ports:
+    - '1433'
+  type:
+    - db
+    - brute
+- name: mysql
+  ports:
+    - 3306-3308
+  type:
+    - db
+    - brute
+- name: oracle
+  ports:
+    - '1158'
+    - '1521'
+    - '210'
+  type:
+    - db
+    - in
+- name: counchdb
+  ports:
+    - '5984'
+  type:
+    - db
+- name: redis
+  ports:
+    - '6379'
+  type:
+    - db
+    - rce
+    - in
+    - brute
+- name: memcache
+  ports:
+    - '11211'
+  type:
+    - db
+    - in
+    - brute
+- name: dm(达梦)
+  ports:
+    - '5236'
+  type:
+    - db
+    - in
+- name: oscar(神通)
+  ports:
+    - '2003'
+  type:
+    - db
+    - in
+- name: sybase
+  ports:
+    - '5000'
+    - '4100'
+  type:
+    - db
+
+- name: mongodb
+  ports:
+    - '27017'
+  type:
+    - db
+    - brute
+- name: hbase
+  ports:
+    - '16000'
+    - '16010'
+    - '16020'
+    - '16030'
+  type:
+    - db
+
+- name: rabbitmq
+  ports:
+    - '15672'
+    - '5672'
+  type:
+    - db
+- name: neo4j
+  ports:
+    - '7474'
+  type:
+    - db
+
+- name: jndi
+  ports:
+    - 1098-1101
+    - 1000-1001
+    - 4444-4445
+    - '10999'
+    - '19001'
+    - '9999'
+    - '8083'
+    - '8686'
+    - '10001'
+    - '11099'
+    - '5001'
+  type:
+    - rce
+    - in
+- name: jdwp
+  ports:
+    - '5005'
+    - '8000'
+    - '8453'
+    - '8080'
+  type:
+    - rce
+    - in
+- name: jmx
+  ports:
+    - '8686'
+    - '8093'
+    - 9010-9012
+    - '50500'
+    - '61616'
+  type:
+    - rce
+    - in
+- name: php-xdebug
+  ports:
+    - '9000'
+  type:
+    - rce
+    - in
+- name: nodejs-debug
+  ports:
+    - '5858'
+    - '9229'
+  type:
+    - rce
+- name: glassfish
+  ports:
+    - '4848'
+  type:
+    - rce
+- name: rocketmq
+  ports:
+    - '9876'
+    - '10909'
+    - '10911'
+    - '10912'
+  type:
+    - rce
+    - in
+- name: activemq
+  ports:
+    - '8161'
+  type:
+    - rce
+    - in
+- name: kafka
+  ports:
+    - '9092'
+  type:
+    - rce
+- name: cisco
+  ports:
+    - '4786'
+  type:
+    - rce
+- name: rlogin
+  ports:
+    - 512-514
+  type:
+    - rce
+- name: hp
+  ports:
+    - '5555'
+    - '5556'
+  type:
+    - rce
+- name: docker
+  ports:
+    - 2375-2379
+  type:
+    - rce
+    - in
+- name: solr
+  ports:
+    - '8983'
+  type:
+    - rce
+- name: zoho
+  ports:
+    - '8383'
+  type:
+    - rce
+- name: altassian
+  ports:
+    - '4990'
+  type:
+    - rce
+- name: portainer
+  ports:
+    - '9000'
+  type:
+    - rce
+    - in
+- name: hashicorp
+  ports:
+    - '8500'
+  type:
+    - rce
+- name: flink
+  ports:
+    - '8081'
+  type:
+    - rce
+- name: ajp
+  ports:
+    - '8009'
+  type:
+    - rce
+    - in
+- name: elasticsearch
+  ports:
+    - '9200'
+    - '9300'
+  type:
+    - rce
+    - in
+    - brute
+- name: zabbix
+  ports:
+    - '8069'
+  type:
+    - rce
+    - in
+- name: windows
+  ports:
+    - icmp
+    - '22'
+    - '23'
+    - '88'
+    - '135'
+    - '137'
+    - '389'
+    - '445'
+    - '3389'
+    - '5985'
+    - oxid
+  type:
+    - win
+    - in
+- name: snmp
+  ports:
+    - '161'
+  type:
+    - win
+    - brute
+- name: ping
+  ports:
+    - icmp
+  type:
+    - win
+- name: ftp
+  ports:
+    - '21'
+  type:
+    - win
+    - brute
+- name: other
+  ports:
+    - 21-23
+    - '69'
+    - '161'
+    - 901-902
+    - '50000'
+  type:
+    - info
+    - in
+- name: mail
+  ports:
+    - '25'
+    - '109'
+    - '110'
+    - '143'
+    - '465'
+    - '587'
+    - '995'
+    - '993'
+  type:
+    - info
+- name: zoomkeeper
+  ports:
+    - '2181'
+    - '2888'
+    - '3888'
+  type:
+    - info
+    - in
+- name: rsync
+  ports:
+    - '873'
+  type:
+    - info
+    - brute
+    - in
+- name: lotus
+  ports:
+    - '1352'
+  type:
+    - info
+    - in
+- name: nfs
+  ports:
+    - '2049'
+  type:
+    - rce
+    - in
+- name: oracle-ftp
+  ports:
+    - '2100'
+- name: squid
+  ports:
+    - '3128'
+  type:
+    - rce
+- name: pcanywhere
+  ports:
+    - '5632'
+  type:
+    - info
+- name: ssh
+  ports:
+    - '22'
+    - '2222'
+  type:
+    - info
+    - in
+- name: vnc
+  ports:
+    - '5900'
+    - '5901'
+    - '5800'
+  type:
+    - brute
+    - in
+    - rce
+- name: websphere
+  ports:
+    - '9043'
+    - '9060'
+    - 9080-9083
+    - '9443'
+    - '2809'
+    - '8880'
+    - 9401-9402
+    - '9100'
+    - '9353'
+    - '7276'
+    - '7286'
+    - '5558'
+    - '5578'
+  type:
+    - info
+- name: hadoop
+  ports:
+    - '8020'
+    - '9000'
+    - '50070'
+    - '50010'
+    - '50020'
+    - '50075'
+    - '50470'
+    - '50475'
+    - '50090'
+    - '9083'
+    - '8485'
+    - '8480'
+    - 8040-8042
+    - '19888'
+    - '41414'
+  type:
+    - info
+- name: vmware
+  ports:
+    - '9875'
+  type:
+    - in
+    - rce
+- name: kibana
+  ports:
+    - '5601'
+  type:
+    - info
+- name: rdp
+  ports:
+    - '3389'
+  type:
+    - win
+    - brute
+- name: dubbo
+  ports:
+    - '18086'
+    - "20880"
+  type:
+    - rce

@@ -1,0 +1,15 @@
+id: ruijie-networks-rce
+info:
+  name: Ruijie Networks-EWEB Network Management System RCE
+  severity: critical
+  tags: ruijie,rce
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/guest_auth/guestIsUp.php"
+    matchers:
+      - type: status
+        status:
+          - 200
+

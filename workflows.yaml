@@ -1,0 +1,109 @@
+- name: "10"
+  ip: 10.0.0.0/8
+  ports: top2,win,db
+  mod: ss
+  ping: true
+  arp: true
+  tags:
+    - inter
+- name: "172"
+  ip: 172.16.0.0/12
+  ports: top2,win,db
+  mod: ss
+  ping: true
+  arp: true
+  tags:
+    - inter
+- name: "192"
+  ip: 192.168.0.0/16
+  ports: top2,win,db
+  mod: s
+  ping: true
+  arp: true
+  tags:
+    - inter
+- name: 10C
+  ip: 10.0.0.0/8
+  mod: sc
+  tags:
+    - interC
+- name: 10B
+  ip: 10.0.0.0/8
+  mod: ss
+  no-scan: true
+  tags:
+    - interB
+- name: 172C
+  ip: 172.16.0.0/12
+  mod: sc
+  tags:
+    - interC
+- name: 172B
+  ip: 172.16.0.0/12
+  mod: ss
+  no-scan: true
+  tags:
+    - interB
+- name: 192B
+  ip: 192.168.0.0/16
+  mod: ss
+  no-scan: true
+  tags:
+    - interB
+- name: 192C
+  ip: 192.168.0.0/16
+  mod: s
+  no-scan: true
+  tags:
+    - interC
+- name: 10noping
+  ip: 10.0.0.0/8
+  ports: top2,win,db
+  mod: ss
+  tags:
+    - interNoPing
+- name: 172noping
+  ip: 172.16.0.0/12
+  ports: top2,win,db
+  mod: ss
+  tags:
+    - interNoPing
+- name: 192noping
+  ip: 192.168.0.0/16
+  ports: top2,win,db
+  mod: s
+  tags:
+    - interNoPing
+- name: 10ip
+  ip: 10.0.0.0/8
+  ports: icmp
+  mod: ss
+  tags:
+    - interip
+- name: 172ip
+  ip: 172.16.0.0/12
+  ports: icmp
+  mod: ss
+  tags:
+    - interip
+- name: 192ip
+  ip: 192.168.0.0/16
+  ports: icmp
+  tags:
+    - interip
+- name: B
+  mod: ss
+  no-scan: true
+- name: smartC
+  mod: sc
+- name: C
+  mod: s
+  no-scan: true
+- name: smart
+  ports: top2,win,db
+  mod: ss
+  ping: true
+  arp: true
+- name: smartnoping
+  ports: top2,win,db
+  mod: ss

