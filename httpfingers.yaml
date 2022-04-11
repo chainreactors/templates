@@ -683,7 +683,6 @@
     body:
       - login_WebLogic_branding.png
       - Branding_Login_WeblogicConsole.gif
-      - 404 page not found
       - "<i>Hypertext Transfer Protocol -- HTTP/1.1</i>"
     header:
       - WebLogic
