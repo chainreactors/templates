@@ -681,11 +681,13 @@
 - name: weblogic
   regexps:
     body:
-      - "/login_WebLogic_branding.png"
-      - Welcome to Weblogic Application Server
+      - login_WebLogic_branding.png
+      - Branding_Login_WeblogicConsole.gif
+      - 404 page not found
       - "<i>Hypertext Transfer Protocol -- HTTP/1.1</i>"
     header:
       - WebLogic
+      - ADMINCONSOLESESSION
 - name: weblogic-console
   level: 1
   send_data: "/console/login/LoginForm.jsp"
@@ -973,13 +975,13 @@
       - |-
         <title>
             All Applications
-- name: tomcat-manager
-  level: 1
-  info: tomcat_manager_leak
-  send_data: "/manager/html"
-  regexps:
-    vuln:
-      - You are not authorized to view this page
+#- name: tomcat-manager
+#  level: 1
+#  info: tomcat_manager_leak
+#  send_data: "/manager/html"
+#  regexps:
+#    vuln:
+#      - You are not authorized to view this page
 - name: Grafana
   default_port:
     - '3000'
@@ -2140,11 +2142,6 @@
     body:
       - <!-- If you like showing off the fact that your server rocks -->
       - is proudly powered by <a href="http://bbpress.org
-- name: BEA-WebLogic-Server
-  regexps:
-    body:
-      - <h1>BEA WebLogic Server
-      - WebLogic
 - name: beecms
   regexps:
     body:

@@ -1,0 +1,16 @@
+id: tomcat-manager-leak
+chains:
+  - tomcat-manager-login
+info:
+  author: pdteam
+  name: tomcat-manager-leak-detect
+  severity: high
+  tags: tomcat
+requests:
+  - path:
+      - "{{BaseURL}}/manager/html"
+    matchers:
+      - type: word
+        words:
+          - You are not authorized to view this page
+
