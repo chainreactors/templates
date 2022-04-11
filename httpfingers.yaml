@@ -15,7 +15,7 @@
     body:
       - portainer.
 - name: APISIX
-  regexps:
+  regexps:y
     body:
       - 'error_msg: "failed to match any routes"'
 - name: k8s_api
@@ -360,7 +360,8 @@
   regexps:
     header:
       - Basic realm="dubbo"
-# gadget
+
+# component
 - name: shiro
   regexps:
     header:
@@ -382,6 +383,20 @@
     vuln:
       - readme
       - "###"
+- name: finereport
+  level: 1
+  send_data: "/ReportServer"
+  info: composer leak
+  regexps:
+    vuln:
+      - "FineReport"
+- name: swagger
+  level: 1
+  send_data: "/swagger-ui.html"
+  info: swagger leak
+  regexps:
+    vuln:
+      - "Swagger UI"
 - name: composer.json
   level: 1
   send_data: "/composer.json"
@@ -389,13 +404,13 @@
   regexps:
     vuln:
       - "\"require\": "
-- name: LICENSE.txt
-  level: 1
-  send_data: "/LICENSE.txt"
-  info: LICENSE leak
-  regexps:
-    vuln:
-      - "copyleft"
+#- name: LICENSE.txt
+#  level: 1
+#  send_data: "/LICENSE.txt"
+#  info: LICENSE leak
+#  regexps:
+#    vuln:
+#      - "copyleft"
 - name: LICENSE
   level: 1
   send_data: "/LICENSE"
@@ -403,13 +418,15 @@
   regexps:
     vuln:
       - "copyleft"
-- name: Dockerfile
-  level: 1
-  send_data: "/Dockerfile"
-  info: Dockerfile leak
-  regexps:
-    vuln:
-      - echo
+#- name: Dockerfile
+#  level: 1
+#  send_data: "/Dockerfile"
+#  info: Dockerfile leak
+#  regexps:
+#    vuln:
+#      - echo
+
+# device
 - name: H3C ER5100
   regexps:
     body:
@@ -7920,6 +7937,8 @@
       - Splunk.util.normalizeBoolean
 - name: Spring Security
   regexps:
+    body:
+      - j_spring_security_check
     header:
       - Spring Security Application
 - name: SQ-WEBCAM
@@ -9670,7 +9689,6 @@
 - name: 天柏在线培训/考试系统
   regexps:
     body:
-      - 连接中，请稍候
       - App_Image/PXSystem
       - App_Image/System
     header:
@@ -10023,6 +10041,7 @@
     body:
       - /nc/servlet/nc.ui.iufo.login.Index
       - 用友新世纪
+      - logo/images/ufida
 - name: 用友U8
   regexps:
     body:
