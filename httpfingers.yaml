@@ -900,6 +900,11 @@
       - Whitelabel Error Page
       - No message available
       - '{"timestamp":'
+- name: springcloud-function
+  send_data: "/functionRouter"
+  regexps:
+    body:
+      - '"error":"Internal Server Error"'
 - name: spring
   regexps:
     header:

@@ -1,0 +1,33 @@
+id: springboot-actuator
+
+info:
+  name: Detect Springboot Actuator
+  author: pussycat0x
+  severity: info
+  description: Additional routes may be displayed
+  tags: springboot
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/gateway"
+      - "{{BaseURL}}/actuator/gateway"
+      - "{{BaseURL}}/jolokia"
+      - "{{BaseURL}}/actuator/jolokia"
+      - "{{BaseURL}}/env"
+      - "{{BaseURL}}/actuator/env"
+      - "{{BaseURL}}/info"
+      - "{{BaseURL}}/actuator/info"
+    matchers-condition: and
+    matchers:
+#      - type: word
+#        part: body
+#        words:
+#          - '"status"'
+#          - '"diskSpace"'
+#          - '"jms"'
+#        condition: and
+
+      - type: status
+        status:
+          - 200

@@ -4,7 +4,7 @@ info:
   name: Spring Boot H2 Database RCE
   author: dwisiswant0
   severity: critical
-  tags: springboot,rce,jolokia
+  tags: springboot,jolokia
 
 requests:
   - raw:
