@@ -15,7 +15,7 @@
     body:
       - portainer.
 - name: APISIX
-  regexps:y
+  regexps:
     body:
       - 'error_msg: "failed to match any routes"'
 - name: k8s_api
@@ -907,11 +907,15 @@
     body:
       - VisualSVN Server
       - 0;URL=svn/
-- name: 锐捷EWeb网管系统
+- name: 锐捷EWeb
   regexps:
     body:
       - pub/ui/rui-min.css
       - NBR路由器
+- name: 锐捷AP
+  regexps:
+    body:
+      - common.sea.config.js
 - name: springboot
   regexps:
     body:
