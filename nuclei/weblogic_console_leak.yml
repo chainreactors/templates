@@ -1,6 +1,7 @@
 id: weblogic-console-leak
 chains:
   - weblogic-console-login
+  - CVE-2020-14883
 info:
   author: pdteam
   name: weblogic-console-leak-detect
