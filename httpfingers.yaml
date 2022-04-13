@@ -902,6 +902,16 @@
   regexps:
     body:
       - ID_VC_Welcome
+- name: vmware oneaccess
+  regexps:
+    body:
+      - SAAS/horizon/css
+      - Workspace ONE Access
+- name: vmware identity
+  regexps:
+    body:
+      - cfg/js-lib
+      - VMware Identity
 - name: VisualSVN
   regexps:
     body:
