@@ -9,8 +9,8 @@ info:
 requests:
   - method: GET
     path:
-      - '{{BaseURL}}/wnm/frame/login.php?user_name=admin&password=admin&ssl=false'
-    attack: sniper
+      - '{{BaseURL}}/wnm/frame/login.php?user_name={{username}}&password={{password}}&ssl=false'
+    attack: pitchfork
     matchers:
       - status:
           - 200
@@ -19,3 +19,8 @@ requests:
         words:
           - sessionid
     matchers-condition: and
+    payloads:
+      username:
+        - admin
+      password:
+        - admin
