@@ -4489,10 +4489,10 @@
   regexps:
     header:
       - 'Server: gws'
-- name: GZIP encode
+- name: H3C MSR
   regexps:
-    header:
-      - 'Content-Encoding: gzip'
+    body:
+      - wnm/ssl/web/frame/login.html
 - name: H3C AM8000
   regexps:
     body:
@@ -9705,8 +9705,6 @@
     body:
       - App_Image/PXSystem
       - App_Image/System
-    header:
-      - index.html
 - name: 天融信 TopAD
   regexps:
     body:
