@@ -879,12 +879,6 @@
       - epointserver
     body:
       - "webBuilderCommon"
-- name: 深信服设备
-  regexps:
-    body:
-      - sangfor.com.cn
-    header:
-      - SinforHttpd
 - name: Vmware Zimbra
   regexps:
     body:
@@ -1158,6 +1152,16 @@
 
 
 # 厂家
+- name: 深信服设备
+  regexps:
+    body:
+      - sangfor.com.cn
+    header:
+      - SinforHttpd
+- name: 华为设备
+  regexps:
+    body:
+      - huawei
 - name: 网御星云设备
   regexps:
     body:
@@ -4747,6 +4751,10 @@
   regexps:
     header:
       - Http explorer
+- name: Huawei ibmc
+  regexps:
+    body:
+      - bmc/resources/css/frame
 - name: Huawei B683
   regexps:
     body:

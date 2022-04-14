@@ -20,7 +20,7 @@ requests:
           - sessionid
     matchers-condition: and
     payloads:
-      username:
+      user:
         - admin
-      password:
+      pass:
         - admin

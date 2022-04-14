@@ -38,7 +38,7 @@
 '251106693': GPON Home Gateway
 '252728887': DD WRT (DD-WRT milli_httpd)
 '255892555': wdCP cloud host management system
-'281559989': Huawei
+'281559989': huawei
 '283740897': Intelbras SA
 '321591353': Node-RED
 '321909464': Airwatch
@@ -504,3 +504,4 @@
 "-1237480336": vue
 "1969934080": showdoc
 "-1250474341": vmware oneaccess
+"561563906": huawei
