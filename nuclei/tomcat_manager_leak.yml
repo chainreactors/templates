@@ -1,5 +1,5 @@
 id: tomcat-manager-leak
-chains:
+chain:
   - tomcat-manager-login
 info:
   author: pdteam
