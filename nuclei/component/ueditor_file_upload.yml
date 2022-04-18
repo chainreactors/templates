@@ -1,0 +1,21 @@
+id: ueditor-file-upload
+info:
+  name: UEditor Arbitrary File Upload
+  author: princechaddha
+  severity: high
+  description: A vulnerability in UEditor allows remote unauthenticated attackers to upload arbitrary files to the server, this in turn can be used to make the application to execute their content as code.
+  tags: ueditor
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/ueditor/net/controller.ashx?action=catchimage&encode=utf-8"
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+      - type: word
+        words:
+          - "没有指定抓取源"
+        part: body

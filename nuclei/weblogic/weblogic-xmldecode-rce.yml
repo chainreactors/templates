@@ -1,0 +1,22 @@
+id: weblogic-xmldecode-rce
+
+info:
+  name: Oracle WebLogic Server - Unauthenticated RCE
+  author: dwisiswant0
+  severity: critical
+  tags: weblogic
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/_async/AsyncResponseService"
+      - "{{BaseURL}}/wls-wsat/CoordinatorPortType"
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - wsdl
+        part: body
+      - type: status
+        status:
+          - 200

