@@ -8983,8 +8983,7 @@
 - name: twcms
   regexps:
     body:
-      - /twcms/theme/
-      - /css/global.css
+      - twcms/theme
 - name: TwilightCMS
   regexps:
     header:
@@ -8993,7 +8992,6 @@
   regexps:
     body:
       - generator" content="Typecho
-      - 强力驱动
       - Typecho
 - name: typo3
   regexps:
@@ -9016,7 +9014,6 @@
   regexps:
     body:
       - UFIDA
-      - logo/images/
       - logo/images/ufida_nc.png
 - name: ujian
   regexps:
@@ -9100,8 +9097,7 @@
 - name: Vicworl
   regexps:
     body:
-      - Powered by Vicworl
-      - content="Vicworl
+      - Vicworl
       - vindex_right_d
 - name: VideoIQ Camera
   regexps:
@@ -9121,8 +9117,6 @@
   regexps:
     body:
       - VOS3000
-      - <meta name="keywords" content="VOS3000
-      - <meta name="description" content="VOS3000
       - images/vos3000.ico
 - name: vue框架
   regexps:
@@ -9168,8 +9162,7 @@
 - name: Webmin
   regexps:
     body:
-      - Login to Webmin
-      - Webmin server on
+      - Webmin
 - name: WebObjects
   regexps:
     header:
@@ -9267,12 +9260,7 @@
 - name: wosign_ssl_cert
   regexps:
     body:
-      - https://seal.wosign.com/tws.js
-      - https://seal.wosign.com/Signature
-- name: WP Plugin All-in-one-SEO-Pack
-  regexps:
-    body:
-      - <!-- /all in one seo pack -->
+      - wosign.com
 - name: Wp-Super-Cache
   regexps:
     header:
