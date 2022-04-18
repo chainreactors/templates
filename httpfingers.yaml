@@ -9481,7 +9481,6 @@
   regexps:
     body:
       - /media/images/ZKECO16.ico
-      - 考勤管理系统
     header:
       - sessionidadms
 - name: 中望OA
