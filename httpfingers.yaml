@@ -339,10 +339,6 @@
   regexps:
     body:
       - libs/MulPlatAPI.js
-- name: H3C安全产品管理平台
-  regexps:
-    body:
-      - "/wnm/ssl/web/frame/login.html"
 - name: H3C ICG 1000
   regexps:
     body:
@@ -397,6 +393,13 @@
   regexps:
     vuln:
       - "Swagger UI"
+- name: druid
+  level: 1
+  send_data: "/druid"
+  info: druid leak
+  regexps:
+    vuln:
+      - "druid"
 - name: composer.json
   level: 1
   send_data: "/composer.json"
@@ -785,7 +788,10 @@
   regexps:
     body:
       - "IdeaCMS"
-
+- name: 合正CMS
+  regexps:
+    body:
+      - "/cms/cmsadmin/infopub"
 - name: phpok
   regexps:
     body:
@@ -1037,7 +1043,10 @@
   regexps:
     body:
       - Powered by Jspxcms
-
+- name: 奥远科技
+  regexps:
+    body:
+      - aykj.net
 - name: ueditor编辑器
   regexps:
     body:
@@ -10260,7 +10269,7 @@
     body:
       - 金龙卡金融化一卡通网站查询子系统
       - location.href="homeLogin.action
-- name: 锐商企业CMS
+- name: 锐商企业CMSc
   regexps:
     body:
       - href="/Writable/ClientImages/mycss.css
