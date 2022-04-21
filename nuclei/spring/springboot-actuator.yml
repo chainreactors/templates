@@ -9,24 +9,14 @@ info:
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/gateway"
-      - "{{BaseURL}}/actuator/gateway"
-      - "{{BaseURL}}/jolokia"
-      - "{{BaseURL}}/actuator/jolokia"
-      - "{{BaseURL}}/env"
-      - "{{BaseURL}}/actuator/env"
-      - "{{BaseURL}}/info"
-      - "{{BaseURL}}/actuator/info"
+      - "{{BaseURL}}/{{path}}"
+      - "{{BaseURL}}/actuator/{{path}}"
     matchers-condition: and
     matchers:
-#      - type: word
-#        part: body
-#        words:
-#          - '"status"'
-#          - '"diskSpace"'
-#          - '"jms"'
-#        condition: and
-
       - type: status
         status:
           - 200
+    payloads:
+      path:
+        - env
+        - info
