@@ -1,4 +1,4 @@
-id: springboot-actuators-jolokia-xxe
+id: springboot-actuators-jolokia-rce
 
 info:
   name: Spring Boot Actuators (Jolokia) XXE

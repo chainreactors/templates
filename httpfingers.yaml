@@ -809,7 +809,7 @@
 - name: weaver-ebridge
   regexps:
     body:
-      - e-Bridge,http://wx.weaver
+      - e-Bridge
 - name: Laravel
   regexps:
     header:

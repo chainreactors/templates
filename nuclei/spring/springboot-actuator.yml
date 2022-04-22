@@ -12,6 +12,7 @@ requests:
       - "{{BaseURL}}/{{path}}"
       - "{{BaseURL}}/actuator/{{path}}"
     matchers-condition: and
+    stop-at-first-match: true
     matchers:
       - type: status
         status:
