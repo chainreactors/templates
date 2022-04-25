@@ -395,11 +395,11 @@
       - "Swagger UI"
 - name: druid
   level: 1
-  send_data: "/druid"
+  send_data: "/druid/index.html"
   info: druid leak
   regexps:
     vuln:
-      - "druid"
+      - "Druid Stat Index"
 - name: composer.json
   level: 1
   send_data: "/composer.json"
@@ -847,6 +847,10 @@
   regexps:
     body:
       - jltech.cn
+- name: eweishop
+  regexps:
+    body:
+      - ewei_shop
 - name: Joomla
   regexps:
     body:
@@ -5555,6 +5559,7 @@
   regexps:
     header:
       - laravel_session
+      - ci_session
 - name: lemis管理系统
   regexps:
     body:
