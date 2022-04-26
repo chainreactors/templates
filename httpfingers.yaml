@@ -883,7 +883,7 @@
   regexps:
     body:
       - "/r/cms"
-- name: epoint新点软件
+- name: epoint新点软件cms
   regexps:
     header:
       - epointserver
@@ -9181,7 +9181,7 @@
   regexps:
     header:
       - wosid
-- name: webplus
+- name: webplusr
   regexps:
     body:
       - webplus
@@ -9234,14 +9234,6 @@
   regexps:
     body:
       - Wimax CPE Configuration
-- name: WINDOWS 32bit
-  regexps:
-    header:
-      - Win32
-- name: windows 64bit
-  regexps:
-    header:
-      - win64
 - name: WindRiver设备
   regexps:
     header:
@@ -9520,7 +9512,6 @@
   regexps:
     body:
       - 乐视路由器
-      - <div class="login-logo"></div>
 - name: 云因网上书店
   regexps:
     body:
@@ -9970,8 +9961,6 @@
   regexps:
     body:
       - 汉码软件
-      - alt="汉码软件LOGO
-      - content="汉码软件
 - name: 沃科网异网同显系统
   regexps:
     body:
