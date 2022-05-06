@@ -104,6 +104,9 @@
   mod: ss
   ping: true
   arp: true
+- name: smartip
+  ports: icmp
+  mod: ss
 - name: smartnoping
   ports: top2,win,db
   mod: ss
