@@ -3994,6 +3994,7 @@
   regexps:
     header:
       - X-PvInfo
+      - BigIP
 - name: Facebook-Plugin
   regexps:
     body:
@@ -9607,6 +9608,13 @@
   regexps:
     body:
       - opac_two
+
+- name: FusionAccess
+  regexps:
+    body:
+      - FusionAccess
+    header:
+      - FusionAccess
 - name: 华为 MCU
   regexps:
     body:
