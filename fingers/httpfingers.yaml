@@ -31,10 +31,6 @@
     header:
       - i_like_gog
       - i_like_gitea
-- name: gitlab
-  regexps:
-    body:
-      - gitlab
 - name: Jenkins
   regexps:
     header:
@@ -1854,10 +1850,6 @@
   regexps:
     header:
       - Aspnetmvc
-- name: ASP.NET Version
-  regexps:
-    header:
-      - X-Aspnet-Version
 - name: asp168欧虎
   regexps:
     body:
@@ -4350,7 +4342,7 @@
   regexps:
     body:
       - gon.default_issues_tracker
-      - GitLab Community Edition
+      - GitLab
     header:
       - _gitlab_session
 - name: Gitorious
