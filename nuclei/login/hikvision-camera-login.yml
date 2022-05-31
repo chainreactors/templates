@@ -1,0 +1,24 @@
+id: hikvision-camera-login
+info:
+  name: hikvision-camera-default-password
+  severity: high
+  tags: hikvision
+requests:
+  - raw:
+      - |
+        GET /ISAPI/Security/userCheck HTTP/1.1
+        Host: {{HOST}}
+        Authorization: Basic {{auth}}
+        Accept: */*
+    attack: sniper
+    matchers:
+      - status:
+          - 200
+        type: status
+      - type: word
+        words:
+          - OK
+    matchers-condition: and
+    payloads:
+      auth:
+        - YWRtaW46MTIzNDU=

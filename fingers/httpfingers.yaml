@@ -229,6 +229,7 @@
 - name: 泛微E-mobile
   regexps:
     body:
+      - /page/manage/css/main.css
       - weaver,e-mobile
 - name: 泛微E-Office
   regexps:
@@ -843,6 +844,10 @@
   regexps:
     body:
       - jltech.cn
+- name: 翰臣CMS
+  regexps:
+    body:
+      - 翰臣科技
 - name: eweishop
   regexps:
     body:
