@@ -1,9 +1,9 @@
 ---
 '603314': Redmine
 '5471989': Netcom Technology
-'5542029': NetComWireless (Network)
+'5542029': NetComWireless
 '15831193': WatchGuard
-'16202868': Universal Devices (UD)
+'16202868': Universal Devices
 '31972968': Dlink Webcam
 '72005642': RemObjects SDK
 '74935566': WindRiver-WebServer
@@ -12,8 +12,8 @@
 '81586312': Jenkins
 '86919334': ServiceNow
 '89321398': Askey Cable Modem
-'90066852': JAWS Web Server (IP Camera)
-'90680708': Domoticz (Home Automation)
+'90066852': JAWS Web Server
+'90680708': Domoticz
 '95271369': FireEye
 '97604680': Tandberg
 '99395752': slack-instance
@@ -25,18 +25,18 @@
 '123821839': Sangfor
 '129457226': Liferay Portal
 '149371702': Synology DiskStation
-'156312019': Technicolor / Thomson Speedtouch (Network / ADSL)
+'156312019': Technicolor / Thomson Speedtouch
 '162934974': 天融信
 '163842882': Cisco Meraki
-'165976831': Vodafone (Technicolor)
+'165976831': Vodafone 
 '191654058': Wordpress Under Construction Icon
 '224536051': Shenzhen coship electronics co.
 '225632504': Rocket Chat
-'240136437': Seagate Technology (NAS)
+'240136437': Seagate Technology 
 '240606739': FireEye
 '246145559': Parse
 '251106693': GPON Home Gateway
-'252728887': DD WRT (DD-WRT milli_httpd)
+'252728887': DD WRT 
 '255892555': wdCP cloud host management system
 '281559989': huawei
 '283740897': Intelbras SA
@@ -54,8 +54,8 @@
 '432733105': Pi Star
 '442749392': Microsoft OWA
 '443944613': WAMPSERVER
-'459900502': ZTE Corporation (Gateway/Appliance)
-'462223993': Jeedom (home automation)
+'459900502': ZTE Corporation
+'462223993': Jeedom
 '475379699': Axcient Replibit Management Server
 '476213314': Exacq
 '479413330': Webmin
@@ -66,16 +66,16 @@
 '509789953': Farming Simulator Dedicated Server
 '512590457': Trendnet IP camera
 '516963061': Gitlab
-'517158172': D-Link (router/network)
+'517158172': D-Link
 '538585915': Lenel
 '541087742': LiquidFiles
 '545827989': MobileIron
 '547282364': Keenetic
-'547474373': TOTOLINK (network)
+'547474373': TOTOLINK
 '552592949': ASUS AiCloud
 '552597979': Sails
 '552727997': Atlassian – JIRA
-'575613323': Canvas LMS (Learning Management)
+'575613323': Canvas LMS
 '579239725': Metasploit
 '602431586': Palo Alto Login Portal
 '607846949': Hitron Technologies
@@ -89,13 +89,13 @@
 '708578229': Google
 '711742418': Hitron Technologies Inc.
 '716989053': Amazon
-'726817668': KeyHelp (Keyweb AG)
+'726817668': KeyHelp
 '727253975': Paradox IP Module
 '728788645': IBM Notes
-'731374291': HFS (HTTP File Server)
+'731374291': HFS
 '743365239': Atlassian
-'768231242': JAWS Web Server (IP Camera)
-'768816037': UniFi Video Controller (airVision)
+'768231242': JAWS Web Server
+'768816037': UniFi Video Controller
 '774252049': FastPanel Hosting
 '784872924': Lucee!
 '786533217': OpenStack
@@ -104,15 +104,15 @@
 '804949239': Cisco Meraki Dashboard
 '812385209': Solarwinds Serv-U FTP Server
 '829321644': BOMGAR Support Portal
-'833190513': Dahua Storm (IP Camera)
+'833190513': Dahua Storm
 '855273746': JIRA
 '878647854': BIG-IP
-'882208493': Lantronix (Spider)
+'882208493': Lantronix
 '892542951': Zabbix
 '896412703': IW
 '902521196': Netflix
 '903086190': Honeywell
-'904434662': Loxone (Automation)
+'904434662': Loxone
 '905744673': HP Printer / Server
 '916642917': Multilaser
 '917966895': Gogs
@@ -125,30 +125,30 @@
 '945408572': Fortinet – Forticlient
 '967636089': MobileIron
 '970132176': 3CX Phone System
-'979634648': StruxureWare (Schneider Electric)
+'979634648': StruxureWare
 '980692677': Cake PHP
 '981867722': Atlassian – JIRA
-'987967490': Huawei (Network)
+'987967490': Huawei
 '988422585': CapRover
 '998138196': iomega NAS
 '999357577': Hikvision IP Camera
 '1015545776': pfSense
 '1020814938': Ubiquiti – AirOS
 '1037387972': Dlink Router
-'1038500535': D-Link (router/network)
+'1038500535': D-Link
 '1045696447': Sophos User Portal/VPN Portal
-'1047213685': Netgear (Network)
+'1047213685': Netgear
 '1051648103': Securepoint
 '1059329877': Tecvoz
 '1064742722': RabbitMQ
-'1081719753': D-Link (Network)
+'1081719753': D-Link
 '1095915848': Airwatch
 '1103599349': Untangle
-'1117165781': SimpleHelp (Remote Support)
+'1117165781': SimpleHelp
 '1118684072': Baidu
 '1135165421': Ricoh
 '1139788073': Metasploit
-'1142227528': Aruba (Virtual Controller)
+'1142227528': Aruba
 '1144925962': Dlink Webcam
 '1157789622': Ubiquiti UNMS
 '1169183049': BoaServer
@@ -156,7 +156,7 @@
 '1174841451': Drupal
 '1211608009': Openfire Admin Console
 '1221759509': Dlink Webcam
-'1227052603': Alibaba Cloud (Block Page)
+'1227052603': Alibaba Cloud
 '1232159009': Apple
 '1232596212': OpenStack
 '1234311970': Onera
@@ -165,15 +165,15 @@
 '1244636413': cPanel Login
 '1248917303': JupyterHub
 '1249285083': Ubiquiti Aircube
-'1251810433': Cafe24 (Korea)
+'1251810433': Cafe24
 '1262005940': Jamf Pro Login
-'1273982002': Mautic (Open Source Marketing Automation)
-'1274078387': TP-LINK (Network Device)
+'1273982002': Mautic
+'1274078387': TP-LINK
 '1278323681': Gitlab
 '1280907310': Webmin
-'1281253102': Dahua Storm (DVR)
+'1281253102': Dahua Storm
 '1302486561': NetData
-'1307375944': Octoprint (3D printer)
+'1307375944': Octoprint
 '1318124267': Avigilon
 '1319699698': Form.io
 '1326164945': Shock&Innovation!! netis setup
@@ -182,58 +182,58 @@
 '1356662359': Outlook Web Application
 '1382324298': Apple
 '1405460984': pfSense
-'1410610129': Supermicro Intelligent Management (IPMI)
+'1410610129': Supermicro Intelligent Management
 '1424295654': Icecast Streaming Media Server
-'1427976651': ZTE (Network)
+'1427976651': ZTE
 '1433417005': Salesforce
 '1436966696': Barracuda
 '1453890729': Webmin
 '1462981117': Cyberoam
-'1466912879': CradlePoint Technology (Router)
-'1467395679': Ligowave (network)
+'1466912879': CradlePoint Technology
+'1467395679': Ligowave
 '1476335317': FireEye
-'1479202414': Arcadyan o2 box (Network)
-'1483097076': SyncThru Web Service (Printers)
+'1479202414': Arcadyan o2 box
+'1483097076': SyncThru Web Service 
 '1485257654': SonarQube
 '1490343308': MK-AUTH
 '1544230796': cPanel Login
 '1552860581': Elastic
 '1585145626': netdata dashboard
 '1594377337': Technicolor
-'1601194732': Sophos Cyberoam (appliance)
+'1601194732': Sophos Cyberoam 
 '1611729805': Elastic
 '1627330242': Joomla
-'1629518721': macOS Server (Apple)
+'1629518721': macOS Server 
 '1632780968': Université Toulouse 1 Capitole
 '1642701741': Vmware Secure File Transfer
-'1648531157': InfiNet Wireless | WANFleX (Network)
+'1648531157': InfiNet Wireless | WANFleX 
 '1668183286': Kibana
 '1678170702': Asustor
-'1703788174': D-Link (router/network)
+'1703788174': D-Link 
 '1726027799': IBM Server
 '1734609466': JustHost
 '1768726119': Outlook Web Application
 '1770799630': bintec elmeg
 '1772087922': ASP.net favicon
-'1782271534': truVision NVR (interlogix)
+'1782271534': truVision NVR 
 '1786752597': wdCP
 '1822002133': 登录 – AMH
 '1835479497': Technicolor Gateway
 '1836828108': OpenProject
 '1838417872': Freebox OS
-'1842351293': TP-LINK (Network Device)
+'1842351293': TP-LINK 
 '1862132268': Gargoyle Router Management Utility
 '1876585825': ALIBI NVR
-'1877797890': Eltex (Router)
+'1877797890': Eltex 
 '1895360511': VMware Horizon
-'1911253822': UPC Ceska Republica (Network)
+'1911253822': UPC Ceska Republica 
 '1913538826': Material Dashboard
 '1922032523': NEC WebPro
 '1937209448': Docker
 '1941381095': openWRT Luci
 '1953726032': Metabase
 '1954835352': Vesta Hosting Control Panel
-'1966198264': OpenERP (now known as Odoo)
+'1966198264': OpenERP 
 '1969970750': Gitea
 '1973665246': Entrolink
 '1975413433': Sunny WebBox
@@ -241,19 +241,19 @@
 '1991562061': Niagara Web Server / Tridium
 '1993518473': cPanel Login
 '2006716043': Intelbras SA
-'2019488876': Dahua Storm (IP Camera)
+'2019488876': Dahua Storm 
 '2055322029': Realtek
 '2059618623': HP iLO
 '2063428236': Sentry
-'2068154487': Digium (Switchvox)
+'2068154487': Digium 
 '2071993228': Nomadix Access Gateway
 '2072198544': Ferozo Panel
 '2086228042': MobileIron
-'2099342476': PKP (OpenJournalSystems) Public Knowledge Project
+'2099342476': PKP  Public Knowledge Project
 '2109473187': Huawei – Claro
 '2113497004': WiJungle
 '2121539357': FireEye
-'2124459909': HFS (HTTP File Server)
+'2124459909': HFS 
 '2127152956': MailWizz
 '2128230701': Chainpoint
 '2141724739': Juniper Device Manager
@@ -261,7 +261,7 @@
 "-235701012": Cnservers LLC
 "-1277814690": LaCie
 "-305179312": Atlassian – Confluence
-"-1255347784": Angular IO (AngularJS)
+"-1255347784": Angular IO 
 "-1275226814": XAMPP
 "-2009722838": React
 "-923088984": OpenStack
@@ -282,13 +282,13 @@
 "-1395400951": Huawei – ADSL/Router
 "-325082670": LANCOM Systems
 "-1050786453": Plesk
-"-1346447358": TilginAB (HomeGateway)
+"-1346447358": TilginAB 
 "-440644339": Zyxel ZyWALL
 "-1446794564": Ubiquiti Login Portals
 "-297069493": Apache Tomcat
 "-1677255344": UBNT Router UI
 "-359621743": Intelbras Wireless
-"-677167908": Kerio Connect (Webmail)
+"-677167908": Kerio Connect 
 "-271448102": iKuai Networks
 "-1119613926": Bluehost
 "-2069844696": Ruckus Wireless
@@ -304,9 +304,9 @@
 "-1010568750": phpMyAdmin
 "-1240222446": Zhejiang Uniview Technologies Co.
 "-986678507": ISP Manager
-"-1616143106": AXIS (network cameras)
+"-1616143106": AXIS 
 "-976235259": Roundcube Webmail
-"-1571472432": Sierra Wireless Ace Manager (Airlink)
+"-1571472432": Sierra Wireless Ace Manager 
 "-1169314298": INSTAR IP Cameras
 "-1038557304": Webmin
 "-1933493443": Residential Gateway
@@ -319,16 +319,16 @@
 "-569941107": Fireware Watchguard
 "-1738184811": cacaoweb
 "-2063036701": Linksys Smart Wi-Fi
-"-1205024243": lwIP (A Lightweight TCP/IP stack)
-"-520888198": Blue Iris (Webcam)
-"-1922044295": Mitel Networks (MiCollab End User Portal)
+"-1205024243": lwIP 
+"-520888198": Blue Iris 
+"-1922044295": Mitel Networks 
 "-655683626": PRTG Network Monitor
 "-1666561833": Wildfly
 "-459291760": Workday
-"-1507567067": Baidu (IP error page)
-"-1298108480": Yii PHP Framework (Default Favicon)
+"-1507567067": Baidu 
+"-1298108480": Yii PHP Framework 
 "-476231906": phpMyAdmin
-"-646322113": Cisco (eg:Conference Room Login Page)
+"-646322113": Cisco 
 "-629047854": Jetty 404
 "-1351901211": Luma Surveillance
 "-519765377": Parallels Plesk Panel
@@ -336,11 +336,11 @@
 "-127886975": Metasploit
 "-1235192469": Metasploit
 "-1810847295": Sangfor
-"-291579889": 'Websockets test page (eg: port 5900)'
+"-291579889": 'Websockets test page '
 "-986816620": OpenRG
 "-299287097": Cisco Router
 "-1926484046": Sangfor
-"-873627015": HeroSpeed Digital Technology Co. (NVR/IPC/XVR)
+"-873627015": HeroSpeed Digital Technology Co. 
 "-38580010": Magento
 "-632583950": Shoutcast Server
 "-842192932": FireEye
@@ -364,18 +364,18 @@
 "-895963602": Jupyter Notebook
 "-972810761": HostMonster - Web hosting
 "-1702393021": mofinetwork
-"-374235895": Ossia (Provision SR) | Webcam/IP Camera
+"-374235895": Ossia  | Webcam/IP Camera
 "-1153950306": Dell
 "-484708885": Zyxel ZyWALL
 "-656811182": Jboss
 "-332324409": STARFACE VoIP Software
-"-594256627": Netis (network devices)
+"-594256627": Netis 
 "-649378830": WHM
-"-1015932800": Ghost (CMS)
-"-194439630": Avtech IP Surveillance (Camera)
+"-1015932800": Ghost 
+"-194439630": Avtech IP Surveillance 
 "-771764544": Parallels Plesk Panel
 "-617743584": Odoo
-"-1124868062": Netport Software (DSL)
+"-1124868062": Netport Software 
 "-335242539": f5 Big IP
 "-1041180225": QNAP NAS Virtualization Station
 "-1319025408": Netgear
@@ -391,59 +391,59 @@
 "-1630354993": Proofpoint
 "-1678298769": Kerio Connect WebMail
 "-35107086": WorldClient for Mdaemon
-"-692947551": Ruijie Networks (Login)
+"-692947551": Ruijie Networks 
 "-1710631084": Askey Cable Modem
 "-421986013": Homegrown Website Hosting
-"-560297467": DVR (Korean)
+"-560297467": DVR 
 "-1950415971": Joomla
 "-632070065": Apache Haus
-"-355305208": D-Link (camera)
+"-355305208": D-Link 
 "-267431135": Kibana
 "-759754862": Kibana
 "-1200737715": Kibana
-"-1654229048": Vivotek (Camera)
+"-1654229048": Vivotek 
 "-1414475558": Microsoft IIS
 "-1697334194": Univention Portal
-"-1424036600": Portainer (Docker Management)
+"-1424036600": Portainer 
 "-831826827": NOS Router
 "-759108386": Tongda
 "-1022206565": CrushFTP
 "-1225484776": Endian Firewall
 "-631002664": Kerio Control Firewall
 "-466504476": Kerio Control Firewall
-"-978656757": NETIASPOT (Network)
-"-587741716": ADB Broadband S.p.A. (Network)
-"-360566773": ARRIS (Network)
-"-884776764": Huawei (Network)
-"-393788031": Flussonic (Video Streaming)
-"-2031183903": D-Link (Network)
+"-978656757": NETIASPOT 
+"-587741716": ADB Broadband S.p.A. 
+"-360566773": ARRIS 
+"-884776764": Huawei 
+"-393788031": Flussonic 
+"-2031183903": D-Link 
 "-1588746893": CommuniGate
 "-1788112745": PowerMTA monitoring
 "-644617577": SmartLAN/G
-"-1822098181": Checkpoint (Gaia)
-"-1131689409": УТМ (Federal Service for Alcohol Market Regulation | Russia)
-"-693082538": openmediavault (NAS)
+"-1822098181": Checkpoint 
+"-1131689409": УТМ 
+"-693082538": openmediavault 
 "-1442789563": Nuxt JS
 "-2140379067": RoundCube Webmail
-"-1897829998": D-Link (camera)
+"-1897829998": D-Link 
 "-299324825": Lupus Electronics XT
 "-1162730477": Vanderbilt SPC
 "-1268095485": VZPP Plesk
 "-1616115760": ownCloud
 "-2054889066": Sentora
-"-373674173": Digital Keystone (DK)
-"-106646451": WISPR (Airlan)
+"-373674173": Digital Keystone 
+"-106646451": WISPR 
 "-956471263": Web Client Pro
 "-1452159623": Tecvoz
 "-630493013": DokuWiki
 "-329747115": C-Lodop
-"-878891718": Twonky Server (Media Streaming)
+"-878891718": Twonky Server 
 "-2125083197": Windows Azure
-"-1151675028": ISP Manager (Web Hosting Panel)
-"-1908556829": 'CenturyLink Modem GUI Login (eg: Technicolor)'
+"-1151675028": ISP Manager 
+"-1908556829": 'CenturyLink Modem GUI Login '
 "-1148190371": OPNsense
 "-1528414776": Rumpus
-"-2117390767": Spiceworks (panel)
+"-2117390767": Spiceworks 
 "-1944119648": TeamCity
 "-1748763891": INSTAR Full-HD IP-Camera
 "-1779611449": Alienvault
@@ -451,11 +451,11 @@
 "-1275148624": Accrisoft
 "-178685903": Yasni
 "-43161126": Slack
-"-10974981": Shinobi (CCTV)
+"-10974981": Shinobi 
 "-336242473": Siemens OZW772
-"-687783882": ClaimTime (Ramsell Public Health & Safety)
+"-687783882": ClaimTime 
 "-590892202": Surfilter SSL VPN Portal
-"-50306417": Kyocera (Printer)
+"-50306417": Kyocera 
 "-689902428": iomega NAS
 "-600508822": iomega NAS
 "-2056503929": iomega NAS
@@ -465,32 +465,32 @@
 "-276759139": Chef Automate
 "-1738727418": KeepItSafe Management Console
 "-368490461": Entronix Energy Management Platform
-"-1775553655": Unified Management Console (Polycom)
+"-1775553655": Unified Management Console 
 "-335153896": Traccar GPS tracking
 "-342262483": Combivox
-"-1093172228": truVision (NVR)
+"-1093172228": truVision 
 "-1688698891": SpamExperts
 "-1546574541": Sonatype Nexus Repository Manager
-"-256828986": iDirect Canada (Network Management)
-"-882760066": ZyXEL (Network)
+"-256828986": iDirect Canada 
+"-882760066": ZyXEL 
 "-1734573358": TC-Group
 "-1589842876": Deluge Web UI
-"-2006308185": OTRS (Open Ticket Request System)
-"-1702769256": Bosch Security Systems (Camera)
-"-923693877": motionEye (camera)
+"-2006308185": OTRS 
+"-1702769256": Bosch Security Systems 
+"-923693877": motionEye 
 "-1547576879": Saia Burgess Controls – PCD
-"-166151761": Abilis (Network/Automation)
-"-1231681737": Ghost (CMS)
+"-166151761": Abilis 
+"-1231681737": Ghost 
 "-1153873472": Airwatch
 "-1863663974": Airwatch
-"-1267819858": KeyHelp (Keyweb AG)
+"-1267819858": KeyHelp 
 "-1474875778": GLPI
 "-1457536113": CradlePoint
 "-736276076": MyASP
 "-1343070146": Intelbras SA
 "-625364318": OkoFEN Pellematic
 "-1067420240": GraphQL
-"-1465479343": DNN (CMS)
+"-1465479343": DNN 
 "-1498185948": Apple
 "-1249852061": Microsoft Outlook
 "-194791768": AfterLogicWebMail系统
