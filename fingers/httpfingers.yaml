@@ -359,6 +359,22 @@
   regexps:
     header:
       - rememberMe=
+
+- name: ajaxpro
+  regexps:
+    body:
+      - ajaxpro
+
+- name: ueditor编辑器
+  regexps:
+    body:
+      - ueditor.all
+- name: ueditor
+  level: 1
+  send_data: "/ueditor"
+  regexps:
+    body:
+      - ueditor.config.js
 - name: sourcemap
   vuln: sourcemap-leak
   regexps:
@@ -754,6 +770,31 @@
   regexps:
     body:
       - "74cms"
+- name: 金蝶中间件
+  regexps:
+    body:
+      - "-Error report"
+- name: 泽元站群管理系统ZCMS
+  regexps:
+    body:
+      - zcms_stat
+- name: 民友minyooCMS
+  regexps:
+    body:
+      - Minyoo
+      - "/tpl/8/images"
+- name: 中科汇联easysiteCMS
+  regexps:
+    body:
+      - huilan-jquery-ui
+- name: jspxcms
+  regexps:
+    body:
+      - Powered by Jspxcms
+- name: 奥远科技
+  regexps:
+    body:
+      - aykj.net
 - name: PhpCMS
   regexps:
     body:
@@ -772,7 +813,11 @@
   regexps:
     body:
       - zoomla
-
+- name: ssCMS
+  regexps:
+    body:
+      - SS CMS
+      - /sitefiles/assets
 - name: FineCMS
   regexps:
     body:
@@ -785,6 +830,10 @@
   regexps:
     body:
       - "IdeaCMS"
+- name: 博达VSB
+  regexps:
+    body:
+      - Visual SiteBuilder
 - name: 合正CMS
   regexps:
     body:
@@ -815,7 +864,7 @@
   regexps:
     body:
       - dwr/engine.js
-- name: swagger_ui
+- name: swagger-ui
   regexps:
     body:
       - "/swagger"
@@ -1023,45 +1072,6 @@
   regexps:
     body:
       - Grafana</title>
-- name: 金蝶中间件
-  regexps:
-    body:
-      - "-Error report"
-- name: 泽元站群管理系统ZCMS
-  regexps:
-    body:
-      - zcms_stat
-- name: 民友minyooCMS
-  regexps:
-    body:
-      - Minyoo
-      - "/tpl/8/images"
-- name: 中科汇联easysiteCMS
-  regexps:
-    body:
-      - huilan-jquery-ui
-- name: ajaxpro
-  regexps:
-    body:
-      - ajaxpro
-- name: jspxcms
-  regexps:
-    body:
-      - Powered by Jspxcms
-- name: 奥远科技
-  regexps:
-    body:
-      - aykj.net
-- name: ueditor编辑器
-  regexps:
-    body:
-      - ueditor.all
-- name: ueditor
-  level: 1
-  send_data: "/ueditor"
-  regexps:
-    body:
-      - ueditor.config.js
 - name: FastAdmin
   regexps:
     body:
