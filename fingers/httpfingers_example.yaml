@@ -1,0 +1,14 @@
+- name: springcloud-function
+  protocol: http
+  default_port:
+    - "8080"
+    - "9443"
+  rule:
+    default:
+      favicon:
+        md5: 11234
+        mmh3: 123123
+      send_data: "/functionRouter"
+      regexps:
+        body:
+          - '"error":"Internal Server Error"'
