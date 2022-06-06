@@ -1,4 +1,4 @@
-- name: springcloud-function
+- name: example-cms
   protocol: http
   default_port:
     - "8080"
@@ -6,9 +6,18 @@
   rule:
     default:
       favicon:
-        md5: 11234
-        mmh3: 123123
-      send_data: "/functionRouter"
+        md5:
+        - 11234
+        mmh3:
+        - 123123
       regexps:
         body:
-          - '"error":"Internal Server Error"'
+          - example
+        regexp:
+          - ex..ple
+        header:
+          - example_header
+        md5:
+          - 47bce5c74f589f4867dbd57e9ca9f808
+
+

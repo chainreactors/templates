@@ -1,0 +1,10307 @@
+---
+# 云原生
+- name: jira
+  regexps:
+    body:
+      - jira.webresources
+- name: sonarqube
+  regexps:
+    body:
+      - SonarQube
+- name: Portainer
+  default_port:
+    - '9000'
+  regexps:
+    body:
+      - portainer.
+- name: APISIX
+  regexps:
+    body:
+      - 'error_msg: "failed to match any routes"'
+- name: k8s_api
+  regexps:
+    body:
+      - '"kind": "Status"'
+- name: k8s_dashboard
+  regexps:
+    body:
+      - assets/images/kubernetes-logo.png
+- name: Gogs简易Git服务
+  regexps:
+    header:
+      - i_like_gog
+      - i_like_gitea
+- name: Jenkins
+  regexps:
+    header:
+      - X-Jenkins
+    body:
+      - Jenkins
+
+
+
+# 建站系统
+- name: LANMP集成环境
+  regexps:
+    body:
+      - "<title>LANMP"
+- name: 宝塔面板
+  default_port:
+    - '8888'
+  regexps:
+    body:
+      - app.bt.cn/static/app.png
+      - 安全入口校验失败
+- name: 宝塔
+  regexps:
+    body:
+      - 恭喜，站点创建成功
+      - 没有找到站点
+- name: LNMP
+  regexps:
+    body:
+      - lnmp.gif
+- name: Nexus
+  regexps:
+    body:
+      - Nexus Repository Manager
+    header:
+      - NX-ANTI-CSRF-TOKEN
+- name: Harbor
+  regexps:
+    body:
+      - "<title>Harbor</title>"
+    header:
+      - harbor-lang
+- name: 微擎
+  regexps:
+    body:
+      - "/index.php?c=user&a=find-password"
+- name: xxl-job
+  regexps:
+    body:
+      - 分布式任务调度平台XXL-JOB
+- name: atmail-WebMail
+  regexps:
+    header:
+      - atmail6
+    body:
+      - "/index.php/mail/auth/processlogin"
+
+
+# 办公软件
+- name: smartBI
+  regexps:
+    body:
+      - smartbi.gcf.gcfutil
+- name: 金和协同管理平台
+  regexps:
+    body:
+      - 金和协同管理平台
+      - JHSoft.UI.Lib
+- name: 金和OA
+  regexps:
+    body:
+      - Jhsoft.Web.login
+- name: 中腾OA
+  regexps:
+    body:
+      - zt_webframe
+- name: 万户ezOFFICE
+  regexps:
+    header:
+      - LocLan
+- name: 万户网络
+  regexps:
+    body:
+      - css/css_whir.css
+- name: 协众OA
+  regexps:
+    body:
+      - Powered by 协众OA
+    header:
+      - CNOAOASESSID
+- name: TRS(托尔斯)
+  regexps:
+    body:
+      - dreamer-cms
+- name: 禅道oa
+  regexps:
+    body:
+      - "/theme/default/images/main/zt-logo.png"
+      - "/zentao/theme/zui/css/min.css"
+    header:
+      - zentaosid
+- name: 安策绩效管理系统
+  regexps:
+    body:
+      - 安策绩效信息科技
+- name: 78OA
+  regexps:
+    body:
+      - 78oa.com
+
+- name: 致远M3
+  regexps:
+    body:
+      - "<title>M3 Server"
+- name: 睿博士云办公系统
+  regexps:
+    body:
+      - "/user/toUpdatePasswordPage.di"
+      - "/studentSign/toLogin.di"
+- name: 中望OA
+  regexps:
+    body:
+      - "xtoa_logo.png"
+      - "qjuserinfoadd.jsp"
+- name: 海天OA
+  regexps:
+    body:
+      - "HTVOS.js"
+- name: 信达OA
+  regexps:
+    body:
+      - "xdoa.cn"
+- name: 用友 NC
+  regexps:
+    body:
+      - "/nc/servlet/nc.ui.iufo.login.Index"
+- name: 用友 GRP-u8
+  regexps:
+    body:
+      - "/R9iPortal/js/jquery.js"
+- name: 用友 GRP-R9i
+  regexps:
+    body:
+      - R9iPortal/index.jsp
+- name: 用友-UFIDA
+  regexps:
+    body:
+      - "/System/Login/Login.asp?"
+- name: '用友 U8-Cloud '
+  regexps:
+    body:
+      - uclient.yonyou.com/api/uclient/public/download
+- name: 用友-RMIS
+  regexps:
+    body:
+      - css/commonlogincomp.min.css
+- name: 用友-时空企业信息管理门户
+  regexps:
+    body:
+      - mkbh = getCookie(
+- name: 用友-智能工厂_智能网关
+  regexps:
+    body:
+      - "/modules/core/client/views/header.client.view.html"
+- name: 蓝凌oa_EKP
+  regexps:
+    body:
+      - "/ekp/login.jsp"
+      - ekpwx-v.oa.camc
+      - resource/anonym.jsp
+      - "/sys/ui/js/LUI.js"
+- name: 红帆oa
+  regexps:
+    body:
+      - 红帆ioffice
+- name: 协达oa
+  regexps:
+    body:
+      - img.style.height=(bodyH-84-100)
+- name: 中腾oa
+  regexps:
+    body:
+      - zt_webframe
+- name: 华天动力oa
+  regexps:
+    body:
+      - "/htoa/css/CN/BLUE/login.css"
+- name: 通达OA
+  regexps:
+    body:
+      - "/static/images/tongda.ico"
+- name: 泛微E-mobile
+  regexps:
+    body:
+      - /page/manage/css/main.css
+      - weaver,e-mobile
+- name: 泛微E-Office
+  regexps:
+    body:
+      - "/lang/cn/javascript.lang.js"
+- name: 泛微云桥E-Bridge
+  regexps:
+    body:
+      - "/main/assets/images/favicon.ico"
+- name: 畅捷通
+  regexps:
+    body:
+      - 畅捷通 T+
+      - tp.control.css.ashx
+- name: discuz
+  regexps:
+    body:
+      - Discuz
+- name: Typecho
+  regexps:
+    body:
+      - Typecho</a>
+- name: 金蝶EAS
+  regexps:
+    body:
+      - easSessionId
+- name: 金蝶云星空
+  regexps:
+    body:
+      - Kingdee.BOS.XPF.App.xap
+- name: phpMyAdmin
+  regexps:
+    header:
+      - pma_lang
+      - phpMyAdmin
+    body:
+      - "/themes/pmahomme/img/logo_right.png"
+
+# VPN
+- name: linksys-vpn
+  regexps:
+    header:
+      - linksys-vpn
+- name: CISCO_VPN
+  regexps:
+    header:
+      - webvpn
+- name: o2security_vpn
+  regexps:
+    header:
+      - client_param=install_active
+- name: 网神VPN
+  regexps:
+    body:
+      - admin/js/virtual_keyboard.js
+- name: 网御星云VPN
+  regexps:
+    body:
+      - "/ssl/down/usbkey.exe"
+      - "/js/leadsec.js"
+- name: Citrix-Web-PN-Server
+  regexps:
+    body:
+      - Citrix Web PN Server
+- name: juniper_vpn
+  regexps:
+    body:
+      - welcome.cgi?p=logo
+      - "/images/logo_juniper_reversed.gif"
+- name: 深信服ssl-vpn
+  regexps:
+    body:
+      - login_psw.csp
+- name: Citrix/Netscaler VPN
+  regexps:
+    body:
+      - "/vpn/resources.js"
+- name: 奇安信VPN/网康
+  regexps:
+    body:
+      - new_style/deepblue.css
+      - admin/js/json2.js
+
+# 设备
+- name: H3C-AM8000
+  regexps:
+    body:
+      - AM8000
+- name: 汉柏安全网关
+  regexps:
+    body:
+      - OPZOON
+- name: 360企业版
+  regexps:
+    body:
+      - 360EntWebAdminMD5Secret
+- name: H3C公司产品
+  regexps:
+    body:
+      - "<title>Web managerment Home"
+      - ".h3c.com"
+      - service@h3c.com
+- name: H3C网络设备
+  regexps:
+    body:
+      - libs/MulPlatAPI.js
+- name: H3C ICG 1000
+  regexps:
+    body:
+      - ICG 1000系统管理
+- name: Citrix-Metaframe
+  regexps:
+    body:
+      - window.location="/Citrix/MetaFrame
+
+- name: thymeleaf
+  regexps:
+    body:
+      - thymeleaf
+- name: dubbo
+  regexps:
+    header:
+      - Basic realm="dubbo"
+
+# component
+- name: shiro
+  regexps:
+    header:
+      - rememberMe=
+
+- name: ajaxpro
+  regexps:
+    body:
+      - ajaxpro
+
+- name: ueditor编辑器
+  regexps:
+    body:
+      - ueditor.all
+- name: ueditor
+  level: 1
+  send_data: "/ueditor"
+  regexps:
+    body:
+      - ueditor.config.js
+- name: sourcemap
+  vuln: sourcemap-leak
+  regexps:
+    vuln:
+      - .js.map
+- name: webpack
+  regexps:
+    body:
+      - chunk-vendors
+- name: README.md
+  level: 1
+  send_data: "/README.md"
+  info: README leak
+  regexps:
+    vuln:
+      - readme
+      - "###"
+- name: finereport
+  level: 1
+  send_data: "/ReportServer"
+  info: composer leak
+  regexps:
+    vuln:
+      - "FineReport"
+- name: swagger
+  level: 1
+  send_data: "/swagger-ui.html"
+  info: swagger leak
+  regexps:
+    vuln:
+      - "Swagger UI"
+- name: druid
+  level: 1
+  send_data: "/druid/index.html"
+  info: druid leak
+  regexps:
+    vuln:
+      - "Druid Stat Index"
+- name: composer.json
+  level: 1
+  send_data: "/composer.json"
+  info: composer leak
+  regexps:
+    vuln:
+      - "\"require\": "
+#- name: LICENSE.txt
+#  level: 1
+#  send_data: "/LICENSE.txt"
+#  info: LICENSE leak
+#  regexps:
+#    vuln:
+#      - "copyleft"
+- name: LICENSE
+  level: 1
+  send_data: "/LICENSE"
+  info: LICENSE leak
+  regexps:
+    vuln:
+      - "copyleft"
+#- name: Dockerfile
+#  level: 1
+#  send_data: "/Dockerfile"
+#  info: Dockerfile leak
+#  regexps:
+#    vuln:
+#      - echo
+
+# device
+- name: H3C ER5100
+  regexps:
+    body:
+      - ER5100系统管理
+- name: CISCO_EPC3925
+  regexps:
+    body:
+      - Docsis_system
+- name: CISCO ASR
+  regexps:
+    body:
+      - CISCO ASR
+- name: H3C ER3200
+  regexps:
+    body:
+      - ER3200系统管理
+
+- name: Spark_Master
+  regexps:
+    body:
+      - Spark Master at
+- name: huawei_SRG2220
+  regexps:
+    body:
+      - HUAWEI SRG2220
+- name: huawei_router
+  default_port:
+    - '8443'
+  regexps:
+    body:
+      - UI_component/css/xtheme-black
+- name: 蓝凌EIS智慧协同平台
+  regexps:
+    body:
+      - "/scripts/jquery.landray.common.js"
+- name: 深信服EDR
+  regexps:
+    body:
+      - 终端检测响应平台
+      - featureDetect.js
+- name: 华为 NetOpen
+  regexps:
+    body:
+      - "/netopen/theme/css/inFrame.css"
+- name: 360主机卫士
+  regexps:
+    header:
+      - zhuji.360.cn
+- name: Nagios
+  regexps:
+    header:
+      - Nagios Access
+- name: H3C ER8300
+  regexps:
+    body:
+      - ER8300系统管理
+- name: Citrix-Access-Gateway
+  regexps:
+    body:
+      - Citrix Access Gateway
+- name: 华为 MCU
+  regexps:
+    body:
+      - McuR5-min.js
+- name: TP-LINK Wireless WDR3600
+  regexps:
+    body:
+      - TP-LINK Wireless WDR3600
+- name: 泛微-E-cology
+  regexps:
+    header:
+      - ecology_JSessionid
+    body:
+      - "/wui/theme/ecology"
+      - "/cloudstore/resource/pc/com"
+- name: TP-LINK Wireless WDR3600
+  regexps:
+    body:
+      - TP-LINK Wireless WDR3600
+- name: 华为_HUAWEI_ASG2050
+  regexps:
+    body:
+      - HUAWEI ASG2050
+- name: 360网站卫士
+  regexps:
+    body:
+      - 360wzb
+- name: Citrix-XenServer
+  regexps:
+    body:
+      - Citrix Systems, Inc. XenServer
+- name: H3C ER2100V2
+  regexps:
+    body:
+      - ER2100V2系统管理
+- name: zabbix
+  regexps:
+    header:
+      - zbx_sessionid
+    body:
+      - images/general/zabbix.ico
+      - Zabbix SIA
+- name: 360站长平台
+  regexps:
+    body:
+      - 360-site-verification
+- name: H3C ER3108GW
+  regexps:
+    body:
+      - ER3108GW系统管理
+- name: H3C ER3260G2
+  regexps:
+    body:
+      - ER3260G2系统管理
+- name: H3C ICG1000
+  regexps:
+    body:
+      - ICG1000系统管理
+- name: CISCO-CX20
+  regexps:
+    body:
+      - CISCO-CX20
+- name: CISCO-Router
+  regexps:
+    body:
+      - Cisco Systems Login
+- name: synology-router
+  regexps:
+    body:
+      - synologyrouter
+- name: H3C ER5200
+  regexps:
+    body:
+      - ER5200系统管理
+- name: 360网站卫士常用前端公共库
+  regexps:
+    body:
+      - libs.useso.com
+- name: H3C ER3100
+  regexps:
+    body:
+      - ER3100系统管理
+- name: H3C-SecBlade-FireWall
+  regexps:
+    body:
+      - js/MulPlatAPI.js
+- name: 360webfacil_360WebManager
+  regexps:
+    body:
+      - publico/template/
+- name: Citrix_Netscaler
+  regexps:
+    body:
+      - ns_af
+- name: H3C ER6300G2
+  regexps:
+    body:
+      - ER6300G2系统管理
+- name: H3C ER3260
+  regexps:
+    body:
+      - ER3260系统管理
+- name: 华为_HUAWEI_SRG3250
+  regexps:
+    body:
+      - HUAWEI SRG3250
+- name: Spark_Worker
+  regexps:
+    body:
+      - Spark Worker at
+- name: H3C ER3108G
+  regexps:
+    body:
+      - ER3108G系统管理
+- name: 深信服防火墙类产品
+  regexps:
+    body:
+      - SANGFOR FW
+- name: Citrix-ConfProxy
+  regexps:
+    body:
+      - confproxy
+- name: 360网站安全检测
+  regexps:
+    body:
+      - webscan.360.cn/status/pai/hash
+- name: H3C ER5200G2
+  regexps:
+    body:
+      - ER5200G2系统管理
+- name: 华为（HUAWEI）安全设备
+  regexps:
+    body:
+      - sweb-lib/resource/
+- name: H3C ER6300
+  regexps:
+    body:
+      - ER6300系统管理
+- name: 华为_HUAWEI_ASG2100
+  regexps:
+    body:
+      - HUAWEI ASG2100
+- name: TP-Link 3600 DD-WRT
+  regexps:
+    body:
+      - TP-Link 3600 DD-WRT
+- name: NETGEAR WNDR3600
+  regexps:
+    body:
+      - NETGEAR WNDR3600
+- name: H3C ER2100
+  regexps:
+    body:
+      - ER2100系统管理
+- name: 绿盟下一代防火墙
+  regexps:
+    body:
+      - NSFOCUS NF
+
+- name: Citrix-NetScaler
+  regexps:
+    body:
+      - NS-CACHE
+
+- name: 华为（HUAWEI）Secoway设备
+  regexps:
+    body:
+      - Secoway
+- name: 华为_HUAWEI_SRG1220
+  regexps:
+    body:
+      - HUAWEI SRG1220
+- name: H3C ER2100n
+  regexps:
+    body:
+      - ER2100n系统管理
+- name: H3C ER8300G2
+  regexps:
+    body:
+      - ER8300G2系统管理
+- name: 金蝶政务GSiS
+  regexps:
+    body:
+      - "/kdgs/script/kdgs.js"
+
+# 中间件
+- name: IIS
+  info: Directory traversal
+  regexps:
+    body:
+      - Bad Request (Invalid Hostname)
+    vuln:
+      - "- /</title>"
+- name: 普元EOS_console
+  level: 1
+  info: 普元EOS_console_leak
+  send_data: "/eosmgr/eos/EventDispatcher"
+  regexps:
+    vuln:
+      - EOS管理控制台
+- name: Jboss
+  regexps:
+    body:
+      - Welcome to JBoss
+      - jboss.css
+    header:
+      - JBoss
+
+- name: weblogic
+  regexps:
+    body:
+      - login_WebLogic_branding.png
+      - Branding_Login_WeblogicConsole.gif
+      - "<i>Hypertext Transfer Protocol -- HTTP/1.1</i>"
+    header:
+      - WebLogic
+      - ADMINCONSOLESESSION
+- name: weblogic-console
+  level: 1
+  send_data: "/console/login/LoginForm.jsp"
+  info: weblogic_console_leak
+  regexps:
+    vuln:
+      - 'WebLogic Server Version: (.*?)<'
+- name: WebSphere
+  regexps:
+    body:
+      - SRVE0255E
+      - ibm.ws.webcontainer.servlet
+      - IBM WebSphere Application Server
+- name: 普元EOS
+  regexps:
+    body:
+      - EOSOperator
+      - eos-web.js
+      - org.gocom
+    header:
+      - eos_style_cookie
+- name: 普元COFrame
+  regexps:
+    body:
+      - coframe
+
+# CMS
+- name: zzzcms
+  regexps:
+    body:
+      - zzzcms
+- name: thinkcmf
+  regexps:
+    body:
+      - thinkcmf
+- name: ThinkPHP
+  regexps:
+    header:
+      - ThinkPHP
+    body:
+      - "/Public/static/js/"
+      - 'think\exception\HttpException'
+- name: showdoc
+  regexps:
+    body:
+      - showdoc
+- name: 74CMS
+  regexps:
+    body:
+      - "74cms"
+- name: 金蝶中间件
+  regexps:
+    body:
+      - "-Error report"
+- name: 泽元站群管理系统ZCMS
+  regexps:
+    body:
+      - zcms_stat
+- name: 民友minyooCMS
+  regexps:
+    body:
+      - Minyoo
+      - "/tpl/8/images"
+- name: 中科汇联easysiteCMS
+  regexps:
+    body:
+      - huilan-jquery-ui
+- name: jspxcms
+  regexps:
+    body:
+      - Powered by Jspxcms
+- name: 奥远科技
+  regexps:
+    body:
+      - aykj.net
+- name: PhpCMS
+  regexps:
+    body:
+      - "index.php?m=content&c=index&a=lists"
+- name: MetInfo
+  regexps:
+    body:
+      - "MetInfo"
+
+- name: IdeaCMS
+  regexps:
+    body:
+      - "IdeaCMS"
+
+- name: 逐浪zoomla
+  regexps:
+    body:
+      - zoomla
+- name: ssCMS
+  regexps:
+    body:
+      - SS CMS
+      - /sitefiles/assets
+- name: FineCMS
+  regexps:
+    body:
+      - FineCMS
+- name: 向日葵
+  regexps:
+    body:
+      - '{"success":false,"msg":"Verification failure"}'
+- name: IdeaCMS
+  regexps:
+    body:
+      - "IdeaCMS"
+- name: 博达VSB
+  regexps:
+    body:
+      - Visual SiteBuilder
+- name: 合正CMS
+  regexps:
+    body:
+      - "/cms/cmsadmin/infopub"
+- name: phpok
+  regexps:
+    body:
+      - phpok
+
+- name: PHPMyWind
+  regexps:
+    body:
+      - PHPMyWind
+
+- name: codeigniter
+  regexps:
+    header:
+      - ci_session
+- name: weaver-ebridge
+  regexps:
+    body:
+      - e-Bridge
+- name: Laravel
+  regexps:
+    header:
+      - laravel_session
+- name: DWR
+  regexps:
+    body:
+      - dwr/engine.js
+- name: swagger-ui
+  regexps:
+    body:
+      - "/swagger"
+- name: 大汉版通发布系统
+  regexps:
+    body:
+      - "/module/jslib/urite"
+      - 大汉版通发布系统
+      - 大汉网络
+- name: JCMS(捷点)
+  regexps:
+    body:
+      - JCms
+      - cnvp.com.cn
+- name: G4Studio
+  regexps:
+    body:
+      - g4it
+      - g4.ico
+
+- name: 思迪产品_thinkive
+  regexps:
+    body:
+      - thinkiveJs.min.js
+- name: 京伦CMS
+  regexps:
+    body:
+      - jltech.cn
+- name: 翰臣CMS
+  regexps:
+    body:
+      - 翰臣科技
+- name: eweishop
+  regexps:
+    body:
+      - ewei_shop
+- name: Joomla
+  regexps:
+    body:
+      - mootools-core.js
+      - Joomla
+- name: 深信服上网行为管理系统
+  level: 1
+  send_data: "/login/img/product_logo.png"
+  regexps:
+    md5:
+      - d8de64b0ca4281380295aa23500267ca
+- name: 大汉Web
+  regexps:
+    body:
+      - hanweb.css
+- name: dreamCMS
+  regexps:
+    body:
+      - dreamer-cms
+- name: TongWeb
+  regexps:
+    header:
+      - TongWeb Serve
+
+- name: JeeSite
+  regexps:
+    body:
+      - jeesite.min.css
+- name: JeeCMS
+  regexps:
+    body:
+      - "/r/cms"
+- name: epoint新点软件cms
+  regexps:
+    header:
+      - epointserver
+    body:
+      - "webBuilderCommon"
+- name: Vmware Zimbra
+  regexps:
+    body:
+      - Zimbra Collaboration
+      - "/zimbra/css/common"
+- name: Vmware ESXi
+  regexps:
+    body:
+      - ID_EESX_Welcome
+- name: VMware vFabric
+  regexps:
+    body:
+      - VMware vFabric
+- name: Vmware Center
+  regexps:
+    body:
+      - ID_VC_Welcome
+- name: vmware oneaccess
+  regexps:
+    body:
+      - SAAS/horizon/css
+      - Workspace ONE Access
+- name: vmware identity
+  regexps:
+    body:
+      - cfg/js-lib
+      - VMware Identity
+- name: VisualSVN
+  regexps:
+    body:
+      - VisualSVN Server
+      - 0;URL=svn/
+- name: 锐捷EWeb
+  regexps:
+    body:
+      - pub/ui/rui-min.css
+      - NBR路由器
+- name: 锐捷AP
+  regexps:
+    body:
+      - common.sea.config.js
+- name: springboot
+  regexps:
+    body:
+      - Whitelabel Error Page
+      - No message available
+      - '{"timestamp":'
+- name: springcloud-function
+  send_data: "/functionRouter"
+  regexps:
+    body:
+      - '"error":"Internal Server Error"'
+- name: spring
+  regexps:
+    header:
+      - springframework
+- name: spring-cloud-hystrix
+  default_port:
+    - '2001'
+  regexps:
+    header:
+      - hystrix-dashboard
+    body:
+      - hystrix
+- name: springsecurity
+  regexps:
+    body:
+      - Full authentication is required
+- name: frp
+  regexps:
+    body:
+      - Faithfully yours, frp
+- name: tomcat
+  vuln: Directory traversal
+  regexps:
+    vuln:
+      - Directory Listing For
+    regexp:
+      - "<h3>Apache Tomcat/(.*)</h3>"
+      - "<title>Apache Tomcat/(.*)</title>"
+    header:
+      - Apache-Coyote
+- name: Apache
+  vuln: Directory traversal
+  regexps:
+    vuln:
+      - Index of /
+- name: SWIFT
+  regexps:
+    body:
+      - swift.generic
+# 大数据
+- name: elasticsearch
+  default_port:
+    - '9200'
+  regexps:
+    body:
+      - '"cluster_name" : "elasticsearch"'
+- name: kibana
+  default_port:
+    - '9200'
+  regexps:
+    body:
+      - 'Kibana'
+- name: mongodb
+  default_port:
+    - '27017'
+  regexps:
+    body:
+      - It looks like you are trying to access MongoDB over HTTP on the native driver
+        port.
+- name: hadoop
+  default_port:
+    - '8088'
+  vuln: hadoop_yarn_unauthorized
+  regexps:
+    vuln:
+      - |-
+        <title>
+            All Applications
+#- name: tomcat-manager
+#  level: 1
+#  info: tomcat_manager_leak
+#  send_data: "/manager/html"
+#  regexps:
+#    vuln:
+#      - You are not authorized to view this page
+- name: Grafana
+  default_port:
+    - '3000'
+  regexps:
+    body:
+      - Grafana</title>
+- name: FastAdmin
+  regexps:
+    body:
+      - fastadmin
+
+- name: 帆软数据决策系统
+  regexps:
+    body:
+      - ReportServer?op
+
+# 堡垒机
+- name: jumpserver
+  regexps:
+    body:
+      - "/static/img/facio.jico"
+      - JumpServer</title>
+- name: 天玥堡垒机
+  regexps:
+    body:
+      - kaasapp/views/css/assign.css
+- name: 齐治堡垒机
+  regexps:
+    body:
+      - logo-icon-ico72.png
+      - image/top_logo.ico
+- name: 安恒云堡垒机
+  regexps:
+    body:
+      - DBAPPSecurity
+      - 安恒云堡垒机
+- name: 中科网威堡垒机
+  regexps:
+    body:
+      - zk.appname
+- name: VMware_vRealize
+  regexps:
+    body:
+      - vRealize
+- name: APACHE_CAS
+  regexps:
+    body:
+      - Central Authentication Service
+      - execution=
+- name: 金山timon云杀毒
+  regexps:
+    body:
+      - iepngfix_tilebg.js
+- name: 群晖NAS
+  regexps:
+    body:
+      - DiskStation
+- name: 山石网科系统
+  regexps:
+    body:
+      - Hillstone
+- name: 金山企业版(猎鹰)
+  regexps:
+    body:
+      - kaasapp/views/css/assign.css
+- name: 金山企业版
+  regexps:
+    body:
+      - kaasapp/views/css/assign.css
+
+
+
+# EDR
+- name: 金山EDR
+  regexps:
+    body:
+      - 终端安全系统Web控制台
+- name: 北信源EDR
+  regexps:
+    body:
+      - 北信源网络防病毒系统
+- name: 联软EDR
+  regexps:
+    body:
+      - Resource/views/images/common/logo2.png
+      - 联软IT安全运维管理系统
+- name: 奇安信新天擎EDR
+  regexps:
+    body:
+      - 新天擎
+      - "/res/css/tools/index.css"
+- name: 奇安信/360天擎EDR
+  regexps:
+    body:
+      - 360天擎终端安全管理系统
+- name: 天融信EDR
+  regexps:
+    body:
+      - 天融信终端威胁防御系统
+- name: 通软EDR
+  regexps:
+    body:
+      - "/default/uninstall.html"
+      - "/Gsc/"
+
+
+
+
+
+# 厂家
+- name: 深信服设备
+  regexps:
+    body:
+      - sangfor.com.cn
+    header:
+      - SinforHttpd
+- name: 华为设备
+  regexps:
+    body:
+      - huawei
+- name: 网御星云设备
+  regexps:
+    body:
+      - leadsec
+- name: 启明星辰设备
+  regexps:
+    body:
+      - 北京启明星辰信息安全技术有限公司
+      - venustech
+- name: 奇安信设备
+  regexps:
+    header:
+      - QiAnXin
+- name: 联软设备
+  regexps:
+    body:
+      - leagsoft
+- name: 网康设备
+  regexps:
+    body:
+      - netentsec
+      - 网康
+- name: 奇安信网神/360天堤防火墙
+  regexps:
+    body:
+      - resources/image/logo_header.png
+- name: 网神3600防火墙
+  regexps:
+    body:
+      - 网神SecGate
+
+
+# 邮件系统
+- name: 科信邮件系统_kxmail
+  regexps:
+    body:
+      - www.kxmail.net
+- name: 30盛安邮件系统
+  regexps:
+    body:
+      - 30san.all
+- name: acmailer
+  regexps:
+    body:
+      - acmailer
+- name: 安邮
+  regexps:
+    body:
+      - suremail.cn
+- name: 17mail易企邮
+  regexps:
+    body:
+      - 易企邮
+- name: 亿邮邮件系统
+  regexps:
+    body:
+      - eYou
+- name: exchange
+  regexps:
+    body:
+      - "/owa/auth.owa"
+- name: 万网企业云邮箱
+  regexps:
+    body:
+      - "mxhichina"
+- name: 科信邮件系统
+  regexps:
+    body:
+      - "/systemfunction"
+- name: winwebmail
+  regexps:
+    body:
+      - "WinWebMail"
+- name: 泰信TMailer邮件系统
+  regexps:
+    body:
+      - "Tmailer"
+
+# tmp fingers from fofa
+- name: .NET
+  regexps:
+    body:
+      - content="Visual Basic .NET 7.1
+- name: 08cms
+  regexps:
+    body:
+      - content="08CMS
+      - typeof(_08cms)
+- name: 1024 CMS
+  regexps:
+    body:
+      - Powered by 1024 CMS
+      - content="1024 CMS
+- name: 1024cms
+  regexps:
+    body:
+      - Powered by 1024 CMS
+      - generator" content="1024 CMS (c)
+- name: 171cms
+  regexps:
+    body:
+      - content="171cms
+      - 171cms
+- name: 1und1
+  regexps:
+    body:
+      - /shop/catalog/browse?sessid=
+- name: 25yi
+  regexps:
+    body:
+      - Powered by 25yi
+      - css/25yi.css
+- name: 2z project
+  regexps:
+    body:
+      - Generator" content="2z project
+- name: 313自助建站
+  regexps:
+    header:
+      - 313CMS
+- name: 360webfacil_360WebManager
+  regexps:
+    body:
+      - publico/template/
+      - zonapie
+      - 360WebManager Software
+- name: 360主机卫士
+  regexps:
+    header:
+      - X-Safe-Firewall
+- name: 360企业版
+  regexps:
+    body:
+      - 360EntInst
+- name: 360站长平台
+  regexps:
+    body:
+      - 360-site-verification
+- name: 360网站卫士
+  regexps:
+    header:
+      - 360wzb
+- name: 360网站卫士常用前端公共库
+  regexps:
+    body:
+      - libs.useso.com
+    header:
+      - libs.useso.com
+- name: 360网站安全检测
+  regexps:
+    body:
+      - webscan.360.cn/status/pai/hash
+- name: 3COM NBX
+  regexps:
+    body:
+      - NBX NetSet
+      - splashTitleIPTelephony
+- name: 3COM_NBX
+  regexps:
+    body:
+      - NBX NetSet
+    header:
+      - Alternates
+- name: 3dcart
+  regexps:
+    body:
+      - powered by 3dcart
+      - '<!--START: 3dcart stats-->'
+    header:
+      - 'X-Powered-By: 3DCART'
+- name: 4D
+  regexps:
+    header:
+      - Server:4D
+- name: 4images
+  regexps:
+    body:
+      - powered by 4images
+      - 4homepages.de
+    header:
+      - 4images_
+- name: 51la
+  regexps:
+    body:
+      - js.users.51.la
+- name: 51yes
+  regexps:
+    body:
+      - 51yes.com/click.aspx
+- name: 53客服
+  regexps:
+    body:
+      - tb.53kf.com/code/
+- name: 68 Classifieds
+  regexps:
+    body:
+      - 68 Classifieds
+- name: 6kbbs
+  regexps:
+    body:
+      - Powered by 6kbbs
+      - generator" content="6KBBS
+- name: 74cms
+  regexps:
+    body:
+      - content="74cms.com
+      - content="骑士CMS
+      - Powered by <a href="http://www.74cms.com/"
+      - /templates/default/css/common.css
+      - selectjobscategory
+- name: 78oa
+  regexps:
+    body:
+      - /resource/javascript/system/runtime.min.js
+      - license.78oa.com
+      - 78oa
+      - src="/module/index.php
+- name: Aardvark Topsites
+  regexps:
+    body:
+      - Aardvark Topsites
+- name: ABO.CMS
+  regexps:
+    header:
+      - ABO.CMS
+- name: ABO_CMS
+  regexps:
+    header:
+      - a-powered-by
+- name: Abyss
+  regexps:
+    header:
+      - 'Server: Abyss'
+- name: Accellion Secure File Transfer
+  regexps:
+    body:
+      - Secured by Accellion
+    header:
+      - sfcurl=deleted;
+- name: Accordion Content script
+  regexps:
+    body:
+      - ddaccordion.js
+- name: AChecker Web accessibility evaluation tool
+  regexps:
+    body:
+      - content="AChecker is a Web accessibility
+      - 'Checker : Web Accessibility Checker'
+- name: Acidcat CMS
+  regexps:
+    body:
+      - Powered by Acidcat CMS
+      - Start Acidcat CMS footer information
+      - /css/admin_import.css
+- name: Acidcat_CMS
+  regexps:
+    body:
+      - Start Acidcat CMS footer information
+      - Powered by Acidcat CMS
+- name: Acme embeddable HTTP server
+  regexps:
+    header:
+      - 'Server: Acme'
+- name: ACSNO网络探针
+  regexps:
+    body:
+      - 探针管理与测试系统-登录界面
+- name: ACTi
+  regexps:
+    body:
+      - Web Configurator
+      - ACTi Corporation All Rights Reserved
+- name: activeCollab
+  regexps:
+    body:
+      - powered by activeCollab
+      - <p id="powered_by"><a href="http://www.activecollab.com/"
+- name: ActiveHTML
+  regexps:
+    header:
+      - ActiveHTML
+- name: activeWeb-Content-Server
+  regexps:
+    body:
+      - AWNOCACHEBEGIN__AWNOCACHEBEGIN__AWNOCACHEBEGIN__AWNOCACHEBEGIN__AWNOCACHEBEGIN
+      - activeWeb cache extension
+    header:
+      - x-awcache
+- name: ad network script
+  regexps:
+    body:
+      - Web Administration Panel
+- name: AdaptCMS
+  regexps:
+    body:
+      - AdaptCMS
+    header:
+      - adaptcms
+- name: Adblock
+  regexps:
+    header:
+      - X-Adblock-Key
+- name: Adcon Telemetry Gateway
+  regexps:
+    body:
+      - Adcon Telemetry GmbH;
+    header:
+      - addUPI
+- name: addthis
+  regexps:
+    body:
+      - addthis.com/js/
+- name: adinfinity
+  regexps:
+    body:
+      - adinfinity.com.au/adapt
+- name: Adiscon_LogAnalyzer
+  regexps:
+    body:
+      - Adiscon LogAnalyzer
+      - Adiscon LogAnalyzer
+      - Adiscon GmbH
+- name: Adobe Connect
+  regexps:
+    body:
+      - /common/scripts/showContent.js
+    header:
+      - BREEZESESSION=
+- name: Adobe-Flash
+  regexps:
+    body:
+      - /x-shockwave-flash
+      - /go/getflashplayer
+      - embedswf
+- name: Adobe_ CQ5
+  regexps:
+    body:
+      - _jcr_content
+- name: Adobe_GoLive
+  regexps:
+    body:
+      - generator" content="Adobe GoLive
+- name: Adobe_RoboHelp
+  regexps:
+    body:
+      - generator" content="Adobe RoboHelp
+- name: adriver
+  regexps:
+    body:
+      - ad.adriver.ru/cgi-bin
+- name: AdSubtract proxy
+  regexps:
+    header:
+      - 'AdSubtract '
+- name: ADTRAN-Device
+  regexps:
+    header:
+      - NetVanta
+- name: Advanced Electron Forum
+  regexps:
+    body:
+      - Powered By AEF
+      - content="aef
+    header:
+      - aefsid
+- name: Advanced-Image-Hosting-Script
+  regexps:
+    body:
+      - yabsoft.com
+      - Welcome to install AIHS Script
+- name: advancedwebstats
+  regexps:
+    body:
+      - caphyon-analytics.com/aws.js
+- name: Advantech-WebAccess
+  regexps:
+    body:
+      - /bw_templete1.dwt
+      - /broadweb/WebAccessClientSetup.exe
+      - /broadWeb/bwuconfig.asp
+- name: ADXStudio CMS
+  regexps:
+    body:
+      - Powered by Adxstudio
+      - poweredbyadx.png
+    header:
+      - anonprofile
+- name: AD_RS设备
+  regexps:
+    header:
+      - AD_RS_COOKIE
+- name: Aethra_Telecommunications_Operating_System
+  regexps:
+    header:
+      - atos
+- name: AfterLogic-WebMail
+  regexps:
+    body:
+      - AfterLogic WebMail Pro
+    header:
+      - PHPWEBMAILSESSID
+- name: Aicache
+  regexps:
+    header:
+      - X-Aicache
+- name: AiCart
+  regexps:
+    body:
+      - APP_authenticate
+- name: AIDeX
+  regexps:
+    body:
+      - http://www.aidex.de/
+    header:
+      - aidex
+- name: AirLink_modem
+  regexps:
+    header:
+      - Modem@AirLink.com
+- name: AirOS
+  regexps:
+    header:
+      - cookiechecker?uri=
+- name: AirTiesRouter
+  regexps:
+    body:
+      - Airties
+- name: AirvaeCommerce
+  regexps:
+    body:
+      - E-Commerce Shopping Cart Software
+- name: AJA-Video-Converter
+  regexps:
+    body:
+      - eParamID_SWVersion
+- name: Akamai
+  regexps:
+    header:
+      - X-Akamai-Transformed
+- name: Akiva-WebBoard
+  regexps:
+    body:
+      - Powered by WebBoard
+    header:
+      - webboard=
+- name: Aladdin-HASP-License-Manager
+  regexps:
+    header:
+      - HASP
+- name: ALCASAR
+  regexps:
+    body:
+      - valoriserDiv5
+- name: Allegro-Software-RomPager
+  regexps:
+    header:
+      - Allegro-Software-RomPager
+- name: AllNewsManager_NET
+  regexps:
+    body:
+      - AllNewsManager
+- name: Allomani
+  regexps:
+    body:
+      - content="Allomani
+      - Programmed By Allomani
+- name: AlloyUI
+  regexps:
+    body:
+      - cdn.alloyui.com
+- name: Alpha-Five
+  regexps:
+    header:
+      - A5wSessionId
+- name: AlstraSoft-AskMe
+  regexps:
+    body:
+      - <a href="pass_recover.php">
+      - http://www.alstrasoft.com
+- name: AlstraSoft-EPay-Enterprise
+  regexps:
+    body:
+      - EPay Enterprise
+      - /shop.htm?action=view
+- name: Alt-N-MDaemon-WorldClient
+  regexps:
+    body:
+      - /WorldClient.dll
+    header:
+      - WDaemon
+- name: Alt-Svc
+  regexps:
+    header:
+      - Alt-Svc
+- name: Alternate-Protocol
+  regexps:
+    header:
+      - Alternate-Protocol
+- name: AlumniServer
+  regexps:
+    body:
+      - AlumniServerProject.php
+      - content="Alumni
+- name: AM4SS
+  regexps:
+    body:
+      - Powered by am4ss
+      - am4ss.css
+- name: Amaya
+  regexps:
+    body:
+      - generator" content="Amaya
+- name: amazon-cloudfront
+  regexps:
+    header:
+      - X-Amz-Cf-Id
+- name: Amiro-CMS
+  regexps:
+    body:
+      - 'Powered by: Amiro CMS'
+      - -= Amiro.CMS (c) =-
+- name: AMR-WinControl
+  regexps:
+    header:
+      - AMR_WinControl
+- name: Ananyoo-CMS
+  regexps:
+    body:
+      - content="http://www.ananyoo.com
+- name: Android Webcam Server
+  regexps:
+    header:
+      - Android Webcam Server
+- name: ANECMS
+  regexps:
+    body:
+      - content="Erwin Aligam - ealigam@gmail.com
+- name: angular框架
+  regexps:
+    body:
+      - src="angular.min.js
+      - src="angular.js
+- name: AnyGate
+  regexps:
+    body:
+      - AnyGate
+      - /anygate.php
+- name: anymacro
+  regexps:
+    body:
+      - document.aa.F_email
+      - AnyWebApp
+    header:
+      - LOGIN_KEY
+- name: AnZuWAF
+  regexps:
+    header:
+      - AnZuWAF
+- name: AOLserver
+  regexps:
+    header:
+      - AOLserver
+- name: AP-Router
+  regexps:
+    body:
+      - AP Router New Generation
+- name: Apabi数字资源平台
+  regexps:
+    body:
+      - Default/apabi.css
+      - <link href="HTTP://apabi
+      - 数字资源平台
+- name: Apache-Archiva
+  regexps:
+    body:
+      - Apache Archiva
+      - /archiva.js
+      - /archiva.css
+- name: Apache-Cocoon
+  regexps:
+    header:
+      - x-cocoon-version
+- name: Apache-Forrest
+  regexps:
+    body:
+      - content="Apache Forrest
+      - name="Forrest
+- name: Apache-Traffic-Server
+  regexps:
+    header:
+      - ApacheTrafficServer
+- name: Apache-Wicket
+  regexps:
+    body:
+      - xmlns:wicket=
+      - /org.apache.wicket.
+- name: APC-UPS-Management-Card
+  regexps:
+    body:
+      - class="apclogo"
+    header:
+      - APC Management Card
+- name: APC_Management
+  regexps:
+    body:
+      - This object on the APC Management Web Server is protected
+    header:
+      - APC Management Card
+- name: appcms
+  regexps:
+    body:
+      - Powerd by AppCMS
+- name: ApPHP-Calendar
+  regexps:
+    body:
+      - This script was generated by ApPHP Calendar
+- name: AppServ
+  regexps:
+    body:
+      - appserv/softicon.gif
+      - index.php?appservlang=th
+- name: AppWall
+  regexps:
+    header:
+      - X-SL-CompState
+- name: Arab-Portal
+  regexps:
+    body:
+      - 'Powered by: Arab'
+- name: ArGoSoft-Mail-Server
+  regexps:
+    body:
+      - ArGoSoft Mail Server Plus for
+    header:
+      - ArGoSoft Mail Server
+- name: ARN01154U4
+  regexps:
+    header:
+      - ARN01154U4
+- name: Array_Networks_VPN
+  regexps:
+    body:
+      - an_util.js
+- name: ARRIS-Touchstone-Router
+  regexps:
+    body:
+      - ARRIS Group
+      - /arris_style.css
+- name: arrisi_Touchstone
+  regexps:
+    body:
+      - Touchstone Status
+      - passWithWarnings
+- name: Artiphp-CMS
+  regexps:
+    body:
+      - copyright Artiphp
+- name: Aruba-Device
+  regexps:
+    body:
+      - /images/arubalogo.gif
+      - Aruba Networks
+- name: ashnews
+  regexps:
+    body:
+      - ashnews
+- name: ASP-Nuke
+  regexps:
+    body:
+      - CONTENT="ASP-Nuke
+      - content="ASPNUKE
+- name: ASP
+  regexps:
+    header:
+      - 'X-Powered-By: ASP'
+- name: ASP.NET MVC
+  regexps:
+    header:
+      - Aspnetmvc
+- name: asp168欧虎
+  regexps:
+    body:
+      - upload/moban/images/style.css
+      - default.php?mod=article&do=detail&tid
+- name: ASPCMS
+  regexps:
+    body:
+      - Powered by ASPCMS
+      - content="ASPCMS
+      - /inc/AspCms_AdvJs.asp
+- name: ASPilot-Cart
+  regexps:
+    body:
+      - content="Pilot Cart
+      - /pilot_css_default.css
+- name: ASProxy
+  regexps:
+    body:
+      - Surf the web invisibly using ASProxy power
+      - btnASProxyDisplayButton
+- name: ASPThai_Net-Webboard
+  regexps:
+    body:
+      - ASPThai.Net Webboard
+- name: Astaro-Command-Center
+  regexps:
+    body:
+      - /acc_aggregated_reporting.js
+      - /js/_variables_from_backend.js?
+- name: Astaro-Security-Gateway
+  regexps:
+    body:
+      - wfe/asg/js/app_selector.js?t=
+      - /doc/astaro-license.txt
+      - /js/_variables_from_backend.js?t=
+- name: Asterisk
+  regexps:
+    body:
+      - asterisk_rawmanPath
+    header:
+      - Asterisk
+- name: ASUS_RTAC66U
+  regexps:
+    body:
+      - RT-AC66U
+    header:
+      - RT-AC66U
+- name: Atmail-WebMail
+  regexps:
+    body:
+      - Powered by Atmail
+      - /index.php/mail/auth/processlogin
+      - <input id="Mailserverinput
+- name: Atmail
+  regexps:
+    body:
+      - Powered by Atmail
+      - FixShowMail
+    header:
+      - atmail6
+- name: Atomic-Photo-Album
+  regexps:
+    body:
+      - Atomic Photo Album
+- name: ATutor elearning
+  regexps:
+    body:
+      - content="ATutor
+      - ATutor.course
+    header:
+      - ATutorID
+- name: Atvise-webMI
+  regexps:
+    body:
+      - alarmlistbutton
+    header:
+      - atvise
+- name: Aurion
+  regexps:
+    body:
+      - <!-- Aurion Teal will be used as the login-time default
+      - /aurion.js
+- name: Auto-CMS
+  regexps:
+    body:
+      - Powered by Auto CMS
+      - content="AutoCMS
+- name: AutoIndex-PHP-Script
+  regexps:
+    body:
+      - title="AutoIndex Default
+      - autoindex.sourceforge.net/
+    header:
+      - AutoIndex2
+- name: Auxilium-PetRatePro
+  regexps:
+    body:
+      - index.php?cmd=11
+- name: AV-Arcade
+  regexps:
+    body:
+      - Powered by <a href="http://www.avscripts.net/avarcade/
+- name: AvantFAX
+  regexps:
+    body:
+      - content="Web 2.0 HylaFAX
+      - images/avantfax-big.png
+- name: AvantFAX传真管理
+  regexps:
+    body:
+      - content="Web 2.0 HylaFAX management
+- name: Avaya-Aura-Utility-Server
+  regexps:
+    body:
+      - vmsTitle">Avaya Aura&#8482;&nbsp;Utility Server
+      - /webhelp/Base/Utility_toc.htm
+- name: Avaya-IP-Office
+  regexps:
+    body:
+      - About IP Office
+    header:
+      - IPOffice
+- name: Avaya-Secure-Router
+  regexps:
+    body:
+      - <b>About Avaya Secure Router</b>
+      - <span id="guiname">Avaya Secure Router
+    header:
+      - Avaya Http Server
+- name: AVCON6
+  regexps:
+    body:
+      - filename=AVCON6Setup.exe
+      - AVCON6系统管理平台
+      - language_dispose.action
+- name: Avocent-DSView
+  regexps:
+    body:
+      - /dsview/images/favicon.ico
+      - /dsview/protected/login.do
+    header:
+      - Avocent DSView
+- name: AVTech-Video-Web-Server
+  regexps:
+    body:
+      - '--- VIDEO WEB SERVER ---'
+      - /AV732E/setup.exe
+    header:
+      - 'Server: AV-TECH'
+- name: awstats
+  regexps:
+    body:
+      - awstats.pl?config=
+- name: awstats_admin
+  regexps:
+    body:
+      - generator" content="AWStats
+      - <frame name="mainleft" src="awstats.pl?config=
+- name: awstats_misc_tracker
+  regexps:
+    body:
+      - /js/awstats_misc_tracker.js
+- name: AWStats网站日志分析工具
+  regexps:
+    body:
+      - content="AWStats
+      - Created by awstats
+- name: AxCMS_net
+  regexps:
+    body:
+      - content="AxCMS.net
+      - Generated by AxCMS.net
+    header:
+      - AxCMS.net
+- name: Axel-Device
+  regexps:
+    header:
+      - Axel Admin Server
+- name: Axentra-HipServ
+  regexps:
+    body:
+      - content="Axentra
+    header:
+      - x-axentra-version
+- name: Axigen-Mail-Server
+  regexps:
+    body:
+      - 'AXIGEN Webmail - '
+    header:
+      - Axigen-Webmail
+- name: Axis-Commerce
+  regexps:
+    body:
+      - Powered by Axis
+      - Login to Axis administrator
+    header:
+      - axisid
+- name: Axis-Network-Camera
+  regexps:
+    body:
+      - AXIS Video Server
+      - /incl/trash.shtml
+- name: Axis-PrintServer
+  regexps:
+    body:
+      - psb_printjobs.gif
+      - /cgi-bin/prodhelp?prod=
+- name: axis2-web
+  regexps:
+    body:
+      - axis2-web/css/axis-style.css
+- name: Axous
+  regexps:
+    body:
+      - content="Axous
+      - title="Axous Shareware Shop
+- name: axTLS embad httpd
+  regexps:
+    header:
+      - axhttpd
+- name: Axway-SecureTransport
+  regexps:
+    body:
+      - Welcome to SecureTransport
+    header:
+      - SecureTransport
+- name: Azure_ARR
+  regexps:
+    header:
+      - ARRAffinity
+- name: b2bbuilder
+  regexps:
+    body:
+      - content="B2Bbuilder
+      - translateButtonId = "B2Bbuilder
+- name: b2evolution
+  regexps:
+    body:
+      - /powered-by-b2evolution-150t.gif
+      - Powered by b2evolution
+      - content="b2evolution
+- name: BAAP-Mobile-Version
+  regexps:
+    header:
+      - x-mobilized-by
+- name: BackBee
+  regexps:
+    body:
+      - <div id="bb5-site-wrapper">
+- name: BackupPC
+  regexps:
+    header:
+      - Backup
+- name: bacula-web
+  regexps:
+    body:
+      - Webacula
+      - Bacula Web
+      - Bacula-Web
+      - bacula-web
+- name: BadBlue
+  regexps:
+    header:
+      - BadBlue
+- name: Bad_Behavior
+  regexps:
+    header:
+      - bb2_screener_
+- name: baidu广告联盟
+  regexps:
+    body:
+      - http://cpro.baidu.com/cpro/ui/c.js
+      - http://cbjs.baidu.com/js/m.js
+- name: baidu站长平台
+  regexps:
+    body:
+      - baidu-site-verification
+- name: baidu统计
+  regexps:
+    body:
+      - hm.baidu.com/h.js
+- name: baocms
+  regexps:
+    body:
+      - content="BAOCMS
+      - baocms
+- name: Barracuda-Backup-Server
+  regexps:
+    header:
+      - BACKUP_LOCAL_LOCALE
+- name: Barracuda-Load-Balancer
+  regexps:
+    header:
+      - BARRACUDA_LB_COOKIE
+- name: Barracuda-Spam-Firewall
+  regexps:
+    body:
+      - 'Barracuda Spam & Virus Firewall: Welcome'
+      - /barracuda.css
+      - http://www.barracudanetworks.com?a=bsf_product
+- name: BASE
+  regexps:
+    body:
+      - <!-- Basic Analysis and Security Engine (BASE) -->
+      - mailto:base@secureideas.net
+- name: Basic-PHP-Events-Lister
+  regexps:
+    body:
+      - 'Powered by: <a href="http://www.mevin.com/">'
+- name: Basilic
+  regexps:
+    body:
+      - /Software/Basilic
+- name: basler
+  regexps:
+    body:
+      - Basler AG
+    header:
+      - fnord
+- name: Batavi
+  regexps:
+    body:
+      - content="Batavi.org
+    header:
+      - Batavi
+- name: bbPress
+  regexps:
+    body:
+      - <!-- If you like showing off the fact that your server rocks -->
+      - is proudly powered by <a href="http://bbpress.org
+- name: beecms
+  regexps:
+    body:
+      - powerd by
+      - BEESCMS
+      - template/default/images/slides.min.jquery.js
+- name: Belkin-Modem
+  regexps:
+    body:
+      - content="Belkin
+- name: Ben-SSL
+  regexps:
+    header:
+      - Ben-SSL
+- name: Bentley-Systems-ProjectWise
+  regexps:
+    body:
+      - href="ProjectWise.ico
+      - ProjectWise Web Server
+    header:
+      - Bentley.WebSession=
+- name: BestShopPro
+  regexps:
+    body:
+      - content="www.bst.pl
+- name: BIGACE
+  regexps:
+    body:
+      - content="BIGACE
+      - Site is running BIGACE
+- name: Bigcommerce
+  regexps:
+    header:
+      - SHOP_SESSION_TOKEN
+- name: BigDump
+  regexps:
+    body:
+      - BigDump
+      - 'BigDump: Staggered MySQL Dump Importer'
+- name: Billion-Router
+  regexps:
+    header:
+      - Basic realm="WebAdmin
+- name: BinarySec-Firewall
+  regexps:
+    header:
+      - X-BinarySEC
+- name: BinarySec
+  regexps:
+    header:
+      - X-Binarysec-Via
+- name: Binatone WR1500N
+  regexps:
+    header:
+      - WR1500N
+- name: Binatone WR1505N3
+  regexps:
+    header:
+      - WR1505N3
+- name: Binatone WR3005N3
+  regexps:
+    header:
+      - WR3005N3
+- name: Binatone WRN342
+  regexps:
+    header:
+      - WRN342
+- name: Biromsoft-WebCam
+  regexps:
+    body:
+      - Biromsoft WebCam
+- name: Biscom-Delivery-Server
+  regexps:
+    body:
+      - /bds/stylesheets/fds.css
+      - /bds/includes/fdsJavascript.do
+- name: bit-service
+  regexps:
+    body:
+      - bit-xxzs
+      - xmlpzs/webissue.asp
+- name: BitKeeper
+  regexps:
+    header:
+      - bkhttp
+- name: BitrixSiteManager
+  regexps:
+    header:
+      - 'X-Powered-Cms: Bitrix Site Manager'
+- name: bitweaver
+  regexps:
+    body:
+      - content="bitweaver
+      - href="http://www.bitweaver.org">Powered by
+- name: Blackboard
+  regexps:
+    header:
+      - X-Blackboard-Appserver
+- name: BlackJumboDog
+  regexps:
+    header:
+      - BlackJumboDog
+- name: Blazix
+  regexps:
+    header:
+      - Blazix Java Server
+- name: BlockDos
+  regexps:
+    header:
+      - BlockDos.net
+- name: BlogEngine_NET
+  regexps:
+    body:
+      - pics/blogengine.ico
+      - http://www.dotnetblogengine.net
+- name: BlognPlus
+  regexps:
+    body:
+      - href="http://www.blogn.org
+- name: blog_fc2
+  regexps:
+    header:
+      - cookietest=test
+- name: BloofoxCMS
+  regexps:
+    body:
+      - content="bloofoxCMS
+      - Powered by <a href="http://www.bloofox.com
+- name: Blue-Coat-ProxySG
+  regexps:
+    header:
+      - proxysg
+- name: bluecms
+  regexps:
+    body:
+      - power by bcms
+      - bcms_plugin
+- name: BlueDragon
+  regexps:
+    header:
+      - BlueDragon
+- name: BlueNet-Video
+  regexps:
+    body:
+      - /cgi-bin/client_execute.cgi?tUD=0
+      - BlueNet Video Viewer Version
+- name: BlueOnyx
+  regexps:
+    body:
+      - Login - BlueOnyx
+      - Thank you for using the BlueOnyx
+- name: BlueQuartz
+  regexps:
+    body:
+      - VALUE="Copyright (C) 2000, Cobalt Networks
+      - Login - BlueQuartz
+- name: BM-Classifieds
+  regexps:
+    body:
+      - <!-- START HEADER TABLE - HOLDS GRAPHIC AND SITE NAME -->
+- name: BMC-Remedy
+  regexps:
+    body:
+      - Remedy Mid Tier
+- name: Boa-WebServer
+  regexps:
+    header:
+      - Boa
+- name: boastMachine
+  regexps:
+    body:
+      - powered by boastMachine
+      - Powered by <a href="http://boastology.com
+- name: Bobo
+  regexps:
+    header:
+      - x-ksscommands
+- name: Bomgar
+  regexps:
+    body:
+      - alt="Remote Support by BOMGAR
+      - <a href="http://www.bomgar.com/products" class="inverse
+- name: BoonEx-Dolphin
+  regexps:
+    body:
+      - products/dolphin
+- name: BosClassifieds
+  regexps:
+    body:
+      - Powered by <a href="http://www.bosdev.com
+      - content="BosClassifieds
+- name: BoyowCMS
+  regexps:
+    body:
+      - publish by BoyowCMS
+- name: BPanelCMS
+  regexps:
+    header:
+      - 'X-Powered-Cms: BPanel CMS'
+- name: BrewBlogger
+  regexps:
+    body:
+      - developed by <a href="http://www.zkdigital.com
+- name: BroadWin-WebAccess
+  regexps:
+    body:
+      - '<!-- #BeginTemplate "/Templates/bw_templete1.dwt" -->'
+    header:
+      - /broadWeb/bwRoot.asp?username=
+- name: Brother-Fax
+  regexps:
+    body:
+      - Brother MFC
+    header:
+      - debut
+- name: Brother-Printer
+  regexps:
+    body:
+      - <FRAME SRC="/printer/inc_head.html
+      - <IMG src="/common/image/HL4040CN
+- name: BrowserCMS
+  regexps:
+    body:
+      - Powered by BrowserCMS
+      - content="BrowserCMS
+- name: Buddy-Zone
+  regexps:
+    body:
+      - www.vastal.com
+      - '>Buddy Zone</a>'
+- name: BugFree
+  regexps:
+    body:
+      - id="logo" alt=BugFree
+      - class="loginBgImage" alt="BugFree
+      - BugFree
+      - name="BugUserPWD
+- name: BugTracker.NET
+  regexps:
+    body:
+      - href="btnet.css
+      - valign=middle><a href=http://ifdefined.com/bugtrackernet.html>
+      - <div class=logo>BugTracker.NET
+- name: Bugzilla
+  regexps:
+    body:
+      - enter_bug.cgi
+      - /cgi-bin/bugzilla/
+      - Bugzilla Main Page
+    header:
+      - Bugzilla_login_request_cookie
+- name: Bulletlink-Newspaper-Template
+  regexps:
+    body:
+      - /ModalPopup/core-modalpopup.css
+      - powered by bulletlink
+- name: Burning-Board-Lite
+  regexps:
+    body:
+      - www.woltlab.de
+      - Powered by <b>Burning Board
+- name: buscape
+  regexps:
+    header:
+      - sessao3
+- name: bxemail
+  regexps:
+    body:
+      - 百讯安全邮件系统
+      - 百姓邮局
+      - 请输入正确的电子邮件地址，如：abc@bxemail.com
+- name: CA-SiteMinder
+  regexps:
+    body:
+      - <!-- SiteMinder Encoding
+- name: Cachelogic-Expired-Domains-Script
+  regexps:
+    body:
+      - href="http://cachelogic.net">Cachelogic.net
+- name: Cacti
+  regexps:
+    body:
+      - Login to Cacti
+      - /plugins/jqueryskin/include/login.css
+    header:
+      - 'Set-Cookie: Cacti='
+- name: Cactiez
+  regexps:
+    header:
+      - Cactiez
+- name: CactuShop
+  regexps:
+    body:
+      - <select name="numCurrencyID
+      - <!-- CactuShop
+    header:
+      - CactuShop
+- name: CafeEngine
+  regexps:
+    body:
+      - /CafeEngine/style.css
+      - <a href=http://cafeengine.com>CafeEngine.com
+- name: cakephp
+  regexps:
+    header:
+      - CAKEPHP
+- name: CalendarScript
+  regexps:
+    body:
+      - 'Calendar Administration : Login'
+      - CalendarScript.com
+- name: Calypso-ION-8r-Device
+  regexps:
+    body:
+      - Calypso ION-8r Device
+      - /A/cfg/entercmd.stm
+    header:
+      - Calypso ION8r Device
+- name: CameraLife
+  regexps:
+    body:
+      - content="Camera Life
+      - This site is powered by Camera Life
+- name: Campsite
+  regexps:
+    body:
+      - content="Campsite
+- name: Canon-Printer
+  regexps:
+    header:
+      - Canon Http Server
+- name: cApexWEB
+  regexps:
+    body:
+      - /capexweb.parentvalidatepassword
+      - name="dfparentdb
+- name: Car-Portal
+  regexps:
+    body:
+      - netartmedia.net/carsportal
+      - class="bodyfontwhite"><strong>&nbsp;Car Script
+- name: Carel-Data-Server
+  regexps:
+    body:
+      - src="/MPwebCoreFn.js
+    header:
+      - CarelDataServer
+- name: Carrier-CCNWeb
+  regexps:
+    body:
+      - /images/CCNWeb.gif
+      - <APPLET CODE="JLogin.class" ARCHIVE="JLogin.jar
+- name: cart_engine
+  regexps:
+    body:
+      - skins/_common/jscripts.css
+- name: CASino
+  regexps:
+    body:
+      - rbcas.com
+      - CASino
+      - casino_and_overrides.css
+    header:
+      - _my-casino_session
+- name: CAStor
+  regexps:
+    header:
+      - CAStor
+- name: Caudium
+  regexps:
+    header:
+      - 'X-Got-Fish: Pike'
+- name: CaupoShop-Classic
+  regexps:
+    body:
+      - Caupo
+- name: CCProxy
+  regexps:
+    header:
+      - 'Server: CCProxy'
+- name: CC客服
+  regexps:
+    body:
+      - <script src="http://kefu.qycn.com/
+- name: CDN-Cache-Server
+  regexps:
+    header:
+      - Cdn Cache Server
+- name: cdnjs
+  regexps:
+    body:
+      - cdnjs.cloudflare.com/ajax/libs
+    header:
+      - cdnjs.cloudflare.com/ajax/libs
+- name: CDR-Stats
+  regexps:
+    body:
+      - CDR-Stats | Customer Interface
+      - /static/cdr-stats/js/jquery
+- name: CEMIS
+  regexps:
+    body:
+      - <div id="demo" style="overflow:hidden
+      - 综合项目管理系统登录
+- name: Censura
+  regexps:
+    body:
+      - 'Powered by: <a href="http://www.censura.info'
+- name: centos
+  regexps:
+    header:
+      - centos
+- name: Centreon
+  regexps:
+    body:
+      - Generator" content="Centreon - Copyright
+      - Centreon - IT & Network Monitoring
+- name: Cerberus-Helpdesk
+  regexps:
+    body:
+      - <!-- If you have your own stylesheet for HTML elements, you can remove the cerberus-html.css
+        link
+    header:
+      - CerberusPublicGUI
+- name: CERN
+  regexps:
+    header:
+      - CERN
+- name: CF-Image-Hosting-Script
+  regexps:
+    body:
+      - codefuture.co.uk/projects/imagehost/
+- name: CGIProxy
+  regexps:
+    body:
+      - <a href="http://www.jmarshall.com/tools/cgiproxy/
+- name: CGI:IRC
+  regexps:
+    body:
+      - CGI:IRC Login
+      - <!-- This is part of CGI:IRC
+      - <small id="ietest"><a href="http://cgiirc.org/
+- name: Chamilo
+  regexps:
+    body:
+      - <link href="http://www.chamilo.org/documentation.php
+      - content="Chamilo
+    header:
+      - 'X-Powered-By: Chamilo'
+- name: CHANCE-i-DiViS-DVR
+  regexps:
+    header:
+      - Techno Vision Security System Ver
+- name: Check-Point-SSL-Network-Extender
+  regexps:
+    header:
+      - Check Point SVN foundation
+- name: Cherokee
+  regexps:
+    header:
+      - Cherokee
+- name: ChiliProject
+  regexps:
+    body:
+      - chiliproject.org
+      - content="ChiliProject
+    header:
+      - _chiliproject_session=
+- name: chillyCMS
+  regexps:
+    body:
+      - FrozenPepper.de
+- name: Chromelogger
+  regexps:
+    header:
+      - X-Chromelogger-Data
+- name: Cimplicity-WebView
+  regexps:
+    body:
+      - <APPLET NAME="ProwlerClientAppletObject" ARCHIVE="/ProwlerClient.jar
+    header:
+      - CIMPLICITY-HttpSvr
+- name: cInvoice
+  regexps:
+    body:
+      - forperfect.com/
+- name: Cisco 8600路由器
+  regexps:
+    header:
+      - Cisco 8600
+- name: Cisco Acceleration
+  regexps:
+    header:
+      - Cisco Acceleration
+- name: Cisco ACE
+  regexps:
+    header:
+      - ACE XML Gateway
+- name: Cisco ASA
+  regexps:
+    header:
+      - Cisco ASA
+- name: CISCO ASR
+  regexps:
+    header:
+      - CISCO ASR
+- name: Cisco CSS
+  regexps:
+    header:
+      - Cisco CSS
+- name: Cisco Expert Talks
+  regexps:
+    header:
+      - Cisco Expert Talks
+- name: Cisco GCT
+  regexps:
+    header:
+      - Cisco GCT
+- name: Cisco IOS-XR
+  regexps:
+    header:
+      - Cisco IOS-XR
+- name: Cisco IOS
+  regexps:
+    header:
+      - 'Server: cisco-IOS'
+- name: Cisco IronPort
+  regexps:
+    header:
+      - Cisco IronPort
+- name: Cisco UCC
+  regexps:
+    body:
+      - Cisco Unified Contact Center
+    header:
+      - cisco
+- name: cisco UCM
+  regexps:
+    body:
+      - /ccmadmin/
+      - Cisco Unified
+- name: Cisco VCI
+  regexps:
+    header:
+      - Cisco VCI
+- name: Cisco VEN401
+  regexps:
+    header:
+      - Cisco VEN401
+- name: Cisco XNC
+  regexps:
+    header:
+      - Cisco XNC
+- name: Cisco xSeries
+  regexps:
+    header:
+      - Cisco xSeries
+- name: Cisco-Adaptive-Security-Appliance
+  regexps:
+    header:
+      - Adaptive Security Appliance HTTP
+- name: Cisco-CDS
+  regexps:
+    header:
+      - Cisco-CDS
+- name: CISCO-CX20
+  regexps:
+    header:
+      - CISCO-CX20
+- name: Cisco-DLT
+  regexps:
+    body:
+      - 'System name: Cisco DLT'
+    header:
+      - Cisco-DLT
+- name: Cisco-ECDS
+  regexps:
+    header:
+      - Cisco-ECDS/
+- name: Cisco-IP-Phone
+  regexps:
+    body:
+      - Cisco Unified Wireless IP Phone
+- name: Cisco-MWEB
+  regexps:
+    header:
+      - Cisco-MWEB
+- name: Cisco-SX20
+  regexps:
+    header:
+      - Cisco-SX20
+- name: Cisco-SX80
+  regexps:
+    header:
+      - Cisco-SX80
+- name: Cisco-VDS
+  regexps:
+    header:
+      - Cisco-VDS
+- name: Cisco-VOS
+  regexps:
+    header:
+      - Cisco-VOS
+- name: Cisco-VPN-3000-Concentrator
+  regexps:
+    body:
+      - Cisco Systems, Inc. VPN 3000 Concentrator
+- name: Cisco-WSA
+  regexps:
+    header:
+      - Cisco-WSA
+- name: Cisco_Cable_Modem
+  regexps:
+    body:
+      - Cisco Cable Modem
+- name: CISCO_EPC3925
+  regexps:
+    body:
+      - Docsis_system
+      - EPC3925
+- name: CISCO_VPN
+  regexps:
+    header:
+      - webvpn
+- name: Cisco小区网络管理系统
+  regexps:
+    header:
+      - Cisco小区网络管理系统
+- name: Citrix-Access-Gateway
+  regexps:
+    body:
+      - Citrix Access Gateway
+      - href="/vpn/images/AccessGateway.ico
+    header:
+      - Cyms-SecS
+- name: Citrix-ConfProxy
+  regexps:
+    header:
+      - confproxy
+- name: Citrix-Metaframe
+  regexps:
+    body:
+      - window.location="/Citrix/MetaFrame
+- name: Citrix-NetScaler
+  regexps:
+    header:
+      - NS-CACHE
+- name: Citrix-Web-PN-Server
+  regexps:
+    header:
+      - Citrix Web PN Server
+- name: Citrix-XenServer
+  regexps:
+    body:
+      - Citrix Systems, Inc. XenServer
+      - <a href="XenCenterSetup.exe">XenCenter installer</a>
+- name: Citrix_Netscaler
+  regexps:
+    header:
+      - ns_af
+- name: CitusCMS
+  regexps:
+    body:
+      - Powered by CitusCMS
+      - <strong>CitusCMS</strong>
+      - content="CitusCMS
+- name: CL-HTTP
+  regexps:
+    header:
+      - CL-HTTP
+- name: ClanSphere
+  regexps:
+    body:
+      - content="ClanSphere
+      - index.php?mod=clansphere&amp;action=about
+- name: Claroline
+  regexps:
+    body:
+      - target="_blank">Claroline</a>
+      - http://www.claroline.net" rel="Copyright
+- name: Clearwell-E-Discovery
+  regexps:
+    body:
+      - Clearwell E-Discovery Platform log in
+    header:
+      - Clearwell
+- name: ClickTale
+  regexps:
+    body:
+      - <div id="ClickTaleDiv
+- name: Clicky
+  regexps:
+    body:
+      - <script src="//static.getclicky.com/js
+- name: ClientExec
+  regexps:
+    body:
+      - Powered By ClientExec
+    header:
+      - CLIENTEXEC=
+- name: ClipBucket
+  regexps:
+    body:
+      - content="ClipBucket
+      - <!-- ClipBucket
+      - <!-- Forged by ClipBucket
+      - href="http://clip-bucket.com/">ClipBucket
+- name: ClipShare
+  regexps:
+    body:
+      - <!--!!!!!!!!!!!!!!!!!!!!!!!!! Processing SCRIPT
+      - Powered By <a href="http://www.clip-share.com
+- name: cloudflare
+  regexps:
+    header:
+      - cloudflare-nginx
+- name: cm3-cms
+  regexps:
+    body:
+      - content="cm3 content manager
+    header:
+      - cm3session
+- name: CMS-Made-Simple
+  regexps:
+    body:
+      - content="CMS Made Simple
+    header:
+      - CMSSESSID
+- name: CMS-WebManager-Pro
+  regexps:
+    body:
+      - content="Webmanager-pro
+      - href="http://webmanager-pro.com">Web.Manager
+- name: CMScontrol
+  regexps:
+    body:
+      - content="CMScontrol
+- name: CMScout
+  regexps:
+    body:
+      - Powered by CMScout
+    header:
+      - cmscout2=
+- name: cmseasy
+  regexps:
+    body:
+      - Powered by CmsEasy
+      - content="CmsEasy
+    header:
+      - http://www.cmseasy.cn/service_1.html
+- name: CMSimple
+  regexps:
+    body:
+      - Powered by CMSimple.dk
+      - content="CMSimple
+- name: CMSQLite
+  regexps:
+    body:
+      - powered by CMSQLite
+      - content="www.CMSQLite.net
+- name: CMSTop
+  regexps:
+    body:
+      - /css/cmstop-common.css
+      - /js/cmstop-common.js
+      - cmstop-list-text.css
+      - <a class="poweredby" href="http://www.cmstop.com"
+- name: cnzz
+  regexps:
+    body:
+      - cnzz.com/stat.php?id=
+- name: CodeIgniter-PHP-Framework
+  regexps:
+    header:
+      - ci_session=
+- name: CodeIgniter
+  regexps:
+    header:
+      - ci_session
+- name: CoDeSys-Web-Visualization
+  regexps:
+    body:
+      - CoDeSys WebVisualization
+    header:
+      - WAGO_Webs
+- name: Cogent-DataHub
+  regexps:
+    body:
+      - /images/Cogent.gif
+      - Cogent DataHub WebView
+- name: ColdFusion
+  regexps:
+    body:
+      - /cfajax/
+      - ColdFusion.Ajax
+      - cdm
+    header:
+      - CFTOKEN
+- name: Collabtive
+  regexps:
+    body:
+      - Login @ Collabtive
+- name: Comanche
+  regexps:
+    header:
+      - Comanche
+- name: Comcast_Business
+  regexps:
+    body:
+      - cmn/css/common-min.css
+- name: Comcast_Business_Gateway
+  regexps:
+    body:
+      - Comcast Business Gateway
+- name: ComersusCart
+  regexps:
+    body:
+      - CONTENT="Powered by Comersus
+      - href="comersus_showCart.asp
+- name: Commerce-Builder
+  regexps:
+    header:
+      - Commerce-Builder
+- name: CommonSpot
+  regexps:
+    body:
+      - content="CommonSpot
+- name: CommuniGate-Pro
+  regexps:
+    header:
+      - CommuniGatePro
+- name: Communique
+  regexps:
+    header:
+      - Communique
+- name: concrete5
+  regexps:
+    body:
+      - generator" content="ezCMS
+      - CCM_DISPATCHER_FILENAME
+    header:
+      - CONCRETE5
+- name: Conexant-EmWeb
+  regexps:
+    header:
+      - Virata-EmWeb
+- name: Confluence
+  regexps:
+    header:
+      - x-confluence
+- name: ConnectUPS-X
+  regexps:
+    body:
+      - UPS Firmware version
+    header:
+      - UPS_Server/
+- name: Contao
+  regexps:
+    body:
+      - system/contao.css
+- name: Content-Security-Policy
+  regexps:
+    header:
+      - x-webkit-csp
+- name: Contentteller-CMS
+  regexps:
+    body:
+      - content="Esselbach Contentteller CMS
+- name: ContentXXL
+  regexps:
+    body:
+      - content="contentXXL
+- name: Contrexx-CMS
+  regexps:
+    body:
+      - powered by Contrexx
+      - content="Contrexx
+- name: Coppermine
+  regexps:
+    body:
+      - <!--Coppermine Photo Gallery
+- name: Coremail
+  regexps:
+    body:
+      - /coremail/common/assets
+      - Coremail邮件系统
+- name: couchbase
+  regexps:
+    body:
+      - Couchbase Console
+    header:
+      - Couchbase
+- name: CouchDB
+  regexps:
+    header:
+      - Erlang OTP
+- name: Cougar
+  regexps:
+    header:
+      - Cougar
+- name: Covalent-Enterprise-Ready-Server
+  regexps:
+    header:
+      - CovalentSNMP
+- name: coWiki
+  regexps:
+    body:
+      - content="coWiki
+      - <!-- Generated by coWiki
+- name: CoyotePoint-Load-Balancer
+  regexps:
+    header:
+      - CoyotePoint
+- name: cpanel
+  regexps:
+    header:
+      - 'cprelogin:'
+- name: cpanel.svg
+  regexps:
+    body:
+      - powered_by_cpanel.svg
+- name: cPassMan
+  regexps:
+    body:
+      - Collaborative Passwords Manager
+- name: CreateLive-Cms
+  regexps:
+    body:
+      - <!--By CreateLiveCms
+    header:
+      - AspooKill=kill=
+- name: CrushFTP
+  regexps:
+    body:
+      - CrushFTP WebInterface
+    header:
+      - 'Server: CrushFTP HTTP Server'
+- name: CruxCMS
+  regexps:
+    body:
+      - Created by CruxCMS
+      - title="CruxCMS" class="blank
+- name: CSCSSM
+  regexps:
+    header:
+      - CSCSSM
+- name: 'CSS Tools: Reset CSS'
+  regexps:
+    body:
+      - css/skel-noscript.css
+- name: CUPS
+  regexps:
+    header:
+      - CUPS
+- name: CushyCMS
+  regexps:
+    body:
+      - Powered by CushyCMS
+    header:
+      - _cushy_session
+- name: Custom-CMS
+  regexps:
+    body:
+      - content="CustomCMS
+      - title="Powered by CCMS
+- name: CuuMall
+  regexps:
+    body:
+      - Power by CuuMall
+- name: Cybozu-Garoon
+  regexps:
+    header:
+      - Cybozu-WS
+- name: Cyn_in
+  regexps:
+    body:
+      - content="cyn.in
+      - Powered by cyn.in
+- name: D-Link Internet Camera
+  regexps:
+    body:
+      - D-Link Internet Camera
+    header:
+      - D-Link Internet Camera
+- name: D-Link-Network-Camera
+  regexps:
+    body:
+      - DCS-950G".toLowerCase()
+      - DCS-5300
+- name: D-Link_VoIP_Wireless_Router
+  regexps:
+    body:
+      - D-Link VoIP Wireless Router
+- name: d3
+  regexps:
+    body:
+      - /d3.min.js
+      - /d3.v2.min.js
+      - /d3.js
+      - /d3.v2.js
+- name: DaDaBIK
+  regexps:
+    body:
+      - content="DaDaBIK
+      - class="powered_by_dadabik
+- name: Daffodil-CRM
+  regexps:
+    body:
+      - Powered by Daffodil
+      - Design & Development by Daffodil Software Ltd
+- name: Daisy
+  regexps:
+    header:
+      - x-daisy-version
+- name: darkstat
+  regexps:
+    header:
+      - darkstat
+- name: Dart-WebServer-Tool
+  regexps:
+    header:
+      - Dart WebServer Tool
+- name: dasannetworks
+  regexps:
+    body:
+      - clear_cookie("login");
+- name: Data-ONTAP
+  regexps:
+    header:
+      - Data ONTAP
+- name: DataflexViNE-VoIP-IAD
+  regexps:
+    header:
+      - DataflexViNE-Webserver
+- name: DataLife-Engine
+  regexps:
+    body:
+      - content="DataLife Engine
+    header:
+      - dle_
+- name: Datum-TymServe
+  regexps:
+    body:
+      - <H2 ALIGN=CENTER>Datum TymServe
+    header:
+      - DATM
+- name: David-WebBox
+  regexps:
+    header:
+      - David-WebBox
+- name: dayrui系列产品
+  regexps:
+    body:
+      - dayrui/statics
+    header:
+      - dr_ci_session
+- name: DBHcms
+  regexps:
+    body:
+      - powered by DBHcms
+- name: dbshop
+  regexps:
+    body:
+      - content="dbshop
+- name: DD-WRT
+  regexps:
+    body:
+      - style/pwc/ddwrt.css
+- name: Debian
+  regexps:
+    header:
+      - Debian
+- name: DedeCMS
+  regexps:
+    body:
+      - DedeCMS
+      - /templets/default/style/dedecms.css
+- name: Dedicated-Micros-Device
+  regexps:
+    header:
+      - ADH-Web
+- name: DeleGate
+  regexps:
+    header:
+      - DeleGate
+- name: Dell OpenManage Switch Administrator
+  regexps:
+    body:
+      - Dell OpenManage Switch Administrator
+- name: Dell Remote Access Device
+  regexps:
+    header:
+      - 'RAC_ONE_HTTP '
+- name: Dell-KACE-Appliance
+  regexps:
+    header:
+      - x-dellkace-
+- name: Dell-Printer
+  regexps:
+    body:
+      - Dell Laser Printer
+- name: Dell-Remote-Access-Controller
+  regexps:
+    body:
+      - /cgi-bin/webcgi/ssologin
+    header:
+      - RAC_ONE_HTTP
+- name: Deluge-web
+  regexps:
+    body:
+      - 'Deluge: Web UI'
+- name: DeluxeBB
+  regexps:
+    body:
+      - content="powered by DeluxeBB
+- name: destoon
+  regexps:
+    body:
+      - <meta name="generator" content="Destoon
+      - destoon_moduleid
+- name: DHT_802.11N_Router
+  regexps:
+    body:
+      - DHT 802.11n QoS Router
+    header:
+      - mini_httpd
+- name: DI-804HV
+  regexps:
+    header:
+      - DI-804HV
+- name: Diaspora
+  regexps:
+    header:
+      - x-git-revision
+- name: DiBos
+  regexps:
+    body:
+      - DiBos - Login
+      - style/bovisnt.css
+- name: Diferior
+  regexps:
+    body:
+      - Powered by Diferior
+- name: DirCMS
+  regexps:
+    body:
+      - content="DirCMS
+- name: Direct-Packet-Device
+  regexps:
+    header:
+      - DPWebServer
+- name: Directadmin
+  regexps:
+    body:
+      - DirectAdmin Login
+    header:
+      - DirectAdmin Daemon
+- name: discuz
+  regexps:
+    body:
+      - Powered by Discuz
+      - content="Discuz
+      - discuz_uid
+      - portal.php?mod=view
+      - Powered by <strong><a href="http://www.discuz.net
+- name: disqus
+  regexps:
+    body:
+      - disqus_thread
+- name: DIYWAP
+  regexps:
+    body:
+      - web980
+      - bannerNum
+- name: Django
+  regexps:
+    body:
+      - __admin_media_prefix__
+      - csrfmiddlewaretoken
+- name: DLI-LPC
+  regexps:
+    header:
+      - DLILPC=
+- name: dlink
+  regexps:
+    header:
+      - dlinkrouter
+- name: dlink_DSL_320B
+  regexps:
+    header:
+      - DSL-320B
+- name: DMXReady-Portfolio-Manager
+  regexps:
+    body:
+      - /css/PortfolioManager/styles_display_page.css
+      - rememberme_portfoliomanager
+- name: Dnnoutputcache
+  regexps:
+    header:
+      - Dnnoutputcache
+- name: DnP Firewall
+  regexps:
+    body:
+      - Powered by DnP Firewall
+      - dnp_firewall_redirect
+- name: DnP-Firewall
+  regexps:
+    body:
+      - Forum Gateway - Powered by DnP Firewall
+      - name="dnp_firewall_redirect
+      - <form name=dnp_firewall
+- name: doccms
+  regexps:
+    body:
+      - Power by DocCms
+- name: DoceboLMS
+  regexps:
+    body:
+      - Powered by Docebo
+    header:
+      - docebo_session=
+- name: Dokeos
+  regexps:
+    body:
+      - href="http://www.dokeos.com" rel="Copyright
+      - content="Dokeos
+      - name="Generator" content="Dokeos
+- name: DokuWiki
+  regexps:
+    body:
+      - powered by DokuWiki
+      - content="DokuWiki
+      - <div id="dokuwiki
+- name: Dolibarr
+  regexps:
+    body:
+      - Dolibarr Development Team
+- name: Dolphin
+  regexps:
+    body:
+      - bx_css_async
+- name: Donations-Cloud
+  regexps:
+    body:
+      - /donationscloud.css
+- name: Dorado
+  regexps:
+    body:
+      - Dorado Login Page
+- name: DORG
+  regexps:
+    body:
+      - 'DORG - '
+      - CONTENT="DORG
+- name: DotA-OpenStats
+  regexps:
+    body:
+      - content="dota OpenStats
+      - content="openstats.iz.rs
+- name: Dotclear
+  regexps:
+    body:
+      - Powered by <a href="http://dotclear.org/
+- name: DotCMS
+  regexps:
+    body:
+      - /dotAsset/
+      - /index.dot
+- name: Dotdefender
+  regexps:
+    header:
+      - X-Dotdefender-Denied
+- name: DotNetNuke
+  regexps:
+    body:
+      - content="DotNetNuke
+      - content=",DotNetNuke
+    header:
+      - Dnnoutputcache
+- name: doubleclick_ad
+  regexps:
+    body:
+      - ad.doubleclick.net
+- name: DouPHP
+  regexps:
+    body:
+      - Powered by DouPHP
+      - controlBase
+      - indexLeft
+      - recommendProduct
+- name: Dr-Web-Anti-Virus
+  regexps:
+    body:
+      - /avdesk/includes/system/templates/images/logo_en.png
+    header:
+      - DRWEB_PERSONAL_OFFICE=
+- name: Dradis-Framework
+  regexps:
+    body:
+      - <p class="copyright">Dradis
+    header:
+      - _dradis_session=
+- name: Dreambox (TV Reciever)
+  regexps:
+    header:
+      - Basic realm="dreambox"
+- name: dreambox
+  regexps:
+    header:
+      - dreambox
+- name: DrugPak
+  regexps:
+    body:
+      - Powered by DrugPak
+      - /dplimg/DPSTYLE.CSS
+- name: Drupal
+  regexps:
+    body:
+      - content="Drupal
+      - jQuery.extend(Drupal.settings
+      - /sites/default/files/
+      - /sites/all/modules/
+      - /sites/all/themes/
+    header:
+      - 'X-Generator: Drupal'
+- name: DSpace
+  regexps:
+    body:
+      - content="DSpace
+      - <a href="http://www.dspace.org">DSpace Software
+- name: dswjcms
+  regexps:
+    body:
+      - content="Dswjcms
+      - Powered by Dswjcms
+- name: DT-Centrepiece
+  regexps:
+    body:
+      - content="DT Centrepiece
+      - Powered By DT Centrepiece
+- name: dtcms
+  regexps:
+    body:
+      - dtcms
+      - content="动力启航,DTCMS
+- name: DublinCore
+  regexps:
+    body:
+      - name="DC.title
+- name: DUclassified
+  regexps:
+    body:
+      - assets/DUclassified.css
+      - DUclassified
+- name: DUgallery
+  regexps:
+    body:
+      - Powered by DUportal
+      - DUgallery
+- name: DuomiCms
+  regexps:
+    body:
+      - DuomiCms
+      - Power by DuomiCms
+- name: DV-Cart
+  regexps:
+    body:
+      - class="KT_tngtable
+- name: DVR camera
+  regexps:
+    body:
+      - DVR WebClient
+- name: DVR-WebClient
+  regexps:
+    body:
+      - 259F9FDF-97EA-4C59-B957-5160CAB6884E
+      - DVR-WebClient
+- name: DVWA
+  regexps:
+    body:
+      - Damn Vulnerable Web App (DVWA) - Login
+      - dvwa/css/login.css
+      - dvwa/images/login_logo.png
+- name: dwr
+  regexps:
+    body:
+      - /dwr/engine.js
+- name: DXSock
+  regexps:
+    header:
+      - RemObjects
+- name: DynaWeb-httpd
+  regexps:
+    header:
+      - dwhttpd
+- name: DZCP
+  regexps:
+    body:
+      - <!--[ DZCP
+- name: e-junkie
+  regexps:
+    body:
+      - function EJEJC_lc
+- name: E-Manage-MySchool
+  regexps:
+    body:
+      - E-Manage All Rights Reserved MySchool Version
+- name: e-office
+  regexps:
+    body:
+      - /general/login/view//images/updateLoad.gif
+    header:
+      - general/login/index.php
+- name: e-tiller
+  regexps:
+    body:
+      - reader/view_abstract.aspx
+- name: E-Xoopport
+  regexps:
+    body:
+      - Powered by E-Xoopport
+      - content="E-Xoopport
+- name: eadmin
+  regexps:
+    body:
+      - content="eAdmin
+      - eadmin
+- name: eagleeyescctv
+  regexps:
+    body:
+      - IP Surveillance for Your Life
+      - /nobody/loginDevice.js
+- name: EarlyImpact-ProductCart
+  regexps:
+    body:
+      - fpassword.asp?redirectUrl=&frURL=Custva.asp
+- name: eaststorecreeator
+  regexps:
+    header:
+      - easystorecreator1
+- name: Easy-File-Sharing-Web-Server
+  regexps:
+    header:
+      - Easy File Sharing Web Server
+- name: EasyConsole-CMS
+  regexps:
+    body:
+      - Powered by EasyConsole CMS
+      - Powered by <a href="http://www.easyconsole.com
+- name: easyLink-Web-Solutions
+  regexps:
+    body:
+      - content="easyLink
+- name: easypanel
+  regexps:
+    body:
+      - /vhost/view/default/style/login.css
+- name: easysite
+  regexps:
+    body:
+      - GENERATOR" content="EasySite
+      - Copyright 2009 by Huilan
+      - _DesktopModules_PictureNews
+    header:
+      - EasySite-Compression
+- name: EasyTrace(botwave)
+  regexps:
+    body:
+      - EasyTrace
+      - login_page
+- name: EasywebCMS
+  regexps:
+    header:
+      - Easyweb CMS
+- name: EazyCMS
+  regexps:
+    body:
+      - powered by eazyCMS
+      - <a class="actionlink" href="http://www.eazyCMS.com
+- name: eBuilding-Network-Controller
+  regexps:
+    body:
+      - eBuilding Web
+- name: Echo
+  regexps:
+    body:
+      - powered by echo
+      - /Echo2/echoweb/login
+- name: ECMall
+  regexps:
+    body:
+      - generator" content="ECMall
+    header:
+      - ECM_ID
+- name: Ecomat-CMS
+  regexps:
+    body:
+      - content="ECOMAT CMS
+- name: ECOR
+  regexps:
+    header:
+      - ECOR264
+- name: ECShop
+  regexps:
+    body:
+      - Powered by ECShop
+      - content="ECSHOP
+      - /api/cron.php
+    header:
+      - ECS_ID
+- name: ecwapoa
+  regexps:
+    body:
+      - ecwapoa
+- name: ec_cart
+  regexps:
+    header:
+      - ec_cart_id
+- name: EdgePrism
+  regexps:
+    header:
+      - EdgePrismSSL
+- name: EDIMAX
+  regexps:
+    body:
+      - EDIMAX Technology
+      - content="Edimax
+- name: eDirectory
+  regexps:
+    body:
+      - target="_blank">eDirectory&trade
+      - Powered by <a href="http://www.edirectory.com
+- name: Edito-CMS
+  regexps:
+    body:
+      - content="edito
+      - title="CMS" href="http://www.edito.pl/
+- name: EDK
+  regexps:
+    body:
+      - <!-- /killlistable.tpl -->
+- name: EdmWebVideo
+  regexps:
+    body:
+      - EdmWebVideo
+- name: EduSoho开源网络课堂
+  regexps:
+    body:
+      - edusoho
+      - Powered by <a href="http://www.edusoho.com
+      - Powered By EduSoho
+- name: edvr
+  regexps:
+    body:
+      - edvs/edvr
+- name: eFront
+  regexps:
+    body:
+      - <a href = "http://www.efrontlearning.net
+- name: eGroupWare
+  regexps:
+    body:
+      - content="eGroupWare
+- name: Ektron-CMS
+  regexps:
+    body:
+      - /java/ektron.js
+    header:
+      - EktGUID=
+- name: elasticsearch
+  regexps:
+    body:
+      - build_hash
+      - You Know, for Search
+- name: EleanorCMS
+  regexps:
+    header:
+      - Eleanor CMS
+- name: Electro-Industries-GaugeTech
+  regexps:
+    header:
+      - EIG Embedded Web Server
+- name: Elite-Gaming-Ladders
+  regexps:
+    body:
+      - Powered by Elite
+- name: eLitius
+  regexps:
+    body:
+      - content="eLitius
+      - target="_blank" title="Affiliate
+- name: Elxis-CMS
+  regexps:
+    body:
+      - content="Elxis
+- name: EMC-Documentum-Webtop
+  regexps:
+    body:
+      - /webtop/index.js
+      - /webtop/webtop/theme/documentum/css/webtop.css
+- name: eMeeting-Online-Dating-Software
+  regexps:
+    body:
+      - eMeeting Dating Software
+      - /_eMeetingGlobals.js
+- name: emlog
+  regexps:
+    body:
+      - content="emlog"
+- name: EMS-ENTRY-COM
+  regexps:
+    header:
+      - ZENT5
+- name: EnableQ
+  regexps:
+    body:
+      - /enableq.css
+- name: Energine
+  regexps:
+    body:
+      - scripts/Energine.js
+      - Powered by <a href= "http://energine.org/
+      - stylesheets/energine.css
+- name: Enhydra-Application-Server
+  regexps:
+    header:
+      - Enhydra
+- name: Enigma2
+  regexps:
+    body:
+      - href="/web/movielist.rss?tag
+      - Enigma2 WebControl
+- name: EnterCRM
+  regexps:
+    body:
+      - EnterCRM
+- name: Entrans
+  regexps:
+    body:
+      - Entrans
+- name: enVision
+  regexps:
+    header:
+      - Content Interface Corp - enVision
+- name: EPiServer
+  regexps:
+    body:
+      - content="EPiServer
+      - /javascript/episerverscriptmanager.js
+- name: Epiware
+  regexps:
+    body:
+      - Epiware - Project and Document Management
+- name: Epson printer
+  regexps:
+    body:
+      - EpsonNet config
+      - EpsonNet WebAssist
+    header:
+      - EPSON-HTTP
+- name: epson打印机
+  regexps:
+    header:
+      - EPSON-HTTP
+- name: Ericsson-TV-Web-Server
+  regexps:
+    header:
+      - Ericsson Television Web server
+- name: Escenic
+  regexps:
+    body:
+      - content="Escenic
+      - <!-- Start Escenic Analysis Engine client script -->
+- name: Eserv
+  regexps:
+    body:
+      - content="Eserv
+    header:
+      - Eserv
+- name: eSitesBuilder
+  regexps:
+    body:
+      - eSitesBuilder. All rights reserved
+- name: esoTalk
+  regexps:
+    body:
+      - generated by esoTalk
+      - Powered by esoTalk
+      - /js/esotalk.js
+- name: ESPCMS
+  regexps:
+    body:
+      - Powered by ESPCMS
+      - Powered by ESPCMS
+      - infolist_fff
+      - /templates/default/style/tempates_div.css
+- name: Esvon-Classifieds
+  regexps:
+    body:
+      - Powered by Esvon
+- name: eSyndiCat
+  regexps:
+    body:
+      - content="eSyndiCat
+- name: Etano
+  regexps:
+    body:
+      - Powered by <a href="http://www.datemill.com
+      - Etano</a>. All Rights Reserved.
+- name: ethProxy
+  regexps:
+    header:
+      - ethProxy
+- name: eTicket
+  regexps:
+    body:
+      - Powered by eTicket
+      - <a href="http://www.eticketsupport.com" target="_blank">
+      - /eticket/eticket.css
+- name: euse_study
+  regexps:
+    body:
+      - UserInfo/UserFP.aspx
+- name: evercookie
+  regexps:
+    body:
+      - evercookie.js
+      - var ec = new evercookie();
+- name: EverFocus-CCTV
+  regexps:
+    header:
+      - http server/everfocus
+- name: Everything
+  regexps:
+    body:
+      - Everything.gif
+      - everything.png
+      - Everything
+- name: Evo-Cam
+  regexps:
+    body:
+      - value="evocam.jar
+      - <applet archive="evocam.jar
+- name: ewebeditor
+  regexps:
+    body:
+      - /ewebeditor.htm?
+- name: exchange
+  regexps:
+    body:
+      - owaLgnBdy
+    header:
+      - OutlookSession
+- name: Exponent-CMS
+  regexps:
+    body:
+      - content="Exponent Content Management System
+      - Powered by Exponent CMS
+- name: ExpressionEngine
+  regexps:
+    body:
+      - exp_tracker
+    header:
+      - exp_last_activity
+- name: ExtJS
+  regexps:
+    body:
+      - ext-base.js
+- name: eXtplorer
+  regexps:
+    body:
+      - Login - eXtplorer
+- name: ExtremeWare
+  regexps:
+    body:
+      - <frame src="extremetop
+    header:
+      - ExtremeWare
+- name: eZ-Publish
+  regexps:
+    body:
+      - eZ publish administration
+    header:
+      - eZSessionCookie
+- name: EZCMS
+  regexps:
+    body:
+      - Powered by EZCMS
+      - EZCMS Content Management System
+- name: ezOFFICE
+  regexps:
+    body:
+      - Wanhu ezOFFICE
+      - EZOFFICEUSERNAME
+      - 万户OA
+      - whirRootPath
+      - /defaultroot/js/cookie.js
+- name: F3Site
+  regexps:
+    body:
+      - Powered by <a href="http://compmaster.prv.pl
+- name: F5_BIGIP
+  regexps:
+    header:
+      - X-PvInfo
+      - BigIP
+- name: Facebook-Plugin
+  regexps:
+    body:
+      - www.facebook.com/plugins/
+      - apps.facebook.com/plugins/
+- name: Facebook_insights
+  regexps:
+    body:
+      - fb:app_id
+- name: Falcon-Web-Server
+  regexps:
+    header:
+      - Falcon Web Server
+- name: fancyBox
+  regexps:
+    body:
+      - jquery.fancybox.js
+- name: fangmail
+  regexps:
+    body:
+      - /fangmail/default/css/em_css.css
+- name: Fastly cdn
+  regexps:
+    body:
+      - fastcdn.org
+- name: Fastpublish-CMS
+  regexps:
+    body:
+      - content="fastpublish
+- name: Fat-FreeFramework
+  regexps:
+    header:
+      - Fat-Free Framework
+- name: FatWire-Content-Server
+  regexps:
+    header:
+      - FutureTenseContentServer
+- name: fckeditor
+  regexps:
+    body:
+      - new FCKeditor
+- name: FCMS
+  regexps:
+    body:
+      - content="Ryan Haudenschilt
+      - Powered by Family Connections
+- name: Fedora
+  regexps:
+    header:
+      - Fedora
+- name: fengcms
+  regexps:
+    body:
+      - Powered by FengCms
+      - content="FengCms
+- name: FestOS
+  regexps:
+    body:
+      - title="FestOS
+      - css/festos.css
+- name: FEX
+  regexps:
+    body:
+      - HREF="mailto:fexmaster@ostc.de
+    header:
+      - fexsrv
+- name: Fidion-CMS
+  regexps:
+    body:
+      - <!-- fCMS-Template head.tpl begins
+    header:
+      - fCMS=
+- name: File-Upload-Manager
+  regexps:
+    body:
+      - File Upload Manager
+      - <IMG SRC="/images/header.jpg" ALT="File Upload Manager">
+- name: FileMakerPro
+  regexps:
+    header:
+      - FileMakerPro
+- name: FileNice
+  regexps:
+    body:
+      - content="the fantabulous mechanical eviltwin code machine
+      - fileNice/fileNice.js
+- name: FileVista
+  regexps:
+    body:
+      - Welcome to FileVista
+      - <a href="http://www.gleamtech.com/products/filevista/web-file-manager
+- name: FineCMS
+  regexps:
+    body:
+      - Powered by FineCMS
+      - dayrui@gmail.com
+      - Copyright" content="FineCMS
+- name: Fireeye
+  regexps:
+    body:
+      - mobsc
+      - FireEye
+    header:
+      - fireeye
+- name: Firefox-Spdy
+  regexps:
+    header:
+      - X-Firefox-Spdy
+- name: FirePHP
+  regexps:
+    header:
+      - meta.wildfirehq.org
+- name: fisheye
+  regexps:
+    body:
+      - fisheye-16.ico
+    header:
+      - 'Set-Cookie: FESESSIONID'
+- name: FITELnet-Router
+  regexps:
+    body:
+      - FITELnet-
+    header:
+      - GR-HTTPD Server
+- name: Fizmez-Web-Server
+  regexps:
+    header:
+      - Fizmez
+- name: flow_framework
+  regexps:
+    header:
+      - FLOW/FRAMEWORK
+- name: FluentNET
+  regexps:
+    body:
+      - content="Fluent
+- name: Fluid-Dynamics-Search-Engine
+  regexps:
+    body:
+      - content="fluid dynamics
+- name: FluxBB
+  regexps:
+    body:
+      - Powered by <a href="http://fluxbb.org/
+- name: Flyspray
+  regexps:
+    body:
+      - Powered by Flyspray
+- name: fnord
+  regexps:
+    header:
+      - fnord
+- name: Foosun
+  regexps:
+    body:
+      - Created by DotNetCMS
+      - For Foosun
+      - Powered by www.Foosun.net,Products:Foosun Content Manage system
+- name: Footprint
+  regexps:
+    header:
+      - Footprint
+- name: Forest-Blog
+  regexps:
+    body:
+      - Forest Blog
+- name: FormMail
+  regexps:
+    body:
+      - /FormMail.pl
+      - href="http://www.worldwidemart.com/scripts/formmail.shtml
+- name: FortiGuard
+  regexps:
+    body:
+      - FortiGuard Web Filtering
+      - Web Filter Block Override
+      - /XX/YY/ZZ/CI/MGPGHGPGPFGHCDPFGGOGFGEH
+- name: Fortinet Firewall
+  regexps:
+    body:
+      - Firewall Notification
+- name: FortiWeb WAF
+  regexps:
+    header:
+      - FORTIWAFSID=
+- name: FortiWeb
+  regexps:
+    header:
+      - FortiWeb
+- name: Fossil
+  regexps:
+    body:
+      - <a href="http://fossil-scm.org
+- name: FOXI BIZzz
+  regexps:
+    header:
+      - 'X-Powered-Cms: FOXI BIZzz'
+- name: FoxPHP
+  regexps:
+    body:
+      - FoxPHPScroll
+      - FoxPHP_ImList
+      - content="FoxPHP
+- name: Foxycart
+  regexps:
+    body:
+      - <script src="//cdn.foxycart.com
+- name: Fpoll
+  regexps:
+    body:
+      - admincp/css.css
+- name: FreakAuth
+  regexps:
+    header:
+      - FreakAuth
+- name: FreeboxOS
+  regexps:
+    body:
+      - Freebox OS
+      - logo_freeboxos
+- name: FreeBSD
+  regexps:
+    header:
+      - FreeBSD
+- name: FreeJoomlas_com
+  regexps:
+    body:
+      - <a title="free joomla hosting" href="http://freejoomlas.com
+- name: FreeNAS
+  regexps:
+    body:
+      - title="Welcome to FreeNAS
+      - /images/ui/freenas-logo.png
+- name: FreePBX
+  regexps:
+    header:
+      - FreePBX
+- name: FrogCMS
+  regexps:
+    body:
+      - target="_blank">Frog CMS
+      - href="http://www.madebyfrog.com">Frog CMS
+- name: FrontPage-Extensions
+  regexps:
+    header:
+      - FrontPage
+- name: FrontPage-Personal-Web-Server
+  regexps:
+    header:
+      - FPWS
+- name: FrontPageServerExtension
+  regexps:
+    header:
+      - Microsoftofficewebserver
+- name: FUDforum
+  regexps:
+    body:
+      - 'Powered by: FUDforum'
+      - /adm/admloginuser.php
+    header:
+      - fud_session_
+- name: Fujitsu-InfoProvider-Pro
+  regexps:
+    header:
+      - Fujitsu-InfoProvider-Pro
+- name: Funkwerk-Gateway
+  regexps:
+    body:
+      - Welcome to your Funkwerk Gateway
+    header:
+      - Funkwerk BOSS
+- name: FW300R
+  regexps:
+    header:
+      - FW300R
+- name: GAE/google app engine/Google Frontend
+  regexps:
+    header:
+      - 'Server: GFE'
+- name: Gallarific
+  regexps:
+    body:
+      - content="Gallarific
+      - Gallarific > Sign in
+- name: Gallery
+  regexps:
+    body:
+      - Gallery 3 Installer
+      - /gallery/images/gallery.png
+- name: Ganglia
+  regexps:
+    body:
+      - 'Ganglia:: Cluster Report'
+      - OnChange="ganglia_form.submit();
+      - NAME="ganglia_form
+    header:
+      - gs=unspecified
+- name: GateQuest-PHP-Site-Recommender
+  regexps:
+    body:
+      - GateQuest
+- name: gCards
+  regexps:
+    body:
+      - <a href="http://www.gregphoto.net/gcards/index.php
+- name: GearHost
+  regexps:
+    header:
+      - GearHost
+- name: GeekLog
+  regexps:
+    body:
+      - Powered By <a href="http://www.geeklog.net/
+- name: GenieATM
+  regexps:
+    body:
+      - GenieATM
+      - Copyright© Genie Networks Ltd.
+      - defect 3531
+- name: GenOHM-SCADA
+  regexps:
+    body:
+      - GenOHM Scada Launcher
+      - /cgi-bin/scada-vis/
+- name: Gentoo Linux
+  regexps:
+    header:
+      - Gentoo
+- name: Geobytes-GeoSelect
+  regexps:
+    header:
+      - Geobytes-GeoSelect
+- name: GeoNode
+  regexps:
+    body:
+      - Powered by <a href="http://geonode.org
+      - href="/catalogue/opensearch" title="GeoNode Search
+- name: GeoServer
+  regexps:
+    body:
+      - /org.geoserver.web.GeoServerBasePage/
+      - class="geoserver lebeg
+- name: GeoTrust_cert
+  regexps:
+    body:
+      - //smarticon.geotrust.com/si.js
+- name: GetSimple
+  regexps:
+    body:
+      - content="GetSimple
+      - Powered by GetSimple
+- name: gitlab
+  regexps:
+    body:
+      - gon.default_issues_tracker
+      - GitLab
+    header:
+      - _gitlab_session
+- name: Gitorious
+  regexps:
+    body:
+      - Powered by Gitorious
+    header:
+      - _gitorious_sess
+- name: Gitweb
+  regexps:
+    body:
+      - content="gitweb
+      - /gitweb.css
+      - /gitweb.js
+- name: GlassFish
+  regexps:
+    header:
+      - 'Server: GlassFish Server'
+- name: glFusion
+  regexps:
+    body:
+      - by <a href="http://www.glfusion.org/
+- name: globalsign_cert
+  regexps:
+    body:
+      - //seal.globalsign.com/SiteSeal
+- name: Glossword
+  regexps:
+    body:
+      - content="Glossword
+- name: Go-Json-Rest
+  regexps:
+    header:
+      - go-json-rest
+- name: GoAhead-Webs
+  regexps:
+    header:
+      - GoAhead-Webs
+- name: GoAhead
+  regexps:
+    header:
+      - GoAhead
+- name: gocdn
+  regexps:
+    header:
+      - GOCDN
+- name: google api
+  regexps:
+    body:
+      - www.google.com/jsapi
+      - ajax.googleapis.com/
+- name: Google Hosted Libraries
+  regexps:
+    body:
+      - ajax.googleapis.com/ajax/libs
+    header:
+      - ajax.googleapis.com/ajax/libs
+- name: google map
+  regexps:
+    body:
+      - maps.googleapis.com/maps/api/js
+- name: google maps
+  regexps:
+    body:
+      - maps.google.com/maps
+- name: google-analytics
+  regexps:
+    body:
+      - google-analytics.com/ga.js
+      - google-analytics.com/analytics.js
+- name: Google-Search-Appliance
+  regexps:
+    body:
+      - Google Search Appliance
+    header:
+      - Google Search Appliance
+- name: Google-Talk-Chatback
+  regexps:
+    body:
+      - www.google.com/talk/service/
+- name: Google_AdSense
+  regexps:
+    body:
+      - googlesyndication
+- name: google站长平台
+  regexps:
+    body:
+      - google-site-verification
+- name: Gordano-Messaging-Suite
+  regexps:
+    header:
+      - Gordano
+- name: GoServe
+  regexps:
+    header:
+      - GoServe
+- name: Gossamer-Forum
+  regexps:
+    body:
+      - href="gforum.cgi?username=
+      - Gossamer Forum
+- name: GpsGate-Server
+  regexps:
+    body:
+      - 'GpsGate Server - '
+- name: GPSweb
+  regexps:
+    body:
+      - GPSweb
+- name: Grandstream-Phone
+  regexps:
+    body:
+      - Grandstream Device Configuration
+    header:
+      - Grandstream
+- name: grandstream
+  regexps:
+    header:
+      - Grandstream
+- name: GrandTec-X-Guard
+  regexps:
+    header:
+      - WalkGuard
+- name: GridSite
+  regexps:
+    body:
+      - <a href="http://www.gridsite.org/">GridSite
+      - gridsite-admin.cgi?cmd
+- name: Group-Office
+  regexps:
+    body:
+      - powered by Group-Office
+      - '"theme":"Group-Office",'
+    header:
+      - groupoffice=
+- name: GSE
+  regexps:
+    header:
+      - 'Server: GSE'
+- name: gSOAP
+  regexps:
+    header:
+      - gSOAP
+- name: gunicorn
+  regexps:
+    header:
+      - gunicorn
+- name: GuppY
+  regexps:
+    body:
+      - content="GuppY
+      - class="copyright" href="http://www.freeguppy.org/
+- name: GWS (Google Web Server)
+  regexps:
+    header:
+      - 'Server: gws'
+- name: H3C MSR
+  regexps:
+    body:
+      - wnm/ssl/web/frame/login.html
+- name: H3C AM8000
+  regexps:
+    body:
+      - AM8000
+- name: H3C ER2100
+  regexps:
+    body:
+      - ER2100系统管理
+- name: H3C ER2100n
+  regexps:
+    body:
+      - ER2100n系统管理
+- name: H3C ER2100V2
+  regexps:
+    body:
+      - ER2100V2系统管理
+- name: H3C ER3100
+  regexps:
+    body:
+      - ER3100系统管理
+- name: H3C ER3108G
+  regexps:
+    body:
+      - ER3108G系统管理
+- name: H3C ER3108GW
+  regexps:
+    body:
+      - ER3108GW系统管理
+- name: H3C ER3200
+  regexps:
+    body:
+      - ER3200系统管理
+- name: H3C ER3260
+  regexps:
+    body:
+      - ER3260系统管理
+- name: H3C ER3260G2
+  regexps:
+    body:
+      - ER3260G2系统管理
+- name: H3C ER5100
+  regexps:
+    body:
+      - ER5100系统管理
+- name: H3C ER5200
+  regexps:
+    body:
+      - ER5200系统管理
+- name: H3C ER5200G2
+  regexps:
+    body:
+      - ER5200G2系统管理
+- name: H3C ER6300
+  regexps:
+    body:
+      - ER6300系统管理
+- name: H3C ER6300G2
+  regexps:
+    body:
+      - ER6300G2系统管理
+- name: H3C ER8300
+  regexps:
+    body:
+      - ER8300系统管理
+- name: H3C ER8300G2
+  regexps:
+    body:
+      - ER8300G2系统管理
+- name: H3C ICG 1000
+  regexps:
+    body:
+      - ICG 1000系统管理
+- name: H3C ICG1000
+  regexps:
+    body:
+      - ICG1000系统管理
+- name: H3C-SecBlade-FireWall
+  regexps:
+    body:
+      - js/MulPlatAPI.js
+- name: H3C公司产品
+  regexps:
+    body:
+      - service@h3c.com
+      - H3C Corporation
+      - icg_helpScript.js
+- name: h3c路由器
+  regexps:
+    body:
+      - Web user login
+      - nLanguageSupported
+- name: HAProxy
+  regexps:
+    header:
+      - HAProxy Statistics
+- name: HAProxy_Report
+  regexps:
+    body:
+      - Statistics Report for HAProxy
+- name: HDWiki
+  regexps:
+    body:
+      - powered by hdwiki!
+      - content="HDWiki
+      - http://kaiyuan.hudong.com?hf=hdwiki_copyright_kaiyuan
+    header:
+      - hd_sid=
+- name: HeiTel-Digital-Video-Device
+  regexps:
+    header:
+      - HeiTel GmbH Web Server
+- name: hellobar
+  regexps:
+    body:
+      - hellobar.js
+- name: Help-Desk-Software
+  regexps:
+    body:
+      - target="_blank">freehelpdesk.org
+- name: HESK
+  regexps:
+    body:
+      - hesk_javascript.js
+      - hesk_style.css
+      - Powered by <a href="http://www.hesk.com
+      - Powered by <a href="https://www.hesk.com
+- name: HFS
+  regexps:
+    body:
+      - HFS
+    header:
+      - HFS_SID_=
+- name: HighWire-Press
+  regexps:
+    header:
+      - x-highwire-sessionid
+- name: hikashop
+  regexps:
+    body:
+      - /media/com_hikashop/css/
+- name: Hiki
+  regexps:
+    body:
+      - content="Hiki
+      - /hiki_base.css
+      - by <a href="http://hikiwiki.org/
+- name: HIMS酒店云计算服务
+  regexps:
+    body:
+      - GB_ROOT_DIR
+      - maincontent.css
+      - HIMS酒店云计算服务
+- name: hishop
+  regexps:
+    body:
+      - hishop.plugins.openid
+      - Hishop development team
+- name: HiveMail
+  regexps:
+    body:
+      - content="Hivemail
+    header:
+      - hivesession
+- name: HoloCMS
+  regexps:
+    body:
+      - Powered by HoloCMS
+- name: Home-Control-Box
+  regexps:
+    header:
+      - hcb_web
+- name: Honeywell IP-Camera
+  regexps:
+    body:
+      - Honeywell IP-Camera
+- name: honeywell NetAXS
+  regexps:
+    body:
+      - Honeywell NetAXS
+- name: Horde-Application-Framework
+  regexps:
+    body:
+      - Powered by Horde
+      - <img src="/themes/default/graphics/horde-power1.png
+    header:
+      - horde_secret_key
+- name: Horde
+  regexps:
+    body:
+      - 'IMP: Copyright 2001-2009 The Horde Project'
+    header:
+      - 'Set-Cookie: Horde'
+- name: HostBill
+  regexps:
+    body:
+      - Powered by <a href="http://hostbillapp.com
+      - <strong>HostBill
+- name: Hotaru-CMS
+  regexps:
+    body:
+      - content="Hotaru
+- name: HP-LaserJet-Printer
+  regexps:
+    body:
+      - HP Color LaserJet
+      - hp LaserJet
+    header:
+      - HP-ChaiSOE
+- name: HP-OfficeJet-Printer
+  regexps:
+    body:
+      - HP Officejet
+      - align="center">HP Officejet
+- name: HP-Printer
+  regexps:
+    header:
+      - HP HTTP Server
+- name: HP-ProCurve-Switch
+  regexps:
+    body:
+      - ProCurve Switch
+    header:
+      - eHTTP
+- name: HP-SiteScope
+  regexps:
+    body:
+      - SiteScope Login
+    header:
+      - SiteScope
+- name: HP-StorageWorks-Library
+  regexps:
+    body:
+      - HP StorageWorks
+- name: HP-System-Management-Homepage
+  regexps:
+    body:
+      - HP System Management Homepage
+    header:
+      - CompaqHTTPServer
+- name: HP_iLO(HP_Integrated_Lights-Out)
+  regexps:
+    body:
+      - js/iLO.js
+- name: HP打印机
+  regexps:
+    body:
+      - HP LaserJet
+      - /hp/jetdirect
+    header:
+      - HP-ChaiServer
+- name: Http-Explorer
+  regexps:
+    header:
+      - Http explorer
+- name: Huawei ibmc
+  regexps:
+    body:
+      - bmc/resources/css/frame
+- name: Huawei B683
+  regexps:
+    body:
+      - Huawei B683
+- name: Huawei B683V
+  regexps:
+    body:
+      - Huawei B683V
+- name: HUAWEI CSP
+  regexps:
+    body:
+      - HUAWEI CSP
+- name: HUAWEI ESPACE 7910
+  regexps:
+    body:
+      - HUAWEI ESPACE 7910
+- name: Huawei HG520 ADSL2+ Router
+  regexps:
+    body:
+      - Huawei HG520
+- name: Huawei HG630
+  regexps:
+    body:
+      - Huawei HG630
+- name: HUAWEI Inner Web
+  regexps:
+    body:
+      - HUAWEI Inner Web
+      - hidden_frame.html
+- name: Huawei Official Site
+  regexps:
+    body:
+      - Huawei Official Site
+- name: Huawei SmartAX
+  regexps:
+    header:
+      - Basic realm="Huawei SmartAX"
+- name: Huawei-Firewall
+  regexps:
+    body:
+      - Modify by wangxiangguang
+    header:
+      - Eudemon Server
+- name: Huawei-Quidway-Switch
+  regexps:
+    header:
+      - 'Lanswitch - '
+- name: HuaweiHomeGateway
+  regexps:
+    body:
+      - Menu.HomeGatewayTitle
+    header:
+      - HuaweiHomeGateway
+- name: huawei_auth_server
+  regexps:
+    body:
+      - 75718C9A-F029-11d1-A1AC-00C04FB6C223
+- name: hubspot
+  regexps:
+    body:
+      - js.hubspot.com/analytics
+- name: Hudson
+  regexps:
+    header:
+      - X-Hudson
+- name: Hughes-Satellite-Router
+  regexps:
+    body:
+      - <frame src=/fs/dynaform/dw_logo.html
+    header:
+      - HUGHES Terminal
+- name: Hybrid-Cluster
+  regexps:
+    header:
+      - Hybrid Cluster
+- name: Hycus-CMS
+  regexps:
+    body:
+      - content="Hycus
+      - Powered By <a href="http://www.hycus.com
+- name: HyNetOS-httpd
+  regexps:
+    header:
+      - HyNetOS
+- name: Hyperwave-IS
+  regexps:
+    header:
+      - Hyperwave
+- name: i-Catcher-Console
+  regexps:
+    body:
+      - by i-Catcher Console
+    header:
+      - i-Catcher
+- name: i-Gallery
+  regexps:
+    body:
+      - i-Gallery
+      - href="igallery.asp
+- name: I-O-DATA-Router
+  regexps:
+    body:
+      - I-O DATA Wireless Broadband Router
+- name: i3micro
+  regexps:
+    header:
+      - i3micro
+- name: i@Report
+  regexps:
+    body:
+      - ESENSOFT_IREPORT_SERVER
+      - com.sanlink.server.Login
+      - ireportclient
+      - css/ireport.css
+- name: iAPPS
+  regexps:
+    header:
+      - iAPPSCookie
+- name: iBall W4GX150N
+  regexps:
+    header:
+      - iB-W4GX150N
+- name: iBall WRX300N
+  regexps:
+    header:
+      - iB-WRX300N
+- name: IBM WebSphere DataPower
+  regexps:
+    header:
+      - X-Backside-Transport
+- name: IBM-BladeCenter
+  regexps:
+    body:
+      - /shared/ibmbch.png
+      - /shared/ibmbcs.png
+      - alt="IBM BladeCenter
+- name: IBM-CICS-Transaction-Server
+  regexps:
+    header:
+      - IBM_CICS_Transaction_Server
+- name: IBM-Cognos
+  regexps:
+    body:
+      - /cgi-bin/cognos.cgi
+      - Cognos &#26159; International Business Machines Corp
+- name: IBM-Internet-Connection-Server
+  regexps:
+    header:
+      - IBM Internet Connection Server
+- name: IBM-Web-Traffic-Express-Caching-Proxy
+  regexps:
+    body:
+      - /admin-bin/webexec/wte.html
+    header:
+      - IBM-PROXY-WTE
+- name: IBM-WebSEAL
+  regexps:
+    header:
+      - WebSEAL
+- name: IBM-WebSphere-DataPower
+  regexps:
+    header:
+      - x-backside-transport
+- name: IBM_HTTP_Server
+  regexps:
+    header:
+      - IBM_HTTP_Server
+- name: Icecast
+  regexps:
+    header:
+      - icecast
+- name: ICEFLOW_VPN
+  regexps:
+    header:
+      - 'Server: ICEFLOW'
+- name: ICEshop
+  regexps:
+    body:
+      - Powered by ICEshop
+      - <div id="iceshop">
+- name: Icinga
+  regexps:
+    header:
+      - Icinga
+- name: ICOM-Router
+  regexps:
+    header:
+      - Icom HTTP Server
+- name: IdeaCMS
+  regexps:
+    body:
+      - Powered By IdeaCMS
+      - m_ctr32
+- name: IdeaWebServer
+  regexps:
+    header:
+      - IdeaWebServer
+- name: iDVR
+  regexps:
+    body:
+      - iDVR
+      - name="iDVRForm
+    header:
+      - iDVRhttpSvr
+- name: iGaming-CMS
+  regexps:
+    body:
+      - http://www.igamingcms.com/
+- name: iGENUS邮件系统
+  regexps:
+    body:
+      - Copyright by<A HREF="http://www.igenus.org
+      - iGENUS webmail
+- name: iGiveTest
+  regexps:
+    body:
+      - Powered by iGiveTest
+    header:
+      - IGTSESSID
+- name: iGuard-Security-System
+  regexps:
+    body:
+      - content="Lucky-Tech iGuard
+    header:
+      - iGuard Embedded Web Server
+- name: iHTML
+  regexps:
+    header:
+      - iHTML
+- name: IIS
+  regexps:
+    header:
+      - 'X-Powered-By: WAF/2.0'
+- name: IIS10.5
+  regexps:
+    header:
+      - IIS/10.5
+- name: IIS10
+  regexps:
+    header:
+      - IIS/10.0
+- name: IIS5
+  regexps:
+    header:
+      - iis/5
+- name: IIS6.0
+  regexps:
+    header:
+      - IIS/6.0
+- name: IIS6.5
+  regexps:
+    header:
+      - iis/6.5
+- name: IIS6
+  regexps:
+    header:
+      - iis/6
+- name: IIS7.0
+  regexps:
+    header:
+      - IIS/7.0
+- name: IIS7.5
+  regexps:
+    header:
+      - IIS/7.5
+- name: IIS8.0
+  regexps:
+    header:
+      - IIS/8.0
+- name: IIS8.5
+  regexps:
+    header:
+      - IIS/8.5
+- name: IIS9.0
+  regexps:
+    header:
+      - IIS/9.0
+- name: IIS9.5
+  regexps:
+    header:
+      - IIS/9.5
+- name: Iisexport
+  regexps:
+    header:
+      - Iisexport
+- name: Ikonboard
+  regexps:
+    body:
+      - content="Ikonboard
+      - Powered by <a href="http://www.ikonboard.com
+- name: iLO
+  regexps:
+    body:
+      - href="http://www.hp.com/go/ilo
+      - HP Integrated Lights-Out
+- name: iLON-SmartServer
+  regexps:
+    header:
+      - i.LON
+- name: Imageview
+  regexps:
+    body:
+      - content="Imageview
+      - By Jorge Schrauwen
+      - href="http://www.blackdot.be" title="Blackdot.be
+- name: imailserver
+  regexps:
+    body:
+      - myICalUserName
+    header:
+      - Ipswitch-IMail
+- name: IMGallery
+  regexps:
+    body:
+      - href="http://www.imgallery.zor.pl"><b>IMGallery
+- name: IMGCms
+  regexps:
+    body:
+      - content="IMGCMS
+      - Powered by IMGCMS
+- name: ImpressPages-CMS
+  regexps:
+    body:
+      - content="ImpressPages CMS
+- name: Incapsula
+  regexps:
+    header:
+      - 'X-Cdn: Incapsula'
+- name: Indico
+  regexps:
+    body:
+      - href="http://cern.ch/indico
+    header:
+      - MAKACSESSION
+- name: IndusGuard_WAF
+  regexps:
+    body:
+      - IndusGuard WAF
+      - wafportal/wafportal.nocache.js
+- name: Infinet-Wireless-WANFleX-Router
+  regexps:
+    body:
+      - content="InfiNet
+    header:
+      - WANFlex HTTP Daemon
+- name: infoglue
+  regexps:
+    body:
+      - infoglue
+      - infoglueBox.png
+- name: Infomaster
+  regexps:
+    body:
+      - /MasterView.css
+      - /masterView.js
+      - /MasterView/MPLeftNavStyle/PanelBar.MPIFMA.css
+- name: Informatics-CMS
+  regexps:
+    body:
+      - content="Informatics
+- name: Inktomi-Search
+  regexps:
+    header:
+      - Inktomi Search
+- name: Inout-Adserver
+  regexps:
+    body:
+      - Powered by Inoutscripts
+- name: Intellinet-IP-Camera
+  regexps:
+    body:
+      - Copyright &copy;  INTELLINET NETWORK SOLUTIONS
+      - http://www.intellinet-network.com/driver/NetCam.exe
+- name: Intermec-EasyLAN
+  regexps:
+    body:
+      - COLOR="BLACK" SIZE="5">Intermec EasyLAN
+    header:
+      - XCD WebAdmin
+- name: Internet-Cluster-Manager
+  regexps:
+    header:
+      - Internet Cluster Manager
+- name: Internet-Rimon-Filter
+  regexps:
+    header:
+      - rimon
+- name: InterRed
+  regexps:
+    body:
+      - content="InterRed
+      - Created with InterRed
+- name: Interspire-Shopping-Cart
+  regexps:
+    body:
+      - content="Interspire Shopping Cart
+      - class="PoweredBy">Interspire Shopping Cart
+- name: Intoto-Router
+  regexps:
+    header:
+      - Intoto Http Server
+- name: Intrasrv
+  regexps:
+    header:
+      - intrasrv
+- name: Intraxxion-CMS
+  regexps:
+    body:
+      - content="Intraxxion
+      - <!-- site built by Intraxxion
+- name: Intrinsyc-deviceWEB
+  regexps:
+    header:
+      - Intrinsyc deviceWEB
+- name: InvisionPowerBoard
+  regexps:
+    body:
+      - Powered by <a href="http://www.invisionboard.com
+- name: InvoicePlane
+  regexps:
+    body:
+      - InvoicePlane
+    header:
+      - ci_session
+- name: ionCube-Loader
+  regexps:
+    body:
+      - alt="ionCube logo
+- name: ionCube-PHP-Accelerator
+  regexps:
+    header:
+      - x-accelerated-by
+- name: IP.Board
+  regexps:
+    body:
+      - ipb.vars
+- name: iPeer
+  regexps:
+    body:
+      - Powered by iPeer
+      - /js/ipeer.js
+      - /css/ipeer.css
+    header:
+      - IPEER=
+- name: IPFire
+  regexps:
+    header:
+      - IPFire - Restricted
+- name: ipinyou
+  regexps:
+    body:
+      - stats.ipinyou.com/
+- name: Ipswitch-IMail
+  regexps:
+    header:
+      - Ipswitch-IMail
+- name: ipTIME-Router
+  regexps:
+    body:
+      - networks - ipTIME
+      - href=iptime.css
+- name: IQeye-Netcam
+  regexps:
+    body:
+      - 'IQEYE: Live Images'
+      - content="Brian Lau, IQinVision
+      - loc = "iqeyevid.html
+- name: irecms
+  regexps:
+    header:
+      - IRe.CMS
+- name: iredadmin(Roundcube?)
+  regexps:
+    body:
+      - iredadmin
+    header:
+      - iredadmin
+- name: ISC-SCADA-Service
+  regexps:
+    body:
+      - ISC SCADA
+    header:
+      - ISC SCADA Service
+- name: ischoolsite
+  regexps:
+    body:
+      - Powered by <a href="http://www.ischoolsite.com
+- name: iScripts-MultiCart
+  regexps:
+    body:
+      - Powered by <a href="http://iscripts.com/multicart
+- name: iScripts-ReserveLogic
+  regexps:
+    body:
+      - Powered by <a href="http://www.iscripts.com/reservelogic/
+- name: Isolsoft-Support-Center
+  regexps:
+    body:
+      - 'Powered by: Support Center'
+- name: ISPConfig
+  regexps:
+    body:
+      - powered by <a HREF="http://www.ispconfig.org
+- name: ispCP-Omega
+  regexps:
+    body:
+      - ispCP Omega a Virtual Hosting Control System
+    header:
+      - ' ispCP='
+- name: iTop
+  regexps:
+    body:
+      - iTop Login
+      - href="http://www.combodo.com/itop
+- name: iWebShop
+  regexps:
+    body:
+      - /runtime/default/systemjs
+- name: iWebSNS
+  regexps:
+    body:
+      - /jooyea/images/sns_idea1.jpg
+      - /jooyea/images/snslogo.gif
+- name: IWSS-Proxy
+  regexps:
+    header:
+      - IWSS
+- name: IX Series
+  regexps:
+    header:
+      - IX Series
+- name: JagoanStore
+  regexps:
+    body:
+      - href="http://www.jagoanstore.com/" target="_blank">Toko Online
+- name: Jamroom
+  regexps:
+    body:
+      - content="Talldude Networks
+      - content="Jamroom
+- name: Jasig-CAS
+  regexps:
+    body:
+      - Powered by <a href="http://www.jasig.org/cas
+- name: javashop
+  regexps:
+    body:
+      - 易族智汇javashop
+      - javashop微信公众号
+      - content="JavaShop
+- name: JBoss
+  regexps:
+    header:
+      - 'Server: JBoss'
+- name: JBoss_AS
+  regexps:
+    body:
+      - Manage this JBoss AS Instance
+- name: jcg无线路由器
+  regexps:
+    body:
+      - Wireless Router
+      - http://www.jcgcn.com
+- name: jCore
+  regexps:
+    body:
+      - 'JCORE_VERSION = '
+- name: Jcow
+  regexps:
+    body:
+      - content="Jcow
+      - content="Powered by Jcow
+      - end jcow_application_box
+
+- name: Jetty
+  regexps:
+    header:
+      - 'Server: Jetty'
+- name: JEUS
+  regexps:
+    header:
+      - Jeus WebContainer
+- name: JGS-Portal
+  regexps:
+    body:
+      - Powered by <b>JGS-Portal Version
+      - href="jgs_portal_box.php?id=
+- name: jiathis
+  regexps:
+    body:
+      - jiathis.com/code/jia.js
+- name: jieqi cms
+  regexps:
+    body:
+      - content="jieqi cms
+      - jieqi cms
+- name: Jigsaw
+  regexps:
+    header:
+      - Jigsaw
+- name: jira
+  regexps:
+    body:
+      - jira.webresources
+      - ams-build-number
+      - com.atlassian.plugins
+    header:
+      - atlassian.xsrf.token
+- name: Jive-SBS
+  regexps:
+    body:
+      - /jive-icons.css
+      - class="jive-body-formpage
+      - jive.rte.defaultStyles
+    header:
+      - 'X-Jsl: '
+- name: jobberBase
+  regexps:
+    body:
+      - Jobber
+- name: joomla-facebook
+  regexps:
+    header:
+      - jfbconnect_permissions_granted
+- name: Joomla
+  regexps:
+    body:
+      - content="Joomla
+      - /media/system/js/core.js
+      - /media/system/js/mootools-core.js
+- name: JSF
+  regexps:
+    header:
+      - JSF
+- name: JSP 2.x
+  regexps:
+    header:
+      - JSP/2.2
+- name: JTBC(CMS)
+  regexps:
+    body:
+      - /js/jtbc.js
+      - content="JTBC
+- name: Juniper-Load-Balancer
+  regexps:
+    header:
+      - Juniper Networks Application Acceleration Platform
+- name: Juniper-NetScreen-Secure-Access
+  regexps:
+    body:
+      - /dana-na/auth/welcome.cgi
+- name: juniper_vpn
+  regexps:
+    body:
+      - welcome.cgi?p=logo
+- name: JXT-Consulting
+  regexps:
+    body:
+      - id="jxt-popup-wrapper
+      - Powered by JXT Consulting
+- name: KaiBB
+  regexps:
+    body:
+      - Powered by KaiBB
+      - content="Forum powered by KaiBB
+- name: Kajona
+  regexps:
+    body:
+      - content="Kajona
+      - powered by Kajona
+- name: Kampyle
+  regexps:
+    body:
+      - http://cf.kampyle.com/k_button.js
+      - Start Kampyle Feedback Form Button
+- name: Kandidat-CMS
+  regexps:
+    body:
+      - content="Kandidat-CMS
+- name: kangle反向代理
+  regexps:
+    body:
+      - welcome use kangle
+    header:
+      - kangle
+- name: Karrigell
+  regexps:
+    header:
+      - Karrigell
+- name: Kayako-SupportSuite
+  regexps:
+    body:
+      - Powered By Kayako eSupport
+      - Help Desk Software By Kayako eSupport
+- name: Kedacom-TrueSens
+  regexps:
+    body:
+      - /img/kedacom-logo.jpg
+    header:
+      - KEDACOM
+- name: Keil-Embedded-WEB-Server
+  regexps:
+    header:
+      - Keil-EWEB
+- name: Kentico-CMS
+  regexps:
+    body:
+      - content="Kentico CMS
+    header:
+      - CMSPreferredCulture
+- name: Kerio MailServer
+  regexps:
+    header:
+      - Kerio MailServer
+- name: Kerio-Connect
+  regexps:
+    header:
+      - Kerio MailServer
+- name: Kerio-WebSTAR
+  regexps:
+    header:
+      - 4D_WebStar
+- name: Kerio-WinRoute-Firewall
+  regexps:
+    body:
+      - /gfx/kerio_logo.gif
+      - Kerio WinRoute Firewall
+    header:
+      - Kerio WinRoute Firewall Embedded Web Server
+- name: Kerio_WinRoute_Firewall
+  regexps:
+    body:
+      - style/bodyNonauth.css
+    header:
+      - Kerio WinRoute Firewall
+- name: kesionCMS
+  regexps:
+    body:
+      - /ks_inc/common.js
+      - publish by KesionCMS
+- name: KeyFocus-WebServer
+  regexps:
+    header:
+      - KFWebServer
+- name: Kibana
+  regexps:
+    body:
+      - Kibana
+      - kbnVersion
+- name: KindEditor
+  regexps:
+    body:
+      - kindeditor.js
+      - KindEditor.ready
+      - K.create
+- name: kingcms
+  regexps:
+    body:
+      - kingcms
+      - content="KingCMS
+      - Powered by KingCMS
+- name: Kleeja
+  regexps:
+    body:
+      - Powered by Kleeja
+- name: Kloxo-Single-Server
+  regexps:
+    body:
+      - src="/img/hypervm-logo.gif
+      - /htmllib/js/preop.js
+      - HyperVM
+- name: Knopflerfish-HTTP-Server
+  regexps:
+    header:
+      - The Knopflerfish HTTP Server
+- name: Kohana-Framework
+  regexps:
+    header:
+      - Kohana Framework
+- name: Kooboocms
+  regexps:
+    header:
+      - Kooboocms
+- name: LANMP一键安装包
+  regexps:
+    body:
+      - LANMP一键安装包
+- name: laravel
+  regexps:
+    header:
+      - laravel_session
+      - ci_session
+- name: lemis管理系统
+  regexps:
+    body:
+      - lemis.WEB_APP_NAME
+- name: lepton-cms
+  regexps:
+    body:
+      - content="LEPTON-CMS
+      - Powered by LEPTON CMS
+- name: Liferay
+  regexps:
+    header:
+      - Liferay-Portal
+- name: lighttpd
+  regexps:
+    header:
+      - 'server: lighttpd'
+- name: Linksys 3-SanatPonsa-ONO
+  regexps:
+    header:
+      - Linksys 3-SanatPonsa-ONO
+- name: Linksys BEFDSR41W
+  regexps:
+    header:
+      - Linksys BEFDSR41W
+- name: Linksys BEFSR41
+  regexps:
+    header:
+      - Linksys BEFSR41
+- name: Linksys BEFSR41C-JP
+  regexps:
+    header:
+      - Linksys BEFSR41C-JP
+- name: Linksys BEFSR41v3
+  regexps:
+    header:
+      - Linksys BEFSR41v3
+- name: Linksys BEFSR41v4
+  regexps:
+    header:
+      - Linksys BEFSR41v4
+- name: Linksys BEFSR41/BEFSR11/BEFSRU31
+  regexps:
+    header:
+      - Linksys BEFSR41/BEFSR11/BEFSRU31
+- name: Linksys BEFSR81
+  regexps:
+    header:
+      - Linksys BEFSR81
+- name: Linksys BEFSR81v3
+  regexps:
+    header:
+      - Linksys BEFSR81v3
+- name: Linksys BEFSX41
+  regexps:
+    header:
+      - Linksys BEFSX41
+- name: Linksys BEFVP41
+  regexps:
+    header:
+      - Linksys BEFVP41
+- name: Linksys BEFW11S4
+  regexps:
+    header:
+      - Linksys BEFW11S4
+- name: Linksys DD-WRT
+  regexps:
+    header:
+      - Linksys DD-WRT
+- name: Linksys E1000
+  regexps:
+    header:
+      - Linksys E1000
+- name: Linksys E1200
+  regexps:
+    header:
+      - Linksys E1200
+- name: Linksys E1500
+  regexps:
+    header:
+      - Linksys E1500
+- name: Linksys E1550
+  regexps:
+    header:
+      - Linksys E1550
+- name: Linksys E2000
+  regexps:
+    header:
+      - Linksys E2000
+- name: Linksys E2100L
+  regexps:
+    header:
+      - Linksys E2100L
+- name: Linksys E2500
+  regexps:
+    header:
+      - Linksys E2500
+- name: Linksys E3000
+  regexps:
+    header:
+      - Linksys E3000
+- name: Linksys E3200
+  regexps:
+    header:
+      - Linksys E3200
+- name: Linksys E4200
+  regexps:
+    header:
+      - Linksys E4200
+- name: Linksys E4200EB
+  regexps:
+    header:
+      - Linksys E4200EB
+- name: Linksys E900
+  regexps:
+    header:
+      - Linksys E900
+- name: Linksys EA2700
+  regexps:
+    header:
+      - Linksys EA2700
+- name: Linksys EA2700OQ
+  regexps:
+    header:
+      - Linksys EA2700OQ
+- name: Linksys EA3500
+  regexps:
+    header:
+      - Linksys EA3500
+- name: Linksys EA4500
+  regexps:
+    header:
+      - Linksys EA4500
+- name: Linksys EA4500OQ
+  regexps:
+    header:
+      - Linksys EA4500OQ
+- name: LINKSYS EA6500
+  regexps:
+    header:
+      - LINKSYS EA6500
+- name: Linksys EA6500v2
+  regexps:
+    header:
+      - Linksys EA6500v2
+- name: Linksys ED55E
+  regexps:
+    header:
+      - Linksys ED55E
+- name: Linksys FW
+  regexps:
+    header:
+      - Linksys FW
+- name: Linksys G
+  regexps:
+    header:
+      - Linksys G
+- name: Linksys gateway
+  regexps:
+    header:
+      - Linksys gateway
+- name: Linksys Guests
+  regexps:
+    header:
+      - Linksys Guests
+- name: Linksys GW
+  regexps:
+    header:
+      - Linksys GW
+- name: Linksys LCAB03VLNOD
+  regexps:
+    header:
+      - Linksys LCAB03VLNOD
+- name: Linksys LCAD03FLN
+  regexps:
+    header:
+      - Linksys LCAD03FLN
+- name: Linksys LCAD03VLNOD
+  regexps:
+    header:
+      - Linksys LCAD03VLNOD
+- name: Linksys LCAM0336OD
+  regexps:
+    header:
+      - Linksys LCAM0336OD
+- name: Linksys RT31P2
+  regexps:
+    header:
+      - Linksys RT31P2
+- name: LINKSYS RV-042
+  regexps:
+    header:
+      - LINKSYS RV-042
+- name: linksys rv042
+  regexps:
+    header:
+      - linksys rv042
+- name: LINKSYS RV082
+  regexps:
+    header:
+      - LINKSYS RV082
+- name: Linksys RVS4000
+  regexps:
+    header:
+      - Linksys RVS4000
+- name: Linksys Teo
+  regexps:
+    header:
+      - Linksys Teo
+- name: LINKSYS TG
+  regexps:
+    header:
+      - LINKSYS TG
+- name: Linksys VPN
+  regexps:
+    header:
+      - Linksys VPN
+- name: Linksys WAG120N
+  regexps:
+    header:
+      - Linksys WAG120N
+- name: Linksys WAG160N
+  regexps:
+    header:
+      - Linksys WAG160N
+- name: Linksys WAG160Nv2
+  regexps:
+    header:
+      - Linksys WAG160Nv2
+- name: Linksys WAG160Nv2B
+  regexps:
+    header:
+      - Linksys WAG160Nv2B
+- name: Linksys WAG200G
+  regexps:
+    header:
+      - Linksys WAG200G
+- name: Linksys WAG200GB
+  regexps:
+    header:
+      - Linksys WAG200GB
+- name: Linksys WAG300N
+  regexps:
+    header:
+      - Linksys WAG300N
+- name: Linksys WAG320N
+  regexps:
+    header:
+      - Linksys WAG320N
+- name: Linksys WAG325N
+  regexps:
+    header:
+      - Linksys WAG325N
+- name: Linksys WAG54G2
+  regexps:
+    header:
+      - Linksys WAG54G2
+- name: Linksys WAG54GS
+  regexps:
+    header:
+      - Linksys WAG54GS
+- name: Linksys WAG54GSB
+  regexps:
+    header:
+      - Linksys WAG54GSB
+- name: Linksys WAG54GX2
+  regexps:
+    header:
+      - Linksys WAG54GX2
+- name: Linksys WAP
+  regexps:
+    header:
+      - Linksys WAP
+- name: Linksys WAP11
+  regexps:
+    header:
+      - Linksys WAP11
+- name: Linksys WAP200
+  regexps:
+    header:
+      - Linksys WAP200
+- name: Linksys WAP4400N
+  regexps:
+    header:
+      - Linksys WAP4400N
+- name: Linksys WAP54G
+  regexps:
+    header:
+      - Linksys WAP54G
+- name: Linksys WAP54GP
+  regexps:
+    header:
+      - Linksys WAP54GP
+- name: Linksys WAP54GPE
+  regexps:
+    header:
+      - Linksys WAP54GPE
+- name: Linksys WCG200
+  regexps:
+    header:
+      - Linksys WCG200
+- name: Linksys WET11
+  regexps:
+    header:
+      - Linksys WET11
+- name: Linksys WET54G
+  regexps:
+    header:
+      - Linksys WET54G
+- name: Linksys WRK54G
+  regexps:
+    header:
+      - Linksys WRK54G
+- name: linksys wrt160nl
+  regexps:
+    header:
+      - linksys wrt160nl
+- name: LINKSYS WRT270N
+  regexps:
+    header:
+      - LINKSYS WRT270N
+- name: Linksys WRT300N
+  regexps:
+    header:
+      - Linksys WRT300N
+- name: Linksys WRT350N
+  regexps:
+    header:
+      - Linksys WRT350N
+- name: Linksys WRT54G
+  regexps:
+    header:
+      - Linksys WRT54G
+- name: Linksys WRT54GL
+  regexps:
+    header:
+      - Linksys WRT54GL
+- name: Linksys WRT54GP2
+  regexps:
+    header:
+      - Linksys WRT54GP2
+- name: Linksys WRT54GR
+  regexps:
+    header:
+      - Linksys WRT54GR
+- name: LINKSYS WRT54GS
+  regexps:
+    header:
+      - LINKSYS WRT54GS
+- name: Linksys WRT600
+  regexps:
+    header:
+      - Linksys WRT600
+- name: Linksys WRT600N
+  regexps:
+    header:
+      - Linksys WRT600N
+- name: Linksys WRV54G
+  regexps:
+    header:
+      - Linksys WRV54G
+- name: Linksys WRVS4400N
+  regexps:
+    header:
+      - Linksys WRVS4400N
+- name: linksys-am
+  regexps:
+    header:
+      - linksys-am
+- name: Linksys-CENTRAL
+  regexps:
+    header:
+      - Linksys-CENTRAL
+- name: Linksys-CIT400
+  regexps:
+    header:
+      - Linksys-CIT400
+- name: LINKSYS-DD-WRT
+  regexps:
+    header:
+      - LINKSYS-DD-WRT
+- name: LINKSYS-DISCOVERY
+  regexps:
+    header:
+      - LINKSYS-DISCOVERY
+- name: LINKSYS-E3000
+  regexps:
+    header:
+      - LINKSYS-E3000
+- name: linksys-ecolub-portal
+  regexps:
+    header:
+      - linksys-ecolub-portal
+- name: linksys-Hanover
+  regexps:
+    header:
+      - linksys-Hanover
+- name: linkSYS-hollos
+  regexps:
+    header:
+      - linkSYS-hollos
+- name: Linksys-Huelva-3-Telepalma
+  regexps:
+    header:
+      - Linksys-Huelva-3-Telepalma
+- name: Linksys-Huelva-5-PedreraTV
+  regexps:
+    header:
+      - Linksys-Huelva-5-PedreraTV
+- name: linksys-inbox
+  regexps:
+    header:
+      - linksys-inbox
+- name: linksys-linux
+  regexps:
+    header:
+      - linksys-linux
+- name: LINKSYS-MANRESA
+  regexps:
+    header:
+      - LINKSYS-MANRESA
+- name: Linksys-MIR
+  regexps:
+    header:
+      - Linksys-MIR
+- name: Linksys-Muenster
+  regexps:
+    header:
+      - Linksys-Muenster
+- name: linksys-musashi
+  regexps:
+    header:
+      - linksys-musashi
+- name: linksys-niceveiculos
+  regexps:
+    header:
+      - linksys-niceveiculos
+- name: Linksys-Olds
+  regexps:
+    header:
+      - Linksys-Olds
+- name: LINKSYS-PLANTA
+  regexps:
+    header:
+      - LINKSYS-PLANTA
+- name: Linksys-Queretaro
+  regexps:
+    header:
+      - Linksys-Queretaro
+- name: LinkSys-RJ
+  regexps:
+    header:
+      - LinkSys-RJ
+- name: linksys-rv042-nr021
+  regexps:
+    header:
+      - linksys-rv042-nr021
+- name: Linksys-RV082
+  regexps:
+    header:
+      - Linksys-RV082
+- name: Linksys-sacz
+  regexps:
+    header:
+      - Linksys-sacz
+- name: linksys-vpn-bragap14-parintins
+  regexps:
+    header:
+      - linksys-vpn-bragap14-parintins
+- name: linksys-vpn
+  regexps:
+    header:
+      - linksys-vpn
+- name: Linksys_SPA_Configuration
+  regexps:
+    body:
+      - Linksys SPA Configuration
+- name: linuxmint
+  regexps:
+    header:
+      - mint
+- name: LiquidGIS
+  regexps:
+    header:
+      - 'Productname: LiquidGIS'
+- name: LiteSpeed
+  regexps:
+    header:
+      - 'Server: LiteSpeed'
+- name: LiteSpeed_Web_Admin_Console
+  regexps:
+    body:
+      - LiteSpeed Web Admin Console
+    header:
+      - LSWSWEBUI
+- name: live800
+  regexps:
+    header:
+      - live800
+- name: Load Balancer Cisco ACE
+  regexps:
+    header:
+      - Cisco ACE
+- name: Locus_SolarNOC
+  regexps:
+    body:
+      - SolarNOC - Login
+- name: log_rotate
+  regexps:
+    header:
+      - mod_ log_rotate
+- name: Lotus-Domino
+  regexps:
+    header:
+      - 'Server: Lotus-Domino'
+- name: Lotus
+  regexps:
+    body:
+      - IBM Lotus iNotes Login
+      - iwaredir.nsf
+- name: loyaa信息自动采编系统
+  regexps:
+    body:
+      - /Loyaa/common.lib.js
+- name: lua
+  regexps:
+    header:
+      - 'Server: lua'
+- name: LuManager
+  regexps:
+    body:
+      - LuManager
+- name: LUM服务器管理
+  regexps:
+    header:
+      - LUM_SESSION
+- name: lynxspring_JENEsys
+  regexps:
+    body:
+      - LX JENEsys
+- name: MAC1200R
+  regexps:
+    header:
+      - MAC1200R
+- name: MacOS
+  regexps:
+    header:
+      - MacOS
+- name: Macrec_DVR
+  regexps:
+    body:
+      - Macrec DVR
+- name: Magento
+  regexps:
+    body:
+      - /skin/frontend/
+      - BLANK_IMG
+      - Magento, Varien, E-commerce
+- name: magicwinmail
+  regexps:
+    header:
+      - magicwinmail_default_theme
+- name: MallBuilder
+  regexps:
+    body:
+      - content="MallBuilder
+      - Powered by MallBuilder
+- name: ManagedFusion
+  regexps:
+    header:
+      - ManagedFusion
+- name: mantis
+  regexps:
+    body:
+      - browser_search_plugin.php?type=id
+      - MantisBT Team
+- name: MaticsoftSNS_动软分享社区
+  regexps:
+    body:
+      - MaticsoftSNS
+      - maticsoft
+      - /Areas/SNS/
+- name: Maticsoft_Shop_动软商城
+  regexps:
+    body:
+      - Maticsoft Shop
+      - maticsoft
+      - /Areas/Shop/
+- name: MaxCDN
+  regexps:
+    header:
+      - NetDNA
+- name: Mbedthis-Appweb
+  regexps:
+    header:
+      - Mbedthis-Appweb
+- name: MDaemon
+  regexps:
+    body:
+      - /WorldClient.dll?View=Main
+- name: MediaWiki
+  regexps:
+    body:
+      - generator" content="MediaWiki
+      - /wiki/images/6/64/Favicon.ico
+      - Powered by MediaWiki
+- name: Mercurial
+  regexps:
+    body:
+      - Mercurial repositories index
+- name: metasploit
+  regexps:
+    body:
+      - Metasploit is initializing...
+      - r7bottom-strip
+      - metasploit
+      - metasploit
+    header:
+      - _ui_session
+- name: MetInfo
+  regexps:
+    body:
+      - Powered by MetInfo
+      - content="MetInfo
+      - powered_by_metinfo
+      - /images/css/metinfo.css
+- name: Microsoft Ajax Content Delivery Network
+  regexps:
+    body:
+      - ajax.aspnetcdn.com/ajax
+    header:
+      - ajax.aspnetcdn.com/ajax
+- name: Microsoft-HTTPAPI
+  regexps:
+    header:
+      - Microsoft-HTTPAPI
+- name: mikrotik
+  regexps:
+    body:
+      - RouterOS
+      - mikrotik
+- name: milu_seotool
+  regexps:
+    body:
+      - plugin.php?id=milu_seotool
+- name: mini_httpd
+  regexps:
+    header:
+      - mini_httpd
+- name: mirapoint
+  regexps:
+    body:
+      - /wm/mail/login.html
+- name: Mixcall座席管理中心
+  regexps:
+    body:
+      - Mixcall座席管理中心
+- name: mobotix
+  regexps:
+    body:
+      - content="MOBOTIX AG
+    header:
+      - MOBOTIX Camera User
+- name: MOBOTIX_Camera
+  regexps:
+    header:
+      - MOBOTIX Camera
+- name: mod_antiloris
+  regexps:
+    header:
+      - mod_antiloris
+- name: mod_apreq2
+  regexps:
+    header:
+      - mod_apreq2
+- name: mod_auth_kerb
+  regexps:
+    header:
+      - mod_auth_kerb
+- name: mod_auth_pam
+  regexps:
+    header:
+      - mod_auth_pam
+- name: mod_auth_passthrough
+  regexps:
+    header:
+      - mod_auth_passthrough
+- name: mod_autoindex_color
+  regexps:
+    header:
+      - mod_autoindex_color
+- name: mod_bwlimited
+  regexps:
+    header:
+      - mod_bwlimited
+- name: mod_dav
+  regexps:
+    header:
+      - DAV/2
+- name: mod_encoding
+  regexps:
+    header:
+      - mod_encoding
+- name: mod_evasive
+  regexps:
+    header:
+      - mod_evasive
+- name: mod_fastcgi
+  regexps:
+    header:
+      - mod_fastcgi
+- name: mod_fcgid
+  regexps:
+    header:
+      - mod_fcgid
+- name: mod_gzip
+  regexps:
+    header:
+      - mod_gzip
+- name: mod_hive
+  regexps:
+    header:
+      - mod_hive
+- name: mod_jk
+  regexps:
+    header:
+      - mod_jk
+- name: mod_log_bytes
+  regexps:
+    header:
+      - mod_log_bytes
+- name: mod_macro
+  regexps:
+    header:
+      - mod_macro
+- name: mod_nss
+  regexps:
+    header:
+      - mod_nss
+- name: mod_pagespeed
+  regexps:
+    header:
+      - mod_pagespeed
+- name: mod_perl
+  regexps:
+    header:
+      - mod_perl
+- name: mod_psoft_traffic
+  regexps:
+    header:
+      - mod_psoft_traffic
+- name: mod_python
+  regexps:
+    header:
+      - mod_python
+- name: mod_rack
+  regexps:
+    header:
+      - mod_rack
+- name: mod_rails
+  regexps:
+    header:
+      - mod_rails
+- name: Mod_Security
+  regexps:
+    header:
+      - Mod_Security
+- name: mod_ssl
+  regexps:
+    header:
+      - mod_ssl
+- name: mod_throttle
+  regexps:
+    header:
+      - mod_throttle
+- name: mod_wsgi
+  regexps:
+    header:
+      - mod_wsgi
+- name: MoMoCMS
+  regexps:
+    body:
+      - content="MoMoCMS
+      - Powered BY MoMoCMS
+- name: mongodb
+  regexps:
+    body:
+      - <a href="/_replSet">Replica set status</a></p>
+- name: MontaVista linux
+  regexps:
+    header:
+      - MontaVista
+- name: moosefs
+  regexps:
+    body:
+      - mfs.cgi
+      - under-goal files
+- name: Motorola_SBG900
+  regexps:
+    body:
+      - Motorola SBG900
+- name: Moxa Nport串口服务器
+  regexps:
+    header:
+      - MoxaHttp
+- name: Moxa_NPort_5150A
+  regexps:
+    body:
+      - NPort Web Console
+      - 5150A
+    header:
+      - MoxaHttp
+- name: mozartframework
+  regexps:
+    header:
+      - Mozart Framework
+- name: MRTG
+  regexps:
+    body:
+      - Command line is easier to read using "View Page Properties" of your browser
+      - MRTG Index Page
+      - 'commandline was: indexmaker'
+- name: MS-Author-Via
+  regexps:
+    header:
+      - MS-Author-Via
+- name: Munin
+  regexps:
+    body:
+      - Auto-generated by Munin
+      - munin-month.html
+- name: MuraCMS
+  regexps:
+    header:
+      - Mura CMS
+- name: MVB2000
+  regexps:
+    body:
+      - MVB2000
+      - The Magic Voice Box
+- name: MvMmall
+  regexps:
+    body:
+      - content="MvMmall
+- name: MW4530R
+  regexps:
+    header:
+      - MW4530R
+- name: mylittleforum
+  regexps:
+    body:
+      - powered by my little forum
+      - index.php?mode=js_defaults
+    header:
+      - mlf2_general_forum_usersettings
+- name: mymps
+  regexps:
+    body:
+      - /css/mymps.css
+      - mymps
+      - content="mymps
+- name: Nagios
+  regexps:
+    body:
+      - /nagios/cgi-bin/status.cgi
+    header:
+      - Nagios access
+- name: NETCORE NR235P
+  regexps:
+    header:
+      - NETCORE NR235P
+- name: NETCORE NR238
+  regexps:
+    header:
+      - NETCORE NR238
+- name: NETCORE NR255G
+  regexps:
+    header:
+      - NETCORE NR255G
+- name: NETCORE NR255P
+  regexps:
+    header:
+      - NETCORE NR255P
+- name: NETCORE NR285G
+  regexps:
+    header:
+      - NETCORE NR285G
+- name: NETCORE NR285P
+  regexps:
+    header:
+      - NETCORE NR285P
+- name: NetDvrV3
+  regexps:
+    body:
+      - objLvrForNoIE
+- name: NETGEAR AC1450
+  regexps:
+    header:
+      - NETGEAR AC1450
+- name: NETGEAR C3000-100NAS
+  regexps:
+    header:
+      - NETGEAR C3000-100NAS
+- name: NETGEAR C3700-100NAS
+  regexps:
+    header:
+      - NETGEAR C3700-100NAS
+- name: NETGEAR C6250-100NAS
+  regexps:
+    header:
+      - NETGEAR C6250-100NAS
+- name: NETGEAR C6300
+  regexps:
+    header:
+      - NETGEAR C6300
+- name: NETGEAR C7000-100NAS
+  regexps:
+    header:
+      - NETGEAR C7000-100NAS
+- name: NETGEAR CG3700EMR-1CMNDS
+  regexps:
+    header:
+      - NETGEAR CG3700EMR-1CMNDS
+- name: Netgear CWGE111
+  regexps:
+    header:
+      - Netgear CWGE111
+- name: NETGEAR D1500
+  regexps:
+    header:
+      - NETGEAR D1500
+- name: NETGEAR D500
+  regexps:
+    header:
+      - NETGEAR D500
+- name: NETGEAR D6200
+  regexps:
+    header:
+      - NETGEAR D6200
+- name: NETGEAR D6220
+  regexps:
+    header:
+      - NETGEAR D6220
+- name: NETGEAR D6300
+  regexps:
+    header:
+      - NETGEAR D6300
+- name: NETGEAR D6400
+  regexps:
+    header:
+      - NETGEAR D6400
+- name: NETGEAR D8500
+  regexps:
+    header:
+      - NETGEAR D8500
+- name: NETGEAR DC112A
+  regexps:
+    header:
+      - NETGEAR DC112A
+- name: NetGear DD-wrt
+  regexps:
+    header:
+      - NetGear DD-wrt
+- name: NETGEAR DG834(G)
+  regexps:
+    header:
+      - NETGEAR DG834(G)
+- name: NETGEAR DG834
+  regexps:
+    header:
+      - NETGEAR DG834
+- name: Netgear DG834G
+  regexps:
+    header:
+      - Netgear DG834G
+- name: NETGEAR DG834GB
+  regexps:
+    header:
+      - NETGEAR DG834GB
+- name: NETGEAR DG834GL
+  regexps:
+    header:
+      - NETGEAR DG834GL
+- name: NETGEAR DG834GT
+  regexps:
+    header:
+      - NETGEAR DG834GT
+- name: NETGEAR DG834GTB
+  regexps:
+    header:
+      - NETGEAR DG834GTB
+- name: NETGEAR DG834GUv5
+  regexps:
+    header:
+      - NETGEAR DG834GUv5
+- name: NETGEAR DG834GV
+  regexps:
+    header:
+      - NETGEAR DG834GV
+- name: NETGEAR DG834Gv5
+  regexps:
+    header:
+      - NETGEAR DG834Gv5
+- name: NETGEAR DG834N
+  regexps:
+    header:
+      - NETGEAR DG834N
+- name: NETGEAR DG834NBv2
+  regexps:
+    header:
+      - NETGEAR DG834NBv2
+- name: NETGEAR DG834PN
+  regexps:
+    header:
+      - NETGEAR DG834PN
+- name: NETGEAR DG834PNB
+  regexps:
+    header:
+      - NETGEAR DG834PNB
+- name: NETGEAR DGN1000
+  regexps:
+    header:
+      - NETGEAR DGN1000
+- name: NETGEAR DGN1000B
+  regexps:
+    header:
+      - NETGEAR DGN1000B
+- name: Netgear DGN1000SP
+  regexps:
+    header:
+      - Netgear DGN1000SP
+- name: NETGEAR DGN1000v3
+  regexps:
+    header:
+      - NETGEAR DGN1000v3
+- name: NETGEAR DGN2000
+  regexps:
+    header:
+      - NETGEAR DGN2000
+- name: NETGEAR DGN2000B
+  regexps:
+    header:
+      - NETGEAR DGN2000B
+- name: NETGEAR DGN2200
+  regexps:
+    header:
+      - NETGEAR DGN2200
+- name: NETGEAR DGN2200Bv3
+  regexps:
+    header:
+      - NETGEAR DGN2200Bv3
+- name: NETGEAR DGN2200Bv4
+  regexps:
+    header:
+      - NETGEAR DGN2200Bv4
+- name: NETGEAR DGN2200M
+  regexps:
+    header:
+      - NETGEAR DGN2200M
+- name: NETGEAR DGN2200MB
+  regexps:
+    header:
+      - NETGEAR DGN2200MB
+- name: NETGEAR DGN2200Mv2TELKOM
+  regexps:
+    header:
+      - NETGEAR DGN2200Mv2TELKOM
+- name: NETGEAR DGN2200v2BEZEQ
+  regexps:
+    header:
+      - NETGEAR DGN2200v2BEZEQ
+- name: NETGEAR DGN2200v3
+  regexps:
+    header:
+      - NETGEAR DGN2200v3
+- name: NETGEAR DGN2200v4
+  regexps:
+    header:
+      - NETGEAR DGN2200v4
+- name: NETGEAR DGN3500
+  regexps:
+    header:
+      - NETGEAR DGN3500
+- name: NETGEAR DGN3500B
+  regexps:
+    header:
+      - NETGEAR DGN3500B
+- name: NETGEAR DGN3500_SSH
+  regexps:
+    header:
+      - NETGEAR DGN3500_SSH
+- name: NETGEAR DGND3300
+  regexps:
+    header:
+      - NETGEAR DGND3300
+- name: NETGEAR DGND3700
+  regexps:
+    header:
+      - NETGEAR DGND3700
+- name: NETGEAR DGND3700v2
+  regexps:
+    header:
+      - NETGEAR DGND3700v2
+- name: NETGEAR DGND4000
+  regexps:
+    header:
+      - NETGEAR DGND4000
+- name: NETGEAR DM111
+  regexps:
+    header:
+      - NETGEAR DM111
+- name: NETGEAR DM111P
+  regexps:
+    header:
+      - NETGEAR DM111P
+- name: NETGEAR DM111PSP
+  regexps:
+    header:
+      - NETGEAR DM111PSP
+- name: NETGEAR DM111PSPv2
+  regexps:
+    header:
+      - NETGEAR DM111PSPv2
+- name: NETGEAR DM111PUSP
+  regexps:
+    header:
+      - NETGEAR DM111PUSP
+- name: Netgear DM111PUSPv2
+  regexps:
+    header:
+      - Netgear DM111PUSPv2
+- name: NETGEAR DST6501
+  regexps:
+    header:
+      - NETGEAR DST6501
+- name: NetGear DVG1000
+  regexps:
+    header:
+      - NetGear DVG1000
+- name: Netgear EVG1500
+  regexps:
+    header:
+      - Netgear EVG1500
+- name: NETGEAR EVG2000
+  regexps:
+    header:
+      - NETGEAR EVG2000
+- name: NETGEAR EX2700
+  regexps:
+    header:
+      - NETGEAR EX2700
+- name: NETGEAR JNDR3000
+  regexps:
+    header:
+      - NETGEAR JNDR3000
+- name: NETGEAR JNR1010
+  regexps:
+    header:
+      - NETGEAR JNR1010
+- name: NETGEAR JNR1010v2
+  regexps:
+    header:
+      - NETGEAR JNR1010v2
+- name: NETGEAR JNR3000
+  regexps:
+    header:
+      - NETGEAR JNR3000
+- name: NETGEAR JNR3210
+  regexps:
+    header:
+      - NETGEAR JNR3210
+- name: NETGEAR JNR3300
+  regexps:
+    header:
+      - NETGEAR JNR3300
+- name: NETGEAR JR6150
+  regexps:
+    header:
+      - NETGEAR JR6150
+- name: NETGEAR JWNR2000T
+  regexps:
+    header:
+      - NETGEAR JWNR2000T
+- name: NETGEAR JWNR2000Tv3
+  regexps:
+    header:
+      - NETGEAR JWNR2000Tv3
+- name: NETGEAR JWNR2000v2
+  regexps:
+    header:
+      - NETGEAR JWNR2000v2
+- name: NETGEAR JWNR2000v3
+  regexps:
+    header:
+      - NETGEAR JWNR2000v3
+- name: NETGEAR JWNR2000v5
+  regexps:
+    header:
+      - NETGEAR JWNR2000v5
+- name: NETGEAR JWNR2010
+  regexps:
+    header:
+      - NETGEAR JWNR2010
+- name: NETGEAR JWNR2010v5
+  regexps:
+    header:
+      - NETGEAR JWNR2010v5
+- name: NETGEAR MBR1210
+  regexps:
+    header:
+      - NETGEAR MBR1210
+- name: NETGEAR MBR1310
+  regexps:
+    header:
+      - NETGEAR MBR1310
+- name: NETGEAR MBR1515
+  regexps:
+    header:
+      - NETGEAR MBR1515
+- name: NETGEAR MBR1516
+  regexps:
+    header:
+      - NETGEAR MBR1516
+- name: NETGEAR MBR1517v2
+  regexps:
+    header:
+      - NETGEAR MBR1517v2
+- name: NETGEAR MBR624GU
+  regexps:
+    header:
+      - NETGEAR MBR624GU
+- name: NETGEAR MBRN3000
+  regexps:
+    header:
+      - NETGEAR MBRN3000
+- name: NETGEAR MVBR1210C
+  regexps:
+    header:
+      - NETGEAR MVBR1210C
+- name: Netgear N300
+  regexps:
+    header:
+      - Netgear N300
+- name: Netgear Nighthawk
+  regexps:
+    header:
+      - Netgear Nighthawk
+- name: NETGEAR PLW1000
+  regexps:
+    header:
+      - NETGEAR PLW1000
+- name: NETGEAR PLW1010
+  regexps:
+    header:
+      - NETGEAR PLW1010
+- name: NETGEAR PS121v2
+  regexps:
+    header:
+      - NETGEAR PS121v2
+- name: NETGEAR R6050
+  regexps:
+    header:
+      - NETGEAR R6050
+- name: NETGEAR R6100
+  regexps:
+    header:
+      - NETGEAR R6100
+- name: NETGEAR R6200
+  regexps:
+    header:
+      - NETGEAR R6200
+- name: NETGEAR R6200v2
+  regexps:
+    header:
+      - NETGEAR R6200v2
+- name: NETGEAR R6220
+  regexps:
+    header:
+      - NETGEAR R6220
+- name: NETGEAR R6250
+  regexps:
+    header:
+      - NETGEAR R6250
+- name: NETGEAR R6300
+  regexps:
+    header:
+      - NETGEAR R6300
+- name: NETGEAR R6300v2
+  regexps:
+    header:
+      - NETGEAR R6300v2
+- name: NETGEAR R6400
+  regexps:
+    header:
+      - NETGEAR R6400
+- name: NETGEAR R6700
+  regexps:
+    header:
+      - NETGEAR R6700
+- name: NETGEAR R6900
+  regexps:
+    header:
+      - NETGEAR R6900
+- name: NETGEAR R7000
+  regexps:
+    header:
+      - NETGEAR R7000
+- name: NETGEAR R7100LG
+  regexps:
+    header:
+      - NETGEAR R7100LG
+- name: NETGEAR R7300
+  regexps:
+    header:
+      - NETGEAR R7300
+- name: NETGEAR R7500
+  regexps:
+    header:
+      - NETGEAR R7500
+- name: NETGEAR R7900
+  regexps:
+    header:
+      - NETGEAR R7900
+- name: NETGEAR R8000
+  regexps:
+    header:
+      - NETGEAR R8000
+- name: NETGEAR R8300
+  regexps:
+    header:
+      - NETGEAR R8300
+- name: NETGEAR R8500
+  regexps:
+    header:
+      - NETGEAR R8500
+- name: NETGEAR ROUTER
+  regexps:
+    header:
+      - NETGEAR ROUTER
+- name: NETGEAR VEGN2610
+  regexps:
+    header:
+      - NETGEAR VEGN2610
+- name: NETGEAR VEVG2660
+  regexps:
+    header:
+      - NETGEAR VEVG2660
+- name: NETGEAR VVG2000
+  regexps:
+    header:
+      - NETGEAR VVG2000
+- name: Netgear WAG302v2
+  regexps:
+    header:
+      - Netgear WAG302v2
+- name: Netgear WGR614L
+  regexps:
+    header:
+      - Netgear WGR614L
+- name: NETGEAR WGR614SS
+  regexps:
+    header:
+      - NETGEAR WGR614SS
+- name: NETGEAR WGR614v10
+  regexps:
+    header:
+      - NETGEAR WGR614v10
+- name: NETGEAR WGR614v8
+  regexps:
+    header:
+      - NETGEAR WGR614v8
+- name: NETGEAR WGR614v9
+  regexps:
+    header:
+      - NETGEAR WGR614v9
+- name: NETGEAR WGT624v4
+  regexps:
+    header:
+      - NETGEAR WGT624v4
+- name: NETGEAR WN1000RP
+  regexps:
+    header:
+      - NETGEAR WN1000RP
+- name: NETGEAR WN2000RPT
+  regexps:
+    header:
+      - NETGEAR WN2000RPT
+- name: NETGEAR WN2000RPTv2
+  regexps:
+    header:
+      - NETGEAR WN2000RPTv2
+- name: NETGEAR WN2000RPTv3
+  regexps:
+    header:
+      - NETGEAR WN2000RPTv3
+- name: NETGEAR WN3000RPv2
+  regexps:
+    header:
+      - NETGEAR WN3000RPv2
+- name: NETGEAR WN3000RPv3
+  regexps:
+    header:
+      - NETGEAR WN3000RPv3
+- name: NETGEAR WN3100RP
+  regexps:
+    header:
+      - NETGEAR WN3100RP
+- name: NETGEAR WNDR3300
+  regexps:
+    header:
+      - NETGEAR WNDR3300
+- name: NETGEAR WNDR3400
+  regexps:
+    header:
+      - NETGEAR WNDR3400
+- name: NETGEAR WNDR3400v2
+  regexps:
+    header:
+      - NETGEAR WNDR3400v2
+- name: NETGEAR WNDR3400v3
+  regexps:
+    header:
+      - NETGEAR WNDR3400v3
+- name: NETGEAR WNDR3600
+  regexps:
+    header:
+      - NETGEAR WNDR3600
+- name: NETGEAR WNDR3700
+  regexps:
+    header:
+      - NETGEAR WNDR3700
+- name: NETGEAR WNDR3700v2
+  regexps:
+    header:
+      - NETGEAR WNDR3700v2
+- name: NETGEAR WNDR3700v3
+  regexps:
+    header:
+      - NETGEAR WNDR3700v3
+- name: Netgear WNDR3700v4
+  regexps:
+    header:
+      - Netgear WNDR3700v4
+- name: NETGEAR WNDR3700v5
+  regexps:
+    header:
+      - NETGEAR WNDR3700v5
+- name: NETGEAR WNDR3800
+  regexps:
+    header:
+      - NETGEAR WNDR3800
+- name: NETGEAR WNDR4000
+  regexps:
+    header:
+      - NETGEAR WNDR4000
+- name: NETGEAR WNDR4300-TN
+  regexps:
+    header:
+      - NETGEAR WNDR4300-TN
+- name: NETGEAR WNDR4300
+  regexps:
+    header:
+      - NETGEAR WNDR4300
+- name: NETGEAR WNDR4300SW
+  regexps:
+    header:
+      - NETGEAR WNDR4300SW
+- name: NETGEAR WNDR4300v2
+  regexps:
+    header:
+      - NETGEAR WNDR4300v2
+- name: NETGEAR WNDR4500
+  regexps:
+    header:
+      - NETGEAR WNDR4500
+- name: NETGEAR WNDR4500v2
+  regexps:
+    header:
+      - NETGEAR WNDR4500v2
+- name: NETGEAR WNDR4700
+  regexps:
+    header:
+      - NETGEAR WNDR4700
+- name: NETGEAR WNHD3002G
+  regexps:
+    header:
+      - NETGEAR WNHD3002G
+- name: NETGEAR WNHD3004
+  regexps:
+    header:
+      - NETGEAR WNHD3004
+- name: NetGear WNHD3004v2
+  regexps:
+    header:
+      - NetGear WNHD3004v2
+- name: NETGEAR WNR1000
+  regexps:
+    header:
+      - NETGEAR WNR1000
+- name: NETGEAR WNR1000v2-VC
+  regexps:
+    header:
+      - NETGEAR WNR1000v2-VC
+- name: NETGEAR WNR1000v2
+  regexps:
+    header:
+      - NETGEAR WNR1000v2
+- name: NETGEAR WNR1000v3
+  regexps:
+    header:
+      - NETGEAR WNR1000v3
+- name: NETGEAR WNR1000v4
+  regexps:
+    header:
+      - NETGEAR WNR1000v4
+- name: NETGEAR WNR1500
+  regexps:
+    header:
+      - NETGEAR WNR1500
+- name: NETGEAR WNR2000
+  regexps:
+    header:
+      - NETGEAR WNR2000
+- name: NETGEAR WNR2000v2
+  regexps:
+    header:
+      - NETGEAR WNR2000v2
+- name: NETGEAR wnr2000v3
+  regexps:
+    header:
+      - NETGEAR wnr2000v3
+- name: NETGEAR wnr2000v4
+  regexps:
+    header:
+      - NETGEAR wnr2000v4
+- name: NETGEAR WNR2000v5
+  regexps:
+    header:
+      - NETGEAR WNR2000v5
+- name: NETGEAR WNR2020
+  regexps:
+    header:
+      - NETGEAR WNR2020
+- name: NETGEAR wnr2200
+  regexps:
+    header:
+      - NETGEAR wnr2200
+- name: NETGEAR WNR2500
+  regexps:
+    header:
+      - NETGEAR WNR2500
+- name: NETGEAR WNR3500
+  regexps:
+    header:
+      - NETGEAR WNR3500
+- name: NETGEAR WNR3500L
+  regexps:
+    header:
+      - NETGEAR WNR3500L
+- name: Netgear WNR3500Lv1
+  regexps:
+    header:
+      - Netgear WNR3500Lv1
+- name: NETGEAR WNR3500Lv2
+  regexps:
+    header:
+      - NETGEAR WNR3500Lv2
+- name: NETGEAR WNR3500v2
+  regexps:
+    header:
+      - NETGEAR WNR3500v2
+- name: NETGEAR WNR500
+  regexps:
+    header:
+      - NETGEAR WNR500
+- name: NETGEAR WNR612ERT
+  regexps:
+    header:
+      - NETGEAR WNR612ERT
+- name: NETGEAR WNR612v2
+  regexps:
+    header:
+      - NETGEAR WNR612v2
+- name: NETGEAR WNR612v3
+  regexps:
+    header:
+      - NETGEAR WNR612v3
+- name: NETGEAR WNR614
+  regexps:
+    header:
+      - NETGEAR WNR614
+- name: NETGEAR WNR618
+  regexps:
+    header:
+      - NETGEAR WNR618
+- name: Netgear WNR834B
+  regexps:
+    header:
+      - Netgear WNR834B
+- name: NETGEAR WNR834Bv2
+  regexps:
+    header:
+      - NETGEAR WNR834Bv2
+- name: NETGEAR WNR854T
+  regexps:
+    header:
+      - NETGEAR WNR854T
+- name: NETGEAR WPN824N
+  regexps:
+    header:
+      - NETGEAR WPN824N
+- name: NETGEAR WPNT834
+  regexps:
+    header:
+      - NETGEAR WPNT834
+- name: NETGEAR XAU2511
+  regexps:
+    header:
+      - NETGEAR XAU2511
+- name: NETGEAR XAVN2001v2
+  regexps:
+    header:
+      - NETGEAR XAVN2001v2
+- name: NETGEAR XWN5001
+  regexps:
+    header:
+      - NETGEAR XWN5001
+- name: NETGEAR XWN5021
+  regexps:
+    header:
+      - NETGEAR XWN5021
+- name: NetGear [WIFI5GHz]
+  regexps:
+    header:
+      - NetGear [WIFI5GHz]
+- name: Netgear-WNR3500l
+  regexps:
+    header:
+      - Netgear-WNR3500l
+- name: NETGEAR产品
+  regexps:
+    header:
+      - NETGEAR
+- name: Netscape-Enterprise
+  regexps:
+    header:
+      - Netscape-Enterprise
+- name: NetShare_VPN
+  regexps:
+    body:
+      - NetShare
+- name: NETSurveillance
+  regexps:
+    body:
+      - NETSurveillance
+- name: NetteFramework
+  regexps:
+    header:
+      - Nette Framework
+- name: Nexus_NX_router
+  regexps:
+    body:
+      - http://nexuswifi.com/
+      - Nexus NX
+- name: nginx
+  regexps:
+    header:
+      - 'Server: nginx'
+- name: nginx_admin
+  regexps:
+    header:
+      - nginx admin
+- name: ngx_openresty
+  regexps:
+    header:
+      - ngx_openresty
+- name: NITC
+  regexps:
+    body:
+      - NITC Web Marketing Service
+      - /images/nitc1.png
+- name: niucms
+  regexps:
+    body:
+      - content="NIUCMS
+- name: NOALYSS
+  regexps:
+    body:
+      - NOALYSS
+- name: nodejs
+  regexps:
+    header:
+      - node.js
+- name: Npoint
+  regexps:
+    body:
+      - Powered by Npoint
+- name: NSFOCUS_WAF
+  regexps:
+    body:
+      - WAF NSFOCUS
+      - /images/logo/nsfocus.png
+- name: NTLM认证
+  regexps:
+    header:
+      - NTLM
+- name: ntop
+  regexps:
+    body:
+      - Global Traffic Statistics
+      - ntopMenuID
+    header:
+      - 'Server: ntop'
+- name: nvdvr
+  regexps:
+    body:
+      - XWebPlay
+- name: O2OCMS
+  regexps:
+    body:
+      - /index.php/clasify/showone/gtitle/
+- name: o2security_vpn
+  regexps:
+    header:
+      - client_param=install_active
+- name: OA(a8/seeyon/ufida)
+  regexps:
+    body:
+      - /seeyon/USER-DATA/IMAGES/LOGIN/login.gif
+- name: OA企业智能办公自动化系统
+  regexps:
+    body:
+      - input name="S1" type="image"
+      - count/mystat.asp
+- name: OBSERVA telcom
+  regexps:
+    body:
+      - OBSERVA
+- name: OnSSI_Video_Clients
+  regexps:
+    body:
+      - OnSSI Video Clients
+      - x-value="On-Net Surveillance Systems Inc."
+- name: OpenCart
+  regexps:
+    body:
+      - Powered By OpenCart
+      - catalog/view/theme
+- name: opencms
+  regexps:
+    body:
+      - content="OpenCms
+      - Powered by OpenCms
+- name: openEAP
+  regexps:
+    body:
+      - openEAP_统一登录门户
+- name: OpenMas
+  regexps:
+    body:
+      - OpenMas
+      - loginHead"><link href="App_Themes
+- name: opennms
+  regexps:
+    body:
+      - /css/gwt-asset.css
+      - OpenNMS® is a registered trademark of
+    header:
+      - /opennms/login.jsp
+- name: OpenSNS
+  regexps:
+    body:
+      - opensns
+      - content="OpenSNS
+- name: OpenSolaris
+  regexps:
+    header:
+      - OpenSolaris
+- name: OpenSSL
+  regexps:
+    header:
+      - OpenSSL
+- name: openSUSE
+  regexps:
+    header:
+      - openSUSE
+- name: Open_AdStream
+  regexps:
+    body:
+      - OAS_AD
+- name: Oracle Solaris
+  regexps:
+    header:
+      - Oracle Solaris
+- name: Oracle-Application-Server
+  regexps:
+    header:
+      - Oracle-Application-Server
+- name: Oraclea-DMS
+  regexps:
+    header:
+      - X-Oracle-Dms-Ecid
+- name: oracle_applicaton_server
+  regexps:
+    body:
+      - OraLightHeaderSub
+- name: Oracle_OPERA
+  regexps:
+    body:
+      - MICROS Systems Inc., OPERA
+      - OperaLogin/Welcome.do
+- name: OrientDB
+  regexps:
+    body:
+      - Redirecting to OrientDB
+- name: orocrm
+  regexps:
+    body:
+      - /bundles/oroui/
+- name: Osclass
+  regexps:
+    body:
+      - generator" content="Osclass
+    header:
+      - osclass
+- name: ourphp
+  regexps:
+    body:
+      - content="OURPHP
+      - Powered by ourphp
+- name: P3p
+  regexps:
+    header:
+      - P3p
+- name: P3p_enabled
+  regexps:
+    header:
+      - 'P3p: CP'
+- name: PageAdmin
+  regexps:
+    body:
+      - content="PageAdmin CMS"
+      - /e/images/favicon.ico
+- name: pagespeed
+  regexps:
+    header:
+      - X-Mod-Pagespeed
+- name: PaloAlto_Firewall
+  regexps:
+    body:
+      - Access to the web page you were trying to visit has been blocked in accordance
+        with company policy
+- name: panabit智能网关
+  regexps:
+    body:
+      - panabit
+- name: Panasonic Network Camera
+  regexps:
+    body:
+      - MultiCameraFrame?Mode=Motion&Language
+- name: Parallels Plesk Panel
+  regexps:
+    body:
+      - Parallels IP Holdings GmbH
+- name: PCLinuxOS
+  regexps:
+    header:
+      - PCLinuxOS
+- name: perl
+  regexps:
+    header:
+      - perl
+- name: PG API Server
+  regexps:
+    header:
+      - PGAPIServ
+- name: Phabricator
+  regexps:
+    body:
+      - phabricator-application-launch-container
+      - res/phabricator
+    header:
+      - phsid
+- name: PHP-CGI
+  regexps:
+    header:
+      - PHP-CGI
+- name: phpb2b
+  regexps:
+    body:
+      - Powered By PHPB2B
+- name: phpbb
+  regexps:
+    body:
+      - phpBB
+    header:
+      - HttpOnly, phpbb3_
+- name: PhpCMS
+  regexps:
+    body:
+      - Phpcms
+      - /index.php?m=content&c=index&a=lists
+      - /index.php?m=content&amp;c=index&amp;a=lists
+- name: phpdisk
+  regexps:
+    body:
+      - Powered by PHPDisk
+      - content="PHPDisk
+- name: phpDocumentor
+  regexps:
+    body:
+      - Generated by phpDocumentor
+- name: phpems考试系统
+  regexps:
+    body:
+      - phpems
+      - content="PHPEMS
+- name: phpinfo
+  regexps:
+    body:
+      - phpinfo
+      - 'Virtual Directory Support '
+- name: phpmoadmin
+  regexps:
+    body:
+      - phpmoadmin
+- name: phpmps
+  regexps:
+    body:
+      - Powered by Phpmps
+      - templates/phpmps/style/index.css
+- name: phpMyadmin
+  regexps:
+    body:
+      - 'phpMyAdmin '
+      - pma_password
+    header:
+      - 'Set-Cookie: phpMyAdmin='
+- name: PHPMyWind
+  regexps:
+    body:
+      - phpMyWind.com All Rights Reserved
+      - content="PHPMyWind
+- name: PHPOA
+  regexps:
+    body:
+      - admin_img/msg_bg.png
+- name: phpok
+  regexps:
+    body:
+      - phpok
+      - Powered By phpok.com
+      - content="phpok
+- name: phpshe
+  regexps:
+    body:
+      - Powered by phpshe
+      - content="phpshe
+- name: phpvod
+  regexps:
+    body:
+      - Powered by PHPVOD
+      - content="phpvod
+- name: phpweb
+  regexps:
+    body:
+      - PDV_PAGENAME
+- name: phpwind
+  regexps:
+    body:
+      - Powered by phpwind
+      - content="phpwind
+- name: php云
+  regexps:
+    body:
+      - <div class="index_link_list_name">
+- name: Phusion
+  regexps:
+    header:
+      - Phusion
+- name: PigCms
+  regexps:
+    header:
+      - 'X-Powered-By: PigCms.com'
+- name: PineApp
+  regexps:
+    body:
+      - PineApp WebAccess - Login
+      - /admin/css/images/pineapp.ico
+- name: Piwigo
+  regexps:
+    body:
+      - generator" content="Piwigo
+    header:
+      - pwg_id
+- name: Piwik
+  regexps:
+    body:
+      - Piwik
+      - index.php?module=Proxy
+    header:
+      - 'PIWIK_SESSID '
+- name: planet WNRT-617G
+  regexps:
+    header:
+      - WNRT-617G
+- name: Planet WNRT-627
+  regexps:
+    header:
+      - WNRT-627
+- name: Play-Framework
+  regexps:
+    header:
+      - Play! Framework
+- name: PleskLin
+  regexps:
+    header:
+      - PleskLin
+- name: plone
+  regexps:
+    body:
+      - generator" content="Plone
+    header:
+      - plone.content
+- name: Polycom
+  regexps:
+    body:
+      - Polycom
+      - kAllowDirectHTMLFileAccess
+- name: Powercdn
+  regexps:
+    header:
+      - Powercdn
+- name: PowerLogic_ION
+  regexps:
+    body:
+      - PowerLogic
+    header:
+      - Allegro-Software-RomPager
+- name: PrestaShop
+  regexps:
+    body:
+      - Shop powered by PrestaShop
+    header:
+      - PrestaShop
+- name: PretsaShop
+  regexps:
+    body:
+      - content="PrestaShop"
+- name: Privoxy
+  regexps:
+    header:
+      - 'Proxy-Agent: Privoxy'
+- name: Privoxy代理
+  regexps:
+    header:
+      - Privoxy
+- name: PublicCMS
+  regexps:
+    body:
+      - publiccms
+- name: Puppet_Node_Manager
+  regexps:
+    body:
+      - Puppet Node Manager
+- name: python
+  regexps:
+    header:
+      - Django
+- name: QingCloud
+  regexps:
+    header:
+      - QINGCLOUDELB
+- name: QNO_Router
+  regexps:
+    body:
+      - /QNOVirtual_Keyboard.js
+      - /images/login_img01_03.gif
+- name: QQ聊天
+  regexps:
+    body:
+      - tencent://message/
+- name: rack-cache
+  regexps:
+    header:
+      - X-Rack-Cache
+- name: ranzhi
+  regexps:
+    body:
+      - /sys/index.php?m=user&f=login&referer=
+- name: rap
+  regexps:
+    body:
+      - /jscripts/rap_util.js
+- name: rcms
+  regexps:
+    body:
+      - /r/cms/www/
+- name: React.js
+  regexps:
+    body:
+      - /react.js
+      - React.createClass
+- name: RealTime Web ACARS
+  regexps:
+    body:
+      - content="KjM <acarsd@acarsd.org>
+      - content="Realtime Web ACARS
+    header:
+      - acarsd
+- name: recaptcha
+  regexps:
+    body:
+      - recaptcha_ajax.js
+- name: Redhat
+  regexps:
+    header:
+      - Red Hat
+- name: Redmine
+  regexps:
+    body:
+      - Redmine
+      - authenticity_token
+- name: Resin
+  regexps:
+    header:
+      - 'Server: Resin'
+- name: Restlet-Framework
+  regexps:
+    header:
+      - Restlet-Framework
+- name: reviewboard
+  regexps:
+    body:
+      - /static/rb/images/delete
+    header:
+      - rbsessionid
+- name: RG-PowerCache内容加速系统
+  regexps:
+    body:
+      - RG-PowerCache
+- name: richmail
+  regexps:
+    body:
+      - Richmail
+      - /resource/se/lang/se/mail_zh_CN.js
+      - content="Richmail
+- name: Rimes-Cisco
+  regexps:
+    header:
+      - Rimes-Cisco
+- name: RomPager Embedded web
+  regexps:
+    header:
+      - RomPager
+- name: rosewill RNX-N300RT
+  regexps:
+    header:
+      - RNX-N300RT
+- name: Roundcube
+  regexps:
+    header:
+      - roundcube_sessid
+- name: Router Webserver
+  regexps:
+    header:
+      - Router Webserver
+- name: ruby
+  regexps:
+    header:
+      - X-Rack-Cache
+- name: Ruckus
+  regexps:
+    body:
+      - mon.  Tell me your username
+      - Ruckus Wireless Admin
+- name: Safe3WAF
+  regexps:
+    header:
+      - Safe3WAF
+- name: SamanPortal
+  regexps:
+    header:
+      - sisRapid
+- name: Samsung DVR
+  regexps:
+    body:
+      - Samsung DVR
+- name: SCADA PLC
+  regexps:
+    body:
+      - /images/rockcolor.gif
+      - /ralogo.gif
+      - Ethernet Processor
+- name: Schneider_Quantum_140NOE77101
+  regexps:
+    body:
+      - indexLanguage
+      - html/config.js
+- name: Scientific Linux
+  regexps:
+    header:
+      - Scientific Linux
+- name: Scientific-Atlanta_Cable_Modem
+  regexps:
+    body:
+      - Scientific-Atlanta Cable Modem
+- name: sdcms
+  regexps:
+    body:
+      - powered by sdcms
+      - var webroot=
+      - /js/sdcms.js
+- name: seeyoo广告机
+  regexps:
+    body:
+      - AC_Config.js
+- name: SEMcms
+  regexps:
+    body:
+      - semcms PHP
+      - sc_mid_c_left_c sc_mid_left_bt
+- name: Seminole
+  regexps:
+    header:
+      - 'Server: Seminole'
+- name: sharepoint
+  regexps:
+    header:
+      - Microsoftsharepointteamservices
+- name: Shop7Z
+  regexps:
+    body:
+      - productlist.asp
+      - headlist
+    header:
+      - sitekeyword
+- name: shopbuilder
+  regexps:
+    body:
+      - content="ShopBuilder
+      - Powered by ShopBuilder
+      - ShopBuilder版权所有
+- name: shopex
+  regexps:
+    body:
+      - content="ShopEx
+      - '@author litie[aita]shopex.cn'
+- name: shopify
+  regexps:
+    header:
+      - 'X-Shopid:'
+- name: shopnc
+  regexps:
+    body:
+      - Powered by ShopNC
+      - Copyright 2007-2014 ShopNC Inc
+      - content="ShopNC
+- name: SHOUTcast
+  regexps:
+    body:
+      - SHOUTcast Administrator
+- name: SIEMENS IP Cameras
+  regexps:
+    body:
+      - SIEMENS IP Camera
+- name: Siemens_CP243-1
+  regexps:
+    header:
+      - CP243-1 IT
+- name: Siemens_SIMATIC
+  regexps:
+    body:
+      - /S7Web.css
+- name: SilverStripe
+  regexps:
+    body:
+      - content="SilverStripe
+- name: SIMIT_framework
+  regexps:
+    header:
+      - SIMIT framework
+- name: SITECOM ADSL Model
+  regexps:
+    header:
+      - SITECOM
+- name: sitecore
+  regexps:
+    header:
+      - Sitecore CMS
+- name: SiteEngine
+  regexps:
+    body:
+      - content="Boka SiteEngine
+- name: SiteServer
+  regexps:
+    body:
+      - T_系统首页模板
+      - siteserver
+      - sitefiles
+- name: SJSWPS_ OiWPS
+  regexps:
+    header:
+      - Oracle-iPlanet-Proxy-Server
+- name: SJSWS_ OiWS
+  regexps:
+    header:
+      - Sun-Java-System-Web-Server
+- name: Slackware
+  regexps:
+    header:
+      - Slackware
+- name: SLTM32_Configuration
+  regexps:
+    body:
+      - 'SLTM32 Web Configuration Pages '
+- name: smartoa
+  regexps:
+    body:
+      - /smartoa.plist
+    header:
+      - smartoa
+- name: SMA_Sunny_Webbox
+  regexps:
+    body:
+      - SMA Sunny Webbox
+    header:
+      - 'Server: WebBox-20'
+- name: SMC WBR14S-N5
+  regexps:
+    header:
+      - SMCWBR14S-N5
+- name: SNB股票交易软件
+  regexps:
+    body:
+      - Copyright 2005–2009 <a href="http://www.s-mo.com">
+- name: soeasy网站集群系统
+  regexps:
+    body:
+      - EGSS_User
+      - SoEasy网站集群
+- name: soffice
+  regexps:
+    body:
+      - OA办公管理平台
+- name: sogou站长平台
+  regexps:
+    body:
+      - sogou_site_verification
+- name: Solr
+  regexps:
+    body:
+      - Solr Admin
+      - SolrCore Initialization Failures
+      - app_config.solr_path
+- name: Solvonet Device (VoIP)
+  regexps:
+    header:
+      - Basic realm="SOLVONET"
+- name: SOMOIDEA
+  regexps:
+    body:
+      - DESIGN BY SOMOIDEA
+- name: SonicWALL
+  regexps:
+    header:
+      - 'Server: SonicWALL'
+- name: sony摄像头
+  regexps:
+    body:
+      - Sony Network Camera
+      - inquiry.cgi?inqjs=system&inqjs=camera
+- name: Sophos Web Appliance
+  regexps:
+    body:
+      - Sophos Web Appliance
+      - resources/images/sophos_web.ico
+      - url(resources/images/en/login_swa.jpg)
+- name: sophos
+  regexps:
+    header:
+      - Sophos
+- name: Sophos_Email_Appliance
+  regexps:
+    header:
+      - Sophos Email Appliance
+- name: Sophos_Web_Appliance
+  regexps:
+    body:
+      - Sophos Web Appliance
+- name: Spammark邮件信息安全网关
+  regexps:
+    body:
+      - Spammark邮件信息安全网关
+      - /cgi-bin/spammark?empty=1
+- name: Spark_Master
+  regexps:
+    body:
+      - Spark Master at
+- name: Spark_Worker
+  regexps:
+    body:
+      - Spark Worker at
+- name: SPID HTTP Server
+  regexps:
+    header:
+      - SPID HTTP Server
+- name: splunk
+  regexps:
+    body:
+      - Splunk.util.normalizeBoolean
+- name: Spring Security
+  regexps:
+    body:
+      - j_spring_security_check
+    header:
+      - Spring Security Application
+- name: SQ-WEBCAM
+  regexps:
+    header:
+      - SQ-WEBCAM
+- name: squarespace建站
+  regexps:
+    header:
+      - squarespace.net
+- name: squid
+  regexps:
+    header:
+      - squid
+- name: SquirrelMail
+  regexps:
+    header:
+      - SQMSESSID
+- name: srun3000计费认证系统
+  regexps:
+    body:
+      - srun3000
+- name: STAR CMS
+  regexps:
+    body:
+      - content="STARCMS
+      - <img alt="STAR CMS
+- name: Starlet
+  regexps:
+    header:
+      - Plack::Handler::Starlet
+- name: Startbbs
+  regexps:
+    body:
+      - content="Startbbs
+    header:
+      - stb_csrf_cookie
+- name: STcms
+  regexps:
+    body:
+      - content="STCMS
+      - DahongY<dahongy@gmail.com>
+- name: Storm
+  regexps:
+    body:
+      - Storm UI
+      - stormtimestr
+- name: SubrionCMS
+  regexps:
+    header:
+      - 'X-Powered-Cms: Subrion CMS'
+- name: Sucuri
+  regexps:
+    header:
+      - Sucuri/Cloudproxy
+- name: suduserver
+  regexps:
+    header:
+      - suduserver
+- name: sugon_gridview
+  regexps:
+    body:
+      - /common/resources/images/common/app/gridview.ico
+- name: Suhosin
+  regexps:
+    header:
+      - suhosin
+- name: Sun-ONE-Web-Server
+  regexps:
+    header:
+      - Sun-ONE-Web-Server
+- name: Sun[tm]
+  regexps:
+    body:
+      - Sun[tm] ONE Web Server
+    header:
+      - 'Server: Sun-ONE-Web-Server'
+- name: supesite
+  regexps:
+    header:
+      - supe_sid
+- name: Swiftlet
+  regexps:
+    header:
+      - Swiftlet
+- name: Symantec Messaging Gateway
+  regexps:
+    body:
+      - Messaging Gateway
+- name: synkronvia
+  regexps:
+    header:
+      - Synkron Via CMS
+- name: Synology_DiskStation
+  regexps:
+    body:
+      - Synology DiskStation
+      - SYNO.SDS.Session
+- name: Synology_NAS
+  regexps:
+    body:
+      - modules/BackupReplicationApp
+    header:
+      - webman/index.cgi
+- name: taocms
+  regexps:
+    body:
+      - '>taoCMS<'
+- name: TCCMS
+  regexps:
+    body:
+      - Power By TCCMS
+      - index.php?ac=link_more
+      - index.php?ac=news_list
+- name: TCN协议
+  regexps:
+    header:
+      - 'Tcn: list'
+- name: teamportal
+  regexps:
+    body:
+      - TS_expiredurl
+- name: TeamViewer
+  regexps:
+    body:
+      - This site is running
+      - TeamViewer
+- name: TechartCMS
+  regexps:
+    header:
+      - 'X-Powered-Cms: Techart CMS'
+- name: techbridge
+  regexps:
+    body:
+      - Sorry,you need to use IE brower
+- name: Telerik Sitefinity
+  regexps:
+    body:
+      - Telerik.Web.UI.WebResource.axd
+      - content="Sitefinity
+- name: Tengine
+  regexps:
+    header:
+      - 'Server: Tengine'
+- name: TerraMaster
+  regexps:
+    body:
+      - TerraMaster
+- name: testlink
+  regexps:
+    body:
+      - testlink_library.js
+- name: thawte_ssl_cert
+  regexps:
+    body:
+      - https://seal.thawte.com/getthawteseal
+- name: ThinkOX
+  regexps:
+    body:
+      - Powered By ThinkOX
+      - ThinkOX
+- name: weiphp
+  regexps:
+    header:
+      - weiphp
+- name: pcfcms
+  regexps:
+    header:
+      - pcfcms
+- name: Zblog
+  regexps:
+    header:
+      - zb_user
+- name: ThinkSAAS
+  regexps:
+    body:
+      - /app/home/skins/default/style.css
+- name: ThinkSNS
+  regexps:
+    body:
+      - _static/image/favicon.ico
+    header:
+      - TSV3_lang
+- name: Tiki-wiki CMS
+  regexps:
+    body:
+      - jqueryTiki = new Object
+- name: TinyNav.js
+  regexps:
+    body:
+      - tinynav.min.js
+- name: Tipask
+  regexps:
+    body:
+      - content="tipask
+- name: Tncms
+  regexps:
+    header:
+      - X-Tncms-Version
+- name: TornadoServer
+  regexps:
+    header:
+      - TornadoServer
+- name: TP-LINK  TL-WPA8630
+  regexps:
+    header:
+      - TP-LINK  TL-WPA8630
+- name: TP-Link 3600 DD-WRT
+  regexps:
+    header:
+      - TP-Link 3600 DD-WRT
+- name: TP-LINK 3G MR12U
+  regexps:
+    header:
+      - TP-LINK 3G MR12U
+- name: TP-Link 740N
+  regexps:
+    header:
+      - TP-Link 740N
+- name: TP-Link 842 ND
+  regexps:
+    header:
+      - TP-Link 842 ND
+- name: TP-LINK 941
+  regexps:
+    header:
+      - TP-LINK 941
+- name: TP-LINK AC1200
+  regexps:
+    header:
+      - TP-LINK AC1200
+- name: TP-LINK AC1750
+  regexps:
+    header:
+      - TP-LINK AC1750
+- name: TP-LINK AC1900
+  regexps:
+    header:
+      - TP-LINK AC1900
+- name: TP-LINK AC750
+  regexps:
+    header:
+      - TP-LINK AC750
+- name: TP-Link DD-WRT Bridge
+  regexps:
+    header:
+      - TP-Link DD-WRT Bridge
+- name: TP-Link DD-WRT
+  regexps:
+    header:
+      - TP-Link DD-WRT
+- name: TP-LINK Firewall FR5300
+  regexps:
+    header:
+      - TP-LINK Firewall FR5300
+- name: TP-LINK Gigabit Broadband VPR600VPN
+  regexps:
+    header:
+      - TP-LINK Gigabit Broadband VPR600VPN
+- name: TP-LINK H5R
+  regexps:
+    header:
+      - TP-LINK H5R
+- name: TP-LINK MR13U
+  regexps:
+    header:
+      - TP-LINK MR13U
+- name: TP-LINK MR3020
+  regexps:
+    header:
+      - TP-LINK MR3020
+- name: TP-LINK MR3040
+  regexps:
+    header:
+      - TP-LINK MR3040
+- name: TP-LINK MR6400
+  regexps:
+    header:
+      - TP-LINK MR6400
+- name: TP-LINK R1660+
+  regexps:
+    header:
+      - TP-LINK R1660+
+- name: TP-LINK R1660M
+  regexps:
+    header:
+      - TP-LINK R1660M
+- name: TP-LINK R4000
+  regexps:
+    header:
+      - TP-LINK R4000
+- name: TP-LINK R410+
+  regexps:
+    header:
+      - TP-LINK R410+
+- name: TP-LINK R410
+  regexps:
+    header:
+      - TP-LINK R410
+- name: TP-LINK R4148
+  regexps:
+    header:
+      - TP-LINK R4148
+- name: TP-LINK R4149
+  regexps:
+    header:
+      - TP-LINK R4149
+- name: TP-LINK R4199G
+  regexps:
+    header:
+      - TP-LINK R4199G
+- name: TP-LINK R4238
+  regexps:
+    header:
+      - TP-LINK R4238
+- name: TP-LINK R4239
+  regexps:
+    header:
+      - TP-LINK R4239
+- name: TP-LINK R4299G
+  regexps:
+    header:
+      - TP-LINK R4299G
+- name: TP-LINK R4419
+  regexps:
+    header:
+      - TP-LINK R4419
+- name: TP-LINK R460+
+  regexps:
+    header:
+      - TP-LINK R460+
+- name: TP-LINK R460
+  regexps:
+    header:
+      - TP-LINK R460
+- name: TP-LINK R470
+  regexps:
+    header:
+      - TP-LINK R470
+- name: TP-LINK R470T+
+  regexps:
+    header:
+      - TP-LINK R470T+
+- name: TP-LINK R473
+  regexps:
+    header:
+      - TP-LINK R473
+- name: TP-LINK R478+
+  regexps:
+    header:
+      - TP-LINK R478+
+- name: TP-LINK R478
+  regexps:
+    header:
+      - TP-LINK R478
+- name: TP-LINK R480+
+  regexps:
+    header:
+      - TP-LINK R480+
+- name: TP-LINK R480
+  regexps:
+    header:
+      - TP-LINK R480
+- name: TP-LINK R480E
+  regexps:
+    header:
+      - TP-LINK R480E
+- name: TP-LINK R480T+
+  regexps:
+    header:
+      - TP-LINK R480T+
+- name: TP-LINK R480T
+  regexps:
+    header:
+      - TP-LINK R480T
+- name: TP-LINK R483
+  regexps:
+    header:
+      - TP-LINK R483
+- name: TP-LINK R488
+  regexps:
+    header:
+      - TP-LINK R488
+- name: TP-LINK R488T
+  regexps:
+    header:
+      - TP-LINK R488T
+- name: TP-LINK R490
+  regexps:
+    header:
+      - TP-LINK R490
+- name: TP-LINK R490T
+  regexps:
+    header:
+      - TP-LINK R490T
+- name: TP-LINK R498T+
+  regexps:
+    header:
+      - TP-LINK R498T+
+- name: TP-LINK R760+
+  regexps:
+    header:
+      - TP-LINK R760+
+- name: TP-LINK R860
+  regexps:
+    header:
+      - TP-LINK R860
+- name: TP-LINK R860/860M
+  regexps:
+    header:
+      - TP-LINK R860/860M
+- name: TP-LINK SOHO R402
+  regexps:
+    header:
+      - TP-LINK SOHO R402
+- name: TP-LINK SOHO R402M
+  regexps:
+    header:
+      - TP-LINK SOHO R402M
+- name: TP-LINK SOHO R406
+  regexps:
+    header:
+      - TP-LINK SOHO R406
+- name: TP-LINK SOHO R410v2.5
+  regexps:
+    header:
+      - TP-LINK SOHO R410v2.5
+- name: TP-LINK SOHO R860
+  regexps:
+    header:
+      - TP-LINK SOHO R860
+- name: TP-LINK TD-8840T
+  regexps:
+    header:
+      - TP-LINK TD-8840T
+- name: TP-LINK TD-89402
+  regexps:
+    header:
+      - TP-LINK TD-89402
+- name: TP-LINK TD-VG3511
+  regexps:
+    header:
+      - TP-LINK TD-VG3511
+- name: TP-LINK TD-VG3631
+  regexps:
+    header:
+      - TP-LINK TD-VG3631
+- name: TP-LINK TD-W89541G
+  regexps:
+    header:
+      - TP-LINK TD-W89541G
+- name: TP-LINK TD-W8968
+  regexps:
+    header:
+      - TP-LINK TD-W8968
+- name: TP-LINK TD-W8970
+  regexps:
+    header:
+      - TP-LINK TD-W8970
+- name: TP-LINK TD-W89741N
+  regexps:
+    header:
+      - TP-LINK TD-W89741N
+- name: TP-LINK TD-W8980
+  regexps:
+    header:
+      - TP-LINK TD-W8980
+- name: TP-LINK TD-W89841N
+  regexps:
+    header:
+      - TP-LINK TD-W89841N
+- name: TP-LINK TD865W(TDP)
+  regexps:
+    header:
+      - TP-LINK TD865W(TDP)
+- name: TP-LINK TL-R1660+
+  regexps:
+    header:
+      - TP-LINK TL-R1660+
+- name: TP-LINK TL-WPA4530
+  regexps:
+    header:
+      - TP-LINK TL-WPA4530
+- name: TP-Link TL-WR1043ND
+  regexps:
+    header:
+      - TP-Link TL-WR1043ND
+- name: TP-LINK TL-WR2543ND
+  regexps:
+    header:
+      - TP-LINK TL-WR2543ND
+- name: TP-Link TL-WR740N
+  regexps:
+    header:
+      - TP-Link TL-WR740N
+- name: TP-Link TL-WR740Nv2
+  regexps:
+    header:
+      - TP-Link TL-WR740Nv2
+- name: TP-Link TL-WR741N
+  regexps:
+    header:
+      - TP-Link TL-WR741N
+- name: TP-LINK TL-WR841HP
+  regexps:
+    header:
+      - TP-LINK TL-WR841HP
+- name: TP-Link TL-WR841N
+  regexps:
+    header:
+      - TP-Link TL-WR841N
+- name: TP-Link TL-WR841ND v8
+  regexps:
+    header:
+      - TP-Link TL-WR841ND v8
+- name: TP-Link TL-WR841ND v9
+  regexps:
+    header:
+      - TP-Link TL-WR841ND v9
+- name: TP-Link TL-WR841ND
+  regexps:
+    header:
+      - TP-Link TL-WR841ND
+- name: TP-Link TL-WR842ND v1
+  regexps:
+    header:
+      - TP-Link TL-WR842ND v1
+- name: TP-Link TL-WR941N
+  regexps:
+    header:
+      - TP-Link TL-WR941N
+- name: TP-Link TL-WR941Nv3
+  regexps:
+    header:
+      - TP-Link TL-WR941Nv3
+- name: TP-LINK VPR400VPN
+  regexps:
+    header:
+      - TP-LINK VPR400VPN
+- name: TP-LINK WA7210N
+  regexps:
+    header:
+      - TP-LINK WA7210N
+- name: TP-Link WDR4300
+  regexps:
+    header:
+      - TP-Link WDR4300
+- name: TP-LINK Wireless AP WA500G
+  regexps:
+    header:
+      - TP-LINK Wireless AP WA500G
+- name: TP-LINK Wireless AP WA501G
+  regexps:
+    header:
+      - TP-LINK Wireless AP WA501G
+- name: TP-LINK Wireless AP WA5110G
+  regexps:
+    header:
+      - TP-LINK Wireless AP WA5110G
+- name: TP-LINK Wireless AP WA5210G
+  regexps:
+    header:
+      - TP-LINK Wireless AP WA5210G
+- name: TP-LINK Wireless AP WA601G
+  regexps:
+    header:
+      - TP-LINK Wireless AP WA601G
+- name: TP-LINK Wireless AP WR700N
+  regexps:
+    header:
+      - TP-LINK Wireless AP WR700N
+- name: TP-LINK Wireless AP WR702N
+  regexps:
+    header:
+      - TP-LINK Wireless AP WR702N
+- name: TP-LINK Wireless AP WR706N
+  regexps:
+    header:
+      - TP-LINK Wireless AP WR706N
+- name: TP-LINK Wireless AP WR710N
+  regexps:
+    header:
+      - TP-LINK Wireless AP WR710N
+- name: TP-LINK Wireless AP WR800N
+  regexps:
+    header:
+      - TP-LINK Wireless AP WR800N
+- name: TP-LINK Wireless G WR340G
+  regexps:
+    header:
+      - TP-LINK Wireless G WR340G
+- name: TP-LINK Wireless MR3220
+  regexps:
+    header:
+      - TP-LINK Wireless MR3220
+- name: TP-LINK Wireless MR3420
+  regexps:
+    header:
+      - TP-LINK Wireless MR3420
+- name: TP-LINK Wireless TL-WR841N
+  regexps:
+    header:
+      - TP-LINK Wireless TL-WR841N
+- name: TP-LINK Wireless TL-WR940N/WR941ND
+  regexps:
+    header:
+      - TP-LINK Wireless TL-WR940N/WR941ND
+- name: TP-LINK Wireless WA701N
+  regexps:
+    header:
+      - TP-LINK Wireless WA701N
+- name: TP-LINK Wireless WA701ND
+  regexps:
+    header:
+      - TP-LINK Wireless WA701ND
+- name: TP-LINK Wireless WA730RE
+  regexps:
+    header:
+      - TP-LINK Wireless WA730RE
+- name: TP-LINK Wireless WA750RE
+  regexps:
+    header:
+      - TP-LINK Wireless WA750RE
+- name: TP-LINK Wireless WA7510N
+  regexps:
+    header:
+      - TP-LINK Wireless WA7510N
+- name: TP-LINK Wireless WA801N
+  regexps:
+    header:
+      - TP-LINK Wireless WA801N
+- name: TP-LINK Wireless WA801ND
+  regexps:
+    header:
+      - TP-LINK Wireless WA801ND
+- name: TP-LINK Wireless WA805N
+  regexps:
+    header:
+      - TP-LINK Wireless WA805N
+- name: TP-LINK Wireless WA830RE
+  regexps:
+    header:
+      - TP-LINK Wireless WA830RE
+- name: TP-LINK Wireless WA832RE
+  regexps:
+    header:
+      - TP-LINK Wireless WA832RE
+- name: TP-LINK Wireless WA850RE
+  regexps:
+    header:
+      - TP-LINK Wireless WA850RE
+- name: TP-LINK Wireless WA854RE
+  regexps:
+    header:
+      - TP-LINK Wireless WA854RE
+- name: TP-LINK Wireless WA860RE
+  regexps:
+    header:
+      - TP-LINK Wireless WA860RE
+- name: TP-LINK Wireless WA865RE
+  regexps:
+    header:
+      - TP-LINK Wireless WA865RE
+- name: TP-LINK Wireless WA901N
+  regexps:
+    header:
+      - TP-LINK Wireless WA901N
+- name: TP-LINK Wireless WA901ND
+  regexps:
+    header:
+      - TP-LINK Wireless WA901ND
+- name: TP-LINK Wireless WDR3300
+  regexps:
+    header:
+      - TP-LINK Wireless WDR3300
+- name: TP-LINK Wireless WDR3320
+  regexps:
+    header:
+      - TP-LINK Wireless WDR3320
+- name: TP-LINK Wireless WDR3500
+  regexps:
+    header:
+      - TP-LINK Wireless WDR3500
+- name: TP-LINK Wireless WDR3600
+  regexps:
+    header:
+      - TP-LINK Wireless WDR3600
+- name: TP-LINK Wireless WDR4300
+  regexps:
+    header:
+      - TP-LINK Wireless WDR4300
+- name: TP-LINK Wireless WDR4310
+  regexps:
+    header:
+      - TP-LINK Wireless WDR4310
+- name: TP-LINK Wireless WDR4310/WDR4320
+  regexps:
+    header:
+      - TP-LINK Wireless WDR4310/WDR4320
+- name: TP-LINK Wireless WDR4900
+  regexps:
+    header:
+      - TP-LINK Wireless WDR4900
+- name: TP-LINK Wireless WDR5300
+  regexps:
+    header:
+      - TP-LINK Wireless WDR5300
+- name: TP-LINK Wireless WDR5510
+  regexps:
+    header:
+      - TP-LINK Wireless WDR5510
+- name: TP-LINK Wireless WDR6300
+  regexps:
+    header:
+      - TP-LINK Wireless WDR6300
+- name: TP-LINK Wireless WDR6500
+  regexps:
+    header:
+      - TP-LINK Wireless WDR6500
+- name: TP-LINK Wireless WDR6510
+  regexps:
+    header:
+      - TP-LINK Wireless WDR6510
+- name: TP-LINK Wireless WDR7500
+  regexps:
+    header:
+      - TP-LINK Wireless WDR7500
+- name: TP-LINK Wireless WR1041N
+  regexps:
+    header:
+      - TP-LINK Wireless WR1041N
+- name: TP-LINK Wireless WR1042ND
+  regexps:
+    header:
+      - TP-LINK Wireless WR1042ND
+- name: TP-LINK Wireless WR1043N
+  regexps:
+    header:
+      - TP-LINK Wireless WR1043N
+- name: TP-LINK Wireless WR1043ND
+  regexps:
+    header:
+      - TP-LINK Wireless WR1043ND
+- name: TP-LINK Wireless WR1045ND
+  regexps:
+    header:
+      - TP-LINK Wireless WR1045ND
+- name: TP-LINK Wireless WR2041+
+  regexps:
+    header:
+      - TP-LINK Wireless WR2041+
+- name: TP-LINK Wireless WR2041N
+  regexps:
+    header:
+      - TP-LINK Wireless WR2041N
+- name: TP-LINK Wireless WR245
+  regexps:
+    header:
+      - TP-LINK Wireless WR245
+- name: TP-LINK Wireless WR2543N
+  regexps:
+    header:
+      - TP-LINK Wireless WR2543N
+- name: TP-LINK Wireless WR2543ND
+  regexps:
+    header:
+      - TP-LINK Wireless WR2543ND
+- name: TP-LINK Wireless WR340G+
+  regexps:
+    header:
+      - TP-LINK Wireless WR340G+
+- name: TP-LINK Wireless WR340G
+  regexps:
+    header:
+      - TP-LINK Wireless WR340G
+- name: TP-LINK Wireless WR541G
+  regexps:
+    header:
+      - TP-LINK Wireless WR541G
+- name: TP-LINK Wireless WR541G/542G
+  regexps:
+    header:
+      - TP-LINK Wireless WR541G/542G
+- name: TP-LINK Wireless WR542G
+  regexps:
+    header:
+      - TP-LINK Wireless WR542G
+- name: TP-LINK Wireless WR543G
+  regexps:
+    header:
+      - TP-LINK Wireless WR543G
+- name: TP-LINK Wireless WR641G
+  regexps:
+    header:
+      - TP-LINK Wireless WR641G
+- name: TP-LINK Wireless WR641G/642G
+  regexps:
+    header:
+      - TP-LINK Wireless WR641G/642G
+- name: TP-LINK Wireless WR700N
+  regexps:
+    header:
+      - TP-LINK Wireless WR700N
+- name: TP-LINK Wireless WR702N
+  regexps:
+    header:
+      - TP-LINK Wireless WR702N
+- name: TP-LINK Wireless WR740N
+  regexps:
+    header:
+      - TP-LINK Wireless WR740N
+- name: TP-LINK Wireless WR740N/WR741ND
+  regexps:
+    header:
+      - TP-LINK Wireless WR740N/WR741ND
+- name: TP-LINK Wireless WR741N
+  regexps:
+    header:
+      - TP-LINK Wireless WR741N
+- name: TP-LINK Wireless WR741ND
+  regexps:
+    header:
+      - TP-LINK Wireless WR741ND
+- name: TP-LINK Wireless WR741N/742N
+  regexps:
+    header:
+      - TP-LINK Wireless WR741N/742N
+- name: TP-LINK Wireless WR742N
+  regexps:
+    header:
+      - TP-LINK Wireless WR742N
+- name: TP-LINK Wireless WR743ND
+  regexps:
+    header:
+      - TP-LINK Wireless WR743ND
+- name: TP-LINK Wireless WR745N
+  regexps:
+    header:
+      - TP-LINK Wireless WR745N
+- name: TP-LINK Wireless WR747N
+  regexps:
+    header:
+      - TP-LINK Wireless WR747N
+- name: TP-LINK Wireless WR749N
+  regexps:
+    header:
+      - TP-LINK Wireless WR749N
+- name: TP-LINK Wireless WR802N
+  regexps:
+    header:
+      - TP-LINK Wireless WR802N
+- name: TP-LINK Wireless WR840N
+  regexps:
+    header:
+      - TP-LINK Wireless WR840N
+- name: TP-LINK Wireless WR841HP
+  regexps:
+    header:
+      - TP-LINK Wireless WR841HP
+- name: TP-LINK Wireless WR841N
+  regexps:
+    header:
+      - TP-LINK Wireless WR841N
+- name: TP-LINK Wireless WR841N/WR841ND
+  regexps:
+    header:
+      - TP-LINK Wireless WR841N/WR841ND
+- name: TP-LINK Wireless WR842N
+  regexps:
+    header:
+      - TP-LINK Wireless WR842N
+- name: TP-LINK Wireless WR842ND
+  regexps:
+    header:
+      - TP-LINK Wireless WR842ND
+- name: TP-LINK Wireless WR843N
+  regexps:
+    header:
+      - TP-LINK Wireless WR843N
+- name: TP-LINK Wireless WR843ND
+  regexps:
+    header:
+      - TP-LINK Wireless WR843ND
+- name: TP-LINK Wireless WR845N
+  regexps:
+    header:
+      - TP-LINK Wireless WR845N
+- name: TP-LINK Wireless WR846N
+  regexps:
+    header:
+      - TP-LINK Wireless WR846N
+- name: TP-LINK Wireless WR847N
+  regexps:
+    header:
+      - TP-LINK Wireless WR847N
+- name: TP-LINK Wireless WR880N
+  regexps:
+    header:
+      - TP-LINK Wireless WR880N
+- name: TP-LINK Wireless WR881N
+  regexps:
+    header:
+      - TP-LINK Wireless WR881N
+- name: TP-LINK Wireless WR940N
+  regexps:
+    header:
+      - TP-LINK Wireless WR940N
+- name: TP-LINK Wireless WR941N
+  regexps:
+    header:
+      - TP-LINK Wireless WR941N
+- name: TP-LINK Wireless WR941ND
+  regexps:
+    header:
+      - TP-LINK Wireless WR941ND
+- name: TP-LINK Wireless WR941N/942N
+  regexps:
+    header:
+      - TP-LINK Wireless WR941N/942N
+- name: TP-LINK WR703N
+  regexps:
+    header:
+      - TP-LINK WR703N
+- name: TP-LINK WR710N
+  regexps:
+    header:
+      - TP-LINK WR710N
+- name: TP-LINK WR720N
+  regexps:
+    header:
+      - TP-LINK WR720N
+- name: TP-LINK WR740N
+  regexps:
+    header:
+      - TP-LINK WR740N
+- name: TP-LINK WR741N
+  regexps:
+    header:
+      - TP-LINK WR741N
+- name: TP-LINK WR741ND
+  regexps:
+    header:
+      - TP-LINK WR741ND
+- name: TP-LINK WR820N
+  regexps:
+    header:
+      - TP-LINK WR820N
+- name: TP-LINK WR841N
+  regexps:
+    header:
+      - TP-LINK WR841N
+- name: TP-LINK WR842ND
+  regexps:
+    header:
+      - TP-LINK WR842ND
+- name: TP-LINK无线路由器
+  regexps:
+    header:
+      - TP-LINK Wireless
+- name: tp-shop
+  regexps:
+    body:
+      - mn-c-top
+- name: TPshop
+  regexps:
+    body:
+      - /index.php/Mobile/Index/index.html
+      - '>TPshop开源商城<'
+- name: TQ云呼叫中心
+  regexps:
+    body:
+      - tq.cn/floatcard?
+- name: trac
+  regexps:
+    body:
+      - <h1>Available Projects</h1>
+      - wiki/TracGuide
+    header:
+      - trac_session
+- name: Trendnet IP Cam
+  regexps:
+    header:
+      - Basic realm="netcam"
+- name: TRSMAS
+  regexps:
+    header:
+      - X-Mas-Server
+- name: trs_wcm
+  regexps:
+    body:
+      - /wcm/app/js
+      - 0;URL=/wcm
+      - window.location.href = "/wcm";
+      - forum.trs.com.cn
+      - wcm
+      - /wcm" target="_blank">网站管理
+      - /wcm" target="_blank">管理
+- name: Tumblr
+  regexps:
+    header:
+      - X-Tumblr-User
+- name: TurboCMS
+  regexps:
+    body:
+      - Powered by TurboCMS
+      - /cmsapp/zxdcADD.jsp
+      - /cmsapp/count/newstop_index.jsp?siteid=
+- name: TurboMail
+  regexps:
+    body:
+      - Powered by TurboMail
+      - wzcon1 clearfix
+      - TurboMail邮件系统
+- name: tutucms
+  regexps:
+    body:
+      - content="TUTUCMS
+      - Powered by TUTUCMS
+      - TUTUCMS"
+- name: twcms
+  regexps:
+    body:
+      - twcms/theme
+- name: TwilightCMS
+  regexps:
+    header:
+      - 'X-Powered-Cms: Twilight CMS'
+- name: Typecho
+  regexps:
+    body:
+      - generator" content="Typecho
+      - Typecho
+- name: typo3
+  regexps:
+    header:
+      - fe_typo_user
+- name: U-Mail
+  regexps:
+    body:
+      - <BODY LINK="White" VLINK="White" ALINK="White">
+- name: UBNT_UniFi系列路由
+  regexps:
+    body:
+      - UniFi
+      - <div class="appGlobalHeader">
+- name: UcSTAR
+  regexps:
+    body:
+      - UcSTAR 管理控制台
+- name: UFIDA_NC
+  regexps:
+    body:
+      - UFIDA
+      - logo/images/ufida_nc.png
+- name: ujian
+  regexps:
+    body:
+      - ujian.cc/code/ujian.js
+- name: Ultra_Electronics
+  regexps:
+    body:
+      - /preauth/login.cgi
+      - /preauth/style.css
+- name: UMI.CMS
+  regexps:
+    header:
+      - UMI.CMS
+- name: unbouncepages
+  regexps:
+    header:
+      - X-Unbounce-Pageid
+- name: Unix
+  regexps:
+    header:
+      - Unix
+- name: unknown_cms
+  regexps:
+    header:
+      - Requestsuccess4ajax
+- name: unknown_cms_rcms
+  regexps:
+    body:
+      - r/cms/www
+    header:
+      - clientlanguage
+- name: uPlusFtp
+  regexps:
+    header:
+      - uPlusFtp
+- name: UPUPW
+  regexps:
+    body:
+      - UPUPW环境集成包
+- name: UrlRewriter.NET
+  regexps:
+    header:
+      - UrlRewriter.NET
+- name: UrlScan
+  regexps:
+    header:
+      - Rejected-By-UrlScan
+- name: URP教务系统
+  regexps:
+    body:
+      - URP 综合教务系统
+      - 北京清元优软科技有限公司
+- name: USP Secure Entry Server
+  regexps:
+    header:
+      - Secure Entry Server
+- name: uyan
+  regexps:
+    body:
+      - uyan.cc/code/uyan.js
+- name: v5shop
+  regexps:
+    body:
+      - v5shop
+      - content="V5shop
+      - Powered by V5Shop
+- name: Varnish
+  regexps:
+    header:
+      - X-Varnish
+- name: Verizon_Wireless_Router
+  regexps:
+    body:
+      - Wireless Broadband Router Management Console
+      - verizon_logo_blk.gif
+- name: vertx
+  regexps:
+    header:
+      - vertx-web.session
+- name: Vicworl
+  regexps:
+    body:
+      - Vicworl
+      - vindex_right_d
+- name: VideoIQ Camera
+  regexps:
+    body:
+      - VideoIQ Camera Login
+- name: VisualSVN
+  regexps:
+    body:
+      - VisualSVN Server
+- name: Vmware_vFabric
+  regexps:
+    body:
+      - vFabric
+    header:
+      - TS01efd1fa
+- name: VOS3000
+  regexps:
+    body:
+      - VOS3000
+      - images/vos3000.ico
+- name: vue框架
+  regexps:
+    body:
+      - vue.js
+- name: VZPP Plesk
+  regexps:
+    body:
+      - 'VZPP Plesk '
+- name: wamp
+  regexps:
+    body:
+      - WAMPSERVER
+- name: wdcp
+  regexps:
+    body:
+      - wdcp服务器
+- name: wdcp管理系统
+  regexps:
+    body:
+      - wdcp服务器
+      - lanmp_wdcp 安装成功
+- name: WDlinux
+  regexps:
+    body:
+      - wdOS
+- name: we7
+  regexps:
+    body:
+      - /Widgets/WidgetCollection/
+- name: webEdition
+  regexps:
+    body:
+      - generator" content="webEdition
+- name: WebKnight
+  regexps:
+    header:
+      - WebKnight
+- name: Webluker
+  regexps:
+    header:
+      - Webluker-Edge
+- name: Webmin
+  regexps:
+    body:
+      - Webmin
+- name: WebObjects
+  regexps:
+    header:
+      - wosid
+- name: webplusr
+  regexps:
+    body:
+      - webplus
+      - 高校网站群管理平台
+- name: webray
+  regexps:
+    header:
+      - 'Drivedby: RaySrv'
+- name: webrick
+  regexps:
+    header:
+      - webrick
+- name: Websecurity_WAF
+  regexps:
+    header:
+      - 'Websecurity: WAF 1.0'
+- name: WebsiteBaker-CMS
+  regexps:
+    header:
+      - wb_session_id
+- name: webtrust_cert
+  regexps:
+    body:
+      - https://cert.webtrust.org/ViewSeal
+- name: wecenter
+  regexps:
+    body:
+      - aw_template.js
+      - WeCenter
+- name: weebly
+  regexps:
+    body:
+      - wsite-page-index
+    header:
+      - intern.weebly.net
+- name: weidun
+  regexps:
+    header:
+      - 'Firewall: www.weidun.com.cn'
+- name: weiphp
+  regexps:
+    body:
+      - content="WeiPHP
+      - /css/weiphp.css
+- name: WHM
+  regexps:
+    header:
+      - whostmgrsession
+- name: Wimax_CPE
+  regexps:
+    body:
+      - Wimax CPE Configuration
+- name: WindRiver设备
+  regexps:
+    header:
+      - WindRiver-WebServer
+- name: winwebmail
+  regexps:
+    body:
+      - winwebmail
+      - WinWebMail Server
+      - images/owin.css
+- name: WishOA
+  regexps:
+    body:
+      - WishOA_WebPlugin.js
+- name: WMSN
+  regexps:
+    header:
+      - 'X-Powered-Cms: WMSN'
+- name: wordpress
+  regexps:
+    body:
+      - content="WordPress
+      - /wp-includes/
+    header:
+      - /xmlrpc.php
+- name: wordpress_qTranslate
+  regexps:
+    header:
+      - qtrans_cookie_test
+- name: wosign_ssl_cert
+  regexps:
+    body:
+      - wosign.com
+- name: Wp-Super-Cache
+  regexps:
+    header:
+      - Wp-Super-Cache
+- name: wspx
+  regexps:
+    header:
+      - 'X-Powered-By: ANSI C'
+- name: wuzhicms
+  regexps:
+    body:
+      - Powered by wuzhicms
+      - content="wuzhicms
+- name: X-72e-Nobeian-Transfer
+  regexps:
+    header:
+      - X-72e-Nobeian-Transfer
+- name: xfinity
+  regexps:
+    body:
+      - Xfinity
+      - /reset-meyer-1.0.min.css
+- name: xheditor
+  regexps:
+    body:
+      - xheditor_lang/zh-cn.js
+      - class="xheditor
+      - .xheditor(
+- name: xoops
+  regexps:
+    body:
+      - include/xoops.js
+- name: YABB
+  regexps:
+    body:
+      - YaBBTime.getTime()
+      - /YaBB.js
+    header:
+      - Y2User
+- name: yidacms
+  regexps:
+    body:
+      - yidacms.css
+- name: yii
+  regexps:
+    header:
+      - YII_CSRF_TOKEN
+- name: yongyoufe
+  regexps:
+    body:
+      - FE协作
+      - V_show
+      - V_hedden
+- name: Yxcms
+  regexps:
+    body:
+      - /css/yxcms.css
+      - content="Yxcms
+- name: Z-Blog
+  regexps:
+    body:
+      - generator" content="Z-Blog
+    header:
+      - 'Product: Z-Blog'
+- name: Z-BlogPHP
+  regexps:
+    header:
+      - 'Product: Z-BlogPHP'
+- name: zabbix
+  regexps:
+    body:
+      - images/general/zabbix.ico
+      - meta name="Author" content="Zabbix SIA"
+    header:
+      - zbx_sessionid
+- name: ZCMS
+  regexps:
+    body:
+      - _ZCMS_ShowNewMessage
+      - zcms_skin
+      - ZCMS泽元内容管理
+- name: Zen Cart
+  regexps:
+    body:
+      - shopping cart program by Zen Cart
+    header:
+      - 'Set-Cookie: zenid='
+- name: Zend Framework
+  regexps:
+    header:
+      - ZEND=
+- name: ZendServer
+  regexps:
+    header:
+      - ZendServer
+- name: zenoss
+  regexps:
+    body:
+      - /zport/dmd/
+- name: zepto.js
+  regexps:
+    body:
+      - zepto.js
+      - zepto.min.js
+- name: Zeus
+  regexps:
+    header:
+      - 'Server: Zeus'
+- name: Zikula_CMS
+  regexps:
+    header:
+      - ZKSID2
+- name: zikula_framework
+  regexps:
+    header:
+      - ZIKULASID3
+- name: Zimbra
+  regexps:
+    header:
+      - ZM_TEST
+- name: ZKAccess 门禁管理系统
+  regexps:
+    body:
+      - /logoZKAccess_zh-cn.jpg
+- name: zkteco公司产品
+  regexps:
+    body:
+      - /media/images/ZKECO16.ico
+      - ZKTeco Inc. All Rights Reserved
+    header:
+      - sessionidadms
+- name: ZoneMinder
+  regexps:
+    body:
+      - ZoneMinder Login
+- name: Zoom-Search-Engine
+  regexps:
+    body:
+      - name="zoom_query"
+- name: zope
+  regexps:
+    header:
+      - zope
+- name: Zotonic
+  regexps:
+    body:
+      - 'powered by: Zotonic'
+      - /lib/js/apps/zotonic-1.0
+- name: ZTE-IAD
+  regexps:
+    body:
+      - /image/banner_I532.jpg
+      - /image/I202.gif
+      - /image/banner_top.jpg
+      - System Log In
+- name: ZTE_MiFi_UNE
+  regexps:
+    body:
+      - MiFi UNE 4G LTE
+- name: ZTE_ZSRV2_Router
+  regexps:
+    body:
+      - ZSRV2路由器Web管理系统
+      - ZTE Corporation. All Rights Reserved.
+- name: ZyXEL
+  regexps:
+    body:
+      - Forms/rpAuth_1
+- name: __VIEWSTATE
+  regexps:
+    body:
+      - __VIEWSTATE
+- name: 一启快
+  regexps:
+    header:
+      - yiqikuai.com
+- name: 一米OA
+  regexps:
+    body:
+      - /yimioa.apk
+- name: 一采通
+  regexps:
+    body:
+      - /custom/GroupNewsList.aspx?GroupId=
+- name: 七牛CDN
+  regexps:
+    body:
+      - glb.clouddn.com
+      - glb.qiniucdn.com
+      - cdn.staticfile.org
+    header:
+      - cdn.staticfile.org
+- name: 万户ezOFFICE
+  regexps:
+    header:
+      - LocLan
+- name: 万户网络
+  regexps:
+    body:
+      - css/css_whir.css
+- name: 万网企业云邮箱
+  regexps:
+    body:
+      - static.mxhichina.com/images/favicon.ico
+- name: 中企动力门户CMS
+  regexps:
+    body:
+      - 中企动力提供技术支持
+- name: 中兴路由器
+  regexps:
+    header:
+      - 'Server: Mini web server 1.0 ZTE corp 2005.'
+- name: 中控智慧时间安全管理平台
+  regexps:
+    body:
+      - ZKECO 时间&安全管理平台
+- name: 中控智慧考勤管理系统
+  regexps:
+    body:
+      - /media/images/ZKECO16.ico
+    header:
+      - sessionidadms
+- name: 中望OA
+  regexps:
+    body:
+      - /app_qjuserinfo/qjuserinfoadd.jsp
+      - /IMAGES/default/first/xtoa_logo.png
+- name: 中网可信网站权威数据库
+  regexps:
+    body:
+      - https://ss.knet.cn/verifyseal.dll
+- name: 主机宝
+  regexps:
+    body:
+      - 您访问的是主机宝服务器默认页
+- name: 久其通用财表系统
+  regexps:
+    body:
+      - <nobr>北京久其软件股份有限公司
+      - /netrep/intf
+      - /netrep/message2/
+- name: 乐视路由器
+  regexps:
+    body:
+      - 乐视路由器
+- name: 云因网上书店
+  regexps:
+    body:
+      - main/building.cfm
+      - href="../css/newscomm.css
+- name: 云锁
+  regexps:
+    header:
+      - yunsuo_session_verify
+- name: 亿赛通DLP
+  regexps:
+    body:
+      - CDGServer3
+- name: 亿邮
+  regexps:
+    body:
+      - EYOU企业邮箱
+      - cr">eYouMail
+    header:
+      - EMPHPSID
+- name: 任我行CRM
+  regexps:
+    body:
+      - 任我行CRM
+      - CRM_LASTLOGINUSERKEY
+- name: 任我行电商
+  regexps:
+    body:
+      - content="366EC
+- name: 企业版QQ
+  regexps:
+    body:
+      - http://wpa.b.qq.com/cgi/wpa.php
+- name: 佳能网络摄像头(Canon Network Cameras)
+  regexps:
+    body:
+      - /viewer/live/en/live.html
+- name: 信达OA
+  regexps:
+    body:
+      - http://www.xdoa.cn</a>
+      - 北京创信达科技有限公司
+- name: 元年财务软件
+  regexps:
+    body:
+      - yuannian.css
+      - /image/logo/yuannian.gif
+- name: 全国烟草系统
+  regexps:
+    body:
+      - ycportal/webpublish
+- name: 八哥CMS
+  regexps:
+    body:
+      - content="BageCMS
+- name: 农友政务系统
+  regexps:
+    body:
+      - '1207044504'
+- name: 凡科
+  regexps:
+    body:
+      - 凡科互联网科技股份有限公司
+      - content="凡科
+- name: 创星伟业校园网群
+  regexps:
+    body:
+      - javascripts/float.js
+      - vcxvcxv
+- name: 前端公共库CDN
+  regexps:
+    body:
+      - libs.cdnjs.net
+    header:
+      - libs.cdnjs.net
+- name: 加速乐
+  regexps:
+    header:
+      - __jsluid
+- name: 北京清科锐华CEMIS
+  regexps:
+    body:
+      - /theme/2009/image
+- name: 北京金盘鹏图软件
+  regexps:
+    body:
+      - SpeakIntertScarch.aspx
+- name: 北京阳光环球建站系统
+  regexps:
+    body:
+      - bigSortProduct.asp?bigid
+- name: 北创图书检索系统
+  regexps:
+    body:
+      - opac_two
+
+- name: FusionAccess
+  regexps:
+    body:
+      - FusionAccess
+    header:
+      - FusionAccess
+- name: 华为 MCU
+  regexps:
+    body:
+      - McuR5-min.js
+      - MCUType.js
+      - huawei MCU
+- name: 华为 NetOpen
+  regexps:
+    body:
+      - /netopen/theme/css/inFrame.css
+      - Huawei NetOpen System
+- name: 华为_HUAWEI_ASG2050
+  regexps:
+    header:
+      - HUAWEI ASG2050
+- name: 华为_HUAWEI_ASG2100
+  regexps:
+    header:
+      - HUAWEI ASG2100
+- name: 华为_HUAWEI_SRG1220
+  regexps:
+    header:
+      - HUAWEI SRG1220
+- name: 华为_HUAWEI_SRG2220
+  regexps:
+    header:
+      - HUAWEI SRG2220
+- name: 华为_HUAWEI_SRG3250
+  regexps:
+    header:
+      - HUAWEI SRG3250
+- name: 华为（HUAWEI）Secoway设备
+  regexps:
+    header:
+      - Secoway
+- name: 华为（HUAWEI）安全设备
+  regexps:
+    body:
+      - sweb-lib/resource/
+- name: 华天动力OA(OA8000)
+  regexps:
+    body:
+      - /OAapp/WebObjects/OAapp.woa
+- name: 协众OA
+  regexps:
+    body:
+      - Powered by 协众OA
+      - admin@cnoa.cn
+      - Powered by CNOA.CN
+- name: 单点CRM系统
+  regexps:
+    body:
+      - URL=general/ERP/LOGIN/
+      - content="单点CRM系统
+      - 客户关系管理-CRM
+- name: 南方数据
+  regexps:
+    body:
+      - /SouthidcKeFu.js
+      - CONTENT="Copyright 2003-2015 - Southidc.net
+      - /Southidcj2f.Js
+- name: 又拍云JS库
+  regexps:
+    body:
+      - b0.upaiyun.com
+    header:
+      - b0.upaiyun.com
+- name: 合正网站群内容管理系统
+  regexps:
+    body:
+      - Produced By
+      - 网站群内容管理系统
+- name: 同城多用户商城
+  regexps:
+    body:
+      - style_chaoshi
+- name: 地平线CMS
+  regexps:
+    body:
+      - labelOppInforStyle
+      - Powered by deep soon
+      - search_result.aspx
+      - frmsearch
+- name: 埃森诺网络服务质量检测系统
+  regexps:
+    body:
+      - '埃森诺网络服务质量检测系统 '
+- name: 大米CMS
+  regexps:
+    body:
+      - 大米CMS-
+      - content="damicms
+      - content="大米CMS
+- name: 天柏在线培训/考试系统
+  regexps:
+    body:
+      - App_Image/PXSystem
+      - App_Image/System
+- name: 天融信 TopAD
+  regexps:
+    body:
+      - 天融信 TopAD
+- name: 天融信ADS管理平台
+  regexps:
+    body:
+      - 天融信ADS管理平台
+- name: 天融信TopFlow
+  regexps:
+    body:
+      - 天融信TopFlow
+- name: 天融信VPN
+  regexps:
+    header:
+      - topsecsvportalname
+- name: 天融信Web应用安全防护系统
+  regexps:
+    body:
+      - 天融信Web应用安全防护系统
+- name: 天融信WEB应用防火墙
+  regexps:
+    body:
+      - 天融信WEB应用防火墙
+- name: 天融信入侵检测系统TopSentry
+  regexps:
+    body:
+      - 天融信入侵检测系统TopSentry
+- name: 天融信入侵防御系统TopIDP
+  regexps:
+    body:
+      - 天融信入侵防御系统TopIDP
+- name: 天融信安全管理系统
+  regexps:
+    body:
+      - 天融信安全管理
+- name: 天融信异常流量管理与抗拒绝服务系统
+  regexps:
+    body:
+      - 天融信异常流量管理与抗拒绝服务系统
+- name: 天融信日志收集与分析系统
+  regexps:
+    body:
+      - 天融信日志收集与分析系统
+- name: 天融信网站监测与自动修复系统
+  regexps:
+    body:
+      - 天融信网站监测与自动修复系统
+- name: 天融信网络卫士过滤网关
+  regexps:
+    body:
+      - 天融信网络卫士过滤网关
+- name: 天融信网络审计系统
+  regexps:
+    body:
+      - onclick="dlg_download()
+- name: 天融信脆弱性扫描与管理系统
+  regexps:
+    body:
+      - 天融信脆弱性扫描与管理系统
+      - /js/report/horizontalReportPanel.js
+- name: 天融信防火墙
+  regexps:
+    body:
+      - WEB User Interface
+    header:
+      - TopWebServer
+- name: 安全宝
+  regexps:
+    header:
+      - X-Powered-By-Anquanbao
+- name: 安全狗
+  regexps:
+    header:
+      - WAF/2.0
+- name: 安慧网盾
+  regexps:
+    header:
+      - 'Protected-By: AnHui Web Firewall'
+- name: 小米路由器
+  regexps:
+    body:
+      - 小米路由器
+    header:
+      - 'Tx-Server: MiXr'
+- name: 小脑袋
+  regexps:
+    body:
+      - http://stat.xiaonaodai.com/stat.php
+- name: 小蚂蚁
+  regexps:
+    body:
+      - Powered by 小蚂蚁地方门户网站系统
+      - /Template/Ant/Css/AntHomeComm.css
+    header:
+      - AntXiaouserslogin
+- name: 希尔OA
+  regexps:
+    body:
+      - /heeroa/login.do
+- name: 帕拉迪统一安全管理和综合审计系统
+  regexps:
+    body:
+      - module/image/pldsec.css
+- name: 帝友P2P
+  regexps:
+    body:
+      - /js/diyou.js
+      - src="/dyweb/dythemes
+- name: 帝国EmpireCMS
+  regexps:
+    body:
+      - Powered by EmpireCMS
+- name: 帝联
+  regexps:
+    header:
+      - fastcdn.com
+- name: 微普外卖点餐系统
+  regexps:
+    body:
+      - Author" content="微普外卖点餐系统
+      - Powered By 点餐系统
+      - userfiles/shoppics/
+- name: 微门户
+  regexps:
+    body:
+      - /tpl/Home/weimeng/common/css/
+- name: 快网
+  regexps:
+    header:
+      - 'Fw-Via: '
+- name: 悟空CRM
+  regexps:
+    body:
+      - 悟空CRM
+      - /Public/js/5kcrm.js
+- name: 惠尔顿上网行为管理系统
+  regexps:
+    body:
+      - updateLoginPswd.php
+      - PassroedEle
+- name: 慧学云教育
+  regexps:
+    body:
+      - ctl00_ContentPlaceHolder1_dltTopVideos
+    header:
+      - SchoolCopyRight
+- name: 护卫神主机管理
+  regexps:
+    body:
+      - 护卫神·主机管理系统
+- name: 护卫神网站安全系统
+  regexps:
+    body:
+      - 护卫神.网站安全系统
+- name: 捷点JCMS
+  regexps:
+    body:
+      - Publish By JCms2010
+- name: 擎天电子政务
+  regexps:
+    body:
+      - App_Themes/1/Style.css
+      - window.location = "homepages/index.aspx
+      - homepages/content_page.aspx
+- name: 斐讯Fortress
+  regexps:
+    body:
+      - 斐讯Fortress防火墙
+      - <meta name="author" content="上海斐讯数据通信技术有限公司" />
+- name: 新浪SAE
+  regexps:
+    body:
+      - lib.sinaapp.com
+    header:
+      - lib.sinaapp.com
+- name: 施耐德Schneider设备
+  regexps:
+    header:
+      - Schneider-WEB
+- name: 施耐德_Schneider_PowerLogic_PM800
+  regexps:
+    header:
+      - PM800
+- name: 易企CMS
+  regexps:
+    body:
+      - content="YiqiCMS
+- name: 易分析
+  regexps:
+    body:
+      - 易分析 PHPStat Analytics
+      - PHPStat Analytics 网站数据分析系统
+- name: 易普拉格科研管理系统
+  regexps:
+    body:
+      - lan12-jingbian-hong
+      - 科研管理系统，北京易普拉格科技
+- name: 易点CMS
+  regexps:
+    body:
+      - DianCMS_SiteName
+      - DianCMS_用户登陆引用
+- name: 易瑞授权访问系统
+  regexps:
+    body:
+      - /authjsp/login.jsp
+      - FE0174BB-F093-42AF-AB20-7EC621D10488
+- name: 智睿软件
+  regexps:
+    body:
+      - content="智睿软件
+      - Zhirui.js
+- name: 某通用型政府cms
+  regexps:
+    body:
+      - /deptWebsiteAction.do
+- name: 校园卡管理系统
+  regexps:
+    body:
+      - Harbin synjones electronic
+      - document.FormPostds.action="xxsearch.action
+      - /shouyeziti.css
+- name: 梭子鱼设备
+  regexps:
+    header:
+      - BarracudaHTTP
+- name: 梭子鱼防火墙
+  regexps:
+    body:
+      - http://www.barracudanetworks.com?a=bsf_product" class="transbutton
+      - /cgi-mod/header_logo.cgi
+- name: 正方OA
+  regexps:
+    body:
+      - zfoausername
+- name: 正方教务管理系统
+  regexps:
+    body:
+      - style/base/jw.css
+- name: 武汉弘智科技
+  regexps:
+    body:
+      - 研发与技术支持：武汉弘智科技有限公司
+- name: 水星MW300R
+  regexps:
+    header:
+      - MW300R
+- name: 汉柏安全网关
+  regexps:
+    body:
+      - 'OPZOON - '
+- name: 汉码软件
+  regexps:
+    body:
+      - 汉码软件
+- name: 沃科网异网同显系统
+  regexps:
+    body:
+      - 沃科网
+      - 异网同显系统
+- name: 泛微协同办公OA
+  regexps:
+    body:
+      - /wui/common/css/w7OVFont.css
+    header:
+      - testBanCookie
+- name: 泛普建筑工程施工OA
+  regexps:
+    body:
+      - /dwr/interface/LoginService.js
+- name: 泰信TMailer邮件系统
+  regexps:
+    body:
+      - Tmailer
+      - content="Tmailer
+      - href="/tmailer/img/logo/favicon.ico
+- name: 浪潮政务系统
+  regexps:
+    body:
+      - OnlineQuery/QueryList.aspx
+      - 浪潮政务
+      - LangChao.ECGAP.OutPortal
+- name: 海天OA
+  regexps:
+    body:
+      - HTVOS.js
+- name: 海康威视iVMS
+  regexps:
+    body:
+      - g_szCacheTime
+      - iVMS
+- name: Hikvision
+  regexps:
+    body:
+      - doc/page/login.asp
+    header:
+      - DVRDVS-Webs
+- name: 海洋CMS
+  regexps:
+    body:
+      - seacms
+      - Powered by SeaCms
+      - content="seacms
+- name: 海盗云商(Haidao)
+  regexps:
+    body:
+      - haidao.web.general.js
+- name: sangfor-ssl-vpn
+  regexps:
+    body:
+      - login_psw.csp
+    header:
+      - TWFID
+- name: sangfor-easyconnect
+  regexps:
+    body:
+      - EasyConnect
+- name: 深信服防火墙类产品
+  regexps:
+    body:
+      - SANGFOR FW
+- name: 爱快流控路由
+  regexps:
+    body:
+      - 爱快
+      - /resources/images/land_prompt_ico01.gif
+- name: 爱思华宝信息服务器
+  regexps:
+    body:
+      - Powered by <a href="http://www.icewarp.com
+    header:
+      - IceWarp
+- name: 牛逼cms
+  regexps:
+    body:
+      - content="niubicms
+- name: 瑞友天翼_应用虚拟化系统
+  regexps:
+    body:
+      - 瑞友天翼
+- name: 用友erp-nc
+  regexps:
+    body:
+      - /nc/servlet/nc.ui.iufo.login.Index
+      - 用友新世纪
+      - logo/images/ufida
+- name: 用友U8
+  regexps:
+    body:
+      - getFirstU8Accid
+- name: 用友ufida
+  regexps:
+    body:
+      - /System/Login/Login.asp?AppID=
+- name: 用友商战实践平台
+  regexps:
+    body:
+      - Login_Main_BG
+      - Login_Owner
+- name: 致远OA
+  regexps:
+    body:
+      - /seeyon/USER-DATA/IMAGES/LOGIN/login.gif
+      - 用友致远A
+      - /yyoa/
+- name: 畅捷通
+  regexps:
+    body:
+      - 畅捷通
+- name: 百为智能流控路由器
+  regexps:
+    body:
+      - BYTEVALUE 智能流控路由器
+      - <a href="http://www.bytevalue.com/" target="_blank">
+- name: 百为路由
+  regexps:
+    body:
+      - 提交验证的id必须是ctl_submit
+- name: 百度CDN
+  regexps:
+    body:
+      - apps.bdimg.com
+      - libs.baidu.com
+    header:
+      - libs.baidu.com
+- name: 百度云加速
+  regexps:
+    header:
+      - fhl
+- name: 百度分享
+  regexps:
+    body:
+      - share.baidu.com/static/api/js/share.js
+- name: 睿博士云办公系统
+  regexps:
+    body:
+      - /studentSign/toLogin.di
+      - /user/toUpdatePasswordPage.di
+- name: 磊科产品
+  regexps:
+    header:
+      - netcore
+- name: 福富安全基线管理
+  regexps:
+    body:
+      - align="center">福富软件
+- name: 科信邮件系统
+  regexps:
+    body:
+      - /systemfunction.pack.js
+      - lo_computername
+- name: 科来RAS
+  regexps:
+    body:
+      - 科来网络回溯
+      - 科来软件 版权所有
+      - i18ninit.min.js
+- name: 科蚁CMS
+  regexps:
+    body:
+      - keyicms：keyicms
+      - Powered by <a href="http://www.keyicms.com
+- name: 科迈RAS系统
+  regexps:
+    body:
+      - 科迈RAS
+      - type="application/npRas
+      - 远程技术支持请求：<a href="http://www.comexe.cn
+- name: 管理易
+  regexps:
+    body:
+      - 管理易
+      - minierp
+- name: 绿盟下一代防火墙
+  regexps:
+    body:
+      - NSFOCUS NF
+- name: 网动云视讯平台
+  regexps:
+    body:
+      - Acenter
+      - /js/roomHeight.js
+      - meetingShow!show.action
+- name: 网宿
+  regexps:
+    header:
+      - WS CDN Server
+- name: 网御WAF
+  regexps:
+    body:
+      - <div id="divLogin">
+      - 网御WAF
+- name: 网御上网行为管理系统
+  regexps:
+    body:
+      - Leadsec ACM
+- name: 网易企业邮箱
+  regexps:
+    body:
+      - frmvalidator
+      - 邮箱用户登录
+- name: 网神VPN
+  regexps:
+    body:
+      - admin/js/virtual_keyboard.js
+    header:
+      - host_for_cookie
+- name: 网神防火墙
+  regexps:
+    body:
+      - secgate 3600
+      - css/lsec/login.css
+- name: 美洽 - 在线客服
+  regexps:
+    body:
+      - /meiqia.js
+- name: 育友软件
+  regexps:
+    body:
+      - http://www.yuysoft.com/
+- name: 腾讯企业邮箱
+  regexps:
+    body:
+      - /cgi-bin/getinvestigate?flowid=
+- name: 腾讯移动分析
+  regexps:
+    body:
+      - tajs.qq.com
+- name: 苏亚星校园管理系统
+  regexps:
+    body:
+      - /ws2004/Public/
+- name: 苹果CMS
+  regexps:
+    body:
+      - maccms:voddaycount
+- name: 蓝凌EIS智慧协同平台
+  regexps:
+    body:
+      - /scripts/jquery.landray.common.js
+      - v11_QRcodeBar clr
+- name: 蓝盾BDWebGuard
+  regexps:
+    body:
+      - 'BACKGROUND: url(images/loginbg.jpg) #e5f1fc'
+- name: 蓝讯
+  regexps:
+    header:
+      - Powered-By-ChinaCache
+- name: 西部数码
+  regexps:
+    header:
+      - WT263CDN
+- name: Authenticate
+  regexps:
+    header:
+      - Www-Authenticate
+- name: 贷齐乐p2p
+  regexps:
+    body:
+      - /js/jPackageCss/jPackage.css
+      - src="/js/jPackage
+- name: 迈捷邮件系统(MagicMail)
+  regexps:
+    body:
+      - /aboutus/magicmail.gif
+- name: 逐浪zoomla
+  regexps:
+    body:
+      - script src="http://code.zoomla.cn/
+      - NodePage.aspx
+      - /style/images/win8_symbol_140x140.png
+- name: 金和协同管理平台
+  regexps:
+    body:
+      - 金和协同管理平台
+- name: 金山KingGate
+  regexps:
+    body:
+      - /src/system/login.php
+- name: 金笛邮件系统
+  regexps:
+    body:
+      - /jdwm/cgi/login.cgi?login
+- name: 金蝶EAS
+  regexps:
+    body:
+      - easSessionId
+- name: 金蝶政务GSiS
+  regexps:
+    body:
+      - /kdgs/script/kdgs.js
+- name: 金龙卡金融化一卡通网站查询子系统
+  regexps:
+    body:
+      - 金龙卡金融化一卡通网站查询子系统
+      - location.href="homeLogin.action
+- name: 锐商企业CMSc
+  regexps:
+    body:
+      - href="/Writable/ClientImages/mycss.css
+- name: 锐捷 RG-DBS
+  regexps:
+    body:
+      - /css/impl-security.css
+      - /dbaudit/authenticate
+- name: 锐捷NBR路由器
+  regexps:
+    body:
+      - free_nbr_login_form.png
+- name: 锐捷应用控制引擎
+  regexps:
+    body:
+      - window.open("/login.do","airWin
+      - 锐捷应用控制引擎
+- name: 阿里云CDN
+  regexps:
+    body:
+      - cdn.aliyuncs.com
+    header:
+      - cdn.aliyuncs.com
+- name: 青果软件
+  regexps:
+    body:
+      - KINGOSOFT
+      - SetKingoEncypt.jsp
+      - /jkingo.js
+
