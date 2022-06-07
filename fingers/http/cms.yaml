@@ -1,0 +1,641 @@
+- name: lanmp集成环境
+  rule:
+    - regexps:
+        body:
+          - <title>LANMP
+- name: 宝塔面板
+  default_port:
+    - '8888'
+  rule:
+    - regexps:
+        body:
+          - app.bt.cn/static/app.png
+          - 安全入口校验失败
+- name: 宝塔
+  rule:
+    - regexps:
+        body:
+          - 恭喜，站点创建成功
+          - 没有找到站点
+      favicon:
+        md5:
+          - 3c3804ddad747313df58112a3e1bc680
+- name: lnmp
+  rule:
+    - regexps:
+        body:
+          - lnmp.gif
+
+- name: 微擎
+  rule:
+    - regexps:
+        body:
+          - /index.php?c=user&a=find-password
+      favicon:
+        md5:
+          - fa8833ac684d6949f480ae3bc9a51b4a
+- name: xxl-job
+  rule:
+    - regexps:
+        body:
+          - 分布式任务调度平台XXL-JOB
+
+
+
+- name: discuz
+  rule:
+    - regexps:
+        body:
+          - Discuz
+      favicon:
+        mmh3:
+          - '-505448917'
+        md5:
+          - c028c4822428e83a358c60a93ef65381
+- name: typecho
+  rule:
+    - regexps:
+        body:
+          - Typecho</a>
+
+- name: phpmyadmin
+  rule:
+    - regexps:
+        header:
+          - pma_lang
+          - phpMyAdmin
+        body:
+          - /themes/pmahomme/img/logo_right.png
+      favicon:
+        md5:
+          - 531b63a51234bb06c9d77f219eb25553
+        mmh3:
+          - '-1010568750'
+          - '-476231906'
+- name: 普元eos_console
+  level: 1
+  info: 普元EOS_console_leak
+  send_data: /eosmgr/eos/EventDispatcher
+  rule:
+    - regexps:
+        vuln:
+          - EOS管理控制台
+- name: jboss
+  rule:
+    - regexps:
+        body:
+          - Welcome to JBoss
+          - jboss.css
+        header:
+          - JBoss
+      favicon:
+        md5:
+          - 799f70b71314a7508326d1d2f68f7519
+        mmh3:
+          - '-656811182'
+- name: weblogic
+  rule:
+    - regexps:
+        body:
+          - login_WebLogic_branding.png
+          - Branding_Login_WeblogicConsole.gif
+          - <i>Hypertext Transfer Protocol -- HTTP/1.1</i>
+        header:
+          - WebLogic
+          - ADMINCONSOLESESSION
+- name: weblogic-console
+  level: 1
+  send_data: /console/login/LoginForm.jsp
+  info: weblogic_console_leak
+  rule:
+    - regexps:
+        vuln:
+          - 'WebLogic Server Version: (.*?)<'
+- name: websphere
+  rule:
+    - regexps:
+        body:
+          - SRVE0255E
+          - ibm.ws.webcontainer.servlet
+          - IBM WebSphere Application Server
+- name: 普元eos
+  rule:
+    - regexps:
+        body:
+          - EOSOperator
+          - eos-web.js
+          - org.gocom
+        header:
+          - eos_style_cookie
+- name: 普元coframe
+  rule:
+    - regexps:
+        body:
+          - coframe
+- name: zzzcms
+  rule:
+    - regexps:
+        body:
+          - zzzcms
+- name: thinkcmf
+  rule:
+    - regexps:
+        body:
+          - thinkcmf
+- name: thinkphp
+  rule:
+    - regexps:
+        header:
+          - ThinkPHP
+        body:
+          - /Public/static/js/
+          - think\exception\HttpException
+      favicon:
+        md5:
+          - f49c4a4bde1eec6c0b80c2277c76e3db
+- name: showdoc
+  rule:
+    - regexps:
+        body:
+          - showdoc
+      favicon:
+        md5:
+          - 1fbc02dc6f980f075779049bf687128a
+        mmh3:
+          - '1969934080'
+- name: 74cms
+  rule:
+    - regexps:
+        body:
+          - 74cms
+- name: 金蝶中间件
+  rule:
+    - regexps:
+        body:
+          - -Error report
+- name: 泽元zcms
+  rule:
+    - regexps:
+        body:
+          - zcms_stat
+          - zcms_skin
+          - 泽元
+- name: 民友minyoocms
+  rule:
+    - regexps:
+        body:
+          - Minyoo
+          - /tpl/8/images
+- name: 中科汇联easysitecms
+  rule:
+    - regexps:
+        body:
+          - huilan-jquery-ui
+- name: jspxcms
+  rule:
+    - regexps:
+        body:
+          - Powered by Jspxcms
+- name: 奥远科技
+  rule:
+    - regexps:
+        body:
+          - aykj.net
+- name: phpcms
+  rule:
+    - regexps:
+        body:
+          - index.php?m=content&c=index&a=lists
+- name: metinfo
+  rule:
+    - regexps:
+        body:
+          - MetInfo
+- name: ideacms
+  rule:
+    - regexps:
+        body:
+          - IdeaCMS
+- name: 逐浪zoomla
+  rule:
+    - regexps:
+        body:
+          - zoomla
+          - NodePage.aspx
+
+- name: sscms
+  rule:
+    - regexps:
+        body:
+          - SS CMS
+          - /sitefiles/assets
+      favicon:
+        md5:
+          - e1610130e53ed05eb2f242c76bd93724
+        mmh3:
+          - '-773012525'
+- name: finecms
+  rule:
+    - regexps:
+        body:
+          - FineCMS
+- name: 向日葵
+  rule:
+    - regexps:
+        body:
+          - '{"success":false,"msg":"Verification failure"}'
+- name: ideacms
+  rule:
+    - regexps:
+        body:
+          - IdeaCMS
+- name: 博达vsb
+  rule:
+    - regexps:
+        body:
+          - Visual SiteBuilder
+- name: 合正cms
+  rule:
+    - regexps:
+        body:
+          - /cms/cmsadmin/infopub
+- name: phpok
+  rule:
+    - regexps:
+        body:
+          - phpok
+- name: phpmywind
+  rule:
+    - regexps:
+        body:
+          - PHPMyWind
+- name: codeigniter
+  rule:
+    - regexps:
+        header:
+          - ci_session
+- name: weaver-ebridge
+  rule:
+    - regexps:
+        body:
+          - e-Bridge
+- name: laravel
+  rule:
+    - regexps:
+        header:
+          - laravel_session
+- name: dwr
+  rule:
+    - regexps:
+        body:
+          - dwr/engine.js
+- name: 大汉版通发布系统
+  rule:
+    - regexps:
+        body:
+          - /module/jslib/urite
+          - 大汉版通发布系统
+          - 大汉网络
+- name: jcms(捷点)
+  rule:
+    - regexps:
+        body:
+          - JCms
+          - cnvp.com.cn
+- name: g4studio
+  rule:
+    - regexps:
+        body:
+          - g4it
+          - g4.ico
+- name: 思迪产品_thinkive
+  rule:
+    - regexps:
+        body:
+          - thinkiveJs.min.js
+- name: 京伦cms
+  rule:
+    - regexps:
+        body:
+          - jltech.cn
+- name: 翰臣cms
+  rule:
+    - regexps:
+        body:
+          - 翰臣科技
+- name: eweishop
+  rule:
+    - regexps:
+        body:
+          - ewei_shop
+- name: joomla
+  rule:
+    - regexps:
+        body:
+          - mootools-core.js
+          - Joomla
+      favicon:
+        mmh3:
+          - '366524387'
+          - '1627330242'
+          - '-1950415971'
+- name: 大汉web
+  rule:
+    - regexps:
+        body:
+          - hanweb.css
+- name: dreamcms
+  rule:
+    - regexps:
+        body:
+          - dreamer-cms
+- name: tongweb
+  rule:
+    - regexps:
+        header:
+          - TongWeb Serve
+- name: jeesite
+  rule:
+    - regexps:
+        body:
+          - jeesite.min.css
+- name: jeecms
+  rule:
+    - regexps:
+        body:
+          - /r/cms
+- name: epoint新点软件cms
+  rule:
+    - regexps:
+        header:
+          - epointserver
+        body:
+          - webBuilderCommon
+- name: 6kbbs
+  rule:
+    - regexps:
+        body:
+          - Powered by 6kbbs
+          - generator" content="6KBBS
+- name: 74cms
+  rule:
+    - regexps:
+        body:
+          - 74cms.com
+          - 骑士CMS
+
+- name: 08cms
+  rule:
+    - regexps:
+        body:
+          - content="08CMS
+          - typeof(_08cms)
+- name: 1024 cms
+  rule:
+    - regexps:
+        body:
+          - Powered by 1024 CMS
+          - content="1024 CMS
+- name: 1024cms
+  rule:
+    - regexps:
+        body:
+          - Powered by 1024 CMS
+          - generator" content="1024 CMS (c)
+- name: 171cms
+  rule:
+    - regexps:
+        body:
+          - content="171cms
+          - 171cms
+- name: php-cgi
+  rule:
+    - regexps:
+        header:
+          - PHP-CGI
+- name: phpb2b
+  rule:
+    - regexps:
+        body:
+          - Powered By PHPB2B
+- name: phpbb
+  rule:
+    - regexps:
+        body:
+          - phpBB
+        header:
+          - HttpOnly, phpbb3_
+- name: phpcms
+  rule:
+    - regexps:
+        body:
+          - Phpcms
+          - /index.php?m=content&c=index&a=lists
+          - /index.php?m=content&amp;c=index&amp;a=lists
+- name: phpdisk
+  rule:
+    - regexps:
+        body:
+          - Powered by PHPDisk
+          - content="PHPDisk
+- name: phpdocumentor
+  rule:
+    - regexps:
+        body:
+          - Generated by phpDocumentor
+- name: phpems考试系统
+  rule:
+    - regexps:
+        body:
+          - phpems
+          - content="PHPEMS
+- name: phpinfo
+  rule:
+    - regexps:
+        body:
+          - phpinfo
+          - 'Virtual Directory Support '
+- name: phpmoadmin
+  rule:
+    - regexps:
+        body:
+          - phpmoadmin
+- name: phpmps
+  rule:
+    - regexps:
+        body:
+          - Powered by Phpmps
+          - templates/phpmps/style/index.css
+- name: phpmywind
+  rule:
+    - regexps:
+        body:
+          - phpMyWind.com All Rights Reserved
+          - content="PHPMyWind
+- name: phpoa
+  rule:
+    - regexps:
+        body:
+          - admin_img/msg_bg.png
+- name: phpok
+  rule:
+    - regexps:
+        body:
+          - phpok
+          - Powered By phpok.com
+          - content="phpok
+- name: phpshe
+  rule:
+    - regexps:
+        body:
+          - Powered by phpshe
+          - content="phpshe
+- name: phpvod
+  rule:
+    - regexps:
+        body:
+          - Powered by PHPVOD
+          - content="phpvod
+- name: phpweb
+  rule:
+    - regexps:
+        body:
+          - PDV_PAGENAME
+- name: phpwind
+  rule:
+    - regexps:
+        body:
+          - Powered by phpwind
+          - content="phpwind
+- name: rcms
+  rule:
+    - regexps:
+        body:
+          - /r/cms/www/
+- name: weiphp
+  rule:
+    - regexps:
+        header:
+          - weiphp
+        body:
+          - content="WeiPHP
+          - /css/weiphp.css
+      favicon:
+        md5:
+          - 820d3b66204fbcd3560b9358632b9c8a
+        mmh3:
+          - '37052027'
+- name: pcfcms
+  rule:
+    - regexps:
+        header:
+          - pcfcms
+      favicon:
+        md5:
+          - 0efb381ef98f4cb8443c0b8ecdfad874
+        mmh3:
+          - '1355901755'
+- name: zblog
+  rule:
+    - regexps:
+        header:
+          - zb_user
+        body:
+          - Z-Blog
+- name: tpshop
+  rule:
+    - regexps:
+        body:
+          - /index.php/Mobile/Index/index.html
+          - TPshop
+- name: trsmas
+  rule:
+    - regexps:
+        header:
+          - X-Mas-Server
+- name: trs_wcm
+  rule:
+    - regexps:
+        body:
+          - /wcm
+          - trs.com.cn
+- name: turbocms
+  rule:
+    - regexps:
+        body:
+          - Powered by TurboCMS
+          - /cmsapp/zxdcADD.jsp
+          - /cmsapp/count/newstop_index.jsp?siteid=
+- name: typecho
+  rule:
+    - regexps:
+        body:
+          - generator" content="Typecho
+          - Typecho
+- name: webmin
+  rule:
+    - regexps:
+        body:
+          - Webmin
+      favicon:
+        mmh3:
+          - '479413330'
+          - '1280907310'
+          - '1453890729'
+          - '-1038557304'
+- name: 全国烟草系统
+  rule:
+    - regexps:
+        body:
+          - ycportal/webpublish
+- name: 八哥cms
+  rule:
+    - regexps:
+        body:
+          - content="BageCMS
+- name: 帝国empirecms
+  rule:
+    - regexps:
+        body:
+          - Powered by EmpireCMS
+- name: 捷点jcms
+  rule:
+    - regexps:
+        body:
+          - Publish By JCms2010
+- name: 易企cms
+  rule:
+    - regexps:
+        body:
+          - content="YiqiCMS
+- name: 海洋cms
+  rule:
+    - regexps:
+        body:
+          - seacms
+          - Powered by SeaCms
+          - content="seacms
+- name: 美洽在线客服
+  rule:
+    - regexps:
+        body:
+          - /meiqia.js
+- name: 育友软件
+  rule:
+    - regexps:
+        body:
+          - yuysoft.com
+- name: 50cms
+  rule:
+    - favicon:
+        mmh3:
+          - '-299974513'
+        md5:
+          - d1b2495284e172a52abc355c63b25341
+
+
+
+
+
+
+

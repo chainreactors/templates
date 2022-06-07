@@ -1,0 +1,255 @@
+- name: jira
+  rule:
+    - regexps:
+        body:
+          - jira.webresources
+          - com.atlassian.plugins
+        header:
+          - atlassian.xsrf.token
+
+      favicon:
+        mmh3:
+          - '855273746'
+          - '981867722'
+          - '-1581907337'
+          - '552727997'
+- name: sonarqube
+  rule:
+    - regexps:
+        body:
+          - SonarQube
+      favicon:
+        md5:
+          - b4e4785d5852c563b9ae47cbb7af06fe
+        mmh3:
+          - '1485257654'
+- name: portainer
+  default_port:
+    - '9000'
+  rule:
+    - regexps:
+        body:
+          - portainer.
+      favicon:
+        mmh3:
+          - '-1424036600'
+- name: apisix
+  rule:
+    - regexps:
+        body:
+          - 'error_msg: "failed to match any routes"'
+- name: k8s_api
+  rule:
+    - regexps:
+        body:
+          - '"kind": "Status"'
+- name: k8s_dashboard
+  rule:
+    - regexps:
+        body:
+          - assets/images/kubernetes-logo.png
+- name: gogs简易git服务
+  rule:
+    - regexps:
+        header:
+          - i_like_gog
+          - i_like_gitea
+- name: jenkins
+  rule:
+    - regexps:
+        header:
+          - X-Jenkins
+        body:
+          - Jenkins
+      favicon:
+        md5:
+          - 23e8c7bd78e8cd826c5a6073b15068b1
+        mmh3:
+          - '81586312'
+- name: nexus
+  rule:
+    - regexps:
+        body:
+          - Nexus Repository Manager
+        header:
+          - NX-ANTI-CSRF-TOKEN
+- name: harbor
+  rule:
+    - regexps:
+        body:
+          - <title>Harbor</title>
+        header:
+          - harbor-lang
+      favicon:
+        md5:
+          - 5a508149f630bfd801df6e04369527f9
+- name: swift
+  rule:
+    - regexps:
+        body:
+          - swift.generic
+- name: elasticsearch
+  default_port:
+    - '9200'
+  rule:
+    - regexps:
+        body:
+          - '"cluster_name" : "elasticsearch"'
+- name: kibana
+  default_port:
+    - '9200'
+  rule:
+    - regexps:
+        body:
+          - Kibana
+      favicon:
+        mmh3:
+          - '75230260'
+          - '1668183286'
+          - '-267431135'
+          - '-759754862'
+          - '-1200737715'
+- name: mongodb
+  default_port:
+    - '27017'
+  rule:
+    - regexps:
+        body:
+          - It looks like you are trying to access MongoDB over HTTP on the native driver
+            port.
+- name: hadoop
+  default_port:
+    - '8088'
+  vuln: hadoop_yarn_unauthorized
+  rule:
+    - regexps:
+        vuln:
+          - "<title>\n    All Applications"
+- name: grafana
+  default_port:
+    - '3000'
+  rule:
+    - regexps:
+        body:
+          - Grafana</title>
+- name: fastadmin
+  rule:
+    - regexps:
+        body:
+          - fastadmin
+- name: couchbase
+  rule:
+    - regexps:
+        body:
+          - Couchbase Console
+        header:
+          - Couchbase
+- name: couchdb
+  rule:
+    - regexps:
+        header:
+          - Erlang OTP
+- name: cougar
+  rule:
+    - regexps:
+        header:
+          - Cougar
+- name: docker
+  rule:
+    - favicon:
+        mmh3:
+          - '-1814887000'
+- name: dubbo
+  rule:
+    - regexps:
+        header:
+          - Basic realm="dubbo"
+- name: spark_master
+  rule:
+    - regexps:
+        body:
+          - Spark Master at
+- name: spark_worker
+  rule:
+    - regexps:
+        body:
+          - Spark Worker at
+- name: vmware zimbra
+  rule:
+    - regexps:
+        body:
+          - Zimbra Collaboration
+          - /zimbra/css/common
+- name: vmware esxi
+  rule:
+    - regexps:
+        body:
+          - ID_EESX_Welcome
+- name: vmware vfabric
+  rule:
+    - regexps:
+        body:
+          - VMware vFabric
+- name: vmware center
+  rule:
+    - regexps:
+        body:
+          - ID_VC_Welcome
+- name: vmware oneaccess
+  rule:
+    - regexps:
+        body:
+          - SAAS/horizon/css
+          - Workspace ONE Access
+      favicon:
+        md5:
+          - 6ed1fb0e8c0383b5a2e39d64d8b25442
+        mmh3:
+          - '-1250474341'
+- name: vmware identity
+  rule:
+    - regexps:
+        body:
+          - cfg/js-lib
+          - VMware Identity
+- name: visualsvn
+  rule:
+    - regexps:
+        body:
+          - VisualSVN Server
+          - =svn/
+      favicon:
+        mmh3:
+          - '706602230'
+- name: zabbix
+  rule:
+    - regexps:
+        body:
+          - images/general/zabbix.ico
+          - meta name="Author" content="Zabbix SIA"
+        header:
+          - zbx_sessionid
+      favicon:
+        mmh3:
+          - '892542951'
+- name: graphql
+  rule:
+    - favicon:
+        mmh3:
+          - '-1067420240'
+- name: slack
+  rule:
+    - favicon:
+        mmh3:
+          - '-43161126'
+- name: gitlab
+  rule:
+    - favicon:
+        mmh3:
+          - '1278323681'
+
+- name: atlassian
+  rule:
+    - favicon:
+        mmh3:
+          - '743365239'

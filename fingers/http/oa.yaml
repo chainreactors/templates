@@ -1,0 +1,444 @@
+- name: 泛微 e-cology
+  rule:
+    - regexps:
+        header:
+          - ecology_JSessionid
+        body:
+          - /wui/theme/ecology
+          - /cloudstore/resource/pc/com
+- name: 78oa
+  rule:
+    - regexps:
+        body:
+          - /resource/javascript/system/runtime.min.js
+          - license.78oa.com
+          - 78oa
+          - src="/module/index.php
+- name: 泛微oa
+  rule:
+    - regexps:
+        body:
+          - /wui/common/css/w7OVFont.css
+        header:
+          - testBanCookie
+- name: 泛普建筑工程施工oa
+  rule:
+    - regexps:
+        body:
+          - /dwr/interface/LoginService.js
+- name: 泰信tmailer邮件系统
+  rule:
+    - regexps:
+        body:
+          - Tmailer
+          - content="Tmailer
+          - href="/tmailer/img/logo/favicon.ico
+- name: 浪潮政务系统
+  rule:
+    - regexps:
+        body:
+          - OnlineQuery/QueryList.aspx
+          - 浪潮政务
+          - LangChao.ECGAP.OutPortal
+- name: 海天oa
+  rule:
+    - regexps:
+        body:
+          - HTVOS.js
+- name: 万户ezoffice
+  rule:
+    - regexps:
+        header:
+          - LocLan
+- name: 万户网络
+  rule:
+    - regexps:
+        body:
+          - css/css_whir.css
+- name: 协众oa
+  rule:
+    - regexps:
+        body:
+          - Powered by 协众OA
+        header:
+          - CNOAOASESSID
+- name: trs(托尔斯)
+  rule:
+    - regexps:
+        body:
+          - dreamer-cms
+- name: 禅道oa
+  rule:
+    - regexps:
+        body:
+          - /theme/default/images/main/zt-logo.png
+          - /zentao/theme/zui/css/min.css
+        header:
+          - zentaosid
+- name: 安策绩效管理系统
+  rule:
+    - regexps:
+        body:
+          - 安策绩效信息科技
+- name: 78oa
+  rule:
+    - regexps:
+        body:
+          - 78oa.com
+- name: 致远m3
+  rule:
+    - regexps:
+        body:
+          - <title>M3 Server
+- name: 睿博士云办公系统
+  rule:
+    - regexps:
+        body:
+          - /user/toUpdatePasswordPage.di
+          - /studentSign/toLogin.di
+- name: 中望oa
+  rule:
+    - regexps:
+        body:
+          - xtoa_logo.png
+          - qjuserinfoadd.jsp
+- name: 海天oa
+  rule:
+    - regexps:
+        body:
+          - HTVOS.js
+- name: 信达oa
+  rule:
+    - regexps:
+        body:
+          - xdoa.cn
+- name: 用友 nc
+  rule:
+    - regexps:
+        body:
+          - UFIDA
+          - /nc/servlet/nc.ui.iufo.login.Index
+- name: 用友 grp-u8
+  rule:
+    - regexps:
+        body:
+          - /R9iPortal/js/jquery.js
+- name: 用友 grp-r9i
+  rule:
+    - regexps:
+        body:
+          - R9iPortal/index.jsp
+- name: 用友-ufida
+  rule:
+    - regexps:
+        body:
+          - /System/Login/Login.asp?
+- name: '用友 u8-cloud '
+  rule:
+    - regexps:
+        body:
+          - uclient.yonyou.com/api/uclient/public/download
+- name: 用友-rmis
+  rule:
+    - regexps:
+        body:
+          - css/commonlogincomp.min.css
+- name: 用友-时空企业信息管理门户
+  rule:
+    - regexps:
+        body:
+          - mkbh = getCookie(
+- name: 用友-智能工厂_智能网关
+  rule:
+    - regexps:
+        body:
+          - /modules/core/client/views/header.client.view.html
+- name: 蓝凌oa_ekp
+  rule:
+    - regexps:
+        body:
+          - /ekp/login.jsp
+          - ekpwx-v.oa.camc
+          - resource/anonym.jsp
+          - /sys/ui/js/LUI.js
+- name: 红帆oa
+  rule:
+    - regexps:
+        body:
+          - 红帆ioffice
+- name: 协达oa
+  rule:
+    - regexps:
+        body:
+          - img.style.height=(bodyH-84-100)
+      favicon:
+        mmh3:
+          - '-1850889691'
+- name: 中腾oa
+  rule:
+    - regexps:
+        body:
+          - zt_webframe
+- name: 华天动力oa
+  rule:
+    - regexps:
+        body:
+          - /htoa/css/CN/BLUE/login.css
+- name: 通达oa
+  rule:
+    - regexps:
+        body:
+          - /static/images/tongda.ico
+      favicon:
+        md5:
+          - ed0044587917c76d08573577c8b72883
+        mmh3:
+          - '-759108386'
+- name: 泛微e-mobile
+  rule:
+    - regexps:
+        body:
+          - /page/manage/css/main.css
+          - weaver,e-mobile
+      favicon:
+        md5:
+          - f51746305f07a64eafa401adab364ad9
+- name: 泛微e-office
+  rule:
+    - regexps:
+        body:
+          - /lang/cn/javascript.lang.js
+- name: 泛微云桥e-bridge
+  rule:
+    - regexps:
+        body:
+          - /main/assets/images/favicon.ico
+- name: 畅捷通
+  rule:
+    - regexps:
+        body:
+          - 畅捷通 T+
+          - tp.control.css.ashx
+- name: 金蝶eas
+  rule:
+    - regexps:
+        body:
+          - easSessionId
+- name: 金蝶云星空
+  rule:
+    - regexps:
+        body:
+          - Kingdee.BOS.XPF.App.xap
+- name: finereport
+  level: 1
+  send_data: /ReportServer
+  info: composer leak
+  rule:
+    - regexps:
+        vuln:
+          - FineReport
+- name: ezoffice
+  rule:
+    - regexps:
+        body:
+          - Wanhu ezOFFICE
+          - EZOFFICEUSERNAME
+          - 万户OA
+          - whirRootPath
+          - /defaultroot/js/cookie.js
+- name: oa企业智能办公自动化系统
+  rule:
+    - regexps:
+        body:
+          - input name="S1" type="image"
+          - count/mystat.asp
+- name: smartoa
+  rule:
+    - regexps:
+        body:
+          - /smartoa.plist
+        header:
+          - smartoa
+- name: soffice
+  rule:
+    - regexps:
+        body:
+          - OA办公管理平台
+- name: 华天动力oa
+  rule:
+    - regexps:
+        body:
+          - /OAapp/WebObjects/OAapp.woa
+- name: 协众oa
+  rule:
+    - regexps:
+        body:
+          - Powered by 协众OA
+          - admin@cnoa.cn
+          - Powered by CNOA.CN
+- name: 单点crm系统
+  rule:
+    - regexps:
+        body:
+          - URL=general/ERP/LOGIN/
+          - content="单点CRM系统
+          - 客户关系管理-CRM
+- name: 希尔oa
+  rule:
+    - regexps:
+        body:
+          - /heeroa/login.do
+- name: 正方oa
+  rule:
+    - regexps:
+        body:
+          - zfoausername
+- name: 致远oa
+  rule:
+    - regexps:
+        body:
+          - /seeyon/USER-DATA/IMAGES/LOGIN/login.gif
+          - 用友致远A
+          - /yyoa/
+      favicon:
+        md5:
+          - cdc85452665e7708caed3009ecb7d4e2
+          - 57f307ad3764553df84e7b14b7a85432
+          - 3c8df395ec2cbd72782286d18a286a9a
+          - 2f761c27b6b7f9386bbd61403635dc42
+- name: 畅捷通
+  rule:
+    - regexps:
+        body:
+          - 畅捷通
+- name: 协达oa
+  rule:
+    - favicon:
+        mmh3:
+          - '-1850889691'
+- name: smartbi
+  rule:
+    - regexps:
+        body:
+          - smartbi.gcf.gcfutil
+- name: 金和协同管理平台
+  rule:
+    - regexps:
+        body:
+          - 金和协同管理平台
+          - JHSoft.UI.Lib
+- name: 金和oa
+  rule:
+    - regexps:
+        body:
+          - Jhsoft.Web.login
+- name: 中腾oa
+  rule:
+    - regexps:
+        body:
+          - zt_webframe
+- name: 蓝凌eis智慧协同平台
+  rule:
+    - regexps:
+        body:
+          - /scripts/jquery.landray.common.js
+          - v11_QRcodeBar clr
+- name: 金蝶政务gsis
+  rule:
+    - regexps:
+        body:
+          - /kdgs/script/kdgs.js
+- name: 帆软数据决策系统
+  rule:
+    - regexps:
+        body:
+          - ReportServer?op
+- name: urp教务系统
+  rule:
+    - regexps:
+        body:
+          - URP 综合教务系统
+          - 北京清元优软科技有限公司
+- name: 万户ezoffice
+  rule:
+    - regexps:
+        header:
+          - LocLan
+- name: 万户网络
+  rule:
+    - regexps:
+        body:
+          - css/css_whir.css
+
+- name: 中企动力门户cms
+  rule:
+    - regexps:
+        body:
+          - 中企动力提供技术支持
+- name: 中控智慧时间安全管理平台
+  rule:
+    - regexps:
+        body:
+          - ZKECO 时间&安全管理平台
+- name: 中控智慧考勤管理系统
+  rule:
+    - regexps:
+        body:
+          - /media/images/ZKECO16.ico
+        header:
+          - sessionidadms
+- name: 久其通用财表系统
+  rule:
+    - regexps:
+        body:
+          - <nobr>北京久其软件股份有限公司
+          - /netrep/intf
+          - /netrep/message2/
+- name: 亿赛通dlp
+  rule:
+    - regexps:
+        body:
+          - CDGServer3
+- name: 任我行crm
+  rule:
+    - regexps:
+        body:
+          - 任我行CRM
+          - CRM_LASTLOGINUSERKEY
+- name: 元年财务软件
+  rule:
+    - regexps:
+        body:
+          - yuannian.css
+          - /image/logo/yuannian.gif
+- name: 农友政务系统
+  rule:
+    - regexps:
+        body:
+          - '1207044504'
+- name: 凡科
+  rule:
+    - regexps:
+        body:
+          - 凡科
+- name: 悟空crm
+  rule:
+    - regexps:
+        body:
+          - 悟空CRM
+          - /Public/js/5kcrm.js
+- name: 惠尔顿上网行为管理系统
+  rule:
+    - regexps:
+        body:
+          - updateLoginPswd.php
+          - PassroedEle
+- name: 正方教务管理系统
+  rule:
+    - regexps:
+        body:
+          - style/base/jw.css
+
+
+
+

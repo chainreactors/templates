@@ -4,12 +4,17 @@
     - "8080"
     - "9443"
   rule:
-    - favicon:
+    - version: 1.0.0
+      level: 0
+      vuln: example-cms r ce
+      favicon:
         md5:
-        - 11234
+        - 111
         mmh3:
-        - 123123
+        - 111
       regexps:
+        vuln:
+          - vulnpoc
         body:
           - example
         regexp:
@@ -18,5 +23,13 @@
           - example_header
         md5:
           - 47bce5c74f589f4867dbd57e9ca9f808
+    - version: 2.0.0
+      level: 0
+      vuln: example-cms rce
+      favicon:
+        md5:
+          - 222
+        mmh3:
+          - 222
 
 

@@ -1,0 +1,225 @@
+- name: shiro
+  rule:
+    - regexps:
+        header:
+          - rememberMe=
+- name: ajaxpro
+  rule:
+    - regexps:
+        body:
+          - ajaxpro
+- name: ueditor编辑器
+  rule:
+    - regexps:
+        body:
+          - ueditor.all
+- name: ueditor
+  level: 1
+  send_data: /ueditor
+  rule:
+    - regexps:
+        body:
+          - ueditor.config.js
+- name: sourcemap
+  vuln: sourcemap-leak
+  rule:
+    - regexps:
+        vuln:
+          - .js.map
+- name: webpack
+  rule:
+    - regexps:
+        body:
+          - chunk-vendors
+- name: readme.md
+  level: 1
+  send_data: /README.md
+  info: README leak
+  rule:
+    - regexps:
+        vuln:
+          - readme
+          - '###'
+
+- name: swagger
+  level: 1
+  send_data: /swagger-ui.html
+  info: swagger leak
+  rule:
+    - regexps:
+        vuln:
+          - Swagger UI
+- name: swagger-ui
+  rule:
+    - regexps:
+        body:
+          - /swagger
+- name: druid
+  level: 1
+  send_data: /druid/index.html
+  info: druid leak
+  rule:
+    - regexps:
+        vuln:
+          - Druid Stat Index
+- name: composer.json
+  level: 1
+  send_data: /composer.json
+  info: composer leak
+  rule:
+    - regexps:
+        vuln:
+          - '"require": '
+- name: license
+  level: 1
+  send_data: /LICENSE
+  info: LICENSE leak
+  rule:
+    - regexps:
+        vuln:
+          - copyleft
+- name: thymeleaf
+  rule:
+    - regexps:
+        body:
+          - thymeleaf
+- name: 360网站卫士常用前端公共库
+  rule:
+    - regexps:
+        body:
+          - libs.useso.com
+- name: iis
+  info: Directory traversal
+  rule:
+    - regexps:
+        body:
+          - Bad Request (Invalid Hostname)
+        vuln:
+          - '- /</title>'
+      favicon:
+        md5:
+          - 825af13371930eeb2f85cf075fa25b68
+- name: springboot
+  rule:
+    - regexps:
+        body:
+          - Whitelabel Error Page
+          - No message available
+          - '{"timestamp":'
+- name: springcloud-function
+  send_data: /functionRouter
+  rule:
+    - regexps:
+        body:
+          - '"error":"Internal Server Error"'
+- name: spring
+  rule:
+    - regexps:
+        header:
+          - springframework
+- name: spring-cloud-hystrix
+  default_port:
+    - '2001'
+  rule:
+    - regexps:
+        header:
+          - hystrix-dashboard
+        body:
+          - hystrix
+- name: springsecurity
+  rule:
+    - regexps:
+        body:
+          - Full authentication is required
+- name: frp
+  rule:
+    - regexps:
+        body:
+          - Faithfully yours, frp
+- name: tomcat
+  vuln: Directory traversal
+  rule:
+    - regexps:
+        vuln:
+          - Directory Listing For
+        regexp:
+          - <h3>Apache Tomcat/(.*)</h3>
+          - <title>Apache Tomcat/(.*)</title>
+        header:
+          - Apache-Coyote
+      favicon:
+        md5:
+          - 4644f2d45601037b8423d45e13194c93
+- name: apache
+  vuln: Directory traversal
+  rule:
+    - regexps:
+        vuln:
+          - Index of /
+- name: .net
+  rule:
+    - regexps:
+        body:
+          - content="Visual Basic .NET 7.1
+- name: ntlm认证
+  rule:
+    - regexps:
+        header:
+          - NTLM
+- name: oracle-application-server
+  rule:
+    - regexps:
+        header:
+          - Oracle-Application-Server
+- name: redhat
+  rule:
+    - regexps:
+        header:
+          - Red Hat
+- name: redmine
+  rule:
+    - regexps:
+        body:
+          - Redmine
+          - authenticity_token
+      favicon:
+        mmh3:
+          - '603314'
+- name: resin
+  rule:
+    - regexps:
+        header:
+          - 'Server: Resin'
+- name: solr
+  rule:
+    - regexps:
+        body:
+          - Solr Admin
+          - SolrCore Initialization Failures
+          - app_config.solr_path
+- name: tengine
+  rule:
+    - regexps:
+        header:
+          - Tengine
+- name: __viewstate
+  rule:
+    - regexps:
+        body:
+          - __VIEWSTATE
+- name: vue
+  rule:
+    - favicon:
+        mmh3:
+          - '-1237480336'
+        md5:
+          - 67d34b0decfd4d725d1c1f2eeadc4756
+- name: f5 bigip
+  rule:
+    - favicon:
+        mmh3:
+          - '878647854'
+          - '-335242539'
+          - '-1581907337'
+        md5:
+          - 04d9541338e525258daf47cc844d59f3

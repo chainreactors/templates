@@ -1,0 +1,211 @@
+- name: 科信邮件系统_kxmail
+  rule:
+    - regexps:
+        body:
+          - www.kxmail.net
+- name: 30盛安邮件系统
+  rule:
+    - regexps:
+        body:
+          - 30san.all
+- name: acmailer
+  rule:
+    - regexps:
+        body:
+          - acmailer
+- name: 安邮
+  rule:
+    - regexps:
+        body:
+          - suremail.cn
+- name: 17mail易企邮
+  rule:
+    - regexps:
+        body:
+          - 易企邮
+- name: 亿邮邮件系统
+  rule:
+    - regexps:
+        body:
+          - eYou
+- name: exchange
+  rule:
+    - regexps:
+        body:
+          - /owa/auth.owa
+      favicon:
+        mmh3:
+          - '1768726119'
+- name: 万网企业云邮箱
+  rule:
+    - regexps:
+        body:
+          - mxhichina
+- name: 科信邮件系统
+  rule:
+    - regexps:
+        body:
+          - /systemfunction
+- name: winwebmail
+  rule:
+    - regexps:
+        body:
+          - WinWebMail
+- name: 泰信tmailer邮件系统
+  rule:
+    - regexps:
+        body:
+          - Tmailer
+- name: bxemail
+  rule:
+    - regexps:
+        body:
+          - 百讯安全邮件系统
+          - 百姓邮局
+          - bxemail.com
+- name: coremail
+  rule:
+    - regexps:
+        body:
+          - /coremail/common/assets
+          - Coremail邮件系统
+- name: fangmail
+  rule:
+    - regexps:
+        body:
+          - /fangmail/default/css/em_css.css
+- name: formmail
+  rule:
+    - regexps:
+        body:
+          - /FormMail.pl
+          - href="http://www.worldwidemart.com/scripts/formmail.shtml
+- name: hivemail
+  rule:
+    - regexps:
+        body:
+          - content="Hivemail
+        header:
+          - hivesession
+- name: igenus邮件系统
+  rule:
+    - regexps:
+        body:
+          - Copyright by<A HREF="http://www.igenus.org
+          - iGENUS webmail
+- name: imailserver
+  rule:
+    - regexps:
+        body:
+          - myICalUserName
+        header:
+          - Ipswitch-IMail
+- name: ipswitch-imail
+  rule:
+    - regexps:
+        header:
+          - Ipswitch-IMail
+- name: kerio mailserver
+  rule:
+    - regexps:
+        header:
+          - Kerio MailServer
+- name: magicwinmail
+  rule:
+    - regexps:
+        header:
+          - magicwinmail_default_theme
+- name: richmail
+  rule:
+    - regexps:
+        body:
+          - Richmail
+- name: sophos_email_appliance
+  rule:
+    - regexps:
+        header:
+          - Sophos Email Appliance
+- name: squirrelmail
+  rule:
+    - regexps:
+        header:
+          - SQMSESSID
+- name: turbomail
+  rule:
+    - regexps:
+        body:
+          - Powered by TurboMail
+          - wzcon1 clearfix
+          - TurboMail邮件系统
+- name: u-mail
+  rule:
+    - regexps:
+        body:
+          - <BODY LINK="White" VLINK="White" ALINK="White">
+- name: winwebmail
+  rule:
+    - regexps:
+        body:
+          - winwebmail
+          - images/owin.css
+- name: 亿邮
+  rule:
+    - regexps:
+        body:
+          - EYOU企业邮箱
+          - cr">eYouMail
+        header:
+          - EMPHPSID
+- name: 迈捷邮件系统
+  rule:
+    - regexps:
+        body:
+          - /aboutus/magicmail.gif
+- name: roundcube mail
+  rule:
+    - favicon:
+        mmh3:
+          - '-976235259'
+- name: afterlogic
+  rule:
+    - favicon:
+        mmh3:
+          - '-194791768'
+      regexps:
+        body:
+          - AfterLogic WebMail Pro
+        header:
+          - PHPWEBMAILSESSID
+
+- name: atmail
+  rule:
+    - regexps:
+        header:
+          - atmail6
+        body:
+          - Powered by Atmail
+          - /index.php/mail/auth/processlogin
+          - <input id="Mailserverinput
+- name: exchange
+  rule:
+    - regexps:
+        body:
+          - owaLgnBdy
+        header:
+          - OutlookSession
+      favicon:
+        mmh3:
+          - '1768726119'
+- name: 万网企业云邮箱
+  rule:
+    - regexps:
+        body:
+          - static.mxhichina.com/images/favicon.ico
+- name: 科信邮件系统
+  rule:
+    - regexps:
+        body:
+          - /systemfunction.pack.js
+          - lo_computername
+
+

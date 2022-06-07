@@ -1,1592 +1,3 @@
-- name: jira
-  rule:
-    - regexps:
-        body:
-          - jira.webresources
-      favicon:
-        mmh3:
-          - '855273746'
-          - '981867722'
-          - '-1581907337'
-- name: sonarqube
-  rule:
-    - regexps:
-        body:
-          - SonarQube
-      favicon:
-        md5:
-          - b4e4785d5852c563b9ae47cbb7af06fe
-        mmh3:
-          - '1485257654'
-- name: portainer
-  default_port:
-    - '9000'
-  rule:
-    - regexps:
-        body:
-          - portainer.
-      favicon:
-        mmh3:
-          - '-1424036600'
-- name: apisix
-  rule:
-    - regexps:
-        body:
-          - 'error_msg: "failed to match any routes"'
-- name: k8s_api
-  rule:
-    - regexps:
-        body:
-          - '"kind": "Status"'
-- name: k8s_dashboard
-  rule:
-    - regexps:
-        body:
-          - assets/images/kubernetes-logo.png
-- name: gogs简易git服务
-  rule:
-    - regexps:
-        header:
-          - i_like_gog
-          - i_like_gitea
-- name: jenkins
-  rule:
-    - regexps:
-        header:
-          - X-Jenkins
-        body:
-          - Jenkins
-      favicon:
-        md5:
-          - 23e8c7bd78e8cd826c5a6073b15068b1
-        mmh3:
-          - '81586312'
-- name: lanmp集成环境
-  rule:
-    - regexps:
-        body:
-          - <title>LANMP
-- name: 宝塔面板
-  default_port:
-    - '8888'
-  rule:
-    - regexps:
-        body:
-          - app.bt.cn/static/app.png
-          - 安全入口校验失败
-- name: 宝塔
-  rule:
-    - regexps:
-        body:
-          - 恭喜，站点创建成功
-          - 没有找到站点
-      favicon:
-        md5:
-          - 3c3804ddad747313df58112a3e1bc680
-- name: lnmp
-  rule:
-    - regexps:
-        body:
-          - lnmp.gif
-- name: nexus
-  rule:
-    - regexps:
-        body:
-          - Nexus Repository Manager
-        header:
-          - NX-ANTI-CSRF-TOKEN
-- name: harbor
-  rule:
-    - regexps:
-        body:
-          - <title>Harbor</title>
-        header:
-          - harbor-lang
-      favicon:
-        md5:
-          - 5a508149f630bfd801df6e04369527f9
-- name: 微擎
-  rule:
-    - regexps:
-        body:
-          - /index.php?c=user&a=find-password
-      favicon:
-        md5:
-          - fa8833ac684d6949f480ae3bc9a51b4a
-- name: xxl-job
-  rule:
-    - regexps:
-        body:
-          - 分布式任务调度平台XXL-JOB
-- name: atmail-webmail
-  rule:
-    - regexps:
-        header:
-          - atmail6
-        body:
-          - /index.php/mail/auth/processlogin
-- name: smartbi
-  rule:
-    - regexps:
-        body:
-          - smartbi.gcf.gcfutil
-- name: 金和协同管理平台
-  rule:
-    - regexps:
-        body:
-          - 金和协同管理平台
-          - JHSoft.UI.Lib
-- name: 金和oa
-  rule:
-    - regexps:
-        body:
-          - Jhsoft.Web.login
-- name: 中腾oa
-  rule:
-    - regexps:
-        body:
-          - zt_webframe
-- name: 万户ezoffice
-  rule:
-    - regexps:
-        header:
-          - LocLan
-- name: 万户网络
-  rule:
-    - regexps:
-        body:
-          - css/css_whir.css
-- name: 协众oa
-  rule:
-    - regexps:
-        body:
-          - Powered by 协众OA
-        header:
-          - CNOAOASESSID
-- name: trs(托尔斯)
-  rule:
-    - regexps:
-        body:
-          - dreamer-cms
-- name: 禅道oa
-  rule:
-    - regexps:
-        body:
-          - /theme/default/images/main/zt-logo.png
-          - /zentao/theme/zui/css/min.css
-        header:
-          - zentaosid
-- name: 安策绩效管理系统
-  rule:
-    - regexps:
-        body:
-          - 安策绩效信息科技
-- name: 78oa
-  rule:
-    - regexps:
-        body:
-          - 78oa.com
-- name: 致远m3
-  rule:
-    - regexps:
-        body:
-          - <title>M3 Server
-- name: 睿博士云办公系统
-  rule:
-    - regexps:
-        body:
-          - /user/toUpdatePasswordPage.di
-          - /studentSign/toLogin.di
-- name: 中望oa
-  rule:
-    - regexps:
-        body:
-          - xtoa_logo.png
-          - qjuserinfoadd.jsp
-- name: 海天oa
-  rule:
-    - regexps:
-        body:
-          - HTVOS.js
-- name: 信达oa
-  rule:
-    - regexps:
-        body:
-          - xdoa.cn
-- name: 用友 nc
-  rule:
-    - regexps:
-        body:
-          - /nc/servlet/nc.ui.iufo.login.Index
-- name: 用友 grp-u8
-  rule:
-    - regexps:
-        body:
-          - /R9iPortal/js/jquery.js
-- name: 用友 grp-r9i
-  rule:
-    - regexps:
-        body:
-          - R9iPortal/index.jsp
-- name: 用友-ufida
-  rule:
-    - regexps:
-        body:
-          - /System/Login/Login.asp?
-- name: '用友 u8-cloud '
-  rule:
-    - regexps:
-        body:
-          - uclient.yonyou.com/api/uclient/public/download
-- name: 用友-rmis
-  rule:
-    - regexps:
-        body:
-          - css/commonlogincomp.min.css
-- name: 用友-时空企业信息管理门户
-  rule:
-    - regexps:
-        body:
-          - mkbh = getCookie(
-- name: 用友-智能工厂_智能网关
-  rule:
-    - regexps:
-        body:
-          - /modules/core/client/views/header.client.view.html
-- name: 蓝凌oa_ekp
-  rule:
-    - regexps:
-        body:
-          - /ekp/login.jsp
-          - ekpwx-v.oa.camc
-          - resource/anonym.jsp
-          - /sys/ui/js/LUI.js
-- name: 红帆oa
-  rule:
-    - regexps:
-        body:
-          - 红帆ioffice
-- name: 协达oa
-  rule:
-    - regexps:
-        body:
-          - img.style.height=(bodyH-84-100)
-      favicon:
-        mmh3:
-          - '-1850889691'
-- name: 中腾oa
-  rule:
-    - regexps:
-        body:
-          - zt_webframe
-- name: 华天动力oa
-  rule:
-    - regexps:
-        body:
-          - /htoa/css/CN/BLUE/login.css
-- name: 通达oa
-  rule:
-    - regexps:
-        body:
-          - /static/images/tongda.ico
-      favicon:
-        md5:
-          - ed0044587917c76d08573577c8b72883
-- name: 泛微e-mobile
-  rule:
-    - regexps:
-        body:
-          - /page/manage/css/main.css
-          - weaver,e-mobile
-      favicon:
-        md5:
-          - f51746305f07a64eafa401adab364ad9
-- name: 泛微e-office
-  rule:
-    - regexps:
-        body:
-          - /lang/cn/javascript.lang.js
-- name: 泛微云桥e-bridge
-  rule:
-    - regexps:
-        body:
-          - /main/assets/images/favicon.ico
-- name: 畅捷通
-  rule:
-    - regexps:
-        body:
-          - 畅捷通 T+
-          - tp.control.css.ashx
-- name: discuz
-  rule:
-    - regexps:
-        body:
-          - Discuz
-- name: typecho
-  rule:
-    - regexps:
-        body:
-          - Typecho</a>
-- name: 金蝶eas
-  rule:
-    - regexps:
-        body:
-          - easSessionId
-- name: 金蝶云星空
-  rule:
-    - regexps:
-        body:
-          - Kingdee.BOS.XPF.App.xap
-- name: phpmyadmin
-  rule:
-    - regexps:
-        header:
-          - pma_lang
-          - phpMyAdmin
-        body:
-          - /themes/pmahomme/img/logo_right.png
-      favicon:
-        md5:
-          - 531b63a51234bb06c9d77f219eb25553
-        mmh3:
-          - '-1010568750'
-          - '-476231906'
-- name: linksys-vpn
-  rule:
-    - regexps:
-        header:
-          - linksys-vpn
-- name: cisco_vpn
-  rule:
-    - regexps:
-        header:
-          - webvpn
-- name: o2security_vpn
-  rule:
-    - regexps:
-        header:
-          - client_param=install_active
-- name: 网神vpn
-  rule:
-    - regexps:
-        body:
-          - admin/js/virtual_keyboard.js
-- name: 网御星云vpn
-  rule:
-    - regexps:
-        body:
-          - /ssl/down/usbkey.exe
-          - /js/leadsec.js
-- name: citrix-web-pn-server
-  rule:
-    - regexps:
-        body:
-          - Citrix Web PN Server
-- name: juniper_vpn
-  rule:
-    - regexps:
-        body:
-          - welcome.cgi?p=logo
-          - /images/logo_juniper_reversed.gif
-- name: 深信服ssl-vpn
-  rule:
-    - regexps:
-        body:
-          - login_psw.csp
-- name: citrix/netscaler vpn
-  rule:
-    - regexps:
-        body:
-          - /vpn/resources.js
-- name: 奇安信vpn/网康
-  rule:
-    - regexps:
-        body:
-          - new_style/deepblue.css
-          - admin/js/json2.js
-- name: h3c-am8000
-  rule:
-    - regexps:
-        body:
-          - AM8000
-- name: 汉柏安全网关
-  rule:
-    - regexps:
-        body:
-          - OPZOON
-- name: 360企业版
-  rule:
-    - regexps:
-        body:
-          - 360EntWebAdminMD5Secret
-- name: h3c公司产品
-  rule:
-    - regexps:
-        body:
-          - <title>Web managerment Home
-          - .h3c.com
-          - service@h3c.com
-- name: h3c网络设备
-  rule:
-    - regexps:
-        body:
-          - libs/MulPlatAPI.js
-- name: h3c icg 1000
-  rule:
-    - regexps:
-        body:
-          - ICG 1000系统管理
-- name: citrix-metaframe
-  rule:
-    - regexps:
-        body:
-          - window.location="/Citrix/MetaFrame
-- name: thymeleaf
-  rule:
-    - regexps:
-        body:
-          - thymeleaf
-- name: dubbo
-  rule:
-    - regexps:
-        header:
-          - Basic realm="dubbo"
-- name: shiro
-  rule:
-    - regexps:
-        header:
-          - rememberMe=
-- name: ajaxpro
-  rule:
-    - regexps:
-        body:
-          - ajaxpro
-- name: ueditor编辑器
-  rule:
-    - regexps:
-        body:
-          - ueditor.all
-- name: ueditor
-  level: 1
-  send_data: /ueditor
-  rule:
-    - regexps:
-        body:
-          - ueditor.config.js
-- name: sourcemap
-  vuln: sourcemap-leak
-  rule:
-    - regexps:
-        vuln:
-          - .js.map
-- name: webpack
-  rule:
-    - regexps:
-        body:
-          - chunk-vendors
-- name: readme.md
-  level: 1
-  send_data: /README.md
-  info: README leak
-  rule:
-    - regexps:
-        vuln:
-          - readme
-          - '###'
-- name: finereport
-  level: 1
-  send_data: /ReportServer
-  info: composer leak
-  rule:
-    - regexps:
-        vuln:
-          - FineReport
-- name: swagger
-  level: 1
-  send_data: /swagger-ui.html
-  info: swagger leak
-  rule:
-    - regexps:
-        vuln:
-          - Swagger UI
-- name: druid
-  level: 1
-  send_data: /druid/index.html
-  info: druid leak
-  rule:
-    - regexps:
-        vuln:
-          - Druid Stat Index
-- name: composer.json
-  level: 1
-  send_data: /composer.json
-  info: composer leak
-  rule:
-    - regexps:
-        vuln:
-          - '"require": '
-- name: license
-  level: 1
-  send_data: /LICENSE
-  info: LICENSE leak
-  rule:
-    - regexps:
-        vuln:
-          - copyleft
-- name: h3c er5100
-  rule:
-    - regexps:
-        body:
-          - ER5100系统管理
-- name: cisco_epc3925
-  rule:
-    - regexps:
-        body:
-          - Docsis_system
-- name: cisco asr
-  rule:
-    - regexps:
-        body:
-          - CISCO ASR
-- name: h3c er3200
-  rule:
-    - regexps:
-        body:
-          - ER3200系统管理
-- name: spark_master
-  rule:
-    - regexps:
-        body:
-          - Spark Master at
-- name: huawei_srg2220
-  rule:
-    - regexps:
-        body:
-          - HUAWEI SRG2220
-- name: huawei_router
-  default_port:
-    - '8443'
-  rule:
-    - regexps:
-        body:
-          - UI_component/css/xtheme-black
-      favicon:
-        mmh3:
-          - '-1395400951'
-- name: 蓝凌eis智慧协同平台
-  rule:
-    - regexps:
-        body:
-          - /scripts/jquery.landray.common.js
-- name: 深信服edr
-  rule:
-    - regexps:
-        body:
-          - 终端检测响应平台
-          - featureDetect.js
-      favicon:
-        md5:
-          - 0b24d4d5c7d300d50ee1cd96059a9e85
-- name: 华为 netopen
-  rule:
-    - regexps:
-        body:
-          - /netopen/theme/css/inFrame.css
-- name: 360主机卫士
-  rule:
-    - regexps:
-        header:
-          - zhuji.360.cn
-- name: nagios
-  rule:
-    - regexps:
-        header:
-          - Nagios Access
-- name: h3c er8300
-  rule:
-    - regexps:
-        body:
-          - ER8300系统管理
-- name: citrix-access-gateway
-  rule:
-    - regexps:
-        body:
-          - Citrix Access Gateway
-- name: 华为 mcu
-  rule:
-    - regexps:
-        body:
-          - McuR5-min.js
-- name: tp-link wireless wdr3600
-  rule:
-    - regexps:
-        body:
-          - TP-LINK Wireless WDR3600
-- name: 泛微-e-cology
-  rule:
-    - regexps:
-        header:
-          - ecology_JSessionid
-        body:
-          - /wui/theme/ecology
-          - /cloudstore/resource/pc/com
-- name: tp-link wireless wdr3600
-  rule:
-    - regexps:
-        body:
-          - TP-LINK Wireless WDR3600
-- name: 华为_huawei_asg2050
-  rule:
-    - regexps:
-        body:
-          - HUAWEI ASG2050
-- name: 360网站卫士
-  rule:
-    - regexps:
-        body:
-          - 360wzb
-- name: citrix-xenserver
-  rule:
-    - regexps:
-        body:
-          - Citrix Systems, Inc. XenServer
-- name: h3c er2100v2
-  rule:
-    - regexps:
-        body:
-          - ER2100V2系统管理
-- name: zabbix
-  rule:
-    - regexps:
-        header:
-          - zbx_sessionid
-        body:
-          - images/general/zabbix.ico
-          - Zabbix SIA
-      favicon:
-        mmh3:
-          - '892542951'
-- name: 360站长平台
-  rule:
-    - regexps:
-        body:
-          - 360-site-verification
-- name: h3c er3108gw
-  rule:
-    - regexps:
-        body:
-          - ER3108GW系统管理
-- name: h3c er3260g2
-  rule:
-    - regexps:
-        body:
-          - ER3260G2系统管理
-- name: h3c icg1000
-  rule:
-    - regexps:
-        body:
-          - ICG1000系统管理
-- name: cisco-cx20
-  rule:
-    - regexps:
-        body:
-          - CISCO-CX20
-- name: cisco-router
-  rule:
-    - regexps:
-        body:
-          - Cisco Systems Login
-- name: synology-router
-  rule:
-    - regexps:
-        body:
-          - synologyrouter
-- name: h3c er5200
-  rule:
-    - regexps:
-        body:
-          - ER5200系统管理
-- name: 360网站卫士常用前端公共库
-  rule:
-    - regexps:
-        body:
-          - libs.useso.com
-- name: h3c er3100
-  rule:
-    - regexps:
-        body:
-          - ER3100系统管理
-- name: h3c-secblade-firewall
-  rule:
-    - regexps:
-        body:
-          - js/MulPlatAPI.js
-- name: 360webfacil_360webmanager
-  rule:
-    - regexps:
-        body:
-          - publico/template/
-- name: citrix_netscaler
-  rule:
-    - regexps:
-        body:
-          - ns_af
-- name: h3c er6300g2
-  rule:
-    - regexps:
-        body:
-          - ER6300G2系统管理
-- name: h3c er3260
-  rule:
-    - regexps:
-        body:
-          - ER3260系统管理
-- name: 华为_huawei_srg3250
-  rule:
-    - regexps:
-        body:
-          - HUAWEI SRG3250
-- name: spark_worker
-  rule:
-    - regexps:
-        body:
-          - Spark Worker at
-- name: h3c er3108g
-  rule:
-    - regexps:
-        body:
-          - ER3108G系统管理
-- name: 深信服防火墙类产品
-  rule:
-    - regexps:
-        body:
-          - SANGFOR FW
-- name: citrix-confproxy
-  rule:
-    - regexps:
-        body:
-          - confproxy
-- name: 360网站安全检测
-  rule:
-    - regexps:
-        body:
-          - webscan.360.cn/status/pai/hash
-- name: h3c er5200g2
-  rule:
-    - regexps:
-        body:
-          - ER5200G2系统管理
-- name: 华为（huawei）安全设备
-  rule:
-    - regexps:
-        body:
-          - sweb-lib/resource/
-- name: h3c er6300
-  rule:
-    - regexps:
-        body:
-          - ER6300系统管理
-- name: 华为_huawei_asg2100
-  rule:
-    - regexps:
-        body:
-          - HUAWEI ASG2100
-- name: tp-link 3600 dd-wrt
-  rule:
-    - regexps:
-        body:
-          - TP-Link 3600 DD-WRT
-- name: netgear wndr3600
-  rule:
-    - regexps:
-        body:
-          - NETGEAR WNDR3600
-- name: h3c er2100
-  rule:
-    - regexps:
-        body:
-          - ER2100系统管理
-- name: 绿盟下一代防火墙
-  rule:
-    - regexps:
-        body:
-          - NSFOCUS NF
-- name: citrix-netscaler
-  rule:
-    - regexps:
-        body:
-          - NS-CACHE
-- name: 华为（huawei）secoway设备
-  rule:
-    - regexps:
-        body:
-          - Secoway
-- name: 华为_huawei_srg1220
-  rule:
-    - regexps:
-        body:
-          - HUAWEI SRG1220
-- name: h3c er2100n
-  rule:
-    - regexps:
-        body:
-          - ER2100n系统管理
-- name: h3c er8300g2
-  rule:
-    - regexps:
-        body:
-          - ER8300G2系统管理
-- name: 金蝶政务gsis
-  rule:
-    - regexps:
-        body:
-          - /kdgs/script/kdgs.js
-- name: iis
-  info: Directory traversal
-  rule:
-    - regexps:
-        body:
-          - Bad Request (Invalid Hostname)
-        vuln:
-          - '- /</title>'
-      favicon:
-        md5:
-          - 825af13371930eeb2f85cf075fa25b68
-- name: 普元eos_console
-  level: 1
-  info: 普元EOS_console_leak
-  send_data: /eosmgr/eos/EventDispatcher
-  rule:
-    - regexps:
-        vuln:
-          - EOS管理控制台
-- name: jboss
-  rule:
-    - regexps:
-        body:
-          - Welcome to JBoss
-          - jboss.css
-        header:
-          - JBoss
-      favicon:
-        md5:
-          - 799f70b71314a7508326d1d2f68f7519
-        mmh3:
-          - '-656811182'
-- name: weblogic
-  rule:
-    - regexps:
-        body:
-          - login_WebLogic_branding.png
-          - Branding_Login_WeblogicConsole.gif
-          - <i>Hypertext Transfer Protocol -- HTTP/1.1</i>
-        header:
-          - WebLogic
-          - ADMINCONSOLESESSION
-- name: weblogic-console
-  level: 1
-  send_data: /console/login/LoginForm.jsp
-  info: weblogic_console_leak
-  rule:
-    - regexps:
-        vuln:
-          - 'WebLogic Server Version: (.*?)<'
-- name: websphere
-  rule:
-    - regexps:
-        body:
-          - SRVE0255E
-          - ibm.ws.webcontainer.servlet
-          - IBM WebSphere Application Server
-- name: 普元eos
-  rule:
-    - regexps:
-        body:
-          - EOSOperator
-          - eos-web.js
-          - org.gocom
-        header:
-          - eos_style_cookie
-- name: 普元coframe
-  rule:
-    - regexps:
-        body:
-          - coframe
-- name: zzzcms
-  rule:
-    - regexps:
-        body:
-          - zzzcms
-- name: thinkcmf
-  rule:
-    - regexps:
-        body:
-          - thinkcmf
-- name: thinkphp
-  rule:
-    - regexps:
-        header:
-          - ThinkPHP
-        body:
-          - /Public/static/js/
-          - think\exception\HttpException
-      favicon:
-        md5:
-          - f49c4a4bde1eec6c0b80c2277c76e3db
-- name: showdoc
-  rule:
-    - regexps:
-        body:
-          - showdoc
-      favicon:
-        md5:
-          - 1fbc02dc6f980f075779049bf687128a
-        mmh3:
-          - '1969934080'
-- name: 74cms
-  rule:
-    - regexps:
-        body:
-          - 74cms
-- name: 金蝶中间件
-  rule:
-    - regexps:
-        body:
-          - -Error report
-- name: 泽元站群管理系统zcms
-  rule:
-    - regexps:
-        body:
-          - zcms_stat
-- name: 民友minyoocms
-  rule:
-    - regexps:
-        body:
-          - Minyoo
-          - /tpl/8/images
-- name: 中科汇联easysitecms
-  rule:
-    - regexps:
-        body:
-          - huilan-jquery-ui
-- name: jspxcms
-  rule:
-    - regexps:
-        body:
-          - Powered by Jspxcms
-- name: 奥远科技
-  rule:
-    - regexps:
-        body:
-          - aykj.net
-- name: phpcms
-  rule:
-    - regexps:
-        body:
-          - index.php?m=content&c=index&a=lists
-- name: metinfo
-  rule:
-    - regexps:
-        body:
-          - MetInfo
-- name: ideacms
-  rule:
-    - regexps:
-        body:
-          - IdeaCMS
-- name: 逐浪zoomla
-  rule:
-    - regexps:
-        body:
-          - zoomla
-- name: sscms
-  rule:
-    - regexps:
-        body:
-          - SS CMS
-          - /sitefiles/assets
-      favicon:
-        md5:
-          - e1610130e53ed05eb2f242c76bd93724
-        mmh3:
-          - '-773012525'
-- name: finecms
-  rule:
-    - regexps:
-        body:
-          - FineCMS
-- name: 向日葵
-  rule:
-    - regexps:
-        body:
-          - '{"success":false,"msg":"Verification failure"}'
-- name: ideacms
-  rule:
-    - regexps:
-        body:
-          - IdeaCMS
-- name: 博达vsb
-  rule:
-    - regexps:
-        body:
-          - Visual SiteBuilder
-- name: 合正cms
-  rule:
-    - regexps:
-        body:
-          - /cms/cmsadmin/infopub
-- name: phpok
-  rule:
-    - regexps:
-        body:
-          - phpok
-- name: phpmywind
-  rule:
-    - regexps:
-        body:
-          - PHPMyWind
-- name: codeigniter
-  rule:
-    - regexps:
-        header:
-          - ci_session
-- name: weaver-ebridge
-  rule:
-    - regexps:
-        body:
-          - e-Bridge
-- name: laravel
-  rule:
-    - regexps:
-        header:
-          - laravel_session
-- name: dwr
-  rule:
-    - regexps:
-        body:
-          - dwr/engine.js
-- name: swagger-ui
-  rule:
-    - regexps:
-        body:
-          - /swagger
-- name: 大汉版通发布系统
-  rule:
-    - regexps:
-        body:
-          - /module/jslib/urite
-          - 大汉版通发布系统
-          - 大汉网络
-- name: jcms(捷点)
-  rule:
-    - regexps:
-        body:
-          - JCms
-          - cnvp.com.cn
-- name: g4studio
-  rule:
-    - regexps:
-        body:
-          - g4it
-          - g4.ico
-- name: 思迪产品_thinkive
-  rule:
-    - regexps:
-        body:
-          - thinkiveJs.min.js
-- name: 京伦cms
-  rule:
-    - regexps:
-        body:
-          - jltech.cn
-- name: 翰臣cms
-  rule:
-    - regexps:
-        body:
-          - 翰臣科技
-- name: eweishop
-  rule:
-    - regexps:
-        body:
-          - ewei_shop
-- name: joomla
-  rule:
-    - regexps:
-        body:
-          - mootools-core.js
-          - Joomla
-      favicon:
-        mmh3:
-          - '366524387'
-          - '1627330242'
-          - '-1950415971'
-- name: 深信服上网行为管理系统
-  level: 1
-  send_data: /login/img/product_logo.png
-  rule:
-    - regexps:
-        md5:
-          - d8de64b0ca4281380295aa23500267ca
-- name: 大汉web
-  rule:
-    - regexps:
-        body:
-          - hanweb.css
-- name: dreamcms
-  rule:
-    - regexps:
-        body:
-          - dreamer-cms
-- name: tongweb
-  rule:
-    - regexps:
-        header:
-          - TongWeb Serve
-- name: jeesite
-  rule:
-    - regexps:
-        body:
-          - jeesite.min.css
-- name: jeecms
-  rule:
-    - regexps:
-        body:
-          - /r/cms
-- name: epoint新点软件cms
-  rule:
-    - regexps:
-        header:
-          - epointserver
-        body:
-          - webBuilderCommon
-- name: vmware zimbra
-  rule:
-    - regexps:
-        body:
-          - Zimbra Collaboration
-          - /zimbra/css/common
-- name: vmware esxi
-  rule:
-    - regexps:
-        body:
-          - ID_EESX_Welcome
-- name: vmware vfabric
-  rule:
-    - regexps:
-        body:
-          - VMware vFabric
-- name: vmware center
-  rule:
-    - regexps:
-        body:
-          - ID_VC_Welcome
-- name: vmware oneaccess
-  rule:
-    - regexps:
-        body:
-          - SAAS/horizon/css
-          - Workspace ONE Access
-      favicon:
-        md5:
-          - 6ed1fb0e8c0383b5a2e39d64d8b25442
-        mmh3:
-          - '-1250474341'
-- name: vmware identity
-  rule:
-    - regexps:
-        body:
-          - cfg/js-lib
-          - VMware Identity
-- name: visualsvn
-  rule:
-    - regexps:
-        body:
-          - VisualSVN Server
-          - 0;URL=svn/
-- name: 锐捷eweb
-  rule:
-    - regexps:
-        body:
-          - pub/ui/rui-min.css
-          - NBR路由器
-- name: 锐捷ap
-  rule:
-    - regexps:
-        body:
-          - common.sea.config.js
-- name: springboot
-  rule:
-    - regexps:
-        body:
-          - Whitelabel Error Page
-          - No message available
-          - '{"timestamp":'
-- name: springcloud-function
-  send_data: /functionRouter
-  rule:
-    - regexps:
-        body:
-          - '"error":"Internal Server Error"'
-- name: spring
-  rule:
-    - regexps:
-        header:
-          - springframework
-- name: spring-cloud-hystrix
-  default_port:
-    - '2001'
-  rule:
-    - regexps:
-        header:
-          - hystrix-dashboard
-        body:
-          - hystrix
-- name: springsecurity
-  rule:
-    - regexps:
-        body:
-          - Full authentication is required
-- name: frp
-  rule:
-    - regexps:
-        body:
-          - Faithfully yours, frp
-- name: tomcat
-  vuln: Directory traversal
-  rule:
-    - regexps:
-        vuln:
-          - Directory Listing For
-        regexp:
-          - <h3>Apache Tomcat/(.*)</h3>
-          - <title>Apache Tomcat/(.*)</title>
-        header:
-          - Apache-Coyote
-      favicon:
-        md5:
-          - 4644f2d45601037b8423d45e13194c93
-- name: apache
-  vuln: Directory traversal
-  rule:
-    - regexps:
-        vuln:
-          - Index of /
-- name: swift
-  rule:
-    - regexps:
-        body:
-          - swift.generic
-- name: elasticsearch
-  default_port:
-    - '9200'
-  rule:
-    - regexps:
-        body:
-          - '"cluster_name" : "elasticsearch"'
-- name: kibana
-  default_port:
-    - '9200'
-  rule:
-    - regexps:
-        body:
-          - Kibana
-      favicon:
-        mmh3:
-          - '75230260'
-          - '1668183286'
-          - '-267431135'
-          - '-759754862'
-          - '-1200737715'
-- name: mongodb
-  default_port:
-    - '27017'
-  rule:
-    - regexps:
-        body:
-          - It looks like you are trying to access MongoDB over HTTP on the native driver
-            port.
-- name: hadoop
-  default_port:
-    - '8088'
-  vuln: hadoop_yarn_unauthorized
-  rule:
-    - regexps:
-        vuln:
-          - "<title>\n    All Applications"
-- name: grafana
-  default_port:
-    - '3000'
-  rule:
-    - regexps:
-        body:
-          - Grafana</title>
-- name: fastadmin
-  rule:
-    - regexps:
-        body:
-          - fastadmin
-- name: 帆软数据决策系统
-  rule:
-    - regexps:
-        body:
-          - ReportServer?op
-- name: jumpserver
-  rule:
-    - regexps:
-        body:
-          - /static/img/facio.jico
-          - JumpServer</title>
-      favicon:
-        md5:
-          - 20334371817c7368907b5ea52aab2d9e
-- name: 天玥堡垒机
-  rule:
-    - regexps:
-        body:
-          - kaasapp/views/css/assign.css
-- name: 齐治堡垒机
-  rule:
-    - regexps:
-        body:
-          - logo-icon-ico72.png
-          - image/top_logo.ico
-      favicon:
-        md5:
-          - 48ee373f098d8e96e53b7dd778f09ff4
-- name: 安恒云堡垒机
-  rule:
-    - regexps:
-        body:
-          - DBAPPSecurity
-          - 安恒云堡垒机
-- name: 中科网威堡垒机
-  rule:
-    - regexps:
-        body:
-          - zk.appname
-- name: vmware_vrealize
-  rule:
-    - regexps:
-        body:
-          - vRealize
-- name: apache_cas
-  rule:
-    - regexps:
-        body:
-          - Central Authentication Service
-          - execution=
-- name: 金山timon云杀毒
-  rule:
-    - regexps:
-        body:
-          - iepngfix_tilebg.js
-- name: 群晖nas
-  rule:
-    - regexps:
-        body:
-          - DiskStation
-- name: 山石网科系统
-  rule:
-    - regexps:
-        body:
-          - Hillstone
-- name: 金山企业版(猎鹰)
-  rule:
-    - regexps:
-        body:
-          - kaasapp/views/css/assign.css
-- name: 金山企业版
-  rule:
-    - regexps:
-        body:
-          - kaasapp/views/css/assign.css
-- name: 金山edr
-  rule:
-    - regexps:
-        body:
-          - 终端安全系统Web控制台
-- name: 北信源edr
-  rule:
-    - regexps:
-        body:
-          - 北信源网络防病毒系统
-- name: 联软edr
-  rule:
-    - regexps:
-        body:
-          - Resource/views/images/common/logo2.png
-          - 联软IT安全运维管理系统
-- name: 奇安信新天擎edr
-  rule:
-    - regexps:
-        body:
-          - 新天擎
-          - /res/css/tools/index.css
-- name: 奇安信/360天擎edr
-  rule:
-    - regexps:
-        body:
-          - 360天擎终端安全管理系统
-- name: 天融信edr
-  rule:
-    - regexps:
-        body:
-          - 天融信终端威胁防御系统
-- name: 通软edr
-  rule:
-    - regexps:
-        body:
-          - /default/uninstall.html
-          - /Gsc/
-- name: 深信服设备
-  rule:
-    - regexps:
-        body:
-          - sangfor.com.cn
-        header:
-          - SinforHttpd
-      favicon:
-        md5:
-          - 293a3a7763eee19a068ef3dff98a7b8a
-- name: 华为设备
-  rule:
-    - regexps:
-        body:
-          - huawei
-- name: 网御星云设备
-  rule:
-    - regexps:
-        body:
-          - leadsec
-- name: 启明星辰设备
-  rule:
-    - regexps:
-        body:
-          - 北京启明星辰信息安全技术有限公司
-          - venustech
-- name: 奇安信设备
-  rule:
-    - regexps:
-        header:
-          - QiAnXin
-      favicon:
-        md5:
-          - e4e25f45b2a8988cb203743bd64204fe
-        mmh3:
-          - '-1260240149'
-- name: 联软设备
-  rule:
-    - regexps:
-        body:
-          - leagsoft
-      favicon:
-        md5:
-          - da9ce98e9a52ccb605d112c0437bcbc1
-        mmh3:
-          - '-2130980754'
-- name: 网康设备
-  rule:
-    - regexps:
-        body:
-          - netentsec
-          - 网康
-- name: 奇安信网神/360天堤防火墙
-  rule:
-    - regexps:
-        body:
-          - resources/image/logo_header.png
-- name: 网神3600防火墙
-  rule:
-    - regexps:
-        body:
-          - 网神SecGate
-- name: 科信邮件系统_kxmail
-  rule:
-    - regexps:
-        body:
-          - www.kxmail.net
-- name: 30盛安邮件系统
-  rule:
-    - regexps:
-        body:
-          - 30san.all
-- name: acmailer
-  rule:
-    - regexps:
-        body:
-          - acmailer
-- name: 安邮
-  rule:
-    - regexps:
-        body:
-          - suremail.cn
-- name: 17mail易企邮
-  rule:
-    - regexps:
-        body:
-          - 易企邮
-- name: 亿邮邮件系统
-  rule:
-    - regexps:
-        body:
-          - eYou
-- name: exchange
-  rule:
-    - regexps:
-        body:
-          - /owa/auth.owa
-      favicon:
-        mmh3:
-          - '1768726119'
-- name: 万网企业云邮箱
-  rule:
-    - regexps:
-        body:
-          - mxhichina
-- name: 科信邮件系统
-  rule:
-    - regexps:
-        body:
-          - /systemfunction
-- name: winwebmail
-  rule:
-    - regexps:
-        body:
-          - WinWebMail
-- name: 泰信tmailer邮件系统
-  rule:
-    - regexps:
-        body:
-          - Tmailer
-- name: .net
-  rule:
-    - regexps:
-        body:
-          - content="Visual Basic .NET 7.1
-- name: 08cms
-  rule:
-    - regexps:
-        body:
-          - content="08CMS
-          - typeof(_08cms)
-- name: 1024 cms
-  rule:
-    - regexps:
-        body:
-          - Powered by 1024 CMS
-          - content="1024 CMS
-- name: 1024cms
-  rule:
-    - regexps:
-        body:
-          - Powered by 1024 CMS
-          - generator" content="1024 CMS (c)
-- name: 171cms
-  rule:
-    - regexps:
-        body:
-          - content="171cms
-          - 171cms
 - name: 1und1
   rule:
     - regexps:
@@ -1653,44 +64,6 @@
         body:
           - NBX NetSet
           - splashTitleIPTelephony
-- name: 3com_nbx
-  rule:
-    - regexps:
-        body:
-          - NBX NetSet
-        header:
-          - Alternates
-- name: 3dcart
-  rule:
-    - regexps:
-        body:
-          - powered by 3dcart
-          - '<!--START: 3dcart stats-->'
-        header:
-          - 'X-Powered-By: 3DCART'
-- name: 4d
-  rule:
-    - regexps:
-        header:
-          - Server:4D
-- name: 4images
-  rule:
-    - regexps:
-        body:
-          - powered by 4images
-          - 4homepages.de
-        header:
-          - 4images_
-- name: 51la
-  rule:
-    - regexps:
-        body:
-          - js.users.51.la
-- name: 51yes
-  rule:
-    - regexps:
-        body:
-          - 51yes.com/click.aspx
 - name: 53客服
   rule:
     - regexps:
@@ -1701,29 +74,8 @@
     - regexps:
         body:
           - 68 Classifieds
-- name: 6kbbs
-  rule:
-    - regexps:
-        body:
-          - Powered by 6kbbs
-          - generator" content="6KBBS
-- name: 74cms
-  rule:
-    - regexps:
-        body:
-          - content="74cms.com
-          - content="骑士CMS
-          - Powered by <a href="http://www.74cms.com/"
-          - /templates/default/css/common.css
-          - selectjobscategory
-- name: 78oa
-  rule:
-    - regexps:
-        body:
-          - /resource/javascript/system/runtime.min.js
-          - license.78oa.com
-          - 78oa
-          - src="/module/index.php
+
+
 - name: aardvark topsites
   rule:
     - regexps:
@@ -1734,11 +86,6 @@
     - regexps:
         header:
           - ABO.CMS
-- name: abo_cms
-  rule:
-    - regexps:
-        header:
-          - a-powered-by
 - name: abyss
   rule:
     - regexps:
@@ -1751,12 +98,8 @@
           - Secured by Accellion
         header:
           - sfcurl=deleted;
-- name: accordion content script
-  rule:
-    - regexps:
-        body:
-          - ddaccordion.js
-- name: achecker web accessibility evaluation tool
+
+- name: achecker
   rule:
     - regexps:
         body:
@@ -1766,16 +109,8 @@
   rule:
     - regexps:
         body:
-          - Powered by Acidcat CMS
-          - Start Acidcat CMS footer information
-          - /css/admin_import.css
-- name: acidcat_cms
-  rule:
-    - regexps:
-        body:
-          - Start Acidcat CMS footer information
-          - Powered by Acidcat CMS
-- name: acme embeddable http server
+          - Acidcat
+- name: acme
   rule:
     - regexps:
         header:
@@ -1795,26 +130,20 @@
   rule:
     - regexps:
         body:
-          - powered by activeCollab
-          - <p id="powered_by"><a href="http://www.activecollab.com/"
+          - activeCollab
 - name: activehtml
   rule:
     - regexps:
         header:
           - ActiveHTML
-- name: activeweb-content-server
+- name: activeweb
   rule:
     - regexps:
         body:
-          - AWNOCACHEBEGIN__AWNOCACHEBEGIN__AWNOCACHEBEGIN__AWNOCACHEBEGIN__AWNOCACHEBEGIN
+          - AWNOCACHEBEGIN
           - activeWeb cache extension
         header:
           - x-awcache
-- name: ad network script
-  rule:
-    - regexps:
-        body:
-          - Web Administration Panel
 - name: adaptcms
   rule:
     - regexps:
@@ -1848,9 +177,8 @@
   rule:
     - regexps:
         body:
-          - Adiscon LogAnalyzer
-          - Adiscon LogAnalyzer
-          - Adiscon GmbH
+          - Adiscon
+
 - name: adobe connect
   rule:
     - regexps:
@@ -1939,13 +267,7 @@
     - regexps:
         header:
           - atos
-- name: afterlogic-webmail
-  rule:
-    - regexps:
-        body:
-          - AfterLogic WebMail Pro
-        header:
-          - PHPWEBMAILSESSID
+
 - name: aicache
   rule:
     - regexps:
@@ -2346,21 +668,8 @@
           - RT-AC66U
         header:
           - RT-AC66U
-- name: atmail-webmail
-  rule:
-    - regexps:
-        body:
-          - Powered by Atmail
-          - /index.php/mail/auth/processlogin
-          - <input id="Mailserverinput
-- name: atmail
-  rule:
-    - regexps:
-        body:
-          - Powered by Atmail
-          - FixShowMail
-        header:
-          - atmail6
+
+
 - name: atomic-photo-album
   rule:
     - regexps:
@@ -3012,13 +1321,7 @@
     - regexps:
         header:
           - sessao3
-- name: bxemail
-  rule:
-    - regexps:
-        body:
-          - 百讯安全邮件系统
-          - 百姓邮局
-          - 请输入正确的电子邮件地址，如：abc@bxemail.com
+
 - name: ca-siteminder
   rule:
     - regexps:
@@ -3765,29 +2068,8 @@
     - regexps:
         body:
           - <!--Coppermine Photo Gallery
-- name: coremail
-  rule:
-    - regexps:
-        body:
-          - /coremail/common/assets
-          - Coremail邮件系统
-- name: couchbase
-  rule:
-    - regexps:
-        body:
-          - Couchbase Console
-        header:
-          - Couchbase
-- name: couchdb
-  rule:
-    - regexps:
-        header:
-          - Erlang OTP
-- name: cougar
-  rule:
-    - regexps:
-        header:
-          - Cougar
+
+
 - name: covalent-enterprise-ready-server
   rule:
     - regexps:
@@ -4832,16 +3114,7 @@
     - regexps:
         body:
           - /ewebeditor.htm?
-- name: exchange
-  rule:
-    - regexps:
-        body:
-          - owaLgnBdy
-        header:
-          - OutlookSession
-      favicon:
-        mmh3:
-          - '1768726119'
+
 - name: exponent-cms
   rule:
     - regexps:
@@ -4885,15 +3158,7 @@
         body:
           - Powered by EZCMS
           - EZCMS Content Management System
-- name: ezoffice
-  rule:
-    - regexps:
-        body:
-          - Wanhu ezOFFICE
-          - EZOFFICEUSERNAME
-          - 万户OA
-          - whirRootPath
-          - /defaultroot/js/cookie.js
+
 - name: f3site
   rule:
     - regexps:
@@ -4926,11 +3191,7 @@
     - regexps:
         body:
           - jquery.fancybox.js
-- name: fangmail
-  rule:
-    - regexps:
-        body:
-          - /fangmail/default/css/em_css.css
+
 - name: fastly cdn
   rule:
     - regexps:
@@ -5115,12 +3376,7 @@
     - regexps:
         body:
           - Forest Blog
-- name: formmail
-  rule:
-    - regexps:
-        body:
-          - /FormMail.pl
-          - href="http://www.worldwidemart.com/scripts/formmail.shtml
+
 - name: fortiguard
   rule:
     - regexps:
@@ -5744,13 +4000,7 @@
         body:
           - hishop.plugins.openid
           - Hishop development team
-- name: hivemail
-  rule:
-    - regexps:
-        body:
-          - content="Hivemail
-        header:
-          - hivesession
+
 - name: holocms
   rule:
     - regexps:
@@ -6119,12 +4369,7 @@
     - regexps:
         body:
           - http://www.igamingcms.com/
-- name: igenus邮件系统
-  rule:
-    - regexps:
-        body:
-          - Copyright by<A HREF="http://www.igenus.org
-          - iGENUS webmail
+
 - name: igivetest
   rule:
     - regexps:
@@ -6241,13 +4486,7 @@
           - content="Imageview
           - By Jorge Schrauwen
           - href="http://www.blackdot.be" title="Blackdot.be
-- name: imailserver
-  rule:
-    - regexps:
-        body:
-          - myICalUserName
-        header:
-          - Ipswitch-IMail
+
 - name: imgallery
   rule:
     - regexps:
@@ -6419,11 +4658,7 @@
     - regexps:
         body:
           - stats.ipinyou.com/
-- name: ipswitch-imail
-  rule:
-    - regexps:
-        header:
-          - Ipswitch-IMail
+
 - name: iptime-router
   rule:
     - regexps:
@@ -6442,7 +4677,7 @@
     - regexps:
         header:
           - IRe.CMS
-- name: iredadmin(roundcube?)
+- name: iredadmin
   rule:
     - regexps:
         body:
@@ -6606,20 +4841,6 @@
     - regexps:
         header:
           - Jigsaw
-- name: jira
-  rule:
-    - regexps:
-        body:
-          - jira.webresources
-          - ams-build-number
-          - com.atlassian.plugins
-        header:
-          - atlassian.xsrf.token
-      favicon:
-        mmh3:
-          - '855273746'
-          - '981867722'
-          - '-1581907337'
 - name: jive-sbs
   rule:
     - regexps:
@@ -6748,11 +4969,7 @@
           - content="Kentico CMS
         header:
           - CMSPreferredCulture
-- name: kerio mailserver
-  rule:
-    - regexps:
-        header:
-          - Kerio MailServer
+
 - name: kerio-connect
   rule:
     - regexps:
@@ -7556,11 +5773,7 @@
       favicon:
         mmh3:
           - '-38580010'
-- name: magicwinmail
-  rule:
-    - regexps:
-        header:
-          - magicwinmail_default_theme
+
 - name: mallbuilder
   rule:
     - regexps:
@@ -8968,11 +7181,6 @@
     - regexps:
         body:
           - NOALYSS
-- name: nodejs
-  rule:
-    - regexps:
-        header:
-          - node.js
 - name: npoint
   rule:
     - regexps:
@@ -8984,11 +7192,7 @@
         body:
           - WAF NSFOCUS
           - /images/logo/nsfocus.png
-- name: ntlm认证
-  rule:
-    - regexps:
-        header:
-          - NTLM
+
 - name: ntop
   rule:
     - regexps:
@@ -9012,17 +7216,7 @@
     - regexps:
         header:
           - client_param=install_active
-- name: oa(a8/seeyon/ufida)
-  rule:
-    - regexps:
-        body:
-          - /seeyon/USER-DATA/IMAGES/LOGIN/login.gif
-- name: oa企业智能办公自动化系统
-  rule:
-    - regexps:
-        body:
-          - input name="S1" type="image"
-          - count/mystat.asp
+
 - name: observa telcom
   rule:
     - regexps:
@@ -9096,11 +7290,7 @@
     - regexps:
         header:
           - Oracle Solaris
-- name: oracle-application-server
-  rule:
-    - regexps:
-        header:
-          - Oracle-Application-Server
+
 - name: oraclea-dms
   rule:
     - regexps:
@@ -9210,124 +7400,7 @@
           - res/phabricator
         header:
           - phsid
-- name: php-cgi
-  rule:
-    - regexps:
-        header:
-          - PHP-CGI
-- name: phpb2b
-  rule:
-    - regexps:
-        body:
-          - Powered By PHPB2B
-- name: phpbb
-  rule:
-    - regexps:
-        body:
-          - phpBB
-        header:
-          - HttpOnly, phpbb3_
-- name: phpcms
-  rule:
-    - regexps:
-        body:
-          - Phpcms
-          - /index.php?m=content&c=index&a=lists
-          - /index.php?m=content&amp;c=index&amp;a=lists
-- name: phpdisk
-  rule:
-    - regexps:
-        body:
-          - Powered by PHPDisk
-          - content="PHPDisk
-- name: phpdocumentor
-  rule:
-    - regexps:
-        body:
-          - Generated by phpDocumentor
-- name: phpems考试系统
-  rule:
-    - regexps:
-        body:
-          - phpems
-          - content="PHPEMS
-- name: phpinfo
-  rule:
-    - regexps:
-        body:
-          - phpinfo
-          - 'Virtual Directory Support '
-- name: phpmoadmin
-  rule:
-    - regexps:
-        body:
-          - phpmoadmin
-- name: phpmps
-  rule:
-    - regexps:
-        body:
-          - Powered by Phpmps
-          - templates/phpmps/style/index.css
-- name: phpmyadmin
-  rule:
-    - regexps:
-        body:
-          - 'phpMyAdmin '
-          - pma_password
-        header:
-          - 'Set-Cookie: phpMyAdmin='
-      favicon:
-        md5:
-          - 531b63a51234bb06c9d77f219eb25553
-        mmh3:
-          - '-1010568750'
-          - '-476231906'
-- name: phpmywind
-  rule:
-    - regexps:
-        body:
-          - phpMyWind.com All Rights Reserved
-          - content="PHPMyWind
-- name: phpoa
-  rule:
-    - regexps:
-        body:
-          - admin_img/msg_bg.png
-- name: phpok
-  rule:
-    - regexps:
-        body:
-          - phpok
-          - Powered By phpok.com
-          - content="phpok
-- name: phpshe
-  rule:
-    - regexps:
-        body:
-          - Powered by phpshe
-          - content="phpshe
-- name: phpvod
-  rule:
-    - regexps:
-        body:
-          - Powered by PHPVOD
-          - content="phpvod
-- name: phpweb
-  rule:
-    - regexps:
-        body:
-          - PDV_PAGENAME
-- name: phpwind
-  rule:
-    - regexps:
-        body:
-          - Powered by phpwind
-          - content="phpwind
-- name: php云
-  rule:
-    - regexps:
-        body:
-          - <div class="index_link_list_name">
+
 - name: phusion
   rule:
     - regexps:
@@ -9475,11 +7548,7 @@
     - regexps:
         body:
           - /jscripts/rap_util.js
-- name: rcms
-  rule:
-    - regexps:
-        body:
-          - /r/cms/www/
+
 - name: react.js
   rule:
     - regexps:
@@ -9499,25 +7568,7 @@
     - regexps:
         body:
           - recaptcha_ajax.js
-- name: redhat
-  rule:
-    - regexps:
-        header:
-          - Red Hat
-- name: redmine
-  rule:
-    - regexps:
-        body:
-          - Redmine
-          - authenticity_token
-      favicon:
-        mmh3:
-          - '603314'
-- name: resin
-  rule:
-    - regexps:
-        header:
-          - 'Server: Resin'
+
 - name: restlet-framework
   rule:
     - regexps:
@@ -9535,13 +7586,7 @@
     - regexps:
         body:
           - RG-PowerCache
-- name: richmail
-  rule:
-    - regexps:
-        body:
-          - Richmail
-          - /resource/se/lang/se/mail_zh_CN.js
-          - content="Richmail
+
 - name: rimes-cisco
   rule:
     - regexps:
@@ -9749,13 +7794,7 @@
     - regexps:
         body:
           - 'SLTM32 Web Configuration Pages '
-- name: smartoa
-  rule:
-    - regexps:
-        body:
-          - /smartoa.plist
-        header:
-          - smartoa
+
 - name: sma_sunny_webbox
   rule:
     - regexps:
@@ -9779,23 +7818,13 @@
         body:
           - EGSS_User
           - SoEasy网站集群
-- name: soffice
-  rule:
-    - regexps:
-        body:
-          - OA办公管理平台
+
 - name: sogou站长平台
   rule:
     - regexps:
         body:
           - sogou_site_verification
-- name: solr
-  rule:
-    - regexps:
-        body:
-          - Solr Admin
-          - SolrCore Initialization Failures
-          - app_config.solr_path
+
 - name: solvonet device (voip)
   rule:
     - regexps:
@@ -9832,11 +7861,7 @@
     - regexps:
         header:
           - Sophos
-- name: sophos_email_appliance
-  rule:
-    - regexps:
-        header:
-          - Sophos Email Appliance
+
 - name: sophos_web_appliance
   rule:
     - regexps:
@@ -9890,11 +7915,7 @@
     - regexps:
         header:
           - squid
-- name: squirrelmail
-  rule:
-    - regexps:
-        header:
-          - SQMSESSID
+
 - name: srun3000计费认证系统
   rule:
     - regexps:
@@ -9993,13 +8014,7 @@
         body:
           - Synology DiskStation
           - SYNO.SDS.Session
-- name: synology_nas
-  rule:
-    - regexps:
-        body:
-          - modules/BackupReplicationApp
-        header:
-          - webman/index.cgi
+
 - name: taocms
   rule:
     - regexps:
@@ -10022,12 +8037,7 @@
     - regexps:
         body:
           - TS_expiredurl
-- name: teamviewer
-  rule:
-    - regexps:
-        body:
-          - This site is running
-          - TeamViewer
+
 - name: techartcms
   rule:
     - regexps:
@@ -10044,11 +8054,7 @@
         body:
           - Telerik.Web.UI.WebResource.axd
           - content="Sitefinity
-- name: tengine
-  rule:
-    - regexps:
-        header:
-          - 'Server: Tengine'
+
 - name: terramaster
   rule:
     - regexps:
@@ -10070,31 +8076,7 @@
         body:
           - Powered By ThinkOX
           - ThinkOX
-- name: weiphp
-  rule:
-    - regexps:
-        header:
-          - weiphp
-      favicon:
-        md5:
-          - 820d3b66204fbcd3560b9358632b9c8a
-        mmh3:
-          - '37052027'
-- name: pcfcms
-  rule:
-    - regexps:
-        header:
-          - pcfcms
-      favicon:
-        md5:
-          - 0efb381ef98f4cb8443c0b8ecdfad874
-        mmh3:
-          - '1355901755'
-- name: zblog
-  rule:
-    - regexps:
-        header:
-          - zb_user
+
 - name: thinksaas
   rule:
     - regexps:
@@ -11082,12 +9064,7 @@
     - regexps:
         body:
           - mn-c-top
-- name: tpshop
-  rule:
-    - regexps:
-        body:
-          - /index.php/Mobile/Index/index.html
-          - '>TPshop开源商城<'
+
 - name: tq云呼叫中心
   rule:
     - regexps:
@@ -11106,41 +9083,9 @@
     - regexps:
         header:
           - Basic realm="netcam"
-- name: trsmas
-  rule:
-    - regexps:
-        header:
-          - X-Mas-Server
-- name: trs_wcm
-  rule:
-    - regexps:
-        body:
-          - /wcm/app/js
-          - 0;URL=/wcm
-          - window.location.href = "/wcm";
-          - forum.trs.com.cn
-          - wcm
-          - /wcm" target="_blank">网站管理
-          - /wcm" target="_blank">管理
-- name: tumblr
-  rule:
-    - regexps:
-        header:
-          - X-Tumblr-User
-- name: turbocms
-  rule:
-    - regexps:
-        body:
-          - Powered by TurboCMS
-          - /cmsapp/zxdcADD.jsp
-          - /cmsapp/count/newstop_index.jsp?siteid=
-- name: turbomail
-  rule:
-    - regexps:
-        body:
-          - Powered by TurboMail
-          - wzcon1 clearfix
-          - TurboMail邮件系统
+
+
+
 - name: tutucms
   rule:
     - regexps:
@@ -11158,22 +9103,13 @@
     - regexps:
         header:
           - 'X-Powered-Cms: Twilight CMS'
-- name: typecho
-  rule:
-    - regexps:
-        body:
-          - generator" content="Typecho
-          - Typecho
+
 - name: typo3
   rule:
     - regexps:
         header:
           - fe_typo_user
-- name: u-mail
-  rule:
-    - regexps:
-        body:
-          - <BODY LINK="White" VLINK="White" ALINK="White">
+
 - name: ubnt_unifi系列路由
   rule:
     - regexps:
@@ -11185,12 +9121,7 @@
     - regexps:
         body:
           - UcSTAR 管理控制台
-- name: ufida_nc
-  rule:
-    - regexps:
-        body:
-          - UFIDA
-          - logo/images/ufida_nc.png
+
 - name: ujian
   rule:
     - regexps:
@@ -11222,13 +9153,7 @@
     - regexps:
         header:
           - Requestsuccess4ajax
-- name: unknown_cms_rcms
-  rule:
-    - regexps:
-        body:
-          - r/cms/www
-        header:
-          - clientlanguage
+
 - name: uplusftp
   rule:
     - regexps:
@@ -11249,12 +9174,7 @@
     - regexps:
         header:
           - Rejected-By-UrlScan
-- name: urp教务系统
-  rule:
-    - regexps:
-        body:
-          - URP 综合教务系统
-          - 北京清元优软科技有限公司
+
 - name: usp secure entry server
   rule:
     - regexps:
@@ -11304,13 +9224,7 @@
     - regexps:
         body:
           - VisualSVN Server
-- name: vmware_vfabric
-  rule:
-    - regexps:
-        body:
-          - vFabric
-        header:
-          - TS01efd1fa
+
 - name: vos3000
   rule:
     - regexps:
@@ -11374,17 +9288,7 @@
     - regexps:
         header:
           - Webluker-Edge
-- name: webmin
-  rule:
-    - regexps:
-        body:
-          - Webmin
-      favicon:
-        mmh3:
-          - '479413330'
-          - '1280907310'
-          - '1453890729'
-          - '-1038557304'
+
 - name: webobjects
   rule:
     - regexps:
@@ -11442,9 +9346,7 @@
 - name: weiphp
   rule:
     - regexps:
-        body:
-          - content="WeiPHP
-          - /css/weiphp.css
+
       favicon:
         md5:
           - 820d3b66204fbcd3560b9358632b9c8a
@@ -11468,13 +9370,7 @@
     - regexps:
         header:
           - WindRiver-WebServer
-- name: winwebmail
-  rule:
-    - regexps:
-        body:
-          - winwebmail
-          - WinWebMail Server
-          - images/owin.css
+
 - name: wishoa
   rule:
     - regexps:
@@ -11576,36 +9472,8 @@
         body:
           - /css/yxcms.css
           - content="Yxcms
-- name: z-blog
-  rule:
-    - regexps:
-        body:
-          - generator" content="Z-Blog
-        header:
-          - 'Product: Z-Blog'
-- name: z-blogphp
-  rule:
-    - regexps:
-        header:
-          - 'Product: Z-BlogPHP'
-- name: zabbix
-  rule:
-    - regexps:
-        body:
-          - images/general/zabbix.ico
-          - meta name="Author" content="Zabbix SIA"
-        header:
-          - zbx_sessionid
-      favicon:
-        mmh3:
-          - '892542951'
-- name: zcms
-  rule:
-    - regexps:
-        body:
-          - _ZCMS_ShowNewMessage
-          - zcms_skin
-          - ZCMS泽元内容管理
+
+
 - name: zen cart
   rule:
     - regexps:
@@ -11716,21 +9584,13 @@
         mmh3:
           - '943925975'
           - '-882760066'
-- name: __viewstate
-  rule:
-    - regexps:
-        body:
-          - __VIEWSTATE
+
 - name: 一启快
   rule:
     - regexps:
         header:
           - yiqikuai.com
-- name: 一米oa
-  rule:
-    - regexps:
-        body:
-          - /yimioa.apk
+
 - name: 一采通
   rule:
     - regexps:
@@ -11745,49 +9605,14 @@
           - cdn.staticfile.org
         header:
           - cdn.staticfile.org
-- name: 万户ezoffice
-  rule:
-    - regexps:
-        header:
-          - LocLan
-- name: 万户网络
-  rule:
-    - regexps:
-        body:
-          - css/css_whir.css
-- name: 万网企业云邮箱
-  rule:
-    - regexps:
-        body:
-          - static.mxhichina.com/images/favicon.ico
-- name: 中企动力门户cms
-  rule:
-    - regexps:
-        body:
-          - 中企动力提供技术支持
+
 - name: 中兴路由器
   rule:
     - regexps:
         header:
           - 'Server: Mini web server 1.0 ZTE corp 2005.'
-- name: 中控智慧时间安全管理平台
-  rule:
-    - regexps:
-        body:
-          - ZKECO 时间&安全管理平台
-- name: 中控智慧考勤管理系统
-  rule:
-    - regexps:
-        body:
-          - /media/images/ZKECO16.ico
-        header:
-          - sessionidadms
-- name: 中望oa
-  rule:
-    - regexps:
-        body:
-          - /app_qjuserinfo/qjuserinfoadd.jsp
-          - /IMAGES/default/first/xtoa_logo.png
+
+
 - name: 中网可信网站权威数据库
   rule:
     - regexps:
@@ -11798,13 +9623,7 @@
     - regexps:
         body:
           - 您访问的是主机宝服务器默认页
-- name: 久其通用财表系统
-  rule:
-    - regexps:
-        body:
-          - <nobr>北京久其软件股份有限公司
-          - /netrep/intf
-          - /netrep/message2/
+
 - name: 乐视路由器
   rule:
     - regexps:
@@ -11821,25 +9640,9 @@
     - regexps:
         header:
           - yunsuo_session_verify
-- name: 亿赛通dlp
-  rule:
-    - regexps:
-        body:
-          - CDGServer3
-- name: 亿邮
-  rule:
-    - regexps:
-        body:
-          - EYOU企业邮箱
-          - cr">eYouMail
-        header:
-          - EMPHPSID
-- name: 任我行crm
-  rule:
-    - regexps:
-        body:
-          - 任我行CRM
-          - CRM_LASTLOGINUSERKEY
+
+
+
 - name: 任我行电商
   rule:
     - regexps:
@@ -11855,39 +9658,10 @@
     - regexps:
         body:
           - /viewer/live/en/live.html
-- name: 信达oa
-  rule:
-    - regexps:
-        body:
-          - http://www.xdoa.cn</a>
-          - 北京创信达科技有限公司
-- name: 元年财务软件
-  rule:
-    - regexps:
-        body:
-          - yuannian.css
-          - /image/logo/yuannian.gif
-- name: 全国烟草系统
-  rule:
-    - regexps:
-        body:
-          - ycportal/webpublish
-- name: 八哥cms
-  rule:
-    - regexps:
-        body:
-          - content="BageCMS
-- name: 农友政务系统
-  rule:
-    - regexps:
-        body:
-          - '1207044504'
-- name: 凡科
-  rule:
-    - regexps:
-        body:
-          - 凡科互联网科技股份有限公司
-          - content="凡科
+
+
+
+
 - name: 创星伟业校园网群
   rule:
     - regexps:
@@ -11981,25 +9755,7 @@
     - regexps:
         body:
           - sweb-lib/resource/
-- name: 华天动力oa(oa8000)
-  rule:
-    - regexps:
-        body:
-          - /OAapp/WebObjects/OAapp.woa
-- name: 协众oa
-  rule:
-    - regexps:
-        body:
-          - Powered by 协众OA
-          - admin@cnoa.cn
-          - Powered by CNOA.CN
-- name: 单点crm系统
-  rule:
-    - regexps:
-        body:
-          - URL=general/ERP/LOGIN/
-          - content="单点CRM系统
-          - 客户关系管理-CRM
+
 - name: 南方数据
   rule:
     - regexps:
@@ -12014,12 +9770,6 @@
           - b0.upaiyun.com
         header:
           - b0.upaiyun.com
-- name: 合正网站群内容管理系统
-  rule:
-    - regexps:
-        body:
-          - Produced By
-          - 网站群内容管理系统
 - name: 同城多用户商城
   rule:
     - regexps:
@@ -12051,99 +9801,7 @@
         body:
           - App_Image/PXSystem
           - App_Image/System
-- name: 天融信 topad
-  rule:
-    - regexps:
-        body:
-          - 天融信 TopAD
-- name: 天融信ads管理平台
-  rule:
-    - regexps:
-        body:
-          - 天融信ADS管理平台
-- name: 天融信topflow
-  rule:
-    - regexps:
-        body:
-          - 天融信TopFlow
-- name: 天融信vpn
-  rule:
-    - regexps:
-        header:
-          - topsecsvportalname
-- name: 天融信web应用安全防护系统
-  rule:
-    - regexps:
-        body:
-          - 天融信Web应用安全防护系统
-- name: 天融信web应用防火墙
-  rule:
-    - regexps:
-        body:
-          - 天融信WEB应用防火墙
-- name: 天融信入侵检测系统topsentry
-  rule:
-    - regexps:
-        body:
-          - 天融信入侵检测系统TopSentry
-- name: 天融信入侵防御系统topidp
-  rule:
-    - regexps:
-        body:
-          - 天融信入侵防御系统TopIDP
-- name: 天融信安全管理系统
-  rule:
-    - regexps:
-        body:
-          - 天融信安全管理
-- name: 天融信异常流量管理与抗拒绝服务系统
-  rule:
-    - regexps:
-        body:
-          - 天融信异常流量管理与抗拒绝服务系统
-- name: 天融信日志收集与分析系统
-  rule:
-    - regexps:
-        body:
-          - 天融信日志收集与分析系统
-- name: 天融信网站监测与自动修复系统
-  rule:
-    - regexps:
-        body:
-          - 天融信网站监测与自动修复系统
-- name: 天融信网络卫士过滤网关
-  rule:
-    - regexps:
-        body:
-          - 天融信网络卫士过滤网关
-- name: 天融信网络审计系统
-  rule:
-    - regexps:
-        body:
-          - onclick="dlg_download()
-- name: 天融信脆弱性扫描与管理系统
-  rule:
-    - regexps:
-        body:
-          - 天融信脆弱性扫描与管理系统
-          - /js/report/horizontalReportPanel.js
-- name: 天融信防火墙
-  rule:
-    - regexps:
-        body:
-          - WEB User Interface
-        header:
-          - TopWebServer
-- name: 安全宝
-  rule:
-    - regexps:
-        header:
-          - X-Powered-By-Anquanbao
-- name: 安全狗
-  rule:
-    - regexps:
-        header:
-          - WAF/2.0
+
 - name: 安慧网盾
   rule:
     - regexps:
@@ -12169,11 +9827,7 @@
           - /Template/Ant/Css/AntHomeComm.css
         header:
           - AntXiaouserslogin
-- name: 希尔oa
-  rule:
-    - regexps:
-        body:
-          - /heeroa/login.do
+
 - name: 帕拉迪统一安全管理和综合审计系统
   rule:
     - regexps:
@@ -12185,11 +9839,7 @@
         body:
           - /js/diyou.js
           - src="/dyweb/dythemes
-- name: 帝国empirecms
-  rule:
-    - regexps:
-        body:
-          - Powered by EmpireCMS
+
 - name: 帝联
   rule:
     - regexps:
@@ -12212,18 +9862,7 @@
     - regexps:
         header:
           - 'Fw-Via: '
-- name: 悟空crm
-  rule:
-    - regexps:
-        body:
-          - 悟空CRM
-          - /Public/js/5kcrm.js
-- name: 惠尔顿上网行为管理系统
-  rule:
-    - regexps:
-        body:
-          - updateLoginPswd.php
-          - PassroedEle
+
 - name: 慧学云教育
   rule:
     - regexps:
@@ -12241,11 +9880,7 @@
     - regexps:
         body:
           - 护卫神.网站安全系统
-- name: 捷点jcms
-  rule:
-    - regexps:
-        body:
-          - Publish By JCms2010
+
 - name: 擎天电子政务
   rule:
     - regexps:
@@ -12276,11 +9911,7 @@
     - regexps:
         header:
           - PM800
-- name: 易企cms
-  rule:
-    - regexps:
-        body:
-          - content="YiqiCMS
+
 - name: 易分析
   rule:
     - regexps:
@@ -12334,16 +9965,8 @@
         body:
           - http://www.barracudanetworks.com?a=bsf_product" class="transbutton
           - /cgi-mod/header_logo.cgi
-- name: 正方oa
-  rule:
-    - regexps:
-        body:
-          - zfoausername
-- name: 正方教务管理系统
-  rule:
-    - regexps:
-        body:
-          - style/base/jw.css
+
+
 - name: 武汉弘智科技
   rule:
     - regexps:
@@ -12370,62 +9993,8 @@
         body:
           - 沃科网
           - 异网同显系统
-- name: 泛微协同办公oa
-  rule:
-    - regexps:
-        body:
-          - /wui/common/css/w7OVFont.css
-        header:
-          - testBanCookie
-- name: 泛普建筑工程施工oa
-  rule:
-    - regexps:
-        body:
-          - /dwr/interface/LoginService.js
-- name: 泰信tmailer邮件系统
-  rule:
-    - regexps:
-        body:
-          - Tmailer
-          - content="Tmailer
-          - href="/tmailer/img/logo/favicon.ico
-- name: 浪潮政务系统
-  rule:
-    - regexps:
-        body:
-          - OnlineQuery/QueryList.aspx
-          - 浪潮政务
-          - LangChao.ECGAP.OutPortal
-- name: 海天oa
-  rule:
-    - regexps:
-        body:
-          - HTVOS.js
-- name: 海康威视ivms
-  rule:
-    - regexps:
-        body:
-          - g_szCacheTime
-          - iVMS
-- name: hikvision
-  rule:
-    - regexps:
-        body:
-          - doc/page/login.asp
-        header:
-          - DVRDVS-Webs
-      favicon:
-        md5:
-          - 89b932fcc47cf4ca3faadb0cfdef89cf
-        mmh3:
-          - '999357577'
-- name: 海洋cms
-  rule:
-    - regexps:
-        body:
-          - seacms
-          - Powered by SeaCms
-          - content="seacms
+
+
 - name: 海盗云商(haidao)
   rule:
     - regexps:
@@ -12438,11 +10007,7 @@
           - login_psw.csp
         header:
           - TWFID
-- name: sangfor-easyconnect
-  rule:
-    - regexps:
-        body:
-          - EasyConnect
+
 - name: 深信服防火墙类产品
   rule:
     - regexps:
@@ -12494,24 +10059,7 @@
         body:
           - Login_Main_BG
           - Login_Owner
-- name: 致远oa
-  rule:
-    - regexps:
-        body:
-          - /seeyon/USER-DATA/IMAGES/LOGIN/login.gif
-          - 用友致远A
-          - /yyoa/
-      favicon:
-        md5:
-          - cdc85452665e7708caed3009ecb7d4e2
-          - 57f307ad3764553df84e7b14b7a85432
-          - 3c8df395ec2cbd72782286d18a286a9a
-          - 2f761c27b6b7f9386bbd61403635dc42
-- name: 畅捷通
-  rule:
-    - regexps:
-        body:
-          - 畅捷通
+
 - name: 百为智能流控路由器
   rule:
     - regexps:
@@ -12557,19 +10105,8 @@
     - regexps:
         body:
           - align="center">福富软件
-- name: 科信邮件系统
-  rule:
-    - regexps:
-        body:
-          - /systemfunction.pack.js
-          - lo_computername
-- name: 科来ras
-  rule:
-    - regexps:
-        body:
-          - 科来网络回溯
-          - 科来软件 版权所有
-          - i18ninit.min.js
+
+
 - name: 科蚁cms
   rule:
     - regexps:
@@ -12623,29 +10160,8 @@
         body:
           - frmvalidator
           - 邮箱用户登录
-- name: 网神vpn
-  rule:
-    - regexps:
-        body:
-          - admin/js/virtual_keyboard.js
-        header:
-          - host_for_cookie
-- name: 网神防火墙
-  rule:
-    - regexps:
-        body:
-          - secgate 3600
-          - css/lsec/login.css
-- name: 美洽 - 在线客服
-  rule:
-    - regexps:
-        body:
-          - /meiqia.js
-- name: 育友软件
-  rule:
-    - regexps:
-        body:
-          - http://www.yuysoft.com/
+
+
 - name: 腾讯企业邮箱
   rule:
     - regexps:
@@ -12666,12 +10182,6 @@
     - regexps:
         body:
           - maccms:voddaycount
-- name: 蓝凌eis智慧协同平台
-  rule:
-    - regexps:
-        body:
-          - /scripts/jquery.landray.common.js
-          - v11_QRcodeBar clr
 - name: 蓝盾bdwebguard
   rule:
     - regexps:
@@ -12698,18 +10208,8 @@
         body:
           - /js/jPackageCss/jPackage.css
           - src="/js/jPackage
-- name: 迈捷邮件系统(magicmail)
-  rule:
-    - regexps:
-        body:
-          - /aboutus/magicmail.gif
-- name: 逐浪zoomla
-  rule:
-    - regexps:
-        body:
-          - script src="http://code.zoomla.cn/
-          - NodePage.aspx
-          - /style/images/win8_symbol_140x140.png
+
+
 - name: 金和协同管理平台
   rule:
     - regexps:
@@ -12725,16 +10225,6 @@
     - regexps:
         body:
           - /jdwm/cgi/login.cgi?login
-- name: 金蝶eas
-  rule:
-    - regexps:
-        body:
-          - easSessionId
-- name: 金蝶政务gsis
-  rule:
-    - regexps:
-        body:
-          - /kdgs/script/kdgs.js
 - name: 金龙卡金融化一卡通网站查询子系统
   rule:
     - regexps:
@@ -12746,17 +10236,8 @@
     - regexps:
         body:
           - href="/Writable/ClientImages/mycss.css
-- name: 锐捷 rg-dbs
-  rule:
-    - regexps:
-        body:
-          - /css/impl-security.css
-          - /dbaudit/authenticate
-- name: 锐捷nbr路由器
-  rule:
-    - regexps:
-        body:
-          - free_nbr_login_form.png
+
+
 - name: 锐捷应用控制引擎
   rule:
     - regexps:
@@ -12817,25 +10298,12 @@
     - favicon:
         mmh3:
           - '74935566'
-- name: kibana
-  rule:
-    - favicon:
-        mmh3:
-          - '-267431135'
-          - '-759754862'
-          - '-1200737715'
 - name: polycom
   rule:
     - favicon:
         mmh3:
           - '77044418'
-- name: jenkins
-  rule:
-    - favicon:
-        mmh3:
-          - '81586312'
-        md5:
-          - 23e8c7bd78e8cd826c5a6073b15068b1
+
 - name: servicenow
   rule:
     - favicon:
@@ -13106,11 +10574,7 @@
     - favicon:
         mmh3:
           - '512590457'
-- name: gitlab
-  rule:
-    - favicon:
-        mmh3:
-          - '1278323681'
+
 - name: d-link
   rule:
     - favicon:
@@ -13146,11 +10610,6 @@
     - favicon:
         mmh3:
           - '552597979'
-- name: atlassian – jira
-  rule:
-    - favicon:
-        mmh3:
-          - '552727997'
 - name: canvas lms
   rule:
     - favicon:
@@ -13172,11 +10631,7 @@
     - favicon:
         mmh3:
           - '607846949'
-- name: atlassian
-  rule:
-    - favicon:
-        mmh3:
-          - '743365239'
+
 - name: sonicwall
   rule:
     - favicon:
@@ -13192,11 +10647,6 @@
     - favicon:
         mmh3:
           - '671221099'
-- name: visualsvn server
-  rule:
-    - favicon:
-        mmh3:
-          - '706602230'
 - name: google
   rule:
     - favicon:
@@ -13277,28 +10727,12 @@
     - favicon:
         mmh3:
           - '2019488876'
-- name: jira
-  rule:
-    - favicon:
-        mmh3:
-          - '-1581907337'
-- name: big-ip
-  rule:
-    - favicon:
-        mmh3:
-          - '878647854'
-        md5:
-          - 04d9541338e525258daf47cc844d59f3
+
 - name: lantronix
   rule:
     - favicon:
         mmh3:
           - '882208493'
-- name: zabbix
-  rule:
-    - favicon:
-        mmh3:
-          - '892542951'
 - name: iw
   rule:
     - favicon:
@@ -13389,13 +10823,7 @@
     - favicon:
         mmh3:
           - '988422585'
-- name: hikvision
-  rule:
-    - favicon:
-        mmh3:
-          - '999357577'
-        md5:
-          - 89b932fcc47cf4ca3faadb0cfdef89cf
+
 - name: pfsense
   rule:
     - favicon:
@@ -13696,11 +11124,6 @@
     - favicon:
         mmh3:
           - '1734609466'
-- name: exchange
-  rule:
-    - favicon:
-        mmh3:
-          - '1768726119'
 - name: bintec elmeg
   rule:
     - favicon:
@@ -13777,11 +11200,7 @@
     - favicon:
         mmh3:
           - '1922032523'
-- name: docker
-  rule:
-    - favicon:
-        mmh3:
-          - '-1814887000'
+
 - name: openwrt luci
   rule:
     - favicon:
@@ -14079,11 +11498,7 @@
     - favicon:
         mmh3:
           - '-1616143106'
-- name: roundcube webmail
-  rule:
-    - favicon:
-        mmh3:
-          - '-976235259'
+
 - name: sierra wireless ace manager
   rule:
     - favicon:
@@ -14229,7 +11644,7 @@
     - favicon:
         mmh3:
           - '-2145085239'
-- name: prometheus time series collection and processing server
+- name: prometheus
   rule:
     - favicon:
         mmh3:
@@ -14294,11 +11709,6 @@
     - favicon:
         mmh3:
           - '-1153950306'
-- name: jboss
-  rule:
-    - favicon:
-        mmh3:
-          - '-656811182'
 - name: starface voip software
   rule:
     - favicon:
@@ -14334,11 +11744,7 @@
     - favicon:
         mmh3:
           - '-1124868062'
-- name: f5 big ip
-  rule:
-    - favicon:
-        mmh3:
-          - '-335242539'
+
 - name: qnap nas virtualization station
   rule:
     - favicon:
@@ -14351,11 +11757,7 @@
           - '-1466785234'
 - name: discuz!
   rule:
-    - favicon:
-        mmh3:
-          - '-505448917'
-        md5:
-          - c028c4822428e83a358c60a93ef65381
+
 - name: smartermail
   rule:
     - favicon:
@@ -14436,11 +11838,7 @@
     - favicon:
         mmh3:
           - '-1697334194'
-- name: portainer
-  rule:
-    - favicon:
-        mmh3:
-          - '-1424036600'
+
 - name: nos router
   rule:
     - favicon:
@@ -14522,11 +11920,6 @@
     - favicon:
         mmh3:
           - '-1442789563'
-- name: roundcube webmail
-  rule:
-    - favicon:
-        mmh3:
-          - '-2140379067'
 - name: lupus electronics xt
   rule:
     - favicon:
@@ -14637,11 +12030,7 @@
     - favicon:
         mmh3:
           - '-178685903'
-- name: slack
-  rule:
-    - favicon:
-        mmh3:
-          - '-43161126'
+
 - name: shinobi
   rule:
     - favicon:
@@ -14772,11 +12161,7 @@
     - favicon:
         mmh3:
           - '-625364318'
-- name: graphql
-  rule:
-    - favicon:
-        mmh3:
-          - '-1067420240'
+
 - name: dnn
   rule:
     - favicon:
@@ -14787,34 +12172,3 @@
     - favicon:
         mmh3:
           - '-1249852061'
-- name: afterlogicwebmail系统
-  rule:
-    - favicon:
-        mmh3:
-          - '-194791768'
-- name: 协达oa
-  rule:
-    - favicon:
-        mmh3:
-          - '-1850889691'
-- name: 金山设备
-  rule:
-    - favicon:
-        mmh3:
-          - '-1786140609'
-        md5:
-          - 18d34be498cfd133d32e83a49af461b4
-- name: vue
-  rule:
-    - favicon:
-        mmh3:
-          - '-1237480336'
-        md5:
-          - 67d34b0decfd4d725d1c1f2eeadc4756
-- name: 50cms
-  rule:
-    - favicon:
-        mmh3:
-          - '-299974513'
-        md5:
-          - d1b2495284e172a52abc355c63b25341

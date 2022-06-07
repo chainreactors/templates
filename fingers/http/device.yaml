@@ -1,0 +1,718 @@
+- name: linksys-vpn
+  rule:
+    - regexps:
+        header:
+          - linksys-vpn
+- name: cisco_vpn
+  rule:
+    - regexps:
+        header:
+          - webvpn
+- name: o2security_vpn
+  rule:
+    - regexps:
+        header:
+          - client_param=install_active
+- name: 网神vpn
+  rule:
+    - regexps:
+        body:
+          - admin/js/virtual_keyboard.js
+- name: 网御星云vpn
+  rule:
+    - regexps:
+        body:
+          - /ssl/down/usbkey.exe
+          - /js/leadsec.js
+- name: citrix-web-pn-server
+  rule:
+    - regexps:
+        body:
+          - Citrix Web PN Server
+- name: juniper_vpn
+  rule:
+    - regexps:
+        body:
+          - welcome.cgi?p=logo
+          - /images/logo_juniper_reversed.gif
+- name: 深信服ssl-vpn
+  rule:
+    - regexps:
+        body:
+          - login_psw.csp
+          - EasyConnect
+- name: citrix/netscaler vpn
+  rule:
+    - regexps:
+        body:
+          - /vpn/resources.js
+- name: 奇安信vpn/网康
+  rule:
+    - regexps:
+        body:
+          - new_style/deepblue.css
+          - admin/js/json2.js
+- name: h3c-am8000
+  rule:
+    - regexps:
+        body:
+          - AM8000
+- name: 汉柏安全网关
+  rule:
+    - regexps:
+        body:
+          - OPZOON
+- name: 360企业版
+  rule:
+    - regexps:
+        body:
+          - 360EntWebAdminMD5Secret
+- name: h3c公司产品
+  rule:
+    - regexps:
+        body:
+          - <title>Web managerment Home
+          - .h3c.com
+          - service@h3c.com
+- name: h3c网络设备
+  rule:
+    - regexps:
+        body:
+          - libs/MulPlatAPI.js
+- name: h3c icg 1000
+  rule:
+    - regexps:
+        body:
+          - ICG 1000系统管理
+- name: citrix-metaframe
+  rule:
+    - regexps:
+        body:
+          - window.location="/Citrix/MetaFrame
+- name: h3c er5100
+  rule:
+    - regexps:
+        body:
+          - ER5100系统管理
+- name: cisco_epc3925
+  rule:
+    - regexps:
+        body:
+          - Docsis_system
+- name: cisco asr
+  rule:
+    - regexps:
+        body:
+          - CISCO ASR
+- name: h3c er3200
+  rule:
+    - regexps:
+        body:
+          - ER3200系统管理
+
+- name: huawei_srg2220
+  rule:
+    - regexps:
+        body:
+          - HUAWEI SRG2220
+- name: huawei_router
+  default_port:
+    - '8443'
+  rule:
+    - regexps:
+        body:
+          - UI_component/css/xtheme-black
+      favicon:
+        mmh3:
+          - '-1395400951'
+- name: 深信服edr
+  rule:
+    - regexps:
+        body:
+          - 终端检测响应平台
+          - featureDetect.js
+      favicon:
+        md5:
+          - 0b24d4d5c7d300d50ee1cd96059a9e85
+- name: 华为 netopen
+  rule:
+    - regexps:
+        body:
+          - /netopen/theme/css/inFrame.css
+- name: 360主机卫士
+  rule:
+    - regexps:
+        header:
+          - zhuji.360.cn
+- name: nagios
+  rule:
+    - regexps:
+        header:
+          - Nagios Access
+- name: h3c er8300
+  rule:
+    - regexps:
+        body:
+          - ER8300系统管理
+- name: citrix-access-gateway
+  rule:
+    - regexps:
+        body:
+          - Citrix Access Gateway
+- name: 华为 mcu
+  rule:
+    - regexps:
+        body:
+          - McuR5-min.js
+- name: tp-link wireless wdr3600
+  rule:
+    - regexps:
+        body:
+          - TP-LINK Wireless WDR3600
+
+- name: tp-link wireless wdr3600
+  rule:
+    - regexps:
+        body:
+          - TP-LINK Wireless WDR3600
+- name: 华为_huawei_asg2050
+  rule:
+    - regexps:
+        body:
+          - HUAWEI ASG2050
+- name: 360网站卫士
+  rule:
+    - regexps:
+        body:
+          - 360wzb
+- name: citrix-xenserver
+  rule:
+    - regexps:
+        body:
+          - Citrix Systems, Inc. XenServer
+- name: h3c er2100v2
+  rule:
+    - regexps:
+        body:
+          - ER2100V2系统管理
+- name: zabbix
+  rule:
+    - regexps:
+        header:
+          - zbx_sessionid
+        body:
+          - images/general/zabbix.ico
+          - Zabbix SIA
+      favicon:
+        mmh3:
+          - '892542951'
+- name: 360站长平台
+  rule:
+    - regexps:
+        body:
+          - 360-site-verification
+- name: h3c er3108gw
+  rule:
+    - regexps:
+        body:
+          - ER3108GW系统管理
+- name: h3c er3260g2
+  rule:
+    - regexps:
+        body:
+          - ER3260G2系统管理
+- name: h3c icg1000
+  rule:
+    - regexps:
+        body:
+          - ICG1000系统管理
+- name: cisco-cx20
+  rule:
+    - regexps:
+        body:
+          - CISCO-CX20
+- name: cisco-router
+  rule:
+    - regexps:
+        body:
+          - Cisco Systems Login
+- name: synology-router
+  rule:
+    - regexps:
+        body:
+          - synologyrouter
+- name: h3c er5200
+  rule:
+    - regexps:
+        body:
+          - ER5200系统管理
+- name: h3c er3100
+  rule:
+    - regexps:
+        body:
+          - ER3100系统管理
+- name: h3c-secblade-firewall
+  rule:
+    - regexps:
+        body:
+          - js/MulPlatAPI.js
+- name: 360webfacil_360webmanager
+  rule:
+    - regexps:
+        body:
+          - publico/template/
+- name: citrix_netscaler
+  rule:
+    - regexps:
+        body:
+          - ns_af
+- name: h3c er6300g2
+  rule:
+    - regexps:
+        body:
+          - ER6300G2系统管理
+- name: h3c er3260
+  rule:
+    - regexps:
+        body:
+          - ER3260系统管理
+- name: 华为_huawei_srg3250
+  rule:
+    - regexps:
+        body:
+          - HUAWEI SRG3250
+- name: h3c er3108g
+  rule:
+    - regexps:
+        body:
+          - ER3108G系统管理
+- name: 深信服防火墙类产品
+  rule:
+    - regexps:
+        body:
+          - SANGFOR FW
+- name: citrix-confproxy
+  rule:
+    - regexps:
+        body:
+          - confproxy
+- name: 360网站安全检测
+  rule:
+    - regexps:
+        body:
+          - webscan.360.cn/status/pai/hash
+- name: h3c er5200g2
+  rule:
+    - regexps:
+        body:
+          - ER5200G2系统管理
+- name: 华为（huawei）安全设备
+  rule:
+    - regexps:
+        body:
+          - sweb-lib/resource/
+- name: h3c er6300
+  rule:
+    - regexps:
+        body:
+          - ER6300系统管理
+- name: 华为_huawei_asg2100
+  rule:
+    - regexps:
+        body:
+          - HUAWEI ASG2100
+- name: tp-link 3600 dd-wrt
+  rule:
+    - regexps:
+        body:
+          - TP-Link 3600 DD-WRT
+- name: netgear wndr3600
+  rule:
+    - regexps:
+        body:
+          - NETGEAR WNDR3600
+- name: h3c er2100
+  rule:
+    - regexps:
+        body:
+          - ER2100系统管理
+- name: 绿盟下一代防火墙
+  rule:
+    - regexps:
+        body:
+          - NSFOCUS NF
+- name: citrix-netscaler
+  rule:
+    - regexps:
+        body:
+          - NS-CACHE
+- name: 华为（huawei）secoway设备
+  rule:
+    - regexps:
+        body:
+          - Secoway
+- name: 华为_huawei_srg1220
+  rule:
+    - regexps:
+        body:
+          - HUAWEI SRG1220
+- name: h3c er2100n
+  rule:
+    - regexps:
+        body:
+          - ER2100n系统管理
+- name: h3c er8300g2
+  rule:
+    - regexps:
+        body:
+          - ER8300G2系统管理
+- name: 深信服上网行为管理系统
+  level: 1
+  send_data: /login/img/product_logo.png
+  rule:
+    - regexps:
+        md5:
+          - d8de64b0ca4281380295aa23500267ca
+- name: 锐捷eweb
+  rule:
+    - regexps:
+        body:
+          - pub/ui/rui-min.css
+          - NBR路由器
+- name: 锐捷ap
+  rule:
+    - regexps:
+        body:
+          - common.sea.config.js
+- name: jumpserver
+  rule:
+    - regexps:
+        body:
+          - /static/img/facio.jico
+          - JumpServer</title>
+      favicon:
+        md5:
+          - 20334371817c7368907b5ea52aab2d9e
+- name: 天玥堡垒机
+  rule:
+    - regexps:
+        body:
+          - kaasapp/views/css/assign.css
+- name: 齐治堡垒机
+  rule:
+    - regexps:
+        body:
+          - logo-icon-ico72.png
+          - image/top_logo.ico
+      favicon:
+        md5:
+          - 48ee373f098d8e96e53b7dd778f09ff4
+- name: 安恒云堡垒机
+  rule:
+    - regexps:
+        body:
+          - DBAPPSecurity
+          - 安恒云堡垒机
+- name: 中科网威堡垒机
+  rule:
+    - regexps:
+        body:
+          - zk.appname
+- name: vmware_vrealize
+  rule:
+    - regexps:
+        body:
+          - vRealize
+- name: apache_cas
+  rule:
+    - regexps:
+        body:
+          - Central Authentication Service
+          - execution=
+- name: 金山timon云杀毒
+  rule:
+    - regexps:
+        body:
+          - iepngfix_tilebg.js
+- name: 群晖nas
+  rule:
+    - regexps:
+        body:
+          - DiskStation
+- name: 山石网科系统
+  rule:
+    - regexps:
+        body:
+          - Hillstone
+- name: 金山企业版(猎鹰)
+  rule:
+    - regexps:
+        body:
+          - kaasapp/views/css/assign.css
+- name: 金山企业版
+  rule:
+    - regexps:
+        body:
+          - kaasapp/views/css/assign.css
+- name: 金山edr
+  rule:
+    - regexps:
+        body:
+          - 终端安全系统Web控制台
+- name: 北信源edr
+  rule:
+    - regexps:
+        body:
+          - 北信源网络防病毒系统
+- name: 联软edr
+  rule:
+    - regexps:
+        body:
+          - Resource/views/images/common/logo2.png
+          - 联软IT安全运维管理系统
+- name: 奇安信新天擎edr
+  rule:
+    - regexps:
+        body:
+          - 新天擎
+          - /res/css/tools/index.css
+- name: 奇安信/360天擎edr
+  rule:
+    - regexps:
+        body:
+          - 360天擎终端安全管理系统
+- name: 天融信edr
+  rule:
+    - regexps:
+        body:
+          - 天融信终端威胁防御系统
+- name: 通软edr
+  rule:
+    - regexps:
+        body:
+          - /default/uninstall.html
+          - /Gsc/
+- name: 深信服设备
+  rule:
+    - regexps:
+        body:
+          - sangfor.com.cn
+        header:
+          - SinforHttpd
+      favicon:
+        md5:
+          - 293a3a7763eee19a068ef3dff98a7b8a
+- name: 华为设备
+  rule:
+    - regexps:
+        body:
+          - huawei
+- name: 网御星云设备
+  rule:
+    - regexps:
+        body:
+          - leadsec
+- name: 启明星辰设备
+  rule:
+    - regexps:
+        body:
+          - 北京启明星辰信息安全技术有限公司
+          - venustech
+- name: 奇安信设备
+  rule:
+    - regexps:
+        header:
+          - QiAnXin
+      favicon:
+        md5:
+          - e4e25f45b2a8988cb203743bd64204fe
+        mmh3:
+          - '-1260240149'
+- name: 联软设备
+  rule:
+    - regexps:
+        body:
+          - leagsoft
+      favicon:
+        md5:
+          - da9ce98e9a52ccb605d112c0437bcbc1
+        mmh3:
+          - '-2130980754'
+- name: 网康设备
+  rule:
+    - regexps:
+        body:
+          - netentsec
+          - 网康
+- name: 奇安信网神/360天堤防火墙
+  rule:
+    - regexps:
+        body:
+          - resources/image/logo_header.png
+- name: 网神3600防火墙
+  rule:
+    - regexps:
+        body:
+          - 网神SecGate
+- name: synology_nas
+  rule:
+    - regexps:
+        body:
+          - modules/BackupReplicationApp
+        header:
+          - webman/index.cgi
+- name: teamviewer
+  rule:
+    - regexps:
+        body:
+          - This site is running
+          - TeamViewer
+- name: 天融信 topad
+  rule:
+    - regexps:
+        body:
+          - 天融信 TopAD
+- name: 天融信ads管理平台
+  rule:
+    - regexps:
+        body:
+          - 天融信ADS管理平台
+- name: 天融信topflow
+  rule:
+    - regexps:
+        body:
+          - 天融信TopFlow
+- name: 天融信vpn
+  rule:
+    - regexps:
+        header:
+          - topsecsvportalname
+- name: 天融信web应用安全防护系统
+  rule:
+    - regexps:
+        body:
+          - 天融信Web应用安全防护系统
+- name: 天融信web应用防火墙
+  rule:
+    - regexps:
+        body:
+          - 天融信WEB应用防火墙
+- name: 天融信入侵检测系统topsentry
+  rule:
+    - regexps:
+        body:
+          - 天融信入侵检测系统TopSentry
+- name: 天融信入侵防御系统topidp
+  rule:
+    - regexps:
+        body:
+          - 天融信入侵防御系统TopIDP
+- name: 天融信安全管理系统
+  rule:
+    - regexps:
+        body:
+          - 天融信安全管理
+- name: 天融信异常流量管理与抗拒绝服务系统
+  rule:
+    - regexps:
+        body:
+          - 天融信异常流量管理与抗拒绝服务系统
+- name: 天融信日志收集与分析系统
+  rule:
+    - regexps:
+        body:
+          - 天融信日志收集与分析系统
+- name: 天融信网站监测与自动修复系统
+  rule:
+    - regexps:
+        body:
+          - 天融信网站监测与自动修复系统
+- name: 天融信网络卫士过滤网关
+  rule:
+    - regexps:
+        body:
+          - 天融信网络卫士过滤网关
+- name: 天融信网络审计系统
+  rule:
+    - regexps:
+        body:
+          - onclick="dlg_download()
+- name: 天融信脆弱性扫描与管理系统
+  rule:
+    - regexps:
+        body:
+          - 天融信脆弱性扫描与管理系统
+          - /js/report/horizontalReportPanel.js
+- name: 天融信防火墙
+  rule:
+    - regexps:
+        body:
+          - WEB User Interface
+        header:
+          - TopWebServer
+- name: 安全宝
+  rule:
+    - regexps:
+        header:
+          - X-Powered-By-Anquanbao
+- name: 安全狗
+  rule:
+    - regexps:
+        header:
+          - WAF/2.0
+- name: 海康威视ivms
+  rule:
+    - regexps:
+        body:
+          - g_szCacheTime
+          - iVMS
+- name: hikvision
+  rule:
+    - regexps:
+        body:
+          - doc/page/login.asp
+        header:
+          - DVRDVS-Webs
+      favicon:
+        md5:
+          - 89b932fcc47cf4ca3faadb0cfdef89cf
+        mmh3:
+          - '999357577'
+- name: 科来ras
+  rule:
+    - regexps:
+        body:
+          - 科来网络回溯
+          - 科来软件 版权所有
+          - i18ninit.min.js
+- name: 网神vpn
+  rule:
+    - regexps:
+        body:
+          - admin/js/virtual_keyboard.js
+        header:
+          - host_for_cookie
+- name: 网神防火墙
+  rule:
+    - regexps:
+        body:
+          - secgate 3600
+          - css/lsec/login.css
+- name: 锐捷 rg-dbs
+  rule:
+    - regexps:
+        body:
+          - /css/impl-security.css
+          - /dbaudit/authenticate
+- name: 锐捷nbr路由器
+  rule:
+    - regexps:
+        body:
+          - free_nbr_login_form.png
+- name: 金山设备
+  rule:
+    - favicon:
+        mmh3:
+          - '-1786140609'
+        md5:
+          - 18d34be498cfd133d32e83a49af461b4
