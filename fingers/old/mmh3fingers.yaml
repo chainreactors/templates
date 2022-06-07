@@ -26,7 +26,7 @@
 '129457226': Liferay Portal
 '149371702': Synology DiskStation
 '156312019': Technicolor / Thomson Speedtouch
-'162934974': 天融信
+'162934974': 天融信设备
 '163842882': Cisco Meraki
 '165976831': Vodafone 
 '191654058': Wordpress Under Construction Icon
@@ -127,13 +127,13 @@
 '970132176': 3CX Phone System
 '979634648': StruxureWare
 '980692677': Cake PHP
-'981867722': Atlassian – JIRA
+'981867722': JIRA
 '987967490': Huawei
 '988422585': CapRover
 '998138196': iomega NAS
-'999357577': Hikvision IP Camera
+'999357577': Hikvision
 '1015545776': pfSense
-'1020814938': Ubiquiti – AirOS
+'1020814938': AirOS
 '1037387972': Dlink Router
 '1038500535': D-Link
 '1045696447': Sophos User Portal/VPN Portal
@@ -203,7 +203,7 @@
 '1601194732': Sophos Cyberoam 
 '1611729805': Elastic
 '1627330242': Joomla
-'1629518721': macOS Server 
+'1629518721': macOS
 '1632780968': Université Toulouse 1 Capitole
 '1642701741': Vmware Secure File Transfer
 '1648531157': InfiNet Wireless | WANFleX 
@@ -212,17 +212,17 @@
 '1703788174': D-Link 
 '1726027799': IBM Server
 '1734609466': JustHost
-'1768726119': Outlook Web Application
+'1768726119': Exchange
 '1770799630': bintec elmeg
 '1772087922': ASP.net favicon
 '1782271534': truVision NVR 
 '1786752597': wdCP
-'1822002133': 登录 – AMH
+'1822002133': AMH
 '1835479497': Technicolor Gateway
 '1836828108': OpenProject
 '1838417872': Freebox OS
 '1842351293': TP-LINK 
-'1862132268': Gargoyle Router Management Utility
+'1862132268': Gargoyle Router
 '1876585825': ALIBI NVR
 '1877797890': Eltex 
 '1895360511': VMware Horizon
@@ -238,8 +238,8 @@
 '1973665246': Entrolink
 '1975413433': Sunny WebBox
 '1985721423': WorldClient for Mdaemon
-'1991562061': Niagara Web Server / Tridium
-'1993518473': cPanel Login
+'1991562061': Niagara
+'1993518473': cPanel
 '2006716043': Intelbras SA
 '2019488876': Dahua Storm 
 '2055322029': Realtek
@@ -249,44 +249,44 @@
 '2071993228': Nomadix Access Gateway
 '2072198544': Ferozo Panel
 '2086228042': MobileIron
-'2099342476': PKP  Public Knowledge Project
-'2109473187': Huawei – Claro
+'2099342476': PKP
+'2109473187': Huawei
 '2113497004': WiJungle
 '2121539357': FireEye
 '2124459909': HFS 
 '2127152956': MailWizz
 '2128230701': Chainpoint
-'2141724739': Juniper Device Manager
+'2141724739': Juniper
 '2146763496': Mailcow
 "-235701012": Cnservers LLC
 "-1277814690": LaCie
-"-305179312": Atlassian – Confluence
+"-305179312": Confluence
 "-1255347784": Angular IO 
 "-1275226814": XAMPP
 "-2009722838": React
 "-923088984": OpenStack
-"-1379982221": Atlassian – Bamboo
-"-1642532491": Atlassian – Confluence
+"-1379982221": Bamboo
+"-1642532491": Confluence
 "-1378182799": Archivematica
 "-702384832": TCN
 "-532394952": CX
 "-183163807": Ace
 "-609520537": OpenGeo Suite
 "-1961046099": Dgraph Ratel
-"-1581907337": Atlassian – JIRA
+"-1581907337": JIRA
 "-1203021870": Kubeflow
 "-182423204": netdata dashboard
 "-219752612": FRITZ!Box
-"-697231354": Ubiquiti – AirOS
+"-697231354": AirOS
 "-134375033": Plesk
-"-1395400951": Huawei – ADSL/Router
-"-325082670": LANCOM Systems
+"-1395400951": huawei_Router
+"-325082670": LANCOM
 "-1050786453": Plesk
 "-1346447358": TilginAB 
 "-440644339": Zyxel ZyWALL
 "-1446794564": Ubiquiti Login Portals
 "-297069493": Apache Tomcat
-"-1677255344": UBNT Router UI
+"-1677255344": UBNT Router
 "-359621743": Intelbras Wireless
 "-677167908": Kerio Connect 
 "-271448102": iKuai Networks
@@ -302,7 +302,7 @@
 "-1814887000": Docker
 "-1544605732": Amazon
 "-1010568750": phpMyAdmin
-"-1240222446": Zhejiang Uniview Technologies Co.
+"-1240222446": Zhejiang Uniview Technologies
 "-986678507": ISP Manager
 "-1616143106": AXIS 
 "-976235259": Roundcube Webmail
@@ -336,7 +336,7 @@
 "-127886975": Metasploit
 "-1235192469": Metasploit
 "-1810847295": Sangfor
-"-291579889": 'Websockets test page '
+"-291579889": Websockets test page
 "-986816620": OpenRG
 "-299287097": Cisco Router
 "-1926484046": Sangfor
@@ -364,7 +364,7 @@
 "-895963602": Jupyter Notebook
 "-972810761": HostMonster - Web hosting
 "-1702393021": mofinetwork
-"-374235895": Ossia  | Webcam/IP Camera
+"-374235895": Ossia Camera
 "-1153950306": Dell
 "-484708885": Zyxel ZyWALL
 "-656811182": Jboss
@@ -495,9 +495,9 @@
 "-1249852061": Microsoft Outlook
 "-194791768": AfterLogicWebMail系统
 "-1850889691": 协达OA
-"-1786140609": 金山
-"-2130980754": 联软
-"-1260240149": 奇安信
+"-1786140609": 金山设备
+"-2130980754": 联软设备
+"-1260240149": 奇安信设备
 "37052027": weiphp
 "1355901755": pcfcms
 "-47597126": dedecms

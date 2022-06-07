@@ -4,8 +4,7 @@
     - "8080"
     - "9443"
   rule:
-    default:
-      favicon:
+    - favicon:
         md5:
         - 11234
         mmh3:
