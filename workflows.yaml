@@ -101,6 +101,21 @@
   no-scan: true
 - name: smart
   ports: top2,win,db
+  mod: s
+  ping: true
+  arp: true
+- name: s
+  ports: top2,win,db
+  mod: s
+  ping: true
+  arp: true
+- name: supersmart
+  ports: top2,win,db
+  mod: ss
+  ping: true
+  arp: true
+- name: ss
+  ports: top2,win,db
   mod: ss
   ping: true
   arp: true
