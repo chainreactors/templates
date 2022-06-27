@@ -10349,7 +10349,7 @@
     - favicon:
         mmh3:
           - '104189364'
-- name: springboot-actuator
+- name: springboot
   rule:
     - favicon:
         mmh3:

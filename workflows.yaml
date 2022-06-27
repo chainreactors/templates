@@ -96,6 +96,8 @@
   no-scan: true
 - name: smartC
   mod: sc
+  tags:
+    - sc
 - name: C
   mod: s
   no-scan: true
@@ -104,21 +106,15 @@
   mod: s
   ping: true
   arp: true
-- name: s
-  ports: top2,win,db
-  mod: s
-  ping: true
-  arp: true
+  tags:
+    - s
 - name: supersmart
   ports: top2,win,db
   mod: ss
   ping: true
   arp: true
-- name: ss
-  ports: top2,win,db
-  mod: ss
-  ping: true
-  arp: true
+  tags:
+    - ss
 - name: smartip
   ports: icmp
   mod: ss
