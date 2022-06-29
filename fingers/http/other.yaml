@@ -2777,7 +2777,6 @@
     - regexps:
         body:
           - EasyTrace
-          - login_page
 - name: easywebcms
   rule:
     - regexps:
@@ -10859,11 +10858,7 @@
     - favicon:
         mmh3:
           - '-1452159623'
-- name: rabbitmq
-  rule:
-    - favicon:
-        mmh3:
-          - '1064742722'
+
 - name: untangle
   rule:
     - favicon:

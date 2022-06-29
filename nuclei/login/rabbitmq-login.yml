@@ -1,0 +1,25 @@
+id: rabbitmq-login
+info:
+  author: pdteam
+  name: rabbitmq-default-password
+  severity: high
+  tags: rabbitmq-manager
+requests:
+  - raw:
+      - |
+        GET /api/whoami HTTP/1.1
+        Host: 192.168.6.218:15672
+        authorization: Basic {{auth}}
+        content-type: application/json
+    attack: sniper
+    matchers:
+      - status:
+          - 200
+        type: status
+      - type: word
+        words:
+          - name
+    matchers-condition: and
+    payloads:
+      auth:
+        - Z3Vlc3Q6Z3Vlc3Q=
