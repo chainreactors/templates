@@ -21,11 +21,11 @@
       send_data: /ueditor
       level: 1
 - name: sourcemap
-  vuln: sourcemap-leak
   rule:
     - regexps:
         vuln:
           - .js.map
+      vuln: sourcemap-leak
 - name: webpack
   rule:
     - regexps:
@@ -88,13 +88,13 @@
         body:
           - libs.useso.com
 - name: iis
-  info: Directory traversal
   rule:
     - regexps:
         body:
           - Bad Request (Invalid Hostname)
         vuln:
           - '- /</title>'
+      info: Directory traversal
       favicon:
         md5:
           - 825af13371930eeb2f85cf075fa25b68
@@ -137,7 +137,6 @@
         body:
           - Faithfully yours, frp
 - name: tomcat
-  vuln: Directory traversal
   rule:
     - regexps:
         vuln:
@@ -150,12 +149,13 @@
       favicon:
         md5:
           - 4644f2d45601037b8423d45e13194c93
+      info: tomcat Directory traversal
 - name: apache
-  vuln: Directory traversal
   rule:
     - regexps:
         vuln:
           - Index of /
+      info: Directory traversal
 - name: .net
   rule:
     - regexps:

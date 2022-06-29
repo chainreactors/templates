@@ -5666,11 +5666,6 @@
     - regexps:
         body:
           - Linksys SPA Configuration
-- name: linuxmint
-  rule:
-    - regexps:
-        header:
-          - mint
 - name: liquidgis
   rule:
     - regexps:

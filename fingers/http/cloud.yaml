@@ -120,11 +120,11 @@
 - name: hadoop
   default_port:
     - '8088'
-  vuln: hadoop_yarn_unauthorized
   rule:
     - regexps:
         vuln:
           - "<title>\n    All Applications"
+      vuln: hadoop_yarn_unauthorized
 - name: grafana
   default_port:
     - '3000'
