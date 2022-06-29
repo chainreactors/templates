@@ -253,3 +253,13 @@
     - favicon:
         mmh3:
           - '743365239'
+- name: ansible
+  rule:
+    - favicon:
+        mmh3:
+          - '-913023263'
+          - '1735248917'
+          - '506177988'
+      regexps:
+        body:
+          -

@@ -367,12 +367,12 @@
         body:
           - ER8300G2系统管理
 - name: 深信服上网行为管理系统
-  level: 1
-  send_data: /login/img/product_logo.png
   rule:
     - regexps:
         md5:
           - d8de64b0ca4281380295aa23500267ca
+      level: 1
+      send_data: /login/img/product_logo.png
 - name: 锐捷eweb
   rule:
     - regexps:

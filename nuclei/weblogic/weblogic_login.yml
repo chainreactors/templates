@@ -57,3 +57,4 @@ requests:
       - type: status
         status:
           - 302
+          - 303

@@ -230,13 +230,13 @@
         body:
           - Kingdee.BOS.XPF.App.xap
 - name: finereport
-  level: 1
-  send_data: /ReportServer
-  info: composer leak
   rule:
     - regexps:
         vuln:
           - FineReport
+      level: 1
+      send_data: /ReportServer
+      info: composer leak
 - name: ezoffice
   rule:
     - regexps:

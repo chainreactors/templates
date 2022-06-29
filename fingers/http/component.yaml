@@ -14,12 +14,12 @@
         body:
           - ueditor.all
 - name: ueditor
-  level: 1
-  send_data: /ueditor
   rule:
     - regexps:
         body:
           - ueditor.config.js
+      send_data: /ueditor
+      level: 1
 - name: sourcemap
   vuln: sourcemap-leak
   rule:
@@ -32,52 +32,51 @@
         body:
           - chunk-vendors
 - name: readme.md
-  level: 1
-  send_data: /README.md
-  info: README leak
   rule:
     - regexps:
         vuln:
           - readme
           - '###'
-
+      level: 1
+      send_data: /README.md
+      info: README leak
 - name: swagger
-  level: 1
-  send_data: /swagger-ui.html
-  info: swagger leak
   rule:
     - regexps:
         vuln:
           - Swagger UI
+      level: 1
+      send_data: /swagger-ui.html
+      info: swagger leak
 - name: swagger-ui
   rule:
     - regexps:
         body:
           - /swagger
 - name: druid
-  level: 1
-  send_data: /druid/index.html
-  info: druid leak
   rule:
     - regexps:
         vuln:
           - Druid Stat Index
+      level: 1
+      send_data: /druid/index.html
+      info: druid leak
 - name: composer.json
-  level: 1
-  send_data: /composer.json
-  info: composer leak
   rule:
     - regexps:
         vuln:
           - '"require": '
+      level: 1
+      send_data: /composer.json
+      info: composer leak
 - name: license
-  level: 1
-  send_data: /LICENSE
-  info: LICENSE leak
   rule:
     - regexps:
         vuln:
           - copyleft
+      level: 1
+      send_data: /LICENSE
+      info: LICENSE leak
 - name: thymeleaf
   rule:
     - regexps:
@@ -107,11 +106,12 @@
           - No message available
           - '{"timestamp":'
 - name: springcloud-function
-  send_data: /functionRouter
   rule:
     - regexps:
         body:
           - '"error":"Internal Server Error"'
+      send_data: /functionRouter
+      level: 1
 - name: spring
   rule:
     - regexps:
