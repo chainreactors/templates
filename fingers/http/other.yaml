@@ -10615,7 +10615,7 @@
         mmh3:
           - '-127886975'
           - '-1235192469'
-- name: palo alto login portal
+- name: paloalto
   rule:
     - favicon:
         mmh3:

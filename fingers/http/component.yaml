@@ -202,11 +202,6 @@
     - regexps:
         header:
           - Tengine
-- name: __viewstate
-  rule:
-    - regexps:
-        body:
-          - __VIEWSTATE
 - name: vue
   rule:
     - favicon:
