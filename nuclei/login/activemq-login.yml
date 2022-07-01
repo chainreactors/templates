@@ -1,16 +1,15 @@
-id: rabbitmq-login
+id: activemq-login
 info:
   author: pdteam
-  name: rabbitmq-default-password
+  name: activemq-default-password
   severity: high
-  tags: rabbitmq-manager
+  tags: activemq-manager
 requests:
   - raw:
       - |
-        GET /api/whoami HTTP/1.1
+        GET /admin/ HTTP/1.1
         Host: {{Host}}
-        authorization: Basic {{auth}}
-        content-type: application/json
+        Authorization: Basic {{auth}}
     attack: sniper
     matchers:
       - status:
@@ -18,8 +17,8 @@ requests:
         type: status
       - type: word
         words:
-          - name
+          - ActiveMQ Console
     matchers-condition: and
     payloads:
       auth:
-        - Z3Vlc3Q6Z3Vlc3Q=
+        - YWRtaW46YWRtaW4=

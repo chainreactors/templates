@@ -271,3 +271,13 @@
       regexps:
         body:
           - RabbitMQ Management
+- name: activemq-manager
+  rule:
+    - favicon:
+        mmh3:
+          - '1766699363'
+        md5:
+          - 05664fb0c7afcd6436179437e31f3aa6
+      regexps:
+        body:
+          - Apache ActiveMQ
