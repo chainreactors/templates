@@ -1,0 +1,22 @@
+id: gitlab-public-register
+
+info:
+  name: GitLab public register
+  author: pdteam
+  severity: info
+  tags: gitlab
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/users/sign_in"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - register
+
+      - type: status
+        status:
+          - 200

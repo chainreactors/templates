@@ -1,0 +1,23 @@
+id: gitlab-public-repos
+
+info:
+  name: GitLab public repositories
+  author: ldionmarcil
+  severity: info
+  tags: gitlab
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/api/v4/projects"
+
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        part: body
+        words:
+          - "http_url_to_repo"
