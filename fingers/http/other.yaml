@@ -3578,12 +3578,6 @@
         body:
           - Powered by <a href="http://geonode.org
           - href="/catalogue/opensearch" title="GeoNode Search
-- name: geoserver
-  rule:
-    - regexps:
-        body:
-          - /org.geoserver.web.GeoServerBasePage/
-          - class="geoserver lebeg
 - name: geotrust_cert
   rule:
     - regexps:
@@ -4808,11 +4802,7 @@
           - content="Jcow
           - content="Powered by Jcow
           - end jcow_application_box
-- name: jetty
-  rule:
-    - regexps:
-        header:
-          - 'Server: Jetty'
+
 - name: jeus
   rule:
     - regexps:
@@ -4876,11 +4866,6 @@
     - regexps:
         header:
           - JSF
-- name: jsp 2.x
-  rule:
-    - regexps:
-        header:
-          - JSP/2.2
 - name: jtbc(cms)
   rule:
     - regexps:
@@ -11579,11 +11564,6 @@
     - favicon:
         mmh3:
           - '-646322113'
-- name: jetty 404
-  rule:
-    - favicon:
-        mmh3:
-          - '-629047854'
 - name: luma surveillance
   rule:
     - favicon:
