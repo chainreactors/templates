@@ -297,7 +297,7 @@
   rule:
     - regexps:
         body:
-          - /seeyon/USER-DATA/IMAGES/LOGIN/login.gif
+          - /seeyon/
           - 用友致远A
           - /yyoa/
       favicon:

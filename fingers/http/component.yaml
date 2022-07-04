@@ -25,7 +25,7 @@
     - regexps:
         vuln:
           - .js.map
-      vuln: sourcemap-leak
+      info: sourcemap-leak
 - name: webpack
   rule:
     - regexps:

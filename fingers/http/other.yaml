@@ -1928,16 +1928,6 @@
     - regexps:
         body:
           - cnzz.com/stat.php?id=
-- name: codeigniter-php-framework
-  rule:
-    - regexps:
-        header:
-          - ci_session=
-- name: codeigniter
-  rule:
-    - regexps:
-        header:
-          - ci_session
 - name: codesys-web-visualization
   rule:
     - regexps:

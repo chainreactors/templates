@@ -506,3 +506,10 @@
     - "20880"
   type:
     - rce
+- name: 深信服ssl-vpn
+  ports:
+    - '9990'
+    - "4430"
+    - "8870"
+  type:
+    - rce
