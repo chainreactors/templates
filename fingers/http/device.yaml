@@ -398,6 +398,12 @@
     - regexps:
         body:
           - kaasapp/views/css/assign.css
+- name: 网御堡垒机
+  rule:
+    - regexps:
+        body:
+          - 网御运维安全网关
+          - ops/Login
 - name: 齐治堡垒机
   rule:
     - regexps:
@@ -512,6 +518,7 @@
     - regexps:
         body:
           - leadsec
+          - 网御
 - name: 启明星辰设备
   rule:
     - regexps:

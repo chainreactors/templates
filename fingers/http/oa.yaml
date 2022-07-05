@@ -45,11 +45,6 @@
     - regexps:
         body:
           - HTVOS.js
-- name: 万户ezoffice
-  rule:
-    - regexps:
-        header:
-          - LocLan
 - name: 万户网络
   rule:
     - regexps:
@@ -133,7 +128,7 @@
     - regexps:
         body:
           - /System/Login/Login.asp?
-- name: '用友 u8-cloud '
+- name: 用友 u8-cloud
   rule:
     - regexps:
         body:
@@ -200,6 +195,7 @@
         body:
           - /page/manage/css/main.css
           - weaver,e-mobile
+          - 移动管理平台消息服务
       favicon:
         md5:
           - f51746305f07a64eafa401adab364ad9
@@ -240,12 +236,13 @@
 - name: ezoffice
   rule:
     - regexps:
+        header:
+          - LocLan
         body:
-          - Wanhu ezOFFICE
-          - EZOFFICEUSERNAME
+          - ezOFFICE
           - 万户OA
           - whirRootPath
-          - /defaultroot/js/cookie.js
+          - /defaultroot
 - name: oa企业智能办公自动化系统
   rule:
     - regexps:
@@ -359,11 +356,6 @@
         body:
           - URP 综合教务系统
           - 北京清元优软科技有限公司
-- name: 万户ezoffice
-  rule:
-    - regexps:
-        header:
-          - LocLan
 - name: 万户网络
   rule:
     - regexps:
@@ -461,3 +453,35 @@
     - regexps:
         body:
           - GeoServer
+- name: any800
+  rule:
+    - regexps:
+        body:
+          - any800
+- name: 丽升阅卷系统
+  rule:
+    - regexps:
+        body:
+          - LeaScentPaper.exe
+- name: odoo CRM
+  rule:
+    - regexps:
+        body:
+          - odoo
+      favicon:
+        md5:
+          - ec38664cbd12ffda74d04541be9956ad
+        mmh3:
+          - '1393281917'
+- name: 华宇TAS
+  rule:
+    - regexps:
+        header:
+          - "Server: Tas"
+        body:
+          - /tas-console
+      favicon:
+        md5:
+          - a839ceee65e663c832c4c4dacf317cba
+        mmh3:
+          - '-721107101'
