@@ -93,8 +93,11 @@
     - '9200'
   rule:
     - regexps:
+        vuln:
+          - You Know, for Search
         body:
           - '"cluster_name" : "elasticsearch"'
+      vuln: elasticsearch_unauth
 - name: kibana
   default_port:
     - '9200'

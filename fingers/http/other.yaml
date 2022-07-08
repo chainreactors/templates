@@ -2887,12 +2887,6 @@
           - /java/ektron.js
         header:
           - EktGUID=
-- name: elasticsearch
-  rule:
-    - regexps:
-        body:
-          - build_hash
-          - You Know, for Search
 - name: eleanorcms
   rule:
     - regexps:
