@@ -723,3 +723,19 @@
           - '-1786140609'
         md5:
           - 18d34be498cfd133d32e83a49af461b4
+- name: 网宿
+  rule:
+    - regexps:
+        header:
+          - WS CDN Server
+- name: 网御waf
+  rule:
+    - regexps:
+        body:
+          - <div id="divLogin">
+          - 网御WAF
+- name: 网御上网行为管理系统
+  rule:
+    - regexps:
+        body:
+          - Leadsec ACM

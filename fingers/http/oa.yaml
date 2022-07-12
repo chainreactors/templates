@@ -485,3 +485,13 @@
           - a839ceee65e663c832c4c4dacf317cba
         mmh3:
           - '-721107101'
+- name: 金和协同管理平台
+  rule:
+    - regexps:
+        body:
+          - 金和协同管理平台
+- name: 金山kinggate
+  rule:
+    - regexps:
+        body:
+          - /src/system/login.php

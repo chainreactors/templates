@@ -7233,11 +7233,6 @@
     - regexps:
         header:
           - OpenSolaris
-- name: openssl
-  rule:
-    - regexps:
-        header:
-          - OpenSSL
 - name: opensuse
   rule:
     - regexps:
@@ -7293,16 +7288,6 @@
         body:
           - content="OURPHP
           - Powered by ourphp
-- name: p3p
-  rule:
-    - regexps:
-        header:
-          - P3p
-- name: p3p_enabled
-  rule:
-    - regexps:
-        header:
-          - 'P3p: CP'
 - name: pageadmin
   rule:
     - regexps:
@@ -7475,7 +7460,7 @@
     - regexps:
         body:
           - Puppet Node Manager
-- name: python
+- name: Django
   rule:
     - regexps:
         header:
@@ -7830,12 +7815,6 @@
     - regexps:
         body:
           - Sophos Web Appliance
-- name: spammark邮件信息安全网关
-  rule:
-    - regexps:
-        body:
-          - Spammark邮件信息安全网关
-          - /cgi-bin/spammark?empty=1
 - name: spark_master
   rule:
     - regexps:
@@ -10101,35 +10080,8 @@
           - Acenter
           - /js/roomHeight.js
           - meetingShow!show.action
-- name: 网宿
-  rule:
-    - regexps:
-        header:
-          - WS CDN Server
-- name: 网御waf
-  rule:
-    - regexps:
-        body:
-          - <div id="divLogin">
-          - 网御WAF
-- name: 网御上网行为管理系统
-  rule:
-    - regexps:
-        body:
-          - Leadsec ACM
-- name: 网易企业邮箱
-  rule:
-    - regexps:
-        body:
-          - frmvalidator
-          - 邮箱用户登录
 
 
-- name: 腾讯企业邮箱
-  rule:
-    - regexps:
-        body:
-          - /cgi-bin/getinvestigate?flowid=
 - name: 腾讯移动分析
   rule:
     - regexps:
@@ -10172,22 +10124,6 @@
           - /js/jPackageCss/jPackage.css
           - src="/js/jPackage
 
-
-- name: 金和协同管理平台
-  rule:
-    - regexps:
-        body:
-          - 金和协同管理平台
-- name: 金山kinggate
-  rule:
-    - regexps:
-        body:
-          - /src/system/login.php
-- name: 金笛邮件系统
-  rule:
-    - regexps:
-        body:
-          - /jdwm/cgi/login.cgi?login
 - name: 金龙卡金融化一卡通网站查询子系统
   rule:
     - regexps:

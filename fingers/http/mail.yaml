@@ -207,5 +207,27 @@
         body:
           - /systemfunction.pack.js
           - lo_computername
+- name: spammark邮件信息安全网关
+  rule:
+    - regexps:
+        body:
+          - Spammark邮件信息安全网关
+          - /cgi-bin/spammark?empty=1
+- name: 金笛邮件系统
+  rule:
+    - regexps:
+        body:
+          - /jdwm/cgi/login.cgi?login
+
+- name: 网易企业邮箱
+  rule:
+    - regexps:
+        body:
+          - frmvalidator
 
 
+- name: 腾讯企业邮箱
+  rule:
+    - regexps:
+        body:
+          - /cgi-bin/getinvestigate?flowid=
