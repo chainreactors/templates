@@ -290,10 +290,5 @@
         body:
           - Nacos
           - console-ui/public
-      favicon:
-        mmh3:
-          - '116323821'
-        md5:
-          - 0488faca4c19046b94d07c3ee83cf9d6
       send_data: /nacos
 
