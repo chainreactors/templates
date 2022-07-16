@@ -235,3 +235,8 @@
           - bearer
         body:
           - bearer
+- name: jeecg
+  rule:
+    - regexps:
+        body:
+          - jeecg
