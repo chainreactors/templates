@@ -27,6 +27,7 @@
           - lnmp.gif
 
 - name: 微擎
+  focus: true
   rule:
     - regexps:
         body:
@@ -70,7 +71,6 @@
     - regexps:
         vuln:
           - EOS管理控制台
-      level: 1
       info: 普元EOS_console_leak
       send_data: /eosmgr/eos/EventDispatcher
 - name: jboss
@@ -104,7 +104,6 @@
     - regexps:
         vuln:
           - 'WebLogic Server Version: (.*?)<'
-      level: 1
       send_data: /console/login/LoginForm.jsp
       info: weblogic_console_leak
 - name: websphere

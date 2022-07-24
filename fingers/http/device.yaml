@@ -363,7 +363,6 @@
     - regexps:
         md5:
           - d8de64b0ca4281380295aa23500267ca
-      level: 1
       send_data: /login/img/product_logo.png
 - name: 锐捷eweb
   focus: true

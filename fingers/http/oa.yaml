@@ -241,7 +241,6 @@
     - regexps:
         vuln:
           - FineReport
-      level: 1
       send_data: /ReportServer
       info: composer leak
 - name: 万户oa
