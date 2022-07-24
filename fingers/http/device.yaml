@@ -36,6 +36,7 @@
           - welcome.cgi?p=logo
           - /images/logo_juniper_reversed.gif
 - name: 深信服ssl-vpn
+  focus: true
   rule:
     - regexps:
         body:
@@ -47,6 +48,7 @@
         body:
           - /vpn/resources.js
 - name: 奇安信vpn/网康
+  focus: true
   rule:
     - regexps:
         body:
@@ -126,6 +128,7 @@
         mmh3:
           - '-1395400951'
 - name: 深信服edr
+  focus: true
   rule:
     - regexps:
         body:
@@ -195,17 +198,6 @@
     - regexps:
         body:
           - ER2100V2系统管理
-- name: zabbix
-  rule:
-    - regexps:
-        header:
-          - zbx_sessionid
-        body:
-          - images/general/zabbix.ico
-          - Zabbix SIA
-      favicon:
-        mmh3:
-          - '892542951'
 - name: 360站长平台
   rule:
     - regexps:
@@ -374,17 +366,20 @@
       level: 1
       send_data: /login/img/product_logo.png
 - name: 锐捷eweb
+  focus: true
   rule:
     - regexps:
         body:
           - pub/ui/rui-min.css
           - NBR路由器
 - name: 锐捷ap
+  focus: true
   rule:
     - regexps:
         body:
           - common.sea.config.js
 - name: jumpserver
+  focus: true
   rule:
     - regexps:
         body:
@@ -394,17 +389,20 @@
         md5:
           - 20334371817c7368907b5ea52aab2d9e
 - name: 天玥堡垒机
+  focus: true
   rule:
     - regexps:
         body:
           - kaasapp/views/css/assign.css
 - name: 网御堡垒机
+  focus: true
   rule:
     - regexps:
         body:
           - 网御运维安全网关
           - ops/Login
 - name: 齐治堡垒机
+  focus: true
   rule:
     - regexps:
         body:
@@ -414,12 +412,14 @@
         md5:
           - 48ee373f098d8e96e53b7dd778f09ff4
 - name: 安恒云堡垒机
+  focus: true
   rule:
     - regexps:
         body:
           - DBAPPSecurity
           - 安恒云堡垒机
 - name: 中科网威堡垒机
+  focus: true
   rule:
     - regexps:
         body:
@@ -430,6 +430,7 @@
         body:
           - vRealize
 - name: apache_cas
+  focus: true
   rule:
     - regexps:
         body:
@@ -451,16 +452,13 @@
         body:
           - Hillstone
 - name: 金山企业版(猎鹰)
-  rule:
-    - regexps:
-        body:
-          - kaasapp/views/css/assign.css
-- name: 金山企业版
+  focus: true
   rule:
     - regexps:
         body:
           - kaasapp/views/css/assign.css
 - name: 金山edr
+  focus: true
   rule:
     - regexps:
         body:
@@ -471,28 +469,33 @@
         body:
           - 北信源网络防病毒系统
 - name: 联软edr
+  focus: true
   rule:
     - regexps:
         body:
           - Resource/views/images/common/logo2.png
           - 联软IT安全运维管理系统
 - name: 奇安信新天擎edr
+  focus: true
   rule:
     - regexps:
         body:
           - 新天擎
           - /res/css/tools/index.css
 - name: 奇安信/360天擎edr
+  focus: true
   rule:
     - regexps:
         body:
           - 360天擎终端安全管理系统
 - name: 天融信edr
+  focus: true
   rule:
     - regexps:
         body:
           - 天融信终端威胁防御系统
 - name: 通软edr
+  focus: true
   rule:
     - regexps:
         body:
@@ -590,6 +593,7 @@
         body:
           - 天融信TopFlow
 - name: 天融信vpn
+  focus: true
   rule:
     - regexps:
         header:
@@ -668,12 +672,14 @@
         header:
           - WAF/2.0
 - name: 海康威视ivms
+  focus: true
   rule:
     - regexps:
         body:
           - g_szCacheTime
           - iVMS
 - name: hikvision
+  focus: true
   rule:
     - regexps:
         body:
@@ -693,6 +699,7 @@
           - 科来软件 版权所有
           - i18ninit.min.js
 - name: 网神vpn
+  focus: true
   rule:
     - regexps:
         body:
@@ -711,11 +718,6 @@
         body:
           - /css/impl-security.css
           - /dbaudit/authenticate
-- name: 锐捷nbr路由器
-  rule:
-    - regexps:
-        body:
-          - free_nbr_login_form.png
 - name: 金山设备
   rule:
     - favicon:
