@@ -515,6 +515,12 @@
     - regexps:
         body:
           - huawei
+- name: 天融信设备
+  rule:
+    - regexps:
+        body:
+          - topsec
+          - 天融信
 - name: 网御星云设备
   rule:
     - regexps:
@@ -532,6 +538,8 @@
     - regexps:
         header:
           - QiAnXin
+        body:
+          - 网神
       favicon:
         md5:
           - e4e25f45b2a8988cb203743bd64204fe
@@ -558,6 +566,16 @@
     - regexps:
         body:
           - resources/image/logo_header.png
+- name: 奇安信secfox
+  rule:
+    - regexps:
+        body:
+          - secfox
+- name: 奇安信secfox
+  rule:
+    - regexps:
+        body:
+          - secfox
 - name: 网神3600防火墙
   rule:
     - regexps:
@@ -622,26 +640,6 @@
     - regexps:
         body:
           - 天融信安全管理
-- name: 天融信异常流量管理与抗拒绝服务系统
-  rule:
-    - regexps:
-        body:
-          - 天融信异常流量管理与抗拒绝服务系统
-- name: 天融信日志收集与分析系统
-  rule:
-    - regexps:
-        body:
-          - 天融信日志收集与分析系统
-- name: 天融信网站监测与自动修复系统
-  rule:
-    - regexps:
-        body:
-          - 天融信网站监测与自动修复系统
-- name: 天融信网络卫士过滤网关
-  rule:
-    - regexps:
-        body:
-          - 天融信网络卫士过滤网关
 - name: 天融信网络审计系统
   rule:
     - regexps:
@@ -651,7 +649,6 @@
   rule:
     - regexps:
         body:
-          - 天融信脆弱性扫描与管理系统
           - /js/report/horizontalReportPanel.js
 - name: 天融信防火墙
   rule:

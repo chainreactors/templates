@@ -165,7 +165,7 @@
   rule:
     - regexps:
         body:
-          - content="Visual Basic .NET 7.1
+          - content="Visual Basic
 - name: ntlm认证
   rule:
     - regexps:
