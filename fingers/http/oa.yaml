@@ -215,11 +215,6 @@
         body:
           - 畅捷通 T+
           - tp.control.css.ashx
-- name: 金蝶eas
-  rule:
-    - regexps:
-        body:
-          - easSessionId
 - name: 金蝶云星空
   rule:
     - regexps:
@@ -485,13 +480,13 @@
           - a839ceee65e663c832c4c4dacf317cba
         mmh3:
           - '-721107101'
-- name: 金和协同管理平台
-  rule:
-    - regexps:
-        body:
-          - 金和协同管理平台
 - name: 金山kinggate
   rule:
     - regexps:
         body:
           - /src/system/login.php
+- name: 信呼oa
+  rule:
+      favicon:
+        md5:
+          - 975db4c825c16dde9ae6ba5da6ff8d46

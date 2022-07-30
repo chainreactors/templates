@@ -168,11 +168,6 @@
     - regexps:
         body:
           - 74cms
-- name: 金蝶中间件
-  rule:
-    - regexps:
-        body:
-          - -Error report
 - name: 泽元zcms
   rule:
     - regexps:
@@ -632,6 +627,11 @@
           - '-299974513'
         md5:
           - d1b2495284e172a52abc355c63b25341
+- name: 拓尔思was
+  rule:
+    - regexps:
+        body:
+          - yuysoft.com
 
 
 

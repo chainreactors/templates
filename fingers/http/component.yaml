@@ -98,7 +98,16 @@
       favicon:
         md5:
           - 825af13371930eeb2f85cf075fa25b68
+- name: struts2
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - .action
+          - .do
 - name: springboot
+  focus: true
+
   rule:
     - regexps:
         body:
@@ -106,6 +115,7 @@
           - No message available
           - '{"timestamp":'
 - name: springcloud-function
+  focus: true
   rule:
     - regexps:
         body:
@@ -113,6 +123,7 @@
       send_data: /functionRouter
       level: 1
 - name: spring
+  focus: true
   rule:
     - regexps:
         header:
@@ -235,3 +246,18 @@
           - bearer
         body:
           - bearer
+- name: 金蝶中间件
+  rule:
+    - regexps:
+        body:
+          - -Error report
+- name: 金蝶eas
+  rule:
+    - regexps:
+        body:
+          - easSessionId
+- name: 金蝶apusic
+  rule:
+    - regexps:
+        header:
+          - Apusic
