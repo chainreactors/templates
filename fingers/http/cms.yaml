@@ -27,6 +27,7 @@
           - lnmp.gif
 
 - name: 微擎
+  focus: true
   rule:
     - regexps:
         body:
@@ -40,8 +41,6 @@
         body:
           - 分布式任务调度平台XXL-JOB
 
-
-
 - name: discuz
   rule:
     - regexps:
@@ -52,12 +51,6 @@
           - '-505448917'
         md5:
           - c028c4822428e83a358c60a93ef65381
-- name: typecho
-  rule:
-    - regexps:
-        body:
-          - Typecho</a>
-
 - name: phpmyadmin
   rule:
     - regexps:
@@ -73,14 +66,15 @@
           - '-1010568750'
           - '-476231906'
 - name: 普元eos_console
+  focus: true
   rule:
     - regexps:
         vuln:
           - EOS管理控制台
-      level: 1
       info: 普元EOS_console_leak
       send_data: /eosmgr/eos/EventDispatcher
 - name: jboss
+  focus: true
   rule:
     - regexps:
         body:
@@ -94,6 +88,7 @@
         mmh3:
           - '-656811182'
 - name: weblogic
+  focus: true
   rule:
     - regexps:
         body:
@@ -104,14 +99,15 @@
           - WebLogic
           - ADMINCONSOLESESSION
 - name: weblogic-console
+  focus: true
   rule:
     - regexps:
         vuln:
           - 'WebLogic Server Version: (.*?)<'
-      level: 1
       send_data: /console/login/LoginForm.jsp
       info: weblogic_console_leak
 - name: websphere
+  focus: true
   rule:
     - regexps:
         body:
@@ -119,6 +115,7 @@
           - ibm.ws.webcontainer.servlet
           - IBM WebSphere Application Server
 - name: 普元eos
+  focus: true
   rule:
     - regexps:
         body:
@@ -128,6 +125,7 @@
         header:
           - eos_style_cookie
 - name: 普元coframe
+  focus: true
   rule:
     - regexps:
         body:
@@ -143,6 +141,7 @@
         body:
           - thinkcmf
 - name: thinkphp
+  focus: true
   rule:
     - regexps:
         header:
@@ -235,6 +234,7 @@
         body:
           - FineCMS
 - name: 向日葵
+  focus: true
   rule:
     - regexps:
         body:
@@ -254,11 +254,6 @@
     - regexps:
         body:
           - /cms/cmsadmin/infopub
-- name: phpok
-  rule:
-    - regexps:
-        body:
-          - phpok
 - name: phpmywind
   rule:
     - regexps:
@@ -345,6 +340,7 @@
         body:
           - dreamer-cms
 - name: tongweb
+  focus: true
   rule:
     - regexps:
         header:
@@ -359,7 +355,8 @@
     - regexps:
         body:
           - /r/cms
-- name: epoint新点软件cms
+- name:  新点cms
+  focus: true
   rule:
     - regexps:
         header:
@@ -611,6 +608,7 @@
           - Powered by SeaCms
           - content="seacms
 - name: 美洽在线客服
+  focus: true
   rule:
     - regexps:
         body:

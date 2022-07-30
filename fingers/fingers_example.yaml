@@ -1,5 +1,6 @@
 - name: example-cms
   protocol: http
+  focus: true
   default_port:
     - "8080"
     - "9443"

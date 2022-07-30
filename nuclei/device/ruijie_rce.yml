@@ -2,7 +2,7 @@ id: ruijie-networks-rce
 info:
   name: Ruijie Networks-EWEB Network Management System RCE
   severity: critical
-  tags: ruijie,rce
+  tags: 锐捷ap
 
 requests:
   - method: GET

@@ -1,4 +1,5 @@
 - name: 泛微 e-cology
+  focus: true
   rule:
     - regexps:
         header:
@@ -15,6 +16,7 @@
           - 78oa
           - src="/module/index.php
 - name: 泛微oa
+  focus: true
   rule:
     - regexps:
         body:
@@ -45,12 +47,8 @@
     - regexps:
         body:
           - HTVOS.js
-- name: 万户网络
-  rule:
-    - regexps:
-        body:
-          - css/css_whir.css
 - name: 协众oa
+  focus: true
   rule:
     - regexps:
         body:
@@ -63,6 +61,7 @@
         body:
           - dreamer-cms
 - name: 禅道oa
+  focus: true
   rule:
     - regexps:
         body:
@@ -81,6 +80,7 @@
         body:
           - 78oa.com
 - name: 致远m3
+  focus: true
   rule:
     - regexps:
         body:
@@ -108,12 +108,14 @@
         body:
           - xdoa.cn
 - name: 用友 nc
+  focus: true
   rule:
     - regexps:
         body:
           - UFIDA
           - /nc/servlet/nc.ui.iufo.login.Index
 - name: 用友 grp-u8
+  focus: true
   rule:
     - regexps:
         body:
@@ -129,6 +131,7 @@
         body:
           - /System/Login/Login.asp?
 - name: 用友 u8-cloud
+  focus: true
   rule:
     - regexps:
         body:
@@ -143,12 +146,13 @@
     - regexps:
         body:
           - mkbh = getCookie(
-- name: 用友-智能工厂_智能网关
+- name: 用友-智能网关
   rule:
     - regexps:
         body:
           - /modules/core/client/views/header.client.view.html
-- name: 蓝凌oa_ekp
+- name: 蓝凌oa-ekp
+  focus: true
   rule:
     - regexps:
         body:
@@ -175,11 +179,13 @@
         body:
           - zt_webframe
 - name: 华天动力oa
+  focus: true
   rule:
     - regexps:
         body:
           - /htoa/css/CN/BLUE/login.css
 - name: 通达oa
+  focus: true
   rule:
     - regexps:
         body:
@@ -200,6 +206,7 @@
         md5:
           - f51746305f07a64eafa401adab364ad9
 - name: 泛微e-office
+  focus: true
   rule:
     - regexps:
         body:
@@ -210,30 +217,34 @@
         body:
           - /main/assets/images/favicon.ico
 - name: 畅捷通
+  focus: true
   rule:
     - regexps:
         body:
           - 畅捷通 T+
           - tp.control.css.ashx
 - name: 金蝶云星空
+  focus: true
   rule:
     - regexps:
         body:
           - Kingdee.BOS.XPF.App.xap
 - name: finereport
+  focus: true
   rule:
     - regexps:
         vuln:
           - FineReport
-      level: 1
       send_data: /ReportServer
       info: composer leak
-- name: ezoffice
+- name: 万户oa
+  focus: true
   rule:
     - regexps:
         header:
           - LocLan
         body:
+          - css/css_whir.css
           - ezOFFICE
           - 万户OA
           - whirRootPath
@@ -286,6 +297,7 @@
         body:
           - zfoausername
 - name: 致远oa
+  focus: true
   rule:
     - regexps:
         body:
@@ -298,32 +310,19 @@
           - 57f307ad3764553df84e7b14b7a85432
           - 3c8df395ec2cbd72782286d18a286a9a
           - 2f761c27b6b7f9386bbd61403635dc42
-- name: 畅捷通
-  rule:
-    - regexps:
-        body:
-          - 畅捷通
-- name: 协达oa
-  rule:
-    - favicon:
-        mmh3:
-          - '-1850889691'
 - name: smartbi
+  focus: true
   rule:
     - regexps:
         body:
           - smartbi.gcf.gcfutil
-- name: 金和协同管理平台
+- name: 金和oa
+  focus: true
   rule:
     - regexps:
         body:
           - 金和协同管理平台
-          - JHSoft.UI.Lib
-- name: 金和oa
-  rule:
-    - regexps:
-        body:
-          - Jhsoft.Web.login
+          - JHSoft
 - name: 中腾oa
   rule:
     - regexps:
@@ -336,11 +335,13 @@
           - /scripts/jquery.landray.common.js
           - v11_QRcodeBar clr
 - name: 金蝶政务gsis
+  focus: true
   rule:
     - regexps:
         body:
           - /kdgs/script/kdgs.js
 - name: 帆软数据决策系统
+  focus: true
   rule:
     - regexps:
         body:
@@ -351,11 +352,6 @@
         body:
           - URP 综合教务系统
           - 北京清元优软科技有限公司
-- name: 万户网络
-  rule:
-    - regexps:
-        body:
-          - css/css_whir.css
 
 - name: 中企动力门户cms
   rule:
@@ -444,11 +440,13 @@
           - http://www.xdoa.cn</a>
           - 北京创信达科技有限公司
 - name: geoserver
+  focus: true
   rule:
     - regexps:
         body:
           - GeoServer
 - name: any800
+  focus: true
   rule:
     - regexps:
         body:
