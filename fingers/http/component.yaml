@@ -250,21 +250,20 @@
           - bearer
         body:
           - bearer
-- name: 金蝶中间件
-  rule:
-    - regexps:
-        body:
-          - -Error report
 - name: 金蝶eas
+  focus: true
   rule:
     - regexps:
         body:
           - easSessionId
 - name: 金蝶apusic
+  focus: true
   rule:
     - regexps:
         header:
           - Apusic
+        body:
+          - "-Error report"
 - name: jeecg
   focus: true
   rule:
