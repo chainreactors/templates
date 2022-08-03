@@ -107,7 +107,6 @@
     - regexps:
         body:
           - .action
-          - .do
 - name: springboot
   focus: true
   rule:
@@ -270,3 +269,9 @@
     - regexps:
         body:
           - jeecg
+- name: telerik
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - telerik

@@ -445,7 +445,7 @@
     - regexps:
         body:
           - DiskStation
-- name: 山石网科系统
+- name: 山石网科设备
   rule:
     - regexps:
         body:
@@ -737,3 +737,8 @@
     - regexps:
         body:
           - Leadsec ACM
+- name: array_vpn
+  rule:
+    - regexps:
+        body:
+          - an_util.js

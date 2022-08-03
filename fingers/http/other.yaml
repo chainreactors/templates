@@ -562,11 +562,6 @@
     - regexps:
         header:
           - ARN01154U4
-- name: array_networks_vpn
-  rule:
-    - regexps:
-        body:
-          - an_util.js
 - name: arris-touchstone-router
   rule:
     - regexps:

@@ -200,6 +200,7 @@
     - regexps:
         body:
           - ID_EESX_Welcome
+          - 0;URL='/ui'
 - name: vmware vfabric
   rule:
     - regexps:

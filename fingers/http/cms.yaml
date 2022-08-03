@@ -631,9 +631,11 @@
         body:
           - yuysoft.com
 
-
-
-
+- name: 云梦cms
+  rule:
+    - regexps:
+        body:
+          - wezhan.cn
 
 
 
