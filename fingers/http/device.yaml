@@ -417,6 +417,19 @@
         body:
           - DBAPPSecurity
           - 安恒云堡垒机
+- name: TELEPORT堡垒机
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - blur/background-blur.js
+- name: 思福迪logbase堡垒机
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - Logbase
+          - "/manage/css/login.css"
 - name: 中科网威堡垒机
   focus: true
   rule:
@@ -721,6 +734,10 @@
           - '-1786140609'
         md5:
           - 18d34be498cfd133d32e83a49af461b4
+      regexps:
+        body:
+          - 金山
+          - 猎鹰安全
 - name: 网宿
   rule:
     - regexps:

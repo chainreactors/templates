@@ -106,7 +106,12 @@
   rule:
     - regexps:
         body:
-          - .action
+          - org.apache.struts2
+          - struts.devMode
+          - struts-tags
+          - Action mapped for namespace
+        regexp:
+          - 'http.*?\.action'
 - name: springboot
   focus: true
   rule:
@@ -232,6 +237,10 @@
           - '-1581907337'
         md5:
           - 04d9541338e525258daf47cc844d59f3
+      regexps:
+        header:
+          - X-PvInfo
+          - BigIP
 - name: jetty
   rule:
     - regexps:

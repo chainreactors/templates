@@ -47,6 +47,9 @@
     - regexps:
         body:
           - '"kind": "Status"'
+        vuln:
+          - authentication.k8s.io
+      vuln: k8s-api_unauth
 - name: k8s_dashboard
   rule:
     - regexps:
@@ -168,10 +171,29 @@
         header:
           - Cougar
 - name: docker
+  default_port:
+    - '2379'
+  focus: true
   rule:
     - favicon:
         mmh3:
           - '-1814887000'
+      regexps:
+        vuln:
+          - KernelVersion
+          - DockerRootDir
+      send_data: /info
+      vuln: docker-api_unauth
+- name: etcd
+  default_port:
+    - '2379'
+  focus: true
+  rule:
+    - regexps:
+        vuln:
+          - '"key":"/kubernetes"'
+      vuln: etcd_unauth
+      send_data: /v2/keys/
 - name: dubbo
   focus: true
   rule:
@@ -189,6 +211,7 @@
         body:
           - Spark Worker at
 - name: vmware zimbra
+  focus: true
   rule:
     - regexps:
         body:
@@ -253,6 +276,7 @@
       favicon:
         mmh3:
           - '892542951'
+      send_data: /zabbix
 - name: graphql
   rule:
     - favicon:

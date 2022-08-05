@@ -2748,15 +2748,7 @@
     - regexps:
         body:
           - /vhost/view/default/style/login.css
-- name: easysite
-  rule:
-    - regexps:
-        body:
-          - GENERATOR" content="EasySite
-          - Copyright 2009 by Huilan
-          - _DesktopModules_PictureNews
-        header:
-          - EasySite-Compression
+
 - name: easytrace(botwave)
   rule:
     - regexps:
@@ -3142,12 +3134,7 @@
     - regexps:
         body:
           - Powered by <a href="http://compmaster.prv.pl
-- name: f5_bigip
-  rule:
-    - regexps:
-        header:
-          - X-PvInfo
-          - BigIP
+
 - name: facebook-plugin
   rule:
     - regexps:

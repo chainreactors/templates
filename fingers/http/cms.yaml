@@ -180,11 +180,15 @@
         body:
           - Minyoo
           - /tpl/8/images
-- name: 中科汇联easysitecms
+- name: 中科汇联easysite
   rule:
     - regexps:
         body:
           - huilan-jquery-ui
+          - EasySite
+          - by Huilan
+        header:
+          - EasySite
 - name: jspxcms
   rule:
     - regexps:
@@ -626,12 +630,14 @@
         md5:
           - d1b2495284e172a52abc355c63b25341
 - name: 拓尔思was
+  focus: true
   rule:
     - regexps:
         body:
           - yuysoft.com
 
 - name: 云梦cms
+  focus: true
   rule:
     - regexps:
         body:

@@ -51,8 +51,12 @@
     - '800'
     - '801'
     - '888'
-    - 10000-10001
+    - 10000-10002
     - '10080'
+    - "18080"
+    - "18000"
+    - "18088"
+    - "18090"
   type:
     - http
 - name: top3
@@ -284,7 +288,7 @@
     - rce
 - name: docker
   ports:
-    - 2375-2379
+    - 2375-2380
   type:
     - rce
     - in
@@ -333,12 +337,6 @@
     - rce
     - in
     - brute
-- name: zabbix
-  ports:
-    - '8069'
-  type:
-    - rce
-    - in
 - name: windows
   ports:
     - icmp
@@ -506,7 +504,7 @@
 - name: dubbo
   ports:
     - '18086'
-    - "20880"
+    - "20880-20882"
   type:
     - rce
 - name: 深信服ssl-vpn
