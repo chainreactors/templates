@@ -39,7 +39,7 @@
   rule:
     - regexps:
         body:
-          - 分布式任务调度平台XXL-JOB
+          - XXL-JOB
 
 - name: discuz
   rule:

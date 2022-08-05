@@ -290,8 +290,18 @@
 - name: gitlab
   focus: true
   rule:
-    - favicon:
+    - regexps:
+        body:
+          - gon.default_issues_tracker
+          - GitLab
+        header:
+          - _gitlab_session
+      favicon:
+        md5:
+          - f7e3d97f404e71d302b3239eef48d5f2
+          - 85c754581e1d4b628be5b7712c042224
         mmh3:
+          - '516963061'
           - '1278323681'
 
 - name: atlassian
@@ -347,3 +357,14 @@
         vuln:
           - Apache Flink Web Dashboard
       vuln: flink-unauth
+- name: minio
+  rule:
+    - regexps:
+        body:
+          - MinIO
+- name: apollo
+  rule:
+    - regexps:
+        body:
+          - apollo
+

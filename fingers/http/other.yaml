@@ -2736,8 +2736,7 @@
   rule:
     - regexps:
         body:
-          - Powered by EasyConsole CMS
-          - Powered by <a href="http://www.easyconsole.com
+          - easyconsole
 - name: easylink-web-solutions
   rule:
     - regexps:
@@ -2780,7 +2779,7 @@
   rule:
     - regexps:
         body:
-          - generator" content="ECMall
+          - ECMall
         header:
           - ECM_ID
 - name: ecomat-cms
@@ -2839,7 +2838,7 @@
   rule:
     - regexps:
         body:
-          - <!-- /killlistable.tpl -->
+          - /killlistable.tpl
 - name: edmwebvideo
   rule:
     - regexps:
@@ -2850,8 +2849,6 @@
     - regexps:
         body:
           - edusoho
-          - Powered by <a href="http://www.edusoho.com
-          - Powered By EduSoho
 - name: edvr
   rule:
     - regexps:
@@ -2861,7 +2858,7 @@
   rule:
     - regexps:
         body:
-          - <a href = "http://www.efrontlearning.net
+          - efrontlearning.net
 - name: egroupware
   rule:
     - regexps:
@@ -2905,7 +2902,7 @@
     - regexps:
         body:
           - /webtop/index.js
-          - /webtop/webtop/theme/documentum/css/webtop.css
+          - /webtop/webtop/
 - name: emeeting-online-dating-software
   rule:
     - regexps:
@@ -2931,9 +2928,7 @@
   rule:
     - regexps:
         body:
-          - scripts/Energine.js
-          - Powered by <a href= "http://energine.org/
-          - stylesheets/energine.css
+          - energine
 - name: enhydra-application-server
   rule:
     - regexps:
@@ -2964,19 +2959,17 @@
   rule:
     - regexps:
         body:
-          - content="EPiServer
-          - /javascript/episerverscriptmanager.js
+          - EPiServer
 - name: epiware
   rule:
     - regexps:
         body:
-          - Epiware - Project and Document Management
+          - Epiware
 - name: epson printer
   rule:
     - regexps:
         body:
-          - EpsonNet config
-          - EpsonNet WebAssist
+          - EpsonNet
         header:
           - EPSON-HTTP
 - name: epson打印机
@@ -2993,8 +2986,7 @@
   rule:
     - regexps:
         body:
-          - content="Escenic
-          - <!-- Start Escenic Analysis Engine client script -->
+          - Escenic
 - name: eserv
   rule:
     - regexps:
@@ -3134,13 +3126,6 @@
     - regexps:
         body:
           - Powered by <a href="http://compmaster.prv.pl
-
-- name: facebook-plugin
-  rule:
-    - regexps:
-        body:
-          - www.facebook.com/plugins/
-          - apps.facebook.com/plugins/
 - name: facebook_insights
   rule:
     - regexps:
@@ -3177,11 +3162,7 @@
     - regexps:
         header:
           - FutureTenseContentServer
-- name: fckeditor
-  rule:
-    - regexps:
-        body:
-          - new FCKeditor
+
 - name: fcms
   rule:
     - regexps:
@@ -3411,13 +3392,12 @@
   rule:
     - regexps:
         body:
-          - <a title="free joomla hosting" href="http://freejoomlas.com
+          - freejoomlas
 - name: freenas
   rule:
     - regexps:
         body:
-          - title="Welcome to FreeNAS
-          - /images/ui/freenas-logo.png
+          - FreeNAS
 - name: freepbx
   rule:
     - regexps:
@@ -3427,8 +3407,7 @@
   rule:
     - regexps:
         body:
-          - target="_blank">Frog CMS
-          - href="http://www.madebyfrog.com">Frog CMS
+          - Frog CMS
 - name: frontpage-extensions
   rule:
     - regexps:
@@ -3461,7 +3440,7 @@
   rule:
     - regexps:
         body:
-          - Welcome to your Funkwerk Gateway
+          - Funkwerk Gateway
         header:
           - Funkwerk BOSS
 - name: fw300r
@@ -3478,21 +3457,18 @@
   rule:
     - regexps:
         body:
-          - content="Gallarific
-          - Gallarific > Sign in
+          - Gallarific
 - name: gallery
   rule:
     - regexps:
         body:
           - Gallery 3 Installer
-          - /gallery/images/gallery.png
+          - /gallery/images
 - name: ganglia
   rule:
     - regexps:
         body:
-          - 'Ganglia:: Cluster Report'
-          - OnChange="ganglia_form.submit();
-          - NAME="ganglia_form
+          - ganglia
         header:
           - gs=unspecified
 - name: gatequest-php-site-recommender
@@ -3555,21 +3531,7 @@
         body:
           - content="GetSimple
           - Powered by GetSimple
-- name: gitlab
-  rule:
-    - regexps:
-        body:
-          - gon.default_issues_tracker
-          - GitLab
-        header:
-          - _gitlab_session
-      favicon:
-        md5:
-          - f7e3d97f404e71d302b3239eef48d5f2
-          - 85c754581e1d4b628be5b7712c042224
-        mmh3:
-          - '516963061'
-          - '1278323681'
+
 - name: gitorious
   rule:
     - regexps:
@@ -3584,11 +3546,7 @@
           - content="gitweb
           - /gitweb.css
           - /gitweb.js
-- name: glassfish
-  rule:
-    - regexps:
-        header:
-          - 'Server: GlassFish Server'
+
 - name: glfusion
   rule:
     - regexps:
@@ -3722,14 +3680,12 @@
   rule:
     - regexps:
         body:
-          - <a href="http://www.gridsite.org/">GridSite
-          - gridsite-admin.cgi?cmd
+          - gridsite
 - name: group-office
   rule:
     - regexps:
         body:
-          - powered by Group-Office
-          - '"theme":"Group-Office",'
+          - Group-Office
         header:
           - groupoffice=
 - name: gse
@@ -3751,8 +3707,8 @@
   rule:
     - regexps:
         body:
-          - content="GuppY
-          - class="copyright" href="http://www.freeguppy.org/
+          - GuppY
+          - .freeguppy.org
 - name: gws (google web server)
   rule:
     - regexps:
@@ -3916,8 +3872,7 @@
         body:
           - hesk_javascript.js
           - hesk_style.css
-          - Powered by <a href="http://www.hesk.com
-          - Powered by <a href="https://www.hesk.com
+          - hesk.com
 - name: hfs
   rule:
     - regexps:
@@ -4209,10 +4164,8 @@
   rule:
     - regexps:
         body:
-          - ESENSOFT_IREPORT_SERVER
           - com.sanlink.server.Login
-          - ireportclient
-          - css/ireport.css
+          - ireport
 - name: iapps
   rule:
     - regexps:
@@ -4348,74 +4301,7 @@
     - regexps:
         header:
           - iHTML
-- name: iis
-  rule:
-    - regexps:
-        header:
-          - 'X-Powered-By: WAF/2.0'
-      favicon:
-        md5:
-          - 825af13371930eeb2f85cf075fa25b68
-- name: iis10.5
-  rule:
-    - regexps:
-        header:
-          - IIS/10.5
-- name: iis10
-  rule:
-    - regexps:
-        header:
-          - IIS/10.0
-- name: iis5
-  rule:
-    - regexps:
-        header:
-          - iis/5
-- name: iis6.0
-  rule:
-    - regexps:
-        header:
-          - IIS/6.0
-- name: iis6.5
-  rule:
-    - regexps:
-        header:
-          - iis/6.5
-- name: iis6
-  rule:
-    - regexps:
-        header:
-          - iis/6
-- name: iis7.0
-  rule:
-    - regexps:
-        header:
-          - IIS/7.0
-- name: iis7.5
-  rule:
-    - regexps:
-        header:
-          - IIS/7.5
-- name: iis8.0
-  rule:
-    - regexps:
-        header:
-          - IIS/8.0
-- name: iis8.5
-  rule:
-    - regexps:
-        header:
-          - IIS/8.5
-- name: iis9.0
-  rule:
-    - regexps:
-        header:
-          - IIS/9.0
-- name: iis9.5
-  rule:
-    - regexps:
-        header:
-          - IIS/9.5
+
 - name: iisexport
   rule:
     - regexps:
