@@ -302,7 +302,7 @@
         body:
           - g4it
           - g4.ico
-- name: 思迪产品_thinkive
+- name: 思迪thinkive
   rule:
     - regexps:
         body:
@@ -642,6 +642,10 @@
     - regexps:
         body:
           - wezhan.cn
-
+- name: 未知金融行业通用系统
+  rule:
+    - regexps:
+        body:
+          - hsea.min.css
 
 

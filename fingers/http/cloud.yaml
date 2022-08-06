@@ -366,5 +366,5 @@
   rule:
     - regexps:
         body:
-          - apollo
+          - Apollo
 
