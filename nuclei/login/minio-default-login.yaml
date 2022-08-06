@@ -1,0 +1,41 @@
+id: minio-default-login
+
+info:
+  name: Minio Default Login
+  severity: high
+  tags: minio
+
+requests:
+  - raw:
+      - |
+        POST /minio/webrpc HTTP/1.1
+        Host: {{Hostname}}
+        Content-Type: application/json
+        User-Agent: Mozilla/5.0 (Wndows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36
+
+        {"id":1,"jsonrpc":"2.0","params":{"username":"{{username}}","password":"{{password}}"},"method":"Web.Login"}
+    payloads:
+      username:
+        - minioadmin
+      password:
+        - minioadmin
+    attack: pitchfork
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Content-Type: application/json"
+        part: header
+
+      - type: word
+        words:
+          - 'uiVersion'
+          - 'token'
+        part: body
+        condition: and
+
+      - type: status
+        status:
+          - 200
+
