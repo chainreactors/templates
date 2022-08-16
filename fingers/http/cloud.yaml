@@ -362,6 +362,8 @@
     - regexps:
         body:
           - MinIO
+        header:
+          - minio
 - name: apollo
   rule:
     - regexps:

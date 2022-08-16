@@ -9945,7 +9945,6 @@
   rule:
     - regexps:
         body:
-          - Acenter
           - /js/roomHeight.js
           - meetingShow!show.action
 
@@ -10003,8 +10002,6 @@
     - regexps:
         body:
           - href="/Writable/ClientImages/mycss.css
-
-
 - name: 锐捷应用控制引擎
   rule:
     - regexps:

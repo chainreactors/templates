@@ -494,3 +494,8 @@
     - favicon:
         md5:
           - 975db4c825c16dde9ae6ba5da6ff8d46
+- name: 指掌易
+  rule:
+    - regexps:
+        body:
+          - build/framework/js/download.js
