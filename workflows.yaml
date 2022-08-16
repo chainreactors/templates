@@ -115,9 +115,12 @@
   arp: true
   tags:
     - ss
-- name: smartip
+- name: sip
   ports: icmp
   mod: ss
-- name: smartnoping
+- name: ssnoping
   ports: top2,win,db
   mod: ss
+- name: snoping
+  ports: top2,win,db
+  mod: s
