@@ -345,7 +345,6 @@
   rule:
     - regexps:
         body:
-          - Nacos
           - console-ui/public
       send_data: /nacos
 - name: flink

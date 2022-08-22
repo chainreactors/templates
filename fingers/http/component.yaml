@@ -39,7 +39,6 @@
   rule:
     - regexps:
         vuln:
-          - readme
           - '###'
       send_data: /README.md
       info: README leak
