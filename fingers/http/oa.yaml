@@ -511,3 +511,4 @@
         mmh3:
           - '-305179312'
           - '-1642532491'
+          - build/framework/js/download.js
