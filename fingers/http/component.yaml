@@ -83,13 +83,7 @@
     - regexps:
         body:
           - thymeleaf
-- name: 360网站卫士常用前端公共库
-  rule:
-    - regexps:
-        body:
-          - libs.useso.com
 - name: iis
-  focus: true
   rule:
     - regexps:
         body:

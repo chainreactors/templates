@@ -4,10 +4,6 @@
     - regexps:
         body:
           - jira.webresources
-          - com.atlassian.plugins
-        header:
-          - atlassian.xsrf.token
-
       favicon:
         mmh3:
           - '855273746'
