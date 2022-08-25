@@ -1,4 +1,4 @@
-- name: 泛微 e-cology
+- name: 泛微e-cology
   focus: true
   rule:
     - regexps:
@@ -211,7 +211,7 @@
     - regexps:
         body:
           - /lang/cn/javascript.lang.js
-- name: 泛微云桥e-bridge
+- name: 泛微e-bridge
   rule:
     - regexps:
         body:
@@ -511,3 +511,14 @@
         mmh3:
           - '-305179312'
           - '-1642532491'
+          -
+- name: 银湃云产品
+  rule:
+    - regexps:
+        body:
+          - Inpor Cloud
+- name: 好视通
+  rule:
+    - regexps:
+        body:
+          - fmWeb/other/css/dandelion.css

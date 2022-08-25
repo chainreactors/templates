@@ -125,6 +125,7 @@
 - name: mysql
   ports:
     - 3306-3308
+    - '33066'
   type:
     - db
     - common
@@ -520,6 +521,7 @@
 - name: rdp
   ports:
     - '3389'
+    - '33899'
   type:
     - win
     - common

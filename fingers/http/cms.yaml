@@ -647,5 +647,14 @@
     - regexps:
         body:
           - hsea.min.css
-
+- name: finecms
+  rule:
+    - regexps:
+        body:
+          - move_port.js
+- name: gentleCMS
+  rule:
+    - regexps:
+        body:
+          - gentleCMS
 
