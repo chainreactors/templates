@@ -4,10 +4,6 @@
     - regexps:
         body:
           - jira.webresources
-          - com.atlassian.plugins
-        header:
-          - atlassian.xsrf.token
-
       favicon:
         mmh3:
           - '855273746'
@@ -345,7 +341,6 @@
   rule:
     - regexps:
         body:
-          - Nacos
           - console-ui/public
       send_data: /nacos
 - name: flink

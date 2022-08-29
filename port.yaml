@@ -59,12 +59,14 @@
     - "18090"
   type:
     - http
+    - common
 - name: top3
   ports:
     - '444'
     - '9443'
     - '6080'
     - '6443'
+    - "9070"
     - 9092-9093
     - 7003-7010
     - 9003-9010
@@ -111,18 +113,21 @@
     - '5432'
   type:
     - db
+    - common
     - brute
 - name: mssql
   ports:
     - '1433'
   type:
     - db
+    - common
     - brute
 - name: mysql
   ports:
     - 3306-3308
   type:
     - db
+    - common
     - brute
 - name: oracle
   ports:
@@ -131,6 +136,7 @@
     - '210'
   type:
     - db
+    - common
     - in
 - name: counchdb
   ports:
@@ -142,6 +148,7 @@
     - '6379'
   type:
     - db
+    - common
     - rce
     - in
     - brute
@@ -151,6 +158,7 @@
   type:
     - db
     - in
+    - common
     - brute
 - name: dm(达梦)
   ports:
@@ -176,6 +184,7 @@
     - '27017'
   type:
     - db
+    - common
     - brute
 - name: hbase
   ports:
@@ -192,6 +201,7 @@
     - '5672'
   type:
     - db
+    - common
 - name: neo4j
   ports:
     - '7474'
@@ -213,15 +223,15 @@
     - '5001'
   type:
     - rce
+    - common
     - in
 - name: jdwp
   ports:
     - '5005'
-    - '8000'
     - '8453'
-    - '8080'
   type:
     - rce
+    - common
     - in
 - name: jmx
   ports:
@@ -232,6 +242,7 @@
     - '61616'
   type:
     - rce
+    - common
     - in
 - name: php-xdebug
   ports:
@@ -258,12 +269,14 @@
     - '10912'
   type:
     - rce
+    - common
     - in
 - name: activemq
   ports:
     - '8161'
   type:
     - rce
+    - common
     - in
 - name: kafka
   ports:
@@ -291,6 +304,7 @@
     - 2375-2380
   type:
     - rce
+    - common
     - in
 - name: solr
   ports:
@@ -328,6 +342,7 @@
     - '8009'
   type:
     - rce
+    - common
     - in
 - name: elasticsearch
   ports:
@@ -352,6 +367,7 @@
     - oxid
   type:
     - win
+    - common
     - in
 - name: snmp
   ports:
@@ -369,6 +385,7 @@
     - '21'
   type:
     - win
+    - common
     - brute
 - name: other
   ports:
@@ -399,6 +416,7 @@
     - '3888'
   type:
     - info
+    - common
     - in
 - name: rsync
   ports:
@@ -406,6 +424,7 @@
   type:
     - info
     - brute
+    - common
     - in
 - name: lotus
   ports:
@@ -438,6 +457,7 @@
     - '2222'
   type:
     - info
+    - common
     - in
 - name: vnc
   ports:
@@ -446,6 +466,7 @@
     - '5800'
   type:
     - brute
+    - common
     - in
     - rce
 - name: websphere
@@ -495,11 +516,13 @@
     - '5601'
   type:
     - info
+    - common
 - name: rdp
   ports:
     - '3389'
   type:
     - win
+    - common
     - brute
 - name: dubbo
   ports:
