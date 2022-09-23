@@ -155,4 +155,19 @@
         regexp:
           - "^E\0\0\0"
       send_data: b64|AAAApP9TTUJyAAAAAAgBQAAAAAAAAAAAAAAAAAAAQAYAAAEAAIEAAlBDIE5FVFdPUksgUFJPR1JBTSAxLjAAAk1JQ1JPU09GVCBORVRXT1JLUyAxLjAzAAJNSUNST1NPRlQgTkVUV09SS1MgMy4wAAJMQU5NQU4xLjAAAkxNMS4yWDAwMgACU2FtYmEAAk5UIExBTk1BTiAxLjAAAk5UIExNIDAuMTIA
-
+- name: rabbitmq
+  default_port:
+    - '5672'
+  protocol: tcp
+  rule:
+    - regexps:
+        body:
+          - 'AMQP'
+- name: ActiveMQ
+  default_port:
+    - '61616'
+  protocol: tcp
+  rule:
+    - regexps:
+        body:
+          - 'ActiveMQ'

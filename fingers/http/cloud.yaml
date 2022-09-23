@@ -201,11 +201,6 @@
     - regexps:
         body:
           - Spark Master at
-- name: spark_worker
-  rule:
-    - regexps:
-        body:
-          - Spark Worker at
 - name: vmware zimbra
   focus: true
   rule:

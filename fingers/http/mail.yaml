@@ -218,14 +218,11 @@
     - regexps:
         body:
           - /jdwm/cgi/login.cgi?login
-
 - name: 网易企业邮箱
   rule:
     - regexps:
         body:
           - frmvalidator
-
-
 - name: 腾讯企业邮箱
   rule:
     - regexps:
