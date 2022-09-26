@@ -384,6 +384,7 @@
 - name: ftp
   ports:
     - '21'
+    - '2121'
   type:
     - win
     - common
@@ -509,8 +510,10 @@
 - name: vmware
   ports:
     - '9875'
+    - '427'
   type:
     - in
+    - common
     - rce
 - name: kibana
   ports:
@@ -533,6 +536,7 @@
     - '18086'
     - "20880-20882"
   type:
+    - common
     - rce
 - name: 深信服ssl-vpn
   ports:
@@ -541,3 +545,4 @@
     - "8870"
   type:
     - rce
+    - common
