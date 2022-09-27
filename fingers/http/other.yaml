@@ -4691,18 +4691,6 @@
     - regexps:
         header:
           - jfbconnect_permissions_granted
-- name: joomla
-  rule:
-    - regexps:
-        body:
-          - content="Joomla
-          - /media/system/js/core.js
-          - /media/system/js/mootools-core.js
-      favicon:
-        mmh3:
-          - '366524387'
-          - '1627330242'
-          - '-1950415971'
 - name: jsf
   rule:
     - regexps:
@@ -10233,12 +10221,7 @@
     - favicon:
         mmh3:
           - '363324987'
-- name: joomla
-  rule:
-    - favicon:
-        mmh3:
-          - '-1950415971'
-- name: 'moxapass iologik remote ethernet i/o server '
+- name: moxapass
   rule:
     - favicon:
         mmh3:
