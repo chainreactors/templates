@@ -3,7 +3,6 @@
   ports: top2,win,db
   mod: ss
   ping: true
-  arp: true
   tags:
     - inter
 - name: "172"
