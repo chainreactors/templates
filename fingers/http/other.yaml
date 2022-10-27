@@ -3115,7 +3115,7 @@
   rule:
     - regexps:
         body:
-          - Powered by <a href="http://compmaster.prv.pl
+          - compmaster.prv.pl
 - name: facebook_insights
   rule:
     - regexps:

@@ -355,6 +355,11 @@
     - regexps:
         body:
           - jeesite.min.css
+- name: jeeplus
+  rule:
+    - regexps:
+        header:
+          - jeeplus.session
 - name: jeecms
   rule:
     - regexps:

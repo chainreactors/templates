@@ -1,4 +1,4 @@
-- name: 科信邮件系统_kxmail
+- name: 科信邮件系统
   rule:
     - regexps:
         body:
@@ -27,7 +27,8 @@
   rule:
     - regexps:
         body:
-          - eYou
+          - eYouMail
+          - 亿邮
 - name: exchange
   rule:
     - regexps:

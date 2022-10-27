@@ -1,0 +1,10 @@
+- name: 阿里waf
+  rule:
+    - regexps:
+        header:
+          - acw_tc
+- name: 安恒waf
+  rule:
+    - regexps:
+        body:
+          - 玄武盾
