@@ -130,7 +130,6 @@
     - regexps:
         body:
           - 'The incident ID is:'
-          -
 - name: SonicWALL
   rule:
     - regexps:

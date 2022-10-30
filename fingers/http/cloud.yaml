@@ -125,8 +125,7 @@
   rule:
     - regexps:
         body:
-          - It looks like you are trying to access MongoDB over HTTP on the native driver
-            port.
+          -  MongoDB over HTTP on the native driver
 - name: hadoop
   focus: true
   default_port:
