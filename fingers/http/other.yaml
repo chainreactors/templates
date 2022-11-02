@@ -7095,7 +7095,7 @@
         header:
           - Oracle Solaris
 
-- name: oraclea-dms
+- name: oracle-dms
   rule:
     - regexps:
         header:
