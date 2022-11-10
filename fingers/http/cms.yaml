@@ -185,11 +185,22 @@
   rule:
     - regexps:
         body:
-          - huilan-jquery-ui
           - EasySite
-          - by Huilan
         header:
           - EasySite
+- name: 中科汇联产品
+  rule:
+    - regexps:
+        body:
+          - huilan-jquery-ui
+          - by Huilan
+- name: easycare
+  rule:
+    - regexps:
+        body:
+          - easycare
+        header:
+          - easycare.session
 - name: jspxcms
   rule:
     - regexps:
@@ -653,5 +664,18 @@
     - regexps:
         body:
           - hsea.min.css
+- name: 亿信华辰财务BI
+  rule:
+    - regexps:
+        header:
+          - X-ESEN
+        body:
+          - esen_mainframe
+- name: 泛鹏天地财务系统
+  rule:
+    - regexps:
+        body:
+          - 泛鹏天地
+          - instantclick.js
 
 

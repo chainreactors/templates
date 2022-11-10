@@ -3320,11 +3320,6 @@
           - FortiGuard Web Filtering
           - Web Filter Block Override
           - /XX/YY/ZZ/CI/MGPGHGPGPFGHCDPFGGOGFGEH
-- name: fortinet firewall
-  rule:
-    - regexps:
-        body:
-          - Firewall Notification
 - name: fortiweb waf
   rule:
     - regexps:
@@ -10530,11 +10525,7 @@
     - favicon:
         mmh3:
           - '944969688'
-- name: fortinet – forticlient
-  rule:
-    - favicon:
-        mmh3:
-          - '945408572'
+
 - name: 3cx phone system
   rule:
     - favicon:

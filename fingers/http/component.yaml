@@ -10,17 +10,12 @@
     - regexps:
         body:
           - ajaxpro
-- name: ueditor编辑器
-  focus: true
-  rule:
-    - regexps:
-        body:
-          - ueditor.all
 - name: ueditor
   focus: true
   rule:
     - regexps:
         body:
+          - ueditor.all
           - ueditor.config.js
       send_data: /ueditor
 - name: sourcemap
