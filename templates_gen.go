@@ -4,12 +4,13 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"github.com/chainreactors/files"
+	"github.com/chainreactors/parsers"
 	"io"
 	"os"
 	"path"
 	"path/filepath"
 
-	"github.com/chainreactors/gogo/v2/pkg"
 	"sigs.k8s.io/yaml"
 	"strings"
 )
@@ -18,6 +19,11 @@ var (
 	templatePath string
 	resultPath   string
 )
+
+func encode(input []byte) string {
+	s := files.Flate(input)
+	return parsers.Base64Encode(s)
+}
 
 func loadYamlFile2JsonString(filename string) string {
 	var err error
@@ -32,7 +38,7 @@ func loadYamlFile2JsonString(filename string) string {
 		panic(filename + err.Error())
 	}
 
-	return pkg.Encode(jsonstr)
+	return encode(jsonstr)
 }
 
 func visit(files *[]string) filepath.WalkFunc {
@@ -47,7 +53,7 @@ func visit(files *[]string) filepath.WalkFunc {
 	}
 }
 
-func recuLoadYamlFiles2JsonString(dir string, single bool) string {
+func recuLoadPoc2JsonString(dir string) string {
 	var files []string
 	err := filepath.Walk(path.Join(templatePath, dir), visit(&files))
 	if err != nil {
@@ -71,12 +77,7 @@ func recuLoadYamlFiles2JsonString(dir string, single bool) string {
 			continue
 		}
 
-		if single {
-			pocs = append(pocs, tmp)
-		} else {
-			pocs = append(pocs, tmp.([]interface{})...)
-		}
-
+		pocs = append(pocs, tmp)
 	}
 
 	jsonstr, err := json.Marshal(pocs)
@@ -84,7 +85,48 @@ func recuLoadYamlFiles2JsonString(dir string, single bool) string {
 		panic(err)
 	}
 
-	return pkg.Encode(jsonstr)
+	return encode(jsonstr)
+}
+
+func recuLoadFinger2JsonString(dir string) string {
+	var files []string
+	err := filepath.Walk(path.Join(templatePath, dir), visit(&files))
+	if err != nil {
+		panic(err)
+	}
+	var pocs []interface{}
+	for _, file := range files {
+		filename := filepath.Base(file)
+		var tmp interface{}
+		bs, err := os.ReadFile(file)
+		if err != nil {
+			panic(err)
+		}
+
+		err = yaml.Unmarshal(bs, &tmp)
+		if err != nil {
+			print(file)
+			panic(err)
+		}
+
+		if tmp == nil {
+			continue
+		}
+		fingers := tmp.([]interface{})
+		for i, finger := range fingers {
+			f := finger.(map[string]interface{})
+			f["tag"] = []string{strings.TrimSuffix(filename, ".yaml")}
+			fingers[i] = f
+		}
+		pocs = append(pocs, fingers...)
+	}
+
+	jsonstr, err := json.Marshal(pocs)
+	if err != nil {
+		panic(err)
+	}
+
+	return encode(jsonstr)
 }
 
 func parser(key string) string {
@@ -92,13 +134,13 @@ func parser(key string) string {
 	case "tcp":
 		return loadYamlFile2JsonString("fingers/tcpfingers.yaml")
 	case "http":
-		return recuLoadYamlFiles2JsonString("fingers/http", false)
+		return recuLoadFinger2JsonString("fingers/http")
 	case "port":
 		return loadYamlFile2JsonString("port.yaml")
 	case "workflow":
 		return loadYamlFile2JsonString("workflows.yaml")
 	case "nuclei":
-		return recuLoadYamlFiles2JsonString("nuclei", true)
+		return recuLoadPoc2JsonString("nuclei")
 	default:
 		panic("illegal key")
 	}
@@ -121,26 +163,19 @@ func main() {
 	var first bool
 	for _, n := range needs {
 		if !first {
-			s.WriteString(fmt.Sprintf("if typ == \"%s\" {\n\t\treturn files.UnFlate(base64Decode(\"%s\"))\n\t}", n, parser(n)))
+			s.WriteString(fmt.Sprintf("if typ == \"%s\" {\n\t\treturn files.UnFlate(parsers.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
 			first = true
 		} else {
-			s.WriteString(fmt.Sprintf("else if typ==\"%s\"{\n\t\treturn files.UnFlate(base64Decode(\"%s\"))\n\t}", n, parser(n)))
+			s.WriteString(fmt.Sprintf("else if typ==\"%s\"{\n\t\treturn files.UnFlate(parsers.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
 		}
 	}
 	template := `package pkg
 
 import (
-	"encoding/base64"
 	"github.com/chainreactors/files"
+	"github.com/chainreactors/parsers"
 )
 
-func base64Decode(s string) []byte {
-	data, err := base64.StdEncoding.DecodeString(s)
-	if err != nil {
-		panic(err)
-	}
-	return data
-}
 
 var RandomDir = "/g8kZMwp4oeKsL2in"
 
