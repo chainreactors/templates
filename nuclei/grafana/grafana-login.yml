@@ -1,0 +1,38 @@
+id: grafana-default-login
+
+info:
+  name: grafana Default Login
+  author: pdteam
+  severity: high
+  description: grafana default admin credentials were discovered.
+  tags: grafana
+
+requests:
+  - raw:
+      - |
+        POST /login HTTP/1.1
+        Host: {{Hostname}}
+        Content-Type: application/json
+        Referer: {{BaseURL}}
+          
+        {"user":"{{username}}","password":"{{password}}","email":""}
+    payloads:
+      username:
+        - admin
+        - admin
+      password:
+        - prom-operator
+        - admin
+    attack: pitchfork
+
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+      - type: word
+        words:
+          - "grafana_session"  # Login cookie
+        part: header
+
+

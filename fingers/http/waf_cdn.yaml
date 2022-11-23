@@ -166,3 +166,8 @@
           - yunsuo_session
         body:
           - yunsuologo
+- name: 瑞数WAF
+  rule:
+    - regexps:
+        body:
+          - 因权限问题或行为非法，您的访问被拒绝

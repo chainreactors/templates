@@ -3861,8 +3861,6 @@
 - name: hfs
   rule:
     - regexps:
-        body:
-          - HFS
         header:
           - HFS_SID_=
       favicon:
@@ -4815,19 +4813,6 @@
     - regexps:
         header:
           - KFWebServer
-- name: kibana
-  rule:
-    - regexps:
-        body:
-          - Kibana
-          - kbnVersion
-      favicon:
-        mmh3:
-          - '75230260'
-          - '1668183286'
-          - '-267431135'
-          - '-759754862'
-          - '-1200737715'
 - name: kindeditor
   rule:
     - regexps:
@@ -10409,11 +10394,6 @@
     - favicon:
         mmh3:
           - '728788645'
-- name: hfs
-  rule:
-    - favicon:
-        mmh3:
-          - '2124459909'
 - name: unifi video controller
   rule:
     - favicon:
