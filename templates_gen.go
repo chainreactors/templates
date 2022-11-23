@@ -148,7 +148,7 @@ func parser(key string) string {
 
 func main() {
 	var needs []string
-	flag.StringVar(&templatePath, "t", "templates", "templates repo path")
+	flag.StringVar(&templatePath, "t", ".", "templates repo path")
 	flag.StringVar(&resultPath, "o", "templates.go", "result filename")
 	need := flag.String("need", "all", "tcp|http|port|workflow|nuclei")
 	flag.Parse()

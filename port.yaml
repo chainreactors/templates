@@ -4,7 +4,7 @@
     - '80'
     - '443'
     - '8080'
-  type:
+  tags:
     - http
 - name: top2
   ports:
@@ -58,7 +58,7 @@
     - "18000"
     - "18088"
     - "18090"
-  type:
+  tags:
     - http
     - common
 - name: top3
@@ -97,36 +97,36 @@
     - '8180'
     - '10800'
     - '18081'
-  type:
+  tags:
     - http
 - name: iis
   ports:
     - '47001'
-  type:
+  tags:
     - http
 - name: jboss
   ports:
     - '45566'
-  type:
+  tags:
     - http
 - name: postgresql
   ports:
     - '5432'
-  type:
+  tags:
     - db
     - common
     - brute
 - name: mssql
   ports:
     - '1433'
-  type:
+  tags:
     - db
     - common
     - brute
 - name: mysql
   ports:
     - 3306-3308
-  type:
+  tags:
     - db
     - common
     - brute
@@ -135,19 +135,19 @@
     - '1158'
     - '1521'
     - '210'
-  type:
+  tags:
     - db
     - common
     - in
 - name: counchdb
   ports:
     - '5984'
-  type:
+  tags:
     - db
 - name: redis
   ports:
     - '6379'
-  type:
+  tags:
     - db
     - common
     - rce
@@ -156,7 +156,7 @@
 - name: memcache
   ports:
     - '11211'
-  type:
+  tags:
     - db
     - in
     - common
@@ -164,26 +164,26 @@
 - name: dm(达梦)
   ports:
     - '5236'
-  type:
+  tags:
     - db
     - in
 - name: oscar(神通)
   ports:
     - '2003'
-  type:
+  tags:
     - db
     - in
 - name: sybase
   ports:
     - '5000'
     - '4100'
-  type:
+  tags:
     - db
 
 - name: mongodb
   ports:
     - '27017'
-  type:
+  tags:
     - db
     - common
     - brute
@@ -193,20 +193,20 @@
     - '16010'
     - '16020'
     - '16030'
-  type:
+  tags:
     - db
 
 - name: rabbitmq
   ports:
     - '15672'
     - '5672'
-  type:
+  tags:
     - db
     - common
 - name: neo4j
   ports:
     - '7474'
-  type:
+  tags:
     - db
 
 - name: jndi
@@ -222,7 +222,7 @@
     - '10001'
     - '11099'
     - '5001'
-  type:
+  tags:
     - rce
     - common
     - in
@@ -230,7 +230,7 @@
   ports:
     - '5005'
     - '8453'
-  type:
+  tags:
     - rce
     - common
     - in
@@ -241,26 +241,26 @@
     - 9010-9012
     - '50500'
     - '61616'
-  type:
+  tags:
     - rce
     - common
     - in
 - name: php-xdebug
   ports:
     - '9000'
-  type:
+  tags:
     - rce
     - in
 - name: nodejs-debug
   ports:
     - '5858'
     - '9229'
-  type:
+  tags:
     - rce
 - name: glassfish
   ports:
     - '4848'
-  type:
+  tags:
     - rce
 - name: rocketmq
   ports:
@@ -268,80 +268,80 @@
     - '10909'
     - '10911'
     - '10912'
-  type:
+  tags:
     - rce
     - common
     - in
 - name: activemq
   ports:
     - '8161'
-  type:
+  tags:
     - rce
     - common
     - in
 - name: kafka
   ports:
     - '9092'
-  type:
+  tags:
     - rce
 - name: cisco
   ports:
     - '4786'
-  type:
+  tags:
     - rce
 - name: rlogin
   ports:
     - 512-514
-  type:
+  tags:
     - rce
 - name: hp
   ports:
     - '5555'
     - '5556'
-  type:
+  tags:
     - rce
 - name: docker
   ports:
     - 2375-2380
-  type:
+  tags:
     - rce
     - common
     - in
 - name: solr
   ports:
     - '8983'
-  type:
+  tags:
     - rce
 - name: zoho
   ports:
     - '8383'
-  type:
+  tags:
     - rce
 - name: altassian
   ports:
     - '4990'
-  type:
+  tags:
     - rce
 - name: portainer
   ports:
     - '9000'
-  type:
+  tags:
     - rce
     - in
 - name: hashicorp
   ports:
     - '8500'
-  type:
+  tags:
     - rce
 - name: flink
   ports:
     - '8081'
-  type:
+  tags:
     - rce
 - name: ajp
   ports:
     - '8009'
-  type:
+  tags:
     - rce
     - common
     - in
@@ -349,7 +349,7 @@
   ports:
     - '9200'
     - '9300'
-  type:
+  tags:
     - rce
     - in
     - brute
@@ -366,26 +366,26 @@
     - '3389'
     - '5985'
     - oxid
-  type:
+  tags:
     - win
     - common
     - in
 - name: snmp
   ports:
     - '161'
-  type:
+  tags:
     - win
     - brute
 - name: ping
   ports:
     - icmp
-  type:
+  tags:
     - win
 - name: ftp
   ports:
     - '21'
     - '2121'
-  type:
+  tags:
     - win
     - common
     - brute
@@ -396,7 +396,7 @@
     - '161'
     - 901-902
     - '50000'
-  type:
+  tags:
     - info
     - in
 - name: mail
@@ -409,21 +409,21 @@
     - '587'
     - '995'
     - '993'
-  type:
+  tags:
     - info
 - name: zoomkeeper
   ports:
     - '2181'
     - '2888'
     - '3888'
-  type:
+  tags:
     - info
     - common
     - in
 - name: rsync
   ports:
     - '873'
-  type:
+  tags:
     - info
     - brute
     - common
@@ -431,13 +431,13 @@
 - name: lotus
   ports:
     - '1352'
-  type:
+  tags:
     - info
     - in
 - name: nfs
   ports:
     - '2049'
-  type:
+  tags:
     - rce
     - in
 - name: oracle-ftp
@@ -446,18 +446,18 @@
 - name: squid
   ports:
     - '3128'
-  type:
+  tags:
     - rce
 - name: pcanywhere
   ports:
     - '5632'
-  type:
+  tags:
     - info
 - name: ssh
   ports:
     - '22'
     - '2222'
-  type:
+  tags:
     - info
     - common
     - in
@@ -466,7 +466,7 @@
     - '5900'
     - '5901'
     - '5800'
-  type:
+  tags:
     - brute
     - common
     - in
@@ -486,7 +486,7 @@
     - '7286'
     - '5558'
     - '5578'
-  type:
+  tags:
     - info
 - name: hadoop
   ports:
@@ -505,20 +505,20 @@
     - 8040-8042
     - '19888'
     - '41414'
-  type:
+  tags:
     - info
 - name: vmware
   ports:
     - '9875'
     - '427'
-  type:
+  tags:
     - in
     - common
     - rce
 - name: kibana
   ports:
     - '5601'
-  type:
+  tags:
     - info
     - common
 - name: rdp
@@ -527,7 +527,7 @@
     - '13389'
     - '33899'
     - "33389"
-  type:
+  tags:
     - win
     - common
     - brute
@@ -535,7 +535,7 @@
   ports:
     - '18086'
     - "20880-20882"
-  type:
+  tags:
     - common
     - rce
 - name: 深信服ssl-vpn
@@ -543,6 +543,6 @@
     - '9990'
     - "4430"
     - "8870"
-  type:
+  tags:
     - rce
     - common

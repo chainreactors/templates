@@ -59,14 +59,14 @@
   ip: 10.0.0.0/8
   ports: top2,win,db
   mod: ss
-  portprobe: '80'
+  port-probe: '80'
   tags:
     - interNoPing
 - name: 172noping
   ip: 172.16.0.0/12
   ports: top2,win,db
   mod: ss
-  portprobe: '80'
+  port-probe: '80'
   tags:
     - interNoPing
 - name: 192noping
@@ -121,7 +121,7 @@
   mod: ss
 - name: ssnoping
   ports: top2,win,db
-  portprobe: '80'
+  port-probe: '80'
   mod: ss
 - name: snoping
   ports: top2,win,db
