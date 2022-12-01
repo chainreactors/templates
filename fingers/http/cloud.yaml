@@ -359,3 +359,33 @@
         body:
           - Apollo
 
+- name: tidb-web
+  rule:
+    - regexps:
+        body:
+          - TiDB Status
+- name: tidb-web
+  rule:
+    - regexps:
+        body:
+          - TiDB Status
+- name: kafka-manager
+  rule:
+    - regexps:
+        body:
+          - Kafka Manager
+- name: Canal
+  rule:
+    - regexps:
+        body:
+          - Canal Admin
+- name: Cluster
+  rule:
+    - regexps:
+        body:
+          - Cluster Overview
+- name: Traefik
+  rule:
+    - regexps:
+        body:
+          - Traefik

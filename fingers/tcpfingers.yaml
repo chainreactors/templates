@@ -31,6 +31,16 @@
           - -DENIED
       vuln: redis_unauthorized
       send_data: "info\n"
+- name: zookeeper
+  default_port:
+    - zookeeper
+  protocol: tcp
+  rule:
+    - regexps:
+        vuln:
+          - zookeeper.version=(.*),
+      vuln: zookeeper_unauthorized
+      send_data: "envi\n"
 - name: memcahce
   default_port:
     - '11211'

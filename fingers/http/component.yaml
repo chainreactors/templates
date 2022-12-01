@@ -217,6 +217,7 @@
         md5:
           - 67d34b0decfd4d725d1c1f2eeadc4756
 - name: f5 bigip
+  level: 1
   rule:
     - favicon:
         mmh3:

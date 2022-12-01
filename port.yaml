@@ -58,6 +58,7 @@
     - "18000"
     - "18088"
     - "18090"
+    - "50070"
   tags:
     - http
     - common
@@ -353,6 +354,7 @@
     - rce
     - in
     - brute
+    - common
 - name: windows
   ports:
     - icmp
@@ -411,7 +413,7 @@
     - '993'
   tags:
     - info
-- name: zoomkeeper
+- name: zookeeper
   ports:
     - '2181'
     - '2888'
