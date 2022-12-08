@@ -360,14 +360,26 @@
     - icmp
     - '22'
     - '23'
-    - '88'
     - '135'
     - '137'
-    - '389'
     - '445'
     - '3389'
     - '5985'
     - oxid
+  tags:
+    - win
+    - common
+    - in
+- name: ldap
+  ports:
+    - '389'
+  tags:
+    - win
+    - common
+    - in
+- name: kerberos
+  ports:
+    - '88'
   tags:
     - win
     - common

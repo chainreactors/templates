@@ -4164,56 +4164,6 @@
     - regexps:
         header:
           - iB-WRX300N
-- name: ibm websphere datapower
-  rule:
-    - regexps:
-        header:
-          - X-Backside-Transport
-- name: ibm-bladecenter
-  rule:
-    - regexps:
-        body:
-          - /shared/ibmbch.png
-          - /shared/ibmbcs.png
-          - alt="IBM BladeCenter
-- name: ibm-cics-transaction-server
-  rule:
-    - regexps:
-        header:
-          - IBM_CICS_Transaction_Server
-- name: ibm-cognos
-  rule:
-    - regexps:
-        body:
-          - /cgi-bin/cognos.cgi
-          - Cognos &#26159; International Business Machines Corp
-- name: ibm-internet-connection-server
-  rule:
-    - regexps:
-        header:
-          - IBM Internet Connection Server
-- name: ibm-web-traffic-express-caching-proxy
-  rule:
-    - regexps:
-        body:
-          - /admin-bin/webexec/wte.html
-        header:
-          - IBM-PROXY-WTE
-- name: ibm-webseal
-  rule:
-    - regexps:
-        header:
-          - WebSEAL
-- name: ibm-websphere-datapower
-  rule:
-    - regexps:
-        header:
-          - x-backside-transport
-- name: ibm_http_server
-  rule:
-    - regexps:
-        header:
-          - IBM_HTTP_Server
 - name: icecast
   rule:
     - regexps:
@@ -8882,7 +8832,6 @@
   rule:
     - regexps:
         body:
-          - UniFi
           - <div class="appGlobalHeader">
 - name: ucstar
   rule:
