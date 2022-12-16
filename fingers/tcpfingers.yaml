@@ -149,7 +149,7 @@
       send_data: b64de|AFoAAAEAAAABNgEsAAAIAH//fwgAAAABACAAOgAAAAAAAAAAAAAAAAAAAAA05gAAAAEAAAAAAAAAAChDT05ORUNUX0RBVEE9KENPTU1BTkQ9dmVyc2lvbikp
 - name: rdp
   default_port:
-    - '3389'
+    - rdp
   protocol: tcp
   rule:
     - regexps:
