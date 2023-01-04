@@ -359,13 +359,19 @@
   ports:
     - icmp
     - '22'
-    - '23'
     - '135'
     - '137'
     - '445'
     - '3389'
     - '5985'
     - oxid
+  tags:
+    - win
+    - common
+    - in
+- name: telnet
+  ports:
+    - '23'
   tags:
     - win
     - common
