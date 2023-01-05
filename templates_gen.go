@@ -165,6 +165,8 @@ func parser(key string) string {
 		return recuLoadPoc2JsonString("nuclei")
 	case "rule":
 		return loadRawFiles("rule")
+	case "mask":
+		return loadYamlFile2JsonString("keywords.yaml")
 	default:
 		panic("illegal key")
 	}
