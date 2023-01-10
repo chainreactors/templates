@@ -53,6 +53,28 @@ func visit(files *[]string) filepath.WalkFunc {
 	}
 }
 
+func loadRawFiles(dir string) string {
+	var files []string
+	err := filepath.Walk(path.Join(templatePath, dir), visit(&files))
+	if err != nil {
+		panic(err)
+	}
+	data := make(map[string]string)
+	for _, file := range files {
+		bs, err := os.ReadFile(file)
+		if err != nil {
+			panic(err)
+		}
+		data[strings.TrimSuffix(filepath.Base(file), ".txt")] = string(bs)
+	}
+	jsonstr, err := json.Marshal(data)
+	if err != nil {
+		panic(err)
+	}
+
+	return encode(jsonstr)
+}
+
 func recuLoadPoc2JsonString(dir string) string {
 	var files []string
 	err := filepath.Walk(path.Join(templatePath, dir), visit(&files))
@@ -141,6 +163,10 @@ func parser(key string) string {
 		return loadYamlFile2JsonString("workflows.yaml")
 	case "nuclei":
 		return recuLoadPoc2JsonString("nuclei")
+	case "rule":
+		return loadRawFiles("rule")
+	case "mask":
+		return loadYamlFile2JsonString("keywords.yaml")
 	default:
 		panic("illegal key")
 	}
