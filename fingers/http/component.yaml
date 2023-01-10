@@ -29,13 +29,14 @@
     - regexps:
         body:
           - chunk-vendors
-- name: readme.md
-  rule:
-    - regexps:
-        vuln:
-          - '###'
-      send_data: /README.md
-      info: README leak
+          - 'webpack://'
+#- name: readme.md
+#  rule:
+#    - regexps:
+#        vuln:
+#          - 'github.com'
+#      send_data: /README.md
+#      info: README leak
 - name: swagger
   focus: true
   rule:
@@ -56,6 +57,9 @@
     - regexps:
         vuln:
           - Druid Stat Index
+        body:
+          - druid/login.html
+          - druid.login
       send_data: /druid/index.html
       info: druid leak
 - name: composer.json
@@ -291,3 +295,13 @@
     - regexps:
         body:
           - FCKeditor
+- name: fckeditor
+  rule:
+    - regexps:
+        body:
+          - FCKeditor
+- name: tapestry
+  rule:
+    - regexps:
+        body:
+          - tapestry
