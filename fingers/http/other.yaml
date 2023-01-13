@@ -6949,11 +6949,6 @@
         header:
           - client_param=install_active
 
-- name: observa telcom
-  rule:
-    - regexps:
-        body:
-          - OBSERVA
 - name: onssi_video_clients
   rule:
     - regexps:

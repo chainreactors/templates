@@ -103,8 +103,7 @@
           - struts.devMode
           - struts-tags
           - Action mapped for namespace
-        regexp:
-          - 'http.*?\.action'
+          - .action
 - name: springboot
   focus: true
   rule:

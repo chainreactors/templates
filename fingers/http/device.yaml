@@ -516,6 +516,11 @@
         body:
           - /default/uninstall.html
           - /Gsc/
+- name: solarwinds-device
+  rule:
+    - regexps:
+        body:
+          - SolarWinds
 - name: 深信服设备
   rule:
     - regexps:
