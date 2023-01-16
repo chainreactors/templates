@@ -101,6 +101,9 @@
     - '18081'
   tags:
     - http
+- name: socks
+  ports:
+    - '1080'
 - name: iis
   ports:
     - '47001'
