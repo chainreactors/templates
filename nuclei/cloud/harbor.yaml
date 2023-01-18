@@ -1,0 +1,33 @@
+id: Harbor-unauth
+
+info:
+  name: Harbor - unauth
+  author: qqq
+  severity: high
+  description: Unauthorized access to the Harbor public image. You can pull the image to find some sensitive information
+  reference:
+    - http://mp.weixin.qq.com/s?__biz=MzkzMTIyOTA1NA==&mid=2247483996&idx=1&sn=bcd39d97b156286c87d432a5aaa71637&chksm=c26f7e4df518f75b43292ec466294eea7cd0f83b81f50f4097e9b9e0a07e02b0c7120d79c5db&mpshare=1&scene=1&srcid=0116SIIVL37UXp60um8UyqFd&sharer_sharetime=1673870193988&sharer_shareid=c7a5be54dfb3a6ee423d9c68d1930fa7#rd
+  metadata:
+    verified: true
+  tags: Harbor,unauth
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/api/search?q="
+      - "{{BaseURL}}/api/v2.0/search?q="
+
+
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        words:
+          - 'project_id'
+          - 'name'
+        condition: and
+
+
