@@ -31,3 +31,4 @@ requests:
         condition: and
 
 
+# /api/v2.0/projects/{project_name}/repositories/{repositorie_name}/artifacts?with_tag=true&with_scan_overview=true&with_label=true&page_size=15&page=1
