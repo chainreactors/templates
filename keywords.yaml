@@ -154,7 +154,6 @@ top100_pass:
   - 222222
   - qwertyuiop
   - qwerty123
-  - qazwsx
   - vip
   - asdasd
   - 123qwe
@@ -191,7 +190,6 @@ top100_pass:
   - 444444
   - fuckyou
   - 789456123
-  - super123
   - qwer1234
   - 123456789a
   - q1w2e3r4
@@ -199,6 +197,8 @@ top100_user:
   - admin
   - admin1
   - Admin
+  - adm
+  - Adm
   - webadmin
   - tomcat
   - manager
@@ -252,8 +252,6 @@ top100_user:
   - test2
   - test01
   - test123
-  - adm
-  - Adm
   - hr
   - HR
   - IT
@@ -324,11 +322,8 @@ bak_ext:
   - tar.gz
   - tar
   - gz
-  - jar
   - 7z
-  - bz2
   - sql
-  - backup
   - bak
   - war
 common_file:
@@ -349,10 +344,21 @@ common_file:
   - .env
   - .github/
   - .travis.yml
+  - .htpasswd
+  - perl-status
+  - hosts
+  - status.cgi
+  - ansible.cfg
+  - docker-compose.yml
+  - DOCKERFILE
+  - .Dockerfile
   - .lock
   - web.config
+  - config.json
   - 1.txt
   - robots.txt
+  - sitemap.xml
+  - atom.xml
   - favicon.ico
   - rsyncd.conf
   - ueditor
@@ -372,6 +378,12 @@ common_file:
   - css/
   - tests/
   - test/
+  - install.sh
+  - update.sh
+  - upgrade.sh
+  - build.sh
+  - metrics
+  - id_dsa
   # ide
   - .idea/
   - .idea/workspace.xml
@@ -383,15 +395,14 @@ common_file:
   - WEB-INF
   - WEB-INF/
   - WEB-INF/web.xml
+  - dwr/index.html
+  - dwr/engine.js
   - index.jsp
   - index.jspx
   - v2/api-docs
   - swagger-ui.html
   - druid/index.html
-  - install.sh
-  - update.sh
-  - upgrade.sh
-  - build.sh
+  - project.properties
   # php common
   - composer.json
   - phpunit.xml
@@ -399,6 +410,8 @@ common_file:
   - install.php
   - .htaccess
   - user.ini
+  - phpinfo.php
+  - info.php
   # python common
   - dist/
   - build/
@@ -413,6 +426,8 @@ common_file:
   - tsconfig.json
   - .yarnrc
   - .yarnrc.yml
+  - webpack.config.js
+  - config.js
   # .net
   - web.config
   - Global.asax.cs
@@ -455,6 +470,8 @@ bak_name:
   - 2019
   - 2018
   - 2017
+  - 2016
+  - 2015
   - upload
   - log
   - sql
@@ -463,7 +480,7 @@ bak_name:
   - 备份
   - 源码
   - 网站
-.net_ext:
+net:
   - asp
   - asa
   - asax
@@ -475,7 +492,7 @@ bak_name:
   - cer
   - cs
   - cshtml
-java_ext:
+java:
   - jsp
   - jspx
   - jsw
@@ -484,7 +501,7 @@ java_ext:
   - jhtml
   - java
   - class
-php_ext:
+php:
   - php
   - php3
   - php5

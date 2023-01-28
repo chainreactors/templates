@@ -1,0 +1,94 @@
+- name: js
+  regexps:
+    - "b64de|LihodHRwc3swLDF9OlteXHMn4oCZIuKAnT48KCl8KlxbXXsyLDI1MH0/W149KlxzJ+KAmT48Ojt8KClbXXszfVxbXVwuanMp"
+    - 'b64de|WyInXShbXlxzJyzigJki4oCdPjw7KCl8KjpcW117MiwyNTB9P1tePSpccyfigJl8IuKAnT48Xjo7KClcW117M31cLmpzKQ=='
+    - 'b64de|PVxzezAsNn1bIiddezAsMX1cc3swLDZ9KFteXHNeJ+KAmSwrPjw7KCl8KlxbXXsyLDI1MH0/W149LFxzJ+KAmSLigJ0+fDw6OyooKVxbXXszfVwuanMp'
+- name: url
+  regexps:
+    - 'b64de|PVxzezAsNn0oaHR0cHN7MCwxfTpbXlxzJyI+PCgpfCpcW117MiwyNTB9KQ=='
+    - 'b64de|WyInXShbXlxzJyzigJki4oCdPjwuQCQ7OigpfCpcW117MiwyNTB9XC5bYS16QS1aXVx3ezEsNH0pWyInXQ=='
+    - 'b64de|WyInXShodHRwcz86W15ccyciPjwoKUB8KlxbXXsyLDI1MH0/XC5bXlxzJyzigJki4oCdPjw7KCl8KlxbXXsyLDI1MH0/KVsiJ10='
+    - 'b64de|WyInXVxzezAsNn0oWyMsLl17MCwyfS9bXlxzJyIsPjw7QCQoKXwqXFtdezIsMjUwfT8pXHN7MCw2fVsiJ10='
+    - 'b64de|aHJlZlxzezAsNn09XHN7MCw2fVsiJ+KAmOKAnF17MCwxfVxzezAsNn0oW15ccycs4oCZIuKAnT48JEA7KCl8KlxbXXsyLDI1MH0pfGFjdGlvblxzezAsNn09XHN7MCw2fVsiJ+KAmOKAnF17MCwxfVxzezAsNn0oW15ccyfigJki4oCcPjwpKF17MiwyNTB9KQ=='
+- name: jwt
+  tags:
+    - pentest
+  regexps:
+    - (eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9._-]{10,}|eyJ[A-Za-z0-9_\/+-]{10,}\.[A-Za-z0-9._\/+-]{10,})
+- name: mail
+  regexps:
+    - '([A-Za-z0-9\\u4e00-\\u9fa5_.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})'
+  cases:
+    - test@123.com
+    - 测试@123.com
+- name: idcard
+  tags:
+    - info
+  regexps:
+    - '[^0-9]((\d{8}(0\d|10|11|12)([0-2]\d|30|31)\d{3}$)|(\d{6}(18|19|20)\d{2}(0[1-9]|10|11|12)([0-2]\d|30|31)\d{3}(\d|X|x)))[^0-9]'
+- name: mobile
+  tags:
+    - info
+  regexps:
+    - '(\+?0?86\-?)?1[3-9]\d{9}'
+- name: ip
+  tags:
+    - info
+  regexps:
+    - ((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})(\.((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})){3}
+- name: inter-ip
+  tags:
+    - pentest
+  regexps:
+    - '[^0-9]((127\.0\.0\.1)|(10\.\d{1,3}\.\d{1,3}\.\d{1,3})|(172\.((1[6-9])|(2\d)|(3[01]))\.\d{1,3}\.\d{1,3})|(192\.168\.\d{1,3}\.\d{1,3}))'
+- name: oss
+  tags:
+    - pentest
+  regexps:
+    - ([A|a]ccess[K|k]ey[I|i][d|D]|[A|a]ccess[K|k]ey[S|s]ecret)
+- name: s3
+  tags:
+    - pentest
+  regexps:
+    - (((([a-zA-Z0-9._-]+\.s3|s3)(\.|\-)+[a-zA-Z0-9._-]+|[a-zA-Z0-9._-]+\.s3|s3)\.amazonaws\.com)|(s3:\/\/[a-zA-Z0-9-\.\_]+)|(s3.console.aws.amazon.com\/s3\/buckets\/[a-zA-Z0-9-\.\_]+)|(amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})|(ec2-[0-9-]+.cd-[a-z0-9-]+.compute.amazonaws.com)|(us[_-]?east[_-]?1[_-]?elb[_-]?amazonaws[_-]?com))
+- name: aws-ak
+  tags:
+    - pentest
+  regexps:
+    - '[^0-9]((aws(.{0,20})?(?-i)[''\"][0-9a-zA-Z\/+]{40}[''\"])|((A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[a-zA-Z0-9]{16}))[^0-9]'
+- name: rsa-key
+  tags:
+    - pentest
+  regexps:
+    - ([-]+BEGIN [^\s]+ PRIVATE KEY[-])
+- name: windows-file
+  tags:
+    - pentest
+  regexps:
+    - '[^\w](([a-zA-Z]:\\(?:\w+\\?)*)|([a-zA-Z]:\\(?:\w+\\)*\w+\.\w+))'
+- name: password
+  tags:
+    - pentest
+  regexps:
+    - ([p](ass|wd|asswd|assword))[\s="':.]+.*?[\s"']
+- name: username
+  tags:
+    - info
+  regexps:
+    - ([u](ser|name|ame|sername))[\s="':.]+.*?[\s"']
+- name: wecom-key
+  tags:
+    - pentest
+  regexps:
+    - ([c|C]or[p|P]id|[c|C]orp[s|S]ecret)
+- name: jdbc
+  tags:
+    - pentest
+  regexps:
+    - 'jdbc://[a-z0-9\.\-_:;=\/@?,&]+'
+- name: github-token
+  tags:
+    - pentest
+  regexps:
+    - ([a-z0-9_-]*:[a-z0-9_\-]+@github\.com*)
+  

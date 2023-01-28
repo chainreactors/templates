@@ -167,6 +167,8 @@ func parser(key string) string {
 		return loadRawFiles("rule")
 	case "mask":
 		return loadYamlFile2JsonString("keywords.yaml")
+	case "extract":
+		return loadYamlFile2JsonString("extract.yaml")
 	default:
 		panic("illegal key")
 	}
