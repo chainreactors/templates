@@ -1,0 +1,16 @@
+id: iis-put
+
+info:
+  name: iis-put-upload
+  severity: critical
+  tags: iis
+
+requests:
+  - method: PUT
+    path:
+      - '{{BaseURL}}/29uyYfZ.txt'
+    matchers:
+      - type: status
+        status:
+          - 201
+          - 204

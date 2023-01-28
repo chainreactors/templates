@@ -79,6 +79,7 @@
     - 8010-8020
     - 8090-8100
     - 8180-8181
+    - '8983'
     - "1311"
     - '8363'
     - '8800'
@@ -100,6 +101,9 @@
     - '18081'
   tags:
     - http
+- name: socks
+  ports:
+    - '1080'
 - name: iis
   ports:
     - '47001'
@@ -308,11 +312,6 @@
     - rce
     - common
     - in
-- name: solr
-  ports:
-    - '8983'
-  tags:
-    - rce
 - name: zoho
   ports:
     - '8383'
@@ -359,13 +358,19 @@
   ports:
     - icmp
     - '22'
-    - '23'
     - '135'
     - '137'
     - '445'
     - '3389'
     - '5985'
     - oxid
+  tags:
+    - win
+    - common
+    - in
+- name: telnet
+  ports:
+    - '23'
   tags:
     - win
     - common

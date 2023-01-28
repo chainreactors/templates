@@ -893,18 +893,11 @@
     - regexps:
         body:
           - <div id="bb5-site-wrapper">
-- name: backuppc
-  rule:
-    - regexps:
-        header:
-          - Backup
 - name: bacula-web
   rule:
     - regexps:
         body:
           - Webacula
-          - Bacula Web
-          - Bacula-Web
           - bacula-web
 - name: badblue
   rule:
@@ -6956,11 +6949,6 @@
         header:
           - client_param=install_active
 
-- name: observa telcom
-  rule:
-    - regexps:
-        body:
-          - OBSERVA
 - name: onssi_video_clients
   rule:
     - regexps:

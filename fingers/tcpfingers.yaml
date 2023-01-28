@@ -181,3 +181,26 @@
     - regexps:
         body:
           - 'ActiveMQ'
+- name: socks5
+  default_port:
+    - socks
+  rule:
+    - regexps:
+        vuln:
+          - '^\x05\x00'
+        regexp:
+          - '^\x05\x02'
+          - '^\x05\xff'
+      send_data: "\x05\x01\x02"
+      vuln: socks5_unauthorized
+- name: socks4
+  default_port:
+    - socks
+  rule:
+    - regexps:
+        vuln:
+          - '^\x04\x00'
+        regexp:
+          - '^\x04\xff'
+      send_data: "\x04\x01\x00"
+      vuln: socks4_unauthorized
