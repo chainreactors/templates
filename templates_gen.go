@@ -178,11 +178,11 @@ func main() {
 	var needs []string
 	flag.StringVar(&templatePath, "t", ".", "templates repo path")
 	flag.StringVar(&resultPath, "o", "templates.go", "result filename")
-	need := flag.String("need", "all", "tcp|http|port|workflow|nuclei")
+	need := flag.String("need", "gogo", "tcp|http|port|workflow|nuclei")
 	flag.Parse()
 
-	if *need == "all" {
-		needs = []string{"tcp", "http", "port", "workflow", "nuclei"}
+	if *need == "gogo" {
+		needs = []string{"tcp", "http", "port", "workflow", "nuclei", "extract"}
 	} else {
 		needs = strings.Split(*need, ",")
 	}
