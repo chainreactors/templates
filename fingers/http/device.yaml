@@ -688,11 +688,6 @@
     - regexps:
         header:
           - X-Powered-By-Anquanbao
-- name: 安全狗
-  rule:
-    - regexps:
-        header:
-          - WAF/2.0
 - name: 海康威视ivms
   focus: true
   rule:
@@ -751,7 +746,7 @@
         body:
           - 金山
           - 猎鹰安全
-- name: 网御waf
+- name: 网御waf设备
   rule:
     - regexps:
         body:

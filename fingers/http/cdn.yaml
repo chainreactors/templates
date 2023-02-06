@@ -34,7 +34,7 @@
   rule:
     - regexps:
         header:
-          - jiasule-WAF
+          - jiasule
         body:
           - notice-jiasule
 - name: 百度cdn

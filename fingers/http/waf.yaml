@@ -164,3 +164,34 @@
     - regexps:
         body:
           - 因权限问题或行为非法，您的访问被拒绝
+- name: anzuwaf
+  rule:
+    - regexps:
+        header:
+          - AnZuWAF
+- name: fortiweb waf
+  rule:
+    - regexps:
+        header:
+          - FORTIWAFSID=
+- name: indusguard_waf
+  rule:
+    - regexps:
+        body:
+          - IndusGuard WAF
+          - wafportal/wafportal.nocache.js
+- name: safe3waf
+  rule:
+    - regexps:
+        header:
+          - Safe3WAF
+- name: websecurity_waf
+  rule:
+    - regexps:
+        header:
+          - 'Websecurity: WAF 1.0'
+- name: 安全狗WAF
+  rule:
+    - regexps:
+        header:
+          - WAF/2.0

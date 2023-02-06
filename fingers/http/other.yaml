@@ -454,11 +454,7 @@
           - AnyWebApp
         header:
           - LOGIN_KEY
-- name: anzuwaf
-  rule:
-    - regexps:
-        header:
-          - AnZuWAF
+
 - name: aolserver
   rule:
     - regexps:
@@ -3298,11 +3294,7 @@
           - FortiGuard Web Filtering
           - Web Filter Block Override
           - /XX/YY/ZZ/CI/MGPGHGPGPFGHCDPFGGOGFGEH
-- name: fortiweb waf
-  rule:
-    - regexps:
-        header:
-          - FORTIWAFSID=
+
 - name: fortiweb
   rule:
     - regexps:
@@ -4266,12 +4258,7 @@
           - href="http://cern.ch/indico
         header:
           - MAKACSESSION
-- name: indusguard_waf
-  rule:
-    - regexps:
-        body:
-          - IndusGuard WAF
-          - wafportal/wafportal.nocache.js
+
 - name: infinet-wireless-wanflex-router
   rule:
     - regexps:
@@ -6894,7 +6881,7 @@
     - regexps:
         body:
           - Powered by Npoint
-- name: nsfocus_waf
+- name: nsfocusWAF设备
   rule:
     - regexps:
         body:
@@ -7306,11 +7293,7 @@
         body:
           - mon.  Tell me your username
           - Ruckus Wireless Admin
-- name: safe3waf
-  rule:
-    - regexps:
-        header:
-          - Safe3WAF
+
 - name: samanportal
   rule:
     - regexps:
@@ -8986,11 +8969,7 @@
     - regexps:
         header:
           - webrick
-- name: websecurity_waf
-  rule:
-    - regexps:
-        header:
-          - 'Websecurity: WAF 1.0'
+
 - name: websitebaker-cms
   rule:
     - regexps:
