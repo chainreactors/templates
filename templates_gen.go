@@ -65,7 +65,7 @@ func loadRawFiles(dir string) string {
 		if err != nil {
 			panic(err)
 		}
-		data[strings.TrimSuffix(filepath.Base(file), ".txt")] = string(bs)
+		data[strings.TrimSuffix(filepath.Base(file), ".rule")] = string(bs)
 	}
 	jsonstr, err := json.Marshal(data)
 	if err != nil {
