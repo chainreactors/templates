@@ -1,0 +1,75 @@
+- name: 网宿
+  rule:
+    - regexps:
+        header:
+          - WS CDN Server
+- name: alloyui
+  rule:
+    - regexps:
+        body:
+          - cdn.alloyui.com
+- name: cdn-cache-server
+  rule:
+    - regexps:
+        header:
+          - Cdn Cache Server
+- name: fastly cdn
+  rule:
+    - regexps:
+        body:
+          - fastcdn.org
+- name: gocdn
+  rule:
+    - regexps:
+        header:
+          - GOCDN
+- name: 阿里云cdn
+  rule:
+    - regexps:
+        body:
+          - cdn.aliyuncs.com
+        header:
+          - cdn.aliyuncs.com
+- name: 加速乐CDN
+  rule:
+    - regexps:
+        header:
+          - jiasule-WAF
+        body:
+          - notice-jiasule
+- name: 百度cdn
+  rule:
+    - regexps:
+        body:
+          - apps.bdimg.com
+          - libs.baidu.com
+        header:
+          - libs.baidu.com
+- name: powercdn
+  rule:
+    - regexps:
+        header:
+          - Powercdn
+- name: 七牛cdn
+  rule:
+    - regexps:
+        body:
+          - glb.clouddn.com
+          - glb.qiniucdn.com
+          - cdn.staticfile.org
+        header:
+          - cdn.staticfile.org
+- name: maxcdn
+  rule:
+    - regexps:
+        header:
+          - NetDNA
+- name: 加速乐
+  rule:
+    - regexps:
+        header:
+          - __jsluid
+
+
+
+

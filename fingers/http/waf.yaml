@@ -72,13 +72,6 @@
         body:
           - GoDaddy Security
           - GoDaddy Website Firewall
-- name: 加速乐CDN
-  rule:
-    - regexps:
-        header:
-          - jiasule-WAF
-        body:
-          - notice-jiasule
 - name: MicrosoftWAF
   rule:
     - regexps:

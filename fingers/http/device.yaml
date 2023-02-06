@@ -751,11 +751,6 @@
         body:
           - 金山
           - 猎鹰安全
-- name: 网宿
-  rule:
-    - regexps:
-        header:
-          - WS CDN Server
 - name: 网御waf
   rule:
     - regexps:

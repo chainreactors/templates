@@ -352,11 +352,6 @@
         body:
           - content="Allomani
           - Programmed By Allomani
-- name: alloyui
-  rule:
-    - regexps:
-        body:
-          - cdn.alloyui.com
 - name: alpha-five
   rule:
     - regexps:
@@ -1446,12 +1441,8 @@
     - regexps:
         body:
           - <script src="http://kefu.qycn.com/
-- name: cdn-cache-server
-  rule:
-    - regexps:
-        header:
-          - Cdn Cache Server
-- name: cdnjs
+
+- name: cfcdnjs
   rule:
     - regexps:
         body:
@@ -3124,12 +3115,6 @@
     - regexps:
         body:
           - jquery.fancybox.js
-
-- name: fastly cdn
-  rule:
-    - regexps:
-        body:
-          - fastcdn.org
 - name: fastpublish-cms
   rule:
     - regexps:
@@ -3555,62 +3540,57 @@
     - regexps:
         header:
           - GoAhead
-- name: gocdn
-  rule:
-    - regexps:
-        header:
-          - GOCDN
-- name: google api
-  rule:
-    - regexps:
-        body:
-          - www.google.com/jsapi
-          - ajax.googleapis.com/
-- name: google hosted libraries
-  rule:
-    - regexps:
-        body:
-          - ajax.googleapis.com/ajax/libs
-        header:
-          - ajax.googleapis.com/ajax/libs
-- name: google map
-  rule:
-    - regexps:
-        body:
-          - maps.googleapis.com/maps/api/js
-- name: google maps
-  rule:
-    - regexps:
-        body:
-          - maps.google.com/maps
-- name: google-analytics
-  rule:
-    - regexps:
-        body:
-          - google-analytics.com/ga.js
-          - google-analytics.com/analytics.js
-- name: google-search-appliance
-  rule:
-    - regexps:
-        body:
-          - Google Search Appliance
-        header:
-          - Google Search Appliance
-- name: google-talk-chatback
-  rule:
-    - regexps:
-        body:
-          - www.google.com/talk/service/
-- name: google_adsense
-  rule:
-    - regexps:
-        body:
-          - googlesyndication
-- name: google站长平台
-  rule:
-    - regexps:
-        body:
-          - google-site-verification
+#- name: google api
+#  rule:
+#    - regexps:
+#        body:
+#          - www.google.com/jsapi
+#          - ajax.googleapis.com/
+#- name: google hosted libraries
+#  rule:
+#    - regexps:
+#        body:
+#          - ajax.googleapis.com/ajax/libs
+#        header:
+#          - ajax.googleapis.com/ajax/libs
+#- name: google map
+#  rule:
+#    - regexps:
+#        body:
+#          - maps.googleapis.com/maps/api/js
+#- name: google maps
+#  rule:
+#    - regexps:
+#        body:
+#          - maps.google.com/maps
+#- name: google-analytics
+#  rule:
+#    - regexps:
+#        body:
+#          - google-analytics.com/ga.js
+#          - google-analytics.com/analytics.js
+#- name: google-search-appliance
+#  rule:
+#    - regexps:
+#        body:
+#          - Google Search Appliance
+#        header:
+#          - Google Search Appliance
+#- name: google-talk-chatback
+#  rule:
+#    - regexps:
+#        body:
+#          - www.google.com/talk/service/
+#- name: google_adsense
+#  rule:
+#    - regexps:
+#        body:
+#          - googlesyndication
+#- name: google站长平台
+#  rule:
+#    - regexps:
+#        body:
+#          - google-site-verification
 - name: gordano-messaging-suite
   rule:
     - regexps:
@@ -5537,11 +5517,7 @@
           - Maticsoft Shop
           - maticsoft
           - /Areas/Shop/
-- name: maxcdn
-  rule:
-    - regexps:
-        header:
-          - NetDNA
+
 - name: mbedthis-appweb
   rule:
     - regexps:
@@ -7180,11 +7156,6 @@
       favicon:
         mmh3:
           - '77044418'
-- name: powercdn
-  rule:
-    - regexps:
-        header:
-          - Powercdn
 - name: powerlogic_ion
   rule:
     - regexps:
@@ -9301,15 +9272,7 @@
     - regexps:
         body:
           - /custom/GroupNewsList.aspx?GroupId=
-- name: 七牛cdn
-  rule:
-    - regexps:
-        body:
-          - glb.clouddn.com
-          - glb.qiniucdn.com
-          - cdn.staticfile.org
-        header:
-          - cdn.staticfile.org
+
 
 - name: 中兴路由器
   rule:
@@ -9380,11 +9343,7 @@
           - libs.cdnjs.net
         header:
           - libs.cdnjs.net
-- name: 加速乐
-  rule:
-    - regexps:
-        header:
-          - __jsluid
+
 - name: 北京清科锐华cemis
   rule:
     - regexps:
@@ -9544,12 +9503,6 @@
         body:
           - /js/diyou.js
           - src="/dyweb/dythemes
-
-- name: 帝联
-  rule:
-    - regexps:
-        header:
-          - fastcdn.com
 - name: 微普外卖点餐系统
   rule:
     - regexps:
@@ -9776,14 +9729,7 @@
     - regexps:
         body:
           - 提交验证的id必须是ctl_submit
-- name: 百度cdn
-  rule:
-    - regexps:
-        body:
-          - apps.bdimg.com
-          - libs.baidu.com
-        header:
-          - libs.baidu.com
+
 - name: 百度云加速
   rule:
     - regexps:
@@ -9903,13 +9849,6 @@
         body:
           - window.open("/login.do","airWin
           - 锐捷应用控制引擎
-- name: 阿里云cdn
-  rule:
-    - regexps:
-        body:
-          - cdn.aliyuncs.com
-        header:
-          - cdn.aliyuncs.com
 - name: 青果软件
   rule:
     - regexps:
