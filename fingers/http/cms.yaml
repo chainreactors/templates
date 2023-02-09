@@ -677,5 +677,9 @@
         body:
           - 泛鹏天地
           - instantclick.js
-
+- name: Zoho ManageEngine
+  rule:
+    - regexps:
+        body:
+          - scripts/esapi.js
 
