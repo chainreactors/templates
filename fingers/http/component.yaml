@@ -62,20 +62,20 @@
           - druid.login
       send_data: /druid/index.html
       info: druid leak
-- name: composer.json
-  rule:
-    - regexps:
-        vuln:
-          - '"require": '
-      send_data: /composer.json
-      info: composer leak
-- name: license
-  rule:
-    - regexps:
-        vuln:
-          - copyleft
-      send_data: /LICENSE
-      info: LICENSE leak
+#- name: composer.json
+#  rule:
+#    - regexps:
+#        vuln:
+#          - '"require": '
+#      send_data: /composer.json
+#      info: composer leak
+#- name: license
+#  rule:
+#    - regexps:
+#        vuln:
+#          - copyleft
+#      send_data: /LICENSE
+#      info: LICENSE leak
 - name: thymeleaf
   rule:
     - regexps:

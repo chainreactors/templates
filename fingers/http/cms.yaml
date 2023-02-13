@@ -585,8 +585,6 @@
     - regexps:
         body:
           - seacms
-          - Powered by SeaCms
-          - content="seacms
 - name: 美洽在线客服
   focus: true
   rule:
