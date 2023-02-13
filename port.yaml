@@ -320,11 +320,6 @@
     - '8500'
   tags:
     - rce
-- name: flink
-  ports:
-    - '8081'
-  tags:
-    - rce
 - name: ajp
   ports:
     - '8009'
@@ -474,16 +469,6 @@
     - common
     - in
     - rce
-- name: websphere
-  ports:
-    - '9043'
-    - '9060'
-    - 9080-9083
-    - '9443'
-    - '8880'
-    - '9100'
-  tags:
-    - info
 - name: hadoop
   ports:
     - '8020'
