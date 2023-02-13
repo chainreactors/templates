@@ -74,8 +74,6 @@
     - regexps:
         body:
           - 68 Classifieds
-
-
 - name: aardvark topsites
   rule:
     - regexps:
@@ -193,11 +191,6 @@
           - /x-shockwave-flash
           - /go/getflashplayer
           - embedswf
-- name: adobe_ cq5
-  rule:
-    - regexps:
-        body:
-          - _jcr_content
 - name: adobe_golive
   rule:
     - regexps:
@@ -654,8 +647,6 @@
           - RT-AC66U
         header:
           - RT-AC66U
-
-
 - name: atomic-photo-album
   rule:
     - regexps:
@@ -920,7 +911,6 @@
   rule:
     - regexps:
         body:
-          - content="BAOCMS
           - baocms
 - name: barracuda-backup-server
   rule:
@@ -975,13 +965,6 @@
         body:
           - <!-- If you like showing off the fact that your server rocks -->
           - is proudly powered by <a href="http://bbpress.org
-- name: beecms
-  rule:
-    - regexps:
-        body:
-          - powerd by
-          - BEESCMS
-          - template/default/images/slides.min.jquery.js
 - name: belkin-modem
   rule:
     - regexps:
@@ -1079,11 +1062,7 @@
     - regexps:
         header:
           - bkhttp
-- name: bitrixsitemanager
-  rule:
-    - regexps:
-        header:
-          - 'X-Powered-Cms: Bitrix Site Manager'
+
 - name: bitweaver
   rule:
     - regexps:
@@ -1129,23 +1108,7 @@
     - regexps:
         header:
           - cookietest=test
-- name: bloofoxcms
-  rule:
-    - regexps:
-        body:
-          - content="bloofoxCMS
-          - Powered by <a href="http://www.bloofox.com
-- name: blue-coat-proxysg
-  rule:
-    - regexps:
-        header:
-          - proxysg
-- name: bluecms
-  rule:
-    - regexps:
-        body:
-          - power by bcms
-          - bcms_plugin
+
 - name: bluedragon
   rule:
     - regexps:
@@ -1212,16 +1175,7 @@
         body:
           - Powered by <a href="http://www.bosdev.com
           - content="BosClassifieds
-- name: boyowcms
-  rule:
-    - regexps:
-        body:
-          - publish by BoyowCMS
-- name: bpanelcms
-  rule:
-    - regexps:
-        header:
-          - 'X-Powered-Cms: BPanel CMS'
+
 - name: brewblogger
   rule:
     - regexps:
@@ -1247,12 +1201,7 @@
         body:
           - <FRAME SRC="/printer/inc_head.html
           - <IMG src="/common/image/HL4040CN
-- name: browsercms
-  rule:
-    - regexps:
-        body:
-          - Powered by BrowserCMS
-          - content="BrowserCMS
+
 - name: buddy-zone
   rule:
     - regexps:
@@ -1775,9 +1724,7 @@
   rule:
     - regexps:
         body:
-          - Powered by CitusCMS
-          - <strong>CitusCMS</strong>
-          - content="CitusCMS
+          - CitusCMS
 - name: cl-http
   rule:
     - regexps:
@@ -1838,66 +1785,6 @@
     - regexps:
         header:
           - cloudflare-nginx
-- name: cm3-cms
-  rule:
-    - regexps:
-        body:
-          - content="cm3 content manager
-        header:
-          - cm3session
-- name: cms-made-simple
-  rule:
-    - regexps:
-        body:
-          - content="CMS Made Simple
-        header:
-          - CMSSESSID
-- name: cms-webmanager-pro
-  rule:
-    - regexps:
-        body:
-          - content="Webmanager-pro
-          - href="http://webmanager-pro.com">Web.Manager
-- name: cmscontrol
-  rule:
-    - regexps:
-        body:
-          - content="CMScontrol
-- name: cmscout
-  rule:
-    - regexps:
-        body:
-          - Powered by CMScout
-        header:
-          - cmscout2=
-- name: cmseasy
-  rule:
-    - regexps:
-        body:
-          - Powered by CmsEasy
-          - content="CmsEasy
-        header:
-          - http://www.cmseasy.cn/service_1.html
-- name: cmsimple
-  rule:
-    - regexps:
-        body:
-          - Powered by CMSimple.dk
-          - content="CMSimple
-- name: cmsqlite
-  rule:
-    - regexps:
-        body:
-          - powered by CMSQLite
-          - content="www.CMSQLite.net
-- name: cmstop
-  rule:
-    - regexps:
-        body:
-          - /css/cmstop-common.css
-          - /js/cmstop-common.js
-          - cmstop-list-text.css
-          - <a class="poweredby" href="http://www.cmstop.com"
 - name: cnzz
   rule:
     - regexps:
@@ -10880,23 +10767,11 @@
     - favicon:
         mmh3:
           - '-1277814690'
-- name: confluence
-  rule:
-    - favicon:
-        mmh3:
-          - '-1642532491'
-        md5:
-          - 966e60f8eb85b7ea43a7b0095f3e2336
 - name: angular io
   rule:
     - favicon:
         mmh3:
           - '-1255347784'
-- name: xampp
-  rule:
-    - favicon:
-        mmh3:
-          - '-1437701105'
 - name: react
   rule:
     - favicon:
@@ -10977,11 +10852,6 @@
     - favicon:
         mmh3:
           - '-1446794564'
-- name: apache tomcat
-  rule:
-    - favicon:
-        mmh3:
-          - '-297069493'
 - name: ubnt router
   rule:
     - favicon:
@@ -11037,16 +10907,6 @@
     - favicon:
         mmh3:
           - '-318947884'
-- name: phpmyadmin
-  rule:
-    - favicon:
-        mmh3:
-          - '-476231906'
-- name: zhejiang uniview technologies
-  rule:
-    - favicon:
-        mmh3:
-          - '-1240222446'
 - name: isp manager
   rule:
     - favicon:
@@ -11153,11 +11013,6 @@
     - favicon:
         mmh3:
           - '-1351901211'
-- name: websockets test page
-  rule:
-    - favicon:
-        mmh3:
-          - '-291579889'
 - name: openrg
   rule:
     - favicon:

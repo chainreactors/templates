@@ -237,6 +237,14 @@
           - FineReport
       send_data: /ReportServer
       info: composer leak
+- name: finereport
+  focus: true
+  rule:
+    - regexps:
+        vuln:
+          - FineReport
+      send_data: /WebReport/ReportServer
+      info: composer leak
 - name: 万户oa
   focus: true
   rule:
@@ -512,3 +520,17 @@
           - '-305179312'
           - '-1642532491'
           - build/framework/js/download.js
+- name: phpmyadmin
+  rule:
+    - regexps:
+        header:
+          - pma_lang
+          - phpMyAdmin
+        body:
+          - /themes/pmahomme/img/logo_right.png
+      favicon:
+        md5:
+          - 531b63a51234bb06c9d77f219eb25553
+        mmh3:
+          - '-1010568750'
+          - '-476231906'

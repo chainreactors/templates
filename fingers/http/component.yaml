@@ -309,3 +309,35 @@
     - regexps:
         body:
           - type="file"
+- name: xampp
+  rule:
+    - favicon:
+        mmh3:
+          - '-1437701105'
+- name: lanmp集成环境
+  rule:
+    - regexps:
+        body:
+          - <title>LANMP
+- name: 宝塔面板
+  default_port:
+    - '8888'
+  rule:
+    - regexps:
+        body:
+          - app.bt.cn/static/app.png
+          - 安全入口校验失败
+- name: 宝塔
+  rule:
+    - regexps:
+        body:
+          - 恭喜，站点创建成功
+          - 没有找到站点
+      favicon:
+        md5:
+          - 3c3804ddad747313df58112a3e1bc680
+- name: lnmp
+  rule:
+    - regexps:
+        body:
+          - lnmp.gif

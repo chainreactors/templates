@@ -1,31 +1,3 @@
-- name: lanmp集成环境
-  rule:
-    - regexps:
-        body:
-          - <title>LANMP
-- name: 宝塔面板
-  default_port:
-    - '8888'
-  rule:
-    - regexps:
-        body:
-          - app.bt.cn/static/app.png
-          - 安全入口校验失败
-- name: 宝塔
-  rule:
-    - regexps:
-        body:
-          - 恭喜，站点创建成功
-          - 没有找到站点
-      favicon:
-        md5:
-          - 3c3804ddad747313df58112a3e1bc680
-- name: lnmp
-  rule:
-    - regexps:
-        body:
-          - lnmp.gif
-
 - name: 微擎
   focus: true
   rule:
@@ -52,20 +24,7 @@
           - '-505448917'
         md5:
           - c028c4822428e83a358c60a93ef65381
-- name: phpmyadmin
-  rule:
-    - regexps:
-        header:
-          - pma_lang
-          - phpMyAdmin
-        body:
-          - /themes/pmahomme/img/logo_right.png
-      favicon:
-        md5:
-          - 531b63a51234bb06c9d77f219eb25553
-        mmh3:
-          - '-1010568750'
-          - '-476231906'
+
 - name: 普元eos_console
   focus: true
   rule:
@@ -677,5 +636,109 @@
         body:
           - 泛鹏天地
           - instantclick.js
+- name: beecms
+  rule:
+    - regexps:
+        body:
+          - BEESCMS
+          - template/default/images/slides.min.jquery.js
+- name: bitrixsitemanager
+  rule:
+    - regexps:
+        header:
+          - 'X-Powered-Cms: Bitrix Site Manager'
+- name: bloofoxcms
+  rule:
+    - regexps:
+        body:
+          - content="bloofoxCMS
+          - Powered by <a href="http://www.bloofox.com
+- name: blue-coat-proxysg
+  rule:
+    - regexps:
+        header:
+          - proxysg
+- name: bluecms
+  rule:
+    - regexps:
+        body:
+          - power by bcms
+          - bcms_plugin
+- name: boyowcms
+  rule:
+    - regexps:
+        body:
+          - publish by BoyowCMS
+- name: bpanelcms
+  rule:
+    - regexps:
+        header:
+          - 'X-Powered-Cms: BPanel CMS'
+- name: browsercms
+  rule:
+    - regexps:
+        body:
+          - Powered by BrowserCMS
+          - content="BrowserCMS
+- name: cm3-cms
+  rule:
+    - regexps:
+        body:
+          - content="cm3 content manager
+        header:
+          - cm3session
+- name: cms-made-simple
+  rule:
+    - regexps:
+        body:
+          - content="CMS Made Simple
+        header:
+          - CMSSESSID
+- name: cms-webmanager-pro
+  rule:
+    - regexps:
+        body:
+          - content="Webmanager-pro
+          - href="http://webmanager-pro.com">Web.Manager
+- name: cmscontrol
+  rule:
+    - regexps:
+        body:
+          - content="CMScontrol
+- name: cmscout
+  rule:
+    - regexps:
+        body:
+          - Powered by CMScout
+        header:
+          - cmscout2=
+- name: cmseasy
+  rule:
+    - regexps:
+        body:
+          - Powered by CmsEasy
+          - content="CmsEasy
+        header:
+          - http://www.cmseasy.cn/service_1.html
+- name: cmsimple
+  rule:
+    - regexps:
+        body:
+          - Powered by CMSimple.dk
+          - content="CMSimple
+- name: cmsqlite
+  rule:
+    - regexps:
+        body:
+          - powered by CMSQLite
+          - content="www.CMSQLite.net
+- name: cmstop
+  rule:
+    - regexps:
+        body:
+          - /css/cmstop-common.css
+          - /js/cmstop-common.js
+          - cmstop-list-text.css
+          - <a class="poweredby" href="http://www.cmstop.com"
 
 
