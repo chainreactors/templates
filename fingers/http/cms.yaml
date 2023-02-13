@@ -736,9 +736,12 @@
   rule:
     - regexps:
         body:
-          - /css/cmstop-common.css
           - /js/cmstop-common.js
-          - cmstop-list-text.css
-          - <a class="poweredby" href="http://www.cmstop.com"
+          - www.cmstop.com
+- name: Zoho ManageEngine
+  rule:
+    - regexps:
+        body:
+          - scripts/esapi.js
 
 
