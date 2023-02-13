@@ -204,3 +204,13 @@
           - '^\x04\xff'
       send_data: "\x04\x01\x00"
       vuln: socks4_unauthorized
+- name: jdwp
+  default_port:
+    - jdwp
+  protocol: tcp
+  rule:
+    - regexps:
+        vuln:
+          - JDWP-Handshake
+      send_data: JDWP-Handshake\n
+      vuln: jdwp_unauthorized
