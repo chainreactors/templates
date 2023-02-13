@@ -309,16 +309,6 @@
     - rce
     - common
     - in
-- name: zoho
-  ports:
-    - '8383'
-  tags:
-    - rce
-- name: altassian
-  ports:
-    - '4990'
-  tags:
-    - rce
 - name: portainer
   ports:
     - '9000'
