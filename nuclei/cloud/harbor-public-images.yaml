@@ -13,7 +13,6 @@ requests:
       - "{{BaseURL}}/api/search?q="
       - "{{BaseURL}}/api/v2.0/search?q="
 
-
     matchers-condition: and
     matchers:
       - type: status

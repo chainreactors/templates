@@ -160,6 +160,8 @@
     - regexps:
         header:
           - Erlang OTP
+        body:
+          - pluggable-storage-engines
 - name: cougar
   rule:
     - regexps:
