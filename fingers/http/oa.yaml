@@ -55,11 +55,16 @@
           - Powered by 协众OA
         header:
           - CNOAOASESSID
-- name: trs(托尔斯)
+- name: 托尔斯cms
   rule:
     - regexps:
         body:
           - dreamer-cms
+- name: 托尔斯was
+  rule:
+    - regexps:
+        body:
+          - trs_web_style.css
 - name: 禅道oa
   focus: true
   rule:
