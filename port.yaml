@@ -319,11 +319,6 @@
   tags:
     - rce
     - in
-- name: hashicorp
-  ports:
-    - '8500'
-  tags:
-    - rce
 - name: ajp
   ports:
     - '8009'
@@ -338,6 +333,7 @@
   tags:
     - rce
     - in
+    - db
     - brute
     - common
 - name: windows
