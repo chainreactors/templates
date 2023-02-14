@@ -391,3 +391,8 @@
     - regexps:
         body:
           - Traefik
+- name: yapi
+  rule:
+    - regexps:
+        body:
+          - content="yapi

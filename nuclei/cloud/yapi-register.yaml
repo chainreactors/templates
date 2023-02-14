@@ -1,0 +1,26 @@
+id: yapi-register
+
+info:
+  name: Yapi Remote Code Execution
+  author: pikpikcu
+  severity: high
+  tags: yapi
+  description: A vulnerability in Yapi allows remote unauthenticated attackers to cause the product to execute arbitrary code.
+
+requests:
+  - raw:
+      - | # REQUEST 1
+        POST /api/user/reg HTTP/1.1
+        Host: {{Hostname}}
+        Content-Type: application/json;charset=UTF-8
+
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        words:
+          - 邮箱不能为空
+        part: body
