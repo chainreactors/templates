@@ -131,6 +131,8 @@
 - name: mysql
   ports:
     - 3306-3308
+    - '33060'
+    - '33066'
   tags:
     - db
     - common
@@ -147,6 +149,7 @@
 - name: counchdb
   ports:
     - '5984'
+    - '6984'
   tags:
     - db
 - name: redis
