@@ -167,7 +167,7 @@
           - Cougar
 - name: docker
   default_port:
-    - '2379'
+    - '2375'
   focus: true
   rule:
     - favicon:
