@@ -106,9 +106,9 @@
   rule:
     - regexps:
         vuln:
-          - N.{1,2}\d*\.\d*\.\d*\.\d*
+          - ^N[\s\S]{1,2}\d*\.\d*\.\d*\.\d*
       send_data: "JRMI\0\x02K"
-      info: "rmi_service"
+      info: rmi_service
 - name: ftp
   default_port:
     - ftp
