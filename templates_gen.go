@@ -168,6 +168,8 @@ func parser(key string) string {
 		return loadYamlFile2JsonString("keywords.yaml")
 	case "extract":
 		return loadYamlFile2JsonString("extract.yaml")
+	case "zombie":
+		return loadYamlFile2JsonString("zombie/keywords.yaml")
 	default:
 		panic("illegal key")
 	}
