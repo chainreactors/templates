@@ -400,6 +400,13 @@
         body:
           - 网御运维安全网关
           - ops/Login
+- name: 奇安信堡垒机
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - location.href='/fort'
+          - SecFox运维安全管理
 - name: 齐治堡垒机
   focus: true
   rule:
@@ -561,6 +568,7 @@
           - QiAnXin
         body:
           - 网神
+          - secfox
       favicon:
         md5:
           - e4e25f45b2a8988cb203743bd64204fe

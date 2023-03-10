@@ -53,10 +53,6 @@
 - name: 七牛cdn
   rule:
     - regexps:
-        body:
-          - glb.clouddn.com
-          - glb.qiniucdn.com
-          - cdn.staticfile.org
         header:
           - cdn.staticfile.org
 - name: maxcdn
@@ -69,7 +65,4 @@
     - regexps:
         header:
           - __jsluid
-
-
-
 
