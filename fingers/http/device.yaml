@@ -47,7 +47,7 @@
     - regexps:
         body:
           - /vpn/resources.js
-- name: 奇安信vpn/网康
+- name: 奇安信vpn
   focus: true
   rule:
     - regexps:
@@ -538,6 +538,12 @@
       favicon:
         md5:
           - 293a3a7763eee19a068ef3dff98a7b8a
+- name: 海康设备
+  rule:
+    - regexps:
+        body:
+          - 海康威视
+          - hikvision
 - name: 华为设备
   rule:
     - regexps:
@@ -561,6 +567,22 @@
         body:
           - 北京启明星辰信息安全技术有限公司
           - venustech
+          - 天玥
+          - Leadersec
+          - 网御
+          - 天清
+- name: 安恒设备
+  rule:
+    - regexps:
+        body:
+          - 明御
+          - 安恒
+          - 明鉴
+- name: 任子行
+  rule:
+    - regexps:
+        body:
+          - 任子行
 - name: 奇安信设备
   rule:
     - regexps:
@@ -568,6 +590,7 @@
           - QiAnXin
         body:
           - 网神
+          - 网康
           - secfox
       favicon:
         md5:
@@ -600,16 +623,6 @@
     - regexps:
         body:
           - resources/image/logo_header.png
-- name: 奇安信secfox
-  rule:
-    - regexps:
-        body:
-          - secfox
-- name: 奇安信secfox
-  rule:
-    - regexps:
-        body:
-          - secfox
 - name: 网神3600防火墙
   rule:
     - regexps:
@@ -628,62 +641,12 @@
         body:
           - This site is running
           - TeamViewer
-- name: 天融信 topad
-  rule:
-    - regexps:
-        body:
-          - 天融信 TopAD
-- name: 天融信ads管理平台
-  rule:
-    - regexps:
-        body:
-          - 天融信ADS管理平台
-- name: 天融信topflow
-  rule:
-    - regexps:
-        body:
-          - 天融信TopFlow
 - name: 天融信vpn
   focus: true
   rule:
     - regexps:
         header:
           - topsecsvportalname
-- name: 天融信web应用安全防护系统
-  rule:
-    - regexps:
-        body:
-          - 天融信Web应用安全防护系统
-- name: 天融信web应用防火墙
-  rule:
-    - regexps:
-        body:
-          - 天融信WEB应用防火墙
-- name: 天融信入侵检测系统topsentry
-  rule:
-    - regexps:
-        body:
-          - 天融信入侵检测系统TopSentry
-- name: 天融信入侵防御系统topidp
-  rule:
-    - regexps:
-        body:
-          - 天融信入侵防御系统TopIDP
-- name: 天融信安全管理系统
-  rule:
-    - regexps:
-        body:
-          - 天融信安全管理
-- name: 天融信网络审计系统
-  rule:
-    - regexps:
-        body:
-          - onclick="dlg_download()
-- name: 天融信脆弱性扫描与管理系统
-  rule:
-    - regexps:
-        body:
-          - /js/report/horizontalReportPanel.js
 - name: 天融信防火墙
   rule:
     - regexps:
@@ -703,7 +666,7 @@
         body:
           - g_szCacheTime
           - iVMS
-- name: hikvision
+- name: hikvision摄像头
   focus: true
   rule:
     - regexps:
