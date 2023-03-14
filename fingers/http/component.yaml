@@ -148,8 +148,6 @@
 - name: tomcat
   rule:
     - regexps:
-        vuln:
-          - Directory Listing For
         regexp:
           - <h3>Apache Tomcat/(.*)</h3>
           - <title>Apache Tomcat/(.*)</title>
@@ -158,7 +156,14 @@
       favicon:
         md5:
           - 4644f2d45601037b8423d45e13194c93
-      info: tomcat Directory traversal
+
+- name: directory
+  rule:
+    - regexps:
+        vuln:
+          - Directory Listing For
+  info: Directory traversal
+
 - name: apache
   rule:
     - regexps:
@@ -341,3 +346,8 @@
     - regexps:
         body:
           - lnmp.gif
+- name: pythonSimpleHTTP
+  rule:
+    - regexps:
+        header:
+          - SimpleHTTP/

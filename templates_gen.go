@@ -10,7 +10,6 @@ import (
 	"os"
 	"path"
 	"path/filepath"
-
 	"sigs.k8s.io/yaml"
 	"strings"
 )

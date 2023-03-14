@@ -3809,8 +3809,6 @@
     - regexps:
         body:
           - ProCurve Switch
-        header:
-          - eHTTP
 - name: hp-sitescope
   rule:
     - regexps:
