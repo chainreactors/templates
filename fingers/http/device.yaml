@@ -13,11 +13,6 @@
     - regexps:
         header:
           - client_param=install_active
-- name: 网神vpn
-  rule:
-    - regexps:
-        body:
-          - admin/js/virtual_keyboard.js
 - name: 网御星云vpn
   rule:
     - regexps:
@@ -91,11 +86,6 @@
     - regexps:
         body:
           - window.location="/Citrix/MetaFrame
-- name: h3c er5100
-  rule:
-    - regexps:
-        body:
-          - ER5100系统管理
 - name: cisco_epc3925
   rule:
     - regexps:
@@ -106,11 +96,6 @@
     - regexps:
         body:
           - CISCO ASR
-- name: h3c er3200
-  rule:
-    - regexps:
-        body:
-          - ER3200系统管理
 
 - name: huawei_srg2220
   rule:
@@ -142,21 +127,12 @@
     - regexps:
         body:
           - /netopen/theme/css/inFrame.css
-- name: 360主机卫士
-  rule:
-    - regexps:
-        header:
-          - zhuji.360.cn
 - name: nagios
   rule:
     - regexps:
         header:
           - Nagios Access
-- name: h3c er8300
-  rule:
-    - regexps:
-        body:
-          - ER8300系统管理
+
 - name: citrix-access-gateway
   rule:
     - regexps:
@@ -167,62 +143,13 @@
     - regexps:
         body:
           - McuR5-min.js
-- name: tp-link wireless wdr3600
-  rule:
-    - regexps:
-        body:
-          - TP-LINK Wireless WDR3600
 
-- name: tp-link wireless wdr3600
-  rule:
-    - regexps:
-        body:
-          - TP-LINK Wireless WDR3600
-- name: 华为_huawei_asg2050
-  rule:
-    - regexps:
-        body:
-          - HUAWEI ASG2050
-- name: 360网站卫士
-  rule:
-    - regexps:
-        body:
-          - 360wzb
 - name: citrix-xenserver
   rule:
     - regexps:
         body:
           - Citrix Systems, Inc. XenServer
-- name: h3c er2100v2
-  rule:
-    - regexps:
-        body:
-          - ER2100V2系统管理
-- name: 360站长平台
-  rule:
-    - regexps:
-        body:
-          - 360-site-verification
-- name: h3c er3108gw
-  rule:
-    - regexps:
-        body:
-          - ER3108GW系统管理
-- name: h3c er3260g2
-  rule:
-    - regexps:
-        body:
-          - ER3260G2系统管理
-- name: h3c icg1000
-  rule:
-    - regexps:
-        body:
-          - ICG1000系统管理
-- name: cisco-cx20
-  rule:
-    - regexps:
-        body:
-          - CISCO-CX20
+
 - name: cisco-router
   rule:
     - regexps:
@@ -233,51 +160,17 @@
     - regexps:
         body:
           - synologyrouter
-- name: h3c er5200
-  rule:
-    - regexps:
-        body:
-          - ER5200系统管理
-- name: h3c er3100
-  rule:
-    - regexps:
-        body:
-          - ER3100系统管理
+
 - name: h3c-secblade-firewall
   rule:
     - regexps:
         body:
           - js/MulPlatAPI.js
-- name: 360webfacil_360webmanager
-  rule:
-    - regexps:
-        body:
-          - publico/template/
 - name: citrix_netscaler
   rule:
     - regexps:
         body:
           - ns_af
-- name: h3c er6300g2
-  rule:
-    - regexps:
-        body:
-          - ER6300G2系统管理
-- name: h3c er3260
-  rule:
-    - regexps:
-        body:
-          - ER3260系统管理
-- name: 华为_huawei_srg3250
-  rule:
-    - regexps:
-        body:
-          - HUAWEI SRG3250
-- name: h3c er3108g
-  rule:
-    - regexps:
-        body:
-          - ER3108G系统管理
 - name: 深信服防火墙类产品
   rule:
     - regexps:
@@ -288,46 +181,13 @@
     - regexps:
         body:
           - confproxy
-- name: 360网站安全检测
-  rule:
-    - regexps:
-        body:
-          - webscan.360.cn/status/pai/hash
-- name: h3c er5200g2
-  rule:
-    - regexps:
-        body:
-          - ER5200G2系统管理
+
 - name: 华为（huawei）安全设备
   rule:
     - regexps:
         body:
           - sweb-lib/resource/
-- name: h3c er6300
-  rule:
-    - regexps:
-        body:
-          - ER6300系统管理
-- name: 华为_huawei_asg2100
-  rule:
-    - regexps:
-        body:
-          - HUAWEI ASG2100
-- name: tp-link 3600 dd-wrt
-  rule:
-    - regexps:
-        body:
-          - TP-Link 3600 DD-WRT
-- name: netgear wndr3600
-  rule:
-    - regexps:
-        body:
-          - NETGEAR WNDR3600
-- name: h3c er2100
-  rule:
-    - regexps:
-        body:
-          - ER2100系统管理
+
 - name: 绿盟下一代防火墙
   rule:
     - regexps:
@@ -343,21 +203,6 @@
     - regexps:
         body:
           - Secoway
-- name: 华为_huawei_srg1220
-  rule:
-    - regexps:
-        body:
-          - HUAWEI SRG1220
-- name: h3c er2100n
-  rule:
-    - regexps:
-        body:
-          - ER2100n系统管理
-- name: h3c er8300g2
-  rule:
-    - regexps:
-        body:
-          - ER8300G2系统管理
 - name: 深信服上网行为管理系统
   rule:
     - regexps:

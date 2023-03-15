@@ -180,11 +180,6 @@
     - regexps:
         body:
           - MetInfo
-- name: ideacms
-  rule:
-    - regexps:
-        body:
-          - IdeaCMS
 - name: 逐浪zoomla
   rule:
     - regexps:
@@ -402,8 +397,6 @@
     - regexps:
         body:
           - Phpcms
-          - /index.php?m=content&c=index&a=lists
-          - /index.php?m=content&amp;c=index&amp;a=lists
 - name: phpdisk
   rule:
     - regexps:
@@ -438,12 +431,6 @@
         body:
           - Powered by Phpmps
           - templates/phpmps/style/index.css
-- name: phpmywind
-  rule:
-    - regexps:
-        body:
-          - phpMyWind.com All Rights Reserved
-          - content="PHPMyWind
 - name: phpoa
   rule:
     - regexps:
