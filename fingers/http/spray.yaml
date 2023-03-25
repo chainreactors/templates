@@ -13,3 +13,10 @@
         body:
           - faultstring
       send_data: /axis2/services/testunknown
+- name: xxl-job
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - /xxl-job-admin/static/favicon.ico
+      send_data: /xxl-job-admin
