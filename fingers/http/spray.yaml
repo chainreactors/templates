@@ -1,0 +1,15 @@
+- name: solr
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - <title>Solr Admin</title>
+      send_data: /solr
+      info: solr_admin_leak
+- name: axis2
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - faultstring
+      send_data: /axis2/services/testunknown

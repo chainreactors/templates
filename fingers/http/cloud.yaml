@@ -160,6 +160,8 @@
     - regexps:
         header:
           - Erlang OTP
+        body:
+          - pluggable-storage-engines
 - name: cougar
   rule:
     - regexps:
@@ -358,12 +360,6 @@
     - regexps:
         body:
           - Apollo
-
-- name: tidb-web
-  rule:
-    - regexps:
-        body:
-          - TiDB Status
 - name: tidb-web
   rule:
     - regexps:
@@ -389,3 +385,8 @@
     - regexps:
         body:
           - Traefik
+- name: yapi
+  rule:
+    - regexps:
+        body:
+          - content="yapi

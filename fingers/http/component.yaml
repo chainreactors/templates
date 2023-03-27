@@ -62,20 +62,20 @@
           - druid.login
       send_data: /druid/index.html
       info: druid leak
-- name: composer.json
-  rule:
-    - regexps:
-        vuln:
-          - '"require": '
-      send_data: /composer.json
-      info: composer leak
-- name: license
-  rule:
-    - regexps:
-        vuln:
-          - copyleft
-      send_data: /LICENSE
-      info: LICENSE leak
+#- name: composer.json
+#  rule:
+#    - regexps:
+#        vuln:
+#          - '"require": '
+#      send_data: /composer.json
+#      info: composer leak
+#- name: license
+#  rule:
+#    - regexps:
+#        vuln:
+#          - copyleft
+#      send_data: /LICENSE
+#      info: LICENSE leak
 - name: thymeleaf
   rule:
     - regexps:
@@ -148,8 +148,6 @@
 - name: tomcat
   rule:
     - regexps:
-        vuln:
-          - Directory Listing For
         regexp:
           - <h3>Apache Tomcat/(.*)</h3>
           - <title>Apache Tomcat/(.*)</title>
@@ -158,7 +156,14 @@
       favicon:
         md5:
           - 4644f2d45601037b8423d45e13194c93
-      info: tomcat Directory traversal
+
+- name: directory
+  rule:
+    - regexps:
+        vuln:
+          - Directory Listing For
+  info: Directory traversal
+
 - name: apache
   rule:
     - regexps:
@@ -309,3 +314,40 @@
     - regexps:
         body:
           - type="file"
+- name: xampp
+  rule:
+    - favicon:
+        mmh3:
+          - '-1437701105'
+- name: lanmp集成环境
+  rule:
+    - regexps:
+        body:
+          - <title>LANMP
+- name: 宝塔面板
+  default_port:
+    - '8888'
+  rule:
+    - regexps:
+        body:
+          - app.bt.cn/static/app.png
+          - 安全入口校验失败
+- name: 宝塔
+  rule:
+    - regexps:
+        body:
+          - 恭喜，站点创建成功
+          - 没有找到站点
+      favicon:
+        md5:
+          - 3c3804ddad747313df58112a3e1bc680
+- name: lnmp
+  rule:
+    - regexps:
+        body:
+          - lnmp.gif
+- name: pythonSimpleHTTP
+  rule:
+    - regexps:
+        header:
+          - SimpleHTTP/

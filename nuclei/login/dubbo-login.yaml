@@ -1,0 +1,30 @@
+id: dubbo-login
+info:
+  author: pdteam
+  name: dubbo-default-password
+  severity: high
+  tags: dubbo
+
+requests:
+  - raw:
+      - |
+        GET / HTTP/1.1
+        Host: 112.74.40.159:8088
+        Authorization: Basic {{auth}}
+        Content-Length: 2
+
+    attack: sniper
+    stop-at-first-match: true
+    matchers:
+      - status:
+          - 200
+        type: status
+      - type: word
+        part: body
+        words:
+          - Dubbo Admin
+    matchers-condition: and
+    payloads:
+      auth:
+        - b64en|root:root
+        - b64en|guest:guest

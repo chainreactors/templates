@@ -1,8 +1,4 @@
-- name: 科信邮件系统
-  rule:
-    - regexps:
-        body:
-          - www.kxmail.net
+
 - name: 30盛安邮件系统
   rule:
     - regexps:
@@ -42,16 +38,6 @@
     - regexps:
         body:
           - mxhichina
-- name: 科信邮件系统
-  rule:
-    - regexps:
-        body:
-          - /systemfunction
-- name: winwebmail
-  rule:
-    - regexps:
-        body:
-          - WinWebMail
 - name: 泰信tmailer邮件系统
   rule:
     - regexps:
@@ -197,11 +183,6 @@
       favicon:
         mmh3:
           - '1768726119'
-- name: 万网企业云邮箱
-  rule:
-    - regexps:
-        body:
-          - static.mxhichina.com/images/favicon.ico
 - name: 科信邮件系统
   rule:
     - regexps:

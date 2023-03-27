@@ -10,7 +10,6 @@ import (
 	"os"
 	"path"
 	"path/filepath"
-
 	"sigs.k8s.io/yaml"
 	"strings"
 )
@@ -183,6 +182,8 @@ func main() {
 
 	if *need == "gogo" {
 		needs = []string{"tcp", "http", "port", "workflow", "nuclei", "extract"}
+	} else if *need == "spray" {
+		needs = []string{"http", "rule", "mask", "extract"}
 	} else {
 		needs = strings.Split(*need, ",")
 	}

@@ -11,10 +11,8 @@
   rule:
     - regexps:
         body:
-          - /resource/javascript/system/runtime.min.js
           - license.78oa.com
           - 78oa
-          - src="/module/index.php
 - name: 泛微oa
   focus: true
   rule:
@@ -42,11 +40,6 @@
           - OnlineQuery/QueryList.aspx
           - 浪潮政务
           - LangChao.ECGAP.OutPortal
-- name: 海天oa
-  rule:
-    - regexps:
-        body:
-          - HTVOS.js
 - name: 协众oa
   focus: true
   rule:
@@ -55,11 +48,16 @@
           - Powered by 协众OA
         header:
           - CNOAOASESSID
-- name: trs(托尔斯)
+- name: 托尔斯cms
   rule:
     - regexps:
         body:
           - dreamer-cms
+- name: 托尔斯was
+  rule:
+    - regexps:
+        body:
+          - trs_web_style.css
 - name: 禅道oa
   focus: true
   rule:
@@ -74,11 +72,6 @@
     - regexps:
         body:
           - 安策绩效信息科技
-- name: 78oa
-  rule:
-    - regexps:
-        body:
-          - 78oa.com
 - name: 致远m3
   focus: true
   rule:
@@ -102,11 +95,6 @@
     - regexps:
         body:
           - HTVOS.js
-- name: 信达oa
-  rule:
-    - regexps:
-        body:
-          - xdoa.cn
 - name: 用友 nc
   focus: true
   rule:
@@ -173,17 +161,13 @@
       favicon:
         mmh3:
           - '-1850889691'
-- name: 中腾oa
-  rule:
-    - regexps:
-        body:
-          - zt_webframe
 - name: 华天动力oa
   focus: true
   rule:
     - regexps:
         body:
           - /htoa/css/CN/BLUE/login.css
+          - OAapp/WebObjects/OAapp.woa
 - name: 通达oa
   focus: true
   rule:
@@ -229,14 +213,20 @@
     - regexps:
         body:
           - Kingdee.BOS.XPF.App.xap
-- name: finereport
+- name: 帆软finereport
   focus: true
   rule:
     - regexps:
         vuln:
           - FineReport
       send_data: /ReportServer
-      info: composer leak
+- name: 帆软finereport
+  focus: true
+  rule:
+    - regexps:
+        vuln:
+          - FineReport
+      send_data: /WebReport/ReportServer
 - name: 万户oa
   focus: true
   rule:
@@ -267,18 +257,6 @@
     - regexps:
         body:
           - OA办公管理平台
-- name: 华天动力oa
-  rule:
-    - regexps:
-        body:
-          - /OAapp/WebObjects/OAapp.woa
-- name: 协众oa
-  rule:
-    - regexps:
-        body:
-          - Powered by 协众OA
-          - admin@cnoa.cn
-          - Powered by CNOA.CN
 - name: 单点crm系统
   rule:
     - regexps:
@@ -427,12 +405,6 @@
     - regexps:
         body:
           - /yimioa.apk
-- name: 中望oa
-  rule:
-    - regexps:
-        body:
-          - /app_qjuserinfo/qjuserinfoadd.jsp
-          - /IMAGES/default/first/xtoa_logo.png
 - name: 信达oa
   rule:
     - regexps:
@@ -512,3 +484,17 @@
           - '-305179312'
           - '-1642532491'
           - build/framework/js/download.js
+- name: phpmyadmin
+  rule:
+    - regexps:
+        header:
+          - pma_lang
+          - phpMyAdmin
+        body:
+          - /themes/pmahomme/img/logo_right.png
+      favicon:
+        md5:
+          - 531b63a51234bb06c9d77f219eb25553
+        mmh3:
+          - '-1010568750'
+          - '-476231906'

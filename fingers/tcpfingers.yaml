@@ -18,6 +18,7 @@
           - "^.\0\0\0ÿj\x04'[\\d.]+' .* MySQL"
           - Host .* is not allowed to connect to this MySQL server
 - name: redis
+  focus: true
   default_port:
     - redis
   protocol: tcp
@@ -32,6 +33,7 @@
       vuln: redis_unauthorized
       send_data: "info\n"
 - name: zookeeper
+  focus: true
   default_port:
     - zookeeper
   protocol: tcp
@@ -42,6 +44,7 @@
       vuln: zookeeper_unauthorized
       send_data: "envi\n"
 - name: memcahce
+  focus: true
   default_port:
     - '11211'
   rule:
@@ -52,6 +55,7 @@
       protocol: tcp
       send_data: "stats\n"
 - name: dubbo-remote
+  focus: true
   default_port:
     - dubbo
   protocol: tcp
@@ -69,6 +73,7 @@
         regexp:
           - yesorno
 - name: vnc
+  focus: true
   default_port:
     - vnc
   protocol: tcp
@@ -94,14 +99,16 @@
           - '@RSYNC:'
           - '@ERROR:'
 - name: java-rmi
+  focus: true
   default_port:
     - jndi
   protocol: tcp
   rule:
     - regexps:
-        regexp:
-          - N.{1,2}\d*\.\d*\.\d*\.\d*
+        vuln:
+          - ^N[\s\S]{1,2}\d*\.\d*\.\d*\.\d*
       send_data: "JRMI\0\x02K"
+      info: rmi_service
 - name: ftp
   default_port:
     - ftp
@@ -204,3 +211,14 @@
           - '^\x04\xff'
       send_data: "\x04\x01\x00"
       vuln: socks4_unauthorized
+- name: jdwp
+  default_port:
+    - jdwp
+  focus: true
+  protocol: tcp
+  rule:
+    - regexps:
+        vuln:
+          - JDWP-Handshake
+      send_data: JDWP-Handshake\n
+      info: jdwp_service
