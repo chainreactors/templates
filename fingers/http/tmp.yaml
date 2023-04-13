@@ -794,11 +794,6 @@
     - regexps:
         body:
           - content="VideoSoon
-- name: 开源团主机管理系统
-  rule:
-    - regexps:
-        header:
-          - 开源团主机管理系统
 - name: UCenter Home
   rule:
     - regexps:
@@ -1527,11 +1522,6 @@
     - regexps:
         body:
           - RulingSite-S
-- name: 微平台投票管理系统
-  rule:
-    - regexps:
-        body:
-          - <meta name="description" content="微平台投票管理系统
 - name: 榕基CMS
   rule:
     - regexps:
@@ -2879,7 +2869,7 @@
     - regexps:
         body:
           - MCS信息安全管理系统
-- name: 信息安全管理系统测试
+- name: 慧林信息安全管理系统测试
   rule:
     - regexps:
         body:
@@ -3635,21 +3625,6 @@
     - regexps:
         body:
           - NAS326
-- name: NAS储存管理系统
-  rule:
-    - regexps:
-        body:
-          - NAS储存管理系统
-- name: NAS服务器管理系统
-  rule:
-    - regexps:
-        body:
-          - NAS服务器管理系统
-- name: 磁盘管理系统
-  rule:
-    - regexps:
-        body:
-          - NAS磁盘管理系统
 - name: MEDION LifeCloud
   rule:
     - regexps:
@@ -3662,7 +3637,6 @@
         body:
           - 广州市璐华计算机有限公司
           - CustomerFiles/carousel/1.jpg
-          - VIEWSTATE
 - name: sohuu 极限OA
   rule:
     - regexps:
@@ -4431,12 +4405,6 @@
     - regexps:
         body:
           - HILLSTONE NETWORKS
-- name: 山石网科Hillstone 数据泄露防护管理平台
-  rule:
-    - regexps:
-        body:
-          - DLP管理平台
-          - Hillstone
 - name: 中新金盾信息安全管理系统
   rule:
     - regexps:
@@ -4448,8 +4416,6 @@
         body:
           - 联软SDP系统
           - /UniSSO/
-          - UniSSOView
-          - UniSSOView
 - name: 联软 UniNXG安全数据交换系统
   rule:
     - regexps:
@@ -4661,27 +4627,8 @@
     - regexps:
         body:
           - 承诺达客服管理系统
-- name: 电子签约管理系统(厦金所)
-  rule:
-    - regexps:
-        body:
-          - 电子签约管理系统(厦金所)
-- name: 电子签章代理平台-管理系统
-  rule:
-    - regexps:
-        body:
-          - 电子签章代理平台-管理系统
-- name: 企业信用调查和云办公管理系统
-  rule:
-    - regexps:
-        body:
-          - <title>企业信用调查和云办公管理系统中日文版：利墨上海</title>
-- name: 服务业办公室无纸化办公和数据调度管理系统
-  rule:
-    - regexps:
-        body:
-          - 服务业办公室无纸化办公和数据调度管理系统
-- name: 欢迎使用锐力智能办公平台
+
+- name: 锐力智能办公平台
   rule:
     - regexps:
         body:
@@ -4795,16 +4742,6 @@
     - regexps:
         body:
           - raqsoft/images
-- name: 电子标签管理系统
-  rule:
-    - regexps:
-        body:
-          - 电子标签管理系统
-- name: 电子标签审核管理系统
-  rule:
-    - regexps:
-        body:
-          - 电子标签审核管理系统
 - name: AcSoft
   rule:
     - regexps:
@@ -4874,11 +4811,6 @@
     - regexps:
         body:
           - <meta name="application-name" content="Firefly III">
-- name: 发票管理系统
-  rule:
-    - regexps:
-        body:
-          - 发票管理系统
 - name: 速达荣耀G5.net
   rule:
     - regexps:
@@ -5819,17 +5751,6 @@
     - regexps:
         body:
           - Casdoor
-- name: 地测信息管理系统
-  rule:
-    - regexps:
-        body:
-          - 地测信息管理系统
-          - 地测信息管理系统
-- name: 地图更新管理系统
-  rule:
-    - regexps:
-        body:
-          - 地图更新管理系统
 - name: ECShop
   rule:
     - regexps:
@@ -6241,11 +6162,6 @@
     - regexps:
         body:
           - KTN电商管理系统
-- name: LEQEE管理系统
-  rule:
-    - regexps:
-        body:
-          - LEQEE管理系统
 - name: HULU电商平台管理系统
   rule:
     - regexps:
@@ -6266,81 +6182,16 @@
     - regexps:
         body:
           - MIDAVY(米大卫)管理系统-登录
-- name: MID后台管理系统
-  rule:
-    - regexps:
-        body:
-          - MID后台管理系统
 - name: ShopXO
   rule:
     - regexps:
         body:
           - ShopXO
-- name: NB退货申请管理系统
-  rule:
-    - regexps:
-        body:
-          - NB退货申请管理系统
-- name: NFC防伪溯源管理系统
-  rule:
-    - regexps:
-        body:
-          - NFC防伪溯源管理系统
 - name: NIUHAO广商管理系统
   rule:
     - regexps:
         body:
           - NIUHAO广商管理系统
-- name: 电咖采购管理系统
-  rule:
-    - regexps:
-        body:
-          - 电咖采购管理系统
-- name: 电商订单管理系统
-  rule:
-    - regexps:
-        body:
-          - 电商订单管理系统
-- name: 电商机管理系统
-  rule:
-    - regexps:
-        body:
-          - 电商机管理系统
-- name: 电商联盟网管理系统
-  rule:
-    - regexps:
-        body:
-          - 电商联盟网管理系统-登录
-- name: 电商平台管理系统
-  rule:
-    - regexps:
-        body:
-          - 电商平台管理系统-登录页面
-- name: 电商运营管理系统
-  rule:
-    - regexps:
-        body:
-          - 电商运营管理系统
-- name: 电商资源管理系统
-  rule:
-    - regexps:
-        body:
-          - 电商资源管理系统
-- name: 店面建设管理系统
-  rule:
-    - regexps:
-        body:
-          - 店面建设管理系统
-- name: 店铺管理系统
-  rule:
-    - regexps:
-        body:
-          - 店铺管理系
-- name: 店商财码管理平台
-  rule:
-    - regexps:
-        body:
-          - 店商财码管理平台
 - name: 蝶贷渠道商管理系统
   rule:
     - regexps:
@@ -6718,12 +6569,6 @@
     - regexps:
         body:
           - 蓝盾网页防篡改保护系统
-- name: 防火墙web防篡改管理系统
-  rule:
-    - regexps:
-        body:
-          - 防火墙web防篡改管理系统
-          - href="tamper/style/control.css"
 - name: 共济科技机房监控系统
   rule:
     - regexps:
@@ -7166,46 +7011,11 @@
         body:
           - 番茄考勤管理系统
           - <title>番茄考勤管理系统</title>
-- name: 融商云 考勤管理系统
-  rule:
-    - regexps:
-        body:
-          - <title>融商云——考勤管理系统/云考勤/手机考勤/考勤系统/移动考勤/
-- name: 高校科研管理系统
-  rule:
-    - regexps:
-        body:
-          - content="科研创新服务平台,高校科研管理系统,科研管理系统，北京易普拉格科技股份有限公司
-- name: 科研管理系统
-  rule:
-    - regexps:
-        body:
-          - <title>科研管理系统登录</title>
-- name: 实验室信息管理系统网上委托
-  rule:
-    - regexps:
-        body:
-          - <title>实验室信息管理系统网上委托</title>
-- name: 阿尔法科技虚拟仿真实验室
-  rule:
-    - regexps:
-        body:
-          - 荧光定量PCR虚拟仿真实验
 - name: 伊柯夫临床试验机构管理系统Ver3.0
   rule:
     - regexps:
         body:
           - <title>伊柯夫临床试验机构管理系统(Ver3.0)</title>
-- name: 欢迎访问科研教学信息管理系统
-  rule:
-    - regexps:
-        body:
-          - <title>欢迎访问科研教学信息管理系统</title>
-- name: 仿真管理系统
-  rule:
-    - regexps:
-        body:
-          - 仿真管理系统
 - name: Apache Kafka Topics UI
   rule:
     - regexps:
@@ -7248,11 +7058,6 @@
     - regexps:
         body:
           - Sugar - 数据可视化
-- name: 顶互三维云 3D可视化管理系统
-  rule:
-    - regexps:
-        body:
-          - 顶互三维云-3D可视化管理系统
 - name: Pentaho
   rule:
     - regexps:
@@ -7484,23 +7289,6 @@
     - regexps:
         body:
           - RAYDA CRM 客户关系管理系统
-- name: 客商自助管理系统
-  rule:
-    - regexps:
-        body:
-          - 客商自助管理系统
-- name: mci管理系统
-  rule:
-    - regexps:
-        body:
-          - mci管理系统
-- name: CRM
-  rule:
-    - regexps:
-        body:
-          - CRM管理系统
-          - 客户关系管理系统
-          - CRM营销管理系统
 - name: 瑞策软件 CRM客户关系管理系统
   rule:
     - regexps:
@@ -7533,11 +7321,6 @@
     - regexps:
         body:
           - CollabNet Subversion Edge 登录
-- name: 库存管理系统 v1.0
-  rule:
-    - regexps:
-        body:
-          - 库存管理系统 v1.0</span>
 - name: 汇购智能电子商务进销存管理系统V2.0
   rule:
     - regexps:
@@ -7548,26 +7331,11 @@
     - regexps:
         body:
           - plug-in/lhgDialog/lhgdialog.min.js?skin=metro
-- name: 上海享趣 无人售货管理系统
-  rule:
-    - regexps:
-        body:
-          - <title>上海享趣 - 无人售货管理系统
 - name: Lottery流程管理系统
   rule:
     - regexps:
         body:
           - Lottery流程管理系统
-- name: 成大方圆财务报销管理系统
-  rule:
-    - regexps:
-        body:
-          - 成大方圆财务报销管理系统
-- name: 企业标准化管理系统
-  rule:
-    - regexps:
-        body:
-          - <title>企业标准化管理系统
 - name: 天福企业流程管理系统(BPM)
   rule:
     - regexps:
@@ -7583,11 +7351,6 @@
     - regexps:
         body:
           - company">企业流程化管控系统
-- name: 业务流程管理系统资讯
-  rule:
-    - regexps:
-        body:
-          - <title>业务流程管理系统资讯
 - name: YiBot
   rule:
     - favicon:
@@ -7596,11 +7359,6 @@
       regexps:
         body:
           - YiBot
-- name: 订单流程管理系统
-  rule:
-    - regexps:
-        body:
-          - Order Process Manage System
 - name: 联科股份产品
   rule:
     - regexps:
@@ -7640,11 +7398,6 @@
     - regexps:
         body:
           - pmwiki.php
-- name: 智慧社区服务管理系统-社区端
-  rule:
-    - regexps:
-        body:
-          - <title>智慧社区服务管理系统-社区端
 - name: 默安 哨兵云
   rule:
     - regexps:
@@ -7943,7 +7696,6 @@
   rule:
     - regexps:
         body:
-          - 登录控制台
           - 广联达
 - name: Apache OFBiz
   rule:
@@ -8090,31 +7842,12 @@
     - regexps:
         body:
           - Palo Alto Networks SSO
-- name: RBAC权限管理系统
-  rule:
-    - regexps:
-        body:
-          - RBAC权限管理系统
-- name: Shiro权限管理系统
-  rule:
-    - regexps:
-        body:
-          - Shiro权限管理系统
 - name: MUIBOOT权限管理系统
   rule:
     - regexps:
         body:
           - MUIBOOT权限管理系统-用户登录
-- name: 代理商授权查询管理系统
-  rule:
-    - regexps:
-        body:
-          - 代理商授权查询管理系统
-- name: 疯狂秀才 权限管理系统.2012.V2
-  rule:
-    - regexps:
-        body:
-          - 疯狂秀才-权限管理系统.2012.V2
+
 - name: 福建电子口岸系统权限统一管理平台
   rule:
     - regexps:
@@ -8139,7 +7872,6 @@
     - regexps:
         body:
           - NetMizer
-          - 日志管理系统
 - name: Graylog
   rule:
     - regexps:
@@ -8331,7 +8063,6 @@
   rule:
     - regexps:
         body:
-          - 入侵防御系统
           - 天清入侵防御系统
 - name: 科来网络全流量安全分析系统
   rule:
@@ -8394,11 +8125,6 @@
     - regexps:
         body:
           - WebRAYWeb应用防护系统
-- name: 防攻击管理系统
-  rule:
-    - regexps:
-        body:
-          - 防攻击管理系统
 - name: ConfTool
   rule:
     - regexps:
@@ -8481,7 +8207,6 @@
   rule:
     - regexps:
         body:
-          - 深度上网行为管理
           - 深度上网行为管理
 - name: Netoray 上网行为管理系统NSG
   rule:
@@ -9174,16 +8899,6 @@
     - regexps:
         body:
           - pgAdmin
-- name: SQL Server
-  rule:
-    - regexps:
-        body:
-          - SQL Server数据库在线管理系统
-- name: DBMS数据库管理系统
-  rule:
-    - regexps:
-        body:
-          - DBMS - 数据库管理系统
 - name: ChemNet ChemNet-后台数据库管理系统
   rule:
     - regexps:
@@ -9204,21 +8919,11 @@
     - regexps:
         body:
           - LDAR综合管理平台(LDAR审计验收系统)
-- name: LDAR综合管理系统
-  rule:
-    - regexps:
-        body:
-          - 泄漏检测与修复（LDAR）综合管理系统
 - name: nsqadmin
   rule:
     - regexps:
         body:
           - Nosqlclient
-- name: Redis管理系统
-  rule:
-    - regexps:
-        body:
-          - Redis管理系统
 - name: ElasticSearch head
   rule:
     - regexps:
@@ -10449,16 +10154,6 @@
     - regexps:
         body:
           - OvO 表情管理系统
-- name: PDE数字档案管理系统V7.2
-  rule:
-    - regexps:
-        body:
-          - PDE数字档案管理系统V7.2
-- name: PDE数字档案管理系统V7.3
-  rule:
-    - regexps:
-        body:
-          - PDE数字档案管理系统V7.3
 - name: LDAP用户同步 易度文档管理系统
   rule:
     - regexps:
@@ -10506,7 +10201,6 @@
   rule:
     - regexps:
         body:
-          - 文档管理系统
           - 北京联高软件开发有限公司
 - name: ONLYOFFICE
   rule:
@@ -10528,11 +10222,6 @@
           - 在线文档预览 - I Doc View
           - I Doc View
           - idocview
-- name: 典籍管理系统
-  rule:
-    - regexps:
-        body:
-          - 典籍管理系统
 - name: MrDoc
   rule:
     - regexps:
@@ -10763,16 +10452,6 @@
     - regexps:
         body:
           - <title>登录 云深-电子文件管理系统 帐号</title>
-- name: 心理测评档案管理系统V8.0
-  rule:
-    - regexps:
-        body:
-          - <title>欢迎使用心理测评档案管理系统V8.0</title>
-- name: 票据管理系统
-  rule:
-    - regexps:
-        body:
-          - <title>票据管理系统</title>
 - name: 永中 Web Office
   rule:
     - favicon:
@@ -11429,21 +11108,6 @@
     - regexps:
         body:
           - CentOS WebPanel
-- name: PC机远程控制管理系统
-  rule:
-    - regexps:
-        body:
-          - PC机远程控制管理系统
-- name: KVM 网页远程管理系统
-  rule:
-    - regexps:
-        body:
-          - KVM_网页远程管理系统
-- name: KVM 远程管理系统
-  rule:
-    - regexps:
-        body:
-          - KVM_远程管理系统
 - name: EAS远程管理系统
   rule:
     - regexps:
@@ -11773,16 +11437,6 @@
     - regexps:
         body:
           - <title>金电网安可信运维管理系统TOS V2.0</title>
-- name: 云运维管理系统 网商云
-  rule:
-    - regexps:
-        body:
-          - <title>云运维管理系统 | 网商云</title>
-- name: 运维工单管理系统云端微服
-  rule:
-    - regexps:
-        body:
-          - <title>运维工单管理系统 - 云端微服
 - name: Adminset全自动化运维平台
   rule:
     - regexps:
@@ -11831,27 +11485,12 @@
   rule:
     - regexps:
         body:
-          - N点虚拟主机管理系统 - Powered By Npoint
-- name: N点虚拟主机管理系统 Powered-By-Npoint
-  rule:
-    - regexps:
-        body:
-          - N点虚拟主机管理系统-Powered-By-Npoint
-- name: N点主机管理系统
-  rule:
-    - regexps:
-        body:
-          - N点主机管理系统
+          - N点虚拟主机管理系统
 - name: 维盟(WayOS)智能路由管理系统
   rule:
     - regexps:
         body:
           - <title>维盟（WayOS）智能路由管理系统 www.wayos.cn</title>
-- name: 电厂管理系统
-  rule:
-    - regexps:
-        body:
-          - <title>电厂管理系统</title>
 - name: 云点虚拟主机管理系统
   rule:
     - regexps:
@@ -11881,11 +11520,6 @@
     - regexps:
         header:
           - PleskLin
-- name: 中国联通 Chinaunicom-Cloud桌面云管理系统
-  rule:
-    - regexps:
-        body:
-          - Chinaunicom-Cloud桌面云管理系统
 - name: 深信服SANGFOR 桌面云
   rule:
     - regexps:
