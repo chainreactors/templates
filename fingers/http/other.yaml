@@ -4691,18 +4691,6 @@
         body:
           - http://nexuswifi.com/
           - Nexus NX
-- name: nginx
-  rule:
-    - regexps:
-        header:
-          - nginx
-#        body:
-#          - nginx
-- name: nginx_admin
-  rule:
-    - regexps:
-        header:
-          - nginx admin
 - name: ngx_openresty
   rule:
     - regexps:

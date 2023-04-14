@@ -1,3 +1,15 @@
+- name: nginx
+  rule:
+    - regexps:
+        header:
+          - nginx
+#        body:
+#          - nginx
+- name: nginx_admin
+  rule:
+    - regexps:
+        header:
+          - nginx admin
 - name: shiro
   focus: true
   rule:
