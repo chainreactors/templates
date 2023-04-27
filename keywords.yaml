@@ -359,6 +359,7 @@ common_file:
   - robots.txt
   - sitemap.xml
   - atom.xml
+  - crossdomain.xml
   - favicon.ico
   - rsyncd.conf
   - ueditor

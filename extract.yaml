@@ -1,15 +1,15 @@
 - name: js
   regexps:
-    - "b64de|LihodHRwc3swLDF9OlteXHMn4oCZIuKAnT48KCl8KlxbXXsyLDI1MH0/W149KlxzJ+KAmT48Ojt8KClbXXszfVxbXVwuanMp"
-    - 'b64de|WyInXShbXlxzJyzigJki4oCdPjw7KCl8KjpcW117MiwyNTB9P1tePSpccyfigJl8IuKAnT48Xjo7KClcW117M31cLmpzKQ=='
-    - 'b64de|PVxzezAsNn1bIiddezAsMX1cc3swLDZ9KFteXHNeJ+KAmSwrPjw7KCl8KlxbXXsyLDI1MH0/W149LFxzJ+KAmSLigJ0+fDw6OyooKVxbXXszfVwuanMp'
+    - "(https{0,1}:[^\\s'’\"”><()|*\\[]{2,250}?[^=*\\s'’><:;|()[]\\.js)"
+    - "=\\s{0,6}[\"']{0,1}\\s{0,6}([^\\s^'’,+><;()|*\\[]{2,250}?\\.js)[\"']"
+    - "[\"']([^\\s',’\"”><;()|*:\\[]{2,250}?\\.js)[\"']"
 - name: url
   regexps:
-    - 'b64de|PVxzezAsNn0oaHR0cHN7MCwxfTpbXlxzJyI+PCgpfCpcW117MiwyNTB9KQ=='
-    - 'b64de|WyInXShbXlxzJyzigJki4oCdPjwuQCQ7OigpfCpcW117MiwyNTB9XC5bYS16QS1aXVx3ezEsNH0pWyInXQ=='
-    - 'b64de|WyInXShodHRwcz86W15ccyciPjwoKUB8KlxbXXsyLDI1MH0/XC5bXlxzJyzigJki4oCdPjw7KCl8KlxbXXsyLDI1MH0/KVsiJ10='
-    - 'b64de|WyInXVxzezAsNn0oWyMsLl17MCwyfS9bXlxzJyIsPjw7QCQoKXwqXFtdezIsMjUwfT8pXHN7MCw2fVsiJ10='
-    - 'b64de|aHJlZlxzezAsNn09XHN7MCw2fVsiJ+KAmOKAnF17MCwxfVxzezAsNn0oW15ccycs4oCZIuKAnT48JEA7KCl8KlxbXXsyLDI1MH0pfGFjdGlvblxzezAsNn09XHN7MCw2fVsiJ+KAmOKAnF17MCwxfVxzezAsNn0oW15ccyfigJki4oCcPjwpKF17MiwyNTB9KQ=='
+    - "=\\s{0,6}(https{0,1}:[^\\s'\"><()|*\\[]{2,250})"
+    - "[\"'](/[^\\s',’\":”><@$;()|*\\[]{2,250}\\.[a-zA-Z0-9]{2,5})[\"']"
+    - "[\"'](https?:[^\\s'\"><()@|*\\[]{2,250}?\\.[^\\s',’\"”><;()|*\\[]{2,250}?)[\"']"
+#    - "[\"']\\s{0,6}([#,.]{0,2}/[^\\s'\",><;@$()|*\\[]{2,250}?)\\s{0,6}[\"']"
+    - "href\\s{0,6}=\\s{0,6}[\"'‘“]{0,1}\\s{0,6}([^\\s',><$@;()|*\\[]{2,250})"
 - name: jwt
   tags:
     - pentest
@@ -70,12 +70,12 @@
   tags:
     - pentest
   regexps:
-    - ([p](ass|wd|asswd|assword))[\s="':.]+.*?[\s"']
+    - ([p](ass|wd|asswd|assword))[\s="':]+.{3,20}["']
 - name: username
   tags:
     - info
   regexps:
-    - ([u](ser|name|ame|sername))[\s="':.]+.*?[\s"']
+    - ([u](ser|name|ame|sername))[\s="':]+.{3,20}[\s"']
 - name: wecom-key
   tags:
     - pentest
