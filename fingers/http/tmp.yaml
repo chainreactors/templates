@@ -3449,11 +3449,6 @@
         body:
           - window.location.replace("login.jsp?up=1")
           - 用友grp-u8
-- name: Chanjet TPlus
-  rule:
-    - regexps:
-        body:
-          - '><script>location=''/tplus/'';</script></body>'
 - name: 用友GRP RMIS系统
   rule:
     - regexps:
@@ -7107,11 +7102,6 @@
     - regexps:
         body:
           - 28在线客服系统
-- name: udesk
-  rule:
-    - regexps:
-        body:
-          - udesk
 - name: PHPOpenChat
   rule:
     - regexps:
@@ -9468,12 +9458,6 @@
           - Web Management
         header:
           - 'Set-Cookie: _WebSessionId'
-- name: 信锐-企业防火墙
-  rule:
-    - regexps:
-        body:
-          - window.XMLHttpRequest
-          - index.php/welcome/index
 - name: 金电网安防火墙
   rule:
     - regexps:
