@@ -20,3 +20,10 @@
         body:
           - jenkins-checkbox
       send_data: /jenkins
+- name: xxl-job
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - /xxl-job-admin/static/favicon.ico
+      send_data: /xxl-job-admin
