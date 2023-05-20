@@ -13,6 +13,13 @@
         body:
           - faultstring
       send_data: /axis2/services/testunknown
+- name: jenkins
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - jenkins-checkbox
+      send_data: /jenkins
 - name: xxl-job
   level: 2
   rule:
