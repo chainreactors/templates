@@ -6479,7 +6479,6 @@
   rule:
     - regexps:
         body:
-          - 应用安全网关
           - /webui/images/basic/login/main_logo.gif
 - name: Zyxel VMG系列网关
   rule:
@@ -8598,8 +8597,6 @@
 - name: Beward摄像头
   rule:
     - regexps:
-        body:
-          - WEB SERVICE
         header:
           - 'Server: IPCamera-Webs'
 - name: 科达-ViewShot
@@ -10538,7 +10535,6 @@
     - regexps:
         body:
           - 正方软件股份有限公司
-          - portlet
 - name: 新软科技 极通EWEBS
   rule:
     - regexps:
@@ -10557,19 +10553,6 @@
     - regexps:
         header:
           - C=US, L=Palo Alto, OU=VMware, CN=VMware/email
-- name: VMware vCenter
-  rule:
-    - regexps:
-        body:
-          - ID_EESX_Welcome
-          - content="VMware vCenter
-          - managed by VMware vCenter Server
-- name: VMware ESX
-  rule:
-    - regexps:
-        body:
-          - ID_ESX
-          - VMware ESXi
 - name: Docker Distribution Api
   rule:
     - regexps:
@@ -10598,19 +10581,6 @@
         body:
           - XenServer
           - Citrix Systems
-- name: VMware Horizon
-  rule:
-    - regexps:
-        body:
-          - VMware&reg; Horizon DaaS&trade;
-          - VMware Horizon
-        header:
-          - /appblast/webclien
-- name: Docker
-  rule:
-    - regexps:
-        header:
-          - x-docker
 - name: Citrix XCP
   rule:
     - regexps:
@@ -10628,12 +10598,6 @@
           - <a href="https://www.ovirt.org" class="obrand_loginpagelogolink">
         header:
           - /ovirt-engine/
-- name: VMware ESXi
-  rule:
-    - regexps:
-        body:
-          - <title ng-bind="$root.title">
-          - Welcome to VMware ESXi
 - name: h3c Cloud
   rule:
     - regexps:
@@ -10691,21 +10655,11 @@
     - regexps:
         body:
           - Viewplanner
-- name: VMware vRealize Automation Appliance
-  rule:
-    - regexps:
-        body:
-          - VMware vRealize Automation Appliance
 - name: AWS BPM
   rule:
     - regexps:
         body:
           - AWS BPM PaaS
-- name: 新三板业务管理系统
-  rule:
-    - regexps:
-        body:
-          - DuDao360
 - name: 万网博通 多业务云智能管理平台
   rule:
     - regexps:
@@ -11137,11 +11091,6 @@
     - regexps:
         body:
           - SINEMA Remote Connect
-- name: VMware Horizon DaaS
-  rule:
-    - regexps:
-        body:
-          - VMware Horizon DaaS
 - name: H3C UIS
   rule:
     - regexps:
@@ -11202,11 +11151,6 @@
     - regexps:
         body:
           - KVM_余跃云计算管理系统
-- name: 创梦云计算管理系统
-  rule:
-    - regexps:
-        body:
-          - 创梦云计算管理系统
 - name: OpenShift
   rule:
     - regexps:
