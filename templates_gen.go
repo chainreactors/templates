@@ -34,7 +34,7 @@ func loadYamlFile2JsonString(filename string) string {
 	bs, _ := io.ReadAll(file)
 	jsonstr, err := yaml.YAMLToJSON(bs)
 	if err != nil {
-		panic(filename + err.Error())
+		panic(filename + " " + err.Error())
 	}
 
 	return encode(jsonstr)
@@ -168,8 +168,10 @@ func parser(key string) string {
 		return loadYamlFile2JsonString("keywords.yaml")
 	case "extract":
 		return loadYamlFile2JsonString("extract.yaml")
-	case "zombie":
+	case "zombie_common":
 		return loadYamlFile2JsonString("zombie/keywords.yaml")
+	case "zombie_default":
+		return loadYamlFile2JsonString("zombie/default.yaml")
 	default:
 		panic("illegal key")
 	}
@@ -186,6 +188,8 @@ func main() {
 		needs = []string{"tcp", "http", "port", "workflow", "nuclei", "extract"}
 	} else if *need == "spray" {
 		needs = []string{"http", "rule", "mask", "extract"}
+	} else if *need == "zombie" {
+		needs = []string{"zombie_default", "zombie_common"}
 	} else {
 		needs = strings.Split(*need, ",")
 	}
