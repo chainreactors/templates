@@ -3437,7 +3437,6 @@
     - regexps:
         body:
           - 月子护理ERP管理平台
-          - 系统登录
 - name: Dawatech
   rule:
     - regexps:
