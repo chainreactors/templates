@@ -226,7 +226,11 @@
     - '7474'
   tags:
     - db
-
+- name: hessian
+  ports:
+    - '7848'
+  tags:
+    - rce
 - name: jndi
   ports:
     - 1098-1101

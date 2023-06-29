@@ -185,10 +185,14 @@
         body:
           - /page/manage/css/main.css
           - weaver,e-mobile
-          - 移动管理平台消息服务
       favicon:
         md5:
           - f51746305f07a64eafa401adab364ad9
+- name: 泛微 消息管理平台
+  rule:
+    - regexps:
+        body:
+          - 移动管理平台消息服务
 - name: 泛微e-office
   focus: true
   rule:

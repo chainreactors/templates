@@ -8387,7 +8387,6 @@
   rule:
     - regexps:
         body:
-          - Meeting
           - Kedacom
 - name: V2视频会议
   rule:
@@ -8805,7 +8804,6 @@
   rule:
     - regexps:
         body:
-          - SQL Server
           - Web Data Administrator
 - name: MySQL Control Panel
   rule:
@@ -9968,11 +9966,7 @@
   rule:
     - regexps:
         body:
-          - <table background="/images/logon.gif" width="471" height="330" border="0"
-            cellpadding="0" cellspacing="0">...</table>
-          - <link rel="SHORTCUT ICON" href="/favicon.ico">
           - Juniper
-          - ScreenOS
 - name: Matrix-3D-Firewall
   rule:
     - regexps:
