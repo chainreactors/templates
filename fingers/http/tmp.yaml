@@ -3371,16 +3371,6 @@
     - regexps:
         body:
           - Odoo
-- name: ERP仓库管理系统
-  rule:
-    - regexps:
-        body:
-          - ERP仓库管理系统
-- name: Spring 斯铂瑞舒适家ERP管理系统
-  rule:
-    - regexps:
-        body:
-          - Spring-斯铂瑞舒适家ERP管理系统
 - name: SSC(U)-ERP管理系统
   rule:
     - regexps:
@@ -3391,11 +3381,6 @@
     - regexps:
         body:
           - 大信ERP综合管理系统
-- name: 店面管理系统
-  rule:
-    - regexps:
-        body:
-          - 店面管理系统
 - name: 蝶和软件团队管理系统
   rule:
     - regexps:
@@ -3416,17 +3401,6 @@
     - regexps:
         body:
           - 凤凰物业管理系统ERP标准版v2010
-- name: 服饰erp管理系统
-  rule:
-    - regexps:
-        body:
-          - 服饰erp管理系统
-          - 服饰ERP管理系统
-- name: 上海装盟信息科技 家装ERP管理系统
-  rule:
-    - regexps:
-        body:
-          - 家装ERP管理系统
 - name: Tanaosoft 毛巾纺织ERP系统
   rule:
     - regexps:
