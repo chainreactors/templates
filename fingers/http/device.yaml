@@ -666,14 +666,14 @@
   rule:
     - regexps:
         header:
-          - Www-Authenticate: Basic realm="Switch"
+          - 'Www-Authenticate: Basic realm="Switch"'
 - name: SNMP-manage
   rule:
     - regexps:
         body:
-          - WwW-Authenticate: Basic realm="SNMP
+          - 'WwW-Authenticate: Basic realm="SNMP'
 - name: 中兴epon
   rule:
     - regexps:
         body:
-          - WWw-Authenticate: Basic realm=" ONU"
+          - 'WWw-Authenticate: Basic realm=" ONU"'

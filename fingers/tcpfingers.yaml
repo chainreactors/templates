@@ -28,7 +28,7 @@
           - redis_version:(.*)
         regexp:
           - -NOAUTH
-          - -ERR
+          - -ERR wrong
           - -DENIED
       vuln: redis_unauthorized
       send_data: "info\n"
