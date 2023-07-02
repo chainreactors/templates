@@ -6,6 +6,14 @@
           - <title>Solr Admin</title>
       send_data: /solr
       info: solr_admin_leak
+- name: 普元eos
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - response.body_string.contains("com.primeton.das")
+          - response.body_string.contains("EOSKey")
+      send_data: /default/common/scripts/eos-web.js
 - name: axis2
   level: 2
   rule:
