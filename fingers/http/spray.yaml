@@ -13,6 +13,12 @@
         body:
           - faultstring
       send_data: /axis2/services/testunknown
+- name: opac
+  level: 2
+  rule:
+    - regexps:
+        header:
+          - /opac/search/simsearch
 - name: jenkins
   level: 2
   rule:
