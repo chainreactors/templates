@@ -33,6 +33,12 @@
           - EOS管理控制台
       info: 普元EOS_console_leak
       send_data: /eosmgr/eos/EventDispatcher
+- name: opac
+  focus: true
+  rule:
+    - regexps:
+        header:
+          - /opac/search/simsearch
 - name: jboss
   focus: true
   rule:
