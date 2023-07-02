@@ -33,6 +33,14 @@
           - EOS管理控制台
       info: 普元EOS_console_leak
       send_data: /eosmgr/eos/EventDispatcher
+- name: 普元eos
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - response.body_string.contains("com.primeton.das")
+          - response.body_string.contains("EOSKey")
+      send_data: /default/common/scripts/eos-web.js
 - name: jboss
   focus: true
   rule:
