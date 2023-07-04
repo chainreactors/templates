@@ -221,14 +221,15 @@
     - regexps:
         vuln:
           - FineReport
-      send_data: /ReportServer
-- name: 帆软finereport
-  focus: true
-  rule:
+      send_data: /WebReport/ReportServer
     - regexps:
         vuln:
           - FineReport
-      send_data: /WebReport/ReportServer
+      send_data: /ReportServer
+    - regexps:
+        vuln:
+          - FineReport
+      send_data: /webroot/ReportServer
 - name: 万户oa
   focus: true
   rule:
@@ -332,6 +333,7 @@
     - regexps:
         body:
           - ReportServer?op
+          - DeploySuccess._init
 - name: urp教务系统
   rule:
     - regexps:
