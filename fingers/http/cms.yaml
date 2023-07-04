@@ -33,6 +33,12 @@
           - EOS管理控制台
       info: 普元EOS_console_leak
       send_data: /eosmgr/eos/EventDispatcher
+- name: 普元cms
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - /default/common/nui/nui.js
 - name: opac
   focus: true
   rule:
