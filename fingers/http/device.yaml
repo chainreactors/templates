@@ -677,3 +677,9 @@
     - regexps:
         body:
           - 'WWw-Authenticate: Basic realm=" ONU"'
+- name: h3c-imc
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - primefaces-imc-classic-blue
