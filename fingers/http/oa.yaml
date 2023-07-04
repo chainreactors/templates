@@ -296,6 +296,12 @@
     - regexps:
         body:
           - smartbi.gcf.gcfutil
+- name: 慧点oa
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - www/mobile-version.txt
 - name: 金和oa
   focus: true
   rule:
