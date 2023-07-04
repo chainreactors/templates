@@ -8,7 +8,7 @@ requests:
   - raw:
       - |
         GET /api/whoami HTTP/1.1
-        Host: {{Host}}
+        Host: {{Hostname}}
         authorization: Basic {{auth}}
         content-type: application/json
     attack: sniper

@@ -31,8 +31,6 @@
     - regexps:
         body:
           - Tmailer
-          - content="Tmailer
-          - href="/tmailer/img/logo/favicon.ico
 - name: 浪潮政务系统
   rule:
     - regexps:
