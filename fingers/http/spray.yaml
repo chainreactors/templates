@@ -13,6 +13,13 @@
         body:
           - faultstring
       send_data: /axis2/services/testunknown
+- name: 华天动力OA
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - /OAapp/htpages/app/module/login/8.0Login.jsp
+      send_data: /OAapp
 - name: jenkins
   level: 2
   rule:
