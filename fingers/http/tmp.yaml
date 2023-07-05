@@ -7114,11 +7114,8 @@
     - regexps:
         body:
           - live800.com
-- name: 美洽-在线客服
-  rule:
-    - regexps:
-        body:
-          - meiqia.com
+        header:
+          - live800
 - name: CC客服
   rule:
     - regexps:

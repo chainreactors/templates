@@ -602,6 +602,7 @@
     - regexps:
         body:
           - /meiqia.js
+          - meiqia.com
 - name: 育友软件
   rule:
     - regexps:

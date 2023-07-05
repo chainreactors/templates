@@ -4228,11 +4228,6 @@
           - LiteSpeed Web Admin Console
         header:
           - LSWSWEBUI
-- name: live800
-  rule:
-    - regexps:
-        header:
-          - live800
 - name: locus_solarnoc
   rule:
     - regexps:
