@@ -39,6 +39,12 @@
     - regexps:
         body:
           - /default/common/nui/nui.js
+- name: 时代光华学习平台
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - /webos/js/jquery.js
 - name: opac
   focus: true
   rule:
