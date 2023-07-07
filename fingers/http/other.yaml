@@ -8401,3 +8401,47 @@
     - favicon:
         mmh3:
           - '-1249852061'
+
+- name: 用友 CRM
+  rule:
+    - regexps:
+        body:
+          - C535AD4F2E753F29CE1118EDB8B7913FB96C145FC21A1E9BA9
+      level: 1
+      send_data: /login/login.php
+- name: 用友影像管理系统
+  rule:
+    - regexps:
+        body:
+          - img/login/ufida.ico
+- name: 用友 NC cloud
+  rule:
+    - regexps:
+        body:
+          - '<meta http-equiv=refresh content=0;url=nccloud>'
+- name: 契约锁
+  rule:
+    - regexps:
+        body:
+          - /qyswebapp
+    - favicon:
+        mmh3:
+          - '738823048'
+- name: 用友畅捷通 T+标准版
+  rule:
+    - regexps:
+        body:
+          - "><script>location='/tplus/';</script></body>"
+    - favicon:
+        mmh3:
+          - '-2067519629'
+- name: 启迪国信uem
+  rule:
+    - regexps:
+        body:
+          - <span class="remember-pw" data-i18n="op.rmbAccount">
+- name: UCML平台
+  rule:
+    - regexps:
+        body:
+          - ucmlskin_v1.0

@@ -508,3 +508,31 @@
         mmh3:
           - '-1010568750'
           - '-476231906'
+- name: 微宏OA
+  rule:
+    - regexps:
+        header:
+          - /wh/serverlogin.jsp
+        body:
+          - /wh/servlet/MainServer
+- name: 点晴OA
+  rule:
+    - regexps:
+        body:
+          - /mis/pc_desk/download_pc_msg.asp
+- name: 致远互联-M1移动端
+  rule:
+    - regexps:
+        body:
+          - <span>M1-Server
+- name: 软虹OA
+  rule:
+    - regexps:
+        body:
+          - <title>软虹科技</title>
+- name: 九思协同办公系统
+  rule:
+    - regexps:
+        body:
+          - /jsoa/login.jsp
+          - /x_desktop/index.html
