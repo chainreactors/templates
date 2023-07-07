@@ -252,6 +252,7 @@
         body:
           - location.href='/fort'
           - SecFox运维安全管理
+          - embedRzx type=application/htnpapi-plugin
 - name: 齐治堡垒机
   focus: true
   rule:
@@ -683,3 +684,39 @@
     - regexps:
         body:
           - primefaces-imc-classic-blue
+          - window.location.href='/imc/login.jsf'
+- name: H3C-CAS
+  focus: true
+  rule:
+    - regexps:
+        header:
+          - 'Server: CVM'
+          - 'Server: H3C-CVM'
+- name: ZKTIME打卡机
+  rule:
+    - regexps:
+        body:
+          - ZKTECO
+- name: 安恒日志审计
+  rule:
+    - regexps:
+        body:
+          - /js/app/App.Message.js
+          - /js/mango/Mango.Util.Top.js
+- name: 安恒设备
+  rule:
+    - regexps:
+        body:
+          - webui/images/basic/login/icon-lang.png
+- name: Huawei-EasySuite
+  rule:
+    - regexps:
+        body:
+          - /static/easysuite/js/vendor.js
+          - <title>EasySuite</title>
+- name: 飞塔防火墙
+  rule:
+    - regexps:
+        body:
+          - FortiGate
+          - app-id=1157004084, app-argument={{::host_addr}}
