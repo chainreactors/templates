@@ -4774,6 +4774,9 @@
     - regexps:
         body:
           - <script>location='/tplus/';</script>
+      favicon:
+        mmh3:
+          - '-2067519629'
 - name: Firefly-III
   rule:
     - regexps:
@@ -10243,11 +10246,6 @@
     - regexps:
         body:
           - <Message>Anonymous access is forbidden
-- name: wdCP云主机管理系
-  rule:
-    - regexps:
-        body:
-          - wdCP
 - name: 密云-文件安全存储交换平台
   rule:
     - regexps:

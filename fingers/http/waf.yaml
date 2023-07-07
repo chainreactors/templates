@@ -12,6 +12,8 @@
 - name: 360WAF
   rule:
     - regexps:
+        header:
+          - WZWS-RAY
         body:
           - wzws-waf-cgi
 - name: aeSecureWAF
