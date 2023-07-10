@@ -25,6 +25,16 @@
         md5:
           - c028c4822428e83a358c60a93ef65381
 
+- name: 群杰印章物联网平台
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - 印章物联网平台-让用印更安全
+      favicon:
+        md5:
+          - 8d51bc407f98aa7b6919dda75b6da5f4
+          
 - name: 普元eos_console
   focus: true
   rule:
