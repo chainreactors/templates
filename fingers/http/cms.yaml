@@ -33,6 +33,14 @@
           - EOS管理控制台
       info: 普元EOS_console_leak
       send_data: /eosmgr/eos/EventDispatcher
+
+- name: 郑州信源招标系统
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - static_resources/skin/css/master.css
+          
 - name: 普元cms
   focus: true
   rule:
