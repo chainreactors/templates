@@ -25,6 +25,13 @@
         md5:
           - c028c4822428e83a358c60a93ef65381
 
+- name: 汇思learning
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - id="globleMsgBoxTemplate"
+          
 - name: 普元eos_console
   focus: true
   rule:
