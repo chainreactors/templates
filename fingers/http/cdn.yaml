@@ -30,6 +30,7 @@
           - cdn.aliyuncs.com
         header:
           - cdn.aliyuncs.com
+          - x-swift-cachetime
 - name: 加速乐CDN
   rule:
     - regexps:
@@ -55,6 +56,7 @@
     - regexps:
         header:
           - cdn.staticfile.org
+          - X-Qiniu-Zone
 - name: maxcdn
   rule:
     - regexps:
@@ -65,4 +67,10 @@
     - regexps:
         header:
           - __jsluid
+- name: 腾讯云CDN
+  rule:
+    - regexps:
+        header:
+          - X-NWS-LOG-UUID
+
 
