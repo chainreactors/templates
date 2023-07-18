@@ -3016,7 +3016,7 @@
   rule:
     - regexps:
         body:
-          - 明源售楼管理系统V5.0
+          - 明源售楼管理系统
 - name: pmwayE4CRM
   rule:
     - regexps:
@@ -3338,11 +3338,12 @@
     - regexps:
         body:
           - class="logo-element">agile-bpm
-- name: 明源 售楼管理系统
+- name: 明源ERP
   rule:
     - regexps:
         body:
-          - 明源地产ERP
+          - 明源云ERP
+          - PubPlatform/Login/index.aspx
 - name: Yonyou-ERP-NC
   rule:
     - regexps:
@@ -8832,7 +8833,7 @@
   rule:
     - regexps:
         body:
-          - All Applications
+          - /static/yarn.css
 - name: MySQL-Squid-Access-Report
   rule:
     - regexps:
@@ -11146,13 +11147,6 @@
     - regexps:
         body:
           - 腾讯云面板
-- name: MinIO
-  rule:
-    - regexps:
-        body:
-          - Minio
-        header:
-          - MinIO
 - name: WD MyCloud
   rule:
     - regexps:
@@ -11167,7 +11161,6 @@
   rule:
     - regexps:
         body:
-          - 住院医师规范化培训平台
           - 住院医师规范化培训平台
 - name: 中庆纳博
   rule:

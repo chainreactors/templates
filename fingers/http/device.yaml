@@ -567,7 +567,6 @@
   rule:
     - regexps:
         body:
-          - <div id="divLogin">
           - 网御WAF
 - name: 网御上网行为管理系统
   rule:
@@ -720,3 +719,8 @@
         body:
           - FortiGate
           - app-id=1157004084, app-argument={{::host_addr}}
+- name: 深信服身份认证系统
+  rule:
+    - regexps:
+        body:
+          - 请您先登录身份认证系统

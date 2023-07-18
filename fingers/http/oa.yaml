@@ -547,3 +547,10 @@
         body:
           - /jsoa/login.jsp
           - /x_desktop/index.html
+- name: 明源云
+  rule:
+    - favicon:
+        md5:
+          - 383f3ea0be963d56cb16b012885261a4
+        mmh3:
+          - '-626335361'

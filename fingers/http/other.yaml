@@ -4892,11 +4892,6 @@
     - regexps:
         header:
           - PCLinuxOS
-- name: perl
-  rule:
-    - regexps:
-        header:
-          - perl
 - name: pg api server
   rule:
     - regexps:
@@ -6375,7 +6370,6 @@
         body:
           - 沃科网
           - 异网同显系统
-
 
 - name: 海盗云商(haidao)
   rule:
