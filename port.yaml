@@ -164,6 +164,28 @@
     - '6984'
   tags:
     - db
+- name: couchbase
+  ports:
+    - '8091'
+    - '11210'
+  tags:
+    - db
+- name: influxDB
+  ports:
+    - '8086'
+  tags:
+    - db
+- name: hdfs
+  ports:
+    - '8020'
+    - '50010'
+  tags:
+    - db
+- name: clickhouse
+  ports:
+    - '8123'
+  tags:
+    - db
 - name: redis
   ports:
     - '6379'
@@ -202,7 +224,7 @@
 
 - name: mongodb
   ports:
-    - '27017'
+    - '27017-27019'
   tags:
     - db
     - common
@@ -210,9 +232,16 @@
 - name: hbase
   ports:
     - '16000'
+    - '16010'
+    - '16201'
   tags:
     - db
-
+- name: cassandra
+  ports:
+    - '9042'
+    - '7000'
+  tags:
+    - db
 - name: rabbitmq
   ports:
     - '15672'
@@ -223,6 +252,7 @@
 - name: neo4j
   ports:
     - '7474'
+    - '7687'
   tags:
     - db
 - name: hessian
@@ -255,6 +285,15 @@
     - rce
     - common
     - in
+- name: websphere
+  ports:
+    - '8880'
+    - '2809'
+    - '9100'
+    - '11006'
+  tags:
+    - http
+    - rce
 - name: jmx
   ports:
     - '8686'
@@ -296,6 +335,7 @@
 - name: activemq
   ports:
     - '8161'
+    - '61616'
   tags:
     - rce
     - common
@@ -321,13 +361,93 @@
     - '5556'
   tags:
     - rce
+- name: etcd
+  ports:
+    - '2379'
+    - '2380'
+  tags:
+    - common
+    - in
+    - cloud
+- name: istio
+  ports:
+    - '15010'
+    - '15011'
+    - '15012'
+  tags:
+    - common
+    - in
+    - cloud
+- name: envoy
+  ports:
+    - '15001'
+  tags:
+    - common
+    - in
+    - cloud
+- name: jaeger
+  ports:
+    - '14268'
+    - '16686'
+  tags:
+    - common
+    - in
+    - cloud
+- name: k8s
+  ports:
+    - '10256'
+    - '10250'
+    - '10255'
+  tags:
+    - common
+    - in
+    - cloud
+- name: kafka
+  ports:
+    - '9092'
+  tags:
+    - common
+    - in
+    - cloud
+- name: nats
+  ports:
+    - '4222'
+    - '8222'
+  tags:
+    - common
+    - in
+    - cloud
+- name: pulsar
+  ports:
+    - '6650'
+  tags:
+    - common
+    - in
+    - cloud
+- name: consul
+  ports:
+    - '8500'
+    - '8300-8302'
+  tags:
+    - common
+    - in
+    - cloud
+- name: nacos
+  ports:
+    - '8848-8850'
+    - '9700'
+  tags:
+    - common
+    - in
+    - cloud
 - name: docker
   ports:
-    - 2375-2380
+    - 2375-2378
   tags:
     - rce
     - common
     - in
+    - cloud
 - name: portainer
   ports:
     - '9000'
