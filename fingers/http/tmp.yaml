@@ -7196,7 +7196,7 @@
   rule:
     - regexps:
         body:
-          - <!-- 成都添闰通讯技术有限公司 -->
+          - 成都添闰通讯技术有限公司
 - name: 即时通讯系统
   rule:
     - regexps:
@@ -7703,16 +7703,11 @@
     - regexps:
         body:
           - T3智能仓储管理系统
-- name: DouPHP轻量级企业网站管理系统
+- name: DouPHP
   rule:
     - regexps:
         body:
-          - DouPHP轻量级企业网站管理系统
-- name: DouPHP轻量级企业网站管理系统 Powered by DouPHP
-  rule:
-    - regexps:
-        body:
-          - DouPHP轻量级企业网站管理系统 - Powered by DouPHP
+          - Powered by DouPHP
 - name: 网强it综合管理系统
   rule:
     - regexps:
@@ -7746,19 +7741,6 @@
         body:
           - content="新为，新为软件，
           - Copyright &copy; 深圳市新为软件有限公司
-- name: Kubernetes
-  rule:
-    - regexps:
-        body:
-          - Kubernetes Dashboard
-          - Kubeconsole
-        header:
-          - Basic realm="kubernetes-master"
-- name: Kubeflow
-  rule:
-    - regexps:
-        body:
-          - Kubeflow
 - name: 开始云 企业网盘
   rule:
     - regexps:

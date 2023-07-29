@@ -377,12 +377,15 @@ common_file:
   - upload/
   - img/
   - css/
+  - assets/
+  - asset/
   - tests/
   - test/
   - install.sh
   - update.sh
   - upgrade.sh
   - build.sh
+  - deploy.sh
   - metrics
   - id_dsa
   # ide
@@ -420,6 +423,7 @@ common_file:
   - MANIFEST.in
   - requirements.txt
   # node common
+  - node_modules/
   - package.json
   - package-lock.json
   - yarn.lock

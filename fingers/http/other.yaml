@@ -5119,21 +5119,11 @@
     - regexps:
         header:
           - Microsoftsharepointteamservices
-- name: shop7z
-  rule:
-    - regexps:
-        body:
-          - productlist.asp
-          - headlist
-        header:
-          - sitekeyword
 - name: shopbuilder
   rule:
     - regexps:
         body:
-          - content="ShopBuilder
-          - Powered by ShopBuilder
-          - ShopBuilder版权所有
+          - ShopBuilder
 - name: shopex
   rule:
     - regexps:

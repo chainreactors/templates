@@ -391,3 +391,16 @@
     - regexps:
         body:
           - content="yapi
+- name: Kubernetes
+  rule:
+    - regexps:
+        body:
+          - Kubernetes Dashboard
+          - Kubeconsole
+        header:
+          - Basic realm="kubernetes-master"
+- name: Kubeflow
+  rule:
+    - regexps:
+        body:
+          - Kubeflow
