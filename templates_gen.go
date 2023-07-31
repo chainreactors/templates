@@ -164,6 +164,8 @@ func parser(key string) string {
 		return recuLoadPoc2JsonString("nuclei")
 	case "rule":
 		return loadRawFiles("rule")
+	case "zombie_rule":
+		return loadRawFiles("zombie/rule")
 	case "mask":
 		return loadYamlFile2JsonString("keywords.yaml")
 	case "extract":
@@ -189,7 +191,7 @@ func main() {
 	} else if *need == "spray" {
 		needs = []string{"http", "rule", "mask", "extract"}
 	} else if *need == "zombie" {
-		needs = []string{"zombie_default", "zombie_common"}
+		needs = []string{"zombie_default", "zombie_common", "zombie_rule"}
 	} else {
 		needs = strings.Split(*need, ",")
 	}
