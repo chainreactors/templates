@@ -123,8 +123,11 @@
 - name: jboss
   ports:
     - '45566'
+    - '4446'
+    - '3873'
+    - '5001'
   tags:
-    - http
+    - rce
 - name: postgresql
   ports:
     - '5432'
