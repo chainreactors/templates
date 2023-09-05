@@ -1060,11 +1060,6 @@
     - regexps:
         body:
           - Remedy Mid Tier
-- name: boa-webserver
-  rule:
-    - regexps:
-        header:
-          - Boa
 - name: boastmachine
   rule:
     - regexps:

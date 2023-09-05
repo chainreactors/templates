@@ -391,6 +391,28 @@
     - regexps:
         body:
           - content="yapi
+- name: metrics
+  rule:
+    - regexps:
+        vuln:
+          - <a\s+href=['"]\/metrics['"]>.*<\/a>
+      info: metrics-leak
+- name: consul
+  rule:
+    - regexps:
+        body:
+          - Consul by HashiCorp
+          - consul-ui/config/environment
+- name: kong
+  rule:
+    - regexps:
+        regexp:
+          - 'Server: kong\/(.*)'
+- name: express
+  rule:
+    - regexps:
+        header:
+          - Express
 - name: Kubernetes
   rule:
     - regexps:

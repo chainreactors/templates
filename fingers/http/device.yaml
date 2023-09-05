@@ -724,3 +724,8 @@
     - regexps:
         body:
           - 请您先登录身份认证系统
+- name: 帕拉迪堡垒机
+  rule:
+    - regexps:
+        header:
+          - /index.php/Public
