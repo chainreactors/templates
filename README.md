@@ -40,7 +40,7 @@ gogo的通用配置, 包括端口, 指纹, poc, workflow
 例如在gogo中, 就在入口文件添加go generate在编译时将templates打包到二进制文件中.
 
 ```go
-//go:generate go run templates/templates_gen.go -t templates -o pkg/templates.go
+//go:generate go run templates/templates_gen.go -t templates -o pkg/templates.go -need gogo
 package main
 
 import "github.com/chainreactors/gogo/v2/cmd"
