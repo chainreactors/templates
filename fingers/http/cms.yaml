@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - name: 指掌易
   focus: true
   rule:
@@ -9,16 +10,31 @@
           - '157792745'
           - '738823048'
 - name: KkFileView
+=======
+- name: 畅捷通T+
+  focus: true
+  rule:
+      favicon:
+        mmh3:
+          - -2067519629
+- name: 广讯通
+>>>>>>> 761aac4c65fc3cda6358581818bb8d63b9e36a10
   focus: true
   rule:
     - regexps:
         body:
+<<<<<<< HEAD
           - /onlinePreview?url=
 - name: 若依
+=======
+          - Services/Identification/login.ashx
+- name: 慧点OA
+>>>>>>> 761aac4c65fc3cda6358581818bb8d63b9e36a10
   focus: true
   rule:
     - regexps:
         body:
+<<<<<<< HEAD
           - ruoyi/css/ry-ui.css
 - name: 普华科技
   focus: true
@@ -39,6 +55,9 @@
         body:
           - location.hash.indexOf('/authLogin')
           - location.hash.indexOf('#/message/')
+=======
+          - <a href="www/mobile-version.txt"
+>>>>>>> 761aac4c65fc3cda6358581818bb8d63b9e36a10
 - name: 微擎
   focus: true
   rule:
