@@ -562,3 +562,8 @@
           - 383f3ea0be963d56cb16b012885261a4
         mmh3:
           - '-626335361'
+- name: KkFileView
+  rule:
+    - regexps:
+        body:
+          - /onlinePreview?url=

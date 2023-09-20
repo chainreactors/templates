@@ -810,3 +810,50 @@
     - regexps:
         body:
           - idp/AuthnEngine
+- name: 宏景hr
+  rule:
+    - favicon:
+        mmh3:
+          - '947874108'
+- name: 汇思learning
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - id="globleMsgBoxTemplate"
+- name: 群杰印章物联网平台
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - 印章物联网平台-让用印更安全
+      favicon:
+        md5:
+          - 8d51bc407f98aa7b6919dda75b6da5f4
+- name: 郑州信源招标系统
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - static_resources/skin/css/master.css
+- name: 易道edoc2企业数据管理平台
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - href="Content/themes/blue/edoc2-page.min.css
+- name: Office365
+  rule:
+    - regexps:
+        body:
+          - 请输入furl参数
+- name: 华为Anyoffice
+  rule:
+    - regexps:
+        body:
+          - /MDMServer/loginPage.action
+- name: 一采通
+  rule:
+    - regexps:
+        body:
+          - /Scripts/JqueryMobile/JSBase/YCT_QRCode.js
