@@ -1,3 +1,9 @@
+- name: 畅捷通T+
+  focus: true
+  rule:
+      favicon:
+        mmh3:
+          - -2067519629
 - name: 微擎
   focus: true
   rule:
