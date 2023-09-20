@@ -4,6 +4,12 @@
       favicon:
         mmh3:
           - -2067519629
+- name: 广讯通
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - Services/Identification/login.ashx
 - name: 微擎
   focus: true
   rule:
