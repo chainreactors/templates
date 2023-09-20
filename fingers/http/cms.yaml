@@ -779,6 +779,31 @@
     - regexps:
         body:
           - /Account/GetSiteCode/
+- name: 若依
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - ruoyi/css/ry-ui.css
+- name: 普华科技
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - Power_choose_lang
+- name: 云问科技-客服系统
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - http://www.faqrobot.org/devdoc/helpDocument.html
+- name: 大华智能物联综合管理平台
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - location.hash.indexOf('/authLogin')
+          - <a href="www/mobile-version.txt"
 - name: 竹云IAM
   focus: true
   rule:

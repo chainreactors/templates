@@ -35,9 +35,16 @@
           - /xxl-job-admin/static/favicon.ico
       send_data: /xxl-job-admin
 - name: 用友 CRM
+  level: 2
   rule:
     - regexps:
         body:
           - C535AD4F2E753F29CE1118EDB8B7913FB96C145FC21A1E9BA9
-      level: 2
       send_data: /login/login.php
+- name: pageoffice
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - PageOffice
+      send_data: /poserver.zz

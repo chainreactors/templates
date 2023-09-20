@@ -8385,6 +8385,8 @@
     - regexps:
         body:
           - '<meta http-equiv=refresh content=0;url=nccloud>'
+          - 'window.location.href="platform/pub/welcome.do";'
+          - 'window.location.href="html/downloadBroswer.html";'
 - name: 契约锁
   rule:
     - regexps:
