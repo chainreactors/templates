@@ -4,7 +4,6 @@
     - regexps:
         body:
           - Services/Identification/login.ashx
-
 - name: 微擎
   focus: true
   rule:
@@ -20,7 +19,6 @@
     - regexps:
         body:
           - XXL-JOB
-
 - name: discuz
   rule:
     - regexps:
@@ -806,3 +804,9 @@
         body:
           - location.hash.indexOf('/authLogin')
           - <a href="www/mobile-version.txt"
+- name: 竹云IAM
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - idp/AuthnEngine
