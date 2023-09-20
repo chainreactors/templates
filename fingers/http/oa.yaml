@@ -46,16 +46,36 @@
           - Powered by 协众OA
         header:
           - CNOAOASESSID
-- name: 托尔斯cms
+- name: 拓尔思cms
   rule:
     - regexps:
         body:
           - dreamer-cms
-- name: 托尔斯was
+- name: 拓尔思ids
+  rule:
+    - regexps:
+        body:
+          - /ids/admin/
+- name: 拓尔思was
   rule:
     - regexps:
         body:
           - trs_web_style.css
+- name: 拓尔思wcm
+  rule:
+    - regexps:
+        body:
+          - forum.trs.com.cn
+- name: 拓尔思sso
+  rule:
+    - regexps:
+        body:
+          - /ids/admin/js/oslib
+- name: 拓尔思mas
+  rule:
+    - regexps:
+        header:
+          - X-Mas-Server
 - name: 禅道oa
   focus: true
   rule:
@@ -203,13 +223,16 @@
     - regexps:
         body:
           - /main/assets/images/favicon.ico
-- name: 畅捷通
+- name: 畅捷通 T-plus
   focus: true
   rule:
     - regexps:
         body:
           - 畅捷通 T+
           - tp.control.css.ashx
+      favicon:
+        mmh3:
+          - '-2067519629'
 - name: 金蝶云星空
   focus: true
   rule:

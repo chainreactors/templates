@@ -4771,14 +4771,6 @@
         body:
           - <center>JQCI</center>
           - /netrep
-- name: 畅捷通-TPlus
-  rule:
-    - regexps:
-        body:
-          - <script>location='/tplus/';</script>
-      favicon:
-        mmh3:
-          - '-2067519629'
 - name: Firefly-III
   rule:
     - regexps:
