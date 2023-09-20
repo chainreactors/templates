@@ -63,6 +63,7 @@
         body:
           - /theme/default/images/main/zt-logo.png
           - /zentao/theme/zui/css/min.css
+          - <script>self.location='/user-login-
         header:
           - zentaosid
 - name: 安策绩效管理系统
@@ -477,10 +478,16 @@
         md5:
           - 975db4c825c16dde9ae6ba5da6ff8d46
 - name: 指掌易
+  focus: true
   rule:
     - regexps:
         body:
+          - /css/app/emmNew.css
           - build/framework/js/download.js
+      favicon:
+        mmh3:
+          - '157792745'
+          - '738823048'
 - name: confluence
   focus: true
   rule:
