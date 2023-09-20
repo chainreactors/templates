@@ -281,6 +281,7 @@
     - regexps:
         body:
           - easSessionId
+          - path=/eassso
 - name: 金蝶apusic
   focus: true
   rule:
@@ -289,6 +290,7 @@
           - Apusic
         body:
           - "-Error report"
+          - 'Apusic Application Server'
 - name: glassfish
   rule:
     - regexps:
