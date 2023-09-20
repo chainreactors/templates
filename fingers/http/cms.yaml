@@ -8,6 +8,12 @@
       favicon:
         md5:
           - fa8833ac684d6949f480ae3bc9a51b4a
+- name: 畅捷通T+
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - http://dad.chanapp.chanjet.com/tplusapp/TPlusBrowser.exe 
 - name: xxl-job
   rule:
     - regexps:
