@@ -1,3 +1,9 @@
+- name: 竹云IAM
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - idp/AuthnEngine
 - name: 微擎
   focus: true
   rule:
