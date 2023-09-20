@@ -8,12 +8,6 @@
         mmh3:
           - '157792745'
           - '738823048'
-- name: 畅捷通T+
-  focus: true
-  rule:
-      favicon:
-        mmh3:
-          - -2067519629
 - name: 广讯通
   focus: true
   rule:
