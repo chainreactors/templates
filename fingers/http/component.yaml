@@ -302,6 +302,7 @@
     - regexps:
         body:
           - jeecg
+          - window._CONFIG['onlinePreviewDomainURL
 - name: telerik
   focus: true
   rule:

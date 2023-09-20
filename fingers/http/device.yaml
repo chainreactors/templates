@@ -730,3 +730,10 @@
     - regexps:
         header:
           - /index.php/Public
+- name: 海康威视-综合安防
+  default_port:
+    - '8443'
+  rule:
+    - favicon:
+        mmh3:
+          - '-808437027'

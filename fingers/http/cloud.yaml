@@ -240,6 +240,12 @@
           - 6ed1fb0e8c0383b5a2e39d64d8b25442
         mmh3:
           - '-1250474341'
+- name: vmware Horizon
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - VMware&nbsp;Horizon
 - name: vmware identity
   focus: true
   rule:
