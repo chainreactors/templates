@@ -1,9 +1,10 @@
-- name: 竹云IAM
+- name: 广讯通
   focus: true
   rule:
     - regexps:
         body:
-          - idp/AuthnEngine
+          - Services/Identification/login.ashx
+
 - name: 微擎
   focus: true
   rule:
