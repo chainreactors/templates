@@ -4688,6 +4688,7 @@
       regexps:
         body:
           - alert('没采集到指纹数据')
+          - window.parent.parent.location.href='admin.php?controller=admin_index&action=login';
 - name: Microsoft SQL Server Reporting Services
   rule:
     - regexps:

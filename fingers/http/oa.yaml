@@ -63,6 +63,7 @@
         body:
           - /theme/default/images/main/zt-logo.png
           - /zentao/theme/zui/css/min.css
+          - <script>self.location='/user-login-
         header:
           - zentaosid
 - name: 安策绩效管理系统
@@ -242,6 +243,7 @@
           - 万户OA
           - whirRootPath
           - /defaultroot
+          - 'Tel:400-888-0035  020-85575672'
 - name: oa企业智能办公自动化系统
   rule:
     - regexps:

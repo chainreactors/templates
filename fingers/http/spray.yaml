@@ -1,3 +1,10 @@
+- name: pageoffice
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - PageOffice
+      send_data: /poserver.zz
 - name: solr
   level: 2
   rule:
