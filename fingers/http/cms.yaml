@@ -10,6 +10,12 @@
     - regexps:
         body:
           - Services/Identification/login.ashx
+- name: 慧点OA
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - <a href="www/mobile-version.txt"
 - name: 微擎
   focus: true
   rule:
