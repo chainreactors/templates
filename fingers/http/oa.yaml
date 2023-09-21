@@ -595,4 +595,3 @@
     - regexps:
         body:
           - /ps/signon.html
-          - /onlinePreview?url=
