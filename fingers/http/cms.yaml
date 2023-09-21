@@ -56,6 +56,7 @@
     - regexps:
         header:
           - /opac/search/simsearch
+          - /opac/struts/dojo
 - name: jboss
   focus: true
   rule:
