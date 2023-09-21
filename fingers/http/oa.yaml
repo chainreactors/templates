@@ -301,20 +301,28 @@
     - regexps:
         body:
           - zfoausername
-- name: 致远oa
+- name: 用友致远oa
   focus: true
   rule:
     - regexps:
-        body:
-          - /seeyon/
+        regexp:
+          - A8\/favicon\.ico\?V=.*"
           - 用友致远A
           - /yyoa/
       favicon:
+        - 57f307ad3764553df84e7b14b7a85432
+        - 3c8df395ec2cbd72782286d18a286a9a
+        - 2f761c27b6b7f9386bbd61403635dc42
+- name: 致远oa A6
+  focus: true
+  rule:
+    - regexps:
+        regexp:
+          - A6\/favicon\.ico\?V=.*"
+      favicon:
+        path: /seeyon/common/images/A6/favicon.ico
         md5:
-          - cdc85452665e7708caed3009ecb7d4e2
-          - 57f307ad3764553df84e7b14b7a85432
-          - 3c8df395ec2cbd72782286d18a286a9a
-          - 2f761c27b6b7f9386bbd61403635dc42
+          - 8570d711136a8d720655cfc1362c8544
 - name: smartbi
   focus: true
   rule:
