@@ -306,19 +306,29 @@
   rule:
     - regexps:
         regexp:
-          - A8\/favicon\.ico\?V=.*"
           - 用友致远A
           - /yyoa/
       favicon:
-        - 57f307ad3764553df84e7b14b7a85432
-        - 3c8df395ec2cbd72782286d18a286a9a
-        - 2f761c27b6b7f9386bbd61403635dc42
+        md5:
+          - 57f307ad3764553df84e7b14b7a85432
+          - 3c8df395ec2cbd72782286d18a286a9a
+          - 2f761c27b6b7f9386bbd61403635dc42
+- name: 致远oa A8
+  focus: true
+  rule:
+    - regexps:
+        regexp:
+          - A8\/favicon\.ico\?V=(.*?)"
+      favicon:
+        path: /seeyon/common/images/A8/favicon.ico
+        md5:
+          - cdc85452665e7708caed3009ecb7d4e2
 - name: 致远oa A6
   focus: true
   rule:
     - regexps:
         regexp:
-          - A6\/favicon\.ico\?V=.*"
+          - A6\/favicon\.ico\?V=(.*?)"
       favicon:
         path: /seeyon/common/images/A6/favicon.ico
         md5:
