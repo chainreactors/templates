@@ -536,17 +536,6 @@
         body:
           - /index.php/Mobile/Index/index.html
           - TPshop
-- name: trsmas
-  rule:
-    - regexps:
-        header:
-          - X-Mas-Server
-- name: trs_wcm
-  rule:
-    - regexps:
-        body:
-          - /wcm
-          - trs.com.cn
 - name: turbocms
   rule:
     - regexps:
@@ -620,12 +609,6 @@
           - '-299974513'
         md5:
           - d1b2495284e172a52abc355c63b25341
-- name: 拓尔思was
-  focus: true
-  rule:
-    - regexps:
-        body:
-          - yuysoft.com
 
 - name: 云梦cms
   focus: true
