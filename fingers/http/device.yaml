@@ -729,7 +729,7 @@
   rule:
     - regexps:
         header:
-          - /index.php/Public
+          - module/image/pldsec.css
 - name: 海康威视-综合安防
   default_port:
     - '8443'

@@ -2024,9 +2024,6 @@
     - regexps:
         body:
           - Powered by DouPHP
-          - controlBase
-          - indexLeft
-          - recommendProduct
 - name: dr-web-anti-virus
   rule:
     - regexps:
@@ -4340,13 +4337,6 @@
     - regexps:
         body:
           - /WorldClient.dll?View=Main
-- name: mediawiki
-  rule:
-    - regexps:
-        body:
-          - generator" content="MediaWiki
-          - /wiki/images/6/64/Favicon.ico
-          - Powered by MediaWiki
 - name: mercurial
   rule:
     - regexps:

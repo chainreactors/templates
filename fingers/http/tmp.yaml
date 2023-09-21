@@ -4474,7 +4474,6 @@
     - regexps:
         body:
           - H3C SecPath 运维审计系统
-          - H3C SecPath 运维审计系统
 - name: 中科新业 网络安全审计系统
   rule:
     - regexps:
@@ -11389,3 +11388,1073 @@
     - regexps:
         body:
           - 资产灯塔系统
+- name: Github_Enterprise
+  rule:
+    - regexps:
+        body:
+          - Setup GitHub Enterprise
+- name: Gitblit
+  rule:
+    - favicon:
+        mmh3:
+          - '573035254'
+      regexps:
+        body:
+          - Gitblit
+- name: Atlassian-Bitbucket
+  rule:
+    - regexps:
+        body:
+          - <li>Atlassian Bitbucket
+- name: 中远麒麟堡垒机
+  rule:
+    - favicon:
+        mmh3:
+          - '-1915366547'
+          - '-2084234863'
+      regexps:
+        body:
+          - alert('没采集到指纹数据')
+- name: 纷享销客CRM
+  rule:
+    - regexps:
+        body:
+          - //www.fxiaoke.com/ap/reg/
+          - CRM登录系统 - 纷享销客CRM
+- name: 悟空CRM
+  rule:
+    - regexps:
+        body:
+          - 悟空CRM
+          - <div class="row-fluid wukong">
+      favicon:
+        mmh3:
+          - '872805507'
+- name: 六台阶客户关系管理系统
+  rule:
+    - regexps:
+        body:
+          - 六台阶客户关系管理系统
+- name: 用友TurboCRM
+  rule:
+    - regexps:
+        body:
+          - 用友TurboCRM
+          - /js/turboui.js"></script>
+- name: 零信任访问控制系统aTrust
+  rule:
+    - regexps:
+      body:
+        - <title>aTrust
+      favicon:
+        md5:
+          - 61ea21861c73970bc98ed619f2748992
+- name: PhpWeb
+  rule:
+    - regexps:
+        body:
+          - pdv_pagename
+- name: ValueApex-EAMic
+  rule:
+    - regexps:
+        body:
+          - log into my eamic® account
+- name: 友点CMS
+  rule:
+    - regexps:
+        body:
+          - 友点企业网站管理系统
+- name: MCMS-铭飞
+  rule:
+    - regexps:
+        body:
+          - ms.http.js
+- name: PageAdmin-CMS
+  rule:
+    - regexps:
+        body:
+          - PageAdmin
+- name: Emlog
+  rule:
+    - regexps:
+        body:
+          - content="emlog"
+- name: IdeaCMS
+  rule:
+    - regexps:
+        body:
+          - IdeaCMS
+
+- name: SupeSite
+  rule:
+    - regexps:
+        body:
+          - content="SupeSite
+        header:
+          - supe_sid
+- name: PublicCMS
+  rule:
+    - regexps:
+        header:
+          - X-Powered-Publiccms
+        body:
+          - publiccms
+- name: 力软敏捷开发框架
+  rule:
+    - regexps:
+        body:
+          - content="力软敏捷开发框架，是一个web可视化开发平台
+- name: 新软科技 极通EWEBS
+  rule:
+    - regexps:
+        body:
+          - EWEBSClientsetup
+          - 极通应用虚拟化系统
+- name: Journalx
+  rule:
+    - regexps:
+        body:
+          - journalx/authorlogon.action?mag_id
+- name: 用友-YonBIP
+  rule:
+    - favicon:
+        mmh3:
+          - '1183274548'
+- name: Dimix-ERP-办公系统
+  rule:
+    - regexps:
+        body:
+          - Dimix ERP 办公系统
+- name: 朗新天霁人力资源管理系统
+  rule:
+    - regexps:
+        body:
+          - hrsoft.com.cn
+      favicon:
+        mmh3:
+          - '1143915194'
+- name: 天融信日志收集与分析系统
+  rule:
+    - regexps:
+        body:
+          - 天融信日志收集与分析系统
+- name: 明御综合日志审计平台
+  rule:
+    - regexps:
+        body:
+          - 明御
+- name: 奇安信网神上网行为管理与审计系统
+  rule:
+    - regexps:
+        body:
+          - 网神上网行为管理与审计系统
+- name: 天清汉马VPN
+  rule:
+    - regexps:
+        body:
+          - /vpn/common/js/leadsec.js
+          - /vpn/user/common/custom/auth_home.css
+- name: PulseSecure-SSL-VPN
+  rule:
+    - regexps:
+        body:
+          - pulse connect secure
+- name: 华为-SSL-VPN
+  rule:
+    - regexps:
+        body:
+          - Clear SSL cache successfully
+          - getCookie("SGDPortal")
+          - SVN_GetLoginContextValue(
+- name: 迪普vpn
+  rule:
+    - regexps:
+        body:
+          - dptech_ssl
+- name: 锐捷-VPN
+  rule:
+    - favicon:
+        mmh3:
+          - '-1525950034'
+- name: WPS部署可视化平台
+  link: http://47.93.161.45:8081/account/login
+  rule:
+    - regexps:
+        body:
+          - WPS 部署可视化平台
+- name: 智齿客服系统
+  link: http://www.tndyt.com/
+  rule:
+    - regexps:
+        body:
+          - sobot
+- name: 360企业版控制中心
+  link: http://218.5.113.75:8800/
+  rule:
+    - regexps:
+        body:
+          - 360企业版控制中心
+- name: 青藤万相主机自适应安全平台
+  link: http://qingty.htinfor.com:8003/next/#/login
+  rule:
+    - regexps:
+        body:
+          - 万相主机安全
+      favicon:
+        mmh3:
+          - '-898067940'
+- name: 明御终端安全及防病毒系统
+  link: https://edr.dahai-group.com/#/login
+  rule:
+    - regexps:
+        body:
+          - 明御终端安全及防病毒系统
+- name: 深信服终端检测响应平台
+  link: https://www.hhsfgz.com:4002/ui/login.php
+  rule:
+    - regexps:
+        body:
+          - datalayer','gtm-tl7g2lw'
+- name: 金山终端安全
+  link: http://120.82.95.46:1024/
+  rule:
+    - regexps:
+        body:
+          - 金山终端安全系统
+          - setup/kanclient.exe
+- name: ASUS Wireless Router
+  link: https://47.232.136.50:8443/Main_Login.asp
+  rule:
+    - regexps:
+        body:
+          - ASUS Wireless Router
+- name: SANGFOR-深信服数据中心
+  link: https://hlwx.e-autolife.com:85/LogInOut.php
+  rule:
+    - regexps:
+        body:
+          - /LogInOut.php
+- name: HertzBeat
+  link: http://health.seetong.com/passport/login
+  rule:
+    - regexps:
+        body:
+          - HertzBeat
+- name: 深信服WEB防篡改管理系统
+  link:
+  rule:
+    - regexps:
+        body:
+          - cgi-bin/tamper_admin.cgi
+- name: 碧海云盒
+  link: https://157.0.211.250:1443/
+  rule:
+    - regexps:
+        body:
+          - 碧海云盒
+- name: Apache ShenYu
+  rule:
+    - regexps:
+        body:
+          - th:text=\"${domain}
+- name: 山石网科云鉴主机安全管理系统
+  link: https://119.96.166.102:10443/admin/login/login.php
+  rule:
+    - regexps:
+        body:
+          - 云鉴主机安全管理系统
+- name: 网御Web应用安全防护系统
+  link: https://49.87.110.138:13443/login
+  rule:
+    - regexps:
+        body:
+          - 网御Web应用安全防护系统
+- name: 安全狗-云垒云安全平台
+  link: https://222.75.57.36:8443/passport/login.html?service=https%3A%2F%2F222.75.57.36%3A8443%2F&encode=UTF-8&sid=MzY4YTcyYWUtOWI5Yi00MzUwLTg1ZmYtNDQ4MDIyMTBiNzhh
+  rule:
+    - regexps:
+        body:
+          - yunlei_login
+- name: WIFISKY-7层流控路由器
+  link: https://221.15.134.220:1443/
+  rule:
+    - regexps:
+        body:
+          - WIFISKY
+          - 深圳市领空技术
+- name: 奇安信网神数据库审计与防护系统
+  link: https://www.natpacvc.cn:8161/login
+  rule:
+    - regexps:
+        body:
+          - 网神数据库审计与防护系统许可协议
+- name: 深信服应用交付管理系统
+  link: https://45.251.66.76:85/rep/login
+  rule:
+    - regexps:
+        body:
+          - /reportCenter/index.php?cls_mode=cluster_mode_others
+- name: 奇安信行为感知分析系统
+  link: https://183.61.125.203/
+  rule:
+    - regexps:
+        body:
+          - 行为感知分析系统
+- name: 网康互联网控制网关
+  link: https://111.26.171.165:8888/
+  rule:
+    - regexps:
+        body:
+          - 网康科技·互联网控制网关
+- name: 绿盟综合威胁探针UTS
+  link: https://202.111.123.11/uts_v2/webstatic/#/passport/login
+  rule:
+    - regexps:
+        body:
+          - 探针, 威胁检测, 安全分析
+- name: Smartweb管理系统
+  link: http://222.87.54.50:8888/
+  rule:
+    - regexps:
+        body:
+          - 无线smartWeb 2129839604
+- name: 云课堂主机
+  link: https://111.53.212.114:8189/login.jsf
+  rule:
+    - favicon:
+        mmh3:
+          - '2129839604'
+- name: 深信服-行为感知系统
+  link: https://jenkins.ws.viomi.eu.org:4433/ui/login.php
+  rule:
+    - regexps:
+        body:
+          - home/mod-login/nopro-login/index
+- name: 中国移动禹路由
+  link: http://123.182.149.40:19999/login.asp
+  rule:
+    - regexps:
+        body:
+          - 互联世界   物联未来-登录
+- name: 网康NS-ASG应用安全网关
+  link: https://220.166.57.238:4435/
+  rule:
+    - regexps:
+        body:
+          - 网康NS-ASG应用安全网关
+- name: MessageSolution Enterprise Email Archiving (EEA)
+  link: https://63.128.135.13/index.jsp
+  rule:
+    - regexps:
+        body:
+          - MessageSolution
+          - index.jsp
+- name: MessageSolution Enterprise Email Archiving (EEA)
+  link: https://63.128.135.13/index.jsp
+  rule:
+    - regexps:
+        body:
+          - MessageSolution
+          - index.jsp
+- name: 捷普防火墙管理系统
+  link: https://222.170.71.150:2000/
+  rule:
+    - regexps:
+        body:
+          - 捷普
+- name: 山石网科 防火墙
+  rule:
+    - regexps:
+        body:
+          - Hillstone
+          - licenseAggrement
+          - GLOBAL_CONFIG.js
+- name: 深信服下一代防火墙
+  link:
+  rule:
+    - favicon:
+        mmh3:
+          - '123821839'
+- name: 安恒明御安全网关
+  link: https://117.69.158.54:4430/login.html
+  rule:
+    - regexps:
+        body:
+          - 明御安全网关
+- name: 网康下一代防火墙
+  link: https://122.156.220.58:7443/
+  rule:
+    - regexps:
+        body:
+          - 网康下一代防火墙
+- name: 锐捷防火墙
+  rule:
+    - regexps:
+        body:
+          - 锐捷网络
+- name: 天清汉马USG防火墙
+  link: https://222.175.173.206:4431/login.html
+  rule:
+    - regexps:
+        body:
+          - 天清汉马USG
+- name: 天清汉马USG防火墙
+  link: https://222.175.173.206:4431/login.html
+  rule:
+    - regexps:
+        body:
+          - 天清汉马USG
+- name: EOVA
+  link: http://47.104.189.130:8082/toLogin
+  rule:
+    - regexps:
+        body:
+          - EOVA
+- name: OneThink
+  link: http://flyer.parkyardhotel.com:8812/index.php?s=/Admin/Public/login.html
+  rule:
+    - regexps:
+        body:
+          - OneThink管理平台
+- name: Metronic
+  link: http://47.110.226.22/default/login
+  rule:
+    - regexps:
+        body:
+          - metronic. admin dashboard template.
+- name: Jakarta Project
+  link: http://eedsmdmkygb.gnway.cc:7415/
+  rule:
+    - regexps:
+        body:
+          - alt=\"the jakarta project
+- name: PigX-快速开发框架
+  link: http://elv.sinodis.com/#/login
+  rule:
+    - regexps:
+        body:
+          - PigX
+- name: Kong
+  link: https://hostmaster.supron1.com.pl:2222/evo/
+  rule:
+    - regexps:
+        header:
+          - 'server: Kong'
+- name: 浪潮 ClusterEngine
+  link: https://anzhi.simceredx.com:8443/module/login/login.html
+  rule:
+    - regexps:
+        body:
+          - ClusterEngine
+- name: Cwindow政务安全邮箱
+  link: http://mail.cmailvip.cn/login.jsp
+  rule:
+    - regexps:
+        body:
+          - 北京国信冠群技术有限公司,国信冠群,邮件
+- name: 朗阁-MailData
+  link: https://spam2.thtf.com.cn:8090/
+  rule:
+    - regexps:
+        body:
+          - MailData电子邮件安全网关系统
+      favicon:
+        mmh3:
+          - '-1869497338'
+- name: U-MAIL邮件营销平台
+  link: https://www.bestedm.net/login?next=/
+  rule:
+    - regexps:
+        body:
+          - u-mail
+- name: Nsmail
+  link: https://mail.gov.cn/nsmail/index.php
+  rule:
+    - regexps:
+        body:
+          - Nsmail
+- name: EQmail
+  link: http://124.204.60.248/
+  rule:
+    - regexps:
+        body:
+          - eqmail.ico
+          - powered by eqmail!
+- name: ExtMail
+  link: http://diancai.uhuocn.com:943/extmail/cgi/index.cgi
+  rule:
+    - regexps:
+        body:
+          - setcookie('extmail_username
+          - 欢迎使用extmail
+- name: SPAM-SQR-电子邮件安全网关
+  link: http://222.92.58.234/snspam/homepage.asp
+  rule:
+    - regexps:
+        body:
+          - spam sqr
+- name: IBM-iNotes
+  link: https://pop.pyhospital.com.cn:9445/
+  rule:
+    - regexps:
+        body:
+          - IBM iNotes
+      favicon:
+        mmh3:
+          - '728788645'
+- name: Eastnet Mail
+  link: https://ms.east.net.ua/roundcube/
+  rule:
+    - regexps:
+        body:
+          - East.Net Webmail
+- name: Winmail
+  link: http://caibian.cmed.org.cn:6080/
+  rule:
+    - regexps:
+        body:
+          - winmail mail server
+- name: Huawei-AnyOffice
+  link: https://124.133.23.188:8443/MDMServer/loginPage.action
+  rule:
+    - regexps:
+        body:
+          - cancelchangepwbtn
+- name: 中创应用服务器
+  link: https://103.3.152.222:8060/
+  rule:
+    - regexps:
+        body:
+          - InforSuite AS
+- name: 然之OA
+  link: https://cpcalendars.z1n.wiki/sys/index.php?m=user&f=login&referer=L3N5cy9pbmRleC5waHA=
+  rule:
+    - favicon:
+        mmh3:
+          - '-2120337510'
+- name: 金蝶云星瀚
+  link: https://eworld.test.kdcloud.com/login.html?redirect=https%3A%2F%2Feworld.test.kdcloud.com%2F
+  rule:
+    - regexps:
+        body:
+          - 金蝶云星瀚
+- name: FE企业运营管理平台
+  link: http://oa.szlightlink.com:9090/login/index.jsp?code=null
+  rule:
+    - favicon:
+        mmh3:
+          - '-391577146'
+- name: 蓝凌KK
+  link: http://220.163.27.125:8090/login.jsp;jsessionid=D7D8359E4D01089E270776B5071AEBB1
+  rule:
+    - regexps:
+        body:
+          - 蓝凌KK
+- name: 火星舱
+  link: http://61.188.178.220/template/login.xhtml
+  rule:
+    - regexps:
+        body:
+          - 火星舱系统管理
+- name: 海康威视智慧城管平台
+  link: https://hk.fxcdn.cn/portal/cas/loginPage?service=https://hk.fxcdn.cn/portal/cas/loginPage
+  rule:
+    - favicon:
+        mmh3:
+          - '118923032'
+- name: 海康威视安全生产管理平台
+  link: https://appt.jc-nm.net/portal/ui/login?service=https%3A%2F%2Fappt.jc-nm.net%3A443%2Fportal%2F
+  rule:
+    - regexps:
+        body:
+          - Infovision iWork-Safety
+- name: Xpaper
+  link: http://njcjdxb.nufe.edu.cn/
+  rule:
+    - regexps:
+        body:
+          - src="template/paper/
+- name: Yearning
+  link: http://jxs.junxing2020.com:8888/#/login
+  rule:
+    - regexps:
+        body:
+          - Yearning
+- name: Huawei-华为-AR-Web-管理平台
+  rule:
+    - regexps:
+        body:
+          - ar web登录
+- name: e看牙文件上传
+  link: https://xyyhyy.linkedcare.cn:9201/
+  rule:
+    - regexps:
+        body:
+          - e看牙
+- name: datart
+  link: http://feixunoa.xicp.net:9997/login
+  rule:
+    - regexps:
+        body:
+          - datart
+- name: 蜂网 Router
+  link: http://183.95.104.136:9997/
+  rule:
+    - regexps:
+        body:
+          - 企业级流控云路由器
+- name: 仁和汇智
+  rule:
+    - regexps:
+        body:
+          - 仁和汇智
+- name: Mattermost
+  link: http://115.43.169.14:8401/landing#/
+  rule:
+    - regexps:
+        body:
+          - To use Mattermost
+- name: FLUX-富勒-WMS
+  link: http://183.67.39.26/
+  rule:
+    - regexps:
+        body:
+          - FLUX WMS
+- name: 小鱼易连云视讯
+  link: https://219.138.214.7:9443/console/management#/login
+  rule:
+    - regexps:
+        body:
+          - font_1957344_lqkodjqdbl.css
+- name: OneinStack
+  link: http://1.15.55.135/
+  rule:
+    - regexps:
+        body:
+          - OneinStack
+- name: ArangoDB Web Interface
+  link:
+  rule:
+    - regexps:
+        body:
+          - ArangoDB Web Interface
+- name: AWS-WAF
+  rule:
+    - regexps:
+        header:
+          - awselb
+- name: Tilgin router
+  link: http://110.235.96.87/
+  rule:
+    - regexps:
+        body:
+          - Welcome to the Tilgin router
+- name: 孚盟云 CRM
+  link:
+  rule:
+    - favicon:
+        mmh3:
+          - '1533124028'
+- name: Serv-U
+  link: http://180.138.16.146:9003/
+  rule:
+    - favicon:
+        mmh3:
+          - '812385209'
+- name: 深澜认证计费系统
+  link: http://60.11.191.203/
+  rule:
+    - favicon:
+        mmh3:
+          - '-1546320596'
+- name: AdGuard
+  link: http://47.108.131.255:3000/login.html
+  rule:
+    - regexps:
+        body:
+          - AdGuardTeam
+- name: Gocloud-高恪
+  link: http://111.254.70.176:8088/cgi-bin/webui/admin
+  rule:
+    - regexps:
+        body:
+          - GOCLOUD
+- name: Next Terminal
+  link: http://171.88.53.22:8088/#/login
+  rule:
+    - regexps:
+        body:
+          - Next Terminal
+- name: FunAdmin
+  link: http://106.12.170.192/
+  rule:
+    - regexps:
+        body:
+          - FunAdmin
+- name: LibreSpeed
+  link: http://sel-speedtest.aoyoyun.com/
+  rule:
+    - regexps:
+        body:
+          - LibreSpeed
+- name: kamailio
+  rule:
+    - regexps:
+        header:
+          - kamailio
+- name: Emby
+  link: http://58.253.98.133:8886/web/index.html
+  rule:
+    - regexps:
+        body:
+          - content="Emby Server"
+- name: 来访通
+  link: https://39.100.94.57/signin.html
+  rule:
+    - regexps:
+        body:
+          - 来访通
+- name: 满客宝智慧食堂管理系统
+  link: http://223.82.0.164:8000/manage/#/login
+  rule:
+    - regexps:
+        body:
+          - 满客宝
+- name: 脸爱云一脸通智慧管理平台
+  link: http://47.112.193.65:5800/Login.aspx
+  rule:
+    - regexps:
+        body:
+          - 脸爱云
+- name: DataGear
+  link: http://mpapi.jh.zjeja.com:6021/
+  rule:
+    - regexps:
+        body:
+          - DataGear
+- name: Cloudreve
+  link: http://139.9.179.80:9001/login
+  rule:
+    - regexps:
+        body:
+          - Cloudreve
+- name: Archery
+  link: http://120.40.102.244:5601/login/
+  rule:
+    - regexps:
+        body:
+          - Archery</strong>
+- name: SaltStack Config
+  link: https://54.246.46.149/login
+  rule:
+    - regexps:
+        body:
+          - SaltStack config
+- name: 北京东华原煎药管理系统
+  link: http://221.182.149.162:8088/login.aspx
+  rule:
+    - regexps:
+        body:
+          - 北京东华原煎药管理系统
+- name: 百傲瑞达安防管理系统平台
+  link: http://116.230.52.131:8088/
+  rule:
+    - regexps:
+        body:
+          - 百傲瑞达
+- name: 润申信息企业标准化管理系统
+  link: http://106.39.117.91:2052/login.html
+  rule:
+    - regexps:
+        body:
+          - 润申信息
+- name: EMQX
+  link:
+  rule:
+    - regexps:
+        body:
+          - EMQX
+- name: 税控服务器管理系统
+  link: http://47.94.248.116/
+  rule:
+    - regexps:
+        body:
+          - resources/css/login_yzm.css
+- name: PCI-openEAP
+  link: http://113.246.57.56:9090/security/login/login.jsp
+  rule:
+    - regexps:
+        body:
+          - openEAP
+- name: 天联高级版
+  link: http://27.223.156.28:8088/Web_sc/login.gn
+  rule:
+    - regexps:
+        body:
+          - 天联高级版
+- name: 大华智慧园区综合管理平台
+  link: https://36.34.85.190:444/#/login
+  rule:
+    - favicon:
+        mmh3:
+          - '-1935899595'
+- name: rustDesk
+  link: http://pop.jianhaitech.com:9000/#/
+  rule:
+    - regexps:
+        body:
+          - rs-cn.rustDesk.com
+- name: ZFile
+  link: http://42.193.12.250:8092/
+  rule:
+    - regexps:
+        body:
+          - ZFile
+- name: H5S视频平台
+  link: http://139.198.166.115:9002/
+  rule:
+    - regexps:
+        body:
+          - h5s视频平台|web
+- name: ZKTime
+  link: http://xqy.huidechina.com:9090/accounts/login/?next=/data/index/
+  rule:
+    - regexps:
+        body:
+          - ZKTime
+- name: VoIPmonitor
+  link: http://206.126.143.156/
+  rule:
+    - regexps:
+        body:
+          - VoIPmonitor
+- name: rConfig
+  link: https://203.188.236.6/login.php
+  rule:
+    - regexps:
+        body:
+          - rConfigLogo
+- name: PySpider
+  link: http://18.190.59.149/
+  rule:
+    - regexps:
+        body:
+          - pyspider dashboard
+- name: Cisco HyperFlex Connect
+  link: https://64.100.12.67/#/clusters/1
+  rule:
+    - regexps:
+        body:
+          - Cisco HyperFlex Connect
+- name: MeterSphere
+  link: http://124.78.193.84:8081/login
+  rule:
+    - favicon:
+        mmh3:
+          - '1023469568'
+- name: Apache-SkyWalking
+  link: http://113.56.40.243:8088/general
+  rule:
+    - favicon:
+        mmh3:
+          - '1929532064'
+- name: Palo Alto Login Portal
+  link: https://217.115.55.245:5577/global-protect/login.esp
+  rule:
+    - favicon:
+        mmh3:
+          - '602431586'
+- name: Palo Alto Networks
+  link: https://13.113.155.157/
+  rule:
+    - favicon:
+        mmh3:
+          - '-318947884'
+- name: 思迪数据池管理平台
+  link: http://47.93.193.197:9090/
+  rule:
+    - regexps:
+        body:
+          - 思迪
+- name: 图创图书馆集群管理系统
+  link: http://www.alstsg.com:8889/interlib/common/
+  rule:
+    - regexps:
+        body:
+          - interlib/common/
+- name: V2 Conference 视频会议系统
+  link: http://video.bubang.com:18080/Conf/jsp/main/mainAction.do
+  rule:
+    - regexps:
+        body:
+          - window.location.href=\"/Conf/index.jsp\"
+- name: TamronOS IPTV系统
+  link: http://111.225.11.68:8811/login?redirect=%2Fmanage
+  rule:
+    - regexps:
+        body:
+          - TamronOS
+- name: TVT 公司产品
+  link: http://172.88.61.155/#login
+  rule:
+    - favicon:
+        mmh3:
+          - '492290497'
+- name: SpiderFlow
+  link: http://171.221.57.238:8088/
+  rule:
+    - regexps:
+        body:
+          - SpiderFlow
+- name: SolarWinds orion
+  link: https://supervision.icosnet.net/Orion/Login.aspx?ReturnUrl=%2f
+  rule:
+    - regexps:
+        body:
+          - SolarWinds orion
+- name: Pega infinity
+  link: http://3.238.104.22:8080/prweb/app/default/VfK3mSyqWy8Z5n4h7B20aMZG7dMzFtYp*/!STANDARD
+  rule:
+    - regexps:
+        body:
+          - Pega infinity
+- name: Etherpad
+  link: https://3.235.196.44:9000/
+  rule:
+    - regexps:
+        header:
+          - Etherpad
+- name: Apache-Unomi
+  link: http://52.11.238.83:8181/
+  rule:
+    - regexps:
+        body:
+          - logo apache unomi
+- name: Apache-Nifi
+  link: http://135.125.93.51:8083/
+  rule:
+    - regexps:
+        body:
+          - <a href="/nifi/">/nifi</a>
+- name: Apache-Dolphinscheduler
+  link: http://www.hbase-01.dev.scbdlbs.com:18026/view/login/index.html
+  rule:
+    - regexps:
+        body:
+          - <title>dolphinscheduler
+- name: Apache-Airflow
+  link: https://44.242.39.146/aws_mwaa/aws-console-sso?next=https%3A%2F%2F44.242.39.146%2Fhome
+  rule:
+    - regexps:
+        body:
+          - <span>airflow
+- name: alibaba AnyProxy
+  link: http://42.159.95.115:8002/
+  rule:
+    - regexps:
+        body:
+          - AnyProxy
+- name: ACTI 视频监控
+  link: http://94.64.136.252:8888/
+  rule:
+    - regexps:
+        body:
+          - /cgi-bin/system?SYSTEM_INFO
+- name: OpenTSDB
+  link: http://wulian.hnbrdq.com:9009/
+  rule:
+    - favicon:
+        mmh3:
+          - '407286339'
+- name: 问卷星
+  link: https://survey.emoney.cn/corplogin.aspx
+  rule:
+    - favicon:
+        mmh3:
+          - '-1177293769'
+- name: 新为SmartLearning
+  link: http://123.135.130.43:8089/customize/nwc_user_enterprise/login/login.html
+  rule:
+    - regexps:
+        body:
+          - 新为
+          - SmartLearning
+          - SmartMOOC
+          - SmartExam
+- name: Heimdall
+  link: https://27.221.139.84:8088/login
+  rule:
+    - regexps:
+        body:
+          - Heimdall
+- name: CWP-Web-Panel
+  link: https://cpanel.creatoweb.com/
+  rule:
+    - regexps:
+        body:
+          - /login/cwp_theme/original/img/ico/favicon.ico
+- name: Cockpit
+  link: https://185.216.144.27:2053/
+  rule:
+    - regexps:
+        body:
+          - cockpit/static/login.js
+- name: Phpstudy
+  link: http://47.120.5.239/
+  rule:
+    - regexps:
+        body:
+          - Phpstudy for
+- name: 天融信TopAPP负载均衡系统
+  link: https://111.75.210.197:8443/
+  rule:
+    - regexps:
+        body:
+          - TopAPP负载均衡系统
+- name: Spring Eureka
+  link: http://47.96.172.221:8899/
+  rule:
+    - regexps:
+        body:
+          - <title>Eureka</title>
+          - eureka
+- name: HuaweiCloudWAF
+  rule:
+    - regexps:
+        header:
+          - HuaweiCloudWAF
+- name: GitBook
+  link: https://o69iay0p.feifengfa.top/
+  rule:
+    - regexps:
+        body:
+          - gitbook
+- name: 天融信运维安全审计系统
+  link: https://42.63.155.2:8889/
+  rule:
+    - regexps:
+        body:
+          - 天融信运维安全审计系统
+- name: 绿盟运维安全管理系统OSMS
+  link: https://www.sjhlbefgs.com:9443/user/requireLogin
+  rule:
+    - regexps:
+        body:
+          - OSMS
+- name: 火绒终端安全管理系统
+  link: http://119.145.96.242:8090/
+  rule:
+    - regexps:
+        body:
+          - login:title.user_login
+- name: TWebAP
+  rule:
+    - regexps:
+        header:
+          - TWebAP
+- name: Guns
+  link: https://forum.twiceok.com:8083/
+  rule:
+    - regexps:
+        body:
+          - 登录 - Guns

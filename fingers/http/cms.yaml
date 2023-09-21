@@ -10,7 +10,7 @@
     - regexps:
         body:
           - /index.php?c=user&a=find-password
-          - /index.php?c=account&a=welcome
+          - w7.cc
       favicon:
         md5:
           - fa8833ac684d6949f480ae3bc9a51b4a

@@ -136,6 +136,7 @@ func recuLoadFinger2JsonString(dir string) string {
 		fingers := tmp.([]interface{})
 		for i, finger := range fingers {
 			f := finger.(map[string]interface{})
+			f["link"] = ""
 			f["tag"] = []string{strings.TrimSuffix(filename, ".yaml")}
 			fingers[i] = f
 		}
