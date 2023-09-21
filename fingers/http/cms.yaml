@@ -812,7 +812,10 @@
           - idp/AuthnEngine
 - name: 宏景hr
   rule:
-    - favicon:
+    - regexps:
+        body:
+          - /js/hcmPNG.js
+     favicon:
         mmh3:
           - '947874108'
 - name: 汇思learning
