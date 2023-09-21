@@ -590,3 +590,8 @@
     - regexps:
         body:
           - /onlinePreview?url=
+- name: peoplesoft-hr系统
+  rule:
+    - regexps:
+        body:
+          - /ps/signon.html
