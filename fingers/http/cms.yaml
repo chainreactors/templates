@@ -843,3 +843,20 @@
     - regexps:
         body:
           - /Scripts/JqueryMobile/JSBase/YCT_QRCode.js
+- name: smartbi
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - /smartbi/index.jsp
+          - smartbiXMobile
+          - SmartbiCefActiveX
+- name: uniemm
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - com.leagsoft.emm
+          - emm-api
+        header:
+          - emm-tunnel
