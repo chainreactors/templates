@@ -48,3 +48,44 @@
         body:
           - PageOffice
       send_data: /poserver.zz
+- name: uni-emm
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - com.leagsoft.emm
+          - emm-api
+      send_data: /emm-api
+- name: smartbi
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - smartbi-version
+          - smartbi.gcf.gcfutil
+          - writeCustomBgImg.jsp?theType=LoginLogo
+          - smartbiVersion
+          - Smartbi Server Administration Console
+      send_data: /vision/index.jsp
+    - regexps:
+        body:
+          - smartbi-version
+          - smartbi.gcf.gcfutil
+          - writeCustomBgImg.jsp?theType=LoginLogo
+          - smartbiVersion
+          - Smartbi Server Administration Console
+      send_data: /smartbi/index.jsp
+    - regexps:
+        body:
+          - vision/index.jsp
+        header:
+          - Path=/smartbi
+      send_data: /smartbi/
+- name: 玛格泰克网刊系统
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - <a href="/ht-password.jsp
+          - 北京玛格泰克科技发展有限公司
+      send_data: /ht-login.jsp
