@@ -54,7 +54,6 @@
     - regexps:
         body:
           - com.leagsoft.emm
-          - emm-api
       send_data: /emm-api
 - name: smartbi
   level: 2
