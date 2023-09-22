@@ -193,6 +193,8 @@ func main() {
 		needs = []string{"http", "rule", "mask", "extract"}
 	} else if *need == "zombie" {
 		needs = []string{"zombie_default", "zombie_common", "zombie_rule"}
+	} else if *need == "ghttp" {
+		needs = []string{"http"}
 	} else {
 		needs = strings.Split(*need, ",")
 	}
