@@ -38,6 +38,7 @@ ftp_user:
 mysql_user:
   - root
   - mysql
+  - admin
 mssql_user:
   - sa
 smb_user:
