@@ -344,7 +344,7 @@
   rule:
     - regexps:
         body:
-          - console-ui/public/img/favicon.ico
+          - <title>Nacos</title>
       send_data: /nacos/
 - name: flink
   focus: true
