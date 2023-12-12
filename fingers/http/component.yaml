@@ -51,6 +51,7 @@
 #      info: README leak
 - name: swagger
   focus: true
+  opsec: true
   rule:
     - regexps:
         vuln:
