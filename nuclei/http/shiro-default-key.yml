@@ -1,5 +1,5 @@
 id: shiro-default-key
-
+opsec: true
 info:
   name: brute Shiro key
   severity: critical
