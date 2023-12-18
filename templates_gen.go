@@ -5,7 +5,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/chainreactors/files"
-	"github.com/chainreactors/parsers"
+	en "github.com/chainreactors/utils/encode"
 	"io"
 	"os"
 	"path"
@@ -21,7 +21,7 @@ var (
 
 func encode(input []byte) string {
 	s := files.Flate(input)
-	return parsers.Base64Encode(s)
+	return en.Base64Encode(s)
 }
 
 func loadYamlFile2JsonString(filename string) string {
@@ -203,17 +203,17 @@ func main() {
 	var first bool
 	for _, n := range needs {
 		if !first {
-			s.WriteString(fmt.Sprintf("if typ == \"%s\" {\n\t\treturn files.UnFlate(parsers.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
+			s.WriteString(fmt.Sprintf("if typ == \"%s\" {\n\t\treturn files.UnFlate(encode.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
 			first = true
 		} else {
-			s.WriteString(fmt.Sprintf("else if typ==\"%s\"{\n\t\treturn files.UnFlate(parsers.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
+			s.WriteString(fmt.Sprintf("else if typ==\"%s\"{\n\t\treturn files.UnFlate(encode.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
 		}
 	}
 	template := `package pkg
 
 import (
 	"github.com/chainreactors/files"
-	"github.com/chainreactors/parsers"
+	"github.com/chainreactors/utils/encode"
 )
 
 
