@@ -1,60 +1,73 @@
-ftp_pwd:
-  - ftp
-  - www
-  - '{{blank}}'
-  - '{{common_pwd}}'
-mongo_pwd:
-  - mongo
-  - '{{common_pwd}}'
-mysql_pwd:
-  - mysql
-  - root
-  - '{{blank}}'
-  - '{{common_pwd}}'
-mssql_pwd:
-  - sa
-  - '{{common_pwd}}'
-postgresql_pwd:
-  - '{{blank}}'
-  - postgre
-  - postgresql
-  - '{{common_pwd}}'
-rdp_pwd:
-  - '{{common_pwd}}'
-redis_pwd:
-  - '{{blank}}'
-  - redis
-  - '{{common_pwd}}'
-smb_pwd:
-  - '{{common_pwd}}'
-ssh_pwd:
-  - admin@huawei.com
-  - '{{common_pwd}}'
 ftp_user:
   - ftp
   - admin
   - www
   - anonymous
+ftp_pwd:
+  - ftp
+  - www
+  - '{{blank}}'
+  - '{{common_pwd}}'
 mysql_user:
   - root
   - mysql
   - admin
+mysql_pwd:
+  - mysql
+  - root
+  - '{{blank}}'
+  - '{{common_pwd}}'
 mssql_user:
   - sa
+mssql_pwd:
+  - sa
+  - '{{common_pwd}}'
 smb_user:
   - administrator
   - admin
+  - guest
+smb_pwd:
+  - '{{common_pwd}}'
 rdp_user:
   - administrator
   - admin
+rdp_pwd:
+  - '{{common_pwd}}'
 postgresql_user:
   - postgres
   - admin
+postgresql_pwd:
+  - '{{blank}}'
+  - postgre
+  - postgresql
+  - '{{common_pwd}}'
 ssh_user:
   - root
   - admin
+ssh_pwd:
+  - admin@huawei.com
+  - '{{common_pwd}}'
 mongo_user:
   - root
   - admin
 redis_user:
-  - root
+  - '{{blank}}'
+redis_pwd:
+  - '{{blank}}'
+  - redis
+  - '{{common_pwd}}'
+mongo_pwd:
+  - mongo
+  - '{{common_pwd}}'
+tomcat_user:
+  - tomcat
+  - admin
+tomcat_pwd:
+  - tomcat
+  - '{{common_pwd}}'
+elastic_user:
+  - elastic
+  - admin
+elastic_pwd:
+  - elastic
+  - '{{common_pwd}}'
