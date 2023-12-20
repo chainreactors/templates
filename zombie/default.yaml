@@ -65,9 +65,11 @@ tomcat_user:
 tomcat_pwd:
   - tomcat
   - '{{common_pwd}}'
-elastic_user:
+kibana_user:
   - elastic
+  - kibana
   - admin
-elastic_pwd:
+kibana_pwd:
   - elastic
+  - kibana
   - '{{common_pwd}}'
