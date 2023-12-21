@@ -50,14 +50,14 @@ ssh_pwd:
 mongo_user:
   - root
   - admin
+mongo_pwd:
+  - mongo
+  - '{{common_pwd}}'
 redis_user:
   - '{{blank}}'
 redis_pwd:
   - '{{blank}}'
   - redis
-  - '{{common_pwd}}'
-mongo_pwd:
-  - mongo
   - '{{common_pwd}}'
 tomcat_user:
   - tomcat
@@ -73,3 +73,24 @@ kibana_pwd:
   - elastic
   - kibana
   - '{{common_pwd}}'
+rsync_user:
+  - root
+  - rsync
+rsync_pwd:
+  - rsync
+  - '{{common_pwd}}'
+vnc_user:
+  - vnc
+  - admin
+vnc_pwd:
+  - '{{common_pwd}}'
+socks_user:
+  - admin
+socks_pwd:
+  - '{{common_pwd}}'
+telnet_user:
+  - admin
+  - root
+telnet_pwd:
+  - '{{common_pwd}}'
+
