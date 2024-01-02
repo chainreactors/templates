@@ -93,4 +93,17 @@ telnet_user:
   - root
 telnet_pwd:
   - '{{common_pwd}}'
+oracle_user:
+  - internal
+  - sys
+  - system
+oracle_pwd:
+  - oracle
+  - manager
+  - change_on_install
+  - '{{common_pwd}}'
+http_user:
+  - admin
+http_pwd:
+  - '{{common_pwd}}'
 
