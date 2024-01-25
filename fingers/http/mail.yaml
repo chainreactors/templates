@@ -1,4 +1,3 @@
-
 - name: 30盛安邮件系统
   rule:
     - regexps:

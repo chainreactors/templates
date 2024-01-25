@@ -4511,20 +4511,12 @@
         body:
           - /image/serchnotice.jpg
           - hac 运维审计系统登录
-- name: H3C SecPath Operation and maintenance audit system
+- name: H3C SecPath
   rule:
     - regexps:
         body:
           - h3c secpath 运维审计
           - <span>h3c secpath 运维审计系统</span></div>
-- name: SAFETY-LOGBASE
-  rule:
-    - regexps:
-        body:
-          - logbase
-          - onclick="location.href='trustcert.cgi'
-        header:
-          - dummy
 - name: Accellion-Secure-File-Transfer
   rule:
     - regexps:

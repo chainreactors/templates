@@ -302,7 +302,6 @@
         mmh3:
           - '516963061'
           - '1278323681'
-
 - name: atlassian
   focus: true
   rule:
