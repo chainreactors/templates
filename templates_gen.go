@@ -74,6 +74,14 @@ func loadRawFiles(dir string) string {
 	return encode(jsonstr)
 }
 
+func loadRawFile(dir string) string {
+	content, err := os.ReadFile(path.Join(templatePath, dir))
+	if err != nil {
+		panic(err)
+	}
+	return encode(content)
+}
+
 func recuLoadPoc2JsonString(dir string) string {
 	var files []string
 	err := filepath.Walk(path.Join(templatePath, dir), visit(&files))
@@ -168,7 +176,7 @@ func parser(key string) string {
 	case "spray_common":
 		return loadYamlFile2JsonString("spray/common.yaml")
 	case "spray_default":
-		return loadRawFiles("spray/dicc.txt")
+		return loadRawFile("spray/dicc.txt")
 	case "extract":
 		return loadYamlFile2JsonString("extract.yaml")
 	case "zombie_common":
