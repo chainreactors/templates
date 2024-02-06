@@ -163,12 +163,12 @@ func parser(key string) string {
 		return loadYamlFile2JsonString("workflows.yaml")
 	case "nuclei":
 		return recuLoadPoc2JsonString("nuclei")
-	case "rule":
+	case "spray_rule":
 		return loadRawFiles("spray/rule")
 	case "zombie_rule":
 		return loadRawFiles("zombie/rule")
-	case "mask":
-		return loadYamlFile2JsonString("keywords.yaml")
+	case "spray_common":
+		return loadYamlFile2JsonString("spray/common.yaml")
 	case "extract":
 		return loadYamlFile2JsonString("extract.yaml")
 	case "zombie_common":
@@ -190,7 +190,7 @@ func main() {
 	if *need == "gogo" {
 		needs = []string{"tcp", "http", "port", "workflow", "nuclei", "extract"}
 	} else if *need == "spray" {
-		needs = []string{"http", "rule", "mask", "extract"}
+		needs = []string{"http", "spray_rule", "spray_common", "extract"}
 	} else if *need == "zombie" {
 		needs = []string{"zombie_default", "zombie_common", "zombie_rule"}
 	} else {
