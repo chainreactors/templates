@@ -165,16 +165,18 @@ func parser(key string) string {
 		return recuLoadPoc2JsonString("nuclei")
 	case "spray_rule":
 		return loadRawFiles("spray/rule")
-	case "zombie_rule":
-		return loadRawFiles("zombie/rule")
 	case "spray_common":
 		return loadYamlFile2JsonString("spray/common.yaml")
+	case "spray_default":
+		return loadRawFiles("spray/dicc.txt")
 	case "extract":
 		return loadYamlFile2JsonString("extract.yaml")
 	case "zombie_common":
 		return loadYamlFile2JsonString("zombie/keywords.yaml")
 	case "zombie_default":
 		return loadYamlFile2JsonString("zombie/default.yaml")
+	case "zombie_rule":
+		return loadRawFiles("zombie/rule")
 	default:
 		panic("illegal key")
 	}
@@ -190,7 +192,7 @@ func main() {
 	if *need == "gogo" {
 		needs = []string{"tcp", "http", "port", "workflow", "nuclei", "extract"}
 	} else if *need == "spray" {
-		needs = []string{"http", "spray_rule", "spray_common", "extract"}
+		needs = []string{"http", "spray_rule", "spray_common", "spray_default", "extract"}
 	} else if *need == "zombie" {
 		needs = []string{"zombie_default", "zombie_common", "zombie_rule"}
 	} else {

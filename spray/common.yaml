@@ -102,7 +102,6 @@ bak_ext:
   - sql
   - bak
   - war
-  - log
 common_file:
   - README.md
   - readme.md
