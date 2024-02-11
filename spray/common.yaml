@@ -129,7 +129,6 @@ common_file:
   - DOCKERFILE
   - .Dockerfile
   - .lock
-  - web.config
   - config.json
   - 1.txt
   - robots.txt
