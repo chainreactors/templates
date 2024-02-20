@@ -6,7 +6,7 @@ info:
   severity: high
   tags: nacos
 
-requests:
+http:
   - raw:
       - |
         POST /nacos/v1/auth/users/login HTTP/1.1

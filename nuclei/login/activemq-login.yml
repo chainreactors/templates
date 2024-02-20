@@ -4,7 +4,7 @@ info:
   name: activemq-default-password
   severity: high
   tags: activemq-manager
-requests:
+http:
   - raw:
       - |
         GET /admin/ HTTP/1.1

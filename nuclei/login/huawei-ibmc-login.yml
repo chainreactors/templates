@@ -6,7 +6,7 @@ info:
   name: huawei-ibmc-default-password
   severity: high
   tags: huawei
-requests:
+http:
   - raw:
       - |
         POST /bmc/php/processparameter.php HTTP/1.1

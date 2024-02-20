@@ -7,7 +7,7 @@ info:
   description: Unauthorized access to the Harbor public image. You can pull the image to find some sensitive information
   tags: harbor
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/api/search?q="

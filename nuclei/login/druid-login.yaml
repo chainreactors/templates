@@ -6,7 +6,7 @@ info:
   severity: high
   tags: druid
 
-requests:
+http:
   - raw:
       - |
         POST /druid/submitLogin HTTP/1.1

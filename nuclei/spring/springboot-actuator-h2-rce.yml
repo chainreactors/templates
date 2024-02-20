@@ -6,7 +6,7 @@ info:
   severity: critical
   tags: springboot,jolokia
 
-requests:
+http:
   - raw:
       - |
         POST /actuator/env HTTP/1.1

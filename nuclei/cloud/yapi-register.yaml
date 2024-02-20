@@ -7,7 +7,7 @@ info:
   tags: yapi
   description: A vulnerability in Yapi allows remote unauthenticated attackers to cause the product to execute arbitrary code.
 
-requests:
+http:
   - raw:
       - | # REQUEST 1
         POST /api/user/reg HTTP/1.1

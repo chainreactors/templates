@@ -7,7 +7,7 @@ info:
   description: grafana default admin credentials were discovered.
   tags: grafana
 
-requests:
+http:
   - raw:
       - |
         POST /login HTTP/1.1

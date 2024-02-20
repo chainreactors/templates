@@ -4,7 +4,7 @@ info:
   name: bdcom-sw-default-password
   severity: high
   tags: 博达交换机
-requests:
+http:
   - raw:
       - |
         GET / HTTP/1.1

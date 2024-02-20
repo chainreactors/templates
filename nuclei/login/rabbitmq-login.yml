@@ -4,7 +4,7 @@ info:
   name: rabbitmq-default-password
   severity: high
   tags: rabbitmq-manager
-requests:
+http:
   - raw:
       - |
         GET /api/whoami HTTP/1.1

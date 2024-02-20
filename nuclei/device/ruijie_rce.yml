@@ -4,7 +4,7 @@ info:
   severity: critical
   tags: 锐捷ap
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/guest_auth/guestIsUp.php"

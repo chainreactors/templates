@@ -6,7 +6,7 @@ info:
   description: Additional routes may be displayed
   tags: springboot
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/{{path}}"

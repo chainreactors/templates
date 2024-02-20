@@ -6,7 +6,7 @@ info:
   name: tomcat-manager-leak-detect
   severity: info
   tags: tomcat
-requests:
+http:
   - path:
       - "{{BaseURL}}/manager/html"
     matchers:

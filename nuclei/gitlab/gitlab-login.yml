@@ -6,7 +6,7 @@ info:
   severity: high
   tags: gitlab,default-login
 
-requests:
+http:
   - raw:
       - |
         POST /oauth/token HTTP/1.1

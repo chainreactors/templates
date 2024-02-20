@@ -6,7 +6,7 @@ info:
   severity: high
   tags: canal
 
-requests:
+http:
   - raw:
       - |
         POST /api/v1/user/login HTTP/1.1

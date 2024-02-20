@@ -8,7 +8,7 @@ info:
   description: Sends a POST request containing a SOAP payload to a vCenter server to obtain version information
   tags: vcenter,vmware
 
-requests:
+http:
   - raw:
       - |
         POST /sdk/ HTTP/1.1

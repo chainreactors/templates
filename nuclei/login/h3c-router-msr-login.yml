@@ -6,7 +6,7 @@ info:
   name: h3c-router-msr-default-password
   severity: high
   tags: router
-requests:
+http:
   - method: GET
     path:
       - '{{BaseURL}}/wnm/frame/login.php?user_name={{username}}&password={{password}}&ssl=false'

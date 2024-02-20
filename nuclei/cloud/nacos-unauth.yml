@@ -4,7 +4,7 @@ info:
   severity: high
   tags: nacos
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/v1/auth/users?pageNo=1&pageSize=100"

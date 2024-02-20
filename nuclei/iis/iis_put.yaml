@@ -5,7 +5,7 @@ info:
   severity: critical
   tags: iis
 
-requests:
+http:
   - method: PUT
     path:
       - '{{BaseURL}}/29uyYfZ.txt'

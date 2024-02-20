@@ -7,7 +7,7 @@ info:
   name: weblogic-console-leak-detect
   severity: info
   tags: weblogic
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/console/login/LoginForm.jsp"

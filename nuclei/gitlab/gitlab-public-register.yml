@@ -6,7 +6,7 @@ info:
   severity: info
   tags: gitlab
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/users/sign_in"

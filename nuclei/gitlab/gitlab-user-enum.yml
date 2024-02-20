@@ -6,7 +6,7 @@ info:
   description: An issue has been discovered in GitLab CE/EE affecting all versions starting from 13.4 before 13.6.2. Information disclosure via GraphQL results in user email being unexpectedly visible.
   tags: gitlab
 
-requests:
+http:
   - raw:
       - |
         POST /api/graphql HTTP/1.1
