@@ -185,6 +185,8 @@ func parser(key string) string {
 		return loadYamlFile2JsonString("zombie/default.yaml")
 	case "zombie_rule":
 		return loadRawFiles("zombie/rule")
+	case "fingerprinthub":
+		return loadRawFile("spray/web_fingerprinthub_v3.json")
 	default:
 		panic("illegal key")
 	}
@@ -200,7 +202,7 @@ func main() {
 	if *need == "gogo" {
 		needs = []string{"tcp", "http", "port", "workflow", "nuclei", "extract"}
 	} else if *need == "spray" {
-		needs = []string{"http", "spray_rule", "spray_common", "spray_default", "extract"}
+		needs = []string{"http", "spray_rule", "spray_common", "spray_default", "extract", "fingerprinthub"}
 	} else if *need == "zombie" {
 		needs = []string{"zombie_default", "zombie_common", "zombie_rule"}
 	} else {
