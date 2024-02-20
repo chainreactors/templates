@@ -186,7 +186,7 @@ func parser(key string) string {
 	case "zombie_rule":
 		return loadRawFiles("zombie/rule")
 	case "fingerprinthub":
-		return loadRawFile("spray/web_fingerprinthub_v3.json")
+		return loadRawFile("spray/web_fingerprint_v3.json")
 	default:
 		panic("illegal key")
 	}
