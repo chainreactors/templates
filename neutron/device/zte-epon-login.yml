@@ -1,0 +1,24 @@
+id: ZTE-EPON-login
+info:
+  author: sakurashiro
+  name: ZTE-EPON-default-password
+  severity: high
+  tags: 中兴EPON 
+http:
+  - raw:
+      - |
+        GET / HTTP/1.1
+        Host: {{Host}}
+        Authorization: Basic {{auth}}
+    attack: sniper
+    matchers:
+      - status:
+          - 200
+        type: status
+      - type: word
+        words:
+          - EPON
+    matchers-condition: and
+    payloads:
+      auth:
+        - YWRtaW46YWRtaW4=

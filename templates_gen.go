@@ -169,8 +169,8 @@ func parser(key string) string {
 		return loadYamlFile2JsonString("port.yaml")
 	case "workflow":
 		return loadYamlFile2JsonString("workflows.yaml")
-	case "nuclei":
-		return recuLoadPoc2JsonString("nuclei")
+	case "neutron":
+		return recuLoadPoc2JsonString("neutron")
 	case "spray_rule":
 		return loadRawFiles("spray/rule")
 	case "spray_common":
@@ -196,11 +196,11 @@ func main() {
 	var needs []string
 	flag.StringVar(&templatePath, "t", ".", "templates repo path")
 	flag.StringVar(&resultPath, "o", "templates.go", "result filename")
-	need := flag.String("need", "gogo", "tcp|http|port|workflow|nuclei")
+	need := flag.String("need", "gogo", "tcp|http|port|workflow|neutron")
 	flag.Parse()
 
 	if *need == "gogo" {
-		needs = []string{"tcp", "http", "port", "workflow", "nuclei", "extract"}
+		needs = []string{"tcp", "http", "port", "workflow", "neutron", "extract"}
 	} else if *need == "spray" {
 		needs = []string{"http", "spray_rule", "spray_common", "spray_default", "extract", "fingerprinthub"}
 	} else if *need == "zombie" {

@@ -1,0 +1,24 @@
+id: SNMP-Manage-login
+info:
+  author: sakurashiro
+  name: SNMP-Manage-default-password
+  severity: high
+  tags: SNMP Manage 
+http:
+  - raw:
+      - |
+        GET / HTTP/1.1
+        Host: {{Host}}
+        Authorization: Basic {{auth}}
+    attack: sniper
+    matchers:
+      - status:
+          - 200
+        type: status
+      - type: word
+        words:
+          - SNMP
+    matchers-condition: and
+    payloads:
+      auth:
+        - YWRtaW46YWRtaW4=
