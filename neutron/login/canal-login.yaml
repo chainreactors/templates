@@ -13,13 +13,13 @@ http:
         Host: {{Hostname}}
         Content-Type: application/json
 
-        {"username":"{{user}}","password":"{{pass}}"}
+        {"username":"{{username}}","password":"{{password}}"}
 
     attack: pitchfork
     payloads:
-      user:
+      username:
         - admin
-      pass:
+      password:
         - 123456
 
     matchers-condition: and

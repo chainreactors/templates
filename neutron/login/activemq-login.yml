@@ -9,7 +9,7 @@ http:
       - |
         GET /admin/ HTTP/1.1
         Host: {{Host}}
-        Authorization: Basic {{auth}}
+        Authorization: Basic {{base64(username + ':' + password)}}
     attack: sniper
     matchers:
       - status:
@@ -20,5 +20,7 @@ http:
           - ActiveMQ Console
     matchers-condition: and
     payloads:
-      auth:
-        - YWRtaW46YWRtaW4=
+      username:
+        - admin
+      password:
+        - admin

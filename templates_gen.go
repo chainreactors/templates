@@ -185,6 +185,8 @@ func parser(key string) string {
 		return loadYamlFile2JsonString("zombie/default.yaml")
 	case "zombie_rule":
 		return loadRawFiles("zombie/rule")
+	case "zombie_template":
+		return recuLoadPoc2JsonString("neutron/login")
 	case "fingerprinthub":
 		return loadRawFile("spray/web_fingerprint_v3.json")
 	default:
@@ -204,7 +206,7 @@ func main() {
 	} else if *need == "spray" {
 		needs = []string{"http", "spray_rule", "spray_common", "spray_default", "extract", "fingerprinthub"}
 	} else if *need == "zombie" {
-		needs = []string{"zombie_default", "zombie_common", "zombie_rule"}
+		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template"}
 	} else {
 		needs = strings.Split(*need, ",")
 	}

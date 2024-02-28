@@ -8,7 +8,7 @@ http:
       - |
         GET /ISAPI/Security/userCheck HTTP/1.1
         Host: {{HOST}}
-        Authorization: Basic {{auth}}
+        Authorization: Basic {{base64(username + ':' + password)}}
         Accept: */*
     attack: sniper
     matchers:
@@ -20,5 +20,7 @@ http:
           - OK
     matchers-condition: and
     payloads:
-      auth:
-        - YWRtaW46MTIzNDU=
+      username:
+        - admin
+      password:
+        - 12345

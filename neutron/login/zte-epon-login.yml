@@ -1,24 +1,26 @@
-id: bdcom-sw-login
+id: ZTE-EPON-login
 info:
   author: sakurashiro
-  name: bdcom-sw-default-password
+  name: ZTE-EPON-default-password
   severity: high
-  tags: 博达交换机
+  tags: 中兴EPON 
 http:
   - raw:
       - |
         GET / HTTP/1.1
         Host: {{Host}}
-        Authorization: Basic {{auth}}
+        Authorization: Basic {{base64(username + ':' + password)}}
     attack: sniper
     matchers:
       - status:
-          - 302
+          - 200
         type: status
       - type: word
         words:
-          - location
+          - EPON
     matchers-condition: and
     payloads:
-      auth:
-        - YWRtaW46YWRtaW4=
+      username:
+        - admin
+      password:
+        - admin

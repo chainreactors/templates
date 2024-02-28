@@ -15,13 +15,13 @@ http:
         Authorization:
         Content-Type: application/json;charset=UTF-8
 
-        {"username":"{{user}}","password":"{{pass}}"}
+        {"username":"{{username}}","password":"{{password}}"}
 
     attack: pitchfork
     payloads:
-      user:
+      username:
         - admin
-      pass:
+      password:
         - admin
 
     matchers-condition: and

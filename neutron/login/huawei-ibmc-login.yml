@@ -14,7 +14,7 @@ http:
         User-Agent: 11111
         Content-Type: application/x-www-form-urlencoded
 
-        check_pwd={{pass}}&logtype=0&user_name={{user}}&func=AddSession
+        check_pwd={{password}}&logtype=0&user_name={{username}}&func=AddSession
     attack: pitchfork
     matchers:
       - status:
@@ -25,7 +25,7 @@ http:
           - AddSession
     matchers-condition: and
     payloads:
-      pass:
+      password:
         - Huawei12%23%24
-      user:
+      username:
         - root

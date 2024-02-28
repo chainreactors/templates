@@ -9,8 +9,8 @@ http:
   - raw:
       - |
         GET / HTTP/1.1
-        Host: 112.74.40.159:8088
-        Authorization: Basic {{auth}}
+        Host: {{Hostname}}
+        Authorization: Basic {{base64(username + ':' + password)}}
         Content-Length: 2
 
     attack: sniper
@@ -25,6 +25,9 @@ http:
           - Dubbo Admin
     matchers-condition: and
     payloads:
-      auth:
-        - b64en|root:root
-        - b64en|guest:guest
+      username:
+        - root
+        - guest
+      password:
+        - root
+        - guest

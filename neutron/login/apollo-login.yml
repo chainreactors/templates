@@ -14,12 +14,12 @@ http:
         Origin: {{BaseURL}}
         Referer: {{BaseURL}}/signin?
         
-        username={{user}}&password={{pass}}&login-submit=Login
+        username={{username}}&password={{password}}&login-submit=Login
     attack: pitchfork
     payloads:
-      user:
+      username:
         - apollo
-      pass:
+      password:
         - admin
     matchers-condition: and
     matchers:

