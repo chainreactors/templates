@@ -5,6 +5,7 @@ info:
   author: pdteam
   severity: high
   tags: canal
+  zombie: canal
 
 http:
   - raw:

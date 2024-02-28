@@ -3,6 +3,7 @@ info:
   name: hikvision-camera-default-password
   severity: high
   tags: hikvision
+  zombie: hikvision_camera
 http:
   - raw:
       - |

@@ -4,6 +4,7 @@ info:
   name: Minio Default Login
   severity: high
   tags: minio
+  zombie: minio
 
 http:
   - raw:

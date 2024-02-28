@@ -4,6 +4,7 @@ info:
   name: ruijie-ap-default-password
   severity: high
   tags: 锐捷ap
+  zombie: ruijie_ap
 http:
   - raw:
       - |

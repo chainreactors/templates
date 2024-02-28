@@ -4,6 +4,7 @@ info:
   name: Nexus Default Login
   severity: high
   tags: nexus
+  zombie: nexus
 
 http:
   - raw:

@@ -6,6 +6,7 @@ info:
   severity: high
   description: grafana default admin credentials were discovered.
   tags: grafana
+  zombie: grafana
 
 http:
   - raw:

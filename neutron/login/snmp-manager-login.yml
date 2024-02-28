@@ -3,7 +3,8 @@ info:
   author: sakurashiro
   name: SNMP-Manage-default-password
   severity: high
-  tags: SNMP Manage 
+  tags: SNMP Manage
+  zombie: snmp_manage
 http:
   - raw:
       - |

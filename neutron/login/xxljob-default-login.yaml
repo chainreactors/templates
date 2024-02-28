@@ -4,6 +4,7 @@ info:
   name: xxljob
   severity: high
   tags: xxl-job
+  zombie: xxl-job
 
 http:
   - raw:

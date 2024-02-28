@@ -4,6 +4,7 @@ info:
   name: tomcat-manager-default-password
   severity: high
   tags: tomcat-manager
+  zombie: tomcat
 http:
   - raw:
       - |

@@ -5,6 +5,7 @@ info:
   author: pikpikcu
   severity: high
   tags: druid
+  zombie: druid
 
 http:
   - raw:

@@ -4,6 +4,7 @@ info:
   name: rabbitmq-default-password
   severity: high
   tags: rabbitmq-manager
+  zombie: rabbitmq
 http:
   - raw:
       - |

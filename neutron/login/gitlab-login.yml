@@ -5,6 +5,7 @@ info:
   author: Suman_Kar,dwisiswant0
   severity: high
   tags: gitlab,default-login
+  zombie: gitlab
 
 http:
   - raw:

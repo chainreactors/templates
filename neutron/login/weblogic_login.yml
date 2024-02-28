@@ -5,6 +5,7 @@ info:
   author: pdteam
   severity: high
   tags: weblogic-console
+  zombie: weblogic
 
 http:
   - raw:

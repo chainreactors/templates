@@ -6,6 +6,7 @@ info:
   name: huawei-ibmc-default-password
   severity: high
   tags: huawei
+  zombie: huawei_ibmc
 http:
   - raw:
       - |

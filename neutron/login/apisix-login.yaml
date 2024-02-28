@@ -5,6 +5,7 @@ info:
   author: pdteam
   severity: critical
   tags: apisix
+  zombie: apisix
 
 http:
   - raw:

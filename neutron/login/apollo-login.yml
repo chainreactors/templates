@@ -4,6 +4,7 @@ info:
   name: Apollo Default Login
   severity: high
   tags: apollo
+  zombie: apollo
 
 http:
   - raw:

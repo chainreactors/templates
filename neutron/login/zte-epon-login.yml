@@ -3,7 +3,8 @@ info:
   author: sakurashiro
   name: ZTE-EPON-default-password
   severity: high
-  tags: 中兴EPON 
+  tags: 中兴EPON
+  zombie: zte-epon
 http:
   - raw:
       - |

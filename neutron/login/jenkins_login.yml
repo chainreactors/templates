@@ -5,6 +5,7 @@ info:
   author: Zandros0
   severity: high
   tags: jenkins
+  zombie: jenkins
 
 http:
   - raw:

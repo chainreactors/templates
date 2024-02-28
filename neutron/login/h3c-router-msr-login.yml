@@ -6,6 +6,7 @@ info:
   name: h3c-router-msr-default-password
   severity: high
   tags: router
+  zombie: h3c_router
 http:
   - method: GET
     path:

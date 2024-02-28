@@ -4,6 +4,7 @@ info:
   name: dubbo-default-password
   severity: high
   tags: dubbo
+  zombie: dubbo
 
 http:
   - raw:
