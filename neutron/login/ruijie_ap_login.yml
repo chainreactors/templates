@@ -12,7 +12,7 @@ http:
         Host: {{Host}}
 
         auth={{base64(username + ':' + password)}}
-    attack: sniper
+    attack: pitchfork
     matchers:
       - status:
           - 200

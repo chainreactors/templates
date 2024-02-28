@@ -12,7 +12,7 @@ http:
         Host: {{Hostname}}
         authorization: Basic {{auth}}
         content-type: application/json
-    attack: sniper
+    attack: pitchfork
     matchers:
       - status:
           - 200

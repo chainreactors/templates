@@ -11,7 +11,7 @@ http:
         Host: {{HOST}}
         Authorization: Basic {{base64(username + ':' + password)}}
         Accept: */*
-    attack: sniper
+    attack: pitchfork
     matchers:
       - status:
           - 200

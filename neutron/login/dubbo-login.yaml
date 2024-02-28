@@ -14,7 +14,7 @@ http:
         Authorization: Basic {{base64(username + ':' + password)}}
         Content-Length: 2
 
-    attack: sniper
+    attack: pitchfork
     stop-at-first-match: true
     matchers:
       - status:
