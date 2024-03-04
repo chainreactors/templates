@@ -204,7 +204,7 @@ func main() {
 	if *need == "gogo" {
 		needs = []string{"tcp", "http", "port", "workflow", "neutron", "extract"}
 	} else if *need == "spray" {
-		needs = []string{"http", "spray_rule", "spray_common", "spray_default", "extract", "fingerprinthub"}
+		needs = []string{"spray_rule", "spray_common", "spray_default", "extract"}
 	} else if *need == "zombie" {
 		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template"}
 	} else {
