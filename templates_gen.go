@@ -162,7 +162,7 @@ func recuLoadFinger2JsonString(dir string) string {
 func parser(key string) string {
 	switch key {
 	case "tcp":
-		return loadYamlFile2JsonString("fingers/tcpfingers.yaml")
+		return recuLoadFinger2JsonString("fingers/socket")
 	case "http":
 		return recuLoadFinger2JsonString("fingers/http")
 	case "port":
