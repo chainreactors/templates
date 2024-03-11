@@ -107,11 +107,14 @@
 - name: kibana
   focus: true
   default_port:
-    - '9200'
+    - '5601'
   rule:
     - regexps:
         body:
           - Kibana
+          - <title>Elastic
+        header:
+          - kbn-name
       favicon:
         mmh3:
           - '75230260'
@@ -345,6 +348,8 @@
         body:
           - <title>Nacos</title>
       send_data: /nacos/
+      tag: 
+        - nacos
 - name: flink
   focus: true
   rule:
