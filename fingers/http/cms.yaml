@@ -868,3 +868,11 @@
         body:
           - /Telerik.Web.UI.WebResource.axd
           - content="Sitefinity
+- name: matomo
+  focus: true
+  rule:
+    - regexps:
+        body:
+          - Matomo
+        header:
+          - MATOMO_SESSID
