@@ -1,0 +1,60 @@
+id: matomo-login
+
+info:
+  name: matomo default login
+  author: hz
+  severity: high
+  tags: matomo
+  zombie: matomo
+
+http:
+  - raw:
+      - |
+        GET /index.php HTTP/1.1
+        Host: {{Hostname}}
+        User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36
+      - |
+        POST /index.php?module=Login HTTP/1.1
+        Host: {{Hostname}}
+        User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36
+        Cookie: matomo_lang=language=emgtY24=; MATOMO_SESSID={{sessid}}
+        Content-Type: application/x-www-form-urlencoded
+        Connection: close
+        
+        form_login=admin&form_nonce={{form_nonce}}&form_redirect=&form_password=admin123
+
+    extractors:
+      - type: regex
+        part: body
+        internal: true
+        group: 1
+        name: form_nonce
+        regex:
+          - 'id="reset_form_nonce" value="(.*?)"'
+
+      - type: regex
+        part: header
+        internal: true
+        group: 1
+        name: sessid
+        regex:
+          - 'Set-Cookie: MATOMO_SESSID=(.*?);'
+
+    payloads:
+      username:
+        - admin
+      password:
+        - admin123
+    attack: pitchfork
+
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 302
+
+      - type: word
+        words:
+          - 'Set-Cookie: MATOMO_SESSID='
+        part: header
+
