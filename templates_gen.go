@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"github.com/chainreactors/files"
 	en "github.com/chainreactors/utils/encode"
-	"io"
+	"io/ioutil"
 	"os"
 	"path"
 	"path/filepath"
@@ -31,7 +31,7 @@ func loadYamlFile2JsonString(filename string) string {
 		panic(err.Error())
 	}
 
-	bs, _ := io.ReadAll(file)
+	bs, _ := ioutil.ReadAll(file)
 	jsonstr, err := yaml.YAMLToJSON(bs)
 	if err != nil {
 		panic(filename + " " + err.Error())
@@ -161,7 +161,7 @@ func recuLoadFinger2JsonString(dir string) string {
 
 func parser(key string) string {
 	switch key {
-	case "tcp":
+	case "socket":
 		return recuLoadFinger2JsonString("fingers/socket")
 	case "http":
 		return recuLoadFinger2JsonString("fingers/http")
@@ -198,11 +198,11 @@ func main() {
 	var needs []string
 	flag.StringVar(&templatePath, "t", ".", "templates repo path")
 	flag.StringVar(&resultPath, "o", "templates.go", "result filename")
-	need := flag.String("need", "gogo", "tcp|http|port|workflow|neutron")
+	need := flag.String("need", "gogo", "socket|http|port|workflow|neutron")
 	flag.Parse()
 
 	if *need == "gogo" {
-		needs = []string{"tcp", "http", "port", "workflow", "neutron", "extract"}
+		needs = []string{"socket", "http", "port", "workflow", "neutron", "extract"}
 	} else if *need == "spray" {
 		needs = []string{"spray_rule", "spray_common", "spray_default", "extract"}
 	} else if *need == "zombie" {
