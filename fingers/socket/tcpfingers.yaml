@@ -222,3 +222,12 @@
           - JDWP-Handshake
       send_data: JDWP-Handshake\n
       info: jdwp_service
+- name: adb
+  default_port:
+    - '5555'
+  protocol: tcp
+  rule:
+    - regexps:
+        regexp:
+          - '^AUTH\x01\x00\x00'
+      send_data: "CNXN\x01\x00\x00\x01\x00\x00\x10\x00\xda\x00\x00\x00\xd5T\x00\x00\xbc\xb1\xa7\xb1host::\x00"

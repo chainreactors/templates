@@ -138,6 +138,7 @@
 - name: mssql
   ports:
     - '1433-1435'
+    - mssqlntlm
   tags:
     - db
     - common
@@ -482,7 +483,7 @@
     - '137'
     - '445'
     - '3389'
-    - '5985'
+    - winrm
     - oxid
   tags:
     - win
@@ -652,6 +653,12 @@
     - '9990'
     - "4430"
     - "8870"
+  tags:
+    - rce
+    - common
+- name: adb
+  ports:
+    - '5555'
   tags:
     - rce
     - common
