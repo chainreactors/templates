@@ -305,6 +305,17 @@ top100_pwd:
   - qwer1234
   - 123456789a
   - q1w2e3r4
+top10_user:
+  - admin
+  - root
+  - sys
+  - demo
+  - test
+  - administrator
+  - user
+  - adm
+  - guest
+  - manager
 common_pwd:
   - "123456"
   - admin
