@@ -249,6 +249,7 @@
     - regexps:
         body:
           - VMware&nbsp;Horizon
+          - vmware horizon
 - name: vmware identity
   focus: true
   rule:

@@ -11740,14 +11740,6 @@
     - regexps:
         body:
           - MessageSolution
-          - index.jsp
-- name: MessageSolution Enterprise Email Archiving (EEA)
-  link: https://63.128.135.13/index.jsp
-  rule:
-    - regexps:
-        body:
-          - MessageSolution
-          - index.jsp
 - name: 捷普防火墙管理系统
   link: https://222.170.71.150:2000/
   rule:
