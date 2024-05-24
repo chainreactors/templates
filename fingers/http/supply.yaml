@@ -1,0 +1,150 @@
+- name: 东软产品
+  rule:
+    - regexps:
+        body:
+          - neusoft/
+- name: Mizuho 公司产品
+  rule:
+    - regexps:
+        body:
+          - mizuho bank, ltd.
+- name: 奇安信设备
+  rule:
+    - regexps:
+        header:
+          - QiAnXin
+        body:
+          - 网神
+          - 网康
+          - secfox
+      favicon:
+        md5:
+          - e4e25f45b2a8988cb203743bd64204fe
+        mmh3:
+          - '-1260240149'
+- name: LANCOM-设备
+  rule:
+    - regexps:
+        body:
+          - Copyright (c) LANCOM Systems
+        header:
+          - 'Server: LANCOM'
+- name: 联软科技 产品
+  rule:
+    - favicon:
+        mmh3:
+          - '-1166665060'
+- name: 山石网科Hillstone 安全设备
+  rule:
+    - regexps:
+        body:
+          - HILLSTONE
+- name: Paradox-安全产品
+  rule:
+    - regexps:
+        body:
+          - Your Paradox System
+- name: ZENEDGE-公司产品
+  rule:
+    - regexps:
+        header:
+          - ZENEDGE
+- name: solarwinds-device
+  rule:
+    - regexps:
+        body:
+          - SolarWinds
+- name: 深信服设备
+  rule:
+    - regexps:
+        body:
+          - sangfor.com.cn
+        header:
+          - SinforHttpd
+      favicon:
+        md5:
+          - 293a3a7763eee19a068ef3dff98a7b8a
+- name: 海康设备
+  rule:
+    - regexps:
+        body:
+          - 海康威视
+          - hikvision
+- name: 华为设备
+  rule:
+    - regexps:
+        body:
+          - huawei
+- name: 天融信设备
+  rule:
+    - regexps:
+        body:
+          - topsec
+          - 天融信
+- name: 网御星云设备
+  rule:
+    - regexps:
+        body:
+          - leadsec
+          - 网御
+- name: 启明星辰设备
+  rule:
+    - regexps:
+        body:
+          - 北京启明星辰信息安全技术有限公司
+          - venustech
+          - 天玥
+          - Leadersec
+          - 网御
+          - 天清
+- name: 安恒设备
+  rule:
+    - regexps:
+        body:
+          - 明御
+          - 安恒
+          - 明鉴
+- name: 任子行设备
+  rule:
+    - regexps:
+        body:
+          - 任子行
+
+- name: 联软设备
+  rule:
+    - regexps:
+        body:
+          - leagsoft
+      favicon:
+        md5:
+          - da9ce98e9a52ccb605d112c0437bcbc1
+        mmh3:
+          - '-2130980754'
+- name: 网康设备
+  rule:
+    - regexps:
+        body:
+          - netentsec
+          - 网康
+- name: 思科设备
+  rule:
+    - regexps:
+        body:
+          - Cisco
+- name: IBM设备
+  rule:
+    - regexps:
+        body:
+          - www.ibm.com
+          - com.ibm
+- name: schneider设备
+  rule:
+    - regexps:
+        body:
+          - schneider
+- name: h3c网络设备
+  rule:
+    - regexps:
+        body:
+          - libs/MulPlatAPI.js
+

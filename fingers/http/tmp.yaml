@@ -3103,11 +3103,6 @@
         body:
           - class="hidden-xs ewheaderrow"><img src="aspximages/htqy.png"
           - 华天客户关系管理系统
-- name: Mizuho 公司产品
-  rule:
-    - regexps:
-        body:
-          - mizuho bank, ltd.
 - name: SGP managerial system
   rule:
     - regexps:
