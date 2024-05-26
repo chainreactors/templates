@@ -3,6 +3,7 @@ id: zabbix-default-login
 info:
   name: Zabbix Default Login
   author: pdteam
+  zombie: zabbix
   severity: high
   description: Zabbix default admin credentials were discovered.
   tags: zabbix
