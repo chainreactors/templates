@@ -302,11 +302,6 @@
           - Powered by WebBoard
         header:
           - webboard=
-- name: aladdin-hasp-license-manager
-  rule:
-    - regexps:
-        header:
-          - HASP
 - name: alcasar
   rule:
     - regexps:

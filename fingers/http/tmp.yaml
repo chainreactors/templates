@@ -9869,8 +9869,7 @@
   rule:
     - regexps:
         body:
-          - 请求已被 长亭 SafeLine 阻断
-          - EventID
+          - SafeLine
 - name: FortiLogger
   rule:
     - regexps:

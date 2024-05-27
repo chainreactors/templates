@@ -346,6 +346,7 @@
         header:
           - TongWeb Serve
 - name: jeesite
+  focus: true
   rule:
     - regexps:
         body:
