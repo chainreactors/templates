@@ -109,6 +109,22 @@
           - ^N[\s\S]{1,2}\d*\.\d*\.\d*\.\d*
       send_data: "JRMI\0\x02K"
       info: rmi_service
+- name: java-serialization
+  focus: true
+  default_port:
+    - jndi
+  protocol: tcp
+  rule:
+    - regexps:
+        vuln:
+          - "^\xac\xed\x00\x05"
+      info: java-serialization-bytes
+- name: tls
+  protocol: tcp
+  rule:
+    - regexps:
+        regexp:
+         - "^\x15\x03\x01\x00\x02\x02"
 - name: ftp
   default_port:
     - ftp
