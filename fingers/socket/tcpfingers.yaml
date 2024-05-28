@@ -134,7 +134,8 @@
         body:
           - FTPd
           - FTP service
-          - 220-FileZilla
+        regexp:
+          - '^220-'
 - name: rtsp
   default_port:
     - '554'
@@ -247,3 +248,9 @@
         regexp:
           - '^AUTH\x01\x00\x00'
       send_data: "CNXN\x01\x00\x00\x01\x00\x00\x10\x00\xda\x00\x00\x00\xd5T\x00\x00\xbc\xb1\xa7\xb1host::\x00"
+- name: telnet
+  protocol: tcp
+  rule:
+    - regexps:
+        regexp:
+          - '^\xff[\xfa-\xff][\x01-\x03]\xff[\xfa-\xff]'
