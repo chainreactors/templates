@@ -16,5 +16,7 @@ http:
           - 200
       - type: word
         words:
-          - '"username":"nacos"'
+          - '"totalCount":'
+          - '"username":'
+          - '"password":'
         part: body
