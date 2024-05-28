@@ -540,14 +540,26 @@
   tags:
     - info
     - in
-- name: mail
+- name: smtp
   ports:
     - '25'
-    - '110'
-    - '143'
     - '587'
+    - '465'
+    - '2525'
   tags:
-    - info
+    - mail
+- name: pop3
+  ports:
+    - '110'
+    - '995'
+  tags:
+    - mail
+- name: imap
+  ports:
+    - '143'
+    - '993'
+  tags:
+    - mail
 - name: zookeeper
   ports:
     - '2181'
