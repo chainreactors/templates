@@ -1,27 +1,31 @@
-id: SNMP-Manage-login
+id: SVN-login
 info:
-  author: sakurashiro
-  name: SNMP-Manage-default-password
+  name: SVN-default-login
   severity: high
-  tags: snmp
-  zombie: snmp_manage
+  tags: svn
+  zombie: svn
 http:
   - raw:
       - |
-        GET / HTTP/1.1
+        GET /svn/ HTTP/1.1
         Host: {{Host}}
         Authorization: Basic {{base64(username + ':' + password)}}
+
     attack: pitchfork
     matchers:
       - status:
           - 200
+          - 301
         type: status
       - type: word
         words:
-          - SNMP
+          - svn
+          - Subversion
     matchers-condition: and
     payloads:
       username:
         - admin
+        - svn
       password:
         - admin
+        - svn

@@ -1,0 +1,32 @@
+id: portainer-login
+info:
+  name: portainer-default-login
+  severity: high
+  tags: portainer
+  zombie: portainer
+
+http:
+  - raw:
+      - |
+        POST /api/auth HTTP/1.1
+        Host: {{Host}}
+        Content-Type: application/json
+          
+        {"username":"{{username}}","password":"{{password}}"}
+
+    attack: pitchfork
+    matchers:
+      - status:
+          - 200
+        type: status
+      - type: word
+        words:
+          - '"jwt":'
+    matchers-condition: and
+    payloads:
+      username:
+        - admin
+        - admin
+      password:
+        - admin
+        - admin123456
