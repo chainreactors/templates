@@ -1,0 +1,42 @@
+id: wordpress-weak-credentials
+
+info:
+  name: WordPress - Weak Credentials
+  author: evolutionsec
+  severity: critical
+  description: |
+    Weak WordPress Credentials were discovered.
+  zombie: wordpress
+  tags: wordpress
+
+http:
+  - raw:
+      - |
+        POST /wp-login.php HTTP/1.1
+        Host: {{Hostname}}
+        Origin: {{BaseURL}}
+        Content-Type: application/x-www-form-urlencoded
+        Referer: {{BaseURL}}
+
+        log={{username}}&pwd={{password}}
+
+    attack: clusterbomb
+    payloads:
+      username:
+        - admin
+      password:
+        - admin
+    stop-at-first-match: true
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: header
+        words:
+          - '/wp-admin'
+          - 'wordpress_logged_in'
+        condition: and
+
+      - type: status
+        status:
+          - 302

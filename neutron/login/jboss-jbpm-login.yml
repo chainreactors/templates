@@ -1,0 +1,54 @@
+id: jboss-jbpm-default-login
+
+info:
+  name: JBoss jBPM Administration Console Default Login - Detect
+  author: DhiyaneshDk
+  severity: high
+  description: JBoss jBPM Administration Console default login information was detected.
+  zombie: jboss
+  tags: jboss,jbpm
+
+http:
+  - raw:
+      - |
+        GET /jbpm-console/app/tasks.jsf HTTP/1.1
+        Host: {{Hostname}}
+      - |
+        POST /jbpm-console/app/j_security_check HTTP/1.1
+        Host: {{Hostname}}
+        Content-Type: application/x-www-form-urlencoded
+
+        j_username={{username}}&j_password={{password}}
+      - |
+        GET /jbpm-console/app/tasks.jsf HTTP/1.1
+        Host: {{Hostname}}
+
+    attack: pitchfork
+    payloads:
+      username:
+        - manager
+        - user
+        - shipper
+        - admin
+      password:
+        - manager
+        - user
+        - shipper
+        - admin
+    stop-at-first-match: true
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body_1
+        words:
+          - "JBoss jBPM Administration Console"
+
+      - type: word
+        part: body_3
+        words:
+          - "</span>Tasks"
+
+      - type: status
+        status:
+          - 200
