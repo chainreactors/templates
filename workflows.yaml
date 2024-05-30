@@ -1,13 +1,13 @@
 - name: "10"
   ip: 10.0.0.0/8
-  ports: top2,win,db
+  ports: all
   mod: ss
   ping: true
   tags:
     - inter
 - name: "172"
   ip: 172.16.0.0/12
-  ports: top2,win,db
+  ports: all
   mod: ss
   ping: true
   arp: true
@@ -15,12 +15,30 @@
     - inter
 - name: "192"
   ip: 192.168.0.0/16
-  ports: top2,win,db
+  ports: all
   mod: s
   ping: true
   arp: true
   tags:
     - inter
+- name: "100"
+  ip: 100.64.0.0/10
+  ports: all
+  mod: ss
+  ping: true
+  arp: true
+- name: 100noping
+  ip: 100.64.0.0/10
+  ports: all
+  mod: ss
+  port-probe: '80,23'
+- name: 100C
+  ip: 100.64.0.0/10
+  mod: sc
+- name: 100b
+  ip: 100.64.0.0/10
+  mod: ss
+  no-scan: true
 - name: 10C
   ip: 10.0.0.0/8
   mod: sc
@@ -57,21 +75,21 @@
     - interC
 - name: 10noping
   ip: 10.0.0.0/8
-  ports: top2,win,db
+  ports: all
   mod: ss
-  port-probe: '80'
+  port-probe: '80,23'
   tags:
     - interNoPing
 - name: 172noping
   ip: 172.16.0.0/12
-  ports: top2,win,db
+  ports: all
   mod: ss
-  port-probe: '80'
+  port-probe: '80,23'
   tags:
     - interNoPing
 - name: 192noping
   ip: 192.168.0.0/16
-  ports: top2,win,db
+  ports: all
   mod: s
   tags:
     - interNoPing
@@ -103,14 +121,14 @@
   mod: s
   no-scan: true
 - name: smart
-  ports: top2,win,db
+  ports: all
   mod: s
   ping: true
   arp: true
   tags:
     - s
 - name: supersmart
-  ports: top2,win,db
+  ports: all
   mod: ss
   ping: true
   arp: true
@@ -120,9 +138,9 @@
   ports: icmp
   mod: ss
 - name: ssnoping
-  ports: top2,win,db
+  ports: all
   port-probe: '80'
   mod: ss
 - name: snoping
-  ports: top2,win,db
+  ports: all
   mod: s
