@@ -877,3 +877,13 @@
           - Matomo
         header:
           - MATOMO_SESSID
+- name: 信雅达IM
+  rule:
+    - regexps:
+        body:
+          - css/theme.full.css
+- name: 科蓝网上银行
+  rule:
+    - regexps:
+        body:
+          - /prelogin.do

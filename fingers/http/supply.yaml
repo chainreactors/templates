@@ -22,7 +22,7 @@
           - e4e25f45b2a8988cb203743bd64204fe
         mmh3:
           - '-1260240149'
-- name: LANCOM-设备
+- name: LANCOM设备
   rule:
     - regexps:
         body:
@@ -34,17 +34,17 @@
     - favicon:
         mmh3:
           - '-1166665060'
-- name: 山石网科Hillstone 安全设备
+- name: 山石网科Hillstone设备
   rule:
     - regexps:
         body:
           - HILLSTONE
-- name: Paradox-安全产品
+- name: Paradox安全产品
   rule:
     - regexps:
         body:
           - Your Paradox System
-- name: ZENEDGE-公司产品
+- name: ZENEDGE产品
   rule:
     - regexps:
         header:
@@ -147,4 +147,14 @@
     - regexps:
         body:
           - libs/MulPlatAPI.js
+- name: 金蝶产品
+  rule:
+    - regexps:
+        body:
+          - kingdee
+- name: 信雅达产品
+  rule:
+      - regexps:
+          body:
+          - sunyard
 
