@@ -72,5 +72,18 @@
     - regexps:
         header:
           - X-NWS-LOG-UUID
-
-
+        cert:
+          - cdn.myqcloud.com
+- name: 阿里云cdn
+  rule:
+    - regexps:
+        cert:
+          - alicdn.com
+          - tbcdn.cn
+- name: 天翼云cdn
+  rule:
+    - regexps:
+        header:
+          - hotload rechange server uri format error
+        cert:
+          - ctcdn.cn

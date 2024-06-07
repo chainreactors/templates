@@ -161,7 +161,7 @@
           - yunsuo_session
         body:
           - yunsuologo
-- name: 瑞数WAF
+- name: 安恒明御WAF
   rule:
     - regexps:
         body:
