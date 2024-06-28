@@ -1,0 +1,20 @@
+- name: poweredby
+  rule:
+    - regexps:
+        regexp:
+          - 'X-Powered-By: ([\x20-\x7e]+)'
+- name: java
+  rule:
+    - regexps:
+        header:
+        - 'JSESSIONID'
+- name: asp.net
+  rule:
+    - regexps:
+        header:
+        - 'ASP.NET_SessionId'
+- name: php
+  rule:
+    - regexps:
+        header:
+        - 'PHPSESSID'
