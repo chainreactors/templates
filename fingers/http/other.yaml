@@ -2535,13 +2535,6 @@
     - regexps:
         header:
           - http server/everfocus
-- name: everything
-  rule:
-    - regexps:
-        body:
-          - Everything.gif
-          - everything.png
-          - Everything
 - name: evo-cam
   rule:
     - regexps:

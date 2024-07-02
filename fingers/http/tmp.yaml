@@ -8960,7 +8960,6 @@
   rule:
     - regexps:
         body:
-          - Everything
           - Everything.gif
         header:
           - Everything HTTP Server
