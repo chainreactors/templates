@@ -204,9 +204,9 @@ func main() {
 	if *need == "gogo" {
 		needs = []string{"socket", "http", "port", "workflow", "neutron", "extract"}
 	} else if *need == "spray" {
-		needs = []string{"spray_rule", "spray_common", "spray_default", "extract"}
+		needs = []string{"spray_rule", "spray_common", "spray_default", "extract", "port"}
 	} else if *need == "zombie" {
-		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template"}
+		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template", "port"}
 	} else {
 		needs = strings.Split(*need, ",")
 	}
