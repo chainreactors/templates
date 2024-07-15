@@ -206,7 +206,7 @@ func main() {
 	} else if *need == "spray" {
 		needs = []string{"spray_rule", "spray_common", "spray_default", "extract", "port"}
 	} else if *need == "zombie" {
-		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template", "port"}
+		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template", "port", "socket", "http"}
 	} else {
 		needs = strings.Split(*need, ",")
 	}
