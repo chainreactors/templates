@@ -17,6 +17,13 @@ http:
       - type: status
         status:
           - 200
+      - type: word
+        part: body
+        words:
+          - '"_links":'
+          - '"self":'
+          - '"health"'
+        condition: and
     payloads:
       path:
         - info
