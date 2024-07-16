@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/chainreactors/files"
 	en "github.com/chainreactors/utils/encode"
 	"io/ioutil"
 	"os"
@@ -20,7 +19,7 @@ var (
 )
 
 func encode(input []byte) string {
-	s := files.Flate(input)
+	s := en.MustDeflateCompress(input)
 	return en.Base64Encode(s)
 }
 
@@ -215,16 +214,15 @@ func main() {
 	var first bool
 	for _, n := range needs {
 		if !first {
-			s.WriteString(fmt.Sprintf("if typ == \"%s\" {\n\t\treturn files.UnFlate(encode.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
+			s.WriteString(fmt.Sprintf("if typ == \"%s\" {\n\t\treturn encode.MustDeflateDeCompress(encode.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
 			first = true
 		} else {
-			s.WriteString(fmt.Sprintf("else if typ==\"%s\"{\n\t\treturn files.UnFlate(encode.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
+			s.WriteString(fmt.Sprintf("else if typ==\"%s\"{\n\t\treturn encode.MustDeflateDeCompress(encode.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
 		}
 	}
 	template := `package pkg
 
 import (
-	"github.com/chainreactors/files"
 	"github.com/chainreactors/utils/encode"
 )
 
