@@ -89,6 +89,7 @@
     - regexps:
         body:
           - SSH-
+          - OpenSSH
 - name: rsync
   default_port:
     - '873'
