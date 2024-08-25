@@ -174,8 +174,8 @@ func parser(key string) string {
 		return loadRawFiles("spray/rule")
 	case "spray_common":
 		return loadYamlFile2JsonString("spray/common.yaml")
-	case "spray_default":
-		return loadRawFile("spray/dicc.txt")
+	case "spray_dict":
+		return loadRawFiles("spray/dict")
 	case "extract":
 		return loadYamlFile2JsonString("extract.yaml")
 	case "zombie_common":
@@ -203,7 +203,7 @@ func main() {
 	if *need == "gogo" {
 		needs = []string{"socket", "http", "port", "workflow", "neutron", "extract"}
 	} else if *need == "spray" {
-		needs = []string{"spray_rule", "spray_common", "spray_default", "extract", "port"}
+		needs = []string{"spray_rule", "spray_common", "spray_dict", "extract", "port"}
 	} else if *need == "zombie" {
 		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template", "port", "socket", "http"}
 	} else {
