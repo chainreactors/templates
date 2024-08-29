@@ -9,7 +9,7 @@ http:
   - raw:
       - |
         POST /api/auth HTTP/1.1
-        Host: {{Host}}
+        Host: {{Hostname}}
         Content-Type: application/json
           
         {"username":"{{username}}","password":"{{password}}"}
