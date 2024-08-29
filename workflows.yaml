@@ -10,7 +10,6 @@
   ports: all
   mod: ss
   ping: true
-  arp: true
   tags:
     - inter
 - name: "192"
@@ -18,7 +17,6 @@
   ports: all
   mod: s
   ping: true
-  arp: true
   tags:
     - inter
 - name: "100"
@@ -26,7 +24,6 @@
   ports: all
   mod: ss
   ping: true
-  arp: true
 - name: 100noping
   ip: 100.64.0.0/10
   ports: all
@@ -124,22 +121,18 @@
   ports: all
   mod: s
   ping: true
-  arp: true
   tags:
     - s
-- name: supersmart
+- name: ss
   ports: all
   mod: ss
   ping: true
-  arp: true
-  tags:
-    - ss
 - name: sip
   ports: icmp
   mod: ss
 - name: ssnoping
   ports: all
-  port-probe: '80'
+  port-probe: '80,23'
   mod: ss
 - name: snoping
   ports: all
