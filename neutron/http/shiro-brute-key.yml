@@ -8,11 +8,7 @@ info:
 http:
   - raw:
       - |
-        GET /{{generate_shiro_gadget(key, "cbc")}} HTTP/1.1
-        Host: {{Hostname}}
-        Cookie: JSESSIONID={{to_upper(rand_text_alphanumeric(32,""))}};rememberMe=123;
-      - |
-        GET /{{to_upper(rand_text_alphanumeric(32,""))}};rememberMe={{generate_shiro_gadget(key, "cbc")}} HTTP/1.1
+        GET / HTTP/1.1
         Host: {{Hostname}}
         Cookie: JSESSIONID={{to_upper(rand_text_alphanumeric(32,""))}};rememberMe={{generate_shiro_gadget(key, "cbc")}};
 
@@ -45,7 +41,5 @@ http:
       - type: word
         part: header
         negative: true
-        dsl:
-          - 'contains(header_1, "Set-Cookie") && (contains(header_1, "rememberMe=") || contains(header_1, "=deleteMe"))'
-          - '!contains(header_2, "rememberMe=") && !contains(header_2, "=deleteMe")'
-        condition: and
+        words:
+          - "rememberMe=deleteMe"
