@@ -23,7 +23,7 @@ func encode(input []byte) string {
 	return en.Base64Encode(s)
 }
 
-func loadYamlFile2JsonString(filename string) string {
+func loadYamlFile(filename string) string {
 	var err error
 	file, err := os.Open(path.Join(templatePath, filename))
 	if err != nil {
@@ -31,12 +31,7 @@ func loadYamlFile2JsonString(filename string) string {
 	}
 
 	bs, _ := ioutil.ReadAll(file)
-	jsonstr, err := yaml.YAMLToJSON(bs)
-	if err != nil {
-		panic(filename + " " + err.Error())
-	}
-
-	return encode(jsonstr)
+	return encode(bs)
 }
 
 func visit(files *[]string) filepath.WalkFunc {
@@ -65,7 +60,7 @@ func loadRawFiles(dir string) string {
 		}
 		data[strings.TrimSuffix(filepath.Base(file), ".rule")] = string(bs)
 	}
-	jsonstr, err := json.Marshal(data)
+	jsonstr, err := yaml.Marshal(data)
 	if err != nil {
 		panic(err)
 	}
@@ -81,7 +76,7 @@ func loadRawFile(dir string) string {
 	return encode(content)
 }
 
-func recuLoadPoc2JsonString(dir string) string {
+func recuLoadPoc(dir string) string {
 	var files []string
 	err := filepath.Walk(path.Join(templatePath, dir), visit(&files))
 	if err != nil {
@@ -108,7 +103,7 @@ func recuLoadPoc2JsonString(dir string) string {
 		pocs = append(pocs, tmp)
 	}
 
-	jsonstr, err := json.Marshal(pocs)
+	jsonstr, err := yaml.Marshal(pocs)
 	if err != nil {
 		panic(err)
 	}
@@ -116,7 +111,7 @@ func recuLoadPoc2JsonString(dir string) string {
 	return encode(jsonstr)
 }
 
-func recuLoadFinger2JsonString(dir string) string {
+func recuLoadFinger(dir string, isJson bool) string {
 	var files []string
 	err := filepath.Walk(path.Join(templatePath, dir), visit(&files))
 	if err != nil {
@@ -150,44 +145,50 @@ func recuLoadFinger2JsonString(dir string) string {
 		pocs = append(pocs, fingers...)
 	}
 
-	jsonstr, err := json.Marshal(pocs)
-	if err != nil {
-		panic(err)
+	var content []byte
+	if isJson {
+		content, err = json.Marshal(pocs)
+		if err != nil {
+			panic(err)
+		}
+	} else {
+		content, err = yaml.Marshal(pocs)
+		if err != nil {
+			panic(err)
+		}
 	}
 
-	return encode(jsonstr)
+	return encode(content)
 }
 
 func parser(key string) string {
 	switch key {
 	case "socket":
-		return recuLoadFinger2JsonString("fingers/socket")
+		return recuLoadFinger("fingers/socket", true)
 	case "http":
-		return recuLoadFinger2JsonString("fingers/http")
+		return recuLoadFinger("fingers/http", true)
 	case "port":
-		return loadYamlFile2JsonString("port.yaml")
+		return loadYamlFile("port.yaml")
 	case "workflow":
-		return loadYamlFile2JsonString("workflows.yaml")
+		return loadYamlFile("workflows.yaml")
 	case "neutron":
-		return recuLoadPoc2JsonString("neutron")
+		return recuLoadPoc("neutron")
 	case "spray_rule":
 		return loadRawFiles("spray/rule")
 	case "spray_common":
-		return loadYamlFile2JsonString("spray/common.yaml")
+		return loadYamlFile("spray/common.yaml")
 	case "spray_dict":
 		return loadRawFiles("spray/dict")
 	case "extract":
-		return loadYamlFile2JsonString("extract.yaml")
+		return loadYamlFile("extract.yaml")
 	case "zombie_common":
-		return loadYamlFile2JsonString("zombie/keywords.yaml")
+		return loadYamlFile("zombie/keywords.yaml")
 	case "zombie_default":
-		return loadYamlFile2JsonString("zombie/default.yaml")
+		return loadYamlFile("zombie/default.yaml")
 	case "zombie_rule":
 		return loadRawFiles("zombie/rule")
 	case "zombie_template":
-		return recuLoadPoc2JsonString("neutron/login")
-	case "fingerprinthub":
-		return loadRawFile("spray/web_fingerprint_v3.json")
+		return recuLoadPoc("neutron/login")
 	default:
 		panic("illegal key")
 	}
