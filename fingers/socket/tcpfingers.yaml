@@ -180,7 +180,7 @@
     - regexps:
         regexp:
           - "^\x03\0\0"
-      send_data: b64de|AwAAKiXgAAAAAABDb29raWU6IG1zdHNoYXNoPW5tYXANCgEACAADAAAA
+      send_data: 'b64de|AwAAKiXgAAAAAABDb29raWU6IG1zdHNoYXNoPWFzZGYNCgEACAADAAAA'
 - name: postgresql
   default_port:
     - '5432'
