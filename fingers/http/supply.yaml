@@ -157,4 +157,8 @@
       - regexps:
           body:
           - sunyard
-
+- name: 久其应用系统
+  rule:
+      - regexps:
+          body:
+          - magic1[\s\S]*?magic2
