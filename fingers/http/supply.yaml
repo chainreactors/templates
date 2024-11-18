@@ -156,5 +156,14 @@
   rule:
       - regexps:
           body:
-          - sunyard
+            - sunyard
+- name: 宝兰德
+  rule:
+      - regexps:
+          header:
+            - server: BES 8
+            - server: BES 9
+          body:
+            - BES Console
+            - script/bes.js.*?bes.loadScripts
 
