@@ -94,6 +94,6 @@
     - regexps:
         body:
           - Spark expects a POST containing an RPC call.
-      header:
+        header:
           - X-Protected-By: AppGuard
       send_data: /BesEJB/spark
