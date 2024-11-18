@@ -88,3 +88,12 @@
           - <a href="/ht-password.jsp
           - 北京玛格泰克科技发展有限公司
       send_data: /ht-login.jsp
+- name: 宝兰德
+  level: 2
+  rule:
+    - regexps:
+        body:
+          - Spark expects a POST containing an RPC call.
+      header:
+          - X-Protected-By: AppGuard
+      send_data: /BesEJB/spark
