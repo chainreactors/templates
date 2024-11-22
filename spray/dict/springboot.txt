@@ -105,7 +105,6 @@
 /actuator/api/v2/swagger.json
 /actuator/archaius
 /actuator/archaius/actuator/nacosdiscovery
-/actuator/article?id=${7*7}
 /actuator/article?id=66
 /actuator/auditevents/actuator/intergrationgraph
 /actuator/autoconfig
@@ -137,9 +136,7 @@
 /actuator/health/nacos
 /actuator/heapdump/actuator/loggers/nacos
 /actuator/httptrace/actuator/mappings
-/actuator/hystrix.stream/*/actuator/swagger
 /actuator/info/actuator/metrics
-/actuator/jolokia/*/actuator/static/swagger.json
 /actuator/logfile
 /actuator/logfile/actuator/sw/swagger-ui.html
 /actuator/loggers/
@@ -169,7 +166,6 @@
 /api/v2/login
 /api/v2/swagger-resources
 /api/v2/swagger-ui.html
-/article?id=${7*7}
 /beans1
 /channels
 /clients
@@ -179,7 +175,6 @@
 /conditions1
 /doc.html
 /docs/
-/druid/*/actuator/swagger/codes
 /druid/api.html
 /druid/basic.json
 /druid/datasource.html
@@ -198,7 +193,6 @@
 /env/spring.jmx.enabled
 /error/actuator/monitor/threaddump
 /eureka
-/eureka/*/actuator/service-registry
 /features
 /gateway/actuator
 /gateway/actuator/auditevents
@@ -309,5 +303,4 @@
 /v2/api-docs?group=swagger接口文档
 /v3/api-docs
 /validata/code
-/webjars/**/actuator/nacosconfig
 /webpage/system/druid/index.html
