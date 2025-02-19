@@ -43,7 +43,7 @@
           - zookeeper.version=(.*),
       vuln: zookeeper_unauthorized
       send_data: "envi\n"
-- name: memcahce
+- name: memcache
   focus: true
   default_port:
     - '11211'
@@ -51,7 +51,7 @@
     - regexps:
         vuln:
           - STAT version (.*)
-      vuln: memcahce_unauthorized
+      vuln: memcache_unauthorized
       protocol: tcp
       send_data: "stats\n"
 - name: dubbo-remote
