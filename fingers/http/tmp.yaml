@@ -3290,6 +3290,7 @@
         body:
           - k/3 cloud
           - class="kd-div-loading-ct"
+      send_data: /k3cloud
 - name: Cyberwisdom wizbank整合式管理学习平台
   rule:
     - regexps:
