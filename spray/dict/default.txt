@@ -5061,6 +5061,7 @@ freeline_project_description.json
 freemail
 freshadmin
 frontend_admin
+front
 frontpg.ini
 ftp
 ftp.txt
