@@ -87,9 +87,15 @@
   protocol: tcp
   rule:
     - regexps:
+        regexp:
+          - SSH-2\.0-OpenSSH_([0-9\.]+[a-z0-9]*)\s*
+          - SSH-([0-9\.]+)
         body:
           - SSH-
           - OpenSSH
+        version:
+          - OpenSSH_([0-9\.]+[a-z0-9]*)\s*
+          - SSH-2\.0-OpenSSH_([0-9\.]+[a-z0-9]*)\s*
 - name: rsync
   default_port:
     - '873'
