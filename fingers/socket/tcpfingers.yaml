@@ -212,10 +212,10 @@
   rule:
     - regexps:
         vuln:
-          - '^\x05\x00'
+          - '^\x05\x00$'
         regexp:
-          - '^\x05\x02'
-          - '^\x05\xff'
+          - '^\x05\x02$'
+          - '^\x05\xff$'
       send_data: "\x05\x01\x02"
       vuln: socks5_unauthorized
 - name: socks4
