@@ -684,3 +684,12 @@
   tags:
     - rce
     - common
+- name: wsus
+  ports:
+    - '8530'
+    - '8531'
+  tags:
+    - rce
+    - win
+    - http
+    - common
