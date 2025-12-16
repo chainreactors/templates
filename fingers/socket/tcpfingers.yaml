@@ -45,6 +45,7 @@
       send_data: "envi\n"
 - name: memcache
   focus: true
+  protocol: tcp
   default_port:
     - '11211'
   rule:
@@ -52,7 +53,6 @@
         vuln:
           - STAT version (.*)
       vuln: memcache_unauthorized
-      protocol: tcp
       send_data: "stats\n"
 - name: dubbo-remote
   focus: true

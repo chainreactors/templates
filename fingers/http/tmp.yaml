@@ -4980,11 +4980,6 @@
     - regexps:
         body:
           - Pentaho User Console
-- name: Apache Flink
-  rule:
-    - regexps:
-        body:
-          - Apache Flink
 - name: Informatica-Server
   rule:
     - regexps:
@@ -10491,8 +10486,6 @@
     - regexps:
         body:
           - '"ovp2/css/ext-ovp.css"'
-        header:
-          - OVP
 - name: VMware-vFabric
   rule:
     - regexps:
@@ -11430,8 +11423,8 @@
 - name: 零信任访问控制系统aTrust
   rule:
     - regexps:
-      body:
-        - <title>aTrust
+        body:
+          - <title>aTrust
       favicon:
         md5:
           - 61ea21861c73970bc98ed619f2748992

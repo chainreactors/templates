@@ -175,7 +175,7 @@
     - regexps:
         vuln:
           - Directory Listing For
-  info: Directory traversal
+      info: Directory traversal
 
 - name: apache
   rule:
