@@ -1,0 +1,5 @@
+- name: 大华DSS
+  rule:
+  - regexps:
+      body:
+      - /portal/login_init.action

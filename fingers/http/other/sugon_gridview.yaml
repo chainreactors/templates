@@ -1,0 +1,5 @@
+- name: sugon_gridview
+  rule:
+  - regexps:
+      body:
+      - /common/resources/images/common/app/gridview.ico

@@ -1,0 +1,5 @@
+- name: 研华Advantech WebAccess
+  rule:
+  - regexps:
+      body:
+      - Advantech WebAccess

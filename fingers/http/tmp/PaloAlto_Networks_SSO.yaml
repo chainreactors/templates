@@ -1,0 +1,5 @@
+- name: PaloAlto Networks SSO
+  rule:
+  - regexps:
+      body:
+      - Palo Alto Networks SSO

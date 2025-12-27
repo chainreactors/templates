@@ -1,0 +1,6 @@
+- name: kampyle
+  rule:
+  - regexps:
+      body:
+      - http://cf.kampyle.com/k_button.js
+      - Start Kampyle Feedback Form Button

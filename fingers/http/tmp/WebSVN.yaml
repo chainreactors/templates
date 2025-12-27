@@ -1,0 +1,5 @@
+- name: WebSVN
+  rule:
+  - regexps:
+      body:
+      - WebSVN

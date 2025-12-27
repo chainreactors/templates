@@ -1,0 +1,5 @@
+- name: phpMyFAQ
+  rule:
+  - regexps:
+      body:
+      - powered by phpMyFAQ

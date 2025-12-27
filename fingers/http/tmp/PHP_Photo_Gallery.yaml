@@ -1,0 +1,5 @@
+- name: PHP Photo Gallery
+  rule:
+  - regexps:
+      body:
+      - PHP Photo Gallery

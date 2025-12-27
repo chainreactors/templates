@@ -1,0 +1,5 @@
+- name: ip.board
+  rule:
+  - regexps:
+      body:
+      - ipb.vars

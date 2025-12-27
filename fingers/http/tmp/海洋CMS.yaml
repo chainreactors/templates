@@ -1,0 +1,5 @@
+- name: 海洋CMS
+  rule:
+  - regexps:
+      body:
+      - target="_blank">海洋cms

@@ -1,0 +1,6 @@
+- name: 创想Damall系统
+  rule:
+  - regexps:
+      body:
+      - httphandler/getdata.ashx
+      - DaMall

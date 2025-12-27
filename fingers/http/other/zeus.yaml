@@ -1,0 +1,5 @@
+- name: zeus
+  rule:
+  - regexps:
+      header:
+      - 'Server: Zeus'

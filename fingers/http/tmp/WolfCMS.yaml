@@ -1,0 +1,5 @@
+- name: WolfCMS
+  rule:
+  - regexps:
+      body:
+      - <a href="http://www.wolfcms.org/" title="Wolf CMS">Wolf CMS</a>

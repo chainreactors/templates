@@ -1,0 +1,5 @@
+- name: Apache ShenYu
+  rule:
+  - regexps:
+      body:
+      - th:text=\"${domain}

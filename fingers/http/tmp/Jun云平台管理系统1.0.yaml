@@ -1,0 +1,5 @@
+- name: Jun云平台管理系统1.0
+  rule:
+  - regexps:
+      body:
+      - Jun云平台管理系统1.0

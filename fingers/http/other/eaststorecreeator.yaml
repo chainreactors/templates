@@ -1,0 +1,5 @@
+- name: eaststorecreeator
+  rule:
+  - regexps:
+      header:
+      - easystorecreator1

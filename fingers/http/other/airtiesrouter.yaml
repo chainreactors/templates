@@ -1,0 +1,5 @@
+- name: airtiesrouter
+  rule:
+  - regexps:
+      body:
+      - Airties

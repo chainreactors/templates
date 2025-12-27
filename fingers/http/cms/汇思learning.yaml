@@ -1,0 +1,6 @@
+- name: 汇思learning
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - id="globleMsgBoxTemplate"

@@ -1,0 +1,6 @@
+- name: 来访通
+  link: https://39.100.94.57/signin.html
+  rule:
+  - regexps:
+      body:
+      - 来访通

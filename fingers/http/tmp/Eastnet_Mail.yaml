@@ -1,0 +1,6 @@
+- name: Eastnet Mail
+  link: https://ms.east.net.ua/roundcube/
+  rule:
+  - regexps:
+      body:
+      - East.Net Webmail

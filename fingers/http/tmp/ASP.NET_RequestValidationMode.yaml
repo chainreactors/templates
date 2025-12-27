@@ -1,0 +1,5 @@
+- name: ASP.NET RequestValidationMode
+  rule:
+  - regexps:
+      body:
+      - <title>It's not possibile to initialize shared session without an organization

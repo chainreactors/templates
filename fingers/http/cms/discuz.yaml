@@ -1,0 +1,10 @@
+- name: discuz
+  rule:
+  - regexps:
+      body:
+      - Discuz
+    favicon:
+      mmh3:
+      - '-505448917'
+      md5:
+      - c028c4822428e83a358c60a93ef65381

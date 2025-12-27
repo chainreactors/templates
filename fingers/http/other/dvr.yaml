@@ -1,0 +1,5 @@
+- name: dvr
+  rule:
+  - favicon:
+      mmh3:
+      - '-560297467'

@@ -1,0 +1,5 @@
+- name: sophos
+  rule:
+  - regexps:
+      header:
+      - Sophos

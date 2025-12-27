@@ -1,0 +1,5 @@
+- name: netshare_vpn
+  rule:
+  - regexps:
+      body:
+      - NetShare

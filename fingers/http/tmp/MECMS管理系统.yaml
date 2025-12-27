@@ -1,0 +1,5 @@
+- name: MECMS管理系统
+  rule:
+  - regexps:
+      body:
+      - MECMS管理系统

@@ -1,0 +1,5 @@
+- name: 安逸圈微信管理系统
+  rule:
+  - regexps:
+      body:
+      - <meta name="description" content="安逸圈微信管理系统"

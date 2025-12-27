@@ -1,0 +1,5 @@
+- name: fluid-dynamics-search-engine
+  rule:
+  - regexps:
+      body:
+      - content="fluid dynamics

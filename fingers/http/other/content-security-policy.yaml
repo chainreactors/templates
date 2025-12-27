@@ -1,0 +1,5 @@
+- name: content-security-policy
+  rule:
+  - regexps:
+      header:
+      - x-webkit-csp

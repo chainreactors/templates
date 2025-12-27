@@ -1,0 +1,6 @@
+- name: EMC Documentum Webtop
+  rule:
+  - regexps:
+      body:
+      - /webtop/
+      - onload='doRedirect("/component/main")'

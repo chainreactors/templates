@@ -1,0 +1,5 @@
+- name: 360主机卫士
+  rule:
+  - regexps:
+      header:
+      - X-Safe-Firewall

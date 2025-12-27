@@ -1,0 +1,14 @@
+- name: 奇安信设备
+  rule:
+  - regexps:
+      header:
+      - QiAnXin
+      body:
+      - 网神
+      - 网康
+      - secfox
+    favicon:
+      md5:
+      - e4e25f45b2a8988cb203743bd64204fe
+      mmh3:
+      - '-1260240149'

@@ -1,0 +1,5 @@
+- name: 新视窗 BUG管理系统
+  rule:
+  - regexps:
+      body:
+      - content="新视窗-BUG管理系统"

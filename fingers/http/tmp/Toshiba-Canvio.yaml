@@ -1,0 +1,5 @@
+- name: Toshiba-Canvio
+  rule:
+  - regexps:
+      header:
+      - background:url(/img/Canvio_logo.gif) no-repeat;">

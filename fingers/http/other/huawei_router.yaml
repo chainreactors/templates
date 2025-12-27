@@ -1,0 +1,5 @@
+- name: huawei_router
+  rule:
+  - favicon:
+      mmh3:
+      - '-1395400951'

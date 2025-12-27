@@ -1,0 +1,8 @@
+- name: kerio-winroute-firewall
+  rule:
+  - regexps:
+      body:
+      - /gfx/kerio_logo.gif
+      - Kerio WinRoute Firewall
+      header:
+      - Kerio WinRoute Firewall Embedded Web Server

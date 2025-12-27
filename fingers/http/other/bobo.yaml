@@ -1,0 +1,5 @@
+- name: bobo
+  rule:
+  - regexps:
+      header:
+      - x-ksscommands

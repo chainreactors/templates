@@ -1,0 +1,5 @@
+- name: 诚信网站管理系统
+  rule:
+  - regexps:
+      body:
+      - 诚信网站管理系统

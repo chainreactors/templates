@@ -1,0 +1,5 @@
+- name: owncloud
+  rule:
+  - favicon:
+      mmh3:
+      - '-1616115760'

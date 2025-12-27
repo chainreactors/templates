@@ -1,0 +1,5 @@
+- name: fossil
+  rule:
+  - regexps:
+      body:
+      - <a href="http://fossil-scm.org

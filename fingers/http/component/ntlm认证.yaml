@@ -1,0 +1,5 @@
+- name: ntlm认证
+  rule:
+  - regexps:
+      header:
+      - NTLM

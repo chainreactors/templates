@@ -1,0 +1,7 @@
+- name: sdcms
+  rule:
+  - regexps:
+      body:
+      - powered by sdcms
+      - var webroot=
+      - /js/sdcms.js

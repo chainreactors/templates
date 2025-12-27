@@ -1,0 +1,6 @@
+- name: file-upload-manager
+  rule:
+  - regexps:
+      body:
+      - File Upload Manager
+      - <IMG SRC="/images/header.jpg" ALT="File Upload Manager">

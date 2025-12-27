@@ -1,0 +1,8 @@
+- name: 零信任访问控制系统aTrust
+  rule:
+  - regexps:
+      body:
+      - <title>aTrust
+    favicon:
+      md5:
+      - 61ea21861c73970bc98ed619f2748992

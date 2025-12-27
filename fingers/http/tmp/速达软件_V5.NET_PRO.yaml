@@ -1,0 +1,6 @@
+- name: 速达软件 V5.NET PRO
+  rule:
+  - regexps:
+      body:
+      - src="images/top/top_1(v5)-pro.gif"
+      - 速达V5.NET-PRO

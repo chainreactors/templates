@@ -1,0 +1,5 @@
+- name: jspxcms
+  rule:
+  - regexps:
+      body:
+      - Powered by Jspxcms

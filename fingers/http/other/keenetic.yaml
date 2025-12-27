@@ -1,0 +1,5 @@
+- name: keenetic
+  rule:
+  - favicon:
+      mmh3:
+      - '547282364'

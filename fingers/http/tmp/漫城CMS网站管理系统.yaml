@@ -1,0 +1,5 @@
+- name: 漫城CMS网站管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>漫城CMS网站管理系统</title>

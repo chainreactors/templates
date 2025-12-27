@@ -1,0 +1,5 @@
+- name: karrigell
+  rule:
+  - regexps:
+      header:
+      - Karrigell

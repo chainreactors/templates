@@ -1,0 +1,5 @@
+- name: contentteller-cms
+  rule:
+  - regexps:
+      body:
+      - content="Esselbach Contentteller CMS

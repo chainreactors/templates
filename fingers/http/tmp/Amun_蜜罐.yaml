@@ -1,0 +1,6 @@
+- name: Amun 蜜罐
+  rule:
+  - regexps:
+      body:
+      - johan83@freenet.de
+      - tim.bohn@gmx.net

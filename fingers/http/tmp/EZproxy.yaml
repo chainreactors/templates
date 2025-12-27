@@ -1,0 +1,5 @@
+- name: EZproxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: EZproxy'

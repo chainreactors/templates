@@ -1,0 +1,5 @@
+- name: Reblaze Secure Web Gateway
+  rule:
+  - regexps:
+      header:
+      - reblaze secure web gateway

@@ -1,0 +1,6 @@
+- name: stcms
+  rule:
+  - regexps:
+      body:
+      - content="STCMS
+      - DahongY<dahongy@gmail.com>

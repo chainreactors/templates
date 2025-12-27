@@ -1,0 +1,7 @@
+- name: Yxlink-WAF
+  rule:
+  - regexps:
+      body:
+      - 铱迅web应用防护系统
+      header:
+      - yxlinkwaf

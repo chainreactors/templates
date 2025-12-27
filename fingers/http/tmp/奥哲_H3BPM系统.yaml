@@ -1,0 +1,6 @@
+- name: 奥哲 H3BPM系统
+  rule:
+  - regexps:
+      body:
+      - H3 BPM
+      - Authine

@@ -1,0 +1,5 @@
+- name: ThinkPHP YFCMF
+  rule:
+  - regexps:
+      body:
+      - /yfcmf/yfcmf.js

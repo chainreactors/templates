@@ -1,0 +1,6 @@
+- name: ostec firebox
+  rule:
+  - regexps:
+      body:
+      - http://colorzilla.com/
+      - OSTEC FireBox

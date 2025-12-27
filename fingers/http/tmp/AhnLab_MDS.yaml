@@ -1,0 +1,5 @@
+- name: AhnLab MDS
+  rule:
+  - regexps:
+      body:
+      - ahnlab mds

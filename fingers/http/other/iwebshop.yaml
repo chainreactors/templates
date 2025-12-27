@@ -1,0 +1,5 @@
+- name: iwebshop
+  rule:
+  - regexps:
+      body:
+      - /runtime/default/systemjs

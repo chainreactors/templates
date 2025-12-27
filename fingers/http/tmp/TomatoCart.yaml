@@ -1,0 +1,5 @@
+- name: TomatoCart
+  rule:
+  - regexps:
+      body:
+      - content="TomatoCart

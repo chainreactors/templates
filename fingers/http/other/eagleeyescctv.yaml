@@ -1,0 +1,6 @@
+- name: eagleeyescctv
+  rule:
+  - regexps:
+      body:
+      - IP Surveillance for Your Life
+      - /nobody/loginDevice.js

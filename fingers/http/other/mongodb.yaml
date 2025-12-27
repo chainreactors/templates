@@ -1,0 +1,5 @@
+- name: mongodb
+  rule:
+  - regexps:
+      body:
+      - <a href="/_replSet">Replica set status</a></p>

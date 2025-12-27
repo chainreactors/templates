@@ -1,0 +1,6 @@
+- name: Nsmail
+  link: https://mail.gov.cn/nsmail/index.php
+  rule:
+  - regexps:
+      body:
+      - Nsmail

@@ -1,0 +1,6 @@
+- name: jxt-consulting
+  rule:
+  - regexps:
+      body:
+      - id="jxt-popup-wrapper
+      - Powered by JXT Consulting

@@ -1,0 +1,5 @@
+- name: Tribiq
+  rule:
+  - regexps:
+      body:
+      - Tribiq CMS

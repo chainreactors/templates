@@ -1,0 +1,5 @@
+- name: OTcms
+  rule:
+  - regexps:
+      body:
+      - <!-- [OTCMS] -->

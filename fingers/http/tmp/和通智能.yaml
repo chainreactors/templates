@@ -1,0 +1,6 @@
+- name: 和通智能
+  rule:
+  - regexps:
+      body:
+      - href="/web/mainmenu/images/favicon.ico">
+      - 和通智能

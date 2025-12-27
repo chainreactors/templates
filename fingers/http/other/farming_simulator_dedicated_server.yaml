@@ -1,0 +1,5 @@
+- name: farming simulator dedicated server
+  rule:
+  - favicon:
+      mmh3:
+      - '509789953'

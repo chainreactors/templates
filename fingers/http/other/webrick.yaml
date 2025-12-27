@@ -1,0 +1,5 @@
+- name: webrick
+  rule:
+  - regexps:
+      header:
+      - webrick

@@ -1,0 +1,5 @@
+- name: DHC OA
+  rule:
+  - regexps:
+      body:
+      - src="/extcomponent/security/image/dhc.png"

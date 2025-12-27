@@ -1,0 +1,5 @@
+- name: MEE管理系统
+  rule:
+  - regexps:
+      body:
+      - MEE管理系统

@@ -1,0 +1,5 @@
+- name: realtek
+  rule:
+  - favicon:
+      mmh3:
+      - '2055322029'

@@ -1,0 +1,10 @@
+- name: crushftp
+  rule:
+  - regexps:
+      body:
+      - CrushFTP WebInterface
+      header:
+      - 'Server: CrushFTP HTTP Server'
+    favicon:
+      mmh3:
+      - '-1022206565'

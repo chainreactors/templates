@@ -1,0 +1,7 @@
+- name: 强智 教务管理系统
+  rule:
+  - regexps:
+      body:
+      - 强智科技
+      - 教务管理系统
+      - /jsxsd/framework/images/index/tpbg.gif

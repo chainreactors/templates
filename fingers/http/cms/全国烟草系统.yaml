@@ -1,0 +1,5 @@
+- name: 全国烟草系统
+  rule:
+  - regexps:
+      body:
+      - ycportal/webpublish

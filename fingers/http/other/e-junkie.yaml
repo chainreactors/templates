@@ -1,0 +1,5 @@
+- name: e-junkie
+  rule:
+  - regexps:
+      body:
+      - function EJEJC_lc

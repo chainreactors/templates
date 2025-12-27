@@ -1,0 +1,5 @@
+- name: locus_solarnoc
+  rule:
+  - regexps:
+      body:
+      - SolarNOC - Login

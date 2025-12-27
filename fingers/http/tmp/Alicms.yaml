@@ -1,0 +1,6 @@
+- name: Alicms
+  rule:
+  - regexps:
+      body:
+      - Alicms.chatPlugin
+      - Alicms.userNav

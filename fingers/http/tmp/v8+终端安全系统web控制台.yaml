@@ -1,0 +1,6 @@
+- name: v8+终端安全系统web控制台
+  rule:
+  - regexps:
+      body:
+      - 在线安装-v8+终端安全系统web控制台
+      - href="mobiletools/android/net.ejinshan.avclient.apk

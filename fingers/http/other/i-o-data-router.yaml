@@ -1,0 +1,5 @@
+- name: i-o-data-router
+  rule:
+  - regexps:
+      body:
+      - I-O DATA Wireless Broadband Router

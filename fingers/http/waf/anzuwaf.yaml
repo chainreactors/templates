@@ -1,0 +1,5 @@
+- name: anzuwaf
+  rule:
+  - regexps:
+      header:
+      - AnZuWAF

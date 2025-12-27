@@ -1,0 +1,5 @@
+- name: 上海鼎创（Goodo）
+  rule:
+  - regexps:
+      body:
+      - 上海鼎创信息科技有限公司

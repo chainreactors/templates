@@ -1,0 +1,5 @@
+- name: InvoicePlane
+  rule:
+  - regexps:
+      body:
+      - /InvoicePlane/

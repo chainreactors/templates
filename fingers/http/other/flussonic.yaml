@@ -1,0 +1,5 @@
+- name: flussonic
+  rule:
+  - favicon:
+      mmh3:
+      - '-393788031'

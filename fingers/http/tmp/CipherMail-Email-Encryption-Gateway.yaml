@@ -1,0 +1,5 @@
+- name: CipherMail-Email-Encryption-Gateway
+  rule:
+  - regexps:
+      body:
+      - CipherMail Email Encryption Gateway

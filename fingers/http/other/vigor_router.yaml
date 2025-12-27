@@ -1,0 +1,5 @@
+- name: vigor router
+  rule:
+  - favicon:
+      mmh3:
+      - '104189364'

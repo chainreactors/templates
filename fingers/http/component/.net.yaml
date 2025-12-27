@@ -1,0 +1,5 @@
+- name: .net
+  rule:
+  - regexps:
+      body:
+      - content="Visual Basic

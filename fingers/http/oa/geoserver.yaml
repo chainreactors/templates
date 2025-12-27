@@ -1,0 +1,6 @@
+- name: geoserver
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - GeoServer

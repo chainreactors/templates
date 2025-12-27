@@ -1,0 +1,5 @@
+- name: HuaWei USG6320
+  rule:
+  - regexps:
+      body:
+      - usg6320

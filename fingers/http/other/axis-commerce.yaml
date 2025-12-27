@@ -1,0 +1,8 @@
+- name: axis-commerce
+  rule:
+  - regexps:
+      body:
+      - Powered by Axis
+      - Login to Axis administrator
+      header:
+      - axisid

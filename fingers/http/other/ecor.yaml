@@ -1,0 +1,5 @@
+- name: ecor
+  rule:
+  - regexps:
+      header:
+      - ECOR264

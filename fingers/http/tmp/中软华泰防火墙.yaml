@@ -1,0 +1,5 @@
+- name: 中软华泰防火墙
+  rule:
+  - regexps:
+      body:
+      - 中软华泰防火墙

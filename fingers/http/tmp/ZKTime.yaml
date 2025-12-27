@@ -1,0 +1,6 @@
+- name: ZKTime
+  link: http://xqy.huidechina.com:9090/accounts/login/?next=/data/index/
+  rule:
+  - regexps:
+      body:
+      - ZKTime

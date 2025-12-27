@@ -1,0 +1,5 @@
+- name: 任我行电商
+  rule:
+  - regexps:
+      body:
+      - content="366EC

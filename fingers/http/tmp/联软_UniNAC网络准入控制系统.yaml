@@ -1,0 +1,7 @@
+- name: 联软 UniNAC网络准入控制系统
+  rule:
+  - regexps:
+      body:
+      - UniNAC
+      - UniNAC准入控制系统
+      - /portal/redirect/nacc/

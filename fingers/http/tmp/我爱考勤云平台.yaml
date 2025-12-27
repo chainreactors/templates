@@ -1,0 +1,5 @@
+- name: 我爱考勤云平台
+  rule:
+  - regexps:
+      body:
+      - content="我爱考勤云平台

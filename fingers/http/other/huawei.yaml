@@ -1,0 +1,7 @@
+- name: huawei
+  rule:
+  - favicon:
+      mmh3:
+      - '561563906'
+      md5:
+      - e76a1f0f3dfc497ff35e422fcf313655

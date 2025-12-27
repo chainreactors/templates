@@ -1,0 +1,7 @@
+- name: synology_nas
+  rule:
+  - regexps:
+      body:
+      - modules/BackupReplicationApp
+      header:
+      - webman/index.cgi

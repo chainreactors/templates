@@ -1,0 +1,5 @@
+- name: 亿华 考勤软件
+  rule:
+  - regexps:
+      body:
+      - link.description = "亿华软件"

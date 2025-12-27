@@ -1,0 +1,5 @@
+- name: Solar Log
+  rule:
+  - regexps:
+      body:
+      - Solar-Log

@@ -1,0 +1,5 @@
+- name: MTHR 人事薪资考勤管理系统
+  rule:
+  - regexps:
+      body:
+      - MTHR+人事薪资考勤管理系统

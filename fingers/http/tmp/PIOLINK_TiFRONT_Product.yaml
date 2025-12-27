@@ -1,0 +1,6 @@
+- name: PIOLINK TiFRONT Product
+  rule:
+  - regexps:
+      body:
+      - tifront-
+      - <em>tifront, the security switch

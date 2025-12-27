@@ -1,0 +1,5 @@
+- name: 锐商企业CMS
+  rule:
+  - regexps:
+      body:
+      - content="博组客中国本地化定制系统 - 基于 COMSHARP CMS"/>

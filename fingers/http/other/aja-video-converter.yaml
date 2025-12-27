@@ -1,0 +1,5 @@
+- name: aja-video-converter
+  rule:
+  - regexps:
+      body:
+      - eParamID_SWVersion

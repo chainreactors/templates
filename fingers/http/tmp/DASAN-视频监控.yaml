@@ -1,0 +1,5 @@
+- name: DASAN-视频监控
+  rule:
+  - regexps:
+      body:
+      - SIP Phone H420

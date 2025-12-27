@@ -1,0 +1,5 @@
+- name: qBittorrent-Веб-интерфейс
+  rule:
+  - regexps:
+      body:
+      - qBittorrent Веб-интерфейс

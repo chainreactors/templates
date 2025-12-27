@@ -1,0 +1,5 @@
+- name: delegate
+  rule:
+  - regexps:
+      header:
+      - DeleGate

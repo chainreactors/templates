@@ -1,0 +1,5 @@
+- name: Umbraco
+  rule:
+  - regexps:
+      body:
+      - <html xmlns:umbraco="http://umbraco.org"

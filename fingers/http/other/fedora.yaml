@@ -1,0 +1,5 @@
+- name: fedora
+  rule:
+  - regexps:
+      header:
+      - Fedora

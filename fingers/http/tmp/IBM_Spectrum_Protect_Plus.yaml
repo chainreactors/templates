@@ -1,0 +1,5 @@
+- name: IBM Spectrum Protect Plus
+  rule:
+  - regexps:
+      body:
+      - IBM Spectrum Protect Plus

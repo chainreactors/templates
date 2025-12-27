@@ -1,0 +1,5 @@
+- name: hostmonster - web hosting
+  rule:
+  - favicon:
+      mmh3:
+      - '-972810761'

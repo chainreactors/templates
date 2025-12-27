@@ -1,0 +1,5 @@
+- name: TeaCMS
+  rule:
+  - regexps:
+      body:
+      - views/TeaCMS

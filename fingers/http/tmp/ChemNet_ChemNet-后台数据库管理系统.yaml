@@ -1,0 +1,5 @@
+- name: ChemNet ChemNet-后台数据库管理系统
+  rule:
+  - regexps:
+      body:
+      - ChemNet-后台数据库管理系统

@@ -1,0 +1,5 @@
+- name: yii php framework
+  rule:
+  - favicon:
+      mmh3:
+      - '-1298108480'

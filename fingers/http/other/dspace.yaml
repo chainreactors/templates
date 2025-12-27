@@ -1,0 +1,6 @@
+- name: dspace
+  rule:
+  - regexps:
+      body:
+      - content="DSpace
+      - <a href="http://www.dspace.org">DSpace Software

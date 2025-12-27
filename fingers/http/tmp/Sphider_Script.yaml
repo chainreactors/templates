@@ -1,0 +1,6 @@
+- name: Sphider Script
+  rule:
+  - regexps:
+      body:
+      - Sphider Script
+      - powered by sphider

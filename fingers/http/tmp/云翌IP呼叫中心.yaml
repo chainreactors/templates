@@ -1,0 +1,5 @@
+- name: 云翌IP呼叫中心
+  rule:
+  - regexps:
+      body:
+      - 云翌IP呼叫中心_用户登录

@@ -1,0 +1,5 @@
+- name: communique
+  rule:
+  - regexps:
+      header:
+      - Communique

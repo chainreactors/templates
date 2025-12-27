@@ -1,0 +1,5 @@
+- name: eweishop
+  rule:
+  - regexps:
+      body:
+      - ewei_shop

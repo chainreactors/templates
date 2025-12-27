@@ -1,0 +1,5 @@
+- name: Eudemon8000E X8
+  rule:
+  - regexps:
+      header:
+      - huawei eudemon8000e-x8

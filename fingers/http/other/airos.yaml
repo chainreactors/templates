@@ -1,0 +1,9 @@
+- name: airos
+  rule:
+  - regexps:
+      header:
+      - cookiechecker?uri=
+    favicon:
+      mmh3:
+      - '1020814938'
+      - '-697231354'

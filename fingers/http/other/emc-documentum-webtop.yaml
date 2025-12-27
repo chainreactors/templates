@@ -1,0 +1,6 @@
+- name: emc-documentum-webtop
+  rule:
+  - regexps:
+      body:
+      - /webtop/index.js
+      - /webtop/webtop/

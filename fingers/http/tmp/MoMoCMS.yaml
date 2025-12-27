@@ -1,0 +1,5 @@
+- name: MoMoCMS
+  rule:
+  - regexps:
+      body:
+      - Powered BY MoMoCMS</p>

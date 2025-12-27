@@ -1,0 +1,7 @@
+- name: Vtex-Cloud-Commerce-Platform
+  rule:
+  - regexps:
+      body:
+      - Vtex.Commerce.compare.js
+      header:
+      - 'Server: Powered by Vtex'

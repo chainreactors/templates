@@ -1,0 +1,5 @@
+- name: 金电网安可信运维管理系统TOS V2.0
+  rule:
+  - regexps:
+      body:
+      - <title>金电网安可信运维管理系统TOS V2.0</title>

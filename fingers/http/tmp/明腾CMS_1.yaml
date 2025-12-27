@@ -1,0 +1,5 @@
+- name: 明腾CMS
+  rule:
+  - regexps:
+      body:
+      - 明腾-西部商务网

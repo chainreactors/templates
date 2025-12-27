@@ -1,0 +1,5 @@
+- name: bintec elmeg
+  rule:
+  - favicon:
+      mmh3:
+      - '-375623619'

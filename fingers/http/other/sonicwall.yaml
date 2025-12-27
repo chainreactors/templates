@@ -1,0 +1,8 @@
+- name: sonicwall
+  rule:
+  - regexps:
+      header:
+      - 'Server: SonicWALL'
+    favicon:
+      mmh3:
+      - '631108382'

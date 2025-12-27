@@ -1,0 +1,5 @@
+- name: Juniper-ScreenOS
+  rule:
+  - regexps:
+      body:
+      - Juniper

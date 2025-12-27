@@ -1,0 +1,8 @@
+- name: hp打印机
+  rule:
+  - regexps:
+      body:
+      - HP LaserJet
+      - /hp/jetdirect
+      header:
+      - HP-ChaiServer

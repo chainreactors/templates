@@ -1,0 +1,5 @@
+- name: jiathis
+  rule:
+  - regexps:
+      body:
+      - jiathis.com/code/jia.js

@@ -1,0 +1,8 @@
+- name: coldfusion
+  rule:
+  - regexps:
+      body:
+      - /cfajax/
+      - ColdFusion.Ajax
+      header:
+      - CFTOKEN

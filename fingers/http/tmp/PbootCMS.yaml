@@ -1,0 +1,5 @@
+- name: PbootCMS
+  rule:
+  - regexps:
+      body:
+      - PbootCMS

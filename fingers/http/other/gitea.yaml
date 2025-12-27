@@ -1,0 +1,5 @@
+- name: gitea
+  rule:
+  - favicon:
+      mmh3:
+      - '1969970750'

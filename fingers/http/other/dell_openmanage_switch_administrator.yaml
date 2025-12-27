@@ -1,0 +1,5 @@
+- name: dell openmanage switch administrator
+  rule:
+  - regexps:
+      body:
+      - Dell OpenManage Switch Administrator

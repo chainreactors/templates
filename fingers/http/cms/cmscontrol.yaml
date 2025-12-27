@@ -1,0 +1,5 @@
+- name: cmscontrol
+  rule:
+  - regexps:
+      body:
+      - content="CMScontrol

@@ -1,0 +1,5 @@
+- name: ADXStudio CMS
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: anonprofile='

@@ -1,0 +1,5 @@
+- name: 问途 CMS管理系统
+  rule:
+  - regexps:
+      body:
+      - DOSSM 2.0 CMS管理系统

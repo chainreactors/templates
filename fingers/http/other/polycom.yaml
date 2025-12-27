@@ -1,0 +1,9 @@
+- name: polycom
+  rule:
+  - regexps:
+      body:
+      - Polycom
+      - kAllowDirectHTMLFileAccess
+    favicon:
+      mmh3:
+      - '77044418'

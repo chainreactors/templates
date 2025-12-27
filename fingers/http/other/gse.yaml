@@ -1,0 +1,5 @@
+- name: gse
+  rule:
+  - regexps:
+      header:
+      - 'Server: GSE'

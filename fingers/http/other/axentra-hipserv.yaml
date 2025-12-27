@@ -1,0 +1,7 @@
+- name: axentra-hipserv
+  rule:
+  - regexps:
+      body:
+      - content="Axentra
+      header:
+      - x-axentra-version

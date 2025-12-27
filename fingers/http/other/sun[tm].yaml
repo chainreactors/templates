@@ -1,0 +1,7 @@
+- name: sun[tm]
+  rule:
+  - regexps:
+      body:
+      - Sun[tm] ONE Web Server
+      header:
+      - 'Server: Sun-ONE-Web-Server'

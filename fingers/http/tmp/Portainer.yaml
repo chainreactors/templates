@@ -1,0 +1,5 @@
+- name: Portainer
+  rule:
+  - regexps:
+      body:
+      - Portainer

@@ -1,0 +1,5 @@
+- name: sophos_web_appliance
+  rule:
+  - regexps:
+      body:
+      - Sophos Web Appliance

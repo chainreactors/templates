@@ -1,0 +1,6 @@
+- name: 阿里云 云盾
+  rule:
+  - regexps:
+      header:
+      - yundun_404
+      - YunDun-CDN

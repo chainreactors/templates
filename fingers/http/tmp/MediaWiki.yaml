@@ -1,0 +1,5 @@
+- name: MediaWiki
+  rule:
+  - regexps:
+      body:
+      - Powered by MediaWiki

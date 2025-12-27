@@ -1,0 +1,5 @@
+- name: 杭州橙诺科技 建站系统
+  rule:
+  - regexps:
+      body:
+      - 橙诺科技

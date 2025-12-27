@@ -1,0 +1,6 @@
+- name: duomicms
+  rule:
+  - regexps:
+      body:
+      - DuomiCms
+      - Power by DuomiCms

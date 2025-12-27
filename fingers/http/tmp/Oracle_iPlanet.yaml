@@ -1,0 +1,6 @@
+- name: Oracle iPlanet
+  rule:
+  - regexps:
+      header:
+      - Oracle-iPlanet
+      - Oracle iPlanet Web Server

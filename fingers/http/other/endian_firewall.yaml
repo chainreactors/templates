@@ -1,0 +1,5 @@
+- name: endian firewall
+  rule:
+  - favicon:
+      mmh3:
+      - '-1225484776'

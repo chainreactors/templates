@@ -1,0 +1,6 @@
+- name: 天融信vpn
+  focus: true
+  rule:
+  - regexps:
+      header:
+      - topsecsvportalname

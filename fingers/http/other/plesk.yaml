@@ -1,0 +1,5 @@
+- name: plesk
+  rule:
+  - favicon:
+      mmh3:
+      - '-981606721'

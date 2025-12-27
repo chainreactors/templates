@@ -1,0 +1,5 @@
+- name: 用友-rmis
+  rule:
+  - regexps:
+      body:
+      - css/commonlogincomp.min.css

@@ -1,0 +1,5 @@
+- name: shipyard
+  rule:
+  - regexps:
+      body:
+      - shipyard

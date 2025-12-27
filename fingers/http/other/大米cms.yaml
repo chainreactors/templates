@@ -1,0 +1,7 @@
+- name: 大米cms
+  rule:
+  - regexps:
+      body:
+      - 大米CMS-
+      - content="damicms
+      - content="大米CMS

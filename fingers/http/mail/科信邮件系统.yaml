@@ -1,0 +1,6 @@
+- name: 科信邮件系统
+  rule:
+  - regexps:
+      body:
+      - /systemfunction.pack.js
+      - lo_computername

@@ -1,0 +1,6 @@
+- name: cdr-stats
+  rule:
+  - regexps:
+      body:
+      - CDR-Stats | Customer Interface
+      - /static/cdr-stats/js/jquery

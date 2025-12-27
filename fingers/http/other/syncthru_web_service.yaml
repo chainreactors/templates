@@ -1,0 +1,5 @@
+- name: syncthru web service
+  rule:
+  - favicon:
+      mmh3:
+      - '1483097076'

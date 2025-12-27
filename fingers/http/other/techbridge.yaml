@@ -1,0 +1,5 @@
+- name: techbridge
+  rule:
+  - regexps:
+      body:
+      - Sorry,you need to use IE brower

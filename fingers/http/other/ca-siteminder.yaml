@@ -1,0 +1,5 @@
+- name: ca-siteminder
+  rule:
+  - regexps:
+      body:
+      - <!-- SiteMinder Encoding

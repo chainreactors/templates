@@ -1,0 +1,5 @@
+- name: 正方OA
+  rule:
+  - regexps:
+      body:
+      - logo_zfoa.png

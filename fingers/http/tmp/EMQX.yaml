@@ -1,0 +1,6 @@
+- name: EMQX
+  link: null
+  rule:
+  - regexps:
+      body:
+      - EMQX

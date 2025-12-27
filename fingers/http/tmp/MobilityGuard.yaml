@@ -1,0 +1,5 @@
+- name: MobilityGuard
+  rule:
+  - regexps:
+      header:
+      - 'Server: MobilityGuard'

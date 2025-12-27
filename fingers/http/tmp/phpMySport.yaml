@@ -1,0 +1,5 @@
+- name: phpMySport
+  rule:
+  - regexps:
+      body:
+      - title="phpMySport"

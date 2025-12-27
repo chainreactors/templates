@@ -1,0 +1,6 @@
+- name: Cwindow政务安全邮箱
+  link: http://mail.cmailvip.cn/login.jsp
+  rule:
+  - regexps:
+      body:
+      - 北京国信冠群技术有限公司,国信冠群,邮件

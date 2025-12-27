@@ -1,0 +1,5 @@
+- name: dreambox (tv reciever)
+  rule:
+  - regexps:
+      header:
+      - Basic realm="dreambox"

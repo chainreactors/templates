@@ -1,0 +1,5 @@
+- name: cern
+  rule:
+  - regexps:
+      header:
+      - CERN

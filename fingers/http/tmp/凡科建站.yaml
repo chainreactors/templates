@@ -1,0 +1,5 @@
+- name: 凡科建站
+  rule:
+  - regexps:
+      body:
+      - target="_blank">广州凡科互联网科技股份有限公司

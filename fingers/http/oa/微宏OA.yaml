@@ -1,0 +1,7 @@
+- name: 微宏OA
+  rule:
+  - regexps:
+      header:
+      - /wh/serverlogin.jsp
+      body:
+      - /wh/servlet/MainServer

@@ -1,0 +1,5 @@
+- name: geotrust_cert
+  rule:
+  - regexps:
+      body:
+      - //smarticon.geotrust.com/si.js

@@ -1,0 +1,6 @@
+- name: freeboxos
+  rule:
+  - regexps:
+      body:
+      - Freebox OS
+      - logo_freeboxos

@@ -1,0 +1,5 @@
+- name: citrix/netscaler vpn
+  rule:
+  - regexps:
+      body:
+      - /vpn/resources.js

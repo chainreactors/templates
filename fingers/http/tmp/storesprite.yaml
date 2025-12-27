@@ -1,0 +1,5 @@
+- name: storesprite
+  rule:
+  - regexps:
+      body:
+      - POWERED BY storesprit

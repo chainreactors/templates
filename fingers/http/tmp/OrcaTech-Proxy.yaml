@@ -1,0 +1,5 @@
+- name: OrcaTech-Proxy
+  rule:
+  - regexps:
+      header:
+      - 'Www-Authenticate: Basic realm="Orca Proxy"'

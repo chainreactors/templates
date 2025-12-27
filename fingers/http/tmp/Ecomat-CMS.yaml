@@ -1,0 +1,5 @@
+- name: Ecomat-CMS
+  rule:
+  - regexps:
+      body:
+      - ECOMAT CMS

@@ -1,0 +1,5 @@
+- name: upload-form
+  rule:
+  - regexps:
+      body:
+      - type="file"

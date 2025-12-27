@@ -1,0 +1,5 @@
+- name: 蓝讯
+  rule:
+  - regexps:
+      header:
+      - Powered-By-ChinaCache

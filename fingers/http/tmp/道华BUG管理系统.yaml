@@ -1,0 +1,5 @@
+- name: 道华BUG管理系统
+  rule:
+  - regexps:
+      body:
+      - 道华BUG管理系统

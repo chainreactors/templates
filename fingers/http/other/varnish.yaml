@@ -1,0 +1,5 @@
+- name: varnish
+  rule:
+  - regexps:
+      header:
+      - X-Varnish

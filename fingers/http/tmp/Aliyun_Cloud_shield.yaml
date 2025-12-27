@@ -1,0 +1,6 @@
+- name: Aliyun Cloud shield
+  rule:
+  - regexps:
+      header:
+      - yundun
+      - 'set-cookie: yundun_404'

@@ -1,0 +1,7 @@
+- name: sma_sunny_webbox
+  rule:
+  - regexps:
+      body:
+      - SMA Sunny Webbox
+      header:
+      - 'Server: WebBox-20'

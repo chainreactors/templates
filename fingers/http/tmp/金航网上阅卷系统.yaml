@@ -1,0 +1,5 @@
+- name: 金航网上阅卷系统
+  rule:
+  - regexps:
+      body:
+      - 金航网上阅卷系统

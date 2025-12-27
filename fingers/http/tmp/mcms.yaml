@@ -1,0 +1,8 @@
+- name: mcms
+  rule:
+  - favicon:
+      mmh3:
+      - '1464851260'
+    regexps:
+      body:
+      - /ms-admin/

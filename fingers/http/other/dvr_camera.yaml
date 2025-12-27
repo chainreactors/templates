@@ -1,0 +1,5 @@
+- name: dvr camera
+  rule:
+  - regexps:
+      body:
+      - DVR WebClient

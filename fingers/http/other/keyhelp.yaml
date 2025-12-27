@@ -1,0 +1,5 @@
+- name: keyhelp
+  rule:
+  - favicon:
+      mmh3:
+      - '-1267819858'

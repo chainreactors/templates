@@ -1,0 +1,6 @@
+- name: IBM设备
+  rule:
+  - regexps:
+      body:
+      - www.ibm.com
+      - com.ibm

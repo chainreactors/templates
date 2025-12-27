@@ -1,0 +1,10 @@
+- name: Yii Framework
+  rule:
+  - favicon:
+      mmh3:
+      - '-1298108480'
+    regexps:
+      body:
+      - /yii2
+      header:
+      - 'Set-Cookie: YII_CSRF_TOKEN'

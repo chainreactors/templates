@@ -1,0 +1,5 @@
+- name: 几度CMS
+  rule:
+  - regexps:
+      body:
+      - content="几度CMS

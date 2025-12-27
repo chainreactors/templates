@@ -1,0 +1,5 @@
+- name: IPS Community Suite
+  rule:
+  - regexps:
+      body:
+      - https://invisioncommunity.com

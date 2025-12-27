@@ -1,0 +1,7 @@
+- name: couchbase
+  rule:
+  - regexps:
+      body:
+      - Couchbase Console
+      header:
+      - Couchbase

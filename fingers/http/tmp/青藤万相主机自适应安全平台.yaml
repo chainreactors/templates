@@ -1,0 +1,9 @@
+- name: 青藤万相主机自适应安全平台
+  link: http://qingty.htinfor.com:8003/next/#/login
+  rule:
+  - regexps:
+      body:
+      - 万相主机安全
+    favicon:
+      mmh3:
+      - '-898067940'

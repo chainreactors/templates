@@ -1,0 +1,5 @@
+- name: 巡风内网漏洞扫描系统
+  rule:
+  - regexps:
+      body:
+      - <title>巡风</title>

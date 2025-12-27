@@ -1,0 +1,5 @@
+- name: 西数WTS WAF
+  rule:
+  - regexps:
+      body:
+      - WTS-WAF拦截提示

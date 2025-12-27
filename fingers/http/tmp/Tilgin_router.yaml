@@ -1,0 +1,6 @@
+- name: Tilgin router
+  link: http://110.235.96.87/
+  rule:
+  - regexps:
+      body:
+      - Welcome to the Tilgin router

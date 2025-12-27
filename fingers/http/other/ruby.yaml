@@ -1,0 +1,5 @@
+- name: ruby
+  rule:
+  - regexps:
+      header:
+      - X-Rack-Cache

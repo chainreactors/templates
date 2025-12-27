@@ -1,0 +1,8 @@
+- name: 泛微oa
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /wui/common/css/w7OVFont.css
+      header:
+      - testBanCookie

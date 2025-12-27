@@ -1,0 +1,5 @@
+- name: Teradici PCoIP Zero Client
+  rule:
+  - regexps:
+      body:
+      - <h4>PCoIP&#174 Zero Client</h4>

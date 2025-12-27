@@ -1,0 +1,6 @@
+- name: Mattermost
+  link: http://115.43.169.14:8401/landing#/
+  rule:
+  - regexps:
+      body:
+      - To use Mattermost

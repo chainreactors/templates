@@ -1,0 +1,5 @@
+- name: ems-entry-com
+  rule:
+  - regexps:
+      header:
+      - ZENT5

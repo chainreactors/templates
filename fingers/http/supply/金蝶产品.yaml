@@ -1,0 +1,5 @@
+- name: 金蝶产品
+  rule:
+  - regexps:
+      body:
+      - kingdee

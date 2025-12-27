@@ -1,0 +1,5 @@
+- name: 西部数码
+  rule:
+  - regexps:
+      header:
+      - WT263CDN

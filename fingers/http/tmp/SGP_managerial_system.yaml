@@ -1,0 +1,5 @@
+- name: SGP managerial system
+  rule:
+  - regexps:
+      body:
+      - /static/all/img/logo/sgp

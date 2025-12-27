@@ -1,0 +1,5 @@
+- name: avtech ip surveillance
+  rule:
+  - favicon:
+      mmh3:
+      - '-194439630'

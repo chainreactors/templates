@@ -1,0 +1,5 @@
+- name: freepbx
+  rule:
+  - regexps:
+      header:
+      - FreePBX

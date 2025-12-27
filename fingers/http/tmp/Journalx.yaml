@@ -1,0 +1,5 @@
+- name: Journalx
+  rule:
+  - regexps:
+      body:
+      - journalx/authorlogon.action?mag_id

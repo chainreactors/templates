@@ -1,0 +1,5 @@
+- name: squid
+  rule:
+  - regexps:
+      header:
+      - squid

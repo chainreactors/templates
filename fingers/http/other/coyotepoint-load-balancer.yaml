@@ -1,0 +1,5 @@
+- name: coyotepoint-load-balancer
+  rule:
+  - regexps:
+      header:
+      - CoyotePoint

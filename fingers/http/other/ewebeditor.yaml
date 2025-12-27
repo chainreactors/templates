@@ -1,0 +1,5 @@
+- name: ewebeditor
+  rule:
+  - regexps:
+      body:
+      - /ewebeditor.htm?

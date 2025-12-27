@@ -1,0 +1,5 @@
+- name: mmonit
+  rule:
+  - regexps:
+      header:
+      - 'Server: mmonit'

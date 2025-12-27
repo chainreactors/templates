@@ -1,0 +1,8 @@
+- name: ueditor
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - ueditor.all
+      - ueditor.config.js
+    send_data: /ueditor

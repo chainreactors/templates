@@ -1,0 +1,6 @@
+- name: Smartbi
+  rule:
+  - regexps:
+      body:
+      - Smartbi 更聪明的大数据分析软件！
+      - smartbi.gcf.gcfutil

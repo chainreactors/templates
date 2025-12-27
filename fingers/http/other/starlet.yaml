@@ -1,0 +1,5 @@
+- name: starlet
+  rule:
+  - regexps:
+      header:
+      - Plack::Handler::Starlet

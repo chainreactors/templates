@@ -1,0 +1,5 @@
+- name: VMware Carbon Black EDR
+  rule:
+  - regexps:
+      body:
+      - VMware Carbon Black EDR

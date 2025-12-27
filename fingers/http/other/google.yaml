@@ -1,0 +1,5 @@
+- name: google
+  rule:
+  - favicon:
+      mmh3:
+      - '708578229'

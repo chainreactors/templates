@@ -1,0 +1,5 @@
+- name: comcast_business_gateway
+  rule:
+  - regexps:
+      body:
+      - Comcast Business Gateway

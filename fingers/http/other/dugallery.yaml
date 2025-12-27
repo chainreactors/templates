@@ -1,0 +1,6 @@
+- name: dugallery
+  rule:
+  - regexps:
+      body:
+      - Powered by DUportal
+      - DUgallery

@@ -1,0 +1,5 @@
+- name: Zscaler-FIREWALL
+  rule:
+  - regexps:
+      body:
+      - Welcome To Zscaler Directory Authentication

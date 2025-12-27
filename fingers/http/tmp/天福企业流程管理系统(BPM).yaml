@@ -1,0 +1,5 @@
+- name: 天福企业流程管理系统(BPM)
+  rule:
+  - regexps:
+      body:
+      - <title>天福企业流程管理系统(BPM)</title>

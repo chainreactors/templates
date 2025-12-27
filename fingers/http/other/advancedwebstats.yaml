@@ -1,0 +1,5 @@
+- name: advancedwebstats
+  rule:
+  - regexps:
+      body:
+      - caphyon-analytics.com/aws.js

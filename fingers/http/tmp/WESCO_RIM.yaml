@@ -1,0 +1,4 @@
+- name: WESCO RIM
+  rule:
+  - regexps:
+      header: null

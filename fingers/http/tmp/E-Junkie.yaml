@@ -1,0 +1,5 @@
+- name: E-Junkie
+  rule:
+  - regexps:
+      body:
+      - e-Junkie

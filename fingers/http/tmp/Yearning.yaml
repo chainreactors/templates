@@ -1,0 +1,6 @@
+- name: Yearning
+  link: http://jxs.junxing2020.com:8888/#/login
+  rule:
+  - regexps:
+      body:
+      - Yearning

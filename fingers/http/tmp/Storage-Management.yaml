@@ -1,0 +1,5 @@
+- name: Storage-Management
+  rule:
+  - regexps:
+      body:
+      - DD System Manager Login

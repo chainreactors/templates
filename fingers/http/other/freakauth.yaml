@@ -1,0 +1,5 @@
+- name: freakauth
+  rule:
+  - regexps:
+      header:
+      - FreakAuth

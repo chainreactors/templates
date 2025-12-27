@@ -1,0 +1,5 @@
+- name: 华为Anyoffice
+  rule:
+  - regexps:
+      body:
+      - /MDMServer/loginPage.action

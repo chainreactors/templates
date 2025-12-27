@@ -1,0 +1,5 @@
+- name: accrisoft
+  rule:
+  - favicon:
+      mmh3:
+      - '-1275148624'

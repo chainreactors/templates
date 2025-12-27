@@ -1,0 +1,5 @@
+- name: PORTAL 页面信息管理系统
+  rule:
+  - regexps:
+      body:
+      - PORTAL 页面信息管理系统

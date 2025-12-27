@@ -1,0 +1,6 @@
+- name: 润申信息企业标准化管理系统
+  link: http://106.39.117.91:2052/login.html
+  rule:
+  - regexps:
+      body:
+      - 润申信息

@@ -1,0 +1,5 @@
+- name: netport software
+  rule:
+  - favicon:
+      mmh3:
+      - '-1124868062'

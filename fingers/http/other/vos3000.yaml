@@ -1,0 +1,6 @@
+- name: vos3000
+  rule:
+  - regexps:
+      body:
+      - VOS3000
+      - images/vos3000.ico

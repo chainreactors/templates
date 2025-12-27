@@ -1,0 +1,5 @@
+- name: boaserver
+  rule:
+  - favicon:
+      mmh3:
+      - '1169183049'

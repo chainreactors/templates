@@ -1,0 +1,5 @@
+- name: Druid-Indexer-Coordinator
+  rule:
+  - regexps:
+      body:
+      - <meta name="Description" content="Druid

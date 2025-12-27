@@ -1,0 +1,5 @@
+- name: LD5200
+  rule:
+  - regexps:
+      header:
+      - Basic realm="RLE-CF LD5200"

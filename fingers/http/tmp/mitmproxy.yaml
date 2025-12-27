@@ -1,0 +1,5 @@
+- name: mitmproxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: mitmproxy'

@@ -1,0 +1,7 @@
+- name: accellion secure file transfer
+  rule:
+  - regexps:
+      body:
+      - Secured by Accellion
+      header:
+      - sfcurl=deleted;

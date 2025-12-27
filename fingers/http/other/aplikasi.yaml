@@ -1,0 +1,5 @@
+- name: aplikasi
+  rule:
+  - favicon:
+      mmh3:
+      - '494866796'

@@ -1,0 +1,5 @@
+- name: mobotix_camera
+  rule:
+  - regexps:
+      header:
+      - MOBOTIX Camera

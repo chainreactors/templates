@@ -1,0 +1,5 @@
+- name: motorola_sbg900
+  rule:
+  - regexps:
+      body:
+      - Motorola SBG900

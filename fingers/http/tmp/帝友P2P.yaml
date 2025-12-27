@@ -1,0 +1,5 @@
+- name: 帝友P2P
+  rule:
+  - regexps:
+      body:
+      - js/diyou.js

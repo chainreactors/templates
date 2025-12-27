@@ -1,0 +1,5 @@
+- name: TCWELL智能3D机房监控管理系统
+  rule:
+  - regexps:
+      body:
+      - TCWELL智能3D机房监控管理系统

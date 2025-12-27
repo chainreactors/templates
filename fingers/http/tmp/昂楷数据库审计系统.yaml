@@ -1,0 +1,5 @@
+- name: 昂楷数据库审计系统
+  rule:
+  - regexps:
+      body:
+      - 昂楷数据库审计系统

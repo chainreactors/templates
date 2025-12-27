@@ -1,0 +1,6 @@
+- name: 天柏在线培训/考试系统
+  rule:
+  - regexps:
+      body:
+      - App_Image/PXSystem
+      - App_Image/System

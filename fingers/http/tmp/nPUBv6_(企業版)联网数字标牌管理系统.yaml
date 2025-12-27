@@ -1,0 +1,5 @@
+- name: nPUBv6 (企業版)联网数字标牌管理系统
+  rule:
+  - regexps:
+      body:
+      - nPUBv6 (企業版)联网数字标牌管理系统

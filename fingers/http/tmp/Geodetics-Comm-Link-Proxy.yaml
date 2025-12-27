@@ -1,0 +1,5 @@
+- name: Geodetics-Comm-Link-Proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: Geodetics Comm Link Proxy'

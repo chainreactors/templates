@@ -1,0 +1,8 @@
+- name: calypso-ion-8r-device
+  rule:
+  - regexps:
+      body:
+      - Calypso ION-8r Device
+      - /A/cfg/entercmd.stm
+      header:
+      - Calypso ION8r Device

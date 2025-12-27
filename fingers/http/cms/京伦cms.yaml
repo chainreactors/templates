@@ -1,0 +1,5 @@
+- name: 京伦cms
+  rule:
+  - regexps:
+      body:
+      - jltech.cn

@@ -1,0 +1,5 @@
+- name: GOCD
+  rule:
+  - regexps:
+      body:
+      - current-gocd-version

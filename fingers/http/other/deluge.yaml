@@ -1,0 +1,5 @@
+- name: deluge
+  rule:
+  - favicon:
+      mmh3:
+      - '944969688'

@@ -1,0 +1,5 @@
+- name: webSPELL
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="webSPELL" />

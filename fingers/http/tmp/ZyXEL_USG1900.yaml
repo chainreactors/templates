@@ -1,0 +1,5 @@
+- name: ZyXEL USG1900
+  rule:
+  - regexps:
+      body:
+      - usg1900

@@ -1,0 +1,7 @@
+- name: 西门子SIEMENS IP-Cameras
+  rule:
+  - regexps:
+      body:
+      - SIEMENS IP-Camera
+      header:
+      - Basic realm="Compact Siemens WiFi Camera"

@@ -1,0 +1,6 @@
+- name: dadabik
+  rule:
+  - regexps:
+      body:
+      - content="DaDaBIK
+      - class="powered_by_dadabik

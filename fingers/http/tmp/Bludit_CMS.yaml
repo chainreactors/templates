@@ -1,0 +1,5 @@
+- name: Bludit CMS
+  rule:
+  - regexps:
+      body:
+      - content="Bludit CMS"

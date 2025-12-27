@@ -1,0 +1,5 @@
+- name: Neusoft NetEye Unified login
+  rule:
+  - regexps:
+      body:
+      - neteye 统一身份管控系统登录

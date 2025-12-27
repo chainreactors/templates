@@ -1,0 +1,5 @@
+- name: Sentrifugo
+  rule:
+  - regexps:
+      body:
+      - <title>Sentrifugo

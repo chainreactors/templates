@@ -1,0 +1,5 @@
+- name: brewblogger
+  rule:
+  - regexps:
+      body:
+      - developed by <a href="http://www.zkdigital.com

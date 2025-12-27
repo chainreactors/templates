@@ -1,0 +1,5 @@
+- name: OLAT
+  rule:
+  - regexps:
+      body:
+      - content="OLAT

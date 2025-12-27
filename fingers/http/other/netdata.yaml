@@ -1,0 +1,5 @@
+- name: netdata
+  rule:
+  - favicon:
+      mmh3:
+      - '1302486561'

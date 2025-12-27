@@ -1,0 +1,5 @@
+- name: Tiki-wiki-CMS
+  rule:
+  - regexps:
+      body:
+      - jquerytiki = new object

@@ -1,0 +1,5 @@
+- name: netgear readynas
+  rule:
+  - favicon:
+      mmh3:
+      - '-137295400'

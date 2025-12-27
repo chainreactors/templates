@@ -1,0 +1,7 @@
+- name: aspcms
+  rule:
+  - regexps:
+      body:
+      - Powered by ASPCMS
+      - content="ASPCMS
+      - /inc/AspCms_AdvJs.asp

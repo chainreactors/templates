@@ -1,0 +1,5 @@
+- name: k8s_dashboard
+  rule:
+  - regexps:
+      body:
+      - assets/images/kubernetes-logo.png

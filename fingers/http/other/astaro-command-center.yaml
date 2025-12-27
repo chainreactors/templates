@@ -1,0 +1,6 @@
+- name: astaro-command-center
+  rule:
+  - regexps:
+      body:
+      - /acc_aggregated_reporting.js
+      - /js/_variables_from_backend.js?

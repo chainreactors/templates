@@ -1,0 +1,7 @@
+- name: Map/Reduce
+  rule:
+  - regexps:
+      body:
+      - it looks like you are making an http request to a hadoop ipc port
+      header:
+      - mapreduce

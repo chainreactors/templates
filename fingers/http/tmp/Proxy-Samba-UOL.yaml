@@ -1,0 +1,5 @@
+- name: Proxy-Samba-UOL
+  rule:
+  - regexps:
+      header:
+      - 'Server: Proxy-Samba UOL'

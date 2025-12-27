@@ -1,0 +1,5 @@
+- name: PageAdmin-CMS
+  rule:
+  - regexps:
+      body:
+      - PageAdmin

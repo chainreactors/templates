@@ -1,0 +1,5 @@
+- name: cnzz
+  rule:
+  - regexps:
+      body:
+      - cnzz.com/stat.php?id=

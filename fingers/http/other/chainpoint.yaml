@@ -1,0 +1,5 @@
+- name: chainpoint
+  rule:
+  - favicon:
+      mmh3:
+      - '2128230701'

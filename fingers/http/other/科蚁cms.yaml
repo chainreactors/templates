@@ -1,0 +1,6 @@
+- name: 科蚁cms
+  rule:
+  - regexps:
+      body:
+      - keyicms：keyicms
+      - Powered by <a href="http://www.keyicms.com

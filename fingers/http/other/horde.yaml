@@ -1,0 +1,7 @@
+- name: horde
+  rule:
+  - regexps:
+      body:
+      - 'IMP: Copyright 2001-2009 The Horde Project'
+      header:
+      - 'Set-Cookie: Horde'

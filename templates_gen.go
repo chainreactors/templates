@@ -119,7 +119,9 @@ func recuLoadFinger(dir string, isJson bool) string {
 	}
 	var pocs []interface{}
 	for _, file := range files {
-		filename := filepath.Base(file)
+		// 使用父目录名作为 tag，而不是文件名
+		// 例如: fingers/http/cdn/aliyun.yaml -> tag 为 "cdn"
+		parentDir := filepath.Base(filepath.Dir(file))
 		var tmp interface{}
 		bs, err := os.ReadFile(file)
 		if err != nil {
@@ -139,7 +141,7 @@ func recuLoadFinger(dir string, isJson bool) string {
 		for i, finger := range fingers {
 			f := finger.(map[string]interface{})
 			f["link"] = ""
-			f["tag"] = []string{strings.TrimSuffix(filename, ".yaml")}
+			f["tag"] = []string{parentDir}
 			fingers[i] = f
 		}
 		pocs = append(pocs, fingers...)

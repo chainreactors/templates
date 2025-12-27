@@ -1,0 +1,5 @@
+- name: 牛逼cms
+  rule:
+  - regexps:
+      body:
+      - content="niubicms

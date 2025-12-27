@@ -1,0 +1,5 @@
+- name: 山石网科Hillstone 安全审计平台
+  rule:
+  - regexps:
+      body:
+      - Hillstone安全审计平台

@@ -1,0 +1,5 @@
+- name: multilaser
+  rule:
+  - favicon:
+      mmh3:
+      - '916642917'

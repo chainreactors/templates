@@ -1,0 +1,5 @@
+- name: Jspxcms
+  rule:
+  - regexps:
+      body:
+      - /bluewise/_files/jspxcms.css

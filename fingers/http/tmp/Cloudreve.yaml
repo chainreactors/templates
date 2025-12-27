@@ -1,0 +1,6 @@
+- name: Cloudreve
+  link: http://139.9.179.80:9001/login
+  rule:
+  - regexps:
+      body:
+      - Cloudreve

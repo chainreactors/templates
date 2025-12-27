@@ -1,0 +1,5 @@
+- name: D Link WiFiManager
+  rule:
+  - regexps:
+      body:
+      - D-Link Central WiFiManager

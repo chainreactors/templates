@@ -1,0 +1,6 @@
+- name: diywap
+  rule:
+  - regexps:
+      body:
+      - web980
+      - bannerNum

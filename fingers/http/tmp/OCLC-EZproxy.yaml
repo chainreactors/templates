@@ -1,0 +1,5 @@
+- name: OCLC-EZproxy
+  rule:
+  - regexps:
+      body:
+      - 'Server: EZproxy'

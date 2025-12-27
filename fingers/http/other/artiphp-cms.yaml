@@ -1,0 +1,5 @@
+- name: artiphp-cms
+  rule:
+  - regexps:
+      body:
+      - copyright Artiphp

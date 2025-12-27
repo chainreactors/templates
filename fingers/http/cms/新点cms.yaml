@@ -1,0 +1,8 @@
+- name: 新点cms
+  focus: true
+  rule:
+  - regexps:
+      header:
+      - epointserver
+      body:
+      - webBuilderCommon

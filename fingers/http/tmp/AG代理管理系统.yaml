@@ -1,0 +1,5 @@
+- name: AG代理管理系统
+  rule:
+  - regexps:
+      body:
+      - AG代理管理系统

@@ -1,0 +1,5 @@
+- name: TwilightCMS
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-Cms: Twilight CMS'

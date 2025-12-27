@@ -1,0 +1,6 @@
+- name: smartbi
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - smartbi.gcf.gcfutil

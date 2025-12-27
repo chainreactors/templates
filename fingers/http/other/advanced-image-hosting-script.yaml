@@ -1,0 +1,6 @@
+- name: advanced-image-hosting-script
+  rule:
+  - regexps:
+      body:
+      - yabsoft.com
+      - Welcome to install AIHS Script

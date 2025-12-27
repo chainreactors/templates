@@ -1,0 +1,5 @@
+- name: nProxy-代理工具
+  rule:
+  - regexps:
+      header:
+      - 'Server: nProxy'

@@ -1,0 +1,7 @@
+- name: startbbs
+  rule:
+  - regexps:
+      body:
+      - content="Startbbs
+      header:
+      - stb_csrf_cookie

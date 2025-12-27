@@ -1,0 +1,5 @@
+- name: AI电话机器人管理平台
+  rule:
+  - regexps:
+      body:
+      - AI电话机器人管理平台

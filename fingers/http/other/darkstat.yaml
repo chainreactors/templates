@@ -1,0 +1,5 @@
+- name: darkstat
+  rule:
+  - regexps:
+      header:
+      - darkstat

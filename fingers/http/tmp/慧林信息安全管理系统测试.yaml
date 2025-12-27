@@ -1,0 +1,5 @@
+- name: 慧林信息安全管理系统测试
+  rule:
+  - regexps:
+      body:
+      - <span style="color:red">慧林信息安全管理系统测试页面</span>

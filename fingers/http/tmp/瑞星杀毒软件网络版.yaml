@@ -1,0 +1,5 @@
+- name: 瑞星杀毒软件网络版
+  rule:
+  - regexps:
+      body:
+      - <TITLE>瑞星杀毒软件网络版WEB安装

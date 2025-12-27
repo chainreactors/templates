@@ -1,0 +1,5 @@
+- name: freebox os
+  rule:
+  - favicon:
+      mmh3:
+      - '1838417872'

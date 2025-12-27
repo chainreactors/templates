@@ -1,0 +1,5 @@
+- name: 信安世纪 NetAuth统一身份认证管理系统
+  rule:
+  - regexps:
+      body:
+      - NetAuth统一身份认证管理系统

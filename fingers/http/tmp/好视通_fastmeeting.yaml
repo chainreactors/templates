@@ -1,0 +1,6 @@
+- name: 好视通 fastmeeting
+  rule:
+  - regexps:
+      body:
+      - <meta http-equiv="description" content="fsmeeting">
+      - fastmeeting

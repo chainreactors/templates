@@ -1,0 +1,6 @@
+- name: 任我行 CRM
+  rule:
+  - regexps:
+      body:
+      - /resources/imgs/defaultannex/loginpictures/
+      - 欢迎使用任我行crm

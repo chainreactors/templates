@@ -1,0 +1,5 @@
+- name: SpamTitan
+  rule:
+  - regexps:
+      body:
+      - SpamTitan

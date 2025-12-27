@@ -1,0 +1,7 @@
+- name: BlueCoat-SG
+  rule:
+  - regexps:
+      body:
+      - Blue Coat SG
+      header:
+      - BlueCoat-Security-Appliance

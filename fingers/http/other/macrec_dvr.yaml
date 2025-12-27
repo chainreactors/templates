@@ -1,0 +1,5 @@
+- name: macrec_dvr
+  rule:
+  - regexps:
+      body:
+      - Macrec DVR

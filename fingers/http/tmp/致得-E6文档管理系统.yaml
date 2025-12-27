@@ -1,0 +1,5 @@
+- name: 致得-E6文档管理系统
+  rule:
+  - regexps:
+      body:
+      - E6文档管理系统

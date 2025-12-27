@@ -1,0 +1,5 @@
+- name: zikula_cms
+  rule:
+  - regexps:
+      header:
+      - ZKSID2

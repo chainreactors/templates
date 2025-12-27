@@ -1,0 +1,7 @@
+- name: jcow
+  rule:
+  - regexps:
+      body:
+      - content="Jcow
+      - content="Powered by Jcow
+      - end jcow_application_box

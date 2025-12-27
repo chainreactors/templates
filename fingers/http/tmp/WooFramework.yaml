@@ -1,0 +1,5 @@
+- name: WooFramework
+  rule:
+  - regexps:
+      body:
+      - content="WooFramework

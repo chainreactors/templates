@@ -1,0 +1,6 @@
+- name: enigma2
+  rule:
+  - regexps:
+      body:
+      - href="/web/movielist.rss?tag
+      - Enigma2 WebControl

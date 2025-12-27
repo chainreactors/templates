@@ -1,0 +1,6 @@
+- name: 郑州信源招标系统
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - static_resources/skin/css/master.css

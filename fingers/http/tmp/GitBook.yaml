@@ -1,0 +1,6 @@
+- name: GitBook
+  link: https://o69iay0p.feifengfa.top/
+  rule:
+  - regexps:
+      body:
+      - gitbook

@@ -1,0 +1,5 @@
+- name: Jstorm
+  rule:
+  - regexps:
+      body:
+      - <title>Jstorm</title>

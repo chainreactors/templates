@@ -1,0 +1,25 @@
+- name: smartbi
+  level: 2
+  rule:
+  - regexps:
+      body:
+      - smartbi-version
+      - smartbi.gcf.gcfutil
+      - writeCustomBgImg.jsp?theType=LoginLogo
+      - smartbiVersion
+      - Smartbi Server Administration Console
+    send_data: /vision/index.jsp
+  - regexps:
+      body:
+      - smartbi-version
+      - smartbi.gcf.gcfutil
+      - writeCustomBgImg.jsp?theType=LoginLogo
+      - smartbiVersion
+      - Smartbi Server Administration Console
+    send_data: /smartbi/index.jsp
+  - regexps:
+      body:
+      - vision/index.jsp
+      header:
+      - Path=/smartbi
+    send_data: /smartbi/

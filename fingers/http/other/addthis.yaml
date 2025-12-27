@@ -1,0 +1,5 @@
+- name: addthis
+  rule:
+  - regexps:
+      body:
+      - addthis.com/js/

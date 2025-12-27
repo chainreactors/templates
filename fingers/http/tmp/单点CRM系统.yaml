@@ -1,0 +1,5 @@
+- name: 单点CRM系统
+  rule:
+  - regexps:
+      body:
+      - content="单点CRM系统

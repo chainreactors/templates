@@ -1,0 +1,5 @@
+- name: E-Xoopport
+  rule:
+  - regexps:
+      body:
+      - content="E-Xoopport

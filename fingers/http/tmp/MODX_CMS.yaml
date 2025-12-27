@@ -1,0 +1,5 @@
+- name: MODX CMS
+  rule:
+  - regexps:
+      body:
+      - content="MODX CMS"

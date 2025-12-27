@@ -1,0 +1,5 @@
+- name: crushftp
+  rule:
+  - favicon:
+      mmh3:
+      - '-1022206565'

@@ -1,0 +1,5 @@
+- name: KVM 余跃云计算管理系统
+  rule:
+  - regexps:
+      body:
+      - KVM_余跃云计算管理系统

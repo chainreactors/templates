@@ -1,0 +1,5 @@
+- name: 速达荣耀G5.net
+  rule:
+  - regexps:
+      body:
+      - 速达荣耀G5.net

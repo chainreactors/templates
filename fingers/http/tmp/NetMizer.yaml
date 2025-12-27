@@ -1,0 +1,5 @@
+- name: NetMizer
+  rule:
+  - regexps:
+      body:
+      - NetMizer

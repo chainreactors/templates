@@ -1,0 +1,5 @@
+- name: openstack
+  rule:
+  - favicon:
+      mmh3:
+      - '-923088984'

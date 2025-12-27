@@ -1,0 +1,6 @@
+- name: phpmps
+  rule:
+  - regexps:
+      body:
+      - Powered by Phpmps
+      - templates/phpmps/style/index.css

@@ -1,0 +1,5 @@
+- name: 爱施德上网管理系统
+  rule:
+  - regexps:
+      body:
+      - 爱施德上网管理系统

@@ -1,0 +1,6 @@
+- name: 悟空CRM
+  rule:
+  - regexps:
+      body:
+      - 悟空CRM
+      - <div class="row-fluid wukong">

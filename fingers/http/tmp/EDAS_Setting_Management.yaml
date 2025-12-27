@@ -1,0 +1,6 @@
+- name: EDAS Setting Management
+  rule:
+  - regexps:
+      body:
+      - edas配置中心
+      - lcccommoncontroller

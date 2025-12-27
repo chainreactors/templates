@@ -1,0 +1,5 @@
+- name: Epygi ecQX
+  rule:
+  - regexps:
+      body:
+      - epygi <span class="product-name">ecqx

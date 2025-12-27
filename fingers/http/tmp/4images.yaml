@@ -1,0 +1,5 @@
+- name: 4images
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: 4images_userid=-1'

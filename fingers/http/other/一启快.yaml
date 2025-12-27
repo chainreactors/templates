@@ -1,0 +1,5 @@
+- name: 一启快
+  rule:
+  - regexps:
+      header:
+      - yiqikuai.com

@@ -1,0 +1,5 @@
+- name: DLink ShareCenter
+  rule:
+  - regexps:
+      body:
+      - In order to access the ShareCenter

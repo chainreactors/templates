@@ -1,0 +1,5 @@
+- name: 橙树网络 建站系统
+  rule:
+  - regexps:
+      body:
+      - 技术支持：橙树网络

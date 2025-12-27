@@ -1,0 +1,7 @@
+- name: cgi:irc
+  rule:
+  - regexps:
+      body:
+      - CGI:IRC Login
+      - <!-- This is part of CGI:IRC
+      - <small id="ietest"><a href="http://cgiirc.org/

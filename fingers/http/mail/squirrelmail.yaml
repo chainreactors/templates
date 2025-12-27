@@ -1,0 +1,5 @@
+- name: squirrelmail
+  rule:
+  - regexps:
+      header:
+      - SQMSESSID

@@ -1,0 +1,7 @@
+- name: YunsuoWAF
+  rule:
+  - regexps:
+      header:
+      - yunsuo_session
+      body:
+      - yunsuologo

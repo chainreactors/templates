@@ -1,0 +1,5 @@
+- name: blue-coat-proxysg
+  rule:
+  - regexps:
+      header:
+      - proxysg

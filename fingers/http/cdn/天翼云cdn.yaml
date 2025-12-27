@@ -1,0 +1,7 @@
+- name: 天翼云cdn
+  rule:
+  - regexps:
+      header:
+      - hotload rechange server uri format error
+      cert:
+      - ctcdn.cn

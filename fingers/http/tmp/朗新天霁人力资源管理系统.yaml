@@ -1,0 +1,8 @@
+- name: 朗新天霁人力资源管理系统
+  rule:
+  - regexps:
+      body:
+      - hrsoft.com.cn
+    favicon:
+      mmh3:
+      - '1143915194'

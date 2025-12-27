@@ -1,0 +1,5 @@
+- name: vue框架
+  rule:
+  - regexps:
+      body:
+      - vue.js

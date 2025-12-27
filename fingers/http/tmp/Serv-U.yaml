@@ -1,0 +1,6 @@
+- name: Serv-U
+  link: http://180.138.16.146:9003/
+  rule:
+  - favicon:
+      mmh3:
+      - '812385209'

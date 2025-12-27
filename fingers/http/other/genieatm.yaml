@@ -1,0 +1,7 @@
+- name: genieatm
+  rule:
+  - regexps:
+      body:
+      - GenieATM
+      - Copyright© Genie Networks Ltd.
+      - defect 3531

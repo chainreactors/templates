@@ -1,0 +1,7 @@
+- name: advantech-webaccess
+  rule:
+  - regexps:
+      body:
+      - /bw_templete1.dwt
+      - /broadweb/WebAccessClientSetup.exe
+      - /broadWeb/bwuconfig.asp

@@ -1,0 +1,6 @@
+- name: phpwind
+  rule:
+  - regexps:
+      body:
+      - Powered by phpwind
+      - content="phpwind

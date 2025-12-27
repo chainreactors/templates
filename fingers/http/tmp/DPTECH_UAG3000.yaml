@@ -1,0 +1,5 @@
+- name: DPTECH UAG3000
+  rule:
+  - regexps:
+      body:
+      - dptech uag3000

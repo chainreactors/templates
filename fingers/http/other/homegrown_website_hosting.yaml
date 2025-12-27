@@ -1,0 +1,5 @@
+- name: homegrown website hosting
+  rule:
+  - favicon:
+      mmh3:
+      - '-421986013'

@@ -1,0 +1,5 @@
+- name: AliyunMQS
+  rule:
+  - regexps:
+      header:
+      - 'Server: AliyunMQS'

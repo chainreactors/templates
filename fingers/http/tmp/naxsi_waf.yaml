@@ -1,0 +1,5 @@
+- name: naxsi waf
+  rule:
+  - regexps:
+      header:
+      - 'X-Data-Origin: naxsi-waf'

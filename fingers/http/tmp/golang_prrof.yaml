@@ -1,0 +1,5 @@
+- name: golang prrof
+  rule:
+  - regexps:
+      body:
+      - /debug/pprof/

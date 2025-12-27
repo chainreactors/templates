@@ -1,0 +1,5 @@
+- name: codeigniter
+  rule:
+  - regexps:
+      header:
+      - ci_session

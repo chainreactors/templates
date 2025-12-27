@@ -1,0 +1,5 @@
+- name: H3C WEB应用防火墙
+  rule:
+  - regexps:
+      body:
+      - h3c web应用防火墙

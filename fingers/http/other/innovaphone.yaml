@@ -1,0 +1,5 @@
+- name: innovaphone
+  rule:
+  - favicon:
+      mmh3:
+      - '671221099'

@@ -1,0 +1,6 @@
+- name: FortiWeb
+  rule:
+  - regexps:
+      header:
+      - FORTIWAFSID
+      - FortiWeb

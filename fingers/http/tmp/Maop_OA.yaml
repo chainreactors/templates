@@ -1,0 +1,6 @@
+- name: Maop OA
+  rule:
+  - regexps:
+      body:
+      - href="http://www.oooa.cn">重庆猫扑网络科技有限公司</a>
+      - for 猫扑oa

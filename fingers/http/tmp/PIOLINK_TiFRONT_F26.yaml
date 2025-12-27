@@ -1,0 +1,5 @@
+- name: PIOLINK TiFRONT F26
+  rule:
+  - regexps:
+      body:
+      - tifront-f26

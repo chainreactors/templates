@@ -1,0 +1,6 @@
+- name: McAfee-ePolicy-Orchestrator
+  rule:
+  - regexps:
+      header:
+      - 'Server: Undefined Product Name - define product and version info in config/branding
+        0.0.0'

@@ -1,0 +1,5 @@
+- name: springsecurity
+  rule:
+  - regexps:
+      body:
+      - Full authentication is required

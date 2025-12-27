@@ -1,0 +1,6 @@
+- name: 蓝凌KK
+  link: http://220.163.27.125:8090/login.jsp;jsessionid=D7D8359E4D01089E270776B5071AEBB1
+  rule:
+  - regexps:
+      body:
+      - 蓝凌KK

@@ -1,0 +1,10 @@
+- name: 一洽echatsoft 在线客服系统
+  rule:
+  - favicon:
+      mmh3:
+      - '-900552206'
+    regexps:
+      body:
+      - www.echatsoft.com
+      - Echat客服
+      - 一洽客服

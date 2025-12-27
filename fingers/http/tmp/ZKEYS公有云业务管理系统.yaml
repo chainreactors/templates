@@ -1,0 +1,5 @@
+- name: ZKEYS公有云业务管理系统
+  rule:
+  - regexps:
+      body:
+      - ZKEYS公有云业务管理系统

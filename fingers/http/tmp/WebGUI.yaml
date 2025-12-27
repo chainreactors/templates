@@ -1,0 +1,5 @@
+- name: WebGUI
+  rule:
+  - regexps:
+      header:
+      - 'Server: WebGUI'

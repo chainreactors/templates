@@ -1,0 +1,8 @@
+- name: Sophos 安全产品
+  rule:
+  - favicon:
+      mmh3:
+      - '1601194732'
+    regexps:
+      body:
+      - Sophos

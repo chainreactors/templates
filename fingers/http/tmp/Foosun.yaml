@@ -1,0 +1,5 @@
+- name: Foosun
+  rule:
+  - regexps:
+      body:
+      - For Foosun

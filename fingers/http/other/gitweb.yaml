@@ -1,0 +1,7 @@
+- name: gitweb
+  rule:
+  - regexps:
+      body:
+      - content="gitweb
+      - /gitweb.css
+      - /gitweb.js

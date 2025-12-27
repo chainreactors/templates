@@ -1,0 +1,9 @@
+- name: 中搜WEB服务器
+  rule:
+  - regexps:
+      header:
+      - ASUSTeK UPnP/1.0 MiniUPnPd/1.4 AirTies/ASP 1.0 UPnP/1.0 miniupnpd/1.0 Apache-Coyote/1.1
+        Boa/0.94.13 Boa/0.94.14rc21 Camera Web Server CouchDB/1.6.1 (Erlang OTP/18)
+        Cross Web Server DNVRS-Webs DVRDVS-Webs DasanNetwork Solution Debian/4.0 UPnP/1.0
+        miniupnpd/1.0 DWS GoAhead-Webs HTTP Server Hikvision-Webs IPCamera-Webs JAWS/1.0
+        Jan 21 2017

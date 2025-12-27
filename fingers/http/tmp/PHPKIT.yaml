@@ -1,0 +1,5 @@
+- name: PHPKIT
+  rule:
+  - regexps:
+      body:
+      - content="PHPKIT WCMS

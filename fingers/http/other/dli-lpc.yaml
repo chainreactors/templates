@@ -1,0 +1,5 @@
+- name: dli-lpc
+  rule:
+  - regexps:
+      header:
+      - DLILPC=

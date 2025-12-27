@@ -1,0 +1,5 @@
+- name: eZ-Publish
+  rule:
+  - regexps:
+      header:
+      - eZSessionCookie

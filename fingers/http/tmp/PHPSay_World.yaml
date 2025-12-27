@@ -1,0 +1,5 @@
+- name: PHPSay World
+  rule:
+  - regexps:
+      body:
+      - content="PHPSay World

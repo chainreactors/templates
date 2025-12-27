@@ -1,0 +1,5 @@
+- name: RICHCOMM 微模块机房动力环境监控系统
+  rule:
+  - regexps:
+      body:
+      - 微模块机房动力环境监控系统

@@ -1,0 +1,5 @@
+- name: 68 Classifieds
+  rule:
+  - regexps:
+      body:
+      - 68 Classifieds

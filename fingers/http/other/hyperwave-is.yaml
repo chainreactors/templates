@@ -1,0 +1,5 @@
+- name: hyperwave-is
+  rule:
+  - regexps:
+      header:
+      - Hyperwave

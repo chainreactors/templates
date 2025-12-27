@@ -1,0 +1,5 @@
+- name: footprint
+  rule:
+  - regexps:
+      header:
+      - Footprint

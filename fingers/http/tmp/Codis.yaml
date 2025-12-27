@@ -1,0 +1,5 @@
+- name: Codis
+  rule:
+  - regexps:
+      body:
+      - <title>Codis</title>

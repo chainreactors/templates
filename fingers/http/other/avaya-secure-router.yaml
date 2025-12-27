@@ -1,0 +1,8 @@
+- name: avaya-secure-router
+  rule:
+  - regexps:
+      body:
+      - <b>About Avaya Secure Router</b>
+      - <span id="guiname">Avaya Secure Router
+      header:
+      - Avaya Http Server

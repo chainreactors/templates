@@ -1,0 +1,5 @@
+- name: windriver设备
+  rule:
+  - regexps:
+      header:
+      - WindRiver-WebServer

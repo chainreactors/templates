@@ -1,0 +1,5 @@
+- name: Elasticsearch sql
+  rule:
+  - regexps:
+      body:
+      - <title>Elasticsearch-sql

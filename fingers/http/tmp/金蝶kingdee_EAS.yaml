@@ -1,0 +1,6 @@
+- name: 金蝶kingdee EAS
+  rule:
+  - regexps:
+      body:
+      - /eassso/
+      - 金蝶国际软件集团有限公司

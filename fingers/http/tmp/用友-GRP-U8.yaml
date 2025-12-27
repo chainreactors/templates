@@ -1,0 +1,5 @@
+- name: 用友-GRP-U8
+  rule:
+  - regexps:
+      body:
+      - 用友GRP-U8

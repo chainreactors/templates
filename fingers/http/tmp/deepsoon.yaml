@@ -1,0 +1,6 @@
+- name: deepsoon
+  rule:
+  - regexps:
+      body:
+      - www.deepsoon.com
+      - Powered by deep soon

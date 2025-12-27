@@ -1,0 +1,6 @@
+- name: 天融信edr
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - 天融信终端威胁防御系统

@@ -1,0 +1,5 @@
+- name: ASPCMS
+  rule:
+  - regexps:
+      body:
+      - src="/inc/AspCms

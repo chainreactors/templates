@@ -1,0 +1,5 @@
+- name: schneider设备
+  rule:
+  - regexps:
+      body:
+      - schneider

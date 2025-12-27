@@ -1,0 +1,6 @@
+- name: dorg
+  rule:
+  - regexps:
+      body:
+      - 'DORG - '
+      - CONTENT="DORG

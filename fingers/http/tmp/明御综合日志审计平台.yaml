@@ -1,0 +1,5 @@
+- name: 明御综合日志审计平台
+  rule:
+  - regexps:
+      body:
+      - 明御

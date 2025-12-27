@@ -1,0 +1,5 @@
+- name: Mikrotik HttpProxy
+  rule:
+  - regexps:
+      header:
+      - Mikrotik HttpProxy

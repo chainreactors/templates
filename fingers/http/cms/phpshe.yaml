@@ -1,0 +1,6 @@
+- name: phpshe
+  rule:
+  - regexps:
+      body:
+      - Powered by phpshe
+      - content="phpshe

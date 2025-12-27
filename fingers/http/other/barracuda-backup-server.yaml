@@ -1,0 +1,5 @@
+- name: barracuda-backup-server
+  rule:
+  - regexps:
+      header:
+      - BACKUP_LOCAL_LOCALE

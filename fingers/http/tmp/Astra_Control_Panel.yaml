@@ -1,0 +1,5 @@
+- name: Astra Control Panel
+  rule:
+  - regexps:
+      body:
+      - Astra Control Panel

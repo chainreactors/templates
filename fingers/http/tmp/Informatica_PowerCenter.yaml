@@ -1,0 +1,6 @@
+- name: Informatica PowerCenter
+  rule:
+  - regexps:
+      body:
+      - informatica administrator
+      - action="/adminconsole/loginsubmit.do

@@ -1,0 +1,6 @@
+- name: 泰康 人脸识别日志管理系统
+  rule:
+  - regexps:
+      body:
+      - 人脸识别日志管理系统
+      - http://statics-1251329614.file.myqcloud.com/img/logo1.png

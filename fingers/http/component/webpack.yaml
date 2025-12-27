@@ -1,0 +1,6 @@
+- name: webpack
+  rule:
+  - regexps:
+      body:
+      - chunk-vendors
+      - webpack://

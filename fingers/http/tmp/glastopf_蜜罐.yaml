@@ -1,0 +1,6 @@
+- name: glastopf 蜜罐
+  rule:
+  - regexps:
+      body:
+      - Please post your comments for the blog
+      - Blog Comments

@@ -1,0 +1,6 @@
+- name: WPS部署可视化平台
+  link: http://47.93.161.45:8081/account/login
+  rule:
+  - regexps:
+      body:
+      - WPS 部署可视化平台

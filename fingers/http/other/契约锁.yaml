@@ -1,0 +1,8 @@
+- name: 契约锁
+  rule:
+  - regexps:
+      body:
+      - /qyswebapp
+  - favicon:
+      mmh3:
+      - '738823048'

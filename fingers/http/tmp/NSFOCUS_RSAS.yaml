@@ -1,0 +1,5 @@
+- name: NSFOCUS RSAS
+  rule:
+  - regexps:
+      body:
+      - /login_logo_rsas_zh_cn.png

@@ -1,0 +1,5 @@
+- name: squarespace建站
+  rule:
+  - regexps:
+      header:
+      - squarespace.net

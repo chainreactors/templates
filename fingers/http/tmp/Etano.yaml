@@ -1,0 +1,5 @@
+- name: Etano
+  rule:
+  - regexps:
+      body:
+      - title="Etano community builder"

@@ -1,0 +1,6 @@
+- name: Tensorboard
+  rule:
+  - regexps:
+      body:
+      - TensorBoard
+      - The TensorFlow Authors

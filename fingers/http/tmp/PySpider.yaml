@@ -1,0 +1,6 @@
+- name: PySpider
+  link: http://18.190.59.149/
+  rule:
+  - regexps:
+      body:
+      - pyspider dashboard

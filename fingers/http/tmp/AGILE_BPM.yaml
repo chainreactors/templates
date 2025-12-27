@@ -1,0 +1,5 @@
+- name: AGILE BPM
+  rule:
+  - regexps:
+      body:
+      - class="logo-element">agile-bpm

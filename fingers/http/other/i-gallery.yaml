@@ -1,0 +1,6 @@
+- name: i-gallery
+  rule:
+  - regexps:
+      body:
+      - i-Gallery
+      - href="igallery.asp

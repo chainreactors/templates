@@ -1,0 +1,5 @@
+- name: TerraMaster-存储系统
+  rule:
+  - regexps:
+      body:
+      - TerraMaster 系统管理

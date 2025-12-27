@@ -1,0 +1,5 @@
+- name: EasywebCMS
+  rule:
+  - regexps:
+      header:
+      - 'Generator: Easyweb CMS'

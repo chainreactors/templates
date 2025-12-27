@@ -1,0 +1,6 @@
+- name: 新软科技 极通EWEBS
+  rule:
+  - regexps:
+      body:
+      - EWEBSClientsetup
+      - 极通应用虚拟化系统

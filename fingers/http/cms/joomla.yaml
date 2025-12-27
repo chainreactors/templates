@@ -1,0 +1,11 @@
+- name: joomla
+  rule:
+  - regexps:
+      body:
+      - mootools-core.js
+      - Joomla
+    favicon:
+      mmh3:
+      - '366524387'
+      - '1627330242'
+      - '-1950415971'

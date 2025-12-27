@@ -1,0 +1,5 @@
+- name: PEM经销商辅导管理系统
+  rule:
+  - regexps:
+      body:
+      - PEM经销商辅导管理系统

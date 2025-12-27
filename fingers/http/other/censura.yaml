@@ -1,0 +1,5 @@
+- name: censura
+  rule:
+  - regexps:
+      body:
+      - 'Powered by: <a href="http://www.censura.info'

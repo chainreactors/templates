@@ -1,0 +1,5 @@
+- name: Fanwe方维 外卖系统
+  rule:
+  - regexps:
+      body:
+      - 方维外卖

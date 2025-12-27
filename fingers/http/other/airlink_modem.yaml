@@ -1,0 +1,5 @@
+- name: airlink_modem
+  rule:
+  - regexps:
+      header:
+      - Modem@AirLink.com

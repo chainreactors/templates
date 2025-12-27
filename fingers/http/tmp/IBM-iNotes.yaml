@@ -1,0 +1,9 @@
+- name: IBM-iNotes
+  link: https://pop.pyhospital.com.cn:9445/
+  rule:
+  - regexps:
+      body:
+      - IBM iNotes
+    favicon:
+      mmh3:
+      - '728788645'

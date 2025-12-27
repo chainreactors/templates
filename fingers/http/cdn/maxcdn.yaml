@@ -1,0 +1,5 @@
+- name: maxcdn
+  rule:
+  - regexps:
+      header:
+      - NetDNA

@@ -1,0 +1,8 @@
+- name: phabricator
+  rule:
+  - regexps:
+      body:
+      - phabricator-application-launch-container
+      - res/phabricator
+      header:
+      - phsid

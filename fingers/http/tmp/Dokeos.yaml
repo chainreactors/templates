@@ -1,0 +1,5 @@
+- name: Dokeos
+  rule:
+  - regexps:
+      body:
+      - target="_blank">Dokeos

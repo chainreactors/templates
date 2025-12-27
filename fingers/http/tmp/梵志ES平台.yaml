@@ -1,0 +1,5 @@
+- name: 梵志ES平台
+  rule:
+  - regexps:
+      body:
+      - 梵志ES平台

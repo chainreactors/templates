@@ -1,0 +1,9 @@
+- name: BackupPC
+  rule:
+  - regexps:
+      body:
+      - BackupPC_Admin
+      - BackupPC Server Status
+      header:
+      - BackupPC_Admin
+      - Basic realm="BackupPC

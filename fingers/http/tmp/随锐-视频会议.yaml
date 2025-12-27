@@ -1,0 +1,5 @@
+- name: 随锐-视频会议
+  rule:
+  - regexps:
+      body:
+      - 版权所有：随锐科技

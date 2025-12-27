@@ -1,0 +1,6 @@
+- name: OpenTSDB
+  link: http://wulian.hnbrdq.com:9009/
+  rule:
+  - favicon:
+      mmh3:
+      - '407286339'

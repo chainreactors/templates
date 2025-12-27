@@ -1,0 +1,5 @@
+- name: tecvoz
+  rule:
+  - favicon:
+      mmh3:
+      - '-1452159623'

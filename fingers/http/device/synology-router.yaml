@@ -1,0 +1,5 @@
+- name: synology-router
+  rule:
+  - regexps:
+      body:
+      - synologyrouter

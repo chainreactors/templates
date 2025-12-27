@@ -1,0 +1,5 @@
+- name: slackware
+  rule:
+  - regexps:
+      header:
+      - Slackware

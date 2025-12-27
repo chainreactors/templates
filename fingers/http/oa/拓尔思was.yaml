@@ -1,0 +1,5 @@
+- name: 拓尔思was
+  rule:
+  - regexps:
+      body:
+      - trs_web_style.css

@@ -1,0 +1,5 @@
+- name: yungoucms
+  rule:
+  - regexps:
+      body:
+      - yungou/images/

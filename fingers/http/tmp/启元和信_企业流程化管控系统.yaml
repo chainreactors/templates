@@ -1,0 +1,5 @@
+- name: 启元和信 企业流程化管控系统
+  rule:
+  - regexps:
+      body:
+      - company">企业流程化管控系统

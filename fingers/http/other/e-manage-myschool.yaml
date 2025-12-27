@@ -1,0 +1,5 @@
+- name: e-manage-myschool
+  rule:
+  - regexps:
+      body:
+      - E-Manage All Rights Reserved MySchool Version

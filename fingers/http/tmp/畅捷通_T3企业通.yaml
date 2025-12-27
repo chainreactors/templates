@@ -1,0 +1,5 @@
+- name: 畅捷通 T3企业通
+  rule:
+  - regexps:
+      body:
+      - 畅捷通服务专线

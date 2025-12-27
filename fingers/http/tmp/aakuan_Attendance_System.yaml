@@ -1,0 +1,5 @@
+- name: aakuan Attendance System
+  rule:
+  - regexps:
+      body:
+      - aakuan.cn All Right Reserved

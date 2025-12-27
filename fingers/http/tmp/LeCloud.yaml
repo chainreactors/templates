@@ -1,0 +1,5 @@
+- name: LeCloud
+  rule:
+  - regexps:
+      body:
+      - LeCloud

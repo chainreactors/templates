@@ -1,0 +1,6 @@
+- name: jcg无线路由器
+  rule:
+  - regexps:
+      body:
+      - Wireless Router
+      - http://www.jcgcn.com

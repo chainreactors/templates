@@ -1,0 +1,7 @@
+- name: phpbb
+  rule:
+  - regexps:
+      body:
+      - phpBB
+      header:
+      - HttpOnly, phpbb3_

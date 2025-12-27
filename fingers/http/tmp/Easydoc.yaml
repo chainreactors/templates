@@ -1,0 +1,5 @@
+- name: Easydoc
+  rule:
+  - regexps:
+      body:
+      - content="易文档

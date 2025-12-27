@@ -1,0 +1,5 @@
+- name: apache-traffic-server
+  rule:
+  - regexps:
+      header:
+      - ApacheTrafficServer

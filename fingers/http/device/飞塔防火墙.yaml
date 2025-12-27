@@ -1,0 +1,6 @@
+- name: 飞塔防火墙
+  rule:
+  - regexps:
+      body:
+      - FortiGate
+      - app-id=1157004084, app-argument={{::host_addr}}

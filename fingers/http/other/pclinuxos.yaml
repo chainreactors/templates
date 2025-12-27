@@ -1,0 +1,5 @@
+- name: pclinuxos
+  rule:
+  - regexps:
+      header:
+      - PCLinuxOS

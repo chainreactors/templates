@@ -1,0 +1,7 @@
+- name: iqeye-netcam
+  rule:
+  - regexps:
+      body:
+      - 'IQEYE: Live Images'
+      - content="Brian Lau, IQinVision
+      - loc = "iqeyevid.html

@@ -1,0 +1,5 @@
+- name: Redaxscript
+  rule:
+  - regexps:
+      body:
+      - content="Redaxscript

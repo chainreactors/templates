@@ -1,0 +1,5 @@
+- name: 华为 netopen
+  rule:
+  - regexps:
+      body:
+      - /netopen/theme/css/inFrame.css

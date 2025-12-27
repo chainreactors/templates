@@ -1,0 +1,5 @@
+- name: Magento
+  rule:
+  - regexps:
+      body:
+      - Magentothem

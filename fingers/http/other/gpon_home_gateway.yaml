@@ -1,0 +1,5 @@
+- name: gpon home gateway
+  rule:
+  - favicon:
+      mmh3:
+      - '251106693'

@@ -1,0 +1,6 @@
+- name: 贷齐乐p2p
+  rule:
+  - regexps:
+      body:
+      - /js/jPackageCss/jPackage.css
+      - src="/js/jPackage

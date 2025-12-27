@@ -1,0 +1,5 @@
+- name: PowerCreator CMS
+  rule:
+  - regexps:
+      body:
+      - PowerCreator CMS

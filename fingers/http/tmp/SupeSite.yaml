@@ -1,0 +1,5 @@
+- name: SupeSite
+  rule:
+  - regexps:
+      body:
+      - content="SupeSite

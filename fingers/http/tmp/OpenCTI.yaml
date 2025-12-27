@@ -1,0 +1,5 @@
+- name: OpenCTI
+  rule:
+  - regexps:
+      body:
+      - OpenCTI - Cyber Threat Intelligence Platform

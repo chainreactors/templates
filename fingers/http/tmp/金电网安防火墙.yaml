@@ -1,0 +1,5 @@
+- name: 金电网安防火墙
+  rule:
+  - regexps:
+      body:
+      - 金电网安

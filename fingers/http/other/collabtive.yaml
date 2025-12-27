@@ -1,0 +1,5 @@
+- name: collabtive
+  rule:
+  - regexps:
+      body:
+      - Login @ Collabtive

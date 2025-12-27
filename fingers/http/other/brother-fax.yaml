@@ -1,0 +1,7 @@
+- name: brother-fax
+  rule:
+  - regexps:
+      body:
+      - Brother MFC
+      header:
+      - debut

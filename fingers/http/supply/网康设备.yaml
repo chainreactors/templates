@@ -1,0 +1,6 @@
+- name: 网康设备
+  rule:
+  - regexps:
+      body:
+      - netentsec
+      - 网康

@@ -1,0 +1,5 @@
+- name: ubnt router
+  rule:
+  - favicon:
+      mmh3:
+      - '-1677255344'

@@ -1,0 +1,7 @@
+- name: adobe connect
+  rule:
+  - regexps:
+      body:
+      - /common/scripts/showContent.js
+      header:
+      - BREEZESESSION=

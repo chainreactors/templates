@@ -1,0 +1,5 @@
+- name: gpsweb
+  rule:
+  - regexps:
+      body:
+      - GPSweb

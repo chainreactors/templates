@@ -1,0 +1,6 @@
+- name: Yonyou-ERP-NC
+  rule:
+  - regexps:
+      body:
+      - /nc/servlet/nc.ui.iufo.login.index
+      - 用友新世纪

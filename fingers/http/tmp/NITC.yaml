@@ -1,0 +1,5 @@
+- name: NITC
+  rule:
+  - regexps:
+      body:
+      - www.nitc.cc

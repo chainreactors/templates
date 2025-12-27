@@ -1,0 +1,7 @@
+- name: EyouCms
+  rule:
+  - regexps:
+      body:
+      - Powered by EyouCms
+      header:
+      - 'Set-Cookie: admin_lang='

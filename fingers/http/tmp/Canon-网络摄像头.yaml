@@ -1,0 +1,5 @@
+- name: Canon-网络摄像头
+  rule:
+  - regexps:
+      header:
+      - 'Server: VB'

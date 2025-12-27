@@ -1,0 +1,6 @@
+- name: car-portal
+  rule:
+  - regexps:
+      body:
+      - netartmedia.net/carsportal
+      - class="bodyfontwhite"><strong>&nbsp;Car Script

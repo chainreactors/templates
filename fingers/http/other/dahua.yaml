@@ -1,0 +1,5 @@
+- name: dahua
+  rule:
+  - favicon:
+      mmh3:
+      - '-1466785234'

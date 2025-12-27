@@ -1,0 +1,5 @@
+- name: ASH-Proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: ASH Proxy'

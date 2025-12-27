@@ -1,0 +1,5 @@
+- name: BrowserCMS
+  rule:
+  - regexps:
+      body:
+      - BrowserCMS

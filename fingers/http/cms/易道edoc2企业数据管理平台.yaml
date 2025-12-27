@@ -1,0 +1,6 @@
+- name: 易道edoc2企业数据管理平台
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - href="Content/themes/blue/edoc2-page.min.css

@@ -1,0 +1,5 @@
+- name: 安全宝
+  rule:
+  - regexps:
+      header:
+      - X-Powered-By-Anquanbao

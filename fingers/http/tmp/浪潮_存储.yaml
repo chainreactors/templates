@@ -1,0 +1,5 @@
+- name: 浪潮 存储
+  rule:
+  - regexps:
+      body:
+      - 浪潮存储 您身边的存储专家

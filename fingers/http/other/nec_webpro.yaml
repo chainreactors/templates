@@ -1,0 +1,5 @@
+- name: nec webpro
+  rule:
+  - favicon:
+      mmh3:
+      - '1922032523'

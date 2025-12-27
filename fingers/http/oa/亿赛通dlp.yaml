@@ -1,0 +1,5 @@
+- name: 亿赛通dlp
+  rule:
+  - regexps:
+      body:
+      - CDGServer3

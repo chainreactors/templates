@@ -1,0 +1,6 @@
+- name: intellinet-ip-camera
+  rule:
+  - regexps:
+      body:
+      - Copyright &copy;  INTELLINET NETWORK SOLUTIONS
+      - http://www.intellinet-network.com/driver/NetCam.exe

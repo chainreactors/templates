@@ -1,0 +1,6 @@
+- name: 问卷星
+  link: https://survey.emoney.cn/corplogin.aspx
+  rule:
+  - favicon:
+      mmh3:
+      - '-1177293769'

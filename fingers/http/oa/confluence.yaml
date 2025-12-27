@@ -1,0 +1,14 @@
+- name: confluence
+  focus: true
+  rule:
+  - regexps:
+      header:
+      - x-confluence
+      body:
+      - build/framework/js/download.js
+    favicon:
+      md5:
+      - 966e60f8eb85b7ea43a7b0095f3e2336
+      mmh3:
+      - '-305179312'
+      - '-1642532491'

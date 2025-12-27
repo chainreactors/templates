@@ -1,0 +1,5 @@
+- name: Powerwin CRM管理系统
+  rule:
+  - regexps:
+      body:
+      - Powerwin CRM管理系统

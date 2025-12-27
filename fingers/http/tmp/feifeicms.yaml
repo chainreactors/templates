@@ -1,0 +1,5 @@
+- name: feifeicms
+  rule:
+  - regexps:
+      body:
+      - id="navbar-feifeicms"

@@ -1,0 +1,5 @@
+- name: iball w4gx150n
+  rule:
+  - regexps:
+      header:
+      - iB-W4GX150N

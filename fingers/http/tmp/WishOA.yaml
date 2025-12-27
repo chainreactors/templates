@@ -1,0 +1,6 @@
+- name: WishOA
+  rule:
+  - regexps:
+      body:
+      - wishoa_webplugin.js
+      - closewindownoask

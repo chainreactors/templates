@@ -1,0 +1,6 @@
+- name: 瑞策软件 CRM客户关系管理系统
+  rule:
+  - regexps:
+      body:
+      - CRM客户关系管理系统
+      - 瑞策软件

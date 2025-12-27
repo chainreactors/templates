@@ -1,0 +1,5 @@
+- name: TPTCMS
+  rule:
+  - regexps:
+      body:
+      - Powered by TPTCMS

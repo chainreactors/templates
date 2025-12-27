@@ -1,0 +1,10 @@
+- name: 启明星辰设备
+  rule:
+  - regexps:
+      body:
+      - 北京启明星辰信息安全技术有限公司
+      - venustech
+      - 天玥
+      - Leadersec
+      - 网御
+      - 天清

@@ -1,0 +1,8 @@
+- name: Eleanor CMS
+  rule:
+  - regexps:
+      body:
+      - eleanor-cms.ru
+      header:
+      - X-Powered-Cms
+      - Eleanor CMS

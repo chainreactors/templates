@@ -1,0 +1,6 @@
+- name: dotcms
+  rule:
+  - regexps:
+      body:
+      - /dotAsset/
+      - /index.dot

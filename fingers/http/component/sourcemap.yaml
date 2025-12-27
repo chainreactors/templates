@@ -1,0 +1,6 @@
+- name: sourcemap
+  rule:
+  - regexps:
+      vuln:
+      - .js.map
+    info: sourcemap-leak

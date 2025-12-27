@@ -1,0 +1,5 @@
+- name: starface voip software
+  rule:
+  - favicon:
+      mmh3:
+      - '-332324409'

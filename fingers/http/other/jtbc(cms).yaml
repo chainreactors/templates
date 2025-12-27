@@ -1,0 +1,6 @@
+- name: jtbc(cms)
+  rule:
+  - regexps:
+      body:
+      - /js/jtbc.js
+      - content="JTBC

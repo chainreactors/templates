@@ -1,0 +1,5 @@
+- name: frontpage-extensions
+  rule:
+  - regexps:
+      header:
+      - FrontPage

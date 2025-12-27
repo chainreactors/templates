@@ -1,0 +1,5 @@
+- name: gridsite
+  rule:
+  - regexps:
+      body:
+      - gridsite

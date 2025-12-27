@@ -1,0 +1,5 @@
+- name: Canal
+  rule:
+  - regexps:
+      body:
+      - Canal Admin

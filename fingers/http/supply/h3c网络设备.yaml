@@ -1,0 +1,5 @@
+- name: h3c网络设备
+  rule:
+  - regexps:
+      body:
+      - libs/MulPlatAPI.js

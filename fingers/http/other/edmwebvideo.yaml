@@ -1,0 +1,5 @@
+- name: edmwebvideo
+  rule:
+  - regexps:
+      body:
+      - EdmWebVideo

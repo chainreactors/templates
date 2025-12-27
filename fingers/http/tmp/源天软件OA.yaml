@@ -1,0 +1,5 @@
+- name: 源天软件OA
+  rule:
+  - regexps:
+      body:
+      - Visionsoft

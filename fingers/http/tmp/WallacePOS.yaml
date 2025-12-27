@@ -1,0 +1,5 @@
+- name: WallacePOS
+  rule:
+  - regexps:
+      body:
+      - WallacePOS

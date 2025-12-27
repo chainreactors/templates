@@ -1,0 +1,6 @@
+- name: comersuscart
+  rule:
+  - regexps:
+      body:
+      - CONTENT="Powered by Comersus
+      - href="comersus_showCart.asp

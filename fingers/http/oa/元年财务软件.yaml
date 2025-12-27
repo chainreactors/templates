@@ -1,0 +1,6 @@
+- name: 元年财务软件
+  rule:
+  - regexps:
+      body:
+      - yuannian.css
+      - /image/logo/yuannian.gif

@@ -1,0 +1,6 @@
+- name: Kong
+  link: https://hostmaster.supron1.com.pl:2222/evo/
+  rule:
+  - regexps:
+      header:
+      - 'server: Kong'

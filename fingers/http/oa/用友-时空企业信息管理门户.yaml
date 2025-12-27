@@ -1,0 +1,5 @@
+- name: 用友-时空企业信息管理门户
+  rule:
+  - regexps:
+      body:
+      - mkbh = getCookie(

@@ -1,0 +1,5 @@
+- name: hongcms
+  rule:
+  - regexps:
+      body:
+      - alt="HongCMS"

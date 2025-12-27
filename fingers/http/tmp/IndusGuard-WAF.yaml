@@ -1,0 +1,5 @@
+- name: IndusGuard-WAF
+  rule:
+  - regexps:
+      body:
+      - <title>IndusGuard WAF</title>

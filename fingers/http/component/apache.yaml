@@ -1,0 +1,6 @@
+- name: apache
+  rule:
+  - regexps:
+      vuln:
+      - Index of /
+    info: Directory traversal

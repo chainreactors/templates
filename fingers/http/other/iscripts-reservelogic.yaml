@@ -1,0 +1,5 @@
+- name: iscripts-reservelogic
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://www.iscripts.com/reservelogic/

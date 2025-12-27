@@ -1,0 +1,5 @@
+- name: CDP云盘
+  rule:
+  - regexps:
+      body:
+      - CDP云盘

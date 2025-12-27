@@ -1,0 +1,5 @@
+- name: LYWS-连锁店批零兼营管理系统
+  rule:
+  - regexps:
+      body:
+      - LYWS 连锁店批零兼营管理系统 进销存系统 餐饮管理系统

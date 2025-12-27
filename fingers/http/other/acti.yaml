@@ -1,0 +1,6 @@
+- name: acti
+  rule:
+  - regexps:
+      body:
+      - Web Configurator
+      - ACTi Corporation All Rights Reserved

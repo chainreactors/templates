@@ -1,0 +1,5 @@
+- name: biromsoft-webcam
+  rule:
+  - regexps:
+      body:
+      - Biromsoft WebCam

@@ -1,0 +1,5 @@
+- name: ben-ssl
+  rule:
+  - regexps:
+      header:
+      - Ben-SSL

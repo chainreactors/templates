@@ -1,0 +1,6 @@
+- name: 民友minyoocms
+  rule:
+  - regexps:
+      body:
+      - Minyoo
+      - /tpl/8/images

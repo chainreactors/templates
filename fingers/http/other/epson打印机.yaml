@@ -1,0 +1,5 @@
+- name: epson打印机
+  rule:
+  - regexps:
+      header:
+      - EPSON-HTTP

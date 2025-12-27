@@ -1,0 +1,5 @@
+- name: UFlying业务管理系统
+  rule:
+  - regexps:
+      body:
+      - UFlying业务管理系统后台

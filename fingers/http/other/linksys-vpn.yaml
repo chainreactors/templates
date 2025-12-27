@@ -1,0 +1,5 @@
+- name: linksys-vpn
+  rule:
+  - regexps:
+      header:
+      - linksys-vpn

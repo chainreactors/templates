@@ -1,0 +1,6 @@
+- name: FE企业运营管理平台
+  link: http://oa.szlightlink.com:9090/login/index.jsp?code=null
+  rule:
+  - favicon:
+      mmh3:
+      - '-391577146'

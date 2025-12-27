@@ -1,0 +1,6 @@
+- name: aruba-device
+  rule:
+  - regexps:
+      body:
+      - /images/arubalogo.gif
+      - Aruba Networks

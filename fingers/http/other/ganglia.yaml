@@ -1,0 +1,7 @@
+- name: ganglia
+  rule:
+  - regexps:
+      body:
+      - ganglia
+      header:
+      - gs=unspecified

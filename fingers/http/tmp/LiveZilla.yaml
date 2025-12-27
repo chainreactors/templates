@@ -1,0 +1,5 @@
+- name: LiveZilla
+  rule:
+  - regexps:
+      body:
+      - LiveZilla Server Page

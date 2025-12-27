@@ -1,0 +1,5 @@
+- name: h3c-am8000
+  rule:
+  - regexps:
+      body:
+      - AM8000

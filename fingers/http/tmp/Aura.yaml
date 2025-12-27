@@ -1,0 +1,5 @@
+- name: Aura
+  rule:
+  - regexps:
+      header:
+      - AuraCMS

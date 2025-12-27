@@ -1,0 +1,5 @@
+- name: onelan_cms
+  rule:
+  - regexps:
+      body:
+      - alt="ONELAN"

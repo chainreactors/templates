@@ -1,0 +1,5 @@
+- name: 中新网安 中新金盾-FireWall
+  rule:
+  - regexps:
+      body:
+      - 中新金盾防火墙ZXFW

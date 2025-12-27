@@ -1,0 +1,9 @@
+- name: Apache Spark
+  rule:
+  - favicon:
+      mmh3:
+      - '856048515'
+    regexps:
+      body:
+      - Spark Master
+      - /spark-logo

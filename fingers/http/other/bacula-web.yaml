@@ -1,0 +1,6 @@
+- name: bacula-web
+  rule:
+  - regexps:
+      body:
+      - Webacula
+      - bacula-web

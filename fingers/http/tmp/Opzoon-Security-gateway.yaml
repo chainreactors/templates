@@ -1,0 +1,5 @@
+- name: Opzoon-Security-gateway
+  rule:
+  - regexps:
+      body:
+      - opzoon -

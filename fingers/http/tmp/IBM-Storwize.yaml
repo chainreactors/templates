@@ -1,0 +1,5 @@
+- name: IBM-Storwize
+  rule:
+  - regexps:
+      body:
+      - IBM Storwize

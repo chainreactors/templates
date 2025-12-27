@@ -1,0 +1,5 @@
+- name: campsite
+  rule:
+  - regexps:
+      body:
+      - content="Campsite

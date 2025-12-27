@@ -1,0 +1,5 @@
+- name: icinga
+  rule:
+  - regexps:
+      header:
+      - Icinga

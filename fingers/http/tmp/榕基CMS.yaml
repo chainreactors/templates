@@ -1,0 +1,5 @@
+- name: 榕基CMS
+  rule:
+  - regexps:
+      body:
+      - /filecenter/res_base/rjcms

@@ -1,0 +1,5 @@
+- name: dell remote access device
+  rule:
+  - regexps:
+      header:
+      - 'RAC_ONE_HTTP '

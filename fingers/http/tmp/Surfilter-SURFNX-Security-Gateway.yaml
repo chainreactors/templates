@@ -1,0 +1,6 @@
+- name: Surfilter-SURFNX-Security-Gateway
+  rule:
+  - regexps:
+      body:
+      - surfnx
+      - /lib/templates/surfilter/css/

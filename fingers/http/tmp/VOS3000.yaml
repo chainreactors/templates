@@ -1,0 +1,5 @@
+- name: VOS3000
+  rule:
+  - regexps:
+      body:
+      - VOS3000

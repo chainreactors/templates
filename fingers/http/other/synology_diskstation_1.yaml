@@ -1,0 +1,5 @@
+- name: synology diskstation
+  rule:
+  - favicon:
+      mmh3:
+      - '149371702'

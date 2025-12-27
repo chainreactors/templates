@@ -1,0 +1,5 @@
+- name: 鹏为CRM
+  rule:
+  - regexps:
+      body:
+      - 鹏为E4

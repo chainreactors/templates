@@ -1,0 +1,5 @@
+- name: teamcity
+  rule:
+  - favicon:
+      mmh3:
+      - '-1944119648'

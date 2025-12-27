@@ -1,0 +1,6 @@
+- name: FLUX-富勒-WMS
+  link: http://183.67.39.26/
+  rule:
+  - regexps:
+      body:
+      - FLUX WMS

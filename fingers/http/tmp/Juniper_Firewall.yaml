@@ -1,0 +1,5 @@
+- name: Juniper Firewall
+  rule:
+  - regexps:
+      body:
+      - juniper srx firewall

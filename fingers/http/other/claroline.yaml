@@ -1,0 +1,6 @@
+- name: claroline
+  rule:
+  - regexps:
+      body:
+      - target="_blank">Claroline</a>
+      - http://www.claroline.net" rel="Copyright

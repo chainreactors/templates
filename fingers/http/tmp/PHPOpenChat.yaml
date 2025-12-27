@@ -1,0 +1,5 @@
+- name: PHPOpenChat
+  rule:
+  - regexps:
+      body:
+      - PHPOpenChat

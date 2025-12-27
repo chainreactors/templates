@@ -1,0 +1,5 @@
+- name: upc ceska republica
+  rule:
+  - favicon:
+      mmh3:
+      - '1911253822'

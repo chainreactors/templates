@@ -1,0 +1,5 @@
+- name: sitecom adsl model
+  rule:
+  - regexps:
+      header:
+      - SITECOM

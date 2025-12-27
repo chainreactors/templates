@@ -1,0 +1,7 @@
+- name: avaya-ip-office
+  rule:
+  - regexps:
+      body:
+      - About IP Office
+      header:
+      - IPOffice

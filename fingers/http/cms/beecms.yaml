@@ -1,0 +1,6 @@
+- name: beecms
+  rule:
+  - regexps:
+      body:
+      - BEESCMS
+      - template/default/images/slides.min.jquery.js

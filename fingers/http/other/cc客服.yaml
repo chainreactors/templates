@@ -1,0 +1,5 @@
+- name: cc客服
+  rule:
+  - regexps:
+      body:
+      - <script src="http://kefu.qycn.com/

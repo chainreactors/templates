@@ -1,0 +1,6 @@
+- name: 海康威视智慧城管平台
+  link: https://hk.fxcdn.cn/portal/cas/loginPage?service=https://hk.fxcdn.cn/portal/cas/loginPage
+  rule:
+  - favicon:
+      mmh3:
+      - '118923032'

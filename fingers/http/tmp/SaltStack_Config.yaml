@@ -1,0 +1,6 @@
+- name: SaltStack Config
+  link: https://54.246.46.149/login
+  rule:
+  - regexps:
+      body:
+      - SaltStack config

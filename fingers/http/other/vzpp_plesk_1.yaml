@@ -1,0 +1,5 @@
+- name: vzpp plesk
+  rule:
+  - favicon:
+      mmh3:
+      - '-1268095485'

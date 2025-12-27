@@ -1,0 +1,5 @@
+- name: FeiWaB2B2C商城系统
+  rule:
+  - regexps:
+      body:
+      - Powered by feiwa

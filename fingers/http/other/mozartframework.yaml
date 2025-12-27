@@ -1,0 +1,5 @@
+- name: mozartframework
+  rule:
+  - regexps:
+      header:
+      - Mozart Framework

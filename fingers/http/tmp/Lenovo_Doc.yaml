@@ -1,0 +1,6 @@
+- name: Lenovo Doc
+  rule:
+  - regexps:
+      body:
+      - lenovoDocs
+      - lenovodata

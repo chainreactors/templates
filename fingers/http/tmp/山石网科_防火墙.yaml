@@ -1,0 +1,7 @@
+- name: 山石网科 防火墙
+  rule:
+  - regexps:
+      body:
+      - Hillstone
+      - licenseAggrement
+      - GLOBAL_CONFIG.js

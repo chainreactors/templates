@@ -1,0 +1,5 @@
+- name: EagleEye
+  rule:
+  - regexps:
+      body:
+      - eagleeye 钉钉答疑群

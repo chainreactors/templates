@@ -1,0 +1,6 @@
+- name: infoglue
+  rule:
+  - regexps:
+      body:
+      - infoglue
+      - infoglueBox.png

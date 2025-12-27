@@ -1,0 +1,5 @@
+- name: d-link
+  rule:
+  - favicon:
+      mmh3:
+      - '-1897829998'

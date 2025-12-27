@@ -1,0 +1,5 @@
+- name: 软虹OA
+  rule:
+  - regexps:
+      body:
+      - <title>软虹科技</title>

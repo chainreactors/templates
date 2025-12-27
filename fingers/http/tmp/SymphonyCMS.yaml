@@ -1,0 +1,6 @@
+- name: SymphonyCMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="Symphony CMS">
+      - Symphony

@@ -1,0 +1,5 @@
+- name: proofpoint
+  rule:
+  - favicon:
+      mmh3:
+      - '-1630354993'

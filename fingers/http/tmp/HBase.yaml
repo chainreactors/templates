@@ -1,0 +1,5 @@
+- name: HBase
+  rule:
+  - regexps:
+      body:
+      - <title>HBase Region Server

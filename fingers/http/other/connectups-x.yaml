@@ -1,0 +1,7 @@
+- name: connectups-x
+  rule:
+  - regexps:
+      body:
+      - UPS Firmware version
+      header:
+      - UPS_Server/

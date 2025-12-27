@@ -1,0 +1,7 @@
+- name: microsoft ajax content delivery network
+  rule:
+  - regexps:
+      body:
+      - ajax.aspnetcdn.com/ajax
+      header:
+      - ajax.aspnetcdn.com/ajax

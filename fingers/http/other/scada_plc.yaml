@@ -1,0 +1,7 @@
+- name: scada plc
+  rule:
+  - regexps:
+      body:
+      - /images/rockcolor.gif
+      - /ralogo.gif
+      - Ethernet Processor

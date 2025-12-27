@@ -1,0 +1,5 @@
+- name: 用友-智能网关
+  rule:
+  - regexps:
+      body:
+      - /modules/core/client/views/header.client.view.html

@@ -1,0 +1,7 @@
+- name: SickBeard电视节目管理平台
+  rule:
+  - regexps:
+      body:
+      - Beard - alpha
+      header:
+      - 'Server: CherryPy/3.2.0rc1'

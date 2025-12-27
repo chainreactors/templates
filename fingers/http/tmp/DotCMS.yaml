@@ -1,0 +1,5 @@
+- name: DotCMS
+  rule:
+  - regexps:
+      body:
+      - www.dotcms.org

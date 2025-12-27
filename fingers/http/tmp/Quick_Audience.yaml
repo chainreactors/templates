@@ -1,0 +1,5 @@
+- name: Quick Audience
+  rule:
+  - regexps:
+      body:
+      - Quick Audience账号

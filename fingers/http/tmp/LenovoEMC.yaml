@@ -1,0 +1,5 @@
+- name: LenovoEMC
+  rule:
+  - regexps:
+      body:
+      - alt="LenovoEMC"/>

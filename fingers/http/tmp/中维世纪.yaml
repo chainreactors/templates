@@ -1,0 +1,5 @@
+- name: 中维世纪
+  rule:
+  - regexps:
+      body:
+      - jovision

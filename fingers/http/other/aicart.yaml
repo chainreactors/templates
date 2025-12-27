@@ -1,0 +1,5 @@
+- name: aicart
+  rule:
+  - regexps:
+      body:
+      - APP_authenticate

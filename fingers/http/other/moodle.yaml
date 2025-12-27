@@ -1,0 +1,5 @@
+- name: moodle
+  rule:
+  - favicon:
+      mmh3:
+      - '-438482901'

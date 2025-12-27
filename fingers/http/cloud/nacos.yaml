@@ -1,0 +1,9 @@
+- name: nacos
+  focus: true
+  tag:
+  - nacos
+  rule:
+  - regexps:
+      body:
+      - <title>Nacos</title>
+    send_data: /nacos/

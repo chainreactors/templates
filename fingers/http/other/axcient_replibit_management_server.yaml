@@ -1,0 +1,5 @@
+- name: axcient replibit management server
+  rule:
+  - favicon:
+      mmh3:
+      - '475379699'

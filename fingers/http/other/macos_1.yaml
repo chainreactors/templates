@@ -1,0 +1,5 @@
+- name: macos
+  rule:
+  - favicon:
+      mmh3:
+      - '1629518721'

@@ -1,0 +1,5 @@
+- name: Apache Kafka Web Console
+  rule:
+  - regexps:
+      body:
+      - Kafka Web Console

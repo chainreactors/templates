@@ -1,0 +1,5 @@
+- name: combivox
+  rule:
+  - favicon:
+      mmh3:
+      - '-342262483'

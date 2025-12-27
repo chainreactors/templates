@@ -1,0 +1,7 @@
+- name: easycare
+  rule:
+  - regexps:
+      body:
+      - easycare
+      header:
+      - easycare.session

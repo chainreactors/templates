@@ -1,0 +1,5 @@
+- name: phpcms
+  rule:
+  - regexps:
+      body:
+      - index.php?m=content&c=index&a=lists

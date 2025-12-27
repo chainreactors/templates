@@ -1,0 +1,5 @@
+- name: typo3
+  rule:
+  - regexps:
+      header:
+      - fe_typo_user

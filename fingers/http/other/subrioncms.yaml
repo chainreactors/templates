@@ -1,0 +1,5 @@
+- name: subrioncms
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-Cms: Subrion CMS'

@@ -1,0 +1,5 @@
+- name: CTOP OA
+  rule:
+  - regexps:
+      body:
+      - src="images/ctop_logo.gif

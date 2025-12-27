@@ -1,0 +1,5 @@
+- name: safe3waf
+  rule:
+  - regexps:
+      header:
+      - Safe3WAF

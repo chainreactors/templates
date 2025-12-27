@@ -1,0 +1,5 @@
+- name: H3C-SecCenter
+  rule:
+  - regexps:
+      body:
+      - SecCenter

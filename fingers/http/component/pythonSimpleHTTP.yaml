@@ -1,0 +1,5 @@
+- name: pythonSimpleHTTP
+  rule:
+  - regexps:
+      header:
+      - SimpleHTTP/

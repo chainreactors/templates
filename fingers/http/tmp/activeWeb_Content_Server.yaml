@@ -1,0 +1,5 @@
+- name: activeWeb Content Server
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: awcssessionid='

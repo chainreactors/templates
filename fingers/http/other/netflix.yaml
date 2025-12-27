@@ -1,0 +1,5 @@
+- name: netflix
+  rule:
+  - favicon:
+      mmh3:
+      - '902521196'

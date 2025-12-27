@@ -1,0 +1,5 @@
+- name: Telsso-Cloud-Proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: Telsso Cloud Proxy'

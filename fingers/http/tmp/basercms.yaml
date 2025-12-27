@@ -1,0 +1,5 @@
+- name: basercms
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: BASERCMS='

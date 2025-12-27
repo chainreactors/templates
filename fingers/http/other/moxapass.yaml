@@ -1,0 +1,5 @@
+- name: moxapass
+  rule:
+  - favicon:
+      mmh3:
+      - '381100274'

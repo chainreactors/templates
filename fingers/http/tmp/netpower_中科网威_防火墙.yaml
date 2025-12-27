@@ -1,0 +1,5 @@
+- name: netpower 中科网威 防火墙
+  rule:
+  - regexps:
+      body:
+      - 中科网威防火墙

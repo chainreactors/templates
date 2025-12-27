@@ -1,0 +1,5 @@
+- name: traccar gps tracking
+  rule:
+  - favicon:
+      mmh3:
+      - '-335153896'

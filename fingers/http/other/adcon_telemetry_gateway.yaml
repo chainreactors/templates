@@ -1,0 +1,7 @@
+- name: adcon telemetry gateway
+  rule:
+  - regexps:
+      body:
+      - Adcon Telemetry GmbH;
+      header:
+      - addUPI

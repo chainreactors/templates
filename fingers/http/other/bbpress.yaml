@@ -1,0 +1,6 @@
+- name: bbpress
+  rule:
+  - regexps:
+      body:
+      - <!-- If you like showing off the fact that your server rocks -->
+      - is proudly powered by <a href="http://bbpress.org

@@ -1,0 +1,5 @@
+- name: ShopXO
+  rule:
+  - regexps:
+      body:
+      - ShopXO

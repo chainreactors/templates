@@ -1,0 +1,5 @@
+- name: 先极科技 cms
+  rule:
+  - regexps:
+      body:
+      - 南京先极科技有限公司

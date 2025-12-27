@@ -1,0 +1,5 @@
+- name: TradeRenCRM
+  rule:
+  - regexps:
+      body:
+      - TradeRenCRM 商路通-外贸客户管理系统

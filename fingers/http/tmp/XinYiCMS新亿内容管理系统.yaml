@@ -1,0 +1,6 @@
+- name: XinYiCMS新亿内容管理系统
+  rule:
+  - regexps:
+      body:
+      - XinYiCMS
+      - 新亿内容管理系统

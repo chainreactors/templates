@@ -1,0 +1,6 @@
+- name: axous
+  rule:
+  - regexps:
+      body:
+      - content="Axous
+      - title="Axous Shareware Shop

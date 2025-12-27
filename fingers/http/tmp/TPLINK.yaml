@@ -1,0 +1,5 @@
+- name: TPLINK
+  rule:
+  - regexps:
+      body:
+      - IP CAMERA Viewer

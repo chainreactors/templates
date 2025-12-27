@@ -1,0 +1,5 @@
+- name: adtran-device
+  rule:
+  - regexps:
+      header:
+      - NetVanta

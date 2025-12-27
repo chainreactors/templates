@@ -1,0 +1,5 @@
+- name: 优特捷-日志易
+  rule:
+  - regexps:
+      body:
+      - /static/img/leftnav/logo_expand.png

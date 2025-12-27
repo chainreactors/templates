@@ -1,0 +1,7 @@
+- name: eticket
+  rule:
+  - regexps:
+      body:
+      - Powered by eTicket
+      - <a href="http://www.eticketsupport.com" target="_blank">
+      - /eticket/eticket.css

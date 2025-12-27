@@ -1,0 +1,5 @@
+- name: CaupoShop-Classic
+  rule:
+  - regexps:
+      body:
+      - CaupoShop Classic

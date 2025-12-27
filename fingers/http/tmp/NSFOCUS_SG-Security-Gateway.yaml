@@ -1,0 +1,5 @@
+- name: NSFOCUS SG-Security-Gateway
+  rule:
+  - regexps:
+      body:
+      - /login_logo_sg_zh_cn.png

@@ -1,0 +1,5 @@
+- name: symantec messaging gateway
+  rule:
+  - regexps:
+      body:
+      - Messaging Gateway

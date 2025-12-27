@@ -1,0 +1,6 @@
+- name: allomani
+  rule:
+  - regexps:
+      body:
+      - content="Allomani
+      - Programmed By Allomani

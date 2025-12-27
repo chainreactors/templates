@@ -1,0 +1,10 @@
+- name: 深信服设备
+  rule:
+  - regexps:
+      body:
+      - sangfor.com.cn
+      header:
+      - SinforHttpd
+    favicon:
+      md5:
+      - 293a3a7763eee19a068ef3dff98a7b8a

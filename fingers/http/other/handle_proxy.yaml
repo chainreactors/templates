@@ -1,0 +1,5 @@
+- name: handle proxy
+  rule:
+  - favicon:
+      mmh3:
+      - '926501571'

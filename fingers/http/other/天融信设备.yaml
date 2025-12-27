@@ -1,0 +1,7 @@
+- name: 天融信设备
+  rule:
+  - favicon:
+      mmh3:
+      - '162934974'
+      md5:
+      - 1eef96b633ad6f6463eecc3ffa78c9e7

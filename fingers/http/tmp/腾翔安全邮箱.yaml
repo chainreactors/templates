@@ -1,0 +1,5 @@
+- name: 腾翔安全邮箱
+  rule:
+  - regexps:
+      body:
+      - 腾翔·安全邮件

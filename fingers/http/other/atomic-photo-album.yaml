@@ -1,0 +1,5 @@
+- name: atomic-photo-album
+  rule:
+  - regexps:
+      body:
+      - Atomic Photo Album

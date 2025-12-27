@@ -1,0 +1,6 @@
+- name: MultiableM18
+  rule:
+  - regexps:
+      body:
+      - m18Icon
+      - Multiable. All rights reserved.

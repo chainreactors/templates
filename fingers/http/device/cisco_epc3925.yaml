@@ -1,0 +1,5 @@
+- name: cisco_epc3925
+  rule:
+  - regexps:
+      body:
+      - Docsis_system

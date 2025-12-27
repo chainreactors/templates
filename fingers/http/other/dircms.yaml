@@ -1,0 +1,5 @@
+- name: dircms
+  rule:
+  - regexps:
+      body:
+      - content="DirCMS

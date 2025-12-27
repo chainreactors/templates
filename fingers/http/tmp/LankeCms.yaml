@@ -1,0 +1,5 @@
+- name: LankeCms
+  rule:
+  - regexps:
+      body:
+      - All Right Reserved 蓝科外贸网站

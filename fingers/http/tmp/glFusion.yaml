@@ -1,0 +1,6 @@
+- name: glFusion
+  rule:
+  - regexps:
+      body:
+      - glFusion
+      - <a href="http://www.glfusion.org/" target="_blank">

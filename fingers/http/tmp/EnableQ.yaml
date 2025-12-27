@@ -1,0 +1,9 @@
+- name: EnableQ
+  rule:
+  - favicon:
+      mmh3:
+      - '784325091'
+    regexps:
+      body:
+      - 欢迎使用EnableQ在线问卷调查引擎
+      - /enableq.ico

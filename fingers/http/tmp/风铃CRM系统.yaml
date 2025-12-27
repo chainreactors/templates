@@ -1,0 +1,5 @@
+- name: 风铃CRM系统
+  rule:
+  - regexps:
+      body:
+      - Lemur 开源,Easypoi 代码 文档,代码生成器,开发框架 ,Lemur Gen

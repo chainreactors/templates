@@ -1,0 +1,5 @@
+- name: zte
+  rule:
+  - favicon:
+      mmh3:
+      - '1427976651'

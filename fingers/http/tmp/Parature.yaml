@@ -1,0 +1,5 @@
+- name: Parature
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: Parature'

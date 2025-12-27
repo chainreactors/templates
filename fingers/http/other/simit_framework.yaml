@@ -1,0 +1,5 @@
+- name: simit_framework
+  rule:
+  - regexps:
+      header:
+      - SIMIT framework

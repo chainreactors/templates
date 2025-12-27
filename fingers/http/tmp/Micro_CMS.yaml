@@ -1,0 +1,5 @@
+- name: Micro CMS
+  rule:
+  - regexps:
+      body:
+      - Solidago Micro CMS

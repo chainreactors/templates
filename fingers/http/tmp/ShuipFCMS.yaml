@@ -1,0 +1,5 @@
+- name: ShuipFCMS
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: ShuipFCMS'

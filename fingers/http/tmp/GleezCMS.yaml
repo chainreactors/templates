@@ -1,0 +1,5 @@
+- name: GleezCMS
+  rule:
+  - regexps:
+      body:
+      - 'X-Powered-By: Gleez CMS'

@@ -1,0 +1,10 @@
+- name: portainer
+  default_port:
+  - '9000'
+  rule:
+  - regexps:
+      body:
+      - portainer.
+    favicon:
+      mmh3:
+      - '-1424036600'

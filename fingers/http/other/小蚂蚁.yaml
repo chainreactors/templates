@@ -1,0 +1,8 @@
+- name: 小蚂蚁
+  rule:
+  - regexps:
+      body:
+      - Powered by 小蚂蚁地方门户网站系统
+      - /Template/Ant/Css/AntHomeComm.css
+      header:
+      - AntXiaouserslogin

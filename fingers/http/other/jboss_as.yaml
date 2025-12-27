@@ -1,0 +1,5 @@
+- name: jboss_as
+  rule:
+  - regexps:
+      body:
+      - Manage this JBoss AS Instance

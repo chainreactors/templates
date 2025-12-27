@@ -1,0 +1,6 @@
+- name: Help Center Live
+  rule:
+  - regexps:
+      body:
+      - Powered By Help Center Live.
+      - © Help Center Live.

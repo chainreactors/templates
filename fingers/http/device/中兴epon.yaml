@@ -1,0 +1,5 @@
+- name: 中兴epon
+  rule:
+  - regexps:
+      body:
+      - 'WWw-Authenticate: Basic realm=" ONU"'

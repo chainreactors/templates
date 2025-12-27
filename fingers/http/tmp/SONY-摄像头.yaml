@@ -1,0 +1,5 @@
+- name: SONY-摄像头
+  rule:
+  - regexps:
+      body:
+      - Sony Network Camera

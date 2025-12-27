@@ -1,0 +1,7 @@
+- name: Mcu视频会议系统
+  rule:
+  - regexps:
+      body:
+      - MCU Default Page
+      header:
+      - 'Server: GoAhead-Webs'

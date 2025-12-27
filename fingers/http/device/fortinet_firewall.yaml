@@ -1,0 +1,5 @@
+- name: fortinet firewall
+  rule:
+  - regexps:
+      body:
+      - Firewall Notification

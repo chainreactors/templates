@@ -1,0 +1,9 @@
+- name: adb
+  default_port:
+  - '5555'
+  protocol: tcp
+  rule:
+  - regexps:
+      regexp:
+      - ^AUTH\x01\x00\x00
+    send_data: "CNXN\x01\0\0\x01\0\0\x10\0Ú\0\0\0ÕT\0\0¼±§±host::\0"

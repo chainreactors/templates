@@ -1,0 +1,6 @@
+- name: 科达 网络键盘控制台
+  rule:
+  - regexps:
+      body:
+      - 网络键盘控制台
+      - class="login-login"

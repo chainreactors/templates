@@ -1,0 +1,5 @@
+- name: cougar
+  rule:
+  - regexps:
+      header:
+      - Cougar

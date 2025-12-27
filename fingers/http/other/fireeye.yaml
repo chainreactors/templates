@@ -1,0 +1,16 @@
+- name: fireeye
+  rule:
+  - regexps:
+      body:
+      - mobsc
+      - FireEye
+      header:
+      - fireeye
+    favicon:
+      mmh3:
+      - '95271369'
+      - '105083909'
+      - '240606739'
+      - '1476335317'
+      - '2121539357'
+      - '-842192932'

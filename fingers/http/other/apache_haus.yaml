@@ -1,0 +1,5 @@
+- name: apache haus
+  rule:
+  - favicon:
+      mmh3:
+      - '-632070065'

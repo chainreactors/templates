@@ -1,0 +1,5 @@
+- name: Odoo CMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="Odoo"/>

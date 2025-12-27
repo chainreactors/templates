@@ -1,0 +1,5 @@
+- name: ICEshop
+  rule:
+  - regexps:
+      body:
+      - Powered By ICEshop

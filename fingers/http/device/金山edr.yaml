@@ -1,0 +1,6 @@
+- name: 金山edr
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - 终端安全系统Web控制台

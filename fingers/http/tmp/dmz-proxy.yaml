@@ -1,0 +1,5 @@
+- name: dmz-proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: dmz-proxy'

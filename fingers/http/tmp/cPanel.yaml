@@ -1,0 +1,5 @@
+- name: cPanel
+  rule:
+  - regexps:
+      body:
+      - cPanel

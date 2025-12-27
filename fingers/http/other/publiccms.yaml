@@ -1,0 +1,5 @@
+- name: publiccms
+  rule:
+  - regexps:
+      body:
+      - publiccms

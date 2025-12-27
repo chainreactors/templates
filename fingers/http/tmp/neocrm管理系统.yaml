@@ -1,0 +1,5 @@
+- name: neocrm管理系统
+  rule:
+  - regexps:
+      body:
+      - neocrm管理系统

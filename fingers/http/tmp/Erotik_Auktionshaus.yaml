@@ -1,0 +1,5 @@
+- name: Erotik Auktionshaus
+  rule:
+  - regexps:
+      body:
+      - Erotik Auktionshaus

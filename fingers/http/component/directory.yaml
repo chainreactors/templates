@@ -1,0 +1,6 @@
+- name: directory
+  rule:
+  - regexps:
+      vuln:
+      - Directory Listing For
+    info: Directory traversal

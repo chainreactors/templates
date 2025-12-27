@@ -1,0 +1,6 @@
+- name: Apache-SkyWalking
+  link: http://113.56.40.243:8088/general
+  rule:
+  - favicon:
+      mmh3:
+      - '1929532064'

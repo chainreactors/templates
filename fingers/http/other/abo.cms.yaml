@@ -1,0 +1,5 @@
+- name: abo.cms
+  rule:
+  - regexps:
+      header:
+      - ABO.CMS

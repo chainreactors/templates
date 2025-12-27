@@ -1,0 +1,5 @@
+- name: adb broadband s.p.a.
+  rule:
+  - favicon:
+      mmh3:
+      - '-587741716'

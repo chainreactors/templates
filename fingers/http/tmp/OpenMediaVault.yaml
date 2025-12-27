@@ -1,0 +1,5 @@
+- name: OpenMediaVault
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: X-OpenMediaVault-SESSIONID='

@@ -1,0 +1,5 @@
+- name: Novell-Sentinel-Log-Manager
+  rule:
+  - regexps:
+      body:
+      - content="0;url=/novelllogmanager">

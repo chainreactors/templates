@@ -1,0 +1,5 @@
+- name: phpVMS
+  rule:
+  - regexps:
+      body:
+      - powered by phpVMS

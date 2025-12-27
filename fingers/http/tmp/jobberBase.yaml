@@ -1,0 +1,5 @@
+- name: jobberBase
+  rule:
+  - regexps:
+      body:
+      - jobberBase

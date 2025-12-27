@@ -1,0 +1,14 @@
+- name: F5 产品
+  rule:
+  - favicon:
+      mmh3:
+      - '-335242539'
+    regexps:
+      body:
+      - F5 Authentication Required
+      - content="F5 Networks, Inc."
+      - F5 Networks, Inc.
+      - logo_f5.png
+      - alt="F5 Networks Logo"
+      header:
+      - LastMRH_Session

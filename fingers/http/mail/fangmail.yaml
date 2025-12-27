@@ -1,0 +1,5 @@
+- name: fangmail
+  rule:
+  - regexps:
+      body:
+      - /fangmail/default/css/em_css.css

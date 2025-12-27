@@ -1,0 +1,6 @@
+- name: 云梦cms
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - wezhan.cn

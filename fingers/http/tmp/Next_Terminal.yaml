@@ -1,0 +1,6 @@
+- name: Next Terminal
+  link: http://171.88.53.22:8088/#/login
+  rule:
+  - regexps:
+      body:
+      - Next Terminal

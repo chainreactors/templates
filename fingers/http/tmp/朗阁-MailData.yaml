@@ -1,0 +1,9 @@
+- name: 朗阁-MailData
+  link: https://spam2.thtf.com.cn:8090/
+  rule:
+  - regexps:
+      body:
+      - MailData电子邮件安全网关系统
+    favicon:
+      mmh3:
+      - '-1869497338'

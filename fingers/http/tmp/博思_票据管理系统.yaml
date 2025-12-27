@@ -1,0 +1,5 @@
+- name: 博思 票据管理系统
+  rule:
+  - regexps:
+      header:
+      - bosssoft

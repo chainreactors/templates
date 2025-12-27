@@ -1,0 +1,6 @@
+- name: D-Link 存储
+  rule:
+  - regexps:
+      body:
+      - name="mydlink"
+      - id="mydlink"

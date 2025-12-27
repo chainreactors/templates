@@ -1,0 +1,6 @@
+- name: H3C-安全隔离与信息交换系统
+  rule:
+  - regexps:
+      body:
+      - images/h3c.png
+      - 安全隔离与信息交换系统

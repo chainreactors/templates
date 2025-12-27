@@ -1,0 +1,5 @@
+- name: direct-packet-device
+  rule:
+  - regexps:
+      header:
+      - DPWebServer

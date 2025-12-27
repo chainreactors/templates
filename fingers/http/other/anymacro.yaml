@@ -1,0 +1,8 @@
+- name: anymacro
+  rule:
+  - regexps:
+      body:
+      - document.aa.F_email
+      - AnyWebApp
+      header:
+      - LOGIN_KEY

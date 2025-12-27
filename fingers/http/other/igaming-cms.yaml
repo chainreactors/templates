@@ -1,0 +1,5 @@
+- name: igaming-cms
+  rule:
+  - regexps:
+      body:
+      - http://www.igamingcms.com/

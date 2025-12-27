@@ -1,0 +1,7 @@
+- name: fitelnet-router
+  rule:
+  - regexps:
+      body:
+      - FITELnet-
+      header:
+      - GR-HTTPD Server

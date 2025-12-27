@@ -1,0 +1,6 @@
+- name: pineapp
+  rule:
+  - regexps:
+      body:
+      - PineApp WebAccess - Login
+      - /admin/css/images/pineapp.ico

@@ -1,0 +1,5 @@
+- name: SIYUCMS
+  rule:
+  - regexps:
+      body:
+      - content="SIYUCMS

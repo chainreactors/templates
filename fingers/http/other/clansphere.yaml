@@ -1,0 +1,6 @@
+- name: clansphere
+  rule:
+  - regexps:
+      body:
+      - content="ClanSphere
+      - index.php?mod=clansphere&amp;action=about

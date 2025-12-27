@@ -1,0 +1,5 @@
+- name: baidu
+  rule:
+  - favicon:
+      mmh3:
+      - '-1507567067'

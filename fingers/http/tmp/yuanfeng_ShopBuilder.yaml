@@ -1,0 +1,5 @@
+- name: yuanfeng ShopBuilder
+  rule:
+  - regexps:
+      body:
+      - ShopBuilder

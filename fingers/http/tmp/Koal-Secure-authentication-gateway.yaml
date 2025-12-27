@@ -1,0 +1,5 @@
+- name: Koal-Secure-authentication-gateway
+  rule:
+  - regexps:
+      header:
+      - koal-ssl

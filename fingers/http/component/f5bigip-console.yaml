@@ -1,0 +1,8 @@
+- name: f5bigip-console
+  focus: true
+  rule:
+  - regexps:
+      vuln:
+      - BIG-IP&reg; Configuration Utility
+    send_data: /tmui/login.jsp
+    info: bigip_console_leak

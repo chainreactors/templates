@@ -1,0 +1,5 @@
+- name: fw300r
+  rule:
+  - regexps:
+      header:
+      - FW300R

@@ -1,0 +1,5 @@
+- name: phpMoneyBooks
+  rule:
+  - regexps:
+      body:
+      - <strong>phpMoneyBooks</strong>

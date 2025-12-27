@@ -1,0 +1,7 @@
+- name: 安拓.榕基网络隐患扫描系统
+  rule:
+  - regexps:
+      body:
+      - 安拓.榕基网络隐患扫描系统
+      header:
+      - rj-itop

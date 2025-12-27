@@ -1,0 +1,5 @@
+- name: zimbra
+  rule:
+  - regexps:
+      header:
+      - ZM_TEST

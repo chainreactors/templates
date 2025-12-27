@@ -1,0 +1,5 @@
+- name: skype
+  rule:
+  - favicon:
+      mmh3:
+      - '-1807411396'

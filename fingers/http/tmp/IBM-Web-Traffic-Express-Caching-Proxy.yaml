@@ -1,0 +1,5 @@
+- name: IBM-Web-Traffic-Express-Caching-Proxy
+  rule:
+  - regexps:
+      header:
+      - IBM-PROXY-WTE

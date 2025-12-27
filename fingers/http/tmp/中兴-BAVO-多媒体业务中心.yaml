@@ -1,0 +1,7 @@
+- name: 中兴-BAVO-多媒体业务中心
+  rule:
+  - regexps:
+      body:
+      - BAVO
+      header:
+      - mod_ssl/2.0.63 OpenSSL/0.9.7m mod_jk2/2.0.4

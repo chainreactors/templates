@@ -1,0 +1,7 @@
+- name: FusionAuth
+  rule:
+  - regexps:
+      body:
+      - FusionAuth
+      header:
+      - fusionauth

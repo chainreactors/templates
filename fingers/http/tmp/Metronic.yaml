@@ -1,0 +1,6 @@
+- name: Metronic
+  link: http://47.110.226.22/default/login
+  rule:
+  - regexps:
+      body:
+      - metronic. admin dashboard template.

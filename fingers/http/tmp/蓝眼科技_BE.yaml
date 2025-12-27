@@ -1,0 +1,5 @@
+- name: 蓝眼科技 BE
+  rule:
+  - regexps:
+      header:
+      - Basic realm="BE-

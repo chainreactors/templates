@@ -1,0 +1,7 @@
+- name: zte-iad
+  rule:
+  - regexps:
+      body:
+      - /image/banner_I532.jpg
+      - /image/I202.gif
+      - /image/banner_top.jpg

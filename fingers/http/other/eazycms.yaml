@@ -1,0 +1,6 @@
+- name: eazycms
+  rule:
+  - regexps:
+      body:
+      - powered by eazyCMS
+      - <a class="actionlink" href="http://www.eazyCMS.com

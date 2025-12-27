@@ -1,0 +1,8 @@
+- name: 阿里云cdn
+  rule:
+  - regexps:
+      body:
+      - cdn.aliyuncs.com
+      header:
+      - cdn.aliyuncs.com
+      - x-swift-cachetime

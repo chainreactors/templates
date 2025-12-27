@@ -1,0 +1,5 @@
+- name: wordpress under construction icon
+  rule:
+  - favicon:
+      mmh3:
+      - '191654058'

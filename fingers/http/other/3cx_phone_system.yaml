@@ -1,0 +1,5 @@
+- name: 3cx phone system
+  rule:
+  - favicon:
+      mmh3:
+      - '970132176'

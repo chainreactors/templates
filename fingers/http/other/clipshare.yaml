@@ -1,0 +1,6 @@
+- name: clipshare
+  rule:
+  - regexps:
+      body:
+      - <!--!!!!!!!!!!!!!!!!!!!!!!!!! Processing SCRIPT
+      - Powered By <a href="http://www.clip-share.com

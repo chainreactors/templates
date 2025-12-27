@@ -1,0 +1,5 @@
+- name: 信呼oa
+  rule:
+  - favicon:
+      md5:
+      - 975db4c825c16dde9ae6ba5da6ff8d46

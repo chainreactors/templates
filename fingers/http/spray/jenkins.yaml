@@ -1,0 +1,7 @@
+- name: jenkins
+  level: 2
+  rule:
+  - regexps:
+      body:
+      - jenkins-checkbox
+    send_data: /jenkins

@@ -1,0 +1,6 @@
+- name: 网动云视讯平台
+  rule:
+  - regexps:
+      body:
+      - /js/roomHeight.js
+      - meetingShow!show.action

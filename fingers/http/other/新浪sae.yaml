@@ -1,0 +1,7 @@
+- name: 新浪sae
+  rule:
+  - regexps:
+      body:
+      - lib.sinaapp.com
+      header:
+      - lib.sinaapp.com

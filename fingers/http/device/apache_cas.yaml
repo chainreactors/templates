@@ -1,0 +1,7 @@
+- name: apache_cas
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - Central Authentication Service
+      - execution=

@@ -1,0 +1,8 @@
+- name: FOXI BIZzz
+  rule:
+  - regexps:
+      body:
+      - help.foxibiz.com
+      header:
+      - X-Powered-Cms
+      - FOXI BIZzz

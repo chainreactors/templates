@@ -1,0 +1,5 @@
+- name: Daman网站管理系统
+  rule:
+  - regexps:
+      body:
+      - Daman网站管理系统

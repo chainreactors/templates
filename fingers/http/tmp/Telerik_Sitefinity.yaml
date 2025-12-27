@@ -1,0 +1,5 @@
+- name: Telerik Sitefinity
+  rule:
+  - regexps:
+      body:
+      - class="Telerik_stylesheet"

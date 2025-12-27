@@ -1,0 +1,7 @@
+- name: mongodb
+  default_port:
+  - '27017'
+  rule:
+  - regexps:
+      body:
+      - MongoDB over HTTP on the native driver

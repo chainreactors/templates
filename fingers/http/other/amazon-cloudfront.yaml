@@ -1,0 +1,5 @@
+- name: amazon-cloudfront
+  rule:
+  - regexps:
+      header:
+      - X-Amz-Cf-Id

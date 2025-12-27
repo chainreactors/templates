@@ -1,0 +1,6 @@
+- name: winwebmail
+  rule:
+  - regexps:
+      body:
+      - winwebmail
+      - images/owin.css

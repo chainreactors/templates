@@ -1,0 +1,5 @@
+- name: bosch security systems
+  rule:
+  - favicon:
+      mmh3:
+      - '-1702769256'

@@ -1,0 +1,5 @@
+- name: 易客CRM
+  rule:
+  - regexps:
+      body:
+      - <a href='http://www.c3crm.com' target='_blank' class='crm-foot-url'>

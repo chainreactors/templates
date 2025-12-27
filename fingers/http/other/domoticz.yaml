@@ -1,0 +1,5 @@
+- name: domoticz
+  rule:
+  - favicon:
+      mmh3:
+      - '90680708'

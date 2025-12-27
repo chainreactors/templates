@@ -1,0 +1,5 @@
+- name: CNKI科研诚信管理系统研究中心
+  rule:
+  - regexps:
+      body:
+      - CNKI科研诚信管理系统研究中心

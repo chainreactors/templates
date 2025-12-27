@@ -1,0 +1,6 @@
+- name: 脸爱云一脸通智慧管理平台
+  link: http://47.112.193.65:5800/Login.aspx
+  rule:
+  - regexps:
+      body:
+      - 脸爱云

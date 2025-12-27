@@ -1,0 +1,5 @@
+- name: Citrix XCP
+  rule:
+  - regexps:
+      body:
+      - <p/>citrix systems, inc. xcp 1.6.10

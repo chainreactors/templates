@@ -1,0 +1,5 @@
+- name: Nukedit
+  rule:
+  - regexps:
+      body:
+      - Powered by Nukedit

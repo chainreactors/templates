@@ -1,0 +1,5 @@
+- name: idera
+  rule:
+  - favicon:
+      mmh3:
+      - '-450254253'

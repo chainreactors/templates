@@ -1,0 +1,5 @@
+- name: hubspot
+  rule:
+  - regexps:
+      body:
+      - js.hubspot.com/analytics

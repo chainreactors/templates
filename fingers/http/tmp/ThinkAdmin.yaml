@@ -1,0 +1,6 @@
+- name: ThinkAdmin
+  rule:
+  - regexps:
+      body:
+      - /static/admin.js
+      - layui.all.js

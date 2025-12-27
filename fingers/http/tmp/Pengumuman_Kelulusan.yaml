@@ -1,0 +1,6 @@
+- name: Pengumuman Kelulusan
+  rule:
+  - regexps:
+      body:
+      - Pengumuman.Kelulusan
+      - Masukkan

@@ -1,0 +1,5 @@
+- name: fluentnet
+  rule:
+  - regexps:
+      body:
+      - content="Fluent

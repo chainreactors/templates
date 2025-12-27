@@ -1,0 +1,6 @@
+- name: 明源ERP
+  rule:
+  - regexps:
+      body:
+      - 明源云ERP
+      - PubPlatform/Login/index.aspx

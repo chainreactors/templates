@@ -1,0 +1,5 @@
+- name: srun3000计费认证系统
+  rule:
+  - regexps:
+      body:
+      - srun3000

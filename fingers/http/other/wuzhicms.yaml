@@ -1,0 +1,6 @@
+- name: wuzhicms
+  rule:
+  - regexps:
+      body:
+      - Powered by wuzhicms
+      - content="wuzhicms

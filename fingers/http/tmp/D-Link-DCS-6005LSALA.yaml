@@ -1,0 +1,5 @@
+- name: D-Link-DCS-6005LSALA
+  rule:
+  - regexps:
+      header:
+      - Basic realm="DCS-6005LSALA

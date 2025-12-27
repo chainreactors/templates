@@ -1,0 +1,5 @@
+- name: Matrix-3D-Firewall
+  rule:
+  - regexps:
+      header:
+      - Basic realm="(?P<app_name>Matrix 3D Firewall)"

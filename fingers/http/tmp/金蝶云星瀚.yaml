@@ -1,0 +1,6 @@
+- name: 金蝶云星瀚
+  link: https://eworld.test.kdcloud.com/login.html?redirect=https%3A%2F%2Feworld.test.kdcloud.com%2F
+  rule:
+  - regexps:
+      body:
+      - 金蝶云星瀚

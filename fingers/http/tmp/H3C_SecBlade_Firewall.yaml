@@ -1,0 +1,5 @@
+- name: H3C SecBlade Firewall
+  rule:
+  - regexps:
+      body:
+      - h3c secblade fw

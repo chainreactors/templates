@@ -1,0 +1,5 @@
+- name: 思科设备
+  rule:
+  - regexps:
+      body:
+      - Cisco

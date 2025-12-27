@@ -1,0 +1,6 @@
+- name: phpyun
+  rule:
+  - regexps:
+      body:
+      - href="http://www.phpyun.com"
+      - PHPYun

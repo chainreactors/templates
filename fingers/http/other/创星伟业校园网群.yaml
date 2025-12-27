@@ -1,0 +1,6 @@
+- name: 创星伟业校园网群
+  rule:
+  - regexps:
+      body:
+      - javascripts/float.js
+      - vcxvcxv

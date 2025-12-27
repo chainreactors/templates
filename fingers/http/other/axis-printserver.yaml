@@ -1,0 +1,6 @@
+- name: axis-printserver
+  rule:
+  - regexps:
+      body:
+      - psb_printjobs.gif
+      - /cgi-bin/prodhelp?prod=

@@ -1,0 +1,5 @@
+- name: 联奕认证平台
+  rule:
+  - regexps:
+      body:
+      - 欢迎来到联奕认证平台

@@ -1,0 +1,7 @@
+- name: mymps
+  rule:
+  - regexps:
+      body:
+      - /css/mymps.css
+      - mymps
+      - content="mymps

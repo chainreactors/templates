@@ -1,0 +1,5 @@
+- name: AliyunOSS
+  rule:
+  - regexps:
+      body:
+      - <Message>Anonymous access is forbidden

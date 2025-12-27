@@ -1,0 +1,5 @@
+- name: 坤志OA
+  rule:
+  - regexps:
+      body:
+      - title='坤志OA'

@@ -1,0 +1,5 @@
+- name: twonky server
+  rule:
+  - favicon:
+      mmh3:
+      - '-878891718'

@@ -1,0 +1,5 @@
+- name: mojoPortal
+  rule:
+  - regexps:
+      body:
+      - Powered by mojoPortal

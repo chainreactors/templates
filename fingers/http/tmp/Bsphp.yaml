@@ -1,0 +1,6 @@
+- name: Bsphp
+  rule:
+  - regexps:
+      body:
+      - Bsphp
+      - www.bsphp.com

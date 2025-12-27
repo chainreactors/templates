@@ -1,0 +1,5 @@
+- name: ispconfig
+  rule:
+  - favicon:
+      mmh3:
+      - '483383992'

@@ -1,0 +1,10 @@
+- name: ForgeRock AM
+  rule:
+  - regexps:
+      body:
+      - /openam/oauth2/
+      - ForgeRock Access Management
+      - /openam
+      header:
+      - /openam/oauth2/
+      - /openam

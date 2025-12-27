@@ -1,0 +1,5 @@
+- name: Coppermine
+  rule:
+  - regexps:
+      body:
+      - Coppermine version

@@ -1,0 +1,5 @@
+- name: 中腾oa
+  rule:
+  - regexps:
+      body:
+      - zt_webframe

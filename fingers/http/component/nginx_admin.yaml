@@ -1,0 +1,5 @@
+- name: nginx_admin
+  rule:
+  - regexps:
+      header:
+      - nginx admin

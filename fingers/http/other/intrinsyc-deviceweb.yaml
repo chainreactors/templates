@@ -1,0 +1,5 @@
+- name: intrinsyc-deviceweb
+  rule:
+  - regexps:
+      header:
+      - Intrinsyc deviceWEB

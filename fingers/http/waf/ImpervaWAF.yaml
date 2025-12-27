@@ -1,0 +1,5 @@
+- name: ImpervaWAF
+  rule:
+  - regexps:
+      body:
+      - 'The incident ID is:'

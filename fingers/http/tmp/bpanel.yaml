@@ -1,0 +1,5 @@
+- name: bpanel
+  rule:
+  - regexps:
+      header:
+      - www.bpanel.ne

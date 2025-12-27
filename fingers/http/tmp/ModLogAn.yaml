@@ -1,0 +1,5 @@
+- name: ModLogAn
+  rule:
+  - regexps:
+      body:
+      - '>modlogan'

@@ -1,0 +1,5 @@
+- name: 东方华盾 安全邮件
+  rule:
+  - regexps:
+      body:
+      - ESMTP Huadun

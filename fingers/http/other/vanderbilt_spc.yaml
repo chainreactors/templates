@@ -1,0 +1,5 @@
+- name: vanderbilt spc
+  rule:
+  - favicon:
+      mmh3:
+      - '-1162730477'

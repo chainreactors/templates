@@ -1,0 +1,7 @@
+- name: datum-tymserve
+  rule:
+  - regexps:
+      body:
+      - <H2 ALIGN=CENTER>Datum TymServe
+      header:
+      - DATM

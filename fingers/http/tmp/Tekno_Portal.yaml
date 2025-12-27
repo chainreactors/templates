@@ -1,0 +1,5 @@
+- name: Tekno Portal
+  rule:
+  - regexps:
+      body:
+      - Tekno.Portal

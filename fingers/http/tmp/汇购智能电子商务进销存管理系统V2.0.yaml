@@ -1,0 +1,5 @@
+- name: 汇购智能电子商务进销存管理系统V2.0
+  rule:
+  - regexps:
+      body:
+      - <title>汇购智能电子商务进销存管理系统V2.0</title>

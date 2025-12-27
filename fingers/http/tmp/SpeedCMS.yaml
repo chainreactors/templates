@@ -1,0 +1,5 @@
+- name: SpeedCMS
+  rule:
+  - regexps:
+      body:
+      - SpeedCMS

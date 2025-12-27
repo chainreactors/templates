@@ -1,0 +1,5 @@
+- name: MajExpress
+  rule:
+  - regexps:
+      body:
+      - Powered by MajExpress

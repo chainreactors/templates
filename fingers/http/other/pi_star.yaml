@@ -1,0 +1,5 @@
+- name: pi star
+  rule:
+  - favicon:
+      mmh3:
+      - '432733105'

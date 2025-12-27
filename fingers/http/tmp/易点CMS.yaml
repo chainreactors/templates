@@ -1,0 +1,5 @@
+- name: 易点CMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="DianCMS">

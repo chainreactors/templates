@@ -1,0 +1,13 @@
+- name: weiphp
+  rule:
+  - regexps:
+      header:
+      - weiphp
+      body:
+      - content="WeiPHP
+      - /css/weiphp.css
+    favicon:
+      md5:
+      - 820d3b66204fbcd3560b9358632b9c8a
+      mmh3:
+      - '37052027'

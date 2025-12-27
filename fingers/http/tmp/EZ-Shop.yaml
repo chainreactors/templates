@@ -1,0 +1,5 @@
+- name: EZ-Shop
+  rule:
+  - regexps:
+      body:
+      - EZ-Shop

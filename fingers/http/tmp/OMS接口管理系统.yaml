@@ -1,0 +1,5 @@
+- name: OMS接口管理系统
+  rule:
+  - regexps:
+      body:
+      - OMS接口管理系统

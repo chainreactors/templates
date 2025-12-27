@@ -1,0 +1,5 @@
+- name: TrendMicro IWSA5000
+  rule:
+  - regexps:
+      body:
+      - iwsa5000

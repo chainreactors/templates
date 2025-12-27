@@ -1,0 +1,5 @@
+- name: NindonCMS
+  rule:
+  - regexps:
+      body:
+      - powered by NindonCMS

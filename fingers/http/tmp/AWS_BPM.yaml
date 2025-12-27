@@ -1,0 +1,5 @@
+- name: AWS BPM
+  rule:
+  - regexps:
+      body:
+      - AWS BPM PaaS

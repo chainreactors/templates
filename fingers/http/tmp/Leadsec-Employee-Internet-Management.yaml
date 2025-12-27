@@ -1,0 +1,6 @@
+- name: Leadsec-Employee-Internet-Management
+  rule:
+  - regexps:
+      body:
+      - leadsec acm
+      - txtmac

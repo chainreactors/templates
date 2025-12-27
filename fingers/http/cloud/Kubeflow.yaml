@@ -1,0 +1,5 @@
+- name: Kubeflow
+  rule:
+  - regexps:
+      body:
+      - Kubeflow

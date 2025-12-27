@@ -1,0 +1,5 @@
+- name: PageNow
+  rule:
+  - regexps:
+      body:
+      - PageNow

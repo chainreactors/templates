@@ -1,0 +1,5 @@
+- name: cake php
+  rule:
+  - favicon:
+      mmh3:
+      - '980692677'

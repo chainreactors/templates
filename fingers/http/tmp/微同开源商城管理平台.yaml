@@ -1,0 +1,5 @@
+- name: 微同开源商城管理平台
+  rule:
+  - regexps:
+      body:
+      - fly2you.cn

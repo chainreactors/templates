@@ -1,0 +1,5 @@
+- name: dasannetworks
+  rule:
+  - regexps:
+      body:
+      - clear_cookie("login");

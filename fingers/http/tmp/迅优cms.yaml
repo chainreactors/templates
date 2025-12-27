@@ -1,0 +1,5 @@
+- name: 迅优cms
+  rule:
+  - regexps:
+      body:
+      - 技术支持：青岛迅优网络科技有限公司

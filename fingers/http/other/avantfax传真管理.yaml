@@ -1,0 +1,5 @@
+- name: avantfax传真管理
+  rule:
+  - regexps:
+      body:
+      - content="Web 2.0 HylaFAX management

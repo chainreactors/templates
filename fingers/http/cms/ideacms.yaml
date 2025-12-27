@@ -1,0 +1,5 @@
+- name: ideacms
+  rule:
+  - regexps:
+      body:
+      - IdeaCMS

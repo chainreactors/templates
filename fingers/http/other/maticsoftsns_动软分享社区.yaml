@@ -1,0 +1,7 @@
+- name: maticsoftsns_动软分享社区
+  rule:
+  - regexps:
+      body:
+      - MaticsoftSNS
+      - maticsoft
+      - /Areas/SNS/

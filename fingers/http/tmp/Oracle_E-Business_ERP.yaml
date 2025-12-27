@@ -1,0 +1,6 @@
+- name: Oracle E-Business ERP
+  rule:
+  - regexps:
+      body:
+      - /OA_HTML/media/oracle_white_logo.png
+      - OA_HTML/AppsLogin

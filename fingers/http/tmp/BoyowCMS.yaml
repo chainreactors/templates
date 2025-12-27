@@ -1,0 +1,5 @@
+- name: BoyowCMS
+  rule:
+  - regexps:
+      body:
+      - publish by BoyowCMS

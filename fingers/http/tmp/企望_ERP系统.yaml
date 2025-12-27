@@ -1,0 +1,6 @@
+- name: 企望 ERP系统
+  rule:
+  - regexps:
+      body:
+      - /javascript/js/witfunctions.js
+      - 企望制造ERP系统

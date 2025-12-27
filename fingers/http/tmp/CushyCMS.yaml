@@ -1,0 +1,5 @@
+- name: CushyCMS
+  rule:
+  - regexps:
+      body:
+      - Cushy.activeTab

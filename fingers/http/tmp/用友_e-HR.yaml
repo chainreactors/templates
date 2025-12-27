@@ -1,0 +1,5 @@
+- name: 用友 e-HR
+  rule:
+  - regexps:
+      body:
+      - /hrss/rm/RmMain.jsp

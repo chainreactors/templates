@@ -1,0 +1,13 @@
+- name: iis
+  rule:
+  - regexps:
+      body:
+      - Bad Request (Invalid Hostname)
+      vuln:
+      - '- /</title>'
+      regexp:
+      - IIS\/([\d\.]{3,4})
+    info: Directory traversal
+    favicon:
+      md5:
+      - 825af13371930eeb2f85cf075fa25b68

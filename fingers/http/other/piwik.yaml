@@ -1,0 +1,8 @@
+- name: piwik
+  rule:
+  - regexps:
+      body:
+      - Piwik
+      - index.php?module=Proxy
+      header:
+      - 'PIWIK_SESSID '

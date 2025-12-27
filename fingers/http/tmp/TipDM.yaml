@@ -1,0 +1,5 @@
+- name: TipDM
+  rule:
+  - regexps:
+      body:
+      - TipDM

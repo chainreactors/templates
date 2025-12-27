@@ -1,0 +1,5 @@
+- name: ChenRui One way transmission system
+  rule:
+  - regexps:
+      body:
+      - 辰锐单向传输系统

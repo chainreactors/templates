@@ -1,0 +1,6 @@
+- name: dubbo
+  focus: true
+  rule:
+  - regexps:
+      header:
+      - Basic realm="dubbo"

@@ -1,0 +1,5 @@
+- name: Oracle Database Firewall
+  rule:
+  - regexps:
+      body:
+      - oracle database firewall

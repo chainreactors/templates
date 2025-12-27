@@ -1,0 +1,5 @@
+- name: sophos cyberoam
+  rule:
+  - favicon:
+      mmh3:
+      - '1601194732'

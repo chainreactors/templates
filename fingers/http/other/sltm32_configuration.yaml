@@ -1,0 +1,5 @@
+- name: sltm32_configuration
+  rule:
+  - regexps:
+      body:
+      - 'SLTM32 Web Configuration Pages '

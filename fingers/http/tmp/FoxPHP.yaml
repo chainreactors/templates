@@ -1,0 +1,5 @@
+- name: FoxPHP
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: foxphp_ok='

@@ -1,0 +1,5 @@
+- name: OpenWBS
+  rule:
+  - regexps:
+      body:
+      - openwbs team

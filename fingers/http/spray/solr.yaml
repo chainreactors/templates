@@ -1,0 +1,8 @@
+- name: solr
+  level: 2
+  rule:
+  - regexps:
+      body:
+      - <title>Solr Admin</title>
+    send_data: /solr
+    info: solr_admin_leak

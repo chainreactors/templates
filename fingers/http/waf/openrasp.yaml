@@ -1,0 +1,5 @@
+- name: openrasp
+  rule:
+  - regexps:
+      body:
+      - 400 - Request blocked by OpenRASP

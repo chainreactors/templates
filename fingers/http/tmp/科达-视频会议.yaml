@@ -1,0 +1,5 @@
+- name: 科达-视频会议
+  rule:
+  - regexps:
+      body:
+      - Kedacom

@@ -1,0 +1,5 @@
+- name: SNB股票交易软件
+  rule:
+  - regexps:
+      body:
+      - SNBmt自动交易系统

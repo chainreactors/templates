@@ -1,0 +1,7 @@
+- name: foxphp
+  rule:
+  - regexps:
+      body:
+      - FoxPHPScroll
+      - FoxPHP_ImList
+      - content="FoxPHP

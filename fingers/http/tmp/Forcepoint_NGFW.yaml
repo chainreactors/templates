@@ -1,0 +1,5 @@
+- name: Forcepoint NGFW
+  rule:
+  - regexps:
+      body:
+      - id="software_name">ngfw security management center

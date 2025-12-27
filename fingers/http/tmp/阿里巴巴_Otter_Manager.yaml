@@ -1,0 +1,5 @@
+- name: 阿里巴巴 Otter Manager
+  rule:
+  - regexps:
+      body:
+      - Otter Manager

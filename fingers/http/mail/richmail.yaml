@@ -1,0 +1,5 @@
+- name: richmail
+  rule:
+  - regexps:
+      body:
+      - Richmail

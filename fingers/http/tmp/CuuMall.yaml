@@ -1,0 +1,5 @@
+- name: CuuMall
+  rule:
+  - regexps:
+      body:
+      - Power by CuuMall

@@ -1,0 +1,6 @@
+- name: V2 Conference 视频会议系统
+  link: http://video.bubang.com:18080/Conf/jsp/main/mainAction.do
+  rule:
+  - regexps:
+      body:
+      - window.location.href=\"/Conf/index.jsp\"

@@ -1,0 +1,5 @@
+- name: Majorsec LieYing
+  rule:
+  - regexps:
+      body:
+      - majorsec

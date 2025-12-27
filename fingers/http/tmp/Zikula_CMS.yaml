@@ -1,0 +1,7 @@
+- name: Zikula_CMS
+  rule:
+  - regexps:
+      body:
+      - zikula.de
+      header:
+      - ZKSID2

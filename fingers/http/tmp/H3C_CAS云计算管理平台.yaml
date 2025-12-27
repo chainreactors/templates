@@ -1,0 +1,5 @@
+- name: H3C CAS云计算管理平台
+  rule:
+  - regexps:
+      body:
+      - H3Cloud

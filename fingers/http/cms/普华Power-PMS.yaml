@@ -1,0 +1,5 @@
+- name: 普华Power-PMS
+  rule:
+  - regexps:
+      body:
+      - /Account/GetSiteCode/

@@ -1,0 +1,6 @@
+- name: cafeengine
+  rule:
+  - regexps:
+      body:
+      - /CafeEngine/style.css
+      - <a href=http://cafeengine.com>CafeEngine.com

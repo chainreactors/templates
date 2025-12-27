@@ -1,0 +1,5 @@
+- name: Zen-Cart-shopping
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: Zenid='

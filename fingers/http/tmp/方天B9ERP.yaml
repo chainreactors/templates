@@ -1,0 +1,5 @@
+- name: 方天B9ERP
+  rule:
+  - regexps:
+      body:
+      - 方天云端ERP企业管理软件

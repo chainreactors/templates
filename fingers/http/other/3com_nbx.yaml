@@ -1,0 +1,6 @@
+- name: 3com nbx
+  rule:
+  - regexps:
+      body:
+      - NBX NetSet
+      - splashTitleIPTelephony

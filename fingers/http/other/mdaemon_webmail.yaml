@@ -1,0 +1,5 @@
+- name: mdaemon webmail
+  rule:
+  - favicon:
+      mmh3:
+      - '-766957661'

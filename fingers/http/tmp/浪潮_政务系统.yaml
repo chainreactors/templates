@@ -1,0 +1,5 @@
+- name: 浪潮 政务系统
+  rule:
+  - regexps:
+      body:
+      - 浪潮政务

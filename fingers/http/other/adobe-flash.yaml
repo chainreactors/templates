@@ -1,0 +1,7 @@
+- name: adobe-flash
+  rule:
+  - regexps:
+      body:
+      - /x-shockwave-flash
+      - /go/getflashplayer
+      - embedswf

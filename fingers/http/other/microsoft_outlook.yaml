@@ -1,0 +1,5 @@
+- name: microsoft outlook
+  rule:
+  - favicon:
+      mmh3:
+      - '-1249852061'

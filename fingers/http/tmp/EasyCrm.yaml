@@ -1,0 +1,5 @@
+- name: EasyCrm
+  rule:
+  - regexps:
+      body:
+      - EasyCrm

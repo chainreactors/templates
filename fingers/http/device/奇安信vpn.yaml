@@ -1,0 +1,7 @@
+- name: 奇安信vpn
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - new_style/deepblue.css
+      - admin/js/json2.js

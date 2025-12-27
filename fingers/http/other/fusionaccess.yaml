@@ -1,0 +1,7 @@
+- name: fusionaccess
+  rule:
+  - regexps:
+      body:
+      - FusionAccess
+      header:
+      - FusionAccess

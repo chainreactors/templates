@@ -1,0 +1,5 @@
+- name: Apache Superset
+  rule:
+  - regexps:
+      header:
+      - superset/welcome

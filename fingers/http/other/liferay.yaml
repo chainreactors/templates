@@ -1,0 +1,5 @@
+- name: liferay
+  rule:
+  - regexps:
+      header:
+      - Liferay-Portal

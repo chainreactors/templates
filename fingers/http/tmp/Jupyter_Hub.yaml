@@ -1,0 +1,9 @@
+- name: Jupyter Hub
+  rule:
+  - favicon:
+      mmh3:
+      - '-1212628902'
+    regexps:
+      body:
+      - Jupyter Hub
+      - /hub/static/images/jupyter.png

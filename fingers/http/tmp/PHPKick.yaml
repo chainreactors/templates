@@ -1,0 +1,5 @@
+- name: PHPKick
+  rule:
+  - regexps:
+      body:
+      - PHPKick

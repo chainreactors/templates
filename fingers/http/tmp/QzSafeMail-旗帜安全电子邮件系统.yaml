@@ -1,0 +1,5 @@
+- name: QzSafeMail-旗帜安全电子邮件系统
+  rule:
+  - regexps:
+      body:
+      - QzSafeMail-旗帜安全电子邮件系统

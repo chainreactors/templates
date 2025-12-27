@@ -1,0 +1,5 @@
+- name: 天清web应用安全网关
+  rule:
+  - regexps:
+      body:
+      - 天清web应用安全网关

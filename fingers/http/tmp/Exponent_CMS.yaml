@@ -1,0 +1,5 @@
+- name: Exponent CMS
+  rule:
+  - regexps:
+      body:
+      - content="Exponent Content Management System

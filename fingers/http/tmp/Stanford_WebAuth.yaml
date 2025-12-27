@@ -1,0 +1,5 @@
+- name: Stanford WebAuth
+  rule:
+  - regexps:
+      body:
+      - http://webauth.stanford.edu

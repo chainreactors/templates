@@ -1,0 +1,5 @@
+- name: 网域 NSYS
+  rule:
+  - regexps:
+      body:
+      - Netsys

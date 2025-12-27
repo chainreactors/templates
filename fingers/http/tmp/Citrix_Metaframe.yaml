@@ -1,0 +1,5 @@
+- name: Citrix Metaframe
+  rule:
+  - regexps:
+      body:
+      - window.location="./Citrix/MetaFrame"

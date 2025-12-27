@@ -1,0 +1,5 @@
+- name: 派拉ParaSecure 单点登录
+  rule:
+  - regexps:
+      body:
+      - 派拉统一身份管理系统

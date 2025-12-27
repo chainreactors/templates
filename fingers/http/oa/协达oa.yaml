@@ -1,0 +1,8 @@
+- name: 协达oa
+  rule:
+  - regexps:
+      body:
+      - img.style.height=(bodyH-84-100)
+    favicon:
+      mmh3:
+      - '-1850889691'

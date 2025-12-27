@@ -1,0 +1,5 @@
+- name: Shapetizer-运营管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>用户登录 - Shapetizer运营管理系统</title>

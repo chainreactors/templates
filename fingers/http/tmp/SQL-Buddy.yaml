@@ -1,0 +1,5 @@
+- name: SQL-Buddy
+  rule:
+  - regexps:
+      body:
+      - SQL Buddy

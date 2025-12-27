@@ -1,0 +1,5 @@
+- name: JGS-Portal
+  rule:
+  - regexps:
+      body:
+      - JGS-Portal

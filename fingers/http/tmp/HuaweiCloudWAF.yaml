@@ -1,0 +1,5 @@
+- name: HuaweiCloudWAF
+  rule:
+  - regexps:
+      header:
+      - HuaweiCloudWAF

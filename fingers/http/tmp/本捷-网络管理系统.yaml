@@ -1,0 +1,5 @@
+- name: 本捷-网络管理系统
+  rule:
+  - regexps:
+      body:
+      - 本捷网络

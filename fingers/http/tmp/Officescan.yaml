@@ -1,0 +1,5 @@
+- name: Officescan
+  rule:
+  - regexps:
+      header:
+      - 'Server: Officescan Client'

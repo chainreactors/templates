@@ -1,0 +1,5 @@
+- name: ucstar
+  rule:
+  - regexps:
+      body:
+      - UcSTAR 管理控制台

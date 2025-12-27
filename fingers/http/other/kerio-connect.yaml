@@ -1,0 +1,5 @@
+- name: kerio-connect
+  rule:
+  - regexps:
+      header:
+      - Kerio MailServer

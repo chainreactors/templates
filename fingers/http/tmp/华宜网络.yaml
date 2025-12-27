@@ -1,0 +1,5 @@
+- name: 华宜网络
+  rule:
+  - regexps:
+      body:
+      - 华宜网络

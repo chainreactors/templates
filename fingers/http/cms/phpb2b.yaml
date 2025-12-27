@@ -1,0 +1,5 @@
+- name: phpb2b
+  rule:
+  - regexps:
+      body:
+      - Powered By PHPB2B

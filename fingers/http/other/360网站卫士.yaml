@@ -1,0 +1,5 @@
+- name: 360网站卫士
+  rule:
+  - regexps:
+      header:
+      - 360wzb

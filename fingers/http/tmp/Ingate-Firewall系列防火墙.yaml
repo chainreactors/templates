@@ -1,0 +1,7 @@
+- name: Ingate-Firewall系列防火墙
+  rule:
+  - favicon:
+      mmh3: null
+    regexps:
+      header:
+      - Ingate-Firewall

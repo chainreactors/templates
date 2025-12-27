@@ -1,0 +1,5 @@
+- name: sitestar
+  rule:
+  - regexps:
+      body:
+      - title='建站之星(sitestar)网站建设系统'

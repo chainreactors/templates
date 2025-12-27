@@ -1,0 +1,5 @@
+- name: 四信通信-公司产品
+  rule:
+  - regexps:
+      header:
+      - 'Server: httpd_four-faith'

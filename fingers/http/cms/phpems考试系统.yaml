@@ -1,0 +1,6 @@
+- name: phpems考试系统
+  rule:
+  - regexps:
+      body:
+      - phpems
+      - content="PHPEMS

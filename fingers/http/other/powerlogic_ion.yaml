@@ -1,0 +1,7 @@
+- name: powerlogic_ion
+  rule:
+  - regexps:
+      body:
+      - PowerLogic
+      header:
+      - Allegro-Software-RomPager

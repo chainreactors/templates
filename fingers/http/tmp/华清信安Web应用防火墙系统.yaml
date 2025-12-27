@@ -1,0 +1,5 @@
+- name: 华清信安Web应用防火墙系统
+  rule:
+  - regexps:
+      body:
+      - 华清信安Web应用防火墙系统

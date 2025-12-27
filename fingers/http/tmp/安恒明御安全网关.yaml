@@ -1,0 +1,6 @@
+- name: 安恒明御安全网关
+  link: https://117.69.158.54:4430/login.html
+  rule:
+  - regexps:
+      body:
+      - 明御安全网关

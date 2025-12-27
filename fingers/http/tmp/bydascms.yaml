@@ -1,0 +1,5 @@
+- name: bydascms
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: Typething2 / Bydas'

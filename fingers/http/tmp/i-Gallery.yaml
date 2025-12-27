@@ -1,0 +1,5 @@
+- name: i-Gallery
+  rule:
+  - regexps:
+      body:
+      - i Gallery

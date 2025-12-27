@@ -1,0 +1,5 @@
+- name: TypoLight
+  rule:
+  - regexps:
+      body:
+      - This website is powered by TYPOlight Open Source CMS

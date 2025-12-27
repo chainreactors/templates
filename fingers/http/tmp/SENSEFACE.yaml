@@ -1,0 +1,5 @@
+- name: SENSEFACE
+  rule:
+  - regexps:
+      body:
+      - <title>SENSEFACE</title>

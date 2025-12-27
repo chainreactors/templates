@@ -1,0 +1,11 @@
+- name: tomcat
+  rule:
+  - regexps:
+      regexp:
+      - <h3>Apache Tomcat/(.*)</h3>
+      - <title>Apache Tomcat/(.*)</title>
+      header:
+      - Apache-Coyote
+    favicon:
+      md5:
+      - 4644f2d45601037b8423d45e13194c93

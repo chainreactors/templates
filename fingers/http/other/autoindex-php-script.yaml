@@ -1,0 +1,8 @@
+- name: autoindex-php-script
+  rule:
+  - regexps:
+      body:
+      - title="AutoIndex Default
+      - autoindex.sourceforge.net/
+      header:
+      - AutoIndex2

@@ -1,0 +1,5 @@
+- name: 智慧校园管理系统
+  rule:
+  - regexps:
+      body:
+      - /DC_Login/Login

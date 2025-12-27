@@ -1,0 +1,7 @@
+- name: ektron-cms
+  rule:
+  - regexps:
+      body:
+      - /java/ektron.js
+      header:
+      - EktGUID=

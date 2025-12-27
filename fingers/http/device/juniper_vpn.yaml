@@ -1,0 +1,6 @@
+- name: juniper_vpn
+  rule:
+  - regexps:
+      body:
+      - welcome.cgi?p=logo
+      - /images/logo_juniper_reversed.gif

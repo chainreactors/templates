@@ -1,0 +1,5 @@
+- name: 奥远科技
+  rule:
+  - regexps:
+      body:
+      - aykj.net

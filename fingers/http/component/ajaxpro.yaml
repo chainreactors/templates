@@ -1,0 +1,6 @@
+- name: ajaxpro
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - ajaxpro

@@ -1,0 +1,6 @@
+- name: OneinStack
+  link: http://1.15.55.135/
+  rule:
+  - regexps:
+      body:
+      - OneinStack

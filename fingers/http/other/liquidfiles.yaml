@@ -1,0 +1,5 @@
+- name: liquidfiles
+  rule:
+  - favicon:
+      mmh3:
+      - '541087742'

@@ -1,0 +1,5 @@
+- name: pgAdmin
+  rule:
+  - regexps:
+      body:
+      - pgAdmin

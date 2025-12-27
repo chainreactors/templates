@@ -1,0 +1,5 @@
+- name: 优炫下一代防火墙
+  rule:
+  - regexps:
+      body:
+      - 优炫下一代防火墙

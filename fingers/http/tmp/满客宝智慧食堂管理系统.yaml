@@ -1,0 +1,6 @@
+- name: 满客宝智慧食堂管理系统
+  link: http://223.82.0.164:8000/manage/#/login
+  rule:
+  - regexps:
+      body:
+      - 满客宝

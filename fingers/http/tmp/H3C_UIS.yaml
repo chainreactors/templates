@@ -1,0 +1,6 @@
+- name: H3C UIS
+  rule:
+  - regexps:
+      body:
+      - h3c uis 统一管理矩阵
+      - uisalert

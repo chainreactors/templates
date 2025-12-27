@@ -1,0 +1,7 @@
+- name: axway-securetransport
+  rule:
+  - regexps:
+      body:
+      - Welcome to SecureTransport
+      header:
+      - SecureTransport

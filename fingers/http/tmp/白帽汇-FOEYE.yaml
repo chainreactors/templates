@@ -1,0 +1,5 @@
+- name: 白帽汇-FOEYE
+  rule:
+  - regexps:
+      body:
+      - <title>FOEYE</title>

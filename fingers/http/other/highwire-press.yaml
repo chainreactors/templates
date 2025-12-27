@@ -1,0 +1,5 @@
+- name: highwire-press
+  rule:
+  - regexps:
+      header:
+      - x-highwire-sessionid

@@ -1,0 +1,6 @@
+- name: mantis
+  rule:
+  - regexps:
+      body:
+      - browser_search_plugin.php?type=id
+      - MantisBT Team

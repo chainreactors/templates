@@ -1,0 +1,7 @@
+- name: sangfor-ssl-vpn
+  rule:
+  - regexps:
+      body:
+      - login_psw.csp
+      header:
+      - TWFID

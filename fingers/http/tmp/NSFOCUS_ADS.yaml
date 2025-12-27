@@ -1,0 +1,5 @@
+- name: NSFOCUS ADS
+  rule:
+  - regexps:
+      body:
+      - nsfocus ads

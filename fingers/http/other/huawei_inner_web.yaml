@@ -1,0 +1,6 @@
+- name: huawei inner web
+  rule:
+  - regexps:
+      body:
+      - HUAWEI Inner Web
+      - hidden_frame.html

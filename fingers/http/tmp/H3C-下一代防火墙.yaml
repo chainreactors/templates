@@ -1,0 +1,6 @@
+- name: H3C-下一代防火墙
+  rule:
+  - regexps:
+      body:
+      - webui/images/basic/login/china_logo.jpg
+      - Web user login

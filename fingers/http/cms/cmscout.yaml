@@ -1,0 +1,7 @@
+- name: cmscout
+  rule:
+  - regexps:
+      body:
+      - Powered by CMScout
+      header:
+      - cmscout2=

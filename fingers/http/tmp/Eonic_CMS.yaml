@@ -1,0 +1,5 @@
+- name: Eonic CMS
+  rule:
+  - regexps:
+      body:
+      - content="EonicWebV5

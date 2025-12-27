@@ -1,0 +1,5 @@
+- name: netcomwireless
+  rule:
+  - favicon:
+      mmh3:
+      - '5542029'

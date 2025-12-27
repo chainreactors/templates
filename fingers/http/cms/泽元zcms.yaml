@@ -1,0 +1,7 @@
+- name: 泽元zcms
+  rule:
+  - regexps:
+      body:
+      - zcms_stat
+      - zcms_skin
+      - 泽元

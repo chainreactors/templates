@@ -1,0 +1,5 @@
+- name: citrix-web-pn-server
+  rule:
+  - regexps:
+      body:
+      - Citrix Web PN Server

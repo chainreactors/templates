@@ -1,0 +1,5 @@
+- name: fluxbb
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://fluxbb.org/

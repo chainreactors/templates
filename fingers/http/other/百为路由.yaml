@@ -1,0 +1,5 @@
+- name: 百为路由
+  rule:
+  - regexps:
+      body:
+      - 提交验证的id必须是ctl_submit

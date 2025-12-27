@@ -1,0 +1,5 @@
+- name: SmartProperty物业管理系统
+  rule:
+  - regexps:
+      body:
+      - SmartProperty物业管理系统

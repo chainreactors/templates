@@ -1,0 +1,12 @@
+- name: jira
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - jira.webresources
+    favicon:
+      mmh3:
+      - '855273746'
+      - '981867722'
+      - '-1581907337'
+      - '552727997'

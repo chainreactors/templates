@@ -1,0 +1,5 @@
+- name: WSTMart
+  rule:
+  - regexps:
+      body:
+      - Powered By WSTMart

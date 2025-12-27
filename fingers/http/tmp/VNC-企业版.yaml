@@ -1,0 +1,5 @@
+- name: VNC-企业版
+  rule:
+  - regexps:
+      header:
+      - 'Server: VNC Server Enterprise Edition'

@@ -1,0 +1,6 @@
+- name: 新网模板建站系统
+  rule:
+  - regexps:
+      body:
+      - 新网模板建站系统
+      - <meta name="keywords" content="新网,Xinnet" />

@@ -1,0 +1,5 @@
+- name: ZTE 中兴通讯 CoCloud云平台
+  rule:
+  - regexps:
+      body:
+      - uSmartView

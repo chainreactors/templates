@@ -1,0 +1,7 @@
+- name: nagios
+  rule:
+  - regexps:
+      body:
+      - /nagios/cgi-bin/status.cgi
+      header:
+      - Nagios access

@@ -1,0 +1,5 @@
+- name: o2security_vpn
+  rule:
+  - regexps:
+      header:
+      - client_param=install_active

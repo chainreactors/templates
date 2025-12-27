@@ -1,0 +1,6 @@
+- name: onssi_video_clients
+  rule:
+  - regexps:
+      body:
+      - OnSSI Video Clients
+      - x-value="On-Net Surveillance Systems Inc."

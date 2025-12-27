@@ -1,0 +1,5 @@
+- name: soup-transcode-proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: soup-transcode-proxy'

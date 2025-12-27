@@ -1,0 +1,6 @@
+- name: 北京东华原煎药管理系统
+  link: http://221.182.149.162:8088/login.aspx
+  rule:
+  - regexps:
+      body:
+      - 北京东华原煎药管理系统

@@ -1,0 +1,7 @@
+- name: e-office
+  rule:
+  - regexps:
+      body:
+      - /general/login/view//images/updateLoad.gif
+      header:
+      - general/login/index.php

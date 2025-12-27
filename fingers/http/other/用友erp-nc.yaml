@@ -1,0 +1,7 @@
+- name: 用友erp-nc
+  rule:
+  - regexps:
+      body:
+      - /nc/servlet/nc.ui.iufo.login.Index
+      - 用友新世纪
+      - logo/images/ufida

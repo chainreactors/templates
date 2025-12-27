@@ -1,0 +1,5 @@
+- name: phpmywind
+  rule:
+  - regexps:
+      body:
+      - PHPMyWind

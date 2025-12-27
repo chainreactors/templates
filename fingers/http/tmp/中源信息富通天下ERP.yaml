@@ -1,0 +1,5 @@
+- name: 中源信息富通天下ERP
+  rule:
+  - regexps:
+      body:
+      - 富通天下外贸ERP

@@ -1,0 +1,7 @@
+- name: mongo-express
+  rule:
+  - regexps:
+      body:
+      - Mongo Express
+      header:
+      - mongo-express

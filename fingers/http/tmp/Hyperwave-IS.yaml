@@ -1,0 +1,5 @@
+- name: Hyperwave-IS
+  rule:
+  - regexps:
+      header:
+      - 'Server: Hyperwave-IS/'

@@ -1,0 +1,5 @@
+- name: Commerce-Builder
+  rule:
+  - regexps:
+      body:
+      - 'Server: commerce-builder'

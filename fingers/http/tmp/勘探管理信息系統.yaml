@@ -1,0 +1,5 @@
+- name: 勘探管理信息系統
+  rule:
+  - regexps:
+      body:
+      - <title>勘探生产管理信息系統</title>

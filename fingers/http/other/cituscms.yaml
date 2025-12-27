@@ -1,0 +1,5 @@
+- name: cituscms
+  rule:
+  - regexps:
+      body:
+      - CitusCMS

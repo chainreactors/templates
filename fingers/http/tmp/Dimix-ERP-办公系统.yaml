@@ -1,0 +1,5 @@
+- name: Dimix-ERP-办公系统
+  rule:
+  - regexps:
+      body:
+      - Dimix ERP 办公系统

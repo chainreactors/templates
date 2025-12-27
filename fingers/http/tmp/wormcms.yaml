@@ -1,0 +1,5 @@
+- name: wormcms
+  rule:
+  - regexps:
+      body:
+      - wormcms/layui/layui.js

@@ -1,0 +1,6 @@
+- name: 明御web应用防火墙
+  rule:
+  - regexps:
+      body:
+      - 明御web应用防火墙
+      - <img id="company_logo" src="images/waf.company.png

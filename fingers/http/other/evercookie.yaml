@@ -1,0 +1,6 @@
+- name: evercookie
+  rule:
+  - regexps:
+      body:
+      - evercookie.js
+      - var ec = new evercookie();

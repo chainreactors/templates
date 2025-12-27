@@ -1,0 +1,7 @@
+- name: cushycms
+  rule:
+  - regexps:
+      body:
+      - Powered by CushyCMS
+      header:
+      - _cushy_session

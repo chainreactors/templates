@@ -1,0 +1,5 @@
+- name: easywebcms
+  rule:
+  - regexps:
+      header:
+      - Easyweb CMS

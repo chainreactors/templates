@@ -1,0 +1,5 @@
+- name: Fortinet-WAF
+  rule:
+  - regexps:
+      header:
+      - FORTIWAFSID=

@@ -1,0 +1,5 @@
+- name: VamCart
+  rule:
+  - regexps:
+      body:
+      - VamCart.css

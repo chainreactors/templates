@@ -1,0 +1,5 @@
+- name: 网趣网上购物系统旗舰版
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: dmwh'

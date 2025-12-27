@@ -1,0 +1,5 @@
+- name: PmWiki
+  rule:
+  - regexps:
+      body:
+      - pmwiki.php

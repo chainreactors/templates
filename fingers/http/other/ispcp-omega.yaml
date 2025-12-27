@@ -1,0 +1,7 @@
+- name: ispcp-omega
+  rule:
+  - regexps:
+      body:
+      - ispCP Omega a Virtual Hosting Control System
+      header:
+      - ' ispCP='

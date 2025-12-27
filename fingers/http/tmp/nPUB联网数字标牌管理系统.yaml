@@ -1,0 +1,5 @@
+- name: nPUB联网数字标牌管理系统
+  rule:
+  - regexps:
+      body:
+      - nPUB联网数字标牌管理系统

@@ -1,0 +1,5 @@
+- name: 1caitong
+  rule:
+  - regexps:
+      body:
+      - /custom/GroupNewsList

@@ -1,0 +1,5 @@
+- name: Polycom 视频会议服务器
+  rule:
+  - regexps:
+      body:
+      - EMA at Carmel

@@ -1,0 +1,5 @@
+- name: 企业版qq
+  rule:
+  - regexps:
+      body:
+      - http://wpa.b.qq.com/cgi/wpa.php

@@ -1,0 +1,5 @@
+- name: 工作易
+  rule:
+  - regexps:
+      body:
+      - 工作易人才招聘系统

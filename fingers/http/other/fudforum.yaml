@@ -1,0 +1,8 @@
+- name: fudforum
+  rule:
+  - regexps:
+      body:
+      - 'Powered by: FUDforum'
+      - /adm/admloginuser.php
+      header:
+      - fud_session_

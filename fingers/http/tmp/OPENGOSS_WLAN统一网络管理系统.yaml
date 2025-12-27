@@ -1,0 +1,5 @@
+- name: OPENGOSS WLAN统一网络管理系统
+  rule:
+  - regexps:
+      body:
+      - content="wlan综合网管系统"

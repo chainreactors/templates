@@ -1,0 +1,5 @@
+- name: 帝国CMS
+  rule:
+  - regexps:
+      body:
+      - 从帝国CMS迁入网站数据

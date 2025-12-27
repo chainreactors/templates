@@ -1,0 +1,7 @@
+- name: argosoft-mail-server
+  rule:
+  - regexps:
+      body:
+      - ArGoSoft Mail Server Plus for
+      header:
+      - ArGoSoft Mail Server

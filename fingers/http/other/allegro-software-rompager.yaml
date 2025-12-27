@@ -1,0 +1,5 @@
+- name: allegro-software-rompager
+  rule:
+  - regexps:
+      header:
+      - Allegro-Software-RomPager

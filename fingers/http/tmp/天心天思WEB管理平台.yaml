@@ -1,0 +1,5 @@
+- name: 天心天思WEB管理平台
+  rule:
+  - regexps:
+      body:
+      - <title>天心天思WEB管理平台</title>

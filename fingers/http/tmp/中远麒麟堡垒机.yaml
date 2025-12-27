@@ -1,0 +1,10 @@
+- name: 中远麒麟堡垒机
+  rule:
+  - favicon:
+      mmh3:
+      - '-1915366547'
+      - '-2084234863'
+    regexps:
+      body:
+      - alert('没采集到指纹数据')
+      - window.parent.parent.location.href='admin.php?controller=admin_index&action=login'

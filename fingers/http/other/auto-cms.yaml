@@ -1,0 +1,6 @@
+- name: auto-cms
+  rule:
+  - regexps:
+      body:
+      - Powered by Auto CMS
+      - content="AutoCMS

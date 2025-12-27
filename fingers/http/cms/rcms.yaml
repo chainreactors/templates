@@ -1,0 +1,5 @@
+- name: rcms
+  rule:
+  - regexps:
+      body:
+      - /r/cms/www/

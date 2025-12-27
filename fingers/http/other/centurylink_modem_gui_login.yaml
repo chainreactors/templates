@@ -1,0 +1,5 @@
+- name: 'centurylink modem gui login '
+  rule:
+  - favicon:
+      mmh3:
+      - '-1908556829'

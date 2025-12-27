@@ -1,0 +1,8 @@
+- name: Cloudflare
+  rule:
+  - regexps:
+      body:
+      - var cloudflare=
+      header:
+      - __cfduid=
+      - cloudflare

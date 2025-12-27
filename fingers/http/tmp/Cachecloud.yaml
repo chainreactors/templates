@@ -1,0 +1,6 @@
+- name: Cachecloud
+  rule:
+  - regexps:
+      body:
+      - cachecloud系统
+      - alert("系统不存在该用户名，请确认该用户申请了cachecloud权限!");

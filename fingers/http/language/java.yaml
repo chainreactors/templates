@@ -1,0 +1,5 @@
+- name: java
+  rule:
+  - regexps:
+      header:
+      - JSESSIONID

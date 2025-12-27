@@ -1,0 +1,5 @@
+- name: Mambo CMS
+  rule:
+  - regexps:
+      body:
+      - content="Mambo

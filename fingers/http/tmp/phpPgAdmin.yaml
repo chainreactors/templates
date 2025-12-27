@@ -1,0 +1,5 @@
+- name: phpPgAdmin
+  rule:
+  - regexps:
+      body:
+      - phpPgAdmin

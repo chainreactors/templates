@@ -1,0 +1,6 @@
+- name: 税控服务器管理系统
+  link: http://47.94.248.116/
+  rule:
+  - regexps:
+      body:
+      - resources/css/login_yzm.css

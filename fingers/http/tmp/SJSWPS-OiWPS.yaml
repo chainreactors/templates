@@ -1,0 +1,5 @@
+- name: SJSWPS-OiWPS
+  rule:
+  - regexps:
+      header:
+      - Sun-Java-System-Web-Proxy-Server

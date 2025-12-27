@@ -1,0 +1,5 @@
+- name: 正方教务管理系统
+  rule:
+  - regexps:
+      body:
+      - style/base/jw.css

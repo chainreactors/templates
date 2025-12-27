@@ -1,0 +1,7 @@
+- name: vue
+  rule:
+  - favicon:
+      mmh3:
+      - '-1237480336'
+      md5:
+      - 67d34b0decfd4d725d1c1f2eeadc4756

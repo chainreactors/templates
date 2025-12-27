@@ -1,0 +1,5 @@
+- name: truvision
+  rule:
+  - favicon:
+      mmh3:
+      - '-1093172228'

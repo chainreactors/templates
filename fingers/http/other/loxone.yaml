@@ -1,0 +1,5 @@
+- name: loxone
+  rule:
+  - favicon:
+      mmh3:
+      - '904434662'

@@ -1,0 +1,5 @@
+- name: ibm notes
+  rule:
+  - favicon:
+      mmh3:
+      - '728788645'

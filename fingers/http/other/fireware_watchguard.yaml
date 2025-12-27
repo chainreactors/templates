@@ -1,0 +1,5 @@
+- name: fireware watchguard
+  rule:
+  - favicon:
+      mmh3:
+      - '-569941107'

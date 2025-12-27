@@ -1,0 +1,8 @@
+- name: yabb
+  rule:
+  - regexps:
+      body:
+      - YaBBTime.getTime()
+      - /YaBB.js
+      header:
+      - Y2User

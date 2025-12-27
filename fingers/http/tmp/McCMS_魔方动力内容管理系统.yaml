@@ -1,0 +1,5 @@
+- name: McCMS 魔方动力内容管理系统
+  rule:
+  - regexps:
+      body:
+      - McCMS - 魔方动力内容管理系统

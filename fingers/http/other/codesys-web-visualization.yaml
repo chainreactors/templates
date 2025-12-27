@@ -1,0 +1,7 @@
+- name: codesys-web-visualization
+  rule:
+  - regexps:
+      body:
+      - CoDeSys WebVisualization
+      header:
+      - WAGO_Webs

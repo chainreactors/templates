@@ -1,0 +1,5 @@
+- name: daisy
+  rule:
+  - regexps:
+      header:
+      - x-daisy-version

@@ -1,0 +1,5 @@
+- name: bugfree
+  rule:
+  - regexps:
+      body:
+      - BugFree

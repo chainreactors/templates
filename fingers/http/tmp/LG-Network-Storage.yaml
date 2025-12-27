@@ -1,0 +1,5 @@
+- name: LG-Network-Storage
+  rule:
+  - regexps:
+      body:
+      - form_bg_LG_NAS_Storage.gif

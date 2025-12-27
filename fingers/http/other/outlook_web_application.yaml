@@ -1,0 +1,5 @@
+- name: outlook web application
+  rule:
+  - favicon:
+      mmh3:
+      - '1356662359'

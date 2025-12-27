@@ -1,0 +1,5 @@
+- name: kong
+  rule:
+  - regexps:
+      regexp:
+      - 'Server: kong\/(.*)'

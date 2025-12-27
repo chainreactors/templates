@@ -1,0 +1,6 @@
+- name: 网康NS-ASG应用安全网关
+  link: https://220.166.57.238:4435/
+  rule:
+  - regexps:
+      body:
+      - 网康NS-ASG应用安全网关

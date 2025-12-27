@@ -1,0 +1,5 @@
+- name: SSC(U)-ERP管理系统
+  rule:
+  - regexps:
+      body:
+      - SSC(U)-ERP管理系统

@@ -1,0 +1,5 @@
+- name: 东软Neusoft 智能档案管理系统
+  rule:
+  - regexps:
+      body:
+      - 东软智能档案管理系统 &#8211; Neusoft SEAS

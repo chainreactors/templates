@@ -1,0 +1,7 @@
+- name: NetPilot
+  rule:
+  - regexps:
+      body:
+      - href="/sys/images/tree.css" title="netpilot
+      header:
+      - netpilot

@@ -1,0 +1,5 @@
+- name: whm
+  rule:
+  - favicon:
+      mmh3:
+      - '-649378830'

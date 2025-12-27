@@ -1,0 +1,5 @@
+- name: b2evolution
+  rule:
+  - regexps:
+      body:
+      - b2evolution

@@ -1,0 +1,5 @@
+- name: trendnet ip cam
+  rule:
+  - regexps:
+      header:
+      - Basic realm="netcam"

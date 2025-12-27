@@ -1,0 +1,5 @@
+- name: DOSSM 2.0 平台管理系统
+  rule:
+  - regexps:
+      body:
+      - DOSSM 2.0 平台管理系统

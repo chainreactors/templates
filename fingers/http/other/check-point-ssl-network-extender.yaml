@@ -1,0 +1,5 @@
+- name: check-point-ssl-network-extender
+  rule:
+  - regexps:
+      header:
+      - Check Point SVN foundation

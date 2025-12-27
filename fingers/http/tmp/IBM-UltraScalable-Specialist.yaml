@@ -1,0 +1,5 @@
+- name: IBM-UltraScalable-Specialist
+  rule:
+  - regexps:
+      body:
+      - IBM UltraScalable Specialist

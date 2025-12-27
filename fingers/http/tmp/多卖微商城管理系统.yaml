@@ -1,0 +1,5 @@
+- name: 多卖微商城管理系统
+  rule:
+  - regexps:
+      body:
+      - 多卖微商城管理系统

@@ -1,0 +1,6 @@
+- name: MrDoc
+  rule:
+  - regexps:
+      body:
+      - MrDoc
+      - content="MrDoc

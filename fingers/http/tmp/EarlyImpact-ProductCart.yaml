@@ -1,0 +1,5 @@
+- name: EarlyImpact-ProductCart
+  rule:
+  - regexps:
+      body:
+      - EarlyImpact, Product Cart

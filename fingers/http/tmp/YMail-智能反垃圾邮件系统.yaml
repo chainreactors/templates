@@ -1,0 +1,5 @@
+- name: YMail-智能反垃圾邮件系统
+  rule:
+  - regexps:
+      body:
+      - YMail's 智能反垃圾邮件系统

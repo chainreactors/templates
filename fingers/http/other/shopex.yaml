@@ -1,0 +1,6 @@
+- name: shopex
+  rule:
+  - regexps:
+      body:
+      - content="ShopEx
+      - '@author litie[aita]shopex.cn'

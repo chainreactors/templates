@@ -1,0 +1,5 @@
+- name: 恩斯特建站管理系统
+  rule:
+  - regexps:
+      body:
+      - 苏州托普斯网络

@@ -1,0 +1,7 @@
+- name: 中新金盾
+  rule:
+  - regexps:
+      body:
+      - zxsoft-wangwei
+      - 中新网络信息安全股份有限公司
+      - ZXCom.UsbKeyCom

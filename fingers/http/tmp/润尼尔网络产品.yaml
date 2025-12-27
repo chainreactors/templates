@@ -1,0 +1,5 @@
+- name: 润尼尔网络产品
+  rule:
+  - regexps:
+      body:
+      - content="experiment teaching,实验教学,润尼尔,虚拟仿真"

@@ -1,0 +1,15 @@
+- name: 帆软finereport
+  focus: true
+  rule:
+  - regexps:
+      vuln:
+      - FineReport
+    send_data: /WebReport/ReportServer
+  - regexps:
+      vuln:
+      - FineReport
+    send_data: /ReportServer
+  - regexps:
+      vuln:
+      - FineReport
+    send_data: /webroot/ReportServer

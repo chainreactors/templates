@@ -1,0 +1,5 @@
+- name: Microsoft-UrlScan
+  rule:
+  - regexps:
+      header:
+      - rejected-by-urlscan

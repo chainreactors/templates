@@ -1,0 +1,10 @@
+- name: 普元eos
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - EOSOperator
+      - eos-web.js
+      - org.gocom
+      header:
+      - eos_style_cookie

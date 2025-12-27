@@ -1,0 +1,5 @@
+- name: 盈时-电商管理平台
+  rule:
+  - regexps:
+      body:
+      - 盈时电商管理平台

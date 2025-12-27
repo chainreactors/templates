@@ -1,0 +1,6 @@
+- name: Byzoro Smart
+  rule:
+  - regexps:
+      body:
+      - smart s150&nbsp;系统登录
+      - smart--管理平台

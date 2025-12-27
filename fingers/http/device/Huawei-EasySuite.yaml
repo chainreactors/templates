@@ -1,0 +1,6 @@
+- name: Huawei-EasySuite
+  rule:
+  - regexps:
+      body:
+      - /static/easysuite/js/vendor.js
+      - <title>EasySuite</title>

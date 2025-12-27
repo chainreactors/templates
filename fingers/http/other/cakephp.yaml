@@ -1,0 +1,5 @@
+- name: cakephp
+  rule:
+  - regexps:
+      header:
+      - CAKEPHP

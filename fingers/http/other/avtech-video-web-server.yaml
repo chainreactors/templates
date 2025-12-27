@@ -1,0 +1,8 @@
+- name: avtech-video-web-server
+  rule:
+  - regexps:
+      body:
+      - '--- VIDEO WEB SERVER ---'
+      - /AV732E/setup.exe
+      header:
+      - 'Server: AV-TECH'

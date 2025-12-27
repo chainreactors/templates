@@ -1,0 +1,7 @@
+- name: axigen-mail-server
+  rule:
+  - regexps:
+      body:
+      - 'AXIGEN Webmail - '
+      header:
+      - Axigen-Webmail

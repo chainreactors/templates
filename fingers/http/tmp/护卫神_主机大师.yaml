@@ -1,0 +1,5 @@
+- name: 护卫神 主机大师
+  rule:
+  - regexps:
+      body:
+      - content="护卫神·主机大师 前台管理登录"

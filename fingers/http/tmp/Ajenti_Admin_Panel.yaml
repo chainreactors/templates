@@ -1,0 +1,5 @@
+- name: Ajenti Admin Panel
+  rule:
+  - regexps:
+      body:
+      - Ajenti

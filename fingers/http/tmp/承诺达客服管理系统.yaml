@@ -1,0 +1,5 @@
+- name: 承诺达客服管理系统
+  rule:
+  - regexps:
+      body:
+      - 承诺达客服管理系统

@@ -1,0 +1,5 @@
+- name: MySqlDumper
+  rule:
+  - regexps:
+      header:
+      - Basic realm="MySQLDumper

@@ -1,0 +1,6 @@
+- name: SecureSphere
+  rule:
+  - regexps:
+      header:
+      - 'Notconnected: /SecureSphere'
+      - 'Notconnected: /SecureSphere'

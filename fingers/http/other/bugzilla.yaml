@@ -1,0 +1,9 @@
+- name: bugzilla
+  rule:
+  - regexps:
+      body:
+      - enter_bug.cgi
+      - /cgi-bin/bugzilla/
+      - Bugzilla Main Page
+      header:
+      - Bugzilla_login_request_cookie

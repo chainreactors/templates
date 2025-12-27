@@ -1,0 +1,5 @@
+- name: BEESCMS
+  rule:
+  - regexps:
+      body:
+      - powerd by <a href="http://www.beescms.com">BEESCMS

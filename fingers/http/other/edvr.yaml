@@ -1,0 +1,5 @@
+- name: edvr
+  rule:
+  - regexps:
+      body:
+      - edvs/edvr

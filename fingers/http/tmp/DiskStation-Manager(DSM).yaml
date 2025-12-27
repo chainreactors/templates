@@ -1,0 +1,5 @@
+- name: DiskStation-Manager(DSM)
+  rule:
+  - regexps:
+      body:
+      - ;DiskStation" />

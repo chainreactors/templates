@@ -1,0 +1,7 @@
+- name: SupeSite
+  rule:
+  - regexps:
+      body:
+      - content="SupeSite
+      header:
+      - supe_sid

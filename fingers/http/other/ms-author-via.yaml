@@ -1,0 +1,5 @@
+- name: ms-author-via
+  rule:
+  - regexps:
+      header:
+      - MS-Author-Via

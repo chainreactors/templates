@@ -1,0 +1,5 @@
+- name: pbootcms
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: PbootCMS'

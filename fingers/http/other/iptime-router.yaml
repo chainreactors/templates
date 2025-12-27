@@ -1,0 +1,6 @@
+- name: iptime-router
+  rule:
+  - regexps:
+      body:
+      - networks - ipTIME
+      - href=iptime.css

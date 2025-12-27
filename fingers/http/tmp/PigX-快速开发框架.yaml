@@ -1,0 +1,6 @@
+- name: PigX-快速开发框架
+  link: http://elv.sinodis.com/#/login
+  rule:
+  - regexps:
+      body:
+      - PigX

@@ -1,0 +1,6 @@
+- name: tls
+  protocol: tcp
+  rule:
+  - regexps:
+      regexp:
+      - "^\x15\x03\x01\0\x02\x02"

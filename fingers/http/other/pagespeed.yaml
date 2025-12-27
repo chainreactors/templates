@@ -1,0 +1,5 @@
+- name: pagespeed
+  rule:
+  - regexps:
+      header:
+      - X-Mod-Pagespeed

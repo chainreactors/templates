@@ -1,0 +1,5 @@
+- name: smartlan/g
+  rule:
+  - favicon:
+      mmh3:
+      - '-644617577'

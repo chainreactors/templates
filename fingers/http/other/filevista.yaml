@@ -1,0 +1,6 @@
+- name: filevista
+  rule:
+  - regexps:
+      body:
+      - Welcome to FileVista
+      - <a href="http://www.gleamtech.com/products/filevista/web-file-manager

@@ -1,0 +1,5 @@
+- name: PortalApp
+  rule:
+  - regexps:
+      body:
+      - powered by PortalApp

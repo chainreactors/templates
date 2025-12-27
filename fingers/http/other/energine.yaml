@@ -1,0 +1,5 @@
+- name: energine
+  rule:
+  - regexps:
+      body:
+      - energine

@@ -1,0 +1,5 @@
+- name: 某通用型政府cms
+  rule:
+  - regexps:
+      body:
+      - /deptWebsiteAction.do

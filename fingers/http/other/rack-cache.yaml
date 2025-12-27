@@ -1,0 +1,5 @@
+- name: rack-cache
+  rule:
+  - regexps:
+      header:
+      - X-Rack-Cache

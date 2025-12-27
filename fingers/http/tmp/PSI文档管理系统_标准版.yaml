@@ -1,0 +1,5 @@
+- name: PSI文档管理系统 标准版
+  rule:
+  - regexps:
+      body:
+      - PSI文档管理系统(标准版)

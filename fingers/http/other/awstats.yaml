@@ -1,0 +1,5 @@
+- name: awstats
+  rule:
+  - regexps:
+      body:
+      - awstats.pl?config=

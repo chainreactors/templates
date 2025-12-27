@@ -1,0 +1,6 @@
+- name: Forcepoint-NGFW
+  rule:
+  - regexps:
+      body:
+      - NGFW Authentication
+      - Forcepoint LLC

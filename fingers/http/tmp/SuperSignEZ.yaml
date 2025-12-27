@@ -1,0 +1,5 @@
+- name: SuperSignEZ
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: connect.sid='

@@ -1,0 +1,8 @@
+- name: ntop
+  rule:
+  - regexps:
+      body:
+      - Global Traffic Statistics
+      - ntopMenuID
+      header:
+      - 'Server: ntop'

@@ -1,0 +1,5 @@
+- name: simplehelp
+  rule:
+  - favicon:
+      mmh3:
+      - '1117165781'

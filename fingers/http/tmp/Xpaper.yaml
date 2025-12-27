@@ -1,0 +1,6 @@
+- name: Xpaper
+  link: http://njcjdxb.nufe.edu.cn/
+  rule:
+  - regexps:
+      body:
+      - src="template/paper/

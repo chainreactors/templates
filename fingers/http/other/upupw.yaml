@@ -1,0 +1,5 @@
+- name: upupw
+  rule:
+  - regexps:
+      body:
+      - UPUPW环境集成包

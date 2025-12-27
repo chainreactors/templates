@@ -1,0 +1,8 @@
+- name: 宝塔面板
+  default_port:
+  - '8888'
+  rule:
+  - regexps:
+      body:
+      - app.bt.cn/static/app.png
+      - 安全入口校验失败

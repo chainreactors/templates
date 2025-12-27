@@ -1,0 +1,6 @@
+- name: N2WS
+  rule:
+  - regexps:
+      body:
+      - static/style/cpm_style.css
+      - N2WS Backup

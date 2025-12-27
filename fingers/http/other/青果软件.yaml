@@ -1,0 +1,7 @@
+- name: 青果软件
+  rule:
+  - regexps:
+      body:
+      - KINGOSOFT
+      - SetKingoEncypt.jsp
+      - /jkingo.js

@@ -1,0 +1,6 @@
+- name: MinDoc 接口文档在线管理系统
+  rule:
+  - regexps:
+      body:
+      - Powered by MinDoc
+      - <meta name="author" content="MinDoc" />

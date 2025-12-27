@@ -1,0 +1,5 @@
+- name: Pluck CMS
+  rule:
+  - regexps:
+      body:
+      - content="pluck

@@ -1,0 +1,5 @@
+- name: AD账号自助管理系统
+  rule:
+  - regexps:
+      body:
+      - AD账号自助管理系统

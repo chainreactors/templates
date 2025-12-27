@@ -1,0 +1,5 @@
+- name: thinksaas
+  rule:
+  - regexps:
+      body:
+      - /app/home/skins/default/style.css

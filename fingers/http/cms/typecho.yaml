@@ -1,0 +1,6 @@
+- name: typecho
+  rule:
+  - regexps:
+      body:
+      - generator" content="Typecho
+      - Typecho

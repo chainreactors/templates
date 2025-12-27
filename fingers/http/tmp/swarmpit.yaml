@@ -1,0 +1,5 @@
+- name: swarmpit
+  rule:
+  - regexps:
+      body:
+      - swarmpit

@@ -1,0 +1,5 @@
+- name: webtop
+  rule:
+  - regexps:
+      body:
+      - webtop/help/help.jsp

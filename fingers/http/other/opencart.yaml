@@ -1,0 +1,6 @@
+- name: opencart
+  rule:
+  - regexps:
+      body:
+      - Powered By OpenCart
+      - catalog/view/theme

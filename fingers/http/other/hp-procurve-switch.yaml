@@ -1,0 +1,5 @@
+- name: hp-procurve-switch
+  rule:
+  - regexps:
+      body:
+      - ProCurve Switch

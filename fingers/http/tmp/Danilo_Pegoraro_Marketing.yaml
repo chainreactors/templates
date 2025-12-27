@@ -1,0 +1,5 @@
+- name: Danilo Pegoraro Marketing
+  rule:
+  - regexps:
+      body:
+      - estudiofdi.com.br

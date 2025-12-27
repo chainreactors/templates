@@ -1,0 +1,6 @@
+- name: NSFOCUS WVSS
+  rule:
+  - regexps:
+      body:
+      - url:'/accounts/treaty/'
+      - nsfocus wvss

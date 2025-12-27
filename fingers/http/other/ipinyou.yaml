@@ -1,0 +1,5 @@
+- name: ipinyou
+  rule:
+  - regexps:
+      body:
+      - stats.ipinyou.com/

@@ -1,0 +1,5 @@
+- name: mdaemon remote administration
+  rule:
+  - favicon:
+      mmh3:
+      - '99432374'

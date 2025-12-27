@@ -1,0 +1,5 @@
+- name: glossword
+  rule:
+  - regexps:
+      body:
+      - content="Glossword

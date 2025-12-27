@@ -1,0 +1,5 @@
+- name: eleanorcms
+  rule:
+  - regexps:
+      header:
+      - Eleanor CMS

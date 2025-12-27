@@ -1,0 +1,6 @@
+- name: 方正-运营管理与决策支持系统
+  rule:
+  - regexps:
+      body:
+      - 决策支持系统
+      - /portal/img/logo.png

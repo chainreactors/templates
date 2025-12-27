@@ -1,0 +1,5 @@
+- name: everfocus-cctv
+  rule:
+  - regexps:
+      header:
+      - http server/everfocus

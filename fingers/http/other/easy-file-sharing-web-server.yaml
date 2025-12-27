@@ -1,0 +1,5 @@
+- name: easy-file-sharing-web-server
+  rule:
+  - regexps:
+      header:
+      - Easy File Sharing Web Server

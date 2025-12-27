@@ -1,0 +1,5 @@
+- name: MistCMS
+  rule:
+  - regexps:
+      body:
+      - Powered by MistCMS

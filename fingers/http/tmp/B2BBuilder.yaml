@@ -1,0 +1,7 @@
+- name: B2BBuilder
+  rule:
+  - regexps:
+      body:
+      - B2BBuilder
+      header:
+      - B2Bbuilder

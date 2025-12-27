@@ -1,0 +1,5 @@
+- name: InfluxDB 2.0
+  rule:
+  - regexps:
+      body:
+      - InfluxDB 2.0

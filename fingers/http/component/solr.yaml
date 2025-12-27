@@ -1,0 +1,8 @@
+- name: solr
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - Solr Admin
+      - SolrCore Initialization Failures
+      - app_config.solr_path

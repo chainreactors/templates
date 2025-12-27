@@ -1,0 +1,5 @@
+- name: VMware vSphere
+  rule:
+  - regexps:
+      body:
+      - content="VMware vSphere

@@ -1,0 +1,6 @@
+- name: ThinkSNS
+  rule:
+  - regexps:
+      body:
+      - ThinkSNS
+      - /theme/stv1/_static

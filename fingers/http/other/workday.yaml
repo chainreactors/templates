@@ -1,0 +1,5 @@
+- name: workday
+  rule:
+  - favicon:
+      mmh3:
+      - '-459291760'

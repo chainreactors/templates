@@ -1,0 +1,5 @@
+- name: conking
+  rule:
+  - regexps:
+      body:
+      - www.conking.com.cn

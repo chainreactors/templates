@@ -1,0 +1,6 @@
+- name: Apache-Airflow
+  link: https://44.242.39.146/aws_mwaa/aws-console-sso?next=https%3A%2F%2F44.242.39.146%2Fhome
+  rule:
+  - regexps:
+      body:
+      - <span>airflow

@@ -1,0 +1,6 @@
+- name: 深信服下一代防火墙
+  link: null
+  rule:
+  - favicon:
+      mmh3:
+      - '123821839'

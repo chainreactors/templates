@@ -1,0 +1,6 @@
+- name: hostbill
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://hostbillapp.com
+      - <strong>HostBill

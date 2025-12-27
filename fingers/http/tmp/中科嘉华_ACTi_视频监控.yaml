@@ -1,0 +1,7 @@
+- name: 中科嘉华 ACTi 视频监控
+  rule:
+  - regexps:
+      body:
+      - Web Configurator
+      header:
+      - 'Server: Httpd v1.0 05may2008'

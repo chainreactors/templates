@@ -1,0 +1,5 @@
+- name: 华夏ERP
+  rule:
+  - regexps:
+      body:
+      - 华夏ERP

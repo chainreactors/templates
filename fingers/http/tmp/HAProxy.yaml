@@ -1,0 +1,5 @@
+- name: HAProxy
+  rule:
+  - regexps:
+      header:
+      - Basic realm="Haproxy Statistics"

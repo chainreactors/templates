@@ -1,0 +1,5 @@
+- name: metinfo
+  rule:
+  - regexps:
+      body:
+      - MetInfo

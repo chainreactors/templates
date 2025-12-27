@@ -1,0 +1,5 @@
+- name: 中兴-路由器
+  rule:
+  - regexps:
+      header:
+      - Router of ZTE Corporation

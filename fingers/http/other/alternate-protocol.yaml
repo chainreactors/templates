@@ -1,0 +1,5 @@
+- name: alternate-protocol
+  rule:
+  - regexps:
+      header:
+      - Alternate-Protocol

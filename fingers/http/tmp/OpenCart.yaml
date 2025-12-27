@@ -1,0 +1,5 @@
+- name: OpenCart
+  rule:
+  - regexps:
+      body:
+      - /OpenCart.css

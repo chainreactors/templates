@@ -1,0 +1,6 @@
+- name: exponent-cms
+  rule:
+  - regexps:
+      body:
+      - content="Exponent Content Management System
+      - Powered by Exponent CMS

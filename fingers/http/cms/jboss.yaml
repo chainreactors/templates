@@ -1,0 +1,14 @@
+- name: jboss
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - Welcome to JBoss
+      - jboss.css
+      header:
+      - JBoss
+    favicon:
+      md5:
+      - 799f70b71314a7508326d1d2f68f7519
+      mmh3:
+      - '-656811182'

@@ -1,0 +1,5 @@
+- name: SLAEDCMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="SLAED CMS">

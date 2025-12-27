@@ -1,0 +1,6 @@
+- name: festos
+  rule:
+  - regexps:
+      body:
+      - title="FestOS
+      - css/festos.css

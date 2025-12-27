@@ -1,0 +1,7 @@
+- name: 大汉版通发布系统
+  rule:
+  - regexps:
+      body:
+      - /module/jslib/urite
+      - 大汉版通发布系统
+      - 大汉网络

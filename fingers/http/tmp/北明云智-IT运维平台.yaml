@@ -1,0 +1,5 @@
+- name: 北明云智-IT运维平台
+  rule:
+  - regexps:
+      body:
+      - <title>北明IT运维平台</title>

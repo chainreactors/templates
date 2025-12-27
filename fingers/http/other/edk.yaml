@@ -1,0 +1,5 @@
+- name: edk
+  rule:
+  - regexps:
+      body:
+      - /killlistable.tpl

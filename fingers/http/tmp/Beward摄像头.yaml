@@ -1,0 +1,5 @@
+- name: Beward摄像头
+  rule:
+  - regexps:
+      header:
+      - 'Server: IPCamera-Webs'

@@ -1,0 +1,12 @@
+- name: Spring Security
+  rule:
+  - regexps:
+      body:
+      - _security_check
+      - oauth/authorize
+      - spring-security-redirect
+      - j_spring_cas_security
+      - _security_check
+      header:
+      - Basic realm="Spring Security Application"
+      - j_spring_cas_security

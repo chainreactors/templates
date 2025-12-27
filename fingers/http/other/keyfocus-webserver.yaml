@@ -1,0 +1,5 @@
+- name: keyfocus-webserver
+  rule:
+  - regexps:
+      header:
+      - KFWebServer

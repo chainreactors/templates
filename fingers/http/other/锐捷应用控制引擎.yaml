@@ -1,0 +1,6 @@
+- name: 锐捷应用控制引擎
+  rule:
+  - regexps:
+      body:
+      - window.open("/login.do","airWin
+      - 锐捷应用控制引擎

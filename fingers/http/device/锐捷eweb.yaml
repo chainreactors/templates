@@ -1,0 +1,7 @@
+- name: 锐捷eweb
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - pub/ui/rui-min.css
+      - NBR路由器

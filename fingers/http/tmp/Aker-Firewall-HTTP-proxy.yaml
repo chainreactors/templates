@@ -1,0 +1,5 @@
+- name: Aker-Firewall-HTTP-proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: Aker Firewall HTTP proxy'

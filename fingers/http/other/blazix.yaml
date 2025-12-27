@@ -1,0 +1,5 @@
+- name: blazix
+  rule:
+  - regexps:
+      header:
+      - Blazix Java Server

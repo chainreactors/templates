@@ -1,0 +1,5 @@
+- name: ZikulaCMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="zikula

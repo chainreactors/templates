@@ -1,0 +1,5 @@
+- name: ZENEDGE-公司产品
+  rule:
+  - regexps:
+      header:
+      - ZENEDGE

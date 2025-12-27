@@ -1,0 +1,6 @@
+- name: kingdee-EAS
+  rule:
+  - regexps:
+      body:
+      - 金蝶
+      - eas系统登录

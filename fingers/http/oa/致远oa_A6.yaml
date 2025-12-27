@@ -1,0 +1,10 @@
+- name: 致远oa A6
+  focus: true
+  rule:
+  - regexps:
+      regexp:
+      - A6\/favicon\.ico\?V=(.*?)"
+    favicon:
+      path: /seeyon/common/images/A6/favicon.ico
+      md5:
+      - 8570d711136a8d720655cfc1362c8544

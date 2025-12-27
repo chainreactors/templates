@@ -1,0 +1,7 @@
+- name: mrtg
+  rule:
+  - regexps:
+      body:
+      - Command line is easier to read using "View Page Properties" of your browser
+      - MRTG Index Page
+      - 'commandline was: indexmaker'

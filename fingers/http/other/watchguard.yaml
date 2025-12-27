@@ -1,0 +1,5 @@
+- name: watchguard
+  rule:
+  - favicon:
+      mmh3:
+      - '15831193'

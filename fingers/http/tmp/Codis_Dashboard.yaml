@@ -1,0 +1,5 @@
+- name: Codis Dashboard
+  rule:
+  - regexps:
+      body:
+      - Codis

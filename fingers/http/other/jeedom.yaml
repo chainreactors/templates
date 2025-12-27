@@ -1,0 +1,5 @@
+- name: jeedom
+  rule:
+  - favicon:
+      mmh3:
+      - '462223993'

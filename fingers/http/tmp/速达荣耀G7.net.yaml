@@ -1,0 +1,5 @@
+- name: 速达荣耀G7.net
+  rule:
+  - regexps:
+      body:
+      - <img src="images/top/top_g7net.gif"

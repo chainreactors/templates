@@ -1,0 +1,5 @@
+- name: Sugar 数据可视化平台
+  rule:
+  - regexps:
+      body:
+      - Sugar - 数据可视化

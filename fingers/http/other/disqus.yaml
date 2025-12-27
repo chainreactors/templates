@@ -1,0 +1,5 @@
+- name: disqus
+  rule:
+  - regexps:
+      body:
+      - disqus_thread

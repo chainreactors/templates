@@ -1,0 +1,5 @@
+- name: esitesbuilder
+  rule:
+  - regexps:
+      body:
+      - eSitesBuilder. All rights reserved

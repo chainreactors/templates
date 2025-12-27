@@ -1,0 +1,5 @@
+- name: surfilter ssl vpn portal
+  rule:
+  - favicon:
+      mmh3:
+      - '-590892202'

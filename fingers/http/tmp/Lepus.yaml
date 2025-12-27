@@ -1,0 +1,5 @@
+- name: Lepus
+  rule:
+  - regexps:
+      body:
+      - <a href="http://www.lepus.cc" target="blank">

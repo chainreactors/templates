@@ -1,0 +1,5 @@
+- name: dayrui系列CMS
+  rule:
+  - regexps:
+      body:
+      - href="dayrui/statics/default/

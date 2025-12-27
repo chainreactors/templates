@@ -1,0 +1,6 @@
+- name: 高速波OA网络智能办公系统
+  rule:
+  - regexps:
+      body:
+      - 高速波OA网络智能办公系统
+      - getCompanyAll

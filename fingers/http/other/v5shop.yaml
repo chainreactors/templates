@@ -1,0 +1,7 @@
+- name: v5shop
+  rule:
+  - regexps:
+      body:
+      - v5shop
+      - content="V5shop
+      - Powered by V5Shop

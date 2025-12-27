@@ -1,0 +1,5 @@
+- name: 录井信息平台系统
+  rule:
+  - regexps:
+      body:
+      - 录井信息平台-系统登录

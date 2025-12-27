@@ -1,0 +1,5 @@
+- name: dell sonicwall
+  rule:
+  - favicon:
+      mmh3:
+      - '363324987'

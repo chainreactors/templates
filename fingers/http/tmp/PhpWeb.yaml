@@ -1,0 +1,5 @@
+- name: PhpWeb
+  rule:
+  - regexps:
+      body:
+      - pdv_pagename

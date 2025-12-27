@@ -1,0 +1,5 @@
+- name: 施耐德_schneider_powerlogic_pm800
+  rule:
+  - regexps:
+      header:
+      - PM800

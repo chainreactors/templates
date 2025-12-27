@@ -1,0 +1,5 @@
+- name: openrg
+  rule:
+  - favicon:
+      mmh3:
+      - '-986816620'

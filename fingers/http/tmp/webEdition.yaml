@@ -1,0 +1,5 @@
+- name: webEdition
+  rule:
+  - regexps:
+      body:
+      - webEdition CMS

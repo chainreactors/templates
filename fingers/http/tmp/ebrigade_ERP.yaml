@@ -1,0 +1,5 @@
+- name: ebrigade ERP
+  rule:
+  - regexps:
+      body:
+      - class='btn btn-ebrigade btn-lg'

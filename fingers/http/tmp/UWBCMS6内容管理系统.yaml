@@ -1,0 +1,5 @@
+- name: UWBCMS6内容管理系统
+  rule:
+  - regexps:
+      body:
+      - UWBCMS6内容管理系统

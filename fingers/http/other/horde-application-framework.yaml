@@ -1,0 +1,8 @@
+- name: horde-application-framework
+  rule:
+  - regexps:
+      body:
+      - Powered by Horde
+      - <img src="/themes/default/graphics/horde-power1.png
+      header:
+      - horde_secret_key

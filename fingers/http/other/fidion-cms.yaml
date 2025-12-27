@@ -1,0 +1,7 @@
+- name: fidion-cms
+  rule:
+  - regexps:
+      body:
+      - <!-- fCMS-Template head.tpl begins
+      header:
+      - fCMS=

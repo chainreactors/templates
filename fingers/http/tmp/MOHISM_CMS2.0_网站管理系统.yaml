@@ -1,0 +1,5 @@
+- name: MOHISM CMS2.0 网站管理系统
+  rule:
+  - regexps:
+      body:
+      - MOHISM CMS2.0 网站管理系统

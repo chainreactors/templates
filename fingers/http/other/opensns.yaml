@@ -1,0 +1,6 @@
+- name: opensns
+  rule:
+  - regexps:
+      body:
+      - opensns
+      - content="OpenSNS

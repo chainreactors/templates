@@ -1,0 +1,5 @@
+- name: RuvarHRM
+  rule:
+  - regexps:
+      body:
+      - href='/RuvarHRM/css/

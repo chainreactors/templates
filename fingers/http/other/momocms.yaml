@@ -1,0 +1,6 @@
+- name: momocms
+  rule:
+  - regexps:
+      body:
+      - content="MoMoCMS
+      - Powered BY MoMoCMS

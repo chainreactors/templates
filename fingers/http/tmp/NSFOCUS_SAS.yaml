@@ -1,0 +1,6 @@
+- name: NSFOCUS SAS
+  rule:
+  - regexps:
+      body:
+      - /login_logo_sas_zh_cn.png
+      - nsfocus&nbsp;sas

@@ -1,0 +1,5 @@
+- name: kafka-manager
+  rule:
+  - regexps:
+      body:
+      - Kafka Manager

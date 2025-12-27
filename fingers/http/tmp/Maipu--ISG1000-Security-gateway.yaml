@@ -1,0 +1,5 @@
+- name: Maipu--ISG1000-Security-gateway
+  rule:
+  - regexps:
+      body:
+      - isg1000

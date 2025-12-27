@@ -1,0 +1,5 @@
+- name: KVM 创梦云计算管理系统
+  rule:
+  - regexps:
+      body:
+      - KVM_创梦云计算管理系统

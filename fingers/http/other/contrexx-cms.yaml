@@ -1,0 +1,6 @@
+- name: contrexx-cms
+  rule:
+  - regexps:
+      body:
+      - powered by Contrexx
+      - content="Contrexx

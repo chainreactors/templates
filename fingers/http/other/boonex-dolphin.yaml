@@ -1,0 +1,5 @@
+- name: boonex-dolphin
+  rule:
+  - regexps:
+      body:
+      - products/dolphin

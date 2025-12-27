@@ -1,0 +1,5 @@
+- name: asustor
+  rule:
+  - favicon:
+      mmh3:
+      - '1678170702'

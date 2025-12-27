@@ -1,0 +1,8 @@
+- name: 奇安信堡垒机
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - location.href='/fort'
+      - SecFox运维安全管理
+      - embedRzx type=application/htnpapi-plugin

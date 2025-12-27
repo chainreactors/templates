@@ -1,0 +1,7 @@
+- name: springcloud-function
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - '"error":"Internal Server Error"'
+    send_data: /functionRouter

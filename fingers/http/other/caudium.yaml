@@ -1,0 +1,5 @@
+- name: caudium
+  rule:
+  - regexps:
+      header:
+      - 'X-Got-Fish: Pike'

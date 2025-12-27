@@ -1,0 +1,7 @@
+- name: 单点crm系统
+  rule:
+  - regexps:
+      body:
+      - URL=general/ERP/LOGIN/
+      - content="单点CRM系统
+      - 客户关系管理-CRM

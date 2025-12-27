@@ -1,0 +1,5 @@
+- name: 大华摄像头
+  rule:
+  - regexps:
+      body:
+      - <div class="J_vedio_control" id="prew_video_control">

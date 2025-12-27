@@ -1,0 +1,5 @@
+- name: thymeleaf
+  rule:
+  - regexps:
+      body:
+      - thymeleaf

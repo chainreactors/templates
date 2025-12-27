@@ -1,0 +1,7 @@
+- name: smartoa
+  rule:
+  - regexps:
+      body:
+      - /smartoa.plist
+      header:
+      - smartoa

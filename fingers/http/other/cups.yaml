@@ -1,0 +1,5 @@
+- name: cups
+  rule:
+  - regexps:
+      header:
+      - CUPS

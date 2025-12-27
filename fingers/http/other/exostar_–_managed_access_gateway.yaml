@@ -1,0 +1,5 @@
+- name: exostar – managed access gateway
+  rule:
+  - favicon:
+      mmh3:
+      - '420473080'

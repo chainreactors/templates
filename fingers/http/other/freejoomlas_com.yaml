@@ -1,0 +1,5 @@
+- name: freejoomlas_com
+  rule:
+  - regexps:
+      body:
+      - freejoomlas

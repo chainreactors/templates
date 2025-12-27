@@ -1,0 +1,5 @@
+- name: odlican.net cms
+  rule:
+  - regexps:
+      body:
+      - Powered by odlican.net cms

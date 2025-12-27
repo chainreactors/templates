@@ -1,0 +1,5 @@
+- name: redhat
+  rule:
+  - regexps:
+      header:
+      - Red Hat

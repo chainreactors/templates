@@ -1,0 +1,5 @@
+- name: YundunWAF
+  rule:
+  - regexps:
+      body:
+      - YUNDUN Cloud WAF

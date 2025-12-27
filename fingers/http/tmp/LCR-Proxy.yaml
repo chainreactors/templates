@@ -1,0 +1,5 @@
+- name: LCR-Proxy
+  rule:
+  - regexps:
+      header:
+      - Scylla LCRProxy

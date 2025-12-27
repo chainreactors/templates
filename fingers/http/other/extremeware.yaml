@@ -1,0 +1,7 @@
+- name: extremeware
+  rule:
+  - regexps:
+      body:
+      - <frame src="extremetop
+      header:
+      - ExtremeWare

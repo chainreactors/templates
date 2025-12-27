@@ -1,0 +1,5 @@
+- name: bozon
+  rule:
+  - regexps:
+      body:
+      - <meta name="application-name" content="BoZoN">

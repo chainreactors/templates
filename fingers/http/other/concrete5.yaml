@@ -1,0 +1,8 @@
+- name: concrete5
+  rule:
+  - regexps:
+      body:
+      - generator" content="ezCMS
+      - CCM_DISPATCHER_FILENAME
+      header:
+      - CONCRETE5

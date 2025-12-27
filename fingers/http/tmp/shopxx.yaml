@@ -1,0 +1,5 @@
+- name: shopxx
+  rule:
+  - regexps:
+      body:
+      - shopxx.net

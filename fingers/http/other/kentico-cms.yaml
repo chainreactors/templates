@@ -1,0 +1,7 @@
+- name: kentico-cms
+  rule:
+  - regexps:
+      body:
+      - content="Kentico CMS
+      header:
+      - CMSPreferredCulture

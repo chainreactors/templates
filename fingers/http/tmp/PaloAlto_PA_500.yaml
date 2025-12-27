@@ -1,0 +1,6 @@
+- name: PaloAlto PA 500
+  rule:
+  - regexps:
+      body:
+      - pa-500
+      - id="heading">globalprotect portal</div>

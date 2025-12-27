@@ -1,0 +1,5 @@
+- name: citrix-access-gateway
+  rule:
+  - regexps:
+      body:
+      - Citrix Access Gateway

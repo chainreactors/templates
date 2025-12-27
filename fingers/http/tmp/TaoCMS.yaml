@@ -1,0 +1,6 @@
+- name: TaoCMS
+  rule:
+  - regexps:
+      body:
+      - content="Welcome to taoCMS
+      - /template/taoCMS/

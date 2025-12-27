@@ -1,0 +1,5 @@
+- name: sabros_us
+  rule:
+  - regexps:
+      body:
+      - content="sabros.us

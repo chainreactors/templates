@@ -1,0 +1,8 @@
+- name: dotnetnuke
+  rule:
+  - regexps:
+      body:
+      - content="DotNetNuke
+      - content=",DotNetNuke
+      header:
+      - Dnnoutputcache

@@ -1,0 +1,6 @@
+- name: RedShop
+  rule:
+  - regexps:
+      body:
+      - /redshop/
+      - /redshop/

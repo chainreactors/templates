@@ -1,0 +1,5 @@
+- name: av-arcade
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://www.avscripts.net/avarcade/

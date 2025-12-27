@@ -1,0 +1,6 @@
+- name: 用友商战实践平台
+  rule:
+  - regexps:
+      body:
+      - Login_Main_BG
+      - Login_Owner

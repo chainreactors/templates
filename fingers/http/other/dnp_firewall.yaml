@@ -1,0 +1,6 @@
+- name: dnp firewall
+  rule:
+  - regexps:
+      body:
+      - Powered by DnP Firewall
+      - dnp_firewall_redirect

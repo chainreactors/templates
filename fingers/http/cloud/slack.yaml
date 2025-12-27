@@ -1,0 +1,5 @@
+- name: slack
+  rule:
+  - favicon:
+      mmh3:
+      - '-43161126'

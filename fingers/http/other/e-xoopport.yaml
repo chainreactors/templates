@@ -1,0 +1,6 @@
+- name: e-xoopport
+  rule:
+  - regexps:
+      body:
+      - Powered by E-Xoopport
+      - content="E-Xoopport

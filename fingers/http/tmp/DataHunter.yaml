@@ -1,0 +1,9 @@
+- name: DataHunter
+  rule:
+  - favicon:
+      mmh3:
+      - '-1705772735'
+    regexps:
+      body:
+      - content="DataHunter,
+      - DataHunter

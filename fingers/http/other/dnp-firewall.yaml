@@ -1,0 +1,7 @@
+- name: dnp-firewall
+  rule:
+  - regexps:
+      body:
+      - Forum Gateway - Powered by DnP Firewall
+      - name="dnp_firewall_redirect
+      - <form name=dnp_firewall

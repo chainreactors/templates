@@ -1,0 +1,5 @@
+- name: ORCA Platform
+  rule:
+  - regexps:
+      body:
+      - content="ORCA Platform

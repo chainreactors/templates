@@ -1,0 +1,13 @@
+- name: zookeeper
+  focus: true
+  default_port:
+  - zookeeper
+  protocol: tcp
+  rule:
+  - regexps:
+      vuln:
+      - zookeeper.version=(.*),
+    vuln: zookeeper_unauthorized
+    send_data: 'envi
+
+      '

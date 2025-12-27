@@ -1,0 +1,6 @@
+- name: 绿盟运维安全管理系统OSMS
+  link: https://www.sjhlbefgs.com:9443/user/requireLogin
+  rule:
+  - regexps:
+      body:
+      - OSMS

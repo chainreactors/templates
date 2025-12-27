@@ -1,0 +1,6 @@
+- name: echo
+  rule:
+  - regexps:
+      body:
+      - powered by echo
+      - /Echo2/echoweb/login

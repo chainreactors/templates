@@ -1,0 +1,5 @@
+- name: 腾讯Tencent 御点终端管理系统
+  rule:
+  - regexps:
+      body:
+      - 腾讯iOA控制台

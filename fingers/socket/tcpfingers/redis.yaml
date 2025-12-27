@@ -1,0 +1,17 @@
+- name: redis
+  focus: true
+  default_port:
+  - redis
+  protocol: tcp
+  rule:
+  - regexps:
+      vuln:
+      - redis_version:(.*)
+      regexp:
+      - -NOAUTH
+      - -ERR wrong
+      - -DENIED
+    vuln: redis_unauthorized
+    send_data: 'info
+
+      '

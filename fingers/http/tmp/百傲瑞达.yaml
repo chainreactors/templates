@@ -1,0 +1,6 @@
+- name: 百傲瑞达
+  rule:
+  - regexps:
+      body:
+      - /public/controls/dhtmlx/codebase/dhtmlx.js
+      - licenseVailable

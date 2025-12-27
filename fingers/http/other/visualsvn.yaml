@@ -1,0 +1,5 @@
+- name: visualsvn
+  rule:
+  - regexps:
+      body:
+      - VisualSVN Server

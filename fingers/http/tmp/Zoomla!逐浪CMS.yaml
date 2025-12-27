@@ -1,0 +1,8 @@
+- name: Zoomla!逐浪CMS
+  rule:
+  - regexps:
+      body:
+      - alt="最新版Zoomla逐浪CMS
+      - 提供专业的广告源码与站长工具以及Zoomla!逐浪CMS下载
+      - http://www.z01.com/pub/
+      - 逐浪软件z01.com版权所有

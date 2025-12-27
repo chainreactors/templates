@@ -1,0 +1,5 @@
+- name: Pentaho
+  rule:
+  - regexps:
+      body:
+      - Pentaho 用户控制台

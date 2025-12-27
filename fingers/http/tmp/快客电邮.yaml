@@ -1,0 +1,6 @@
+- name: 快客电邮
+  rule:
+  - regexps:
+      body:
+      - Welcome to quarkmail server version
+      - 快客电邮 - 系统管理

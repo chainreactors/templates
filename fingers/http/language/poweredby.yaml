@@ -1,0 +1,5 @@
+- name: poweredby
+  rule:
+  - regexps:
+      regexp:
+      - 'X-Powered-By: ([\x20-\x7e]+)'

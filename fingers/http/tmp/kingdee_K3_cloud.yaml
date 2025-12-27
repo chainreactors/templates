@@ -1,0 +1,7 @@
+- name: kingdee K3 cloud
+  rule:
+  - regexps:
+      body:
+      - k/3 cloud
+      - class="kd-div-loading-ct"
+    send_data: /k3cloud

@@ -1,0 +1,5 @@
+- name: cart_engine
+  rule:
+  - regexps:
+      body:
+      - skins/_common/jscripts.css

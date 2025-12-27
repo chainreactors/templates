@@ -1,0 +1,5 @@
+- name: suduserver
+  rule:
+  - regexps:
+      header:
+      - suduserver

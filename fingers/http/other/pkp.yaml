@@ -1,0 +1,5 @@
+- name: pkp
+  rule:
+  - favicon:
+      mmh3:
+      - '2099342476'

@@ -1,0 +1,5 @@
+- name: ethProxy
+  rule:
+  - regexps:
+      header:
+      - ethproxy

@@ -1,0 +1,5 @@
+- name: supermicro intelligent management
+  rule:
+  - favicon:
+      mmh3:
+      - '1410610129'

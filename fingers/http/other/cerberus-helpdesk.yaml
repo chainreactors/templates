@@ -1,0 +1,8 @@
+- name: cerberus-helpdesk
+  rule:
+  - regexps:
+      body:
+      - <!-- If you have your own stylesheet for HTML elements, you can remove the
+        cerberus-html.css link
+      header:
+      - CerberusPublicGUI

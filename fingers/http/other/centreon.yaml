@@ -1,0 +1,6 @@
+- name: centreon
+  rule:
+  - regexps:
+      body:
+      - Generator" content="Centreon - Copyright
+      - Centreon - IT & Network Monitoring

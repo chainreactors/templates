@@ -1,0 +1,5 @@
+- name: cinvoice
+  rule:
+  - regexps:
+      body:
+      - forperfect.com/

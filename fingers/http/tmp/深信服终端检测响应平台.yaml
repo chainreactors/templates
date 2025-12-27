@@ -1,0 +1,6 @@
+- name: 深信服终端检测响应平台
+  link: https://www.hhsfgz.com:4002/ui/login.php
+  rule:
+  - regexps:
+      body:
+      - datalayer','gtm-tl7g2lw'

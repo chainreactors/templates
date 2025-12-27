@@ -1,0 +1,5 @@
+- name: smartping
+  rule:
+  - favicon:
+      mmh3:
+      - '430582574'

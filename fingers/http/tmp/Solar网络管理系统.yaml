@@ -1,0 +1,5 @@
+- name: Solar网络管理系统
+  rule:
+  - regexps:
+      body:
+      - application/components_solar/loginController.js

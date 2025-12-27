@@ -1,0 +1,5 @@
+- name: BakingSofware
+  rule:
+  - regexps:
+      body:
+      - Baking Sofware - bFirmware -

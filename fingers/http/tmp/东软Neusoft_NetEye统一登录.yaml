@@ -1,0 +1,5 @@
+- name: 东软Neusoft NetEye统一登录
+  rule:
+  - regexps:
+      body:
+      - 东软 NetEye 统一身份管控系统登录

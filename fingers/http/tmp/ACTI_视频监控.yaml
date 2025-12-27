@@ -1,0 +1,6 @@
+- name: ACTI 视频监控
+  link: http://94.64.136.252:8888/
+  rule:
+  - regexps:
+      body:
+      - /cgi-bin/system?SYSTEM_INFO

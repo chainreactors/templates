@@ -1,0 +1,5 @@
+- name: Oracle Enterprise Performance Management System
+  rule:
+  - regexps:
+      body:
+      - Oracle Enterprise Performance Management System Workspace, Fusion Edition

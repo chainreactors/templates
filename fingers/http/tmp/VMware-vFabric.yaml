@@ -1,0 +1,5 @@
+- name: VMware-vFabric
+  rule:
+  - regexps:
+      body:
+      - VMware vFabric tc Server — Standard Edition

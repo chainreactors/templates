@@ -1,0 +1,8 @@
+- name: 永中 Web Office
+  rule:
+  - favicon:
+      mmh3:
+      - '110170773'
+    regexps:
+      body:
+      - Web Office

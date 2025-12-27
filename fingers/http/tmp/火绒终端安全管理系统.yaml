@@ -1,0 +1,6 @@
+- name: 火绒终端安全管理系统
+  link: http://119.145.96.242:8090/
+  rule:
+  - regexps:
+      body:
+      - login:title.user_login

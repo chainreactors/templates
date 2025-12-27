@@ -1,0 +1,5 @@
+- name: H3C Web网管系统
+  rule:
+  - regexps:
+      body:
+      - web网管用户登录

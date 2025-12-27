@@ -1,0 +1,5 @@
+- name: Apache Griffin
+  rule:
+  - regexps:
+      body:
+      - Griffin - Data Quality Service

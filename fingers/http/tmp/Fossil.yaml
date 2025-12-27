@@ -1,0 +1,5 @@
+- name: Fossil
+  rule:
+  - regexps:
+      body:
+      - by Fossil

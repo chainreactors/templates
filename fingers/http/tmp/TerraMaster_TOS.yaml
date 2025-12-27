@@ -1,0 +1,5 @@
+- name: TerraMaster TOS
+  rule:
+  - regexps:
+      body:
+      - TOS Loading

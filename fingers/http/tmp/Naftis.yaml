@@ -1,0 +1,5 @@
+- name: Naftis
+  rule:
+  - regexps:
+      body:
+      - Naftis

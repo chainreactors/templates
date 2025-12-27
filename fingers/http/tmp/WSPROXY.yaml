@@ -1,0 +1,5 @@
+- name: WSPROXY
+  rule:
+  - regexps:
+      header:
+      - 'X-Application-Context: wsproxy'

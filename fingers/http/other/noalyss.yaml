@@ -1,0 +1,5 @@
+- name: noalyss
+  rule:
+  - regexps:
+      body:
+      - NOALYSS

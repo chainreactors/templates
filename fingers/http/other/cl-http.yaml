@@ -1,0 +1,5 @@
+- name: cl-http
+  rule:
+  - regexps:
+      header:
+      - CL-HTTP

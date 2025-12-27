@@ -1,0 +1,5 @@
+- name: ccproxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: CCProxy'

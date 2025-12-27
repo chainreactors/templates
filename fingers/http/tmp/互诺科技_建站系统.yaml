@@ -1,0 +1,5 @@
+- name: 互诺科技 建站系统
+  rule:
+  - regexps:
+      body:
+      - 互诺科技

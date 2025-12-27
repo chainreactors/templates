@@ -1,0 +1,5 @@
+- name: 乐语OMS
+  rule:
+  - regexps:
+      body:
+      - looyu.com

@@ -1,0 +1,5 @@
+- name: intelbras wireless
+  rule:
+  - favicon:
+      mmh3:
+      - '-359621743'

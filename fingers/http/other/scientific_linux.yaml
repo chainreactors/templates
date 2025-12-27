@@ -1,0 +1,5 @@
+- name: scientific linux
+  rule:
+  - regexps:
+      header:
+      - Scientific Linux

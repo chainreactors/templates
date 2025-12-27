@@ -1,0 +1,7 @@
+- name: opac
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /opac/search/simsearch
+      - /opac/struts/dojo

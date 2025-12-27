@@ -1,0 +1,5 @@
+- name: 协达 OA
+  rule:
+  - regexps:
+      body:
+      - 协达软件

@@ -1,0 +1,8 @@
+- name: GitBucket
+  rule:
+  - regexps:
+      body:
+      - GitBucket
+      - alt="GitBucket"
+      header:
+      - gitbucket

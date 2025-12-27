@@ -1,0 +1,5 @@
+- name: 长亭WAF
+  rule:
+  - regexps:
+      regexp:
+      - '<!\\-\\- event_id: [0-9a-f]{32} \\-\\->'

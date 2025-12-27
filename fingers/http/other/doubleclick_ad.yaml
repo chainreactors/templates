@@ -1,0 +1,5 @@
+- name: doubleclick_ad
+  rule:
+  - regexps:
+      body:
+      - ad.doubleclick.net

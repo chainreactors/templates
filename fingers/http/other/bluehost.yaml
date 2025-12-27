@@ -1,0 +1,5 @@
+- name: bluehost
+  rule:
+  - favicon:
+      mmh3:
+      - '-1119613926'

@@ -1,0 +1,5 @@
+- name: VequnCMS内容管理系统
+  rule:
+  - regexps:
+      body:
+      - VequnCMS内容管理系统

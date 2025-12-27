@@ -1,0 +1,5 @@
+- name: McAfee Web Gateway
+  rule:
+  - regexps:
+      body:
+      - mcafee web gateway

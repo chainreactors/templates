@@ -1,0 +1,5 @@
+- name: 迈捷邮件系统
+  rule:
+  - regexps:
+      body:
+      - /aboutus/magicmail.gif

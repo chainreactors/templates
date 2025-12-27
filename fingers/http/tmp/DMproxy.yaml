@@ -1,0 +1,5 @@
+- name: DMproxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: DMproxy'

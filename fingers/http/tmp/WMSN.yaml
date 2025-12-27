@@ -1,0 +1,5 @@
+- name: WMSN
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-Cms: WMSN'

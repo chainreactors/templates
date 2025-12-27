@@ -1,0 +1,6 @@
+- name: Cockpit
+  link: https://185.216.144.27:2053/
+  rule:
+  - regexps:
+      body:
+      - cockpit/static/login.js

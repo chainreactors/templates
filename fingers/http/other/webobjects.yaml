@@ -1,0 +1,5 @@
+- name: webobjects
+  rule:
+  - regexps:
+      header:
+      - wosid

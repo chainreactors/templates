@@ -1,0 +1,5 @@
+- name: kerio-webstar
+  rule:
+  - regexps:
+      header:
+      - 4D_WebStar

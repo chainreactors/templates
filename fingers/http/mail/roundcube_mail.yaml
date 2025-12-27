@@ -1,0 +1,5 @@
+- name: roundcube mail
+  rule:
+  - favicon:
+      mmh3:
+      - '-976235259'

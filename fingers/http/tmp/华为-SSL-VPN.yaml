@@ -1,0 +1,7 @@
+- name: 华为-SSL-VPN
+  rule:
+  - regexps:
+      body:
+      - Clear SSL cache successfully
+      - getCookie("SGDPortal")
+      - SVN_GetLoginContextValue(

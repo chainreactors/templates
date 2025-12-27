@@ -1,0 +1,5 @@
+- name: 安信华Web弱点测试系统2012
+  rule:
+  - regexps:
+      body:
+      - 安信华Web弱点测试系统2012 - 登陆

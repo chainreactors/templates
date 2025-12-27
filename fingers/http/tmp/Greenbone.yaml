@@ -1,0 +1,5 @@
+- name: Greenbone
+  rule:
+  - regexps:
+      body:
+      - Greenbone Security Assistant

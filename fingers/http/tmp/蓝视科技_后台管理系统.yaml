@@ -1,0 +1,6 @@
+- name: 蓝视科技 后台管理系统
+  rule:
+  - regexps:
+      body:
+      - var app_smp_type_name = '门店';var app_grp_type_name = '集团'
+      - 蓝视科技

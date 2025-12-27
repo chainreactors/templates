@@ -1,0 +1,5 @@
+- name: archivematica
+  rule:
+  - favicon:
+      mmh3:
+      - '-1378182799'

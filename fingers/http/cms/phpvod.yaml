@@ -1,0 +1,6 @@
+- name: phpvod
+  rule:
+  - regexps:
+      body:
+      - Powered by PHPVOD
+      - content="phpvod

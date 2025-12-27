@@ -1,0 +1,5 @@
+- name: 瑞星防毒墙
+  rule:
+  - regexps:
+      body:
+      - <title>瑞星防毒墙

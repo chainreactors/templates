@@ -1,0 +1,6 @@
+- name: 九思OA
+  rule:
+  - regexps:
+      body:
+      - /jsoa/login.jsp
+      - 九思软件

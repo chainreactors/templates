@@ -1,0 +1,5 @@
+- name: 等级医院评审迎检系统
+  rule:
+  - regexps:
+      body:
+      - content="本系统是专家评审系统的衍生系统

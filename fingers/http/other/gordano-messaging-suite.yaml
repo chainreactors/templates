@@ -1,0 +1,5 @@
+- name: gordano-messaging-suite
+  rule:
+  - regexps:
+      header:
+      - Gordano

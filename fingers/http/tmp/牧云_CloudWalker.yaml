@@ -1,0 +1,8 @@
+- name: 牧云 CloudWalker
+  rule:
+  - favicon:
+      mmh3:
+      - '2022077319'
+    regexps:
+      body:
+      - <title>主机安全平台</title>

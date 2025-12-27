@@ -1,0 +1,6 @@
+- name: HAProxy-WI
+  rule:
+  - regexps:
+      body:
+      - HAProxy-WI
+      - HAProxy-WI

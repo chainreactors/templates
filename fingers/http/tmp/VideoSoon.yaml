@@ -1,0 +1,5 @@
+- name: VideoSoon
+  rule:
+  - regexps:
+      body:
+      - content="VideoSoon

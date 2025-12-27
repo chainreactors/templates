@@ -1,0 +1,7 @@
+- name: 金山终端安全
+  link: http://120.82.95.46:1024/
+  rule:
+  - regexps:
+      body:
+      - 金山终端安全系统
+      - setup/kanclient.exe

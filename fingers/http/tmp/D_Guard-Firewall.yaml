@@ -1,0 +1,9 @@
+- name: D_Guard-Firewall
+  rule:
+  - regexps:
+      body:
+      - Seventh D-Guard Center
+      - Seventh D-Guard Projects
+      header:
+      - Basic realm="D-Guard"
+      - DGuard Projects

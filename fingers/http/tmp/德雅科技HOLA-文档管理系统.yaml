@@ -1,0 +1,5 @@
+- name: 德雅科技HOLA-文档管理系统
+  rule:
+  - regexps:
+      body:
+      - 德雅科技HOLA文档管理系统

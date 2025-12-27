@@ -1,0 +1,5 @@
+- name: Interspire-ShoppingCart
+  rule:
+  - regexps:
+      body:
+      - content="Interspire Shopping Cart"

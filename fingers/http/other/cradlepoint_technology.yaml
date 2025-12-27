@@ -1,0 +1,5 @@
+- name: cradlepoint technology
+  rule:
+  - favicon:
+      mmh3:
+      - '1466912879'

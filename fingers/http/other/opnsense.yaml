@@ -1,0 +1,5 @@
+- name: opnsense
+  rule:
+  - favicon:
+      mmh3:
+      - '-1148190371'

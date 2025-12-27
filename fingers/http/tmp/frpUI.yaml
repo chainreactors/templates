@@ -1,0 +1,6 @@
+- name: frpUI
+  rule:
+  - regexps:
+      body:
+      - frp client admin UI
+      - frps dashboard

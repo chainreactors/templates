@@ -1,0 +1,5 @@
+- name: idirect canada
+  rule:
+  - favicon:
+      mmh3:
+      - '-256828986'

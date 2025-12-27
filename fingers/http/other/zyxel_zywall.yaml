@@ -1,0 +1,5 @@
+- name: zyxel zywall
+  rule:
+  - favicon:
+      mmh3:
+      - '-484708885'

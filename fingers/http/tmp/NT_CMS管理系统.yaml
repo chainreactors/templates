@@ -1,0 +1,5 @@
+- name: NT CMS管理系统
+  rule:
+  - regexps:
+      body:
+      - NT CMS管理系统

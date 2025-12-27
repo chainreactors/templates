@@ -1,0 +1,6 @@
+- name: H3C SecPath Firewall
+  rule:
+  - regexps:
+      body:
+      - h3c secpath firewall system
+      - h3c firewall secpath

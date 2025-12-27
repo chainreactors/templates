@@ -1,0 +1,6 @@
+- name: PegaRULES
+  rule:
+  - regexps:
+      body:
+      - <span> PegaCRM
+      - /prweb/k7RhhW4GOJ_jZo5IJ84-_XCXCyLw1nlE

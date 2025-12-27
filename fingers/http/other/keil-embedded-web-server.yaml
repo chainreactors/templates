@@ -1,0 +1,5 @@
+- name: keil-embedded-web-server
+  rule:
+  - regexps:
+      header:
+      - Keil-EWEB

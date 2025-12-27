@@ -1,0 +1,7 @@
+- name: uni-emm
+  level: 2
+  rule:
+  - regexps:
+      body:
+      - com.leagsoft.emm
+    send_data: /emm-api

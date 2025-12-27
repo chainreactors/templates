@@ -1,0 +1,5 @@
+- name: billion-router
+  rule:
+  - regexps:
+      header:
+      - Basic realm="WebAdmin

@@ -1,0 +1,5 @@
+- name: 紫光防火墙
+  rule:
+  - regexps:
+      body:
+      - 紫光防火墙

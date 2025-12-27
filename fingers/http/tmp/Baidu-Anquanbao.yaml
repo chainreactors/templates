@@ -1,0 +1,5 @@
+- name: Baidu-Anquanbao
+  rule:
+  - regexps:
+      header:
+      - x-powered-by-anquanbao

@@ -1,0 +1,6 @@
+- name: 多米(DuomiCms) 免费影视管理系统
+  rule:
+  - regexps:
+      body:
+      - Power by DuomiCms
+      - 多米(DuomiCms)-免费影视管理系统

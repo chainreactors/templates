@@ -1,0 +1,5 @@
+- name: 博达交换机
+  rule:
+  - regexps:
+      header:
+      - 'Www-Authenticate: Basic realm="Switch"'

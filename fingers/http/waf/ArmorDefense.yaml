@@ -1,0 +1,5 @@
+- name: ArmorDefense
+  rule:
+  - regexps:
+      body:
+      - protection from Armor

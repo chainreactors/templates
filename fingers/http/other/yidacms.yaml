@@ -1,0 +1,5 @@
+- name: yidacms
+  rule:
+  - regexps:
+      body:
+      - yidacms.css

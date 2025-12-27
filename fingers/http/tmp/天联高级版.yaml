@@ -1,0 +1,6 @@
+- name: 天联高级版
+  link: http://27.223.156.28:8088/Web_sc/login.gn
+  rule:
+  - regexps:
+      body:
+      - 天联高级版

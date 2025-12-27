@@ -1,0 +1,5 @@
+- name: 用友u8
+  rule:
+  - regexps:
+      body:
+      - getFirstU8Accid

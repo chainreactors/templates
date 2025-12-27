@@ -1,0 +1,5 @@
+- name: play-framework
+  rule:
+  - regexps:
+      header:
+      - Play! Framework

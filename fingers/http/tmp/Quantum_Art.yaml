@@ -1,0 +1,5 @@
+- name: Quantum Art
+  rule:
+  - regexps:
+      header:
+      - Quantum Art

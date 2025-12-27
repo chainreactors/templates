@@ -1,0 +1,5 @@
+- name: MicrosoftWAF
+  rule:
+  - regexps:
+      body:
+      - denied the specified Uniform Resource Locator

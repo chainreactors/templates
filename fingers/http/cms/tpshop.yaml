@@ -1,0 +1,6 @@
+- name: tpshop
+  rule:
+  - regexps:
+      body:
+      - /index.php/Mobile/Index/index.html
+      - TPshop

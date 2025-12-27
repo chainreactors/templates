@@ -1,0 +1,5 @@
+- name: 叮当快药B2C管理系统
+  rule:
+  - regexps:
+      body:
+      - 叮当快药B2C管理系统

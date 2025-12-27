@@ -1,0 +1,10 @@
+- name: 联软设备
+  rule:
+  - regexps:
+      body:
+      - leagsoft
+    favicon:
+      md5:
+      - da9ce98e9a52ccb605d112c0437bcbc1
+      mmh3:
+      - '-2130980754'

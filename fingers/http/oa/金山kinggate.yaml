@@ -1,0 +1,5 @@
+- name: 金山kinggate
+  rule:
+  - regexps:
+      body:
+      - /src/system/login.php

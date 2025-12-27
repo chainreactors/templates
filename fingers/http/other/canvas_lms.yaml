@@ -1,0 +1,5 @@
+- name: canvas lms
+  rule:
+  - favicon:
+      mmh3:
+      - '575613323'

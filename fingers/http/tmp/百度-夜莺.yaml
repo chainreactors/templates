@@ -1,0 +1,5 @@
+- name: 百度-夜莺
+  rule:
+  - regexps:
+      body:
+      - https://ikefu.baidu.com

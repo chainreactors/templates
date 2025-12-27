@@ -1,0 +1,9 @@
+- name: jive-sbs
+  rule:
+  - regexps:
+      body:
+      - /jive-icons.css
+      - class="jive-body-formpage
+      - jive.rte.defaultStyles
+      header:
+      - 'X-Jsl: '

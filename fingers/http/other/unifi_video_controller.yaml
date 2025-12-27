@@ -1,0 +1,5 @@
+- name: unifi video controller
+  rule:
+  - favicon:
+      mmh3:
+      - '768816037'

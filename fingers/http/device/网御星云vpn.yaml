@@ -1,0 +1,6 @@
+- name: 网御星云vpn
+  rule:
+  - regexps:
+      body:
+      - /ssl/down/usbkey.exe
+      - /js/leadsec.js

@@ -1,0 +1,5 @@
+- name: TinyShop
+  rule:
+  - regexps:
+      body:
+      - tiny-dialog.css

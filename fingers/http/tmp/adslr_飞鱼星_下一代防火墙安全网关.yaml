@@ -1,0 +1,6 @@
+- name: adslr 飞鱼星 下一代防火墙安全网关
+  rule:
+  - regexps:
+      body:
+      - 下一代防火墙安全网关
+      - href="/css/cover_admin.css"

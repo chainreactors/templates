@@ -1,0 +1,6 @@
+- name: 安全狗-云垒云安全平台
+  link: https://222.75.57.36:8443/passport/login.html?service=https%3A%2F%2F222.75.57.36%3A8443%2F&encode=UTF-8&sid=MzY4YTcyYWUtOWI5Yi00MzUwLTg1ZmYtNDQ4MDIyMTBiNzhh
+  rule:
+  - regexps:
+      body:
+      - yunlei_login

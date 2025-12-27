@@ -1,0 +1,5 @@
+- name: litespeed
+  rule:
+  - regexps:
+      header:
+      - 'Server: LiteSpeed'

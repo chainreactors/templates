@@ -1,0 +1,6 @@
+- name: interspire-shopping-cart
+  rule:
+  - regexps:
+      body:
+      - content="Interspire Shopping Cart
+      - class="PoweredBy">Interspire Shopping Cart

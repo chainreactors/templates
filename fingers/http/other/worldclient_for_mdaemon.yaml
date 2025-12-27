@@ -1,0 +1,5 @@
+- name: worldclient for mdaemon
+  rule:
+  - favicon:
+      mmh3:
+      - '-35107086'

@@ -1,0 +1,5 @@
+- name: Nucleus CMS
+  rule:
+  - regexps:
+      body:
+      - Powered by Nucleus

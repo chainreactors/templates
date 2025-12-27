@@ -1,0 +1,5 @@
+- name: dlink_dsl_320b
+  rule:
+  - regexps:
+      header:
+      - DSL-320B

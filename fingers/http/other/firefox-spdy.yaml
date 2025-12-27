@@ -1,0 +1,5 @@
+- name: firefox-spdy
+  rule:
+  - regexps:
+      header:
+      - X-Firefox-Spdy

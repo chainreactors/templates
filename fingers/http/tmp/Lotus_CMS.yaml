@@ -1,0 +1,5 @@
+- name: Lotus CMS
+  rule:
+  - regexps:
+      body:
+      - LOTUSCMS

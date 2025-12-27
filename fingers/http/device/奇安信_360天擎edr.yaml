@@ -1,0 +1,6 @@
+- name: 奇安信/360天擎edr
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - 360天擎终端安全管理系统

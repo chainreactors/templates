@@ -1,0 +1,6 @@
+- name: metasploit
+  rule:
+  - favicon:
+      mmh3:
+      - '-127886975'
+      - '-1235192469'

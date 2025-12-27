@@ -1,0 +1,5 @@
+- name: Dptech SRG1000
+  rule:
+  - regexps:
+      body:
+      - dptech srg1000

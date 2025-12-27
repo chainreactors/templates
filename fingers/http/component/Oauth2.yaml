@@ -1,0 +1,7 @@
+- name: Oauth2
+  rule:
+  - regexps:
+      header:
+      - bearer
+      body:
+      - bearer

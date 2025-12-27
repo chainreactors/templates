@@ -1,0 +1,5 @@
+- name: spamexperts
+  rule:
+  - favicon:
+      mmh3:
+      - '-1688698891'

@@ -1,0 +1,5 @@
+- name: Metaswitch Networks MetaView Web
+  rule:
+  - regexps:
+      body:
+      - src="dcl.metaview.web.client.nocache.js">

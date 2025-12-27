@@ -1,0 +1,5 @@
+- name: php云
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: checkurl=deleted;'

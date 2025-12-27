@@ -1,0 +1,5 @@
+- name: 任子行设备
+  rule:
+  - regexps:
+      body:
+      - 任子行

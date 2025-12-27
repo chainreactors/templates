@@ -1,0 +1,5 @@
+- name: PHPShop
+  rule:
+  - regexps:
+      body:
+      - content="PHPShop

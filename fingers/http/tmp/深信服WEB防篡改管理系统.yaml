@@ -1,0 +1,6 @@
+- name: 深信服WEB防篡改管理系统
+  link: null
+  rule:
+  - regexps:
+      body:
+      - cgi-bin/tamper_admin.cgi

@@ -1,0 +1,6 @@
+- name: Apache-Nifi
+  link: http://135.125.93.51:8083/
+  rule:
+  - regexps:
+      body:
+      - <a href="/nifi/">/nifi</a>

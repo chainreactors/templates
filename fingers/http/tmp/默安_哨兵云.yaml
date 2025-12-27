@@ -1,0 +1,5 @@
+- name: 默安 哨兵云
+  rule:
+  - regexps:
+      body:
+      - 哨兵云

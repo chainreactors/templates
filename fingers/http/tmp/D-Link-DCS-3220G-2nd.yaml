@@ -1,0 +1,5 @@
+- name: D-Link-DCS-3220G-2nd
+  rule:
+  - regexps:
+      header:
+      - Basic realm="DCS-3220G-2nd

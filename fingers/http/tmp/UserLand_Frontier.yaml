@@ -1,0 +1,5 @@
+- name: UserLand Frontier
+  rule:
+  - regexps:
+      header:
+      - 'Server: UserLand Frontier'

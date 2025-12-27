@@ -1,0 +1,7 @@
+- name: 大华智能物联综合管理平台
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - location.hash.indexOf('/authLogin')
+      - <a href="www/mobile-version.txt"

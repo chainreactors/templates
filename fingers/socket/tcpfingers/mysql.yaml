@@ -1,0 +1,10 @@
+- name: mysql
+  default_port:
+  - mysql
+  protocol: tcp
+  rule:
+  - regexps:
+      regexp:
+      - "^.\0\0\0\n(.\\.[-_~.+\\w]+)\0"
+      - "^.\0\0\0ÿj\x04'[\\d.]+' .* MySQL"
+      - Host .* is not allowed to connect to this MySQL server

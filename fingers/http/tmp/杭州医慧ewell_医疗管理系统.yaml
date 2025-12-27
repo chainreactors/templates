@@ -1,0 +1,6 @@
+- name: 杭州医慧ewell 医疗管理系统
+  rule:
+  - regexps:
+      body:
+      - Ewell Corporation
+      - 杭州医惠信息科技有限公司

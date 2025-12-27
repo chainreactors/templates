@@ -1,0 +1,5 @@
+- name: mod_psoft_traffic
+  rule:
+  - regexps:
+      header:
+      - mod_psoft_traffic

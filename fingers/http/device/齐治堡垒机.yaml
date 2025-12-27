@@ -1,0 +1,13 @@
+- name: 齐治堡垒机
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - logo-icon-ico72.png
+      - image/top_logo.ico
+      - localStorage.deployPath + "/login?logout";
+      header:
+      - /shterm
+    favicon:
+      md5:
+      - 48ee373f098d8e96e53b7dd778f09ff4

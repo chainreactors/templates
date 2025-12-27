@@ -1,0 +1,5 @@
+- name: adobe_robohelp
+  rule:
+  - regexps:
+      body:
+      - generator" content="Adobe RoboHelp

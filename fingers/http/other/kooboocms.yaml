@@ -1,0 +1,5 @@
+- name: kooboocms
+  rule:
+  - regexps:
+      header:
+      - Kooboocms

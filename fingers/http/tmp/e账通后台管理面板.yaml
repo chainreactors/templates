@@ -1,0 +1,6 @@
+- name: e账通后台管理面板
+  rule:
+  - regexps:
+      body:
+      - e账通后台管理面板
+      - e账通融合认证系统

@@ -1,0 +1,5 @@
+- name: Fibaro Home Center
+  rule:
+  - regexps:
+      body:
+      - Fibaro Home Center

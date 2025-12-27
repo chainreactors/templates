@@ -1,0 +1,6 @@
+- name: etano
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://www.datemill.com
+      - Etano</a>. All Rights Reserved.

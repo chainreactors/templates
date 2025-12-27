@@ -1,0 +1,7 @@
+- name: batavi
+  rule:
+  - regexps:
+      body:
+      - content="Batavi.org
+      header:
+      - Batavi

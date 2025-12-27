@@ -1,0 +1,6 @@
+- name: U-MAIL邮件营销平台
+  link: https://www.bestedm.net/login?next=/
+  rule:
+  - regexps:
+      body:
+      - u-mail

@@ -1,0 +1,7 @@
+- name: tccms
+  rule:
+  - regexps:
+      body:
+      - Power By TCCMS
+      - index.php?ac=link_more
+      - index.php?ac=news_list

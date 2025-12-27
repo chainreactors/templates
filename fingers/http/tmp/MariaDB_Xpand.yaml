@@ -1,0 +1,5 @@
+- name: MariaDB Xpand
+  rule:
+  - regexps:
+      body:
+      - MariaDB Xpand Web UI

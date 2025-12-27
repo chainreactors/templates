@@ -1,0 +1,7 @@
+- name: tutucms
+  rule:
+  - regexps:
+      body:
+      - content="TUTUCMS
+      - Powered by TUTUCMS
+      - TUTUCMS"

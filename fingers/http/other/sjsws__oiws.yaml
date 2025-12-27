@@ -1,0 +1,5 @@
+- name: sjsws_ oiws
+  rule:
+  - regexps:
+      header:
+      - Sun-Java-System-Web-Server

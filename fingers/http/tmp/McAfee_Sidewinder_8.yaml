@@ -1,0 +1,5 @@
+- name: McAfee Sidewinder 8
+  rule:
+  - regexps:
+      body:
+      - sidewinder 8

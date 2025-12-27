@@ -1,0 +1,5 @@
+- name: hitron technologies inc.
+  rule:
+  - favicon:
+      mmh3:
+      - '711742418'

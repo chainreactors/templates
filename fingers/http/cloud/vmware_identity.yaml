@@ -1,0 +1,7 @@
+- name: vmware identity
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - cfg/js-lib
+      - VMware Identity

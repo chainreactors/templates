@@ -1,0 +1,5 @@
+- name: microsoft-httpapi
+  rule:
+  - regexps:
+      header:
+      - Microsoft-HTTPAPI

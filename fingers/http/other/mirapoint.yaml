@@ -1,0 +1,5 @@
+- name: mirapoint
+  rule:
+  - regexps:
+      body:
+      - /wm/mail/login.html

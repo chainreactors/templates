@@ -1,0 +1,6 @@
+- name: Union HAC
+  rule:
+  - regexps:
+      body:
+      - /image/serchnotice.jpg
+      - hac 运维审计系统登录

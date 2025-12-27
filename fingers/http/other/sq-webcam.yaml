@@ -1,0 +1,5 @@
+- name: sq-webcam
+  rule:
+  - regexps:
+      header:
+      - SQ-WEBCAM

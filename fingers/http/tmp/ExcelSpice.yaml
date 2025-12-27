@@ -1,0 +1,5 @@
+- name: ExcelSpice
+  rule:
+  - regexps:
+      body:
+      - ExcelSpice

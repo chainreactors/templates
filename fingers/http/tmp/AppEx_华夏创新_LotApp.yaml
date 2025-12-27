@@ -1,0 +1,5 @@
+- name: AppEx 华夏创新 LotApp
+  rule:
+  - regexps:
+      body:
+      - LotApp

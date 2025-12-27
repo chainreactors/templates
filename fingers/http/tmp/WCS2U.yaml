@@ -1,0 +1,5 @@
+- name: WCS2U
+  rule:
+  - regexps:
+      body:
+      - '"by WCS2U.COM"'

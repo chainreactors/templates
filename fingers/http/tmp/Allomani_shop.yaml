@@ -1,0 +1,5 @@
+- name: Allomani shop
+  rule:
+  - regexps:
+      body:
+      - content="Allomani

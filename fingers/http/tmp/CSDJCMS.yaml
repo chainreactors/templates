@@ -1,0 +1,5 @@
+- name: CSDJCMS
+  rule:
+  - regexps:
+      body:
+      - 程氏舞曲DJ

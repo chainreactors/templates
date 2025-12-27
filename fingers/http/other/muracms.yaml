@@ -1,0 +1,5 @@
+- name: muracms
+  rule:
+  - regexps:
+      header:
+      - Mura CMS

@@ -1,0 +1,5 @@
+- name: 中庆纳博
+  rule:
+  - regexps:
+      body:
+      - 中庆纳博

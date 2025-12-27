@@ -1,0 +1,5 @@
+- name: 施耐德schneider设备
+  rule:
+  - regexps:
+      header:
+      - Schneider-WEB

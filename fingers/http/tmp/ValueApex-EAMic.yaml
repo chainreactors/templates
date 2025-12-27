@@ -1,0 +1,5 @@
+- name: ValueApex-EAMic
+  rule:
+  - regexps:
+      body:
+      - log into my eamic® account

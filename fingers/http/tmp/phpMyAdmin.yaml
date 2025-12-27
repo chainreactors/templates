@@ -1,0 +1,8 @@
+- name: phpMyAdmin
+  rule:
+  - regexps:
+      body:
+      - phpMyAdmin
+      header:
+      - phpMyAdmin
+      - pmaUser

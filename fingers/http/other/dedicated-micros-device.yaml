@@ -1,0 +1,5 @@
+- name: dedicated-micros-device
+  rule:
+  - regexps:
+      header:
+      - ADH-Web

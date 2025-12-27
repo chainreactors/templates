@@ -1,0 +1,5 @@
+- name: 明腾cms
+  rule:
+  - regexps:
+      body:
+      - 明腾

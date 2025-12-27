@@ -1,0 +1,5 @@
+- name: flyspray
+  rule:
+  - regexps:
+      body:
+      - Powered by Flyspray

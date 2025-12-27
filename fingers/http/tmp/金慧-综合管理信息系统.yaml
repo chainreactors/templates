@@ -1,0 +1,5 @@
+- name: 金慧-综合管理信息系统
+  rule:
+  - regexps:
+      body:
+      - /CommonWebResource/

@@ -1,0 +1,5 @@
+- name: ESET-NOD32
+  rule:
+  - regexps:
+      header:
+      - Basic realm="NOD32

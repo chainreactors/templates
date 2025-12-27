@@ -1,0 +1,5 @@
+- name: Microsoft Forefront TMG 2010
+  rule:
+  - regexps:
+      body:
+      - Microsoft Forefront TMG 2010

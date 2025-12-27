@@ -1,0 +1,5 @@
+- name: zendserver
+  rule:
+  - regexps:
+      header:
+      - ZendServer

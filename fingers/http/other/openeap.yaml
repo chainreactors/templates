@@ -1,0 +1,5 @@
+- name: openeap
+  rule:
+  - regexps:
+      body:
+      - openEAP_统一登录门户

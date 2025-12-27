@@ -1,0 +1,6 @@
+- name: Rising Antivirus Online
+  rule:
+  - regexps:
+      body:
+      - 瑞星杀毒软件网络版
+      - src="ravweb_files/

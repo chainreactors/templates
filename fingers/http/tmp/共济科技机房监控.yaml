@@ -1,0 +1,5 @@
+- name: 共济科技机房监控
+  rule:
+  - regexps:
+      body:
+      - 共济科技机房监控系统

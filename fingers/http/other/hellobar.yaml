@@ -1,0 +1,5 @@
+- name: hellobar
+  rule:
+  - regexps:
+      body:
+      - hellobar.js

@@ -1,0 +1,5 @@
+- name: puppet_node_manager
+  rule:
+  - regexps:
+      body:
+      - Puppet Node Manager

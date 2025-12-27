@@ -1,0 +1,5 @@
+- name: frp
+  rule:
+  - regexps:
+      body:
+      - Faithfully yours, frp

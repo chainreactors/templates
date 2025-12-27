@@ -1,0 +1,5 @@
+- name: monxin商城系统
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: monxin_device='

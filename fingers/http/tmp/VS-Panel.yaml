@@ -1,0 +1,5 @@
+- name: VS-Panel
+  rule:
+  - regexps:
+      body:
+      - <!--VSpanel Translation-->

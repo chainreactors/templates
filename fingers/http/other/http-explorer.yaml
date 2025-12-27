@@ -1,0 +1,5 @@
+- name: http-explorer
+  rule:
+  - regexps:
+      header:
+      - Http explorer

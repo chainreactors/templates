@@ -1,0 +1,6 @@
+- name: h3c Cloud
+  rule:
+  - regexps:
+      body:
+      - vstor
+      - 分布式存储管理系统

@@ -1,0 +1,6 @@
+- name: 蓝信
+  rule:
+  - regexps:
+      body:
+      - LanXin
+      - 蓝信

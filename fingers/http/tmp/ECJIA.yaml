@@ -1,0 +1,5 @@
+- name: ECJIA
+  rule:
+  - regexps:
+      header:
+      - ECJIA

@@ -1,0 +1,5 @@
+- name: PieCrust
+  rule:
+  - regexps:
+      body:
+      - content="PieCrust

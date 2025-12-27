@@ -1,0 +1,6 @@
+- name: phpLDAPadmin
+  rule:
+  - regexps:
+      body:
+      - phpldapadmin -
+      - src="images/default/logo.png" title="phpldapadmin logo

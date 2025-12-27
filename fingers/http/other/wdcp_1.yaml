@@ -1,0 +1,5 @@
+- name: wdcp
+  rule:
+  - favicon:
+      mmh3:
+      - '1786752597'

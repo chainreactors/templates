@@ -1,0 +1,5 @@
+- name: RG WALL V160S
+  rule:
+  - regexps:
+      body:
+      - rg-wall-v160s

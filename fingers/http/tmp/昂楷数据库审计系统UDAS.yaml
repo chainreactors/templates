@@ -1,0 +1,5 @@
+- name: 昂楷数据库审计系统UDAS
+  rule:
+  - regexps:
+      body:
+      - 数据库审计系统UDAS

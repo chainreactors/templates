@@ -1,0 +1,5 @@
+- name: ioncube-php-accelerator
+  rule:
+  - regexps:
+      header:
+      - x-accelerated-by

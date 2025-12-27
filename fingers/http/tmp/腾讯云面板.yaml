@@ -1,0 +1,5 @@
+- name: 腾讯云面板
+  rule:
+  - regexps:
+      body:
+      - 腾讯云面板

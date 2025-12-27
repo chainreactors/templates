@@ -1,0 +1,8 @@
+- name: ispconfig
+  rule:
+  - regexps:
+      body:
+      - powered by <a HREF="http://www.ispconfig.org
+    favicon:
+      mmh3:
+      - '483383992'

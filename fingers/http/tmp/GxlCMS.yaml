@@ -1,0 +1,6 @@
+- name: GxlCMS
+  rule:
+  - regexps:
+      body:
+      - uploads/ting
+      - bookShadow

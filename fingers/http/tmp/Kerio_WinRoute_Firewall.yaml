@@ -1,0 +1,7 @@
+- name: Kerio_WinRoute_Firewall
+  rule:
+  - regexps:
+      body:
+      - style/bodyNonauth.css
+      header:
+      - Kerio WinRoute Firewall

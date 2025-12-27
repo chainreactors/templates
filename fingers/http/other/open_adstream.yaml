@@ -1,0 +1,5 @@
+- name: open_adstream
+  rule:
+  - regexps:
+      body:
+      - OAS_AD

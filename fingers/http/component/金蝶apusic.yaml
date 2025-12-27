@@ -1,0 +1,9 @@
+- name: 金蝶apusic
+  focus: true
+  rule:
+  - regexps:
+      header:
+      - Apusic
+      body:
+      - -Error report
+      - Apusic Application Server

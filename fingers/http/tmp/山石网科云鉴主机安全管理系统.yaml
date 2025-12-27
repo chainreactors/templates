@@ -1,0 +1,6 @@
+- name: 山石网科云鉴主机安全管理系统
+  link: https://119.96.166.102:10443/admin/login/login.php
+  rule:
+  - regexps:
+      body:
+      - 云鉴主机安全管理系统

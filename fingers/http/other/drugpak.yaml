@@ -1,0 +1,6 @@
+- name: drugpak
+  rule:
+  - regexps:
+      body:
+      - Powered by DrugPak
+      - /dplimg/DPSTYLE.CSS

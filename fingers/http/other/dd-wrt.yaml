@@ -1,0 +1,5 @@
+- name: dd-wrt
+  rule:
+  - regexps:
+      body:
+      - style/pwc/ddwrt.css

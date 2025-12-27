@@ -1,0 +1,5 @@
+- name: JTopCMS
+  rule:
+  - regexps:
+      body:
+      - JTopCMS

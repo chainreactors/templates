@@ -1,0 +1,5 @@
+- name: TCL 人才管理系统
+  rule:
+  - regexps:
+      body:
+      - TCL人才管理系统

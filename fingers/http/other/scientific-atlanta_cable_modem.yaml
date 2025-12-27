@@ -1,0 +1,5 @@
+- name: scientific-atlanta_cable_modem
+  rule:
+  - regexps:
+      body:
+      - Scientific-Atlanta Cable Modem

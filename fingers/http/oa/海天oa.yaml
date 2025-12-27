@@ -1,0 +1,5 @@
+- name: 海天oa
+  rule:
+  - regexps:
+      body:
+      - HTVOS.js

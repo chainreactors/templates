@@ -1,0 +1,6 @@
+- name: 海康威视安全生产管理平台
+  link: https://appt.jc-nm.net/portal/ui/login?service=https%3A%2F%2Fappt.jc-nm.net%3A443%2Fportal%2F
+  rule:
+  - regexps:
+      body:
+      - Infovision iWork-Safety

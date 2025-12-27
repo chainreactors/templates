@@ -1,0 +1,5 @@
+- name: 54客服
+  rule:
+  - regexps:
+      body:
+      - http://code2.54kefu.net/kefu/

@@ -1,0 +1,5 @@
+- name: VMware Carbon Black App Control
+  rule:
+  - regexps:
+      body:
+      - Carbon Black App Control

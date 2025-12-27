@@ -1,0 +1,5 @@
+- name: ikuai networks
+  rule:
+  - favicon:
+      mmh3:
+      - '-271448102'

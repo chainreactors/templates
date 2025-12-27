@@ -1,0 +1,5 @@
+- name: 信锐-企业级AP
+  rule:
+  - regexps:
+      header:
+      - 'Server: Hydra/0.1.8'

@@ -1,0 +1,5 @@
+- name: Odoo
+  rule:
+  - regexps:
+      body:
+      - Odoo

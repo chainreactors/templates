@@ -1,0 +1,7 @@
+- name: Oracle Siebel CRM
+  rule:
+  - regexps:
+      body:
+      - Siebel Partner Portal
+      - <script>this.ConfirmDeleteMessage ='Are you sure you want to delete this record?'</script><script>
+        this.focus(); </script>

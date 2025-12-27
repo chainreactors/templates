@@ -1,0 +1,5 @@
+- name: 主机宝
+  rule:
+  - regexps:
+      body:
+      - 您访问的是主机宝服务器默认页

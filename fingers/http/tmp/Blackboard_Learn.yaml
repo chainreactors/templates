@@ -1,0 +1,5 @@
+- name: Blackboard Learn
+  rule:
+  - regexps:
+      body:
+      - Blackboard Learn

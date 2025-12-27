@@ -1,0 +1,5 @@
+- name: 江西金磊 JEECMS官网 JAVA网站内容管理系统
+  rule:
+  - regexps:
+      body:
+      - JEECMS官网－JAVA网站内容管理系统

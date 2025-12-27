@@ -1,0 +1,5 @@
+- name: 聚能ERP管理系统 V8.0
+  rule:
+  - regexps:
+      body:
+      - <title>聚能ERP管理系统 V8.0</title>

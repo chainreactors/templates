@@ -1,0 +1,5 @@
+- name: shenzhen coship electronics co.
+  rule:
+  - favicon:
+      mmh3:
+      - '224536051'

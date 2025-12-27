@@ -1,0 +1,6 @@
+- name: dibos
+  rule:
+  - regexps:
+      body:
+      - DiBos - Login
+      - style/bovisnt.css

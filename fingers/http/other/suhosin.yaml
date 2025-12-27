@@ -1,0 +1,5 @@
+- name: suhosin
+  rule:
+  - regexps:
+      header:
+      - suhosin

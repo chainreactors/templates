@@ -1,0 +1,5 @@
+- name: 服务器虚拟化-OVP
+  rule:
+  - regexps:
+      body:
+      - '"ovp2/css/ext-ovp.css"'

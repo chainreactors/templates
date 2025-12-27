@@ -1,0 +1,6 @@
+- name: bluecms
+  rule:
+  - regexps:
+      body:
+      - power by bcms
+      - bcms_plugin

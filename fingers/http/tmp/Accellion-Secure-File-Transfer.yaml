@@ -1,0 +1,5 @@
+- name: Accellion-Secure-File-Transfer
+  rule:
+  - regexps:
+      body:
+      - Secured by Accellio

@@ -1,0 +1,5 @@
+- name: hp_ilo(hp_integrated_lights-out)
+  rule:
+  - regexps:
+      body:
+      - js/iLO.js

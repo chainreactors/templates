@@ -1,0 +1,5 @@
+- name: 国信安邮 suremail
+  rule:
+  - regexps:
+      body:
+      - 版权所有：北京国信安邮科技有限公司

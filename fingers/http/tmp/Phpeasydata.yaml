@@ -1,0 +1,5 @@
+- name: Phpeasydata
+  rule:
+  - regexps:
+      body:
+      - content="Phpeasydata

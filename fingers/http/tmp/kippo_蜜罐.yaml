@@ -1,0 +1,5 @@
+- name: kippo 蜜罐
+  rule:
+  - regexps:
+      body:
+      - 'SSH Honeypot Type: Kippo'

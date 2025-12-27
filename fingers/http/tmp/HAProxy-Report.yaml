@@ -1,0 +1,5 @@
+- name: HAProxy-Report
+  rule:
+  - regexps:
+      body:
+      - Statistics Report for HAProxy

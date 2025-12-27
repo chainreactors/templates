@@ -1,0 +1,5 @@
+- name: cgiproxy
+  rule:
+  - regexps:
+      body:
+      - <a href="http://www.jmarshall.com/tools/cgiproxy/

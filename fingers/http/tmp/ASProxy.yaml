@@ -1,0 +1,5 @@
+- name: ASProxy
+  rule:
+  - regexps:
+      body:
+      - ASProxy

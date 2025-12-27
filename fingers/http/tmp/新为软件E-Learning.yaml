@@ -1,0 +1,6 @@
+- name: 新为软件E-Learning
+  rule:
+  - regexps:
+      body:
+      - content="新为，新为软件，
+      - Copyright &copy; 深圳市新为软件有限公司

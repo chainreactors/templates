@@ -1,0 +1,5 @@
+- name: XpShop
+  rule:
+  - regexps:
+      body:
+      - /Template/xpshop_currents/

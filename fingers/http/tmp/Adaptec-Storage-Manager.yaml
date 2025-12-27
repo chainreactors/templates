@@ -1,0 +1,5 @@
+- name: Adaptec-Storage-Manager
+  rule:
+  - regexps:
+      header:
+      - Adaptec ASM

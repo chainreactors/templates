@@ -1,0 +1,6 @@
+- name: calendarscript
+  rule:
+  - regexps:
+      body:
+      - 'Calendar Administration : Login'
+      - CalendarScript.com

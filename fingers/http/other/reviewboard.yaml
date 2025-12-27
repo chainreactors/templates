@@ -1,0 +1,7 @@
+- name: reviewboard
+  rule:
+  - regexps:
+      body:
+      - /static/rb/images/delete
+      header:
+      - rbsessionid

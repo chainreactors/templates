@@ -1,0 +1,5 @@
+- name: UCenter Home
+  rule:
+  - regexps:
+      body:
+      - Powered by UCenter Home

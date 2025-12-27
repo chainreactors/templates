@@ -1,0 +1,5 @@
+- name: sails
+  rule:
+  - favicon:
+      mmh3:
+      - '552597979'

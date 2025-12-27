@@ -1,0 +1,5 @@
+- name: 苹果cms
+  rule:
+  - regexps:
+      body:
+      - maccms:voddaycount

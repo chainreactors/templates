@@ -1,0 +1,8 @@
+- name: rtsp
+  default_port:
+  - '554'
+  protocol: tcp
+  rule:
+  - regexps:
+      body:
+      - RTSP/1

@@ -1,0 +1,6 @@
+- name: 用友-U8
+  rule:
+  - regexps:
+      body:
+      - 用友优普信息技术有限公司
+      - U8远程接入

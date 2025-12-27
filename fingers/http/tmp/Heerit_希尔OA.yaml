@@ -1,0 +1,5 @@
+- name: Heerit 希尔OA
+  rule:
+  - regexps:
+      body:
+      - 希尔智慧科技

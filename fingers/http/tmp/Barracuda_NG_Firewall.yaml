@@ -1,0 +1,5 @@
+- name: Barracuda NG Firewall
+  rule:
+  - regexps:
+      header:
+      - barracuda ng firewall

@@ -1,0 +1,6 @@
+- name: ArangoDB Web Interface
+  link: null
+  rule:
+  - regexps:
+      body:
+      - ArangoDB Web Interface

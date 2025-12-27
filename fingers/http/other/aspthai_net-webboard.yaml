@@ -1,0 +1,5 @@
+- name: aspthai_net-webboard
+  rule:
+  - regexps:
+      body:
+      - ASPThai.Net Webboard

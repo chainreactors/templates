@@ -1,0 +1,5 @@
+- name: 蓝盾防火墙
+  rule:
+  - regexps:
+      body:
+      - 蓝盾防火墙

@@ -1,0 +1,6 @@
+- name: openmas
+  rule:
+  - regexps:
+      body:
+      - OpenMas
+      - loginHead"><link href="App_Themes

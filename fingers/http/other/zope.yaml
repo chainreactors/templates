@@ -1,0 +1,5 @@
+- name: zope
+  rule:
+  - regexps:
+      header:
+      - zope

@@ -1,0 +1,5 @@
+- name: mercurial
+  rule:
+  - regexps:
+      body:
+      - Mercurial repositories index

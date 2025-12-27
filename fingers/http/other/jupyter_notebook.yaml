@@ -1,0 +1,5 @@
+- name: jupyter notebook
+  rule:
+  - favicon:
+      mmh3:
+      - '-895963602'

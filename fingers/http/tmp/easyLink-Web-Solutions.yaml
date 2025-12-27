@@ -1,0 +1,5 @@
+- name: easyLink-Web-Solutions
+  rule:
+  - regexps:
+      body:
+      - content="easyLink

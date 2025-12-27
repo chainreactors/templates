@@ -1,0 +1,5 @@
+- name: mk-auth
+  rule:
+  - favicon:
+      mmh3:
+      - '1490343308'

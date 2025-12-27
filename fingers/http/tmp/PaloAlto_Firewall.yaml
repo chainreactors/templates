@@ -1,0 +1,6 @@
+- name: PaloAlto_Firewall
+  rule:
+  - regexps:
+      body:
+      - Access to the web page you were trying to visit has been blocked in accordance
+        with company policy

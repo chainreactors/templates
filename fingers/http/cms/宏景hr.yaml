@@ -1,0 +1,8 @@
+- name: 宏景hr
+  rule:
+  - regexps:
+      body:
+      - /js/hcmPNG.js
+    favicon:
+      mmh3:
+      - '947874108'

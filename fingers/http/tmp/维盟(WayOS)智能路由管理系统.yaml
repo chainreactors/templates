@@ -1,0 +1,5 @@
+- name: 维盟(WayOS)智能路由管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>维盟（WayOS）智能路由管理系统 www.wayos.cn</title>

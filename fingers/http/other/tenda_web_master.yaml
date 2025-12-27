@@ -1,0 +1,5 @@
+- name: tenda web master
+  rule:
+  - favicon:
+      mmh3:
+      - '-2145085239'

@@ -1,0 +1,5 @@
+- name: dynaweb-httpd
+  rule:
+  - regexps:
+      header:
+      - dwhttpd

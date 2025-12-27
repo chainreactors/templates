@@ -1,0 +1,6 @@
+- name: ASUS Wireless Router
+  link: https://47.232.136.50:8443/Main_Login.asp
+  rule:
+  - regexps:
+      body:
+      - ASUS Wireless Router

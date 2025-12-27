@@ -1,0 +1,5 @@
+- name: jsf
+  rule:
+  - regexps:
+      header:
+      - JSF

@@ -1,0 +1,5 @@
+- name: Soffice
+  rule:
+  - regexps:
+      body:
+      - soffice

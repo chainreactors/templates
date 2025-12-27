@@ -1,0 +1,5 @@
+- name: SmodCMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="Generator" content="SmodCMS" />

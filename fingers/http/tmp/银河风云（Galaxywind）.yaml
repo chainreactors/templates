@@ -1,0 +1,9 @@
+- name: 银河风云（Galaxywind）
+  rule:
+  - favicon:
+      mmh3:
+      - '-803559422'
+    regexps:
+      body:
+      - Galaxywind. All Rights Reserved
+      - logo_galaxywind.png

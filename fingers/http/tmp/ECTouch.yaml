@@ -1,0 +1,7 @@
+- name: ECTouch
+  rule:
+  - regexps:
+      body:
+      - content="ECTouch
+      header:
+      - 'X-Powered-By: ECTouch'

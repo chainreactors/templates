@@ -1,0 +1,5 @@
+- name: wp-super-cache
+  rule:
+  - regexps:
+      header:
+      - Wp-Super-Cache

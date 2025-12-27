@@ -1,0 +1,5 @@
+- name: slack-instance
+  rule:
+  - favicon:
+      mmh3:
+      - '99395752'

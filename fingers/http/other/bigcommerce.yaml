@@ -1,0 +1,5 @@
+- name: bigcommerce
+  rule:
+  - regexps:
+      header:
+      - SHOP_SESSION_TOKEN

@@ -1,0 +1,7 @@
+- name: 科迈ras系统
+  rule:
+  - regexps:
+      body:
+      - 科迈RAS
+      - type="application/npRas
+      - 远程技术支持请求：<a href="http://www.comexe.cn

@@ -1,0 +1,5 @@
+- name: icecast
+  rule:
+  - regexps:
+      header:
+      - icecast

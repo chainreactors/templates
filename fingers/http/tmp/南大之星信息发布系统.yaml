@@ -1,0 +1,5 @@
+- name: 南大之星信息发布系统
+  rule:
+  - regexps:
+      body:
+      - <title>南大之星信息发布系统

@@ -1,0 +1,5 @@
+- name: wordpress_qtranslate
+  rule:
+  - regexps:
+      header:
+      - qtrans_cookie_test

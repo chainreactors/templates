@@ -1,0 +1,5 @@
+- name: grandtec-x-guard
+  rule:
+  - regexps:
+      header:
+      - WalkGuard

@@ -1,0 +1,5 @@
+- name: Nginx Exporter
+  rule:
+  - regexps:
+      body:
+      - NginxExporter

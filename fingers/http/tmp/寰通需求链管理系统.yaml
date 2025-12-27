@@ -1,0 +1,5 @@
+- name: 寰通需求链管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>寰通需求链管理系统登陆</title>

@@ -1,0 +1,5 @@
+- name: 升腾云终端管理系统
+  rule:
+  - regexps:
+      body:
+      - +MainPageTile+

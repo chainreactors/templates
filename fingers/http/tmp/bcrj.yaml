@@ -1,0 +1,5 @@
+- name: bcrj
+  rule:
+  - regexps:
+      body:
+      - www.bcrj.com.cn

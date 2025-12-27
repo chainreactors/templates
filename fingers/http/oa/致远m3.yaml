@@ -1,0 +1,6 @@
+- name: 致远m3
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - <title>M3 Server

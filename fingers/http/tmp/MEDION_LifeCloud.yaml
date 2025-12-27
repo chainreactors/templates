@@ -1,0 +1,6 @@
+- name: MEDION LifeCloud
+  rule:
+  - regexps:
+      body:
+      - MEDION
+      - LifeCloud

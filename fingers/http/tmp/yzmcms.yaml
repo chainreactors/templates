@@ -1,0 +1,5 @@
+- name: yzmcms
+  rule:
+  - regexps:
+      body:
+      - Powered By YzmCMS内容管理系统

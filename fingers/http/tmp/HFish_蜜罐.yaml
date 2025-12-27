@@ -1,0 +1,5 @@
+- name: HFish 蜜罐
+  rule:
+  - regexps:
+      body:
+      - /static/x.js

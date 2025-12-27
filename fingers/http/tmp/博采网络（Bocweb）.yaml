@@ -1,0 +1,8 @@
+- name: 博采网络（Bocweb）
+  rule:
+  - regexps:
+      body:
+      - content="杭州博采网络科技股份有限公司
+      - /bocweb/
+      header:
+      - /bocweb/

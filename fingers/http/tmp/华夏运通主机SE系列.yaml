@@ -1,0 +1,5 @@
+- name: 华夏运通主机SE系列
+  rule:
+  - regexps:
+      body:
+      - 北京华夏运通科技有限公司

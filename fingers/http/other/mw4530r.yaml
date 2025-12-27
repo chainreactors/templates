@@ -1,0 +1,5 @@
+- name: mw4530r
+  rule:
+  - regexps:
+      header:
+      - MW4530R

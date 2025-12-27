@@ -1,0 +1,6 @@
+- name: awstats_admin
+  rule:
+  - regexps:
+      body:
+      - generator" content="AWStats
+      - <frame name="mainleft" src="awstats.pl?config=

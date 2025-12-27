@@ -1,0 +1,5 @@
+- name: cyberoam
+  rule:
+  - favicon:
+      mmh3:
+      - '1462981117'

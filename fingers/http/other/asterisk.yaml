@@ -1,0 +1,7 @@
+- name: asterisk
+  rule:
+  - regexps:
+      body:
+      - asterisk_rawmanPath
+      header:
+      - Asterisk

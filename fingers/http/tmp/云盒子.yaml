@@ -1,0 +1,5 @@
+- name: 云盒子
+  rule:
+  - regexps:
+      body:
+      - 云盒子

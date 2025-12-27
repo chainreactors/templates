@@ -1,0 +1,5 @@
+- name: 中科恒伦 身份认证自助系统
+  rule:
+  - regexps:
+      body:
+      - iaus/media/js/login/login.js

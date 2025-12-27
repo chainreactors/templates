@@ -1,0 +1,5 @@
+- name: ngx_openresty
+  rule:
+  - regexps:
+      header:
+      - ngx_openresty

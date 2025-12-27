@@ -1,0 +1,13 @@
+- name: memcache
+  focus: true
+  protocol: tcp
+  default_port:
+  - '11211'
+  rule:
+  - regexps:
+      vuln:
+      - STAT version (.*)
+    vuln: memcache_unauthorized
+    send_data: 'stats
+
+      '

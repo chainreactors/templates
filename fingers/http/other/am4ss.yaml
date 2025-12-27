@@ -1,0 +1,6 @@
+- name: am4ss
+  rule:
+  - regexps:
+      body:
+      - Powered by am4ss
+      - am4ss.css

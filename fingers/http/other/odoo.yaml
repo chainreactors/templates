@@ -1,0 +1,5 @@
+- name: odoo
+  rule:
+  - favicon:
+      mmh3:
+      - '-617743584'

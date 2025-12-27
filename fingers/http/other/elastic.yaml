@@ -1,0 +1,5 @@
+- name: elastic
+  rule:
+  - favicon:
+      mmh3:
+      - '1611729805'

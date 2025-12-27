@@ -1,0 +1,5 @@
+- name: mini_httpd
+  rule:
+  - regexps:
+      header:
+      - mini_httpd

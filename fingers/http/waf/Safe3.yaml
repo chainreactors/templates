@@ -1,0 +1,7 @@
+- name: Safe3
+  rule:
+  - regexps:
+      header:
+      - Safe3 Web Firewall
+      body:
+      - Safe3waf

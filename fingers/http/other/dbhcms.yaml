@@ -1,0 +1,5 @@
+- name: dbhcms
+  rule:
+  - regexps:
+      body:
+      - powered by DBHcms

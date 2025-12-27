@@ -1,0 +1,5 @@
+- name: 速达V5.NET-PRO
+  rule:
+  - regexps:
+      body:
+      - 速达V5.NET-PRO

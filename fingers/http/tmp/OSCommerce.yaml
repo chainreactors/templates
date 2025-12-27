@@ -1,0 +1,5 @@
+- name: OSCommerce
+  rule:
+  - regexps:
+      body:
+      - Tags by OSCommerce

@@ -1,0 +1,5 @@
+- name: CEM-Systems-AC2000
+  rule:
+  - regexps:
+      header:
+      - 'Server: GoAhead-Webs/2.5.0'

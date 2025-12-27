@@ -1,0 +1,9 @@
+- name: hdwiki
+  rule:
+  - regexps:
+      body:
+      - powered by hdwiki!
+      - content="HDWiki
+      - http://kaiyuan.hudong.com?hf=hdwiki_copyright_kaiyuan
+      header:
+      - hd_sid=

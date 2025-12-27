@@ -1,0 +1,5 @@
+- name: activecollab
+  rule:
+  - regexps:
+      body:
+      - activeCollab

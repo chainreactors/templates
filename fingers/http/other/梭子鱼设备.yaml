@@ -1,0 +1,5 @@
+- name: 梭子鱼设备
+  rule:
+  - regexps:
+      header:
+      - BarracudaHTTP

@@ -1,0 +1,5 @@
+- name: oracle-application-server
+  rule:
+  - regexps:
+      header:
+      - Oracle-Application-Server

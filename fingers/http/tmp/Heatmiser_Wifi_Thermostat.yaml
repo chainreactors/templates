@@ -1,0 +1,5 @@
+- name: Heatmiser Wifi Thermostat
+  rule:
+  - regexps:
+      body:
+      - Heatmiser Wifi Thermostat

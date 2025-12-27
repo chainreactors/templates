@@ -1,0 +1,5 @@
+- name: allnewsmanager_net
+  rule:
+  - regexps:
+      body:
+      - AllNewsManager

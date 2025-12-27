@@ -1,0 +1,5 @@
+- name: kersion
+  rule:
+  - regexps:
+      body:
+      - www.kesion.com

@@ -1,0 +1,5 @@
+- name: HRSALE
+  rule:
+  - regexps:
+      body:
+      - /hrsale_assets/vendor/

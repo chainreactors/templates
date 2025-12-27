@@ -1,0 +1,6 @@
+- name: UltraCRM
+  rule:
+  - regexps:
+      body:
+      - <title>UltraCRM by ToneThink.Soft</title>
+      - <title>欢迎您使用 UltraCRM 客户服务中心

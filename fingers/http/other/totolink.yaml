@@ -1,0 +1,5 @@
+- name: totolink
+  rule:
+  - favicon:
+      mmh3:
+      - '547474373'

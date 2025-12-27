@@ -1,0 +1,6 @@
+- name: SPAM-SQR-电子邮件安全网关
+  link: http://222.92.58.234/snspam/homepage.asp
+  rule:
+  - regexps:
+      body:
+      - spam sqr

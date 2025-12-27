@@ -1,0 +1,5 @@
+- name: MCMS-铭飞
+  rule:
+  - regexps:
+      body:
+      - ms.http.js

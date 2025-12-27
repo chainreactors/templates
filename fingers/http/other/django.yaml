@@ -1,0 +1,6 @@
+- name: django
+  rule:
+  - regexps:
+      body:
+      - __admin_media_prefix__
+      - csrfmiddlewaretoken

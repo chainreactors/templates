@@ -1,0 +1,5 @@
+- name: Venustech TianQing IPS
+  rule:
+  - regexps:
+      body:
+      - 天清入侵防御系统

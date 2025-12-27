@@ -1,0 +1,5 @@
+- name: 皓峰通讯chinaiwb 智能防火墙
+  rule:
+  - regexps:
+      body:
+      - 皓峰防火墙系统登录

@@ -1,0 +1,5 @@
+- name: ibm-webseal
+  rule:
+  - regexps:
+      header:
+      - WebSEAL

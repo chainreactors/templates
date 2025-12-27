@@ -1,0 +1,8 @@
+- name: chiliproject
+  rule:
+  - regexps:
+      body:
+      - chiliproject.org
+      - content="ChiliProject
+      header:
+      - _chiliproject_session=

@@ -1,0 +1,6 @@
+- name: 璐华Ruvar OA
+  rule:
+  - regexps:
+      body:
+      - 广州市璐华计算机有限公司
+      - CustomerFiles/carousel/1.jpg

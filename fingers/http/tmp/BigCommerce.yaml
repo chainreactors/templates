@@ -1,0 +1,6 @@
+- name: BigCommerce
+  rule:
+  - regexps:
+      body:
+      - .BigCommerce.com
+      - .BigCommerce.com

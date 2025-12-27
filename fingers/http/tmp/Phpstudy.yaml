@@ -1,0 +1,6 @@
+- name: Phpstudy
+  link: http://47.120.5.239/
+  rule:
+  - regexps:
+      body:
+      - Phpstudy for

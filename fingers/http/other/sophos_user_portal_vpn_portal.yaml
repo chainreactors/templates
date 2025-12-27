@@ -1,0 +1,5 @@
+- name: sophos user portal/vpn portal
+  rule:
+  - favicon:
+      mmh3:
+      - '1045696447'

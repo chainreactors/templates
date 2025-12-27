@@ -1,0 +1,5 @@
+- name: xoops
+  rule:
+  - regexps:
+      body:
+      - include/xoops.js

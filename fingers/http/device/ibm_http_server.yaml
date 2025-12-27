@@ -1,0 +1,5 @@
+- name: ibm_http_server
+  rule:
+  - regexps:
+      header:
+      - IBM_HTTP_Server

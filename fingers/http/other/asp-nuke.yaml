@@ -1,0 +1,6 @@
+- name: asp-nuke
+  rule:
+  - regexps:
+      body:
+      - CONTENT="ASP-Nuke
+      - content="ASPNUKE

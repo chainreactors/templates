@@ -1,0 +1,5 @@
+- name: huawei smartax
+  rule:
+  - regexps:
+      header:
+      - Basic realm="Huawei SmartAX"

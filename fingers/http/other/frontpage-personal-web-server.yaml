@@ -1,0 +1,5 @@
+- name: frontpage-personal-web-server
+  rule:
+  - regexps:
+      header:
+      - FPWS

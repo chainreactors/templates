@@ -1,0 +1,7 @@
+- name: aidex
+  rule:
+  - regexps:
+      body:
+      - http://www.aidex.de/
+      header:
+      - aidex

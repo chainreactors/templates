@@ -1,0 +1,5 @@
+- name: ipecs
+  rule:
+  - favicon:
+      mmh3:
+      - '-195508437'

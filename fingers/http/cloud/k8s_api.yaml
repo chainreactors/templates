@@ -1,0 +1,9 @@
+- name: k8s_api
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - '"kind": "Status"'
+      vuln:
+      - authentication.k8s.io
+    vuln: k8s-api_unauth

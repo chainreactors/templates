@@ -1,0 +1,5 @@
+- name: FortiLogger
+  rule:
+  - regexps:
+      body:
+      - FortiLogger

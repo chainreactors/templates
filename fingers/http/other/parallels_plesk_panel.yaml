@@ -1,0 +1,10 @@
+- name: parallels plesk panel
+  rule:
+  - regexps:
+      body:
+      - Parallels IP Holdings GmbH
+    favicon:
+      mmh3:
+      - '-652508439'
+      - '-519765377'
+      - '-771764544'

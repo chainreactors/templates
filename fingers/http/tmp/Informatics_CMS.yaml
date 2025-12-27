@@ -1,0 +1,5 @@
+- name: Informatics CMS
+  rule:
+  - regexps:
+      body:
+      - content="informatics

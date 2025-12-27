@@ -1,0 +1,5 @@
+- name: WEBYXM文档管理系统
+  rule:
+  - regexps:
+      body:
+      - WEBYXM文档管理系统

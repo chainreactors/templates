@@ -1,0 +1,5 @@
+- name: 帕拉迪堡垒机
+  rule:
+  - regexps:
+      header:
+      - module/image/pldsec.css

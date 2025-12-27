@@ -1,0 +1,7 @@
+- name: 飞思网巡
+  rule:
+  - regexps:
+      body:
+      - IT运维网管系统
+      header:
+      - FreeSMonitorSessID

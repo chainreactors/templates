@@ -1,0 +1,6 @@
+- name: FunAdmin
+  link: http://106.12.170.192/
+  rule:
+  - regexps:
+      body:
+      - FunAdmin

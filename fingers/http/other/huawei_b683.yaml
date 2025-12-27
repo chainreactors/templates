@@ -1,0 +1,5 @@
+- name: huawei b683
+  rule:
+  - regexps:
+      body:
+      - Huawei B683

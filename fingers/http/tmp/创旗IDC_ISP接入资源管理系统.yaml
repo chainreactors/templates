@@ -1,0 +1,6 @@
+- name: 创旗IDC/ISP接入资源管理系统
+  rule:
+  - regexps:
+      body:
+      - 创旗IDC/ISP接入资源管理系统
+      - IDC/ISP

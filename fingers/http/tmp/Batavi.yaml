@@ -1,0 +1,5 @@
+- name: Batavi
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: Batavi'

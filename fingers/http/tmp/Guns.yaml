@@ -1,0 +1,6 @@
+- name: Guns
+  link: https://forum.twiceok.com:8083/
+  rule:
+  - regexps:
+      body:
+      - 登录 - Guns

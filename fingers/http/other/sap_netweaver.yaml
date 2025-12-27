@@ -1,0 +1,5 @@
+- name: sap netweaver
+  rule:
+  - favicon:
+      mmh3:
+      - '-266008933'

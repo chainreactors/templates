@@ -1,0 +1,7 @@
+- name: 票友票务管理系统
+  rule:
+  - regexps:
+      body:
+      - 票友ERP管理系统
+      - 上海盛代信息科技有限公司
+      - href="http://www.piaoyou.org"

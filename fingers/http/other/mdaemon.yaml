@@ -1,0 +1,5 @@
+- name: mdaemon
+  rule:
+  - regexps:
+      body:
+      - /WorldClient.dll?View=Main

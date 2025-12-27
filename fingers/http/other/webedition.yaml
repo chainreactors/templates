@@ -1,0 +1,5 @@
+- name: webedition
+  rule:
+  - regexps:
+      body:
+      - generator" content="webEdition

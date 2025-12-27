@@ -1,0 +1,6 @@
+- name: Ametys CMS
+  rule:
+  - regexps:
+      body:
+      - Accueil
+      - Ametys

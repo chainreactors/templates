@@ -1,0 +1,5 @@
+- name: 创宇盾 waf
+  rule:
+  - regexps:
+      body:
+      - 当前访问疑似黑客攻击，已被创宇盾拦截

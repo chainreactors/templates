@@ -1,0 +1,5 @@
+- name: imgallery
+  rule:
+  - regexps:
+      body:
+      - href="http://www.imgallery.zor.pl"><b>IMGallery

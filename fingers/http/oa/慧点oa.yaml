@@ -1,0 +1,6 @@
+- name: 慧点oa
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - www/mobile-version.txt

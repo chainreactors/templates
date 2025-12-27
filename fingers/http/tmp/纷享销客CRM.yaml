@@ -1,0 +1,6 @@
+- name: 纷享销客CRM
+  rule:
+  - regexps:
+      body:
+      - //www.fxiaoke.com/ap/reg/
+      - CRM登录系统 - 纷享销客CRM

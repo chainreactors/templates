@@ -1,0 +1,6 @@
+- name: cyn_in
+  rule:
+  - regexps:
+      body:
+      - content="cyn.in
+      - Powered by cyn.in

@@ -1,0 +1,6 @@
+- name: EnterCRM
+  rule:
+  - regexps:
+      body:
+      - EnterCRM
+      - 浙大恩特

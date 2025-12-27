@@ -1,0 +1,6 @@
+- name: iceshop
+  rule:
+  - regexps:
+      body:
+      - Powered by ICEshop
+      - <div id="iceshop">

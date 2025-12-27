@@ -1,0 +1,5 @@
+- name: jfinalshop
+  rule:
+  - regexps:
+      body:
+      - content="jfinalshop" Powered By jfinalshop

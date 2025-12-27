@@ -1,0 +1,5 @@
+- name: InfraNodus
+  rule:
+  - regexps:
+      body:
+      - 'InfraNodus: Generate Insight Using Text Network Analsysis'

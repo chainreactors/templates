@@ -1,0 +1,5 @@
+- name: Vectra-Cognito-Platform
+  rule:
+  - regexps:
+      body:
+      - <h1>Vectra Cognito Login</h1>

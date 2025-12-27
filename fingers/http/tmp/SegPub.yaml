@@ -1,0 +1,5 @@
+- name: SegPub
+  rule:
+  - regexps:
+      body:
+      - <span>SegPub</span>

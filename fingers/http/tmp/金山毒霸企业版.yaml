@@ -1,0 +1,6 @@
+- name: 金山毒霸企业版
+  rule:
+  - regexps:
+      body:
+      - 金山毒霸企业版
+      - class="title">关于全网部署金山毒霸企业版

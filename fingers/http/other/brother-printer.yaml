@@ -1,0 +1,6 @@
+- name: brother-printer
+  rule:
+  - regexps:
+      body:
+      - <FRAME SRC="/printer/inc_head.html
+      - <IMG src="/common/image/HL4040CN

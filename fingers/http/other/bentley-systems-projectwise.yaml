@@ -1,0 +1,8 @@
+- name: bentley-systems-projectwise
+  rule:
+  - regexps:
+      body:
+      - href="ProjectWise.ico
+      - ProjectWise Web Server
+      header:
+      - Bentley.WebSession=

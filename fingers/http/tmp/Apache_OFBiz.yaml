@@ -1,0 +1,7 @@
+- name: Apache OFBiz
+  rule:
+  - regexps:
+      body:
+      - Apache OFBiz
+      header:
+      - 'Set-Cookie: OFBiz.Visitor'

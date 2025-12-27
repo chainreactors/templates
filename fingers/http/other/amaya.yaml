@@ -1,0 +1,5 @@
+- name: amaya
+  rule:
+  - regexps:
+      body:
+      - generator" content="Amaya

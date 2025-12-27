@@ -1,0 +1,6 @@
+- name: wdcp管理系统
+  rule:
+  - regexps:
+      body:
+      - wdcp服务器
+      - lanmp_wdcp 安装成功

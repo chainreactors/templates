@@ -1,0 +1,6 @@
+- name: UltraStats
+  rule:
+  - regexps:
+      body:
+      - UltraStats
+      - Home Overview

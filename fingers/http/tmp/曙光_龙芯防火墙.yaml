@@ -1,0 +1,5 @@
+- name: 曙光 龙芯防火墙
+  rule:
+  - regexps:
+      body:
+      - class="login_main_text">曙光龙芯防火墙</div>

@@ -1,0 +1,5 @@
+- name: home-control-box
+  rule:
+  - regexps:
+      header:
+      - hcb_web

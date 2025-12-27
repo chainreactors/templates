@@ -1,0 +1,5 @@
+- name: MobileCms 后台管理系统
+  rule:
+  - regexps:
+      body:
+      - MobileCms 后台管理系统

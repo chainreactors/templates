@@ -1,0 +1,5 @@
+- name: juniper-netscreen-secure-access
+  rule:
+  - regexps:
+      body:
+      - /dana-na/auth/welcome.cgi

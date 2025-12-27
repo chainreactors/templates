@@ -1,0 +1,6 @@
+- name: Apache Usergrid
+  rule:
+  - regexps:
+      body:
+      - Usergrid Admin Portal
+      - Apache Usergrid

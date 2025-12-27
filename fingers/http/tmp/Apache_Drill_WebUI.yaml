@@ -1,0 +1,6 @@
+- name: Apache Drill WebUI
+  rule:
+  - regexps:
+      body:
+      - Apache Drill
+      - Apache Drill

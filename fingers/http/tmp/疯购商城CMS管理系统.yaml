@@ -1,0 +1,5 @@
+- name: 疯购商城CMS管理系统
+  rule:
+  - regexps:
+      body:
+      - 疯购商城CMS管理系统

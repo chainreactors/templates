@@ -1,0 +1,5 @@
+- name: di-804hv
+  rule:
+  - regexps:
+      header:
+      - DI-804HV

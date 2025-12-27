@@ -1,0 +1,5 @@
+- name: CruxCMS
+  rule:
+  - regexps:
+      body:
+      - Home - CruxSoftware

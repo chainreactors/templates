@@ -1,0 +1,7 @@
+- name: Craft CMS
+  rule:
+  - regexps:
+      body:
+      - Welcome to Craft CMS
+      header:
+      - 'X-Powered-By: Craft CMS'

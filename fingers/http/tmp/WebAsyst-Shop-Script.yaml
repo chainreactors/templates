@@ -1,0 +1,5 @@
+- name: WebAsyst-Shop-Script
+  rule:
+  - regexps:
+      body:
+      - powered by Shop-Script

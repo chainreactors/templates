@@ -1,0 +1,5 @@
+- name: AXGATE UTM
+  rule:
+  - regexps:
+      body:
+      - class="axgate" ng-controller="logincontroller"

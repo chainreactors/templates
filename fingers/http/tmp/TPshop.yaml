@@ -1,0 +1,6 @@
+- name: TPshop
+  rule:
+  - regexps:
+      body:
+      - goodsList/id/
+      - TPshop

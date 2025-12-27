@@ -1,0 +1,5 @@
+- name: NSFOCUS NIDS
+  rule:
+  - regexps:
+      body:
+      - /login_logo_nids_zh_cn.png

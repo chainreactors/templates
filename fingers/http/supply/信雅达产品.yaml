@@ -1,0 +1,5 @@
+- name: 信雅达产品
+  rule:
+  - regexps:
+      body:
+      - sunyard

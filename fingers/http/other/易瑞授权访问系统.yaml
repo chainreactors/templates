@@ -1,0 +1,6 @@
+- name: 易瑞授权访问系统
+  rule:
+  - regexps:
+      body:
+      - /authjsp/login.jsp
+      - FE0174BB-F093-42AF-AB20-7EC621D10488

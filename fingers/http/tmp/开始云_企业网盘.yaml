@@ -1,0 +1,6 @@
+- name: 开始云 企业网盘
+  rule:
+  - regexps:
+      body:
+      - kass/basic/login/page_login.jsp
+      - kass/common_js/Global.js

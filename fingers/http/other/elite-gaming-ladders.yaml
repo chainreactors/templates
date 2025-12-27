@@ -1,0 +1,5 @@
+- name: elite-gaming-ladders
+  rule:
+  - regexps:
+      body:
+      - Powered by Elite

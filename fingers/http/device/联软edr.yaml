@@ -1,0 +1,7 @@
+- name: 联软edr
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - Resource/views/images/common/logo2.png
+      - 联软IT安全运维管理系统

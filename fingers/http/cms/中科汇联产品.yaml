@@ -1,0 +1,6 @@
+- name: 中科汇联产品
+  rule:
+  - regexps:
+      body:
+      - huilan-jquery-ui
+      - by Huilan

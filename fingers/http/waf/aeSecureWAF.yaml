@@ -1,0 +1,5 @@
+- name: aeSecureWAF
+  rule:
+  - regexps:
+      body:
+      - aesecure_denied

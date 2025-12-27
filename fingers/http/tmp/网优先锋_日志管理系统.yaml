@@ -1,0 +1,5 @@
+- name: 网优先锋 日志管理系统
+  rule:
+  - regexps:
+      body:
+      - NetMizer 日志管理系统

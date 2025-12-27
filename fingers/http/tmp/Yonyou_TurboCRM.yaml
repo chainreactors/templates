@@ -1,0 +1,6 @@
+- name: Yonyou TurboCRM
+  rule:
+  - regexps:
+      body:
+      - turboui.js
+      - 用友turbocrm

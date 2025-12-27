@@ -1,0 +1,5 @@
+- name: 易科士就业信息管理系统
+  rule:
+  - regexps:
+      body:
+      - Powered By 成都易科士信息产业有限公司

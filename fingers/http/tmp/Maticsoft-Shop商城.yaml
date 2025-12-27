@@ -1,0 +1,6 @@
+- name: Maticsoft-Shop商城
+  rule:
+  - regexps:
+      body:
+      - /Maticsoft.
+      - $Maticsoft.

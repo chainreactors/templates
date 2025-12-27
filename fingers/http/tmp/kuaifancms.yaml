@@ -1,0 +1,5 @@
+- name: kuaifancms
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: backhttp[0]='

@@ -1,0 +1,7 @@
+- name: 安恒云堡垒机
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - DBAPPSecurity
+      - 安恒云堡垒机

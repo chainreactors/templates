@@ -1,0 +1,5 @@
+- name: loyaa信息自动采编系统
+  rule:
+  - regexps:
+      body:
+      - /Loyaa/common.lib.js

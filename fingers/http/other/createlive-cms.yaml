@@ -1,0 +1,7 @@
+- name: createlive-cms
+  rule:
+  - regexps:
+      body:
+      - <!--By CreateLiveCms
+      header:
+      - AspooKill=kill=

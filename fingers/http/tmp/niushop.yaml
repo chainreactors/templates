@@ -1,0 +1,6 @@
+- name: niushop
+  rule:
+  - regexps:
+      body:
+      - Niushop开源商城
+      - NIUSHOP开源商城

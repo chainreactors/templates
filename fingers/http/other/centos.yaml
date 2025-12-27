@@ -1,0 +1,5 @@
+- name: centos
+  rule:
+  - regexps:
+      header:
+      - centos

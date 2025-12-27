@@ -1,0 +1,5 @@
+- name: belkin-modem
+  rule:
+  - regexps:
+      body:
+      - content="Belkin

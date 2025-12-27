@@ -1,0 +1,5 @@
+- name: cdn-cache-server
+  rule:
+  - regexps:
+      header:
+      - Cdn Cache Server

@@ -1,0 +1,5 @@
+- name: samanportal
+  rule:
+  - regexps:
+      header:
+      - sisRapid

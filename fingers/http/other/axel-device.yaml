@@ -1,0 +1,5 @@
+- name: axel-device
+  rule:
+  - regexps:
+      header:
+      - Axel Admin Server

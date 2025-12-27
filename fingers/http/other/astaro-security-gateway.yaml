@@ -1,0 +1,7 @@
+- name: astaro-security-gateway
+  rule:
+  - regexps:
+      body:
+      - wfe/asg/js/app_selector.js?t=
+      - /doc/astaro-license.txt
+      - /js/_variables_from_backend.js?t=

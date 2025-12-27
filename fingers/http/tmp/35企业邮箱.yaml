@@ -1,0 +1,5 @@
+- name: 35企业邮箱
+  rule:
+  - regexps:
+      body:
+      - http://help.mail.35.com

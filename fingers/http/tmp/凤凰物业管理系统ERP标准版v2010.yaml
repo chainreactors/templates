@@ -1,0 +1,5 @@
+- name: 凤凰物业管理系统ERP标准版v2010
+  rule:
+  - regexps:
+      body:
+      - 凤凰物业管理系统ERP标准版v2010

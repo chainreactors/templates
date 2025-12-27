@@ -1,0 +1,6 @@
+- name: 然之OA
+  link: https://cpcalendars.z1n.wiki/sys/index.php?m=user&f=login&referer=L3N5cy9pbmRleC5waHA=
+  rule:
+  - favicon:
+      mmh3:
+      - '-2120337510'

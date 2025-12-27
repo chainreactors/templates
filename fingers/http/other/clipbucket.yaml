@@ -1,0 +1,8 @@
+- name: clipbucket
+  rule:
+  - regexps:
+      body:
+      - content="ClipBucket
+      - <!-- ClipBucket
+      - <!-- Forged by ClipBucket
+      - href="http://clip-bucket.com/">ClipBucket

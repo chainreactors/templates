@@ -1,0 +1,5 @@
+- name: Enduser-Protection
+  rule:
+  - regexps:
+      body:
+      - User Portal

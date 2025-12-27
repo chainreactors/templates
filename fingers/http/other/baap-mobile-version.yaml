@@ -1,0 +1,5 @@
+- name: baap-mobile-version
+  rule:
+  - regexps:
+      header:
+      - x-mobilized-by

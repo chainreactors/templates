@@ -1,0 +1,5 @@
+- name: Leadsino IAM（Identity and Access Management）
+  rule:
+  - regexps:
+      body:
+      - LEADSINO IAM-WebVPN

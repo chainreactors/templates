@@ -1,0 +1,6 @@
+- name: kaibb
+  rule:
+  - regexps:
+      body:
+      - Powered by KaiBB
+      - content="Forum powered by KaiBB

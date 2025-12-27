@@ -1,0 +1,5 @@
+- name: asp.net favicon
+  rule:
+  - favicon:
+      mmh3:
+      - '1772087922'

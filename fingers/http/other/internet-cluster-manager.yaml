@@ -1,0 +1,5 @@
+- name: internet-cluster-manager
+  rule:
+  - regexps:
+      header:
+      - Internet Cluster Manager

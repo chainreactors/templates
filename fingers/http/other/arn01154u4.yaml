@@ -1,0 +1,5 @@
+- name: arn01154u4
+  rule:
+  - regexps:
+      header:
+      - ARN01154U4

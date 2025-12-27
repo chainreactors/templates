@@ -1,0 +1,8 @@
+- name: 我知科技 WizNote
+  rule:
+  - favicon:
+      mmh3:
+      - '1417349080'
+    regexps:
+      body:
+      - WizNote

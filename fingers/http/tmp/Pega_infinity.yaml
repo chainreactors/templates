@@ -1,0 +1,6 @@
+- name: Pega infinity
+  link: http://3.238.104.22:8080/prweb/app/default/VfK3mSyqWy8Z5n4h7B20aMZG7dMzFtYp*/!STANDARD
+  rule:
+  - regexps:
+      body:
+      - Pega infinity

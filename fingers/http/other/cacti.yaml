@@ -1,0 +1,8 @@
+- name: cacti
+  rule:
+  - regexps:
+      body:
+      - Login to Cacti
+      - /plugins/jqueryskin/include/login.css
+      header:
+      - 'Set-Cookie: Cacti='

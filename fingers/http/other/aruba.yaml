@@ -1,0 +1,5 @@
+- name: aruba
+  rule:
+  - favicon:
+      mmh3:
+      - '1142227528'

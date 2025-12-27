@@ -1,0 +1,5 @@
+- name: fastly cdn
+  rule:
+  - regexps:
+      body:
+      - fastcdn.org

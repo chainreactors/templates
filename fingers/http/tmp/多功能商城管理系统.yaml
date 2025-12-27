@@ -1,0 +1,5 @@
+- name: 多功能商城管理系统
+  rule:
+  - regexps:
+      body:
+      - 多功能商城管理系统

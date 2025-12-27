@@ -1,0 +1,6 @@
+- name: formmail
+  rule:
+  - regexps:
+      body:
+      - /FormMail.pl
+      - href="http://www.worldwidemart.com/scripts/formmail.shtml

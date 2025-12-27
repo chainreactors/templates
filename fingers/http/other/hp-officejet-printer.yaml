@@ -1,0 +1,6 @@
+- name: hp-officejet-printer
+  rule:
+  - regexps:
+      body:
+      - HP Officejet
+      - align="center">HP Officejet

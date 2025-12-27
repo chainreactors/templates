@@ -1,0 +1,9 @@
+- name: hadoop
+  focus: true
+  default_port:
+  - '8088'
+  rule:
+  - regexps:
+      vuln:
+      - "<title>\n    All Applications"
+    vuln: hadoop_yarn_unauthorized

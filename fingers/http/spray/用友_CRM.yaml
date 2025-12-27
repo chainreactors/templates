@@ -1,0 +1,7 @@
+- name: 用友 CRM
+  level: 2
+  rule:
+  - regexps:
+      body:
+      - C535AD4F2E753F29CE1118EDB8B7913FB96C145FC21A1E9BA9
+    send_data: /login/login.php

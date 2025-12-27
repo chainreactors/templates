@@ -1,0 +1,5 @@
+- name: 中控智慧时间安全管理平台
+  rule:
+  - regexps:
+      body:
+      - ZKECO 时间&安全管理平台

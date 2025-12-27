@@ -1,0 +1,5 @@
+- name: arm_pc_suite_web
+  rule:
+  - regexps:
+      body:
+      - arm_pc_suite_web

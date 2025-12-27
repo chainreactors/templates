@@ -1,0 +1,5 @@
+- name: TodayMail2.3.0
+  rule:
+  - regexps:
+      body:
+      - TodayMail Anti-Spam Police

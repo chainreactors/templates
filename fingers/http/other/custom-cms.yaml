@@ -1,0 +1,6 @@
+- name: custom-cms
+  rule:
+  - regexps:
+      body:
+      - content="CustomCMS
+      - title="Powered by CCMS

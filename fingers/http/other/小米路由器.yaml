@@ -1,0 +1,7 @@
+- name: 小米路由器
+  rule:
+  - regexps:
+      body:
+      - 小米路由器
+      header:
+      - 'Tx-Server: MiXr'

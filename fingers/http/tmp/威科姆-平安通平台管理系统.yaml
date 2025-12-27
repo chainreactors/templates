@@ -1,0 +1,5 @@
+- name: 威科姆-平安通平台管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>平安通平台管理系统</title>

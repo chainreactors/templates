@@ -1,0 +1,6 @@
+- name: hycus-cms
+  rule:
+  - regexps:
+      body:
+      - content="Hycus
+      - Powered By <a href="http://www.hycus.com

@@ -1,0 +1,6 @@
+- name: 云课堂主机
+  link: https://111.53.212.114:8189/login.jsf
+  rule:
+  - favicon:
+      mmh3:
+      - '2129839604'

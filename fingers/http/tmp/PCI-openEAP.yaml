@@ -1,0 +1,6 @@
+- name: PCI-openEAP
+  link: http://113.246.57.56:9090/security/login/login.jsp
+  rule:
+  - regexps:
+      body:
+      - openEAP

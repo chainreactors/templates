@@ -1,0 +1,5 @@
+- name: WebIssues
+  rule:
+  - regexps:
+      body:
+      - /images/webissues.ico

@@ -1,0 +1,7 @@
+- name: 华天动力oa
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /htoa/css/CN/BLUE/login.css
+      - OAapp/WebObjects/OAapp.woa

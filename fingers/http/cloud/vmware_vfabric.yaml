@@ -1,0 +1,5 @@
+- name: vmware vfabric
+  rule:
+  - regexps:
+      body:
+      - VMware vFabric

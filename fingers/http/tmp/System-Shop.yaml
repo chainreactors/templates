@@ -1,0 +1,5 @@
+- name: System-Shop
+  rule:
+  - regexps:
+      body:
+      - content="Offizieller Time/system Shop

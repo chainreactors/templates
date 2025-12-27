@@ -1,0 +1,5 @@
+- name: H3C SSL VPN
+  rule:
+  - regexps:
+      body:
+      - SSLVPN Domain list

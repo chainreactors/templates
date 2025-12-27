@@ -1,0 +1,5 @@
+- name: seccloud
+  rule:
+  - regexps:
+      body:
+      - SecCloud

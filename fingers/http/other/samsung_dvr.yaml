@@ -1,0 +1,5 @@
+- name: samsung dvr
+  rule:
+  - regexps:
+      body:
+      - Samsung DVR

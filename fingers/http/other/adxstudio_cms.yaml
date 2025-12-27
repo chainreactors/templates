@@ -1,0 +1,8 @@
+- name: adxstudio cms
+  rule:
+  - regexps:
+      body:
+      - Powered by Adxstudio
+      - poweredbyadx.png
+      header:
+      - anonprofile

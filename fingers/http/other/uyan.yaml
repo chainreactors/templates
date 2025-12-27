@@ -1,0 +1,5 @@
+- name: uyan
+  rule:
+  - regexps:
+      body:
+      - uyan.cc/code/uyan.js

@@ -1,0 +1,5 @@
+- name: FXACS管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>FXACS管理系统

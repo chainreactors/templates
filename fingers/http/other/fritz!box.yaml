@@ -1,0 +1,5 @@
+- name: fritz!box
+  rule:
+  - favicon:
+      mmh3:
+      - '-219752612'

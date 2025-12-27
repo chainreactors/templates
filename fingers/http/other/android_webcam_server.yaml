@@ -1,0 +1,5 @@
+- name: android webcam server
+  rule:
+  - regexps:
+      header:
+      - Android Webcam Server

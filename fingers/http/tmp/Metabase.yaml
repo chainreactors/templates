@@ -1,0 +1,5 @@
+- name: Metabase
+  rule:
+  - regexps:
+      body:
+      - Metabase

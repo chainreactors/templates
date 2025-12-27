@@ -1,0 +1,5 @@
+- name: arcadyan o2 box
+  rule:
+  - favicon:
+      mmh3:
+      - '1479202414'

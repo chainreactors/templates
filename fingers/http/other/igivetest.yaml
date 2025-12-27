@@ -1,0 +1,7 @@
+- name: igivetest
+  rule:
+  - regexps:
+      body:
+      - Powered by iGiveTest
+      header:
+      - IGTSESSID

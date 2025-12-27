@@ -1,0 +1,5 @@
+- name: huawei hg520 adsl2+ router
+  rule:
+  - regexps:
+      body:
+      - Huawei HG520

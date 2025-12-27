@@ -1,0 +1,8 @@
+- name: ostec-firebox
+  rule:
+  - favicon:
+      mmh3:
+      - '635541900'
+    regexps:
+      body:
+      - OSTEC FireBox

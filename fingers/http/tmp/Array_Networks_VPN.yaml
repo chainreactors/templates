@@ -1,0 +1,5 @@
+- name: Array_Networks_VPN
+  rule:
+  - regexps:
+      body:
+      - an_util.js

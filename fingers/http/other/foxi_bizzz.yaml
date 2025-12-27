@@ -1,0 +1,5 @@
+- name: foxi bizzz
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-Cms: FOXI BIZzz'

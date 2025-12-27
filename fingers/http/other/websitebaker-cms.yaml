@@ -1,0 +1,5 @@
+- name: websitebaker-cms
+  rule:
+  - regexps:
+      header:
+      - wb_session_id

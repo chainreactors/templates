@@ -1,0 +1,5 @@
+- name: phpATM
+  rule:
+  - regexps:
+      body:
+      - Powered by phpATM

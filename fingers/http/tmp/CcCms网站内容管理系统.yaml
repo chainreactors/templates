@@ -1,0 +1,5 @@
+- name: CcCms网站内容管理系统
+  rule:
+  - regexps:
+      body:
+      - CcCms网站内容管理系统

@@ -1,0 +1,5 @@
+- name: FileNice
+  rule:
+  - regexps:
+      body:
+      - fileNice&trade

@@ -1,0 +1,6 @@
+- name: 信达oa
+  rule:
+  - regexps:
+      body:
+      - http://www.xdoa.cn</a>
+      - 创信达科技有限公司

@@ -1,0 +1,6 @@
+- name: 深信服应用交付管理系统
+  link: https://45.251.66.76:85/rep/login
+  rule:
+  - regexps:
+      body:
+      - /reportCenter/index.php?cls_mode=cluster_mode_others

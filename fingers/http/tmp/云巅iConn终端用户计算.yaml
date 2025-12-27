@@ -1,0 +1,6 @@
+- name: 云巅iConn终端用户计算
+  rule:
+  - regexps:
+      body:
+      - OWVM_PRODUCT_NAME
+      - Owtware

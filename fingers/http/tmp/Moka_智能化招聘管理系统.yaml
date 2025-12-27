@@ -1,0 +1,5 @@
+- name: Moka 智能化招聘管理系统
+  rule:
+  - regexps:
+      body:
+      - Moka智能化招聘管理系统

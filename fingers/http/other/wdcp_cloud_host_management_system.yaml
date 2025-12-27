@@ -1,0 +1,5 @@
+- name: wdcp cloud host management system
+  rule:
+  - favicon:
+      mmh3:
+      - '255892555'

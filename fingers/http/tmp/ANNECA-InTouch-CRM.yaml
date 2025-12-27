@@ -1,0 +1,6 @@
+- name: ANNECA-InTouch-CRM
+  rule:
+  - regexps:
+      body:
+      - InTouch CRM
+      - intouch.js?version

@@ -1,0 +1,5 @@
+- name: 锐捷防火墙
+  rule:
+  - regexps:
+      body:
+      - 锐捷网络

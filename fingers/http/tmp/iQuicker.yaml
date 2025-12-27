@@ -1,0 +1,5 @@
+- name: iQuicker
+  rule:
+  - regexps:
+      body:
+      - iQuicker

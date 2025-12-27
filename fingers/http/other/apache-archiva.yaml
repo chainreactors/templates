@@ -1,0 +1,7 @@
+- name: apache-archiva
+  rule:
+  - regexps:
+      body:
+      - Apache Archiva
+      - /archiva.js
+      - /archiva.css

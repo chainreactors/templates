@@ -1,0 +1,5 @@
+- name: linksys_spa_configuration
+  rule:
+  - regexps:
+      body:
+      - Linksys SPA Configuration

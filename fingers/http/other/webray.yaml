@@ -1,0 +1,5 @@
+- name: webray
+  rule:
+  - regexps:
+      header:
+      - 'Drivedby: RaySrv'

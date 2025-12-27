@@ -1,0 +1,5 @@
+- name: Seagate-GoFlex
+  rule:
+  - regexps:
+      body:
+      - <a href="http://support.GoFlexhome.hipserv.com" target="_blank">

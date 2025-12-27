@@ -1,0 +1,6 @@
+- name: 金晴 企业安全威胁感知系统
+  rule:
+  - regexps:
+      body:
+      - 企业安全威胁感知系统
+      - action="/j_spring_security_check

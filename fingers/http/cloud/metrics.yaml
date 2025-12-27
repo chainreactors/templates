@@ -1,0 +1,6 @@
+- name: metrics
+  rule:
+  - regexps:
+      vuln:
+      - <a\s+href=['"]\/metrics['"]>.*<\/a>
+    info: metrics-leak

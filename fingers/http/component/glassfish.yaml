@@ -1,0 +1,5 @@
+- name: glassfish
+  rule:
+  - regexps:
+      header:
+      - 'Server: GlassFish Server'

@@ -1,0 +1,5 @@
+- name: CCSISZ综合业务管理平台
+  rule:
+  - regexps:
+      body:
+      - CCSISZ综合业务管理平台

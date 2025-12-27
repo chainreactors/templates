@@ -1,0 +1,6 @@
+- name: rConfig
+  link: https://203.188.236.6/login.php
+  rule:
+  - regexps:
+      body:
+      - rConfigLogo

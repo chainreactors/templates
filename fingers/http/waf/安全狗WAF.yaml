@@ -1,0 +1,5 @@
+- name: 安全狗WAF
+  rule:
+  - regexps:
+      header:
+      - WAF/2.0

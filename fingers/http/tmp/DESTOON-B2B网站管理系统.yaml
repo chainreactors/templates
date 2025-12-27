@@ -1,0 +1,5 @@
+- name: DESTOON-B2B网站管理系统
+  rule:
+  - regexps:
+      body:
+      - DESTOON B2B网站管理系统

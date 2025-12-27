@@ -1,0 +1,7 @@
+- name: clientexec
+  rule:
+  - regexps:
+      body:
+      - Powered By ClientExec
+      header:
+      - CLIENTEXEC=

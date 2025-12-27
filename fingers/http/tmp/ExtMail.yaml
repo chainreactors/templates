@@ -1,0 +1,7 @@
+- name: ExtMail
+  link: http://diancai.uhuocn.com:943/extmail/cgi/index.cgi
+  rule:
+  - regexps:
+      body:
+      - setcookie('extmail_username
+      - 欢迎使用extmail

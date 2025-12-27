@@ -1,0 +1,5 @@
+- name: blue iris
+  rule:
+  - favicon:
+      mmh3:
+      - '-520888198'

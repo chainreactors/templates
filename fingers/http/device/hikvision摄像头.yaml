@@ -1,0 +1,13 @@
+- name: hikvision摄像头
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - doc/page/login.asp
+      header:
+      - DVRDVS-Webs
+    favicon:
+      md5:
+      - 89b932fcc47cf4ca3faadb0cfdef89cf
+      mmh3:
+      - '999357577'

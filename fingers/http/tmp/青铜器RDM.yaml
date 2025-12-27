@@ -1,0 +1,5 @@
+- name: 青铜器RDM
+  rule:
+  - regexps:
+      body:
+      - 登录青铜器rdm</b></div>

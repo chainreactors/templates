@@ -1,0 +1,6 @@
+- name: 华天启元 客户关系管理系统
+  rule:
+  - regexps:
+      body:
+      - class="hidden-xs ewheaderrow"><img src="aspximages/htqy.png"
+      - 华天客户关系管理系统

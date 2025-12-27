@@ -1,0 +1,5 @@
+- name: appcms
+  rule:
+  - regexps:
+      body:
+      - Powerd by AppCMS

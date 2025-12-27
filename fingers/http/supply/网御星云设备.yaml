@@ -1,0 +1,6 @@
+- name: 网御星云设备
+  rule:
+  - regexps:
+      body:
+      - leadsec
+      - 网御

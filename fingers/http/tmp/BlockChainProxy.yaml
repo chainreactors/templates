@@ -1,0 +1,5 @@
+- name: BlockChainProxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: BlockChainProxy'

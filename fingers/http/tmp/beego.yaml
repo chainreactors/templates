@@ -1,0 +1,6 @@
+- name: beego
+  rule:
+  - regexps:
+      header:
+      - 'Server: service-go'
+      - 'Server: go-beego'

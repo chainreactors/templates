@@ -1,0 +1,5 @@
+- name: RabbIT-proxy-version
+  rule:
+  - regexps:
+      header:
+      - 'Server: RabbIT proxy version'

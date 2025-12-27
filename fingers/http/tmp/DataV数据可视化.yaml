@@ -1,0 +1,6 @@
+- name: DataV数据可视化
+  rule:
+  - regexps:
+      body:
+      - DataV - Powerful and Accessible Visualization
+      - datav-static/

@@ -1,0 +1,6 @@
+- name: edimax
+  rule:
+  - regexps:
+      body:
+      - EDIMAX Technology
+      - content="Edimax

@@ -1,0 +1,12 @@
+- name: 华宇TAS
+  rule:
+  - regexps:
+      header:
+      - 'Server: Tas'
+      body:
+      - /tas-console
+    favicon:
+      md5:
+      - a839ceee65e663c832c4c4dacf317cba
+      mmh3:
+      - '-721107101'

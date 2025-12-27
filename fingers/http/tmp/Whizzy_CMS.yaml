@@ -1,0 +1,5 @@
+- name: Whizzy CMS
+  rule:
+  - regexps:
+      body:
+      - Powered by Whizzy CMS

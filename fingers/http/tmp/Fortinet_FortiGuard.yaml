@@ -1,0 +1,5 @@
+- name: Fortinet FortiGuard
+  rule:
+  - regexps:
+      body:
+      - <h1>FortiGuard Web Filtering</h1>

@@ -1,0 +1,5 @@
+- name: firephp
+  rule:
+  - regexps:
+      header:
+      - meta.wildfirehq.org

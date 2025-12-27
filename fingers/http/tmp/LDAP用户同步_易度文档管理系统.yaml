@@ -1,0 +1,5 @@
+- name: LDAP用户同步 易度文档管理系统
+  rule:
+  - regexps:
+      body:
+      - LDAP用户同步-易度文档管理系统

@@ -1,0 +1,5 @@
+- name: phpcms
+  rule:
+  - regexps:
+      body:
+      - Phpcms

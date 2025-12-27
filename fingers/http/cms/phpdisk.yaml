@@ -1,0 +1,6 @@
+- name: phpdisk
+  rule:
+  - regexps:
+      body:
+      - Powered by PHPDisk
+      - content="PHPDisk

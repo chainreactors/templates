@@ -1,0 +1,5 @@
+- name: 360企业版
+  rule:
+  - regexps:
+      body:
+      - 360EntWebAdminMD5Secret

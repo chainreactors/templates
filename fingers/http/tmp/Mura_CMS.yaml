@@ -1,0 +1,5 @@
+- name: Mura CMS
+  rule:
+  - regexps:
+      header:
+      - 'Generator: Mura CMS'

@@ -1,0 +1,5 @@
+- name: paradox ip module
+  rule:
+  - favicon:
+      mmh3:
+      - '727253975'

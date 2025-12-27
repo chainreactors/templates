@@ -1,0 +1,5 @@
+- name: lanmp一键安装包
+  rule:
+  - regexps:
+      body:
+      - LANMP一键安装包

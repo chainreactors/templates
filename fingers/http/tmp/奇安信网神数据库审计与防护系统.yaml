@@ -1,0 +1,6 @@
+- name: 奇安信网神数据库审计与防护系统
+  link: https://www.natpacvc.cn:8161/login
+  rule:
+  - regexps:
+      body:
+      - 网神数据库审计与防护系统许可协议

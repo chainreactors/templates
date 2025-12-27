@@ -1,0 +1,5 @@
+- name: 网奇CMS
+  rule:
+  - regexps:
+      body:
+      - wangqi/style.css

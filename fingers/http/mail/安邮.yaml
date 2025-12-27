@@ -1,0 +1,5 @@
+- name: 安邮
+  rule:
+  - regexps:
+      body:
+      - suremail.cn

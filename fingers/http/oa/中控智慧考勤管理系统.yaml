@@ -1,0 +1,7 @@
+- name: 中控智慧考勤管理系统
+  rule:
+  - regexps:
+      body:
+      - /media/images/ZKECO16.ico
+      header:
+      - sessionidadms

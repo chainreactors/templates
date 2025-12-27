@@ -1,0 +1,6 @@
+- name: 帝友p2p
+  rule:
+  - regexps:
+      body:
+      - /js/diyou.js
+      - src="/dyweb/dythemes

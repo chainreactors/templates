@@ -1,0 +1,5 @@
+- name: qingcloud
+  rule:
+  - regexps:
+      header:
+      - QINGCLOUDELB

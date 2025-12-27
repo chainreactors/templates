@@ -1,0 +1,8 @@
+- name: 红海eHR人力资源管理系统
+  rule:
+  - favicon:
+      mmh3:
+      - '-1015496453'
+    regexps:
+      body:
+      - 登录 - 门店运营管理系统

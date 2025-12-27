@@ -1,0 +1,5 @@
+- name: tandberg
+  rule:
+  - favicon:
+      mmh3:
+      - '97604680'

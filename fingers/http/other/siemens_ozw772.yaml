@@ -1,0 +1,5 @@
+- name: siemens ozw772
+  rule:
+  - favicon:
+      mmh3:
+      - '-336242473'

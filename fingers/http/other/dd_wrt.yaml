@@ -1,0 +1,5 @@
+- name: dd wrt
+  rule:
+  - favicon:
+      mmh3:
+      - '252728887'

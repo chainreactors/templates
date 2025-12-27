@@ -1,0 +1,10 @@
+- name: dubbo-remote
+  focus: true
+  default_port:
+  - dubbo
+  protocol: tcp
+  rule:
+  - regexps:
+      vuln:
+      - dubbo
+    vuln: dubbo_unauthorized

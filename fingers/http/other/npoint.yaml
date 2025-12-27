@@ -1,0 +1,5 @@
+- name: npoint
+  rule:
+  - regexps:
+      body:
+      - Powered by Npoint

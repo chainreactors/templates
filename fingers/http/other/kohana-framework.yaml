@@ -1,0 +1,5 @@
+- name: kohana-framework
+  rule:
+  - regexps:
+      header:
+      - Kohana Framework

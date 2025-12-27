@@ -1,0 +1,5 @@
+- name: Zyxel NAS326
+  rule:
+  - regexps:
+      body:
+      - NAS326

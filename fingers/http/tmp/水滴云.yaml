@@ -1,0 +1,5 @@
+- name: 水滴云
+  rule:
+  - regexps:
+      body:
+      - 水滴报销

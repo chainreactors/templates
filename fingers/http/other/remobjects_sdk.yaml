@@ -1,0 +1,5 @@
+- name: remobjects sdk
+  rule:
+  - favicon:
+      mmh3:
+      - '72005642'

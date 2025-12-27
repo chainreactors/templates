@@ -1,0 +1,5 @@
+- name: phpweb
+  rule:
+  - regexps:
+      body:
+      - PDV_PAGENAME

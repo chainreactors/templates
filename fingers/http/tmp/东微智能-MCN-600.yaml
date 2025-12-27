@@ -1,0 +1,5 @@
+- name: 东微智能-MCN-600
+  rule:
+  - regexps:
+      header:
+      - Basic realm="McN600

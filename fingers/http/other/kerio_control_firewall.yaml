@@ -1,0 +1,6 @@
+- name: kerio control firewall
+  rule:
+  - favicon:
+      mmh3:
+      - '-631002664'
+      - '-466504476'

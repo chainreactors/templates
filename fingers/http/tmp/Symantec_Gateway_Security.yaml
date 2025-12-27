@@ -1,0 +1,5 @@
+- name: Symantec Gateway Security
+  rule:
+  - regexps:
+      body:
+      - symantec gateway security

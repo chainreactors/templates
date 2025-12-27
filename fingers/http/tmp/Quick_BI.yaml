@@ -1,0 +1,8 @@
+- name: Quick BI
+  rule:
+  - favicon:
+      mmh3:
+      - '-1036035382'
+    regexps:
+      body:
+      - QuickBI

@@ -1,0 +1,5 @@
+- name: 速达-速达S4.Cloud财务
+  rule:
+  - regexps:
+      body:
+      - 速达S4.Cloud财务

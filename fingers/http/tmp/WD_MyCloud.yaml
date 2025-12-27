@@ -1,0 +1,5 @@
+- name: WD MyCloud
+  rule:
+  - regexps:
+      body:
+      - WDMyCloud

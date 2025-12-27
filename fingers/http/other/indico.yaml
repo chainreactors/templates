@@ -1,0 +1,7 @@
+- name: indico
+  rule:
+  - regexps:
+      body:
+      - href="http://cern.ch/indico
+      header:
+      - MAKACSESSION

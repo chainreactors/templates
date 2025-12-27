@@ -1,0 +1,5 @@
+- name: falcon-web-server
+  rule:
+  - regexps:
+      header:
+      - Falcon Web Server

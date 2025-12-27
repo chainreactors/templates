@@ -1,0 +1,5 @@
+- name: Defeway-摄像头
+  rule:
+  - regexps:
+      header:
+      - 'Server: JAWS/1.0'

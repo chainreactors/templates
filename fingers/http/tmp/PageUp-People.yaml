@@ -1,0 +1,5 @@
+- name: PageUp-People
+  rule:
+  - regexps:
+      body:
+      - class="pageuplink" href="http://www.pageuppeople.com

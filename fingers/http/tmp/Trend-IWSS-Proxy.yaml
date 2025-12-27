@@ -1,0 +1,5 @@
+- name: Trend-IWSS-Proxy
+  rule:
+  - regexps:
+      header:
+      - 'Proxy-Agent: IWSS'

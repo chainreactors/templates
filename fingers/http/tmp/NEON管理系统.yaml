@@ -1,0 +1,5 @@
+- name: NEON管理系统
+  rule:
+  - regexps:
+      body:
+      - NEON管理系统

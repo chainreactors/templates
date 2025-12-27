@@ -1,0 +1,5 @@
+- name: adiscon_loganalyzer
+  rule:
+  - regexps:
+      body:
+      - Adiscon

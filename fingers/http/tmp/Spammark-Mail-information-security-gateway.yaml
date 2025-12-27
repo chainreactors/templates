@@ -1,0 +1,5 @@
+- name: Spammark-Mail-information-security-gateway
+  rule:
+  - regexps:
+      body:
+      - spammark邮件信息安全网关

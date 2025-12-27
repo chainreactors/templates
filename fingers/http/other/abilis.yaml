@@ -1,0 +1,5 @@
+- name: abilis
+  rule:
+  - favicon:
+      mmh3:
+      - '-166151761'

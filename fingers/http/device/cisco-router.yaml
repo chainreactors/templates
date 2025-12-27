@@ -1,0 +1,5 @@
+- name: cisco-router
+  rule:
+  - regexps:
+      body:
+      - Cisco Systems Login

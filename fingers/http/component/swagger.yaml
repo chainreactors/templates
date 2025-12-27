@@ -1,0 +1,9 @@
+- name: swagger
+  focus: true
+  opsec: true
+  rule:
+  - regexps:
+      vuln:
+      - Swagger UI
+    send_data: /swagger-ui.html
+    info: swagger leak

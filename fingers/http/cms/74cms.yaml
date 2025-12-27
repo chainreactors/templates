@@ -1,0 +1,5 @@
+- name: 74cms
+  rule:
+  - regexps:
+      body:
+      - 74cms

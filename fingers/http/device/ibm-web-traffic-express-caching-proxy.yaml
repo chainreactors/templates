@@ -1,0 +1,7 @@
+- name: ibm-web-traffic-express-caching-proxy
+  rule:
+  - regexps:
+      body:
+      - /admin-bin/webexec/wte.html
+      header:
+      - IBM-PROXY-WTE

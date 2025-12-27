@@ -1,0 +1,6 @@
+- name: elastichoney 蜜罐
+  rule:
+  - regexps:
+      body:
+      - Green Goblin
+      - 89d3241d670db65f994242c8e838b169779e2d4

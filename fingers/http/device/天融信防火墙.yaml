@@ -1,0 +1,7 @@
+- name: 天融信防火墙
+  rule:
+  - regexps:
+      body:
+      - WEB User Interface
+      header:
+      - TopWebServer

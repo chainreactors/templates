@@ -1,0 +1,5 @@
+- name: xampp
+  rule:
+  - favicon:
+      mmh3:
+      - '-1437701105'

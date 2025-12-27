@@ -1,0 +1,5 @@
+- name: vmware secure file transfer
+  rule:
+  - favicon:
+      mmh3:
+      - '1642701741'

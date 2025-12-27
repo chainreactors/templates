@@ -1,0 +1,6 @@
+- name: Seafile
+  rule:
+  - regexps:
+      body:
+      - /captcha/refresh
+      - Seafile

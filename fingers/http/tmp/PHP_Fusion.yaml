@@ -1,0 +1,5 @@
+- name: PHP Fusion
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: fusion'

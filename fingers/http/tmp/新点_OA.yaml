@@ -1,0 +1,6 @@
+- name: 新点 OA
+  rule:
+  - regexps:
+      body:
+      - 新点助手工具
+      - EpointOA

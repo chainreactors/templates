@@ -1,0 +1,5 @@
+- name: FireEye
+  rule:
+  - regexps:
+      header:
+      - Basic realm="FireEye Malware Protection Cloud (MPC)"

@@ -1,0 +1,5 @@
+- name: 拓尔思ids
+  rule:
+  - regexps:
+      body:
+      - /ids/admin/

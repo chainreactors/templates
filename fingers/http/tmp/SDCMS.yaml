@@ -1,0 +1,5 @@
+- name: SDCMS
+  rule:
+  - regexps:
+      body:
+      - sdcms.js"

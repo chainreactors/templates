@@ -1,0 +1,5 @@
+- name: Netwave
+  rule:
+  - regexps:
+      header:
+      - Netwave IP Camera

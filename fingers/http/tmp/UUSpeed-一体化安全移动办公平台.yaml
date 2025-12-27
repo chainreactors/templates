@@ -1,0 +1,5 @@
+- name: UUSpeed-一体化安全移动办公平台
+  rule:
+  - regexps:
+      header:
+      - 'Server: yaWeb/0.4'

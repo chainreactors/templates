@@ -1,0 +1,5 @@
+- name: Office365
+  rule:
+  - regexps:
+      body:
+      - 请输入furl参数

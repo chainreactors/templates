@@ -1,0 +1,6 @@
+- name: yxcms
+  rule:
+  - regexps:
+      body:
+      - /css/yxcms.css
+      - content="Yxcms

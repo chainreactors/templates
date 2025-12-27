@@ -1,0 +1,5 @@
+- name: 锐商企业cmsc
+  rule:
+  - regexps:
+      body:
+      - href="/Writable/ClientImages/mycss.css

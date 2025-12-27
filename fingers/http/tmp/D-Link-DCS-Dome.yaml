@@ -1,0 +1,5 @@
+- name: D-Link-DCS-Dome
+  rule:
+  - regexps:
+      header:
+      - Basic realm="DCS-Dome

@@ -1,0 +1,7 @@
+- name: siteserver
+  rule:
+  - regexps:
+      body:
+      - T_系统首页模板
+      - siteserver
+      - sitefiles

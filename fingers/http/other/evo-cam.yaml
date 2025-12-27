@@ -1,0 +1,6 @@
+- name: evo-cam
+  rule:
+  - regexps:
+      body:
+      - value="evocam.jar
+      - <applet archive="evocam.jar

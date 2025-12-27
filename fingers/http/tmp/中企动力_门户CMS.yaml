@@ -1,0 +1,5 @@
+- name: 中企动力 门户CMS
+  rule:
+  - regexps:
+      body:
+      - 中企动力提供技术支持

@@ -1,0 +1,11 @@
+- name: socks4
+  default_port:
+  - socks
+  rule:
+  - regexps:
+      vuln:
+      - ^\x04\x00
+      regexp:
+      - ^\x04\xff
+    send_data: "\x04\x01\0"
+    vuln: socks4_unauthorized

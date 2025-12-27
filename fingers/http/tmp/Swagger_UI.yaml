@@ -1,0 +1,6 @@
+- name: Swagger UI
+  rule:
+  - regexps:
+      body:
+      - swagger-ui.js
+      - swaggerbootstrapui.js

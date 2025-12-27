@@ -1,0 +1,8 @@
+- name: exchange
+  rule:
+  - regexps:
+      body:
+      - /owa/auth.owa
+    favicon:
+      mmh3:
+      - '1768726119'

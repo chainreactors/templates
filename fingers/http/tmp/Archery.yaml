@@ -1,0 +1,6 @@
+- name: Archery
+  link: http://120.40.102.244:5601/login/
+  rule:
+  - regexps:
+      body:
+      - Archery</strong>

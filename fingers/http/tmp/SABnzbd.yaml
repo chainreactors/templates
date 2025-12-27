@@ -1,0 +1,5 @@
+- name: SABnzbd
+  rule:
+  - regexps:
+      body:
+      - SABnzbd

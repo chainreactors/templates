@@ -1,0 +1,7 @@
+- name: 奇安信新天擎edr
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - 新天擎
+      - /res/css/tools/index.css

@@ -1,0 +1,5 @@
+- name: NEB-PROXY
+  rule:
+  - regexps:
+      header:
+      - 'Server: NEBPROXY'

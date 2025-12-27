@@ -1,0 +1,5 @@
+- name: pigcms
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: PigCms.com'

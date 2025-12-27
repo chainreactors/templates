@@ -1,0 +1,5 @@
+- name: ranzhi
+  rule:
+  - regexps:
+      body:
+      - /sys/index.php?m=user&f=login&referer=

@@ -1,0 +1,5 @@
+- name: SuiteCRM
+  rule:
+  - regexps:
+      body:
+      - SuiteCRM

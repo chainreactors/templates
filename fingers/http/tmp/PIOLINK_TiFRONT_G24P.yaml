@@ -1,0 +1,5 @@
+- name: PIOLINK TiFRONT G24P
+  rule:
+  - regexps:
+      body:
+      - tifront-g24p

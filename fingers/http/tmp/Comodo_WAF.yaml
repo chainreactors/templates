@@ -1,0 +1,5 @@
+- name: Comodo WAF
+  rule:
+  - regexps:
+      header:
+      - protected by comodo waf

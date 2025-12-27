@@ -1,0 +1,5 @@
+- name: sophos_email_appliance
+  rule:
+  - regexps:
+      header:
+      - Sophos Email Appliance

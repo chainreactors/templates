@@ -1,0 +1,5 @@
+- name: 捷兔CMS 微信营销管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>捷兔CMS-微信营销管理系统</title>

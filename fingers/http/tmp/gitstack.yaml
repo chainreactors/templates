@@ -1,0 +1,6 @@
+- name: gitstack
+  rule:
+  - regexps:
+      body:
+      - ^gitstack/
+      - src="/gitstack.png"

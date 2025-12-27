@@ -1,0 +1,5 @@
+- name: forest-blog
+  rule:
+  - regexps:
+      body:
+      - Forest Blog

@@ -1,0 +1,5 @@
+- name: FFCS-Security-Operation-Management-System
+  rule:
+  - regexps:
+      body:
+      - align="center">福富软件

@@ -1,0 +1,6 @@
+- name: fengcms
+  rule:
+  - regexps:
+      body:
+      - Powered by FengCms
+      - content="FengCms

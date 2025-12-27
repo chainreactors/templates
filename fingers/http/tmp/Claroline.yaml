@@ -1,0 +1,5 @@
+- name: Claroline
+  rule:
+  - regexps:
+      body:
+      - Y88888P' dP `88888P8 dP `88888P' dP dP dP dP `88888P'

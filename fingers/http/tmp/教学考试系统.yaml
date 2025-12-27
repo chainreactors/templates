@@ -1,0 +1,5 @@
+- name: 教学考试系统
+  rule:
+  - regexps:
+      header:
+      - Basic realm="dreambox"

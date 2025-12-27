@@ -1,0 +1,10 @@
+- name: magento
+  rule:
+  - regexps:
+      body:
+      - /skin/frontend/
+      - BLANK_IMG
+      - Magento, Varien, E-commerce
+    favicon:
+      mmh3:
+      - '-38580010'

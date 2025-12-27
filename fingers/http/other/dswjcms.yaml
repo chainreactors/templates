@@ -1,0 +1,6 @@
+- name: dswjcms
+  rule:
+  - regexps:
+      body:
+      - content="Dswjcms
+      - Powered by Dswjcms

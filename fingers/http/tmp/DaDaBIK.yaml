@@ -1,0 +1,5 @@
+- name: DaDaBIK
+  rule:
+  - regexps:
+      body:
+      - DaDaBIK

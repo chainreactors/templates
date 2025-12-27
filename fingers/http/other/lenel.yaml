@@ -1,0 +1,5 @@
+- name: lenel
+  rule:
+  - favicon:
+      mmh3:
+      - '538585915'

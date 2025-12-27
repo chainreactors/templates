@@ -1,0 +1,5 @@
+- name: Post Revolution
+  rule:
+  - regexps:
+      body:
+      - Post Revolution

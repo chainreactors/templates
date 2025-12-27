@@ -1,0 +1,6 @@
+- name: ikonboard
+  rule:
+  - regexps:
+      body:
+      - content="Ikonboard
+      - Powered by <a href="http://www.ikonboard.com

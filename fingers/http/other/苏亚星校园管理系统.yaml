@@ -1,0 +1,5 @@
+- name: 苏亚星校园管理系统
+  rule:
+  - regexps:
+      body:
+      - /ws2004/Public/

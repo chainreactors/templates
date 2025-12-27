@@ -1,0 +1,7 @@
+- name: Sucuri
+  rule:
+  - regexps:
+      body:
+      - cloudproxy@sucuri.net
+      header:
+      - x-sucuri-id

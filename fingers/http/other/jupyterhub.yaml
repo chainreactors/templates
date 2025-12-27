@@ -1,0 +1,5 @@
+- name: jupyterhub
+  rule:
+  - favicon:
+      mmh3:
+      - '1248917303'

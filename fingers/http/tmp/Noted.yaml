@@ -1,0 +1,5 @@
+- name: Noted
+  rule:
+  - regexps:
+      body:
+      - Ceate a note and get a link

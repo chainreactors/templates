@@ -1,0 +1,5 @@
+- name: SophosWAF
+  rule:
+  - regexps:
+      body:
+      - UTM Web Protection

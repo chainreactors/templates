@@ -1,0 +1,5 @@
+- name: 加速乐
+  rule:
+  - regexps:
+      header:
+      - __jsluid

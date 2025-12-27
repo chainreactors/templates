@@ -1,0 +1,5 @@
+- name: wishoa
+  rule:
+  - regexps:
+      body:
+      - WishOA_WebPlugin.js

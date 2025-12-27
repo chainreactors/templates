@@ -1,0 +1,6 @@
+- name: 智齿客服系统
+  link: http://www.tndyt.com/
+  rule:
+  - regexps:
+      body:
+      - sobot

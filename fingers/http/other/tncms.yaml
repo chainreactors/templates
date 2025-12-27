@@ -1,0 +1,5 @@
+- name: tncms
+  rule:
+  - regexps:
+      header:
+      - X-Tncms-Version

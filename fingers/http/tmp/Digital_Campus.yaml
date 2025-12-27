@@ -1,0 +1,5 @@
+- name: Digital Campus
+  rule:
+  - regexps:
+      body:
+      - Digital Campus

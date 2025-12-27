@@ -1,0 +1,6 @@
+- name: Shopify
+  rule:
+  - regexps:
+      body:
+      - X-Shopify-
+      - ShopifySans

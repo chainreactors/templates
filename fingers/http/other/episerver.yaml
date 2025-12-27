@@ -1,0 +1,5 @@
+- name: episerver
+  rule:
+  - regexps:
+      body:
+      - EPiServer

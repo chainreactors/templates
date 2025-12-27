@@ -1,0 +1,5 @@
+- name: 帕拉迪统一安全管理和综合审计系统
+  rule:
+  - regexps:
+      body:
+      - module/image/pldsec.css

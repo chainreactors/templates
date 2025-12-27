@@ -1,0 +1,5 @@
+- name: JEEWMS
+  rule:
+  - regexps:
+      body:
+      - plug-in/lhgDialog/lhgdialog.min.js?skin=metro

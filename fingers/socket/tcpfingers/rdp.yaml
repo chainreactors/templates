@@ -1,0 +1,9 @@
+- name: rdp
+  default_port:
+  - rdp
+  protocol: tcp
+  rule:
+  - regexps:
+      regexp:
+      - "^\x03\0\0"
+    send_data: b64de|AwAAKiXgAAAAAABDb29raWU6IG1zdHNoYXNoPWFzZGYNCgEACAADAAAA

@@ -1,0 +1,5 @@
+- name: instar ip cameras
+  rule:
+  - favicon:
+      mmh3:
+      - '-1169314298'

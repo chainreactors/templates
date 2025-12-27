@@ -1,0 +1,5 @@
+- name: Phicomm-Fortress
+  rule:
+  - regexps:
+      body:
+      - 斐讯fortress防火墙

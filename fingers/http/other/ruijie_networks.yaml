@@ -1,0 +1,5 @@
+- name: ruijie networks
+  rule:
+  - favicon:
+      mmh3:
+      - '-692947551'

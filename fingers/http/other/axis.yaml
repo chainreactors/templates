@@ -1,0 +1,5 @@
+- name: axis
+  rule:
+  - favicon:
+      mmh3:
+      - '-1616143106'

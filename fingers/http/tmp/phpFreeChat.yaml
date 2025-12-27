@@ -1,0 +1,5 @@
+- name: phpFreeChat
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: phpFreeChat'

@@ -1,0 +1,6 @@
+- name: star cms
+  rule:
+  - regexps:
+      body:
+      - content="STARCMS
+      - <img alt="STAR CMS

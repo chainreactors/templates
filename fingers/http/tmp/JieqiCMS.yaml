@@ -1,0 +1,5 @@
+- name: JieqiCMS
+  rule:
+  - regexps:
+      body:
+      - /modules/article/articleinfo.php?id

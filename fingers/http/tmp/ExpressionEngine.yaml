@@ -1,0 +1,5 @@
+- name: ExpressionEngine
+  rule:
+  - regexps:
+      body:
+      - Powered by ExpressionEngine

@@ -1,0 +1,10 @@
+- name: 微擎
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /index.php?c=user&a=find-password
+      - w7.cc
+    favicon:
+      md5:
+      - fa8833ac684d6949f480ae3bc9a51b4a

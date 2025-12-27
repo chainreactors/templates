@@ -1,0 +1,6 @@
+- name: PCPIN-Chat
+  rule:
+  - regexps:
+      body:
+      - Powered by PCPIN Chat
+      - pcpin_chat

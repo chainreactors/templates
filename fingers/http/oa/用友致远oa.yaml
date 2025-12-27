@@ -1,0 +1,12 @@
+- name: 用友致远oa
+  focus: true
+  rule:
+  - regexps:
+      regexp:
+      - 用友致远A
+      - /yyoa/
+    favicon:
+      md5:
+      - 57f307ad3764553df84e7b14b7a85432
+      - 3c8df395ec2cbd72782286d18a286a9a
+      - 2f761c27b6b7f9386bbd61403635dc42

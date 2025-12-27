@@ -1,0 +1,5 @@
+- name: LisVP 领立斯虚拟化管理系统
+  rule:
+  - regexps:
+      body:
+      - LisVP -- 领立斯虚拟化管理系统

@@ -1,0 +1,5 @@
+- name: 网宿云统一认证中心
+  rule:
+  - regexps:
+      body:
+      - 网宿云统一认证中心

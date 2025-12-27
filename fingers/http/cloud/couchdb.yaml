@@ -1,0 +1,7 @@
+- name: couchdb
+  rule:
+  - regexps:
+      header:
+      - Erlang OTP
+      body:
+      - pluggable-storage-engines

@@ -1,0 +1,5 @@
+- name: airos
+  rule:
+  - favicon:
+      mmh3:
+      - '-697231354'

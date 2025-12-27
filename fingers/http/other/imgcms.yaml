@@ -1,0 +1,6 @@
+- name: imgcms
+  rule:
+  - regexps:
+      body:
+      - content="IMGCMS
+      - Powered by IMGCMS

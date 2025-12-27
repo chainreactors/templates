@@ -1,0 +1,5 @@
+- name: 安全宝WAF
+  rule:
+  - regexps:
+      body:
+      - /aqb_cc/error/

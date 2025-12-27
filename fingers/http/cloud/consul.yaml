@@ -1,0 +1,6 @@
+- name: consul
+  rule:
+  - regexps:
+      body:
+      - Consul by HashiCorp
+      - consul-ui/config/environment

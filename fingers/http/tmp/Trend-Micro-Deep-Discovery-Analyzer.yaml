@@ -1,0 +1,5 @@
+- name: Trend-Micro-Deep-Discovery-Analyzer
+  rule:
+  - regexps:
+      body:
+      - 亚信安全&trade; 深度威胁发现设备

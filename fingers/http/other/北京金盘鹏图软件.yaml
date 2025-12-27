@@ -1,0 +1,5 @@
+- name: 北京金盘鹏图软件
+  rule:
+  - regexps:
+      body:
+      - SpeakIntertScarch.aspx

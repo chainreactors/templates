@@ -1,0 +1,5 @@
+- name: sjswps_ oiwps
+  rule:
+  - regexps:
+      header:
+      - Oracle-iPlanet-Proxy-Server

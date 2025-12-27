@@ -1,0 +1,5 @@
+- name: Plesk
+  rule:
+  - regexps:
+      header:
+      - PleskLin

@@ -1,0 +1,6 @@
+- name: GELGOOG文件管理系统
+  rule:
+  - regexps:
+      body:
+      - <meta name="application-name" content="GELGOOG文件管理系统" />
+      - <title>GELGOOG文件管理系统</title>

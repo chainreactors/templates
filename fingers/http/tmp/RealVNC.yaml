@@ -1,0 +1,5 @@
+- name: RealVNC
+  rule:
+  - regexps:
+      header:
+      - 'Server: RealVNC'

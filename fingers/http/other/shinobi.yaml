@@ -1,0 +1,5 @@
+- name: shinobi
+  rule:
+  - favicon:
+      mmh3:
+      - '-10974981'

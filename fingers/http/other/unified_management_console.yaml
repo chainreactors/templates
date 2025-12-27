@@ -1,0 +1,5 @@
+- name: unified management console
+  rule:
+  - favicon:
+      mmh3:
+      - '-1775553655'

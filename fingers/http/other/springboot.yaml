@@ -1,0 +1,5 @@
+- name: springboot
+  rule:
+  - favicon:
+      mmh3:
+      - '116323821'

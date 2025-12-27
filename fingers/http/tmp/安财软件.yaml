@@ -1,0 +1,5 @@
+- name: 安财软件
+  rule:
+  - regexps:
+      body:
+      - 欢迎您光临安财软件网络报销系统

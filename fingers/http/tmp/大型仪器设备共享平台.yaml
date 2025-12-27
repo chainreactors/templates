@@ -1,0 +1,5 @@
+- name: 大型仪器设备共享平台
+  rule:
+  - regexps:
+      body:
+      - <!--<script src="wxjs/Demon/Demon.js"></script>-->

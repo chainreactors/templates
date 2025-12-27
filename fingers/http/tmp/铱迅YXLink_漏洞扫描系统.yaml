@@ -1,0 +1,5 @@
+- name: 铱迅YXLink 漏洞扫描系统
+  rule:
+  - regexps:
+      body:
+      - 铱迅漏洞扫描系统

@@ -1,0 +1,5 @@
+- name: adsubtract proxy
+  rule:
+  - regexps:
+      header:
+      - 'AdSubtract '

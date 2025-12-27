@@ -1,0 +1,5 @@
+- name: RedSeal-RedSeal-数字防御平台
+  rule:
+  - regexps:
+      body:
+      - <title>RedSeal</title>

@@ -1,0 +1,5 @@
+- name: rsupport RemoteCall 产品
+  rule:
+  - regexps:
+      header:
+      - 'Server: Remotecall Server'

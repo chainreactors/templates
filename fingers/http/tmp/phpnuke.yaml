@@ -1,0 +1,5 @@
+- name: phpnuke
+  rule:
+  - regexps:
+      body:
+      - phpnuke.gif

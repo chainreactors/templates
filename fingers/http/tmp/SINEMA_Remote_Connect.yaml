@@ -1,0 +1,5 @@
+- name: SINEMA Remote Connect
+  rule:
+  - regexps:
+      body:
+      - SINEMA Remote Connect

@@ -1,0 +1,5 @@
+- name: node-red
+  rule:
+  - favicon:
+      mmh3:
+      - '321591353'

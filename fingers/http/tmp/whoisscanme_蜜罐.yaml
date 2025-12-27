@@ -1,0 +1,5 @@
+- name: whoisscanme 蜜罐
+  rule:
+  - regexps:
+      body:
+      - whoisscanme:https://github.com/bg6cq/whoisscanme

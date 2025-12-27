@@ -1,0 +1,5 @@
+- name: FortiGate 500D
+  rule:
+  - regexps:
+      body:
+      - fortigate500d

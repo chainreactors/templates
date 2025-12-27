@@ -1,0 +1,5 @@
+- name: BPanelCMS
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-Cms: BPanel CMS'

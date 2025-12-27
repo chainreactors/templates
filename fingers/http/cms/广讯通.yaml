@@ -1,0 +1,6 @@
+- name: 广讯通
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - Services/Identification/login.ashx

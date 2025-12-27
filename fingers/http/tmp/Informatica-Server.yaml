@@ -1,0 +1,5 @@
+- name: Informatica-Server
+  rule:
+  - regexps:
+      header:
+      - 'Server: Informatica'

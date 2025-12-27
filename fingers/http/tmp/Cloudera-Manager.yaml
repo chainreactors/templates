@@ -1,0 +1,5 @@
+- name: Cloudera-Manager
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: Cloudera_Manager_SESSIONID'

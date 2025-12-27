@@ -1,0 +1,5 @@
+- name: cscms
+  rule:
+  - regexps:
+      header:
+      - 'X-Generator: Cscms'

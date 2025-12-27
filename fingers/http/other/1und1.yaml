@@ -1,0 +1,5 @@
+- name: 1und1
+  rule:
+  - regexps:
+      body:
+      - /shop/catalog/browse?sessid=

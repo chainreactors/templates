@@ -1,0 +1,5 @@
+- name: bestshoppro
+  rule:
+  - regexps:
+      body:
+      - content="www.bst.pl

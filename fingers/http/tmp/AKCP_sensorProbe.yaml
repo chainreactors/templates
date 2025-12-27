@@ -1,0 +1,5 @@
+- name: AKCP sensorProbe
+  rule:
+  - regexps:
+      header:
+      - akcp embedded web server

@@ -1,0 +1,5 @@
+- name: servicenow
+  rule:
+  - favicon:
+      mmh3:
+      - '86919334'

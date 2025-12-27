@@ -1,0 +1,7 @@
+- name: funkwerk-gateway
+  rule:
+  - regexps:
+      body:
+      - Funkwerk Gateway
+      header:
+      - Funkwerk BOSS

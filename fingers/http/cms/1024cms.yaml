@@ -1,0 +1,6 @@
+- name: 1024cms
+  rule:
+  - regexps:
+      body:
+      - Powered by 1024 CMS
+      - generator" content="1024 CMS (c)

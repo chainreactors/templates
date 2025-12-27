@@ -1,0 +1,5 @@
+- name: diaspora
+  rule:
+  - regexps:
+      header:
+      - x-git-revision

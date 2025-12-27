@@ -1,0 +1,7 @@
+- name: alt-n-mdaemon-worldclient
+  rule:
+  - regexps:
+      body:
+      - /WorldClient.dll
+      header:
+      - WDaemon

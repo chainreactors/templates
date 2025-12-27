@@ -1,0 +1,6 @@
+- name: nitc
+  rule:
+  - regexps:
+      body:
+      - NITC Web Marketing Service
+      - /images/nitc1.png

@@ -1,0 +1,5 @@
+- name: DAM 视觉中国数字资产管理系统
+  rule:
+  - regexps:
+      body:
+      - DAM-视觉中国数字资产管理系统

@@ -1,0 +1,5 @@
+- name: baocms
+  rule:
+  - regexps:
+      body:
+      - baocms

@@ -1,0 +1,5 @@
+- name: openwrt luci
+  rule:
+  - favicon:
+      mmh3:
+      - '-675839242'

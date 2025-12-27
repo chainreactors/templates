@@ -1,0 +1,5 @@
+- name: anecms
+  rule:
+  - regexps:
+      body:
+      - content="Erwin Aligam - ealigam@gmail.com

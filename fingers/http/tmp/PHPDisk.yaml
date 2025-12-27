@@ -1,0 +1,5 @@
+- name: PHPDisk
+  rule:
+  - regexps:
+      body:
+      - Powered by PHPDisk Team

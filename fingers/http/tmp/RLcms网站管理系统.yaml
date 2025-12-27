@@ -1,0 +1,5 @@
+- name: RLcms网站管理系统
+  rule:
+  - regexps:
+      body:
+      - RLcms网站管理系统

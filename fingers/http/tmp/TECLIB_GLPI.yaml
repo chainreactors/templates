@@ -1,0 +1,6 @@
+- name: TECLIB GLPI
+  rule:
+  - regexps:
+      body:
+      - _glpi_csrf_token
+      - glpi - 登陆入口

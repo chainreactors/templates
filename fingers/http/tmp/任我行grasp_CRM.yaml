@@ -1,0 +1,5 @@
+- name: 任我行grasp CRM
+  rule:
+  - regexps:
+      body:
+      - 任我行信息技术有限公司

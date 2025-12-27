@@ -1,0 +1,5 @@
+- name: 润乾报表
+  rule:
+  - regexps:
+      body:
+      - raqsoft/images

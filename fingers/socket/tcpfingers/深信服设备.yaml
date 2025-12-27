@@ -1,0 +1,8 @@
+- name: 深信服设备
+  default_port:
+  - '9000'
+  protocol: tcp
+  rule:
+  - regexps:
+      regexp:
+      - yesorno

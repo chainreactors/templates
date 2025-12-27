@@ -1,0 +1,5 @@
+- name: 众安-Xdecision-决策系统
+  rule:
+  - regexps:
+      body:
+      - <title>Xdecision - 决策系统</title>

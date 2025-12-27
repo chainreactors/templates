@@ -1,0 +1,6 @@
+- name: 安全狗
+  rule:
+  - regexps:
+      header:
+      - safedog-flow-item=
+      - safedog

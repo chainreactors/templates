@@ -1,0 +1,5 @@
+- name: Firewall
+  rule:
+  - regexps:
+      body:
+      - 睿峰网云防火墙

@@ -1,0 +1,5 @@
+- name: iball wrx300n
+  rule:
+  - regexps:
+      header:
+      - iB-WRX300N

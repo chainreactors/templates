@@ -1,0 +1,5 @@
+- name: doccms
+  rule:
+  - regexps:
+      body:
+      - Power by DocCms

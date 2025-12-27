@@ -1,0 +1,5 @@
+- name: N点虚拟主机管理系统
+  rule:
+  - regexps:
+      body:
+      - N点虚拟主机管理系统

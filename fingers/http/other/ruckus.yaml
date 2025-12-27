@@ -1,0 +1,6 @@
+- name: ruckus
+  rule:
+  - regexps:
+      body:
+      - mon.  Tell me your username
+      - Ruckus Wireless Admin

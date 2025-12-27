@@ -1,0 +1,5 @@
+- name: yapi
+  rule:
+  - regexps:
+      body:
+      - content="yapi

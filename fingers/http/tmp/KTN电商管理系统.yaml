@@ -1,0 +1,5 @@
+- name: KTN电商管理系统
+  rule:
+  - regexps:
+      body:
+      - KTN电商管理系统

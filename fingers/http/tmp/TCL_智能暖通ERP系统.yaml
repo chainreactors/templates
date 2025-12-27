@@ -1,0 +1,5 @@
+- name: TCL 智能暖通ERP系统
+  rule:
+  - regexps:
+      body:
+      - TCL智能暖通ERP系统

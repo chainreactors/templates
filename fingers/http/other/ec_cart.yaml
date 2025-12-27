@@ -1,0 +1,5 @@
+- name: ec_cart
+  rule:
+  - regexps:
+      header:
+      - ec_cart_id

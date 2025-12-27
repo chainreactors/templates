@@ -1,0 +1,5 @@
+- name: material dashboard
+  rule:
+  - favicon:
+      mmh3:
+      - '1913538826'

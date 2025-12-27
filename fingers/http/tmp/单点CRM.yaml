@@ -1,0 +1,5 @@
+- name: 单点CRM
+  rule:
+  - regexps:
+      body:
+      - 单点CRM系统

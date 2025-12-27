@@ -1,0 +1,5 @@
+- name: Pivot88
+  rule:
+  - regexps:
+      body:
+      - Pivot88

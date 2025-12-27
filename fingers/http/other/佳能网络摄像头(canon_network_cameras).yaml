@@ -1,0 +1,5 @@
+- name: 佳能网络摄像头(canon network cameras)
+  rule:
+  - regexps:
+      body:
+      - /viewer/live/en/live.html

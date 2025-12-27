@@ -1,0 +1,7 @@
+- name: 唐桥Techbridge 云会议
+  rule:
+  - regexps:
+      body:
+      - Web Conferencing, Online Meetings, Telephone-Conferencing, Webinars - spreed
+      header:
+      - 'Set-Cookie: mtUserLanguage1=deleted; expires=Thu'

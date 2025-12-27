@@ -1,0 +1,5 @@
+- name: Open Freeway
+  rule:
+  - regexps:
+      body:
+      - shopping_cart.php

@@ -1,0 +1,5 @@
+- name: 蓝盾WEB应用防护系统
+  rule:
+  - regexps:
+      body:
+      - 蓝盾WEB应用防护系统

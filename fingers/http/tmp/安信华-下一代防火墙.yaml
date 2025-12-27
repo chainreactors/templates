@@ -1,0 +1,5 @@
+- name: 安信华-下一代防火墙
+  rule:
+  - regexps:
+      body:
+      - 安信华下一代防火墙

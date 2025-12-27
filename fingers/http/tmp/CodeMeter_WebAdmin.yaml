@@ -1,0 +1,6 @@
+- name: CodeMeter WebAdmin
+  rule:
+  - regexps:
+      body:
+      - WebAdmin
+      - CodeMeter

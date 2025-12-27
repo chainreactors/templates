@@ -1,0 +1,6 @@
+- name: semcms
+  rule:
+  - regexps:
+      body:
+      - semcms PHP
+      - sc_mid_c_left_c sc_mid_left_bt

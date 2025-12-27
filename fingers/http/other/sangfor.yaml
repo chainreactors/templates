@@ -1,0 +1,5 @@
+- name: sangfor
+  rule:
+  - favicon:
+      mmh3:
+      - '-1926484046'

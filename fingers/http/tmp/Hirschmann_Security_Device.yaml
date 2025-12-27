@@ -1,0 +1,5 @@
+- name: Hirschmann Security Device
+  rule:
+  - regexps:
+      body:
+      - hirschmann eagle security device

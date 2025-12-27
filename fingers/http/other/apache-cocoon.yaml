@@ -1,0 +1,5 @@
+- name: apache-cocoon
+  rule:
+  - regexps:
+      header:
+      - x-cocoon-version

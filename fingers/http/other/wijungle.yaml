@@ -1,0 +1,5 @@
+- name: wijungle
+  rule:
+  - favicon:
+      mmh3:
+      - '2113497004'

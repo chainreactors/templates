@@ -1,0 +1,7 @@
+- name: 360webfacil_360webmanager
+  rule:
+  - regexps:
+      body:
+      - publico/template/
+      - zonapie
+      - 360WebManager Software

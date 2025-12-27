@@ -1,0 +1,6 @@
+- name: iwebsns
+  rule:
+  - regexps:
+      body:
+      - /jooyea/images/sns_idea1.jpg
+      - /jooyea/images/snslogo.gif

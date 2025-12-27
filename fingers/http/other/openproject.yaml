@@ -1,0 +1,5 @@
+- name: openproject
+  rule:
+  - favicon:
+      mmh3:
+      - '1836828108'

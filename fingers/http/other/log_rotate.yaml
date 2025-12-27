@@ -1,0 +1,5 @@
+- name: log_rotate
+  rule:
+  - regexps:
+      header:
+      - mod_ log_rotate

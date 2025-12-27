@@ -1,0 +1,8 @@
+- name: cactushop
+  rule:
+  - regexps:
+      body:
+      - <select name="numCurrencyID
+      - <!-- CactuShop
+      header:
+      - CactuShop

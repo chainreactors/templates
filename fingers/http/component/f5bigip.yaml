@@ -1,0 +1,14 @@
+- name: f5bigip
+  level: 1
+  rule:
+  - favicon:
+      mmh3:
+      - '878647854'
+      - '-335242539'
+      - '-1581907337'
+      md5:
+      - 04d9541338e525258daf47cc844d59f3
+    regexps:
+      header:
+      - X-PvInfo
+      - BigIP

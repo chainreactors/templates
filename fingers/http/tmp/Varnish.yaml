@@ -1,0 +1,6 @@
+- name: Varnish
+  rule:
+  - regexps:
+      header:
+      - 'Server: Varnish'
+      - X-Varnish

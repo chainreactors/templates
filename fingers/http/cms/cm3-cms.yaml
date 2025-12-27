@@ -1,0 +1,7 @@
+- name: cm3-cms
+  rule:
+  - regexps:
+      body:
+      - content="cm3 content manager
+      header:
+      - cm3session

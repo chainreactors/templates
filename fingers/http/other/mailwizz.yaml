@@ -1,0 +1,5 @@
+- name: mailwizz
+  rule:
+  - favicon:
+      mmh3:
+      - '2127152956'

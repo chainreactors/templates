@@ -1,0 +1,5 @@
+- name: ibm-websphere-datapower
+  rule:
+  - regexps:
+      header:
+      - x-backside-transport

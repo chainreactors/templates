@@ -1,0 +1,5 @@
+- name: WebGoat
+  rule:
+  - regexps:
+      header:
+      - Basic realm="WebGoat Application"

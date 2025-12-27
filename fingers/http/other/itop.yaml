@@ -1,0 +1,6 @@
+- name: itop
+  rule:
+  - regexps:
+      body:
+      - iTop Login
+      - href="http://www.combodo.com/itop

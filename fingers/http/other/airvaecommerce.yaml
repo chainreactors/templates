@@ -1,0 +1,5 @@
+- name: airvaecommerce
+  rule:
+  - regexps:
+      body:
+      - E-Commerce Shopping Cart Software

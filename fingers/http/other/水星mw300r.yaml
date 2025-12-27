@@ -1,0 +1,5 @@
+- name: 水星mw300r
+  rule:
+  - regexps:
+      header:
+      - MW300R

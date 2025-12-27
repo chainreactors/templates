@@ -1,0 +1,5 @@
+- name: apollo
+  rule:
+  - regexps:
+      body:
+      - Apollo

@@ -1,0 +1,6 @@
+- name: 碧海云盒
+  link: https://157.0.211.250:1443/
+  rule:
+  - regexps:
+      body:
+      - 碧海云盒

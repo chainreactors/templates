@@ -1,0 +1,7 @@
+- name: hivemail
+  rule:
+  - regexps:
+      body:
+      - content="Hivemail
+      header:
+      - hivesession

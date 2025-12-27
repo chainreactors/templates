@@ -1,0 +1,5 @@
+- name: elxis-cms
+  rule:
+  - regexps:
+      body:
+      - content="Elxis

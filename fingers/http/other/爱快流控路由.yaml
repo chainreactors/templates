@@ -1,0 +1,6 @@
+- name: 爱快流控路由
+  rule:
+  - regexps:
+      body:
+      - 爱快
+      - /resources/images/land_prompt_ico01.gif

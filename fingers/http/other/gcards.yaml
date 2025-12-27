@@ -1,0 +1,5 @@
+- name: gcards
+  rule:
+  - regexps:
+      body:
+      - <a href="http://www.gregphoto.net/gcards/index.php

@@ -1,0 +1,5 @@
+- name: ibm-internet-connection-server
+  rule:
+  - regexps:
+      header:
+      - IBM Internet Connection Server

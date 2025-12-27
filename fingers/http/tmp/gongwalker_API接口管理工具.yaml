@@ -1,0 +1,6 @@
+- name: gongwalker API接口管理工具
+  rule:
+  - regexps:
+      body:
+      - API接口管理工具
+      - /MinPHP/

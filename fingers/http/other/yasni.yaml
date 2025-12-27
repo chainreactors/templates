@@ -1,0 +1,5 @@
+- name: yasni
+  rule:
+  - favicon:
+      mmh3:
+      - '-178685903'

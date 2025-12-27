@@ -1,0 +1,5 @@
+- name: douphp
+  rule:
+  - regexps:
+      body:
+      - Powered by DouPHP

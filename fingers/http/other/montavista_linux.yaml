@@ -1,0 +1,5 @@
+- name: montavista linux
+  rule:
+  - regexps:
+      header:
+      - MontaVista

@@ -1,0 +1,8 @@
+- name: Kubernetes
+  rule:
+  - regexps:
+      body:
+      - Kubernetes Dashboard
+      - Kubeconsole
+      header:
+      - Basic realm="kubernetes-master"

@@ -1,0 +1,5 @@
+- name: mersive solstice
+  rule:
+  - favicon:
+      mmh3:
+      - '938616453'

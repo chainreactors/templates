@@ -1,0 +1,7 @@
+- name: mobotix
+  rule:
+  - regexps:
+      body:
+      - content="MOBOTIX AG
+      header:
+      - MOBOTIX Camera User

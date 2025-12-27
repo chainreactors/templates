@@ -1,0 +1,8 @@
+- name: BlueCoat-ProxySG
+  rule:
+  - regexps:
+      body:
+      - ProxySG
+      - by vultr-proxysg-lk
+      header:
+      - ProxySG

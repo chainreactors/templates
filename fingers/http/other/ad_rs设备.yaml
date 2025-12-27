@@ -1,0 +1,5 @@
+- name: ad_rs设备
+  rule:
+  - regexps:
+      header:
+      - AD_RS_COOKIE

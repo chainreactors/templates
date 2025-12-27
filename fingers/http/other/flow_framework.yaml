@@ -1,0 +1,5 @@
+- name: flow_framework
+  rule:
+  - regexps:
+      header:
+      - FLOW/FRAMEWORK

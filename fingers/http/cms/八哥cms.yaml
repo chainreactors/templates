@@ -1,0 +1,5 @@
+- name: 八哥cms
+  rule:
+  - regexps:
+      body:
+      - content="BageCMS

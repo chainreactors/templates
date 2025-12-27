@@ -1,0 +1,5 @@
+- name: Spring Boot Admin
+  rule:
+  - regexps:
+      body:
+      - Spring Boot Admin

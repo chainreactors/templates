@@ -1,0 +1,6 @@
+- name: Joomla OpenCart
+  rule:
+  - regexps:
+      body:
+      - /component/opencart/
+      - ?option=com_opencart

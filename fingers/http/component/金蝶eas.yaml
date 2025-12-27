@@ -1,0 +1,7 @@
+- name: 金蝶eas
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - easSessionId
+      - path=/eassso

@@ -1,0 +1,11 @@
+- name: java-rmi
+  focus: true
+  default_port:
+  - jndi
+  protocol: tcp
+  rule:
+  - regexps:
+      vuln:
+      - ^N[\s\S]{1,2}\d*\.\d*\.\d*\.\d*
+    send_data: "JRMI\0\x02K"
+    info: rmi_service

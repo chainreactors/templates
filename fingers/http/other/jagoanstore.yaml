@@ -1,0 +1,5 @@
+- name: jagoanstore
+  rule:
+  - regexps:
+      body:
+      - href="http://www.jagoanstore.com/" target="_blank">Toko Online

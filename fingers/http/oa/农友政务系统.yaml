@@ -1,0 +1,5 @@
+- name: 农友政务系统
+  rule:
+  - regexps:
+      body:
+      - '1207044504'

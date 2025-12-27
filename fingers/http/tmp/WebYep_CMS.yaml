@@ -1,0 +1,6 @@
+- name: WebYep CMS
+  rule:
+  - regexps:
+      body:
+      - /webyep-system/program
+      - /webyep-system/data

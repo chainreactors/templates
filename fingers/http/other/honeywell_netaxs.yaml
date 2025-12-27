@@ -1,0 +1,5 @@
+- name: honeywell netaxs
+  rule:
+  - regexps:
+      body:
+      - Honeywell NetAXS

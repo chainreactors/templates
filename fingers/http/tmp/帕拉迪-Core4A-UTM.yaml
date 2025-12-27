@@ -1,0 +1,5 @@
+- name: 帕拉迪-Core4A-UTM
+  rule:
+  - regexps:
+      body:
+      - 帕拉迪Core4A-UTM

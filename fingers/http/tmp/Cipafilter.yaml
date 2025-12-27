@@ -1,0 +1,5 @@
+- name: Cipafilter
+  rule:
+  - regexps:
+      header:
+      - Basic realm="Cipafilter Web management"

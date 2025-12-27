@@ -1,0 +1,5 @@
+- name: Hadoop Administration
+  rule:
+  - regexps:
+      body:
+      - Namenode information

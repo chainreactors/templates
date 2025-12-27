@@ -1,0 +1,6 @@
+- name: Dptech FW1000
+  rule:
+  - regexps:
+      body:
+      - dptech fw1000
+      - 图片中显示迪普科技

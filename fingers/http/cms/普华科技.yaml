@@ -1,0 +1,6 @@
+- name: 普华科技
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - Power_choose_lang

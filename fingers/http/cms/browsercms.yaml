@@ -1,0 +1,6 @@
+- name: browsercms
+  rule:
+  - regexps:
+      body:
+      - Powered by BrowserCMS
+      - content="BrowserCMS

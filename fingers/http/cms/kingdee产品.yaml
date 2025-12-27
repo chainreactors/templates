@@ -1,0 +1,5 @@
+- name: kingdee产品
+  rule:
+  - regexps:
+      body:
+      - .kingdee.com

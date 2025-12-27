@@ -1,0 +1,6 @@
+- name: 向日葵
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - '{"success":false,"msg":"Verification failure"}'

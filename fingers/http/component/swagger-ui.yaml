@@ -1,0 +1,6 @@
+- name: swagger-ui
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /swagger

@@ -1,0 +1,6 @@
+- name: Apache Kylin
+  rule:
+  - regexps:
+      body:
+      - Kylin
+      - http-equiv="refresh" content="1;url=kylin"

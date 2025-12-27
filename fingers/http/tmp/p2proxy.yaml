@@ -1,0 +1,5 @@
+- name: p2proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: p2proxy'

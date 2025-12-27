@@ -1,0 +1,15 @@
+- name: drupal
+  rule:
+  - regexps:
+      body:
+      - content="Drupal
+      - jQuery.extend(Drupal.settings
+      - /sites/default/files/
+      - /sites/all/modules/
+      - /sites/all/themes/
+      header:
+      - 'X-Generator: Drupal'
+    favicon:
+      mmh3:
+      - '1174841451'
+      - '-167656799'

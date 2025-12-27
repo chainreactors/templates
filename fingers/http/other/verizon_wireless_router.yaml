@@ -1,0 +1,6 @@
+- name: verizon_wireless_router
+  rule:
+  - regexps:
+      body:
+      - Wireless Broadband Router Management Console
+      - verizon_logo_blk.gif

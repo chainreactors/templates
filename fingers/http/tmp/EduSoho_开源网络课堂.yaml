@@ -1,0 +1,5 @@
+- name: EduSoho 开源网络课堂
+  rule:
+  - regexps:
+      body:
+      - EduSoho

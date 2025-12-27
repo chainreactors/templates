@@ -1,0 +1,5 @@
+- name: 用友-ufida
+  rule:
+  - regexps:
+      body:
+      - /System/Login/Login.asp?

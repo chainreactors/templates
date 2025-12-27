@@ -1,0 +1,6 @@
+- name: i@report
+  rule:
+  - regexps:
+      body:
+      - com.sanlink.server.Login
+      - ireport

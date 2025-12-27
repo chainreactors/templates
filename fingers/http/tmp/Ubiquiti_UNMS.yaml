@@ -1,0 +1,6 @@
+- name: Ubiquiti UNMS
+  rule:
+  - regexps:
+      body:
+      - content="unms"
+      - unms

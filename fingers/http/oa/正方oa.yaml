@@ -1,0 +1,5 @@
+- name: 正方oa
+  rule:
+  - regexps:
+      body:
+      - zfoausername

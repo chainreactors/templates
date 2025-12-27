@@ -1,0 +1,5 @@
+- name: instar full-hd ip-camera
+  rule:
+  - favicon:
+      mmh3:
+      - '-1748763891'

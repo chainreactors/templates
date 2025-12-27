@@ -1,0 +1,7 @@
+- name: DotNetNuke
+  rule:
+  - regexps:
+      body:
+      - www.dnnsoftware.com
+      header:
+      - Dnnoutputcache

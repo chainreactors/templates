@@ -1,0 +1,5 @@
+- name: 致远互联-M1移动端
+  rule:
+  - regexps:
+      body:
+      - <span>M1-Server

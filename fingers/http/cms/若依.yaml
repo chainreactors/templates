@@ -1,0 +1,6 @@
+- name: 若依
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - ruoyi/css/ry-ui.css

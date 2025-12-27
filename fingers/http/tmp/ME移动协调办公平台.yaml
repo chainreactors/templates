@@ -1,0 +1,5 @@
+- name: ME移动协调办公平台
+  rule:
+  - regexps:
+      body:
+      - ME移动协调办公平台

@@ -1,0 +1,5 @@
+- name: MD Pro
+  rule:
+  - regexps:
+      body:
+      - Powered by MDPro

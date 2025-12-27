@@ -1,0 +1,6 @@
+- name: 龙脉CMS
+  rule:
+  - regexps:
+      body:
+      - 龙脉科技
+      - www.szlongmai.com

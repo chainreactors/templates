@@ -1,0 +1,6 @@
+- name: bomgar
+  rule:
+  - regexps:
+      body:
+      - alt="Remote Support by BOMGAR
+      - <a href="http://www.bomgar.com/products" class="inverse

@@ -1,0 +1,5 @@
+- name: cnservers llc
+  rule:
+  - favicon:
+      mmh3:
+      - '-235701012'

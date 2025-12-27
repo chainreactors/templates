@@ -1,0 +1,6 @@
+- name: 票友ERP
+  rule:
+  - regexps:
+      body:
+      - ajax/confirm.ashx
+      - 票友erp

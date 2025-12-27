@@ -1,0 +1,7 @@
+- name: turbomail
+  rule:
+  - regexps:
+      body:
+      - Powered by TurboMail
+      - wzcon1 clearfix
+      - TurboMail邮件系统

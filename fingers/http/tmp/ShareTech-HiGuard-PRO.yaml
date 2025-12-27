@@ -1,0 +1,5 @@
+- name: ShareTech-HiGuard-PRO
+  rule:
+  - regexps:
+      header:
+      - Basic realm="HiGuardPRO"

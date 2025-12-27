@@ -1,0 +1,5 @@
+- name: MyWebSQL
+  rule:
+  - regexps:
+      body:
+      - MyWebSQL

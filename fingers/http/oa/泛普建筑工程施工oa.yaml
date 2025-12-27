@@ -1,0 +1,5 @@
+- name: 泛普建筑工程施工oa
+  rule:
+  - regexps:
+      body:
+      - /dwr/interface/LoginService.js

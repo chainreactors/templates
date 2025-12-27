@@ -1,0 +1,5 @@
+- name: Energine
+  rule:
+  - regexps:
+      body:
+      - /energine.css

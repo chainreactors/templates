@@ -1,0 +1,5 @@
+- name: Spotweb
+  rule:
+  - regexps:
+      body:
+      - Spotweb

@@ -1,0 +1,5 @@
+- name: Lusca-Web-Proxy-Cache
+  rule:
+  - regexps:
+      header:
+      - Lusca

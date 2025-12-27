@@ -1,0 +1,6 @@
+- name: GoDaddyWAF
+  rule:
+  - regexps:
+      body:
+      - GoDaddy Security
+      - GoDaddy Website Firewall

@@ -1,0 +1,5 @@
+- name: entercrm
+  rule:
+  - regexps:
+      body:
+      - EnterCRM

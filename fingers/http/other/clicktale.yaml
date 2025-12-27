@@ -1,0 +1,5 @@
+- name: clicktale
+  rule:
+  - regexps:
+      body:
+      - <div id="ClickTaleDiv

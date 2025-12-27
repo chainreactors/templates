@@ -1,0 +1,6 @@
+- name: NZCMS
+  rule:
+  - regexps:
+      body:
+      - NZCMS
+      - /nzcms/plugin

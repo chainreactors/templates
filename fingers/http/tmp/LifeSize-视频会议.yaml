@@ -1,0 +1,5 @@
+- name: LifeSize-视频会议
+  rule:
+  - regexps:
+      header:
+      - LifeSize&reg;

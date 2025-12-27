@@ -1,0 +1,6 @@
+- name: TianYue Employee Internet Management
+  rule:
+  - regexps:
+      body:
+      - netoray nsg 上网行为管理系统
+      - 莱克斯科技

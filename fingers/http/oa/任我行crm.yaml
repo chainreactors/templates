@@ -1,0 +1,6 @@
+- name: 任我行crm
+  rule:
+  - regexps:
+      body:
+      - 任我行CRM
+      - CRM_LASTLOGINUSERKEY

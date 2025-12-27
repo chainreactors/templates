@@ -1,0 +1,5 @@
+- name: ForeScout-ForeScout-Platform
+  rule:
+  - regexps:
+      body:
+      - <title>Forescout Portal

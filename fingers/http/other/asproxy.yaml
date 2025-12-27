@@ -1,0 +1,6 @@
+- name: asproxy
+  rule:
+  - regexps:
+      body:
+      - Surf the web invisibly using ASProxy power
+      - btnASProxyDisplayButton

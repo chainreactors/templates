@@ -1,0 +1,6 @@
+- name: WebRay 一体化扫描器
+  rule:
+  - regexps:
+      body:
+      - 一体化扫描器
+      - var charindex = math.floor(math.random() * 32);

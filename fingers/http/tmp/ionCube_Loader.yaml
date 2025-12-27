@@ -1,0 +1,6 @@
+- name: ionCube Loader
+  rule:
+  - regexps:
+      body:
+      - <a name="module_ioncube+loader">ionCube Loader
+      - <a name="module_ionCube Loader">ionCube Loader

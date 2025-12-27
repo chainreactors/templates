@@ -1,0 +1,6 @@
+- name: 西软云XMS
+  rule:
+  - regexps:
+      body:
+      - href="xmsenv.exe">系统运行环境
+      - 西软云xms

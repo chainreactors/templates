@@ -1,0 +1,7 @@
+- name: plone
+  rule:
+  - regexps:
+      body:
+      - generator" content="Plone
+      header:
+      - plone.content

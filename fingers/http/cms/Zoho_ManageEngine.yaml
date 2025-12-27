@@ -1,0 +1,5 @@
+- name: Zoho ManageEngine
+  rule:
+  - regexps:
+      body:
+      - scripts/esapi.js

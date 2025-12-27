@@ -1,0 +1,5 @@
+- name: Lime-Survey
+  rule:
+  - regexps:
+      body:
+      - content="LimeSurvey

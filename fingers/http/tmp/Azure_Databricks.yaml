@@ -1,0 +1,10 @@
+- name: Azure Databricks
+  rule:
+  - favicon:
+      mmh3:
+      - '-491607480'
+    regexps:
+      body:
+      - Databricks - Sign In
+      header:
+      - databricks

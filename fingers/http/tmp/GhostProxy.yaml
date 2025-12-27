@@ -1,0 +1,5 @@
+- name: GhostProxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: GhostProxy'

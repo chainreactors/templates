@@ -1,0 +1,5 @@
+- name: Picus-Security
+  rule:
+  - regexps:
+      body:
+      - Picus Security

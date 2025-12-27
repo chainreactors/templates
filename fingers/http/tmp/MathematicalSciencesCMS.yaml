@@ -1,0 +1,5 @@
+- name: MathematicalSciencesCMS
+  rule:
+  - regexps:
+      header:
+      - 'ww-Authenticate: Basic realm="MATHEMA CMS"'

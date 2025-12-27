@@ -1,0 +1,8 @@
+- name: Pulse Secure SSL VPN
+  rule:
+  - regexps:
+      body:
+      - Pulse Connect Secure
+      - /dana-na/auth
+      header:
+      - dana-na/auth

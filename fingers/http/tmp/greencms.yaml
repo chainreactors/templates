@@ -1,0 +1,5 @@
+- name: greencms
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: GreenCMS Community Version'

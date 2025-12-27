@@ -1,0 +1,7 @@
+- name: 华为 mcu
+  rule:
+  - regexps:
+      body:
+      - McuR5-min.js
+      - MCUType.js
+      - huawei MCU

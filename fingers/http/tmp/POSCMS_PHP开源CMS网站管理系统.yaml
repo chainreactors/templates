@@ -1,0 +1,5 @@
+- name: POSCMS PHP开源CMS网站管理系统
+  rule:
+  - regexps:
+      body:
+      - POSCMS - PHP开源CMS网站管理系统

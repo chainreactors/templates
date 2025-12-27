@@ -1,0 +1,6 @@
+- name: Ymhome-OA
+  rule:
+  - regexps:
+      body:
+      - /yimioa.apk
+      - 一米oa

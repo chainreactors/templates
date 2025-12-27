@@ -1,0 +1,6 @@
+- name: Document Security Management System
+  rule:
+  - regexps:
+      body:
+      - 前沿文档安全管理软件
+      - src="/drm/encjs/barrett.js"

@@ -1,0 +1,5 @@
+- name: 大汉web
+  rule:
+  - regexps:
+      body:
+      - hanweb.css

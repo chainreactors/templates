@@ -1,0 +1,5 @@
+- name: dv-cart
+  rule:
+  - regexps:
+      body:
+      - class="KT_tngtable

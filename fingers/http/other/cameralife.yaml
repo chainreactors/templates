@@ -1,0 +1,6 @@
+- name: cameralife
+  rule:
+  - regexps:
+      body:
+      - content="Camera Life
+      - This site is powered by Camera Life

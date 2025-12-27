@@ -1,0 +1,11 @@
+- name: jdwp
+  default_port:
+  - jdwp
+  focus: true
+  protocol: tcp
+  rule:
+  - regexps:
+      vuln:
+      - JDWP-Handshake
+    send_data: JDWP-Handshake\n
+    info: jdwp_service

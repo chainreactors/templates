@@ -1,0 +1,5 @@
+- name: xxl-job
+  rule:
+  - regexps:
+      body:
+      - XXL-JOB

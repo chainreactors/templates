@@ -1,0 +1,5 @@
+- name: donations-cloud
+  rule:
+  - regexps:
+      body:
+      - /donationscloud.css

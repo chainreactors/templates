@@ -1,0 +1,6 @@
+- name: elitius
+  rule:
+  - regexps:
+      body:
+      - content="eLitius
+      - target="_blank" title="Affiliate

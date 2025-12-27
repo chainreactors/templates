@@ -1,0 +1,5 @@
+- name: FireProxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: FireProxy'

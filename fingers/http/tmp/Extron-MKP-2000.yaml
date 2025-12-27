@@ -1,0 +1,5 @@
+- name: Extron-MKP-2000
+  rule:
+  - regexps:
+      header:
+      - 'Server: MKP 2000/2.02'

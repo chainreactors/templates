@@ -1,0 +1,5 @@
+- name: glfusion
+  rule:
+  - regexps:
+      body:
+      - by <a href="http://www.glfusion.org/

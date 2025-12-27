@@ -1,0 +1,6 @@
+- name: 图创
+  rule:
+  - regexps:
+      body:
+      - /interlib/common/
+      - 图创软件开发有限公司提供技术支持

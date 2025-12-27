@@ -1,0 +1,5 @@
+- name: 菲尔教学管理erp
+  rule:
+  - regexps:
+      body:
+      - 菲尔教学管理erp

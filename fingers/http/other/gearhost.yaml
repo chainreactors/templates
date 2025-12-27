@@ -1,0 +1,5 @@
+- name: gearhost
+  rule:
+  - regexps:
+      header:
+      - GearHost

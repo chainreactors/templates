@@ -1,0 +1,6 @@
+- name: Neusoft NetEye Firewall
+  rule:
+  - regexps:
+      body:
+      - neteye防火墙系统
+      - name="login_form" action="/fwm4/fwm.cgi/usrlgin"

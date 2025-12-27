@@ -1,0 +1,5 @@
+- name: 蓝盾bdwebguard
+  rule:
+  - regexps:
+      body:
+      - 'BACKGROUND: url(images/loginbg.jpg) #e5f1fc'

@@ -1,0 +1,6 @@
+- name: DataGear
+  link: http://mpapi.jh.zjeja.com:6021/
+  rule:
+  - regexps:
+      body:
+      - DataGear

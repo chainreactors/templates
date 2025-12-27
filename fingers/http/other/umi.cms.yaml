@@ -1,0 +1,5 @@
+- name: umi.cms
+  rule:
+  - regexps:
+      header:
+      - UMI.CMS

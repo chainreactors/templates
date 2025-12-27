@@ -1,0 +1,5 @@
+- name: Site4
+  rule:
+  - regexps:
+      body:
+      - SITE4.dk Site4 Setup Error..

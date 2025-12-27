@@ -1,0 +1,6 @@
+- name: filenice
+  rule:
+  - regexps:
+      body:
+      - content="the fantabulous mechanical eviltwin code machine
+      - fileNice/fileNice.js

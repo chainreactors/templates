@@ -1,0 +1,5 @@
+- name: 同城多用户商城
+  rule:
+  - regexps:
+      body:
+      - style_chaoshi

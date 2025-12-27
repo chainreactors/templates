@@ -1,0 +1,6 @@
+- name: 东软Neusoft 通用门户软件
+  rule:
+  - regexps:
+      body:
+      - 技术支持：河北东软软件有限公司
+      - 东软通用门户软件

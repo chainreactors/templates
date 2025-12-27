@@ -1,0 +1,6 @@
+- name: 安为 ACube业务管理平台
+  rule:
+  - regexps:
+      body:
+      - ACube业务管理平台
+      - Powered by Anwill

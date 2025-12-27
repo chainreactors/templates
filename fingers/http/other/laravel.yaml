@@ -1,0 +1,6 @@
+- name: laravel
+  rule:
+  - regexps:
+      header:
+      - laravel_session
+      - ci_session

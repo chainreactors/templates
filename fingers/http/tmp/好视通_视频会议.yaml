@@ -1,0 +1,5 @@
+- name: 好视通 视频会议
+  rule:
+  - regexps:
+      body:
+      - hao-shi-tong-yun-hui-yi-yuan

@@ -1,0 +1,5 @@
+- name: deluge-web
+  rule:
+  - regexps:
+      body:
+      - 'Deluge: Web UI'

@@ -1,0 +1,9 @@
+- name: 万得（Wind）产品
+  rule:
+  - favicon:
+      mmh3:
+      - '1885964798'
+    regexps:
+      body:
+      - Wind Information All Rights Reserved
+      - 万得信息技术股份有限公司版权所有

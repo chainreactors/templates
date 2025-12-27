@@ -1,0 +1,6 @@
+- name: F5WAF
+  rule:
+  - regexps:
+      body:
+      - The requested URL was rejected
+      - security.f5aas.com

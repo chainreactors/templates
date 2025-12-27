@@ -1,0 +1,10 @@
+- name: huawei_router
+  default_port:
+  - '8443'
+  rule:
+  - regexps:
+      body:
+      - UI_component/css/xtheme-black
+    favicon:
+      mmh3:
+      - '-1395400951'

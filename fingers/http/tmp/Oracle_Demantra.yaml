@@ -1,0 +1,5 @@
+- name: Oracle Demantra
+  rule:
+  - regexps:
+      body:
+      - Oracle Demantra

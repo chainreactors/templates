@@ -1,0 +1,5 @@
+- name: cpanel.svg
+  rule:
+  - regexps:
+      body:
+      - powered_by_cpanel.svg

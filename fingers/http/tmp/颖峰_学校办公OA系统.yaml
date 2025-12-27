@@ -1,0 +1,5 @@
+- name: 颖峰 学校办公OA系统
+  rule:
+  - regexps:
+      body:
+      - 广州市颖峰信息科技

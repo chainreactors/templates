@@ -1,0 +1,5 @@
+- name: isp manager
+  rule:
+  - favicon:
+      mmh3:
+      - '-1151675028'

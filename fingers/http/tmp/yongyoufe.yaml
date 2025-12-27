@@ -1,0 +1,5 @@
+- name: yongyoufe
+  rule:
+  - regexps:
+      body:
+      - FE协作

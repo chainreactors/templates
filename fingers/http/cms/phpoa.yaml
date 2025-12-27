@@ -1,0 +1,5 @@
+- name: phpoa
+  rule:
+  - regexps:
+      body:
+      - admin_img/msg_bg.png

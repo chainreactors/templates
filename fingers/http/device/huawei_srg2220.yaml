@@ -1,0 +1,5 @@
+- name: huawei_srg2220
+  rule:
+  - regexps:
+      body:
+      - HUAWEI SRG2220

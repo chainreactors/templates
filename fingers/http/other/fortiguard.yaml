@@ -1,0 +1,7 @@
+- name: fortiguard
+  rule:
+  - regexps:
+      body:
+      - FortiGuard Web Filtering
+      - Web Filter Block Override
+      - /XX/YY/ZZ/CI/MGPGHGPGPFGHCDPFGGOGFGEH

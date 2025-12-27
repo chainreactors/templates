@@ -1,0 +1,7 @@
+- name: bugtracker.net
+  rule:
+  - regexps:
+      body:
+      - href="btnet.css
+      - valign=middle><a href=http://ifdefined.com/bugtrackernet.html>
+      - <div class=logo>BugTracker.NET

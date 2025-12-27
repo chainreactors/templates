@@ -1,0 +1,5 @@
+- name: JGICMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="author" content="JGI - http://www.jgi.com.br">

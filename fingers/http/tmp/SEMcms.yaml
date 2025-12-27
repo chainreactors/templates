@@ -1,0 +1,5 @@
+- name: SEMcms
+  rule:
+  - regexps:
+      body:
+      - semcms PHP

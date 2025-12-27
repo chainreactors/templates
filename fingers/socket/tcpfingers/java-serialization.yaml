@@ -1,0 +1,10 @@
+- name: java-serialization
+  focus: true
+  default_port:
+  - jndi
+  protocol: tcp
+  rule:
+  - regexps:
+      vuln:
+      - "^¬í\0\x05"
+    info: java-serialization-bytes

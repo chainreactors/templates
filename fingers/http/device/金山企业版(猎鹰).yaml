@@ -1,0 +1,6 @@
+- name: 金山企业版(猎鹰)
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - kaasapp/views/css/assign.css

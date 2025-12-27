@@ -1,0 +1,5 @@
+- name: LEGEND工作室 API管理系统
+  rule:
+  - regexps:
+      body:
+      - LEGEND工作室-API管理系统

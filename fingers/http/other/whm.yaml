@@ -1,0 +1,8 @@
+- name: whm
+  rule:
+  - regexps:
+      header:
+      - whostmgrsession
+    favicon:
+      mmh3:
+      - '-649378830'

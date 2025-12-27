@@ -1,0 +1,5 @@
+- name: Docker Distribution Api
+  rule:
+  - regexps:
+      header:
+      - Docker-Distribution-Api-Version

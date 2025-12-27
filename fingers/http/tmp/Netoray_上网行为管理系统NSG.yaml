@@ -1,0 +1,5 @@
+- name: Netoray 上网行为管理系统NSG
+  rule:
+  - regexps:
+      body:
+      - Netoray NSG 上网行为管理系统

@@ -1,0 +1,5 @@
+- name: 翌羽信息-OPMS管理系统
+  rule:
+  - regexps:
+      body:
+      - OPMS管理系统

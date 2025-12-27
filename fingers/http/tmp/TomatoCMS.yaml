@@ -1,0 +1,5 @@
+- name: TomatoCMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="description" content="TomatoCMS

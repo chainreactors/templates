@@ -1,0 +1,5 @@
+- name: CAStor
+  rule:
+  - regexps:
+      header:
+      - CAStor

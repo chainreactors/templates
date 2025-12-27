@@ -1,0 +1,7 @@
+- name: infomaster
+  rule:
+  - regexps:
+      body:
+      - /MasterView.css
+      - /masterView.js
+      - /MasterView/MPLeftNavStyle/PanelBar.MPIFMA.css

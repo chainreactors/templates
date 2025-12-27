@@ -1,0 +1,5 @@
+- name: indexhibit
+  rule:
+  - regexps:
+      body:
+      - indexhibit

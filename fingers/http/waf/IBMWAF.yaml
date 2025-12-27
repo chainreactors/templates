@@ -1,0 +1,7 @@
+- name: IBMWAF
+  rule:
+  - regexps:
+      header:
+      - WebSEAL
+      body:
+      - WebSEAL

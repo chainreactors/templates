@@ -1,0 +1,9 @@
+- name: RRD - Metrics
+  rule:
+  - favicon:
+      mmh3:
+      - '1530297414'
+    regexps:
+      body:
+      - RRD - Metrics
+      - Copyright &copy; 2022 R.R.Donnelley &amp; Sons Company. All rights reserved.

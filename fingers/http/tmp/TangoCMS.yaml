@@ -1,0 +1,5 @@
+- name: TangoCMS
+  rule:
+  - regexps:
+      body:
+      - title="Open Source CMS">TangoCMS

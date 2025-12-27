@@ -1,0 +1,5 @@
+- name: 科达-ViewShot
+  rule:
+  - regexps:
+      body:
+      - ViewShot

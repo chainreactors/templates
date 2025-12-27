@@ -1,0 +1,13 @@
+- name: zabbix
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - images/general/zabbix.ico
+      - meta name="Author" content="Zabbix SIA"
+      header:
+      - zbx_sessionid
+    favicon:
+      mmh3:
+      - '892542951'
+    send_data: /zabbix

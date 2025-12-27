@@ -1,0 +1,7 @@
+- name: cimplicity-webview
+  rule:
+  - regexps:
+      body:
+      - <APPLET NAME="ProwlerClientAppletObject" ARCHIVE="/ProwlerClient.jar
+      header:
+      - CIMPLICITY-HttpSvr

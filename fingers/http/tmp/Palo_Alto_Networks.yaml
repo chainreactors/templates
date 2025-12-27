@@ -1,0 +1,6 @@
+- name: Palo Alto Networks
+  link: https://13.113.155.157/
+  rule:
+  - favicon:
+      mmh3:
+      - '-318947884'

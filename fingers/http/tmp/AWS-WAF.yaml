@@ -1,0 +1,5 @@
+- name: AWS-WAF
+  rule:
+  - regexps:
+      header:
+      - awselb

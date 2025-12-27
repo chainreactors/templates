@@ -1,0 +1,6 @@
+- name: kajona
+  rule:
+  - regexps:
+      body:
+      - content="Kajona
+      - powered by Kajona

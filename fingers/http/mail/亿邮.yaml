@@ -1,0 +1,8 @@
+- name: 亿邮
+  rule:
+  - regexps:
+      body:
+      - EYOU企业邮箱
+      - cr">eYouMail
+      header:
+      - EMPHPSID

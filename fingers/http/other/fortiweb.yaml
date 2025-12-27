@@ -1,0 +1,5 @@
+- name: fortiweb
+  rule:
+  - regexps:
+      header:
+      - FortiWeb

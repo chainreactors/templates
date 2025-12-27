@@ -1,0 +1,5 @@
+- name: 怡成-医院CRM系统
+  rule:
+  - regexps:
+      body:
+      - 怡成CRM系统

@@ -1,0 +1,7 @@
+- name: h3c-imc
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - primefaces-imc-classic-blue
+      - window.location.href='/imc/login.jsf'

@@ -1,0 +1,5 @@
+- name: 云点虚拟主机管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>云点虚拟主机管理系统 - Powered By YunDian</title>

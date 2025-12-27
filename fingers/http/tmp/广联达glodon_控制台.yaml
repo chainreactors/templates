@@ -1,0 +1,5 @@
+- name: 广联达glodon 控制台
+  rule:
+  - regexps:
+      body:
+      - 广联达

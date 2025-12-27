@@ -1,0 +1,5 @@
+- name: Viscacha
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="Viscacha

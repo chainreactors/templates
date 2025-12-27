@@ -1,0 +1,5 @@
+- name: RuubikCMS
+  rule:
+  - regexps:
+      body:
+      - RuubikCMS

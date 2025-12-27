@@ -1,0 +1,5 @@
+- name: hp ilo
+  rule:
+  - favicon:
+      mmh3:
+      - '2059618623'

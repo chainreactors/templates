@@ -1,0 +1,6 @@
+- name: OpenSpug
+  rule:
+  - regexps:
+      body:
+      - M management system
+      - Spug O

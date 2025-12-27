@@ -1,0 +1,5 @@
+- name: 腾讯宙斯盾
+  rule:
+  - regexps:
+      header:
+      - SDWAF

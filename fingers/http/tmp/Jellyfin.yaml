@@ -1,0 +1,5 @@
+- name: Jellyfin
+  rule:
+  - regexps:
+      body:
+      - Jellyfin

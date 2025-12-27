@@ -1,0 +1,5 @@
+- name: Barracuda Web Filter
+  rule:
+  - regexps:
+      body:
+      - barracuda web filter

@@ -1,0 +1,5 @@
+- name: POPOK微信平台管理系统
+  rule:
+  - regexps:
+      body:
+      - POPOK微信平台管理系统

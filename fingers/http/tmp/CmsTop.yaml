@@ -1,0 +1,6 @@
+- name: CmsTop
+  rule:
+  - regexps:
+      body:
+      - content="CmsTop
+      - cmstop-common.js"></script>

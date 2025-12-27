@@ -1,0 +1,6 @@
+- name: Open-Source-Ticket-Request-System
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: OTRS'
+      - Open Ticket Request System

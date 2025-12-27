@@ -1,0 +1,5 @@
+- name: BigDump
+  rule:
+  - regexps:
+      body:
+      - BigDump

@@ -1,0 +1,5 @@
+- name: noVNC
+  rule:
+  - regexps:
+      body:
+      - noVNC

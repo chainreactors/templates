@@ -1,0 +1,5 @@
+- name: lwip
+  rule:
+  - favicon:
+      mmh3:
+      - '-1205024243'

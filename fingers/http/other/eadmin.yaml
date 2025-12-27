@@ -1,0 +1,6 @@
+- name: eadmin
+  rule:
+  - regexps:
+      body:
+      - content="eAdmin
+      - eadmin

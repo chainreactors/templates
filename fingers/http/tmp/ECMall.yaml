@@ -1,0 +1,5 @@
+- name: ECMall
+  rule:
+  - regexps:
+      body:
+      - /ECMall.css

@@ -1,0 +1,5 @@
+- name: Kerio-WinRout-Firewall
+  rule:
+  - regexps:
+      body:
+      - Kerio Clientless SSL-VPN

@@ -1,0 +1,7 @@
+- name: imailserver
+  rule:
+  - regexps:
+      body:
+      - myICalUserName
+      header:
+      - Ipswitch-IMail

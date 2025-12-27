@@ -1,0 +1,7 @@
+- name: dokeos
+  rule:
+  - regexps:
+      body:
+      - href="http://www.dokeos.com" rel="Copyright
+      - content="Dokeos
+      - name="Generator" content="Dokeos

@@ -1,0 +1,5 @@
+- name: OceanBase
+  rule:
+  - regexps:
+      body:
+      - OceanBase 云平台

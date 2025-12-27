@@ -1,0 +1,5 @@
+- name: mod_auth_passthrough
+  rule:
+  - regexps:
+      header:
+      - mod_auth_passthrough

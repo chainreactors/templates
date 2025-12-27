@@ -1,0 +1,6 @@
+- name: 锐捷 rg-dbs
+  rule:
+  - regexps:
+      body:
+      - /css/impl-security.css
+      - /dbaudit/authenticate

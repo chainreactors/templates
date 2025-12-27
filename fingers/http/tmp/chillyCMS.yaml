@@ -1,0 +1,5 @@
+- name: chillyCMS
+  rule:
+  - regexps:
+      header:
+      - chillyCMS

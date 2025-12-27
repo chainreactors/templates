@@ -1,0 +1,6 @@
+- name: ZFile
+  link: http://42.193.12.250:8092/
+  rule:
+  - regexps:
+      body:
+      - ZFile

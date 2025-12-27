@@ -1,0 +1,6 @@
+- name: 天清汉马VPN
+  rule:
+  - regexps:
+      body:
+      - /vpn/common/js/leadsec.js
+      - /vpn/user/common/custom/auth_home.css

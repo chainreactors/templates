@@ -1,0 +1,6 @@
+- name: 明御终端安全及防病毒系统
+  link: https://edr.dahai-group.com/#/login
+  rule:
+  - regexps:
+      body:
+      - 明御终端安全及防病毒系统

@@ -1,0 +1,5 @@
+- name: iceflow 冰峰 VPN
+  rule:
+  - regexps:
+      body:
+      - iceflow.cn

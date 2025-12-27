@@ -1,0 +1,5 @@
+- name: 碉堡堡垒机
+  rule:
+  - regexps:
+      body:
+      - 碉堡堡垒机

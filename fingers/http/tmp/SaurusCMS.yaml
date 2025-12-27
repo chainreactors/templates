@@ -1,0 +1,5 @@
+- name: SaurusCMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="Saurus CMS">

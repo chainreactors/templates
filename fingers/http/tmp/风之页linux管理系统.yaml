@@ -1,0 +1,5 @@
+- name: 风之页linux管理系统
+  rule:
+  - regexps:
+      body:
+      - 风之页linux管理系统

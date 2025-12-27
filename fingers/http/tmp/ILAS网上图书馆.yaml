@@ -1,0 +1,5 @@
+- name: ILAS网上图书馆
+  rule:
+  - regexps:
+      body:
+      - 欢迎使用ilas网上图书馆

@@ -1,0 +1,5 @@
+- name: jamf pro login
+  rule:
+  - favicon:
+      mmh3:
+      - '1262005940'

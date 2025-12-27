@@ -1,0 +1,5 @@
+- name: SentCMS网站管理系统
+  rule:
+  - regexps:
+      body:
+      - SentCMS网站管理系统

@@ -1,0 +1,5 @@
+- name: frogcms
+  rule:
+  - regexps:
+      body:
+      - Frog CMS

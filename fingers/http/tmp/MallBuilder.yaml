@@ -1,0 +1,5 @@
+- name: MallBuilder
+  rule:
+  - regexps:
+      body:
+      - <meta name="copyright" content="MallBuilder" />

@@ -1,0 +1,6 @@
+- name: datart
+  link: http://feixunoa.xicp.net:9997/login
+  rule:
+  - regexps:
+      body:
+      - datart

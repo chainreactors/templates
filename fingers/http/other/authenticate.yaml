@@ -1,0 +1,5 @@
+- name: authenticate
+  rule:
+  - regexps:
+      header:
+      - Www-Authenticate

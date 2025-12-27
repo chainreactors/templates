@@ -1,0 +1,6 @@
+- name: 逐浪zoomla
+  rule:
+  - regexps:
+      body:
+      - zoomla
+      - NodePage.aspx

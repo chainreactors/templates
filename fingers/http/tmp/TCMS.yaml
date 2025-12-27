@@ -1,0 +1,5 @@
+- name: TCMS
+  rule:
+  - regexps:
+      header:
+      - 'X-Created-By: arsmedia TCMS'

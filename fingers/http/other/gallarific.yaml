@@ -1,0 +1,5 @@
+- name: gallarific
+  rule:
+  - regexps:
+      body:
+      - Gallarific

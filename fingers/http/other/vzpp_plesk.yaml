@@ -1,0 +1,8 @@
+- name: vzpp plesk
+  rule:
+  - regexps:
+      body:
+      - 'VZPP Plesk '
+    favicon:
+      mmh3:
+      - '-1268095485'

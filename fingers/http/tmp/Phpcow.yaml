@@ -1,0 +1,5 @@
+- name: Phpcow
+  rule:
+  - regexps:
+      body:
+      - CONTENT="Phpcow"

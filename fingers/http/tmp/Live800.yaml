@@ -1,0 +1,7 @@
+- name: Live800
+  rule:
+  - regexps:
+      body:
+      - live800.com
+      header:
+      - live800

@@ -1,0 +1,5 @@
+- name: Trend-AdSubtract-proxy
+  rule:
+  - regexps:
+      header:
+      - AdSubtract

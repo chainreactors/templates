@@ -1,0 +1,5 @@
+- name: IBM Watchfire
+  rule:
+  - regexps:
+      header:
+      - WatchfireSessionID

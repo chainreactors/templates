@@ -1,0 +1,7 @@
+- name: asus_rtac66u
+  rule:
+  - regexps:
+      body:
+      - RT-AC66U
+      header:
+      - RT-AC66U

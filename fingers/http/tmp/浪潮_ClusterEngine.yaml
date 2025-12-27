@@ -1,0 +1,6 @@
+- name: 浪潮 ClusterEngine
+  link: https://anzhi.simceredx.com:8443/module/login/login.html
+  rule:
+  - regexps:
+      body:
+      - ClusterEngine

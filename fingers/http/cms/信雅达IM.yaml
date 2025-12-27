@@ -1,0 +1,5 @@
+- name: 信雅达IM
+  rule:
+  - regexps:
+      body:
+      - css/theme.full.css

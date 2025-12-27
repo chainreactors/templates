@@ -1,0 +1,5 @@
+- name: 伊柯夫临床试验机构管理系统Ver3.0
+  rule:
+  - regexps:
+      body:
+      - <title>伊柯夫临床试验机构管理系统(Ver3.0)</title>

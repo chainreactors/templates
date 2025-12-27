@@ -1,0 +1,5 @@
+- name: qibosoft
+  rule:
+  - regexps:
+      body:
+      - qibosoft

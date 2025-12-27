@@ -1,0 +1,10 @@
+- name: 致远oa A8
+  focus: true
+  rule:
+  - regexps:
+      regexp:
+      - A8\/favicon\.ico\?V=(.*?)"
+    favicon:
+      path: /seeyon/common/images/A8/favicon.ico
+      md5:
+      - cdc85452665e7708caed3009ecb7d4e2

@@ -1,0 +1,5 @@
+- name: TCL 警云数据管理平台
+  rule:
+  - regexps:
+      body:
+      - TCL警云数据管理平台

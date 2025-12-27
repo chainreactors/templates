@@ -1,0 +1,6 @@
+- name: nexus_nx_router
+  rule:
+  - regexps:
+      body:
+      - http://nexuswifi.com/
+      - Nexus NX

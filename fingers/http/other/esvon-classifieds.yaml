@@ -1,0 +1,5 @@
+- name: esvon-classifieds
+  rule:
+  - regexps:
+      body:
+      - Powered by Esvon

@@ -1,0 +1,5 @@
+- name: iscripts-multicart
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://iscripts.com/multicart

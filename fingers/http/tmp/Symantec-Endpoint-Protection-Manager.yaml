@@ -1,0 +1,5 @@
+- name: Symantec-Endpoint-Protection-Manager
+  rule:
+  - regexps:
+      body:
+      - Symantec Endpoint Protection Manager

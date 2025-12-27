@@ -1,0 +1,8 @@
+- name: fortinet VPN
+  rule:
+  - favicon:
+      mmh3:
+      - '945408572'
+  - regexps:
+      header:
+      - xxxxxxxx-xxxxx

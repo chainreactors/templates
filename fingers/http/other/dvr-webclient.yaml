@@ -1,0 +1,6 @@
+- name: dvr-webclient
+  rule:
+  - regexps:
+      body:
+      - 259F9FDF-97EA-4C59-B957-5160CAB6884E
+      - DVR-WebClient

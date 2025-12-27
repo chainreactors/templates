@@ -1,0 +1,5 @@
+- name: 365webcall
+  rule:
+  - regexps:
+      body:
+      - https://www.365webcall.com/sa.aspx?

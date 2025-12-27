@@ -1,0 +1,5 @@
+- name: wamp
+  rule:
+  - regexps:
+      body:
+      - WAMPSERVER

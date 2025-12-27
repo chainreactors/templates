@@ -1,0 +1,5 @@
+- name: 山大鲁能 OA
+  rule:
+  - regexps:
+      body:
+      - <title>山大鲁能信息科技有限公司协同办公系统

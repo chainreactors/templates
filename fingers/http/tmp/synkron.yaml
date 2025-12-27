@@ -1,0 +1,5 @@
+- name: synkron
+  rule:
+  - regexps:
+      body:
+      - Synkron

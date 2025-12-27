@@ -1,0 +1,5 @@
+- name: windows azure
+  rule:
+  - favicon:
+      mmh3:
+      - '-2125083197'

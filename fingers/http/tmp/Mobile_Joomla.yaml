@@ -1,0 +1,5 @@
+- name: Mobile Joomla
+  rule:
+  - regexps:
+      body:
+      - JoomlaStatsActivated

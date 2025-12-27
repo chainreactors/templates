@@ -1,0 +1,6 @@
+- name: 中国移动禹路由
+  link: http://123.182.149.40:19999/login.asp
+  rule:
+  - regexps:
+      body:
+      - 互联世界   物联未来-登录

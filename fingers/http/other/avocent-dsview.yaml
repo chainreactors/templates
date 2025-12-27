@@ -1,0 +1,8 @@
+- name: avocent-dsview
+  rule:
+  - regexps:
+      body:
+      - /dsview/images/favicon.ico
+      - /dsview/protected/login.do
+      header:
+      - Avocent DSView

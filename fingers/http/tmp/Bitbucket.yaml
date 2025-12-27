@@ -1,0 +1,5 @@
+- name: Bitbucket
+  rule:
+  - regexps:
+      body:
+      - Bitbucket

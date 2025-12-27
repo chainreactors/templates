@@ -1,0 +1,5 @@
+- name: WDSCMS
+  rule:
+  - regexps:
+      body:
+      - src="wds_cms/bilder/

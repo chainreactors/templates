@@ -1,0 +1,6 @@
+- name: guppy
+  rule:
+  - regexps:
+      body:
+      - GuppY
+      - .freeguppy.org

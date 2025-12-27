@@ -1,0 +1,5 @@
+- name: WebLinc Workarea
+  rule:
+  - regexps:
+      header:
+      - 'Server: Workarea Commerce'

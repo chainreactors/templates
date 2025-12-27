@@ -1,0 +1,7 @@
+- name: 嘉扬（kayang） E-HR
+  rule:
+  - regexps:
+      body:
+      - E-HR
+      - 人力资源信息系统
+      - 上海嘉扬信息系统有限公司

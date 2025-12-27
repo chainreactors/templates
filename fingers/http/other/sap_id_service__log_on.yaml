@@ -1,0 +1,5 @@
+- name: 'sap id service: log on'
+  rule:
+  - favicon:
+      mmh3:
+      - '-1967743928'

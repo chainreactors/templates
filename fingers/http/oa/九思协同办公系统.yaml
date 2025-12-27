@@ -1,0 +1,6 @@
+- name: 九思协同办公系统
+  rule:
+  - regexps:
+      body:
+      - /jsoa/login.jsp
+      - /x_desktop/index.html

@@ -1,0 +1,7 @@
+- name: Barracuda WAF
+  rule:
+  - regexps:
+      body:
+      - barracuda web application firewall
+      header:
+      - bni__barracuda_lb_cookie=

@@ -1,0 +1,5 @@
+- name: appwall
+  rule:
+  - regexps:
+      header:
+      - X-SL-CompState

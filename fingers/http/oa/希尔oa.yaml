@@ -1,0 +1,5 @@
+- name: 希尔oa
+  rule:
+  - regexps:
+      body:
+      - /heeroa/login.do

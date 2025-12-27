@@ -1,0 +1,5 @@
+- name: SDLTridionWCMS
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: FotoWeb'

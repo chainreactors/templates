@@ -1,0 +1,5 @@
+- name: ix series
+  rule:
+  - regexps:
+      header:
+      - IX Series

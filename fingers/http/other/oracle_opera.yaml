@@ -1,0 +1,6 @@
+- name: oracle_opera
+  rule:
+  - regexps:
+      body:
+      - MICROS Systems Inc., OPERA
+      - OperaLogin/Welcome.do

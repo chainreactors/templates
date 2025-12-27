@@ -1,0 +1,6 @@
+- name: Etherpad
+  link: https://3.235.196.44:9000/
+  rule:
+  - regexps:
+      header:
+      - Etherpad

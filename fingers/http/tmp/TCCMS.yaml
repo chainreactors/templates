@@ -1,0 +1,5 @@
+- name: TCCMS
+  rule:
+  - regexps:
+      body:
+      - Power By TCCMS

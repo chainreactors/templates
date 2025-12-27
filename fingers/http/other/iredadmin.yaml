@@ -1,0 +1,7 @@
+- name: iredadmin
+  rule:
+  - regexps:
+      body:
+      - iredadmin
+      header:
+      - iredadmin

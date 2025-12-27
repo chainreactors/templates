@@ -1,0 +1,6 @@
+- name: xfinity
+  rule:
+  - regexps:
+      body:
+      - Xfinity
+      - /reset-meyer-1.0.min.css

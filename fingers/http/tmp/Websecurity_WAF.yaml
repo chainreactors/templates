@@ -1,0 +1,6 @@
+- name: Websecurity_WAF
+  rule:
+  - regexps:
+      header:
+      - Websecurity
+      - WAF 1.0

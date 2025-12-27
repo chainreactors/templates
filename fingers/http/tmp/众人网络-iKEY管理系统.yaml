@@ -1,0 +1,5 @@
+- name: 众人网络-iKEY管理系统
+  rule:
+  - regexps:
+      body:
+      - iKEY管理系统

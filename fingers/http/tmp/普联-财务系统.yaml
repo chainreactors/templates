@@ -1,0 +1,5 @@
+- name: 普联-财务系统
+  rule:
+  - regexps:
+      body:
+      - All Rights Reserved. 普联(软件|中国) 版权所有

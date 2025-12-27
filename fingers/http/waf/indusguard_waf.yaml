@@ -1,0 +1,6 @@
+- name: indusguard_waf
+  rule:
+  - regexps:
+      body:
+      - IndusGuard WAF
+      - wafportal/wafportal.nocache.js

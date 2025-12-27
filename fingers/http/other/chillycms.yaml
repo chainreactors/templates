@@ -1,0 +1,5 @@
+- name: chillycms
+  rule:
+  - regexps:
+      body:
+      - FrozenPepper.de

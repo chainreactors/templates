@@ -1,0 +1,5 @@
+- name: UCMS
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: UCMS'

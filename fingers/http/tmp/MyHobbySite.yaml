@@ -1,0 +1,5 @@
+- name: MyHobbySite
+  rule:
+  - regexps:
+      body:
+      - Powered by MyHobbySite

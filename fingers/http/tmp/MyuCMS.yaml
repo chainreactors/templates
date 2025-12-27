@@ -1,0 +1,5 @@
+- name: MyuCMS
+  rule:
+  - regexps:
+      body:
+      - MYUCMS

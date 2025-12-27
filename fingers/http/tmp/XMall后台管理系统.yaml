@@ -1,0 +1,6 @@
+- name: XMall后台管理系统
+  rule:
+  - regexps:
+      body:
+      - <span class="title">后台管理系统</span>
+      - Hotjar Tracking Code for http://xmadmin.exirck.cn

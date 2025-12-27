@@ -1,0 +1,6 @@
+- name: V2视频会议
+  rule:
+  - regexps:
+      body:
+      - V2 Conference
+      - ../conference/currentConfAction.do?flag=mastermain&page=

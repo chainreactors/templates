@@ -1,0 +1,5 @@
+- name: 安博通应用网关
+  rule:
+  - regexps:
+      body:
+      - 安博通应用网关

@@ -1,0 +1,6 @@
+- name: jCore
+  rule:
+  - regexps:
+      body:
+      - JCORE_VERSION
+      - JCORE_SECURITY_TOKEN

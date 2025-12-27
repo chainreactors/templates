@@ -1,0 +1,5 @@
+- name: Almnzm
+  rule:
+  - regexps:
+      body:
+      - Powered by Almnzm

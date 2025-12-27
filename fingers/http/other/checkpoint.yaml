@@ -1,0 +1,5 @@
+- name: checkpoint
+  rule:
+  - favicon:
+      mmh3:
+      - '794809961'

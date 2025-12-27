@@ -1,0 +1,5 @@
+- name: hotaru-cms
+  rule:
+  - regexps:
+      body:
+      - content="Hotaru

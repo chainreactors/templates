@@ -1,0 +1,5 @@
+- name: Raritan-Remote-Client
+  rule:
+  - regexps:
+      body:
+      - Multi-Platform Client

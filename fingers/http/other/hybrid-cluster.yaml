@@ -1,0 +1,5 @@
+- name: hybrid-cluster
+  rule:
+  - regexps:
+      header:
+      - Hybrid Cluster

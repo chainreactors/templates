@@ -1,0 +1,5 @@
+- name: 启迪国信uem
+  rule:
+  - regexps:
+      body:
+      - <span class="remember-pw" data-i18n="op.rmbAccount">

@@ -1,0 +1,5 @@
+- name: easypanel
+  rule:
+  - regexps:
+      body:
+      - /vhost/view/default/style/login.css

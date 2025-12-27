@@ -1,0 +1,5 @@
+- name: hynetos-httpd
+  rule:
+  - regexps:
+      header:
+      - HyNetOS

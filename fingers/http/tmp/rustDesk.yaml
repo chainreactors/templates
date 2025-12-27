@@ -1,0 +1,6 @@
+- name: rustDesk
+  link: http://pop.jianhaitech.com:9000/#/
+  rule:
+  - regexps:
+      body:
+      - rs-cn.rustDesk.com

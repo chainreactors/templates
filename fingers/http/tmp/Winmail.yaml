@@ -1,0 +1,6 @@
+- name: Winmail
+  link: http://caibian.cmed.org.cn:6080/
+  rule:
+  - regexps:
+      body:
+      - winmail mail server

@@ -1,0 +1,5 @@
+- name: silverstripe
+  rule:
+  - regexps:
+      body:
+      - content="SilverStripe

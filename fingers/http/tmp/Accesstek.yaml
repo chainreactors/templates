@@ -1,0 +1,5 @@
+- name: Accesstek
+  rule:
+  - regexps:
+      body:
+      - Accesstek (Pvt.) Ltd

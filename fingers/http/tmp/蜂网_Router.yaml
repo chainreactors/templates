@@ -1,0 +1,6 @@
+- name: 蜂网 Router
+  link: http://183.95.104.136:9997/
+  rule:
+  - regexps:
+      body:
+      - 企业级流控云路由器

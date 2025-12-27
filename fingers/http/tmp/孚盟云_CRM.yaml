@@ -1,0 +1,6 @@
+- name: 孚盟云 CRM
+  link: null
+  rule:
+  - favicon:
+      mmh3:
+      - '1533124028'

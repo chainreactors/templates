@@ -1,0 +1,5 @@
+- name: 迈普-VPN3005
+  rule:
+  - regexps:
+      body:
+      - 'WWW-Authenticate: Basic realm="MPSec VPN3005C-104"'

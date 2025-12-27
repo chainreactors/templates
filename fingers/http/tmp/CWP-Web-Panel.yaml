@@ -1,0 +1,6 @@
+- name: CWP-Web-Panel
+  link: https://cpanel.creatoweb.com/
+  rule:
+  - regexps:
+      body:
+      - /login/cwp_theme/original/img/ico/favicon.ico

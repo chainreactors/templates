@@ -1,0 +1,8 @@
+- name: matomo
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - Matomo
+      header:
+      - MATOMO_SESSID

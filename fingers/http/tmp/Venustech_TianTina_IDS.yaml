@@ -1,0 +1,8 @@
+- name: Venustech TianTina IDS
+  rule:
+  - regexps:
+      body:
+      - cybersensor
+      - <div class="login_name">天阗入侵检测与管理系统v7.0</div>
+      header:
+      - vsappsrv1

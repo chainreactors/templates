@@ -1,0 +1,5 @@
+- name: Newscoop
+  rule:
+  - regexps:
+      body:
+      - content="Newscoop - The open content management system for professional journalists."

@@ -1,0 +1,6 @@
+- name: emeeting-online-dating-software
+  rule:
+  - regexps:
+      body:
+      - eMeeting Dating Software
+      - /_eMeetingGlobals.js

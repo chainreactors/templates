@@ -1,0 +1,5 @@
+- name: smartermail
+  rule:
+  - favicon:
+      mmh3:
+      - '-1935525788'

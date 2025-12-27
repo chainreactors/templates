@@ -1,0 +1,5 @@
+- name: opensuse
+  rule:
+  - regexps:
+      header:
+      - openSUSE

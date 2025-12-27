@@ -1,0 +1,11 @@
+- name: sscms
+  rule:
+  - regexps:
+      body:
+      - SS CMS
+      - /sitefiles/assets
+    favicon:
+      md5:
+      - e1610130e53ed05eb2f242c76bd93724
+      mmh3:
+      - '-773012525'

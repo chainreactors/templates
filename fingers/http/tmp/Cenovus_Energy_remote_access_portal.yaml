@@ -1,0 +1,6 @@
+- name: Cenovus_Energy remote access portal
+  rule:
+  - regexps:
+      body:
+      - Welcome to Cenovus
+      - remote access portal

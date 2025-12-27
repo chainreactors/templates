@@ -1,0 +1,5 @@
+- name: linksys smart wi-fi
+  rule:
+  - favicon:
+      mmh3:
+      - '-2063036701'

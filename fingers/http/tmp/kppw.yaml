@@ -1,0 +1,6 @@
+- name: kppw
+  rule:
+  - regexps:
+      body:
+      - powered by kppw
+      - http://www.kppw.cn/

@@ -1,0 +1,5 @@
+- name: mautic
+  rule:
+  - favicon:
+      mmh3:
+      - '1273982002'

@@ -1,0 +1,7 @@
+- name: ibm-bladecenter
+  rule:
+  - regexps:
+      body:
+      - /shared/ibmbch.png
+      - /shared/ibmbcs.png
+      - alt="IBM BladeCenter

@@ -1,0 +1,5 @@
+- name: sentry
+  rule:
+  - favicon:
+      mmh3:
+      - '2063428236'

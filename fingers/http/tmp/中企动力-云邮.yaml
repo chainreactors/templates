@@ -1,0 +1,5 @@
+- name: 中企动力-云邮
+  rule:
+  - regexps:
+      body:
+      - 中企动力企业邮箱

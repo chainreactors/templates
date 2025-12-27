@@ -1,0 +1,6 @@
+- name: 凤凰办公OA
+  rule:
+  - regexps:
+      body:
+      - 凤凰办公OA
+      - gb_2image/OAdenglu_bg.png

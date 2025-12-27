@@ -1,0 +1,5 @@
+- name: Safe3WAF
+  rule:
+  - regexps:
+      header:
+      - 'Server: Safe3 Web Firewall'

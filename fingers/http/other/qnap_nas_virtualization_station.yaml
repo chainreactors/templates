@@ -1,0 +1,5 @@
+- name: qnap nas virtualization station
+  rule:
+  - favicon:
+      mmh3:
+      - '-1041180225'

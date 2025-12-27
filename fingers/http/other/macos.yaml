@@ -1,0 +1,8 @@
+- name: macos
+  rule:
+  - regexps:
+      header:
+      - MacOS
+    favicon:
+      mmh3:
+      - '1629518721'

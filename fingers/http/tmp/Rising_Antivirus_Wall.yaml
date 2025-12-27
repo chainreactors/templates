@@ -1,0 +1,5 @@
+- name: Rising Antivirus Wall
+  rule:
+  - regexps:
+      body:
+      - 瑞星防毒墙

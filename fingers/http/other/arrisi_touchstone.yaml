@@ -1,0 +1,6 @@
+- name: arrisi_touchstone
+  rule:
+  - regexps:
+      body:
+      - Touchstone Status
+      - passWithWarnings

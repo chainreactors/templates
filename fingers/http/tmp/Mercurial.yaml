@@ -1,0 +1,6 @@
+- name: Mercurial
+  rule:
+  - regexps:
+      body:
+      - Mercurial
+      - src="/static/mercurial.js"

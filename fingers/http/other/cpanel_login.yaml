@@ -1,0 +1,5 @@
+- name: cpanel login
+  rule:
+  - favicon:
+      mmh3:
+      - '1544230796'

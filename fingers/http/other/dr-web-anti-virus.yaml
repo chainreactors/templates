@@ -1,0 +1,7 @@
+- name: dr-web-anti-virus
+  rule:
+  - regexps:
+      body:
+      - /avdesk/includes/system/templates/images/logo_en.png
+      header:
+      - DRWEB_PERSONAL_OFFICE=

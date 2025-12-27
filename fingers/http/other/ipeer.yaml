@@ -1,0 +1,9 @@
+- name: ipeer
+  rule:
+  - regexps:
+      body:
+      - Powered by iPeer
+      - /js/ipeer.js
+      - /css/ipeer.css
+      header:
+      - IPEER=

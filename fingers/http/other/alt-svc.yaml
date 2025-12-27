@@ -1,0 +1,5 @@
+- name: alt-svc
+  rule:
+  - regexps:
+      header:
+      - Alt-Svc

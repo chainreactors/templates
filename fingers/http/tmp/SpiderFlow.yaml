@@ -1,0 +1,6 @@
+- name: SpiderFlow
+  link: http://171.221.57.238:8088/
+  rule:
+  - regexps:
+      body:
+      - SpiderFlow

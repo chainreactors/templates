@@ -1,0 +1,6 @@
+- name: 用友TurboCRM
+  rule:
+  - regexps:
+      body:
+      - 用友TurboCRM
+      - /js/turboui.js"></script>

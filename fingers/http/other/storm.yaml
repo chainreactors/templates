@@ -1,0 +1,6 @@
+- name: storm
+  rule:
+  - regexps:
+      body:
+      - Storm UI
+      - stormtimestr

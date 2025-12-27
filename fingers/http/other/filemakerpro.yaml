@@ -1,0 +1,5 @@
+- name: filemakerpro
+  rule:
+  - regexps:
+      header:
+      - FileMakerPro

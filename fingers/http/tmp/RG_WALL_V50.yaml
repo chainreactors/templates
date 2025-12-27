@@ -1,0 +1,5 @@
+- name: RG WALL V50
+  rule:
+  - regexps:
+      body:
+      - rg-wall-v50

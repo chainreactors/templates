@@ -1,0 +1,7 @@
+- name: zblog
+  rule:
+  - regexps:
+      header:
+      - zb_user
+      body:
+      - Z-Blog

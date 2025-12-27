@@ -1,0 +1,5 @@
+- name: Firestorm
+  rule:
+  - regexps:
+      body:
+      - Firestorm Apps

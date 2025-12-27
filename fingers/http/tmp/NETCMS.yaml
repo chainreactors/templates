@@ -1,0 +1,5 @@
+- name: NETCMS
+  rule:
+  - regexps:
+      body:
+      - <!--Created by NETCMS

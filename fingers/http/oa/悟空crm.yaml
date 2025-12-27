@@ -1,0 +1,6 @@
+- name: 悟空crm
+  rule:
+  - regexps:
+      body:
+      - 悟空CRM
+      - /Public/js/5kcrm.js

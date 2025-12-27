@@ -1,0 +1,6 @@
+- name: schneider_quantum_140noe77101
+  rule:
+  - regexps:
+      body:
+      - indexLanguage
+      - html/config.js

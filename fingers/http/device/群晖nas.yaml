@@ -1,0 +1,5 @@
+- name: 群晖nas
+  rule:
+  - regexps:
+      body:
+      - DiskStation

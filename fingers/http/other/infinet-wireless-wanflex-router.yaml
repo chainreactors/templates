@@ -1,0 +1,7 @@
+- name: infinet-wireless-wanflex-router
+  rule:
+  - regexps:
+      body:
+      - content="InfiNet
+      header:
+      - WANFlex HTTP Daemon

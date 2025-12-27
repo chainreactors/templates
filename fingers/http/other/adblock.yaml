@@ -1,0 +1,5 @@
+- name: adblock
+  rule:
+  - regexps:
+      header:
+      - X-Adblock-Key

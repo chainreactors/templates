@@ -1,0 +1,5 @@
+- name: shoutcast
+  rule:
+  - regexps:
+      body:
+      - SHOUTcast Administrator

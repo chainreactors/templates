@@ -1,0 +1,5 @@
+- name: simplecartjs
+  rule:
+  - regexps:
+      body:
+      - simplecart.min.js

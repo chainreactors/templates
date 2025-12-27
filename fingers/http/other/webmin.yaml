@@ -1,0 +1,5 @@
+- name: webmin
+  rule:
+  - favicon:
+      mmh3:
+      - '-1038557304'

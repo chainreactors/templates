@@ -1,0 +1,5 @@
+- name: contentxxl
+  rule:
+  - regexps:
+      body:
+      - content="contentXXL

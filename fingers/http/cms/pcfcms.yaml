@@ -1,0 +1,10 @@
+- name: pcfcms
+  rule:
+  - regexps:
+      header:
+      - pcfcms
+    favicon:
+      md5:
+      - 0efb381ef98f4cb8443c0b8ecdfad874
+      mmh3:
+      - '1355901755'

@@ -1,0 +1,5 @@
+- name: 合力泰 BPM系统
+  rule:
+  - regexps:
+      body:
+      - 合力泰BPM系统

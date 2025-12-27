@@ -1,0 +1,6 @@
+- name: 八桂彩云
+  rule:
+  - regexps:
+      body:
+      - 八桂彩云
+      - content="八桂彩云，八桂彩云管理平台"

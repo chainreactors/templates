@@ -1,0 +1,6 @@
+- name: 78oa
+  rule:
+  - regexps:
+      body:
+      - license.78oa.com
+      - 78oa

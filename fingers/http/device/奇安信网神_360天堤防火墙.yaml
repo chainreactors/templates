@@ -1,0 +1,5 @@
+- name: 奇安信网神/360天堤防火墙
+  rule:
+  - regexps:
+      body:
+      - resources/image/logo_header.png

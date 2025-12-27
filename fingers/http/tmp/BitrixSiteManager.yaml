@@ -1,0 +1,8 @@
+- name: BitrixSiteManager
+  rule:
+  - regexps:
+      body:
+      - www.bitrix24.com
+      header:
+      - X-Powered-Cms
+      - Bitrix Site Manager

@@ -1,0 +1,7 @@
+- name: dvwa
+  rule:
+  - regexps:
+      body:
+      - Damn Vulnerable Web App (DVWA) - Login
+      - dvwa/css/login.css
+      - dvwa/images/login_logo.png

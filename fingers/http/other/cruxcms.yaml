@@ -1,0 +1,6 @@
+- name: cruxcms
+  rule:
+  - regexps:
+      body:
+      - Created by CruxCMS
+      - title="CruxCMS" class="blank

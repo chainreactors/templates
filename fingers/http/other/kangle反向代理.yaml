@@ -1,0 +1,7 @@
+- name: kangle反向代理
+  rule:
+  - regexps:
+      body:
+      - welcome use kangle
+      header:
+      - kangle

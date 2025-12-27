@@ -1,0 +1,5 @@
+- name: 科达-磁盘阵列
+  rule:
+  - regexps:
+      body:
+      - 磁盘阵列管理系统

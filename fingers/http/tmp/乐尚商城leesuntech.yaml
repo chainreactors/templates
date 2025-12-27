@@ -1,0 +1,5 @@
+- name: 乐尚商城leesuntech
+  rule:
+  - regexps:
+      body:
+      - <meta name="copyright" content="leesuntech.com" />

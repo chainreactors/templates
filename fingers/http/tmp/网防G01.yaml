@@ -1,0 +1,6 @@
+- name: 网防G01
+  rule:
+  - regexps:
+      body:
+      - 网防G01提示
+      - 设置拦截

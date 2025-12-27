@@ -1,0 +1,5 @@
+- name: canon-printer
+  rule:
+  - regexps:
+      header:
+      - Canon Http Server

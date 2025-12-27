@@ -1,0 +1,5 @@
+- name: 慧眼数据库审计系统
+  rule:
+  - regexps:
+      body:
+      - 慧眼数据库审计系统

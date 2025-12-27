@@ -1,0 +1,7 @@
+- name: 加速乐CDN
+  rule:
+  - regexps:
+      header:
+      - jiasule
+      body:
+      - notice-jiasule

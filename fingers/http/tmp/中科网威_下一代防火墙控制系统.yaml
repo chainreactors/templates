@@ -1,0 +1,6 @@
+- name: 中科网威 下一代防火墙控制系统
+  rule:
+  - regexps:
+      body:
+      - <a href='dkey_activex_download.php
+      - margin:-217px 0 0 -288px

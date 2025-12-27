@@ -1,0 +1,5 @@
+- name: EQManager邮件网关
+  rule:
+  - regexps:
+      body:
+      - smtp server(EQManager

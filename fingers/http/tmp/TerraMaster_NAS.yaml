@@ -1,0 +1,5 @@
+- name: TerraMaster NAS
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: TerraMaster'

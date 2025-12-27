@@ -1,0 +1,5 @@
+- name: 3dcart
+  rule:
+  - regexps:
+      body:
+      - 3dcart stats

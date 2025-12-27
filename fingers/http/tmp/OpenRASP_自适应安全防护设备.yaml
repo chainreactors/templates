@@ -1,0 +1,5 @@
+- name: OpenRASP 自适应安全防护设备
+  rule:
+  - regexps:
+      body:
+      - OpenRASP

@@ -1,0 +1,5 @@
+- name: x-72e-nobeian-transfer
+  rule:
+  - regexps:
+      header:
+      - X-72e-Nobeian-Transfer

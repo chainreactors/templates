@@ -1,0 +1,5 @@
+- name: 技腾 应用安全网关
+  rule:
+  - regexps:
+      body:
+      - /webui/images/basic/login/main_logo.gif

@@ -1,0 +1,5 @@
+- name: openfire admin console
+  rule:
+  - favicon:
+      mmh3:
+      - '1211608009'

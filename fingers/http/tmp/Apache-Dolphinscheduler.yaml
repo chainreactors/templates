@@ -1,0 +1,6 @@
+- name: Apache-Dolphinscheduler
+  link: http://www.hbase-01.dev.scbdlbs.com:18026/view/login/index.html
+  rule:
+  - regexps:
+      body:
+      - <title>dolphinscheduler

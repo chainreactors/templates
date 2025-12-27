@@ -1,0 +1,5 @@
+- name: yuysoft 育友通用 数字化校园平台
+  rule:
+  - regexps:
+      body:
+      - 杭州育友软件有限公司

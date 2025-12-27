@@ -1,0 +1,5 @@
+- name: Pligg cms
+  rule:
+  - regexps:
+      body:
+      - content="Pligg moded by EuropNet"

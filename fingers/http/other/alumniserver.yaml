@@ -1,0 +1,6 @@
+- name: alumniserver
+  rule:
+  - regexps:
+      body:
+      - AlumniServerProject.php
+      - content="Alumni

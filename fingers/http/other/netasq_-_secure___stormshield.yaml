@@ -1,0 +1,5 @@
+- name: netasq - secure / stormshield
+  rule:
+  - favicon:
+      mmh3:
+      - '-1929912510'

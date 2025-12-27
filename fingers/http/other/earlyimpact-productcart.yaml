@@ -1,0 +1,5 @@
+- name: earlyimpact-productcart
+  rule:
+  - regexps:
+      body:
+      - fpassword.asp?redirectUrl=&frURL=Custva.asp

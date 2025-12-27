@@ -1,0 +1,5 @@
+- name: wdlinux
+  rule:
+  - regexps:
+      body:
+      - wdOS

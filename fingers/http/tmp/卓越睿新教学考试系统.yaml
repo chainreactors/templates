@@ -1,0 +1,6 @@
+- name: 卓越睿新教学考试系统
+  rule:
+  - regexps:
+      body:
+      - 课程中心
+      - MM_goToURL('parent','/Portal/CC#index');return document.MM_returnValue

@@ -1,0 +1,5 @@
+- name: WisePower OA
+  rule:
+  - regexps:
+      body:
+      - href="/WisePower/resource/styles/wiseapp.css"

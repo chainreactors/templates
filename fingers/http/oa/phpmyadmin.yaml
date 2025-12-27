@@ -1,0 +1,14 @@
+- name: phpmyadmin
+  rule:
+  - regexps:
+      header:
+      - pma_lang
+      - phpMyAdmin
+      body:
+      - /themes/pmahomme/img/logo_right.png
+    favicon:
+      md5:
+      - 531b63a51234bb06c9d77f219eb25553
+      mmh3:
+      - '-1010568750'
+      - '-476231906'

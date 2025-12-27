@@ -1,0 +1,6 @@
+- name: 宇视云眼
+  rule:
+  - regexps:
+      body:
+      - 宇视云眼下载页
+      - class="glyphicon glyphicon-eye-open

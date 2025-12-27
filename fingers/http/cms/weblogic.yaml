@@ -1,0 +1,11 @@
+- name: weblogic
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - login_WebLogic_branding.png
+      - Branding_Login_WeblogicConsole.gif
+      - <i>Hypertext Transfer Protocol -- HTTP/1.1</i>
+      header:
+      - WebLogic
+      - ADMINCONSOLESESSION

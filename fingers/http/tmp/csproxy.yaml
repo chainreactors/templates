@@ -1,0 +1,5 @@
+- name: csproxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: csproxy'

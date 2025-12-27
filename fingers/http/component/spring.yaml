@@ -1,0 +1,6 @@
+- name: spring
+  focus: true
+  rule:
+  - regexps:
+      header:
+      - springframework

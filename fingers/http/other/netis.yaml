@@ -1,0 +1,5 @@
+- name: netis
+  rule:
+  - favicon:
+      mmh3:
+      - '-594256627'

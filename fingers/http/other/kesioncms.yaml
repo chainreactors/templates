@@ -1,0 +1,6 @@
+- name: kesioncms
+  rule:
+  - regexps:
+      body:
+      - /ks_inc/common.js
+      - publish by KesionCMS

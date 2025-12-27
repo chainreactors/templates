@@ -1,0 +1,5 @@
+- name: webtrust_cert
+  rule:
+  - regexps:
+      body:
+      - https://cert.webtrust.org/ViewSeal

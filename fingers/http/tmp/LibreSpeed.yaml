@@ -1,0 +1,6 @@
+- name: LibreSpeed
+  link: http://sel-speedtest.aoyoyun.com/
+  rule:
+  - regexps:
+      body:
+      - LibreSpeed

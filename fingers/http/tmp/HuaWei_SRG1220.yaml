@@ -1,0 +1,7 @@
+- name: HuaWei SRG1220
+  rule:
+  - regexps:
+      body:
+      - srg1220
+      header:
+      - huawei srg1220

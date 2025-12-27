@@ -1,0 +1,8 @@
+- name: 协众oa
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - Powered by 协众OA
+      header:
+      - CNOAOASESSID

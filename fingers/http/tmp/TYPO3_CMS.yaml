@@ -1,0 +1,5 @@
+- name: TYPO3 CMS
+  rule:
+  - regexps:
+      header:
+      - fe_typo_user

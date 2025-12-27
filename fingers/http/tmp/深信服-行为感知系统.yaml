@@ -1,0 +1,6 @@
+- name: 深信服-行为感知系统
+  link: https://jenkins.ws.viomi.eu.org:4433/ui/login.php
+  rule:
+  - regexps:
+      body:
+      - home/mod-login/nopro-login/index

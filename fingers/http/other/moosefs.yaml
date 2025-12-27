@@ -1,0 +1,6 @@
+- name: moosefs
+  rule:
+  - regexps:
+      body:
+      - mfs.cgi
+      - under-goal files

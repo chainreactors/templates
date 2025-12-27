@@ -1,0 +1,5 @@
+- name: we7
+  rule:
+  - regexps:
+      body:
+      - /Widgets/WidgetCollection/

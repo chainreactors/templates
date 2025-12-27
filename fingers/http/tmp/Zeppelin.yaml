@@ -1,0 +1,5 @@
+- name: Zeppelin
+  rule:
+  - regexps:
+      body:
+      - Zeppelin

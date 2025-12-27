@@ -1,0 +1,5 @@
+- name: Indico
+  rule:
+  - regexps:
+      body:
+      - <title>Indico

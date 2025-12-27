@@ -1,0 +1,6 @@
+- name: AJ HYIP
+  rule:
+  - regexps:
+      body:
+      - ajhyip.com
+      - content="AJ HYIP"

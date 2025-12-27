@@ -1,0 +1,9 @@
+- name: Fortinet Fortigate SSL VPN
+  rule:
+  - favicon:
+      mmh3:
+      - '945408572'
+    regexps:
+      body:
+      - location="/remote/login"
+      - /remote/login?lang=

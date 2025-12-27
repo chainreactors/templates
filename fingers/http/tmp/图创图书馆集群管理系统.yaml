@@ -1,0 +1,6 @@
+- name: 图创图书馆集群管理系统
+  link: http://www.alstsg.com:8889/interlib/common/
+  rule:
+  - regexps:
+      body:
+      - interlib/common/

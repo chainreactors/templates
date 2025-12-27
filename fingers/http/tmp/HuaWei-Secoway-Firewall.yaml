@@ -1,0 +1,5 @@
+- name: HuaWei-Secoway-Firewall
+  rule:
+  - regexps:
+      header:
+      - secoway

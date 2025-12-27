@@ -1,0 +1,5 @@
+- name: magento
+  rule:
+  - favicon:
+      mmh3:
+      - '-38580010'

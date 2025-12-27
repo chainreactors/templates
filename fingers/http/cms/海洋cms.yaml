@@ -1,0 +1,5 @@
+- name: 海洋cms
+  rule:
+  - regexps:
+      body:
+      - seacms

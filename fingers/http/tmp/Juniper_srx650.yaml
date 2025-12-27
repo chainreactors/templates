@@ -1,0 +1,8 @@
+- name: Juniper srx650
+  rule:
+  - regexps:
+      body:
+      - srx650
+      - class="jweb-title uppercase"> - srx650
+      header:
+      - embedthis-appweb

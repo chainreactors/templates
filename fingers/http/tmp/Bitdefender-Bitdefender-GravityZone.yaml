@@ -1,0 +1,5 @@
+- name: Bitdefender-Bitdefender-GravityZone
+  rule:
+  - regexps:
+      body:
+      - Bitdefender GravityZone

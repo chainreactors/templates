@@ -1,0 +1,6 @@
+- name: edirectory
+  rule:
+  - regexps:
+      body:
+      - target="_blank">eDirectory&trade
+      - Powered by <a href="http://www.edirectory.com

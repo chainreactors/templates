@@ -1,0 +1,5 @@
+- name: xyhcms
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: XYHCMS'

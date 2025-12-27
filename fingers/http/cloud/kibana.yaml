@@ -1,0 +1,18 @@
+- name: kibana
+  focus: true
+  default_port:
+  - '5601'
+  rule:
+  - regexps:
+      body:
+      - Kibana
+      - <title>Elastic
+      header:
+      - kbn-name
+    favicon:
+      mmh3:
+      - '75230260'
+      - '1668183286'
+      - '-267431135'
+      - '-759754862'
+      - '-1200737715'

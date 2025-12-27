@@ -1,0 +1,9 @@
+- name: 投资堂 综合管理平台
+  rule:
+  - favicon:
+      mmh3:
+      - '-575047503'
+    regexps:
+      body:
+      - service_sysmanage.js
+      - tzt-icon.css

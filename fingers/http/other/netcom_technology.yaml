@@ -1,0 +1,5 @@
+- name: netcom technology
+  rule:
+  - favicon:
+      mmh3:
+      - '5471989'

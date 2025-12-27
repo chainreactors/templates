@@ -1,0 +1,5 @@
+- name: jeeplus
+  rule:
+  - regexps:
+      header:
+      - jeeplus.session

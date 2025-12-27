@@ -1,0 +1,5 @@
+- name: LINK CMS
+  rule:
+  - regexps:
+      body:
+      - LINK CMS

@@ -1,0 +1,6 @@
+- name: easethink 易想团购管理系统
+  rule:
+  - regexps:
+      body:
+      - easethink
+      - 易想团购管理系统

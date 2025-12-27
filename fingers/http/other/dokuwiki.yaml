@@ -1,0 +1,10 @@
+- name: dokuwiki
+  rule:
+  - regexps:
+      body:
+      - powered by DokuWiki
+      - content="DokuWiki
+      - <div id="dokuwiki
+    favicon:
+      mmh3:
+      - '-630493013'

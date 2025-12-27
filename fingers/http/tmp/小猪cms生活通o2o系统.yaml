@@ -1,0 +1,6 @@
+- name: 小猪cms生活通o2o系统
+  rule:
+  - regexps:
+      body:
+      - 小猪cms生活通o2o系统
+      - 小猪cms生活通o2o系统

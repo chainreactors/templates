@@ -1,0 +1,6 @@
+- name: HP ArcSight
+  rule:
+  - regexps:
+      body:
+      - arcsight
+      - window.location.replace("/arcsight/")

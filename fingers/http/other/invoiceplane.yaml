@@ -1,0 +1,7 @@
+- name: invoiceplane
+  rule:
+  - regexps:
+      body:
+      - InvoicePlane
+      header:
+      - ci_session

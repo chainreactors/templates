@@ -1,0 +1,5 @@
+- name: ThinVnc
+  rule:
+  - regexps:
+      body:
+      - rel="ThinVnc"

@@ -1,0 +1,6 @@
+- name: 普元coframe
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - coframe

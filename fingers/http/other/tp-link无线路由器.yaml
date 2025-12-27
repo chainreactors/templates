@@ -1,0 +1,5 @@
+- name: tp-link无线路由器
+  rule:
+  - regexps:
+      header:
+      - TP-LINK

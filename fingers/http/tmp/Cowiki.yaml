@@ -1,0 +1,5 @@
+- name: Cowiki
+  rule:
+  - regexps:
+      body:
+      - Cowiki

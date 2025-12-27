@@ -1,0 +1,5 @@
+- name: 无忧购物系统ASP通用版
+  rule:
+  - regexps:
+      body:
+      - <a href="buy.asp">购物车</a>

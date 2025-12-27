@@ -1,0 +1,6 @@
+- name: pageadmin
+  rule:
+  - regexps:
+      body:
+      - content="PageAdmin CMS"
+      - /e/images/favicon.ico

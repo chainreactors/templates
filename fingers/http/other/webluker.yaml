@@ -1,0 +1,5 @@
+- name: webluker
+  rule:
+  - regexps:
+      header:
+      - Webluker-Edge

@@ -1,0 +1,5 @@
+- name: zzzcms
+  rule:
+  - regexps:
+      body:
+      - zzzcms

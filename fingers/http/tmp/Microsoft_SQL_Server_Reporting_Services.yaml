@@ -1,0 +1,7 @@
+- name: Microsoft SQL Server Reporting Services
+  rule:
+  - regexps:
+      body:
+      - Reportserver/Pages/ReportViewer.aspx
+      header:
+      - ReportServer/Pages/ReportViewer.aspx

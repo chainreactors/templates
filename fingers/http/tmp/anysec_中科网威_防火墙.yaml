@@ -1,0 +1,5 @@
+- name: anysec 中科网威 防火墙
+  rule:
+  - regexps:
+      body:
+      - Anysec Login

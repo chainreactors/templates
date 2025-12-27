@@ -1,0 +1,5 @@
+- name: 力维-数字化校园系统
+  rule:
+  - regexps:
+      body:
+      - http://www.wzssxx.com/schoolweb

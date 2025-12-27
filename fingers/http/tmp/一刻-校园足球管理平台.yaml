@@ -1,0 +1,5 @@
+- name: 一刻-校园足球管理平台
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: CGISESSID='

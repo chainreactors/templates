@@ -1,0 +1,7 @@
+- name: minio
+  rule:
+  - regexps:
+      body:
+      - MinIO
+      header:
+      - minio

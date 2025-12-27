@@ -1,0 +1,7 @@
+- name: fisheye
+  rule:
+  - regexps:
+      body:
+      - fisheye-16.ico
+      header:
+      - 'Set-Cookie: FESESSIONID'

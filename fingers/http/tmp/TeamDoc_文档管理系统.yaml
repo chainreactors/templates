@@ -1,0 +1,6 @@
+- name: TeamDoc 文档管理系统
+  rule:
+  - regexps:
+      body:
+      - id="table_01"
+      - TeamDoc 文档管理系统

@@ -1,0 +1,5 @@
+- name: HP-Network-Automation
+  rule:
+  - regexps:
+      body:
+      - HP-Network-Automation

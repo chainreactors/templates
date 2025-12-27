@@ -1,0 +1,5 @@
+- name: ibm-cics-transaction-server
+  rule:
+  - regexps:
+      header:
+      - IBM_CICS_Transaction_Server

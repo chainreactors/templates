@@ -1,0 +1,5 @@
+- name: joomla-facebook
+  rule:
+  - regexps:
+      header:
+      - jfbconnect_permissions_granted

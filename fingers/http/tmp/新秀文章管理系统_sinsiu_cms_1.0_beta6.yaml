@@ -1,0 +1,5 @@
+- name: 新秀文章管理系统 sinsiu cms 1.0 beta6
+  rule:
+  - regexps:
+      body:
+      - <title>新秀文章管理系统 sinsiu cms 1.0 beta6</title>

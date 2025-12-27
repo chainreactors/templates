@@ -1,0 +1,6 @@
+- name: 中创应用服务器
+  link: https://103.3.152.222:8060/
+  rule:
+  - regexps:
+      body:
+      - InforSuite AS

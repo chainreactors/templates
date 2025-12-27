@@ -1,0 +1,6 @@
+- name: 阿里云cdn
+  rule:
+  - regexps:
+      cert:
+      - alicdn.com
+      - tbcdn.cn

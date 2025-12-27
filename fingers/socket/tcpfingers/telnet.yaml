@@ -1,0 +1,6 @@
+- name: telnet
+  protocol: tcp
+  rule:
+  - regexps:
+      regexp:
+      - ^\xff[\xfa-\xff][\x01-\x03]\xff[\xfa-\xff]

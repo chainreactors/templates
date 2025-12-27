@@ -1,0 +1,5 @@
+- name: amr-wincontrol
+  rule:
+  - regexps:
+      header:
+      - AMR_WinControl

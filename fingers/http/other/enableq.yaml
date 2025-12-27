@@ -1,0 +1,5 @@
+- name: enableq
+  rule:
+  - regexps:
+      body:
+      - /enableq.css

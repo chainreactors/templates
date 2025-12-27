@@ -1,0 +1,5 @@
+- name: Glaway MOM制造运营管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>Glaway MOM制造运营管理系统

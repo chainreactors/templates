@@ -1,0 +1,5 @@
+- name: binatone wr1500n
+  rule:
+  - regexps:
+      header:
+      - WR1500N

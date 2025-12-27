@@ -1,0 +1,6 @@
+- name: jeesite
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - jeesite.min.css

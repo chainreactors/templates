@@ -1,0 +1,5 @@
+- name: form.io
+  rule:
+  - favicon:
+      mmh3:
+      - '1319699698'

@@ -1,0 +1,5 @@
+- name: 异速联
+  rule:
+  - regexps:
+      header:
+      - 'Server: Gnway Web Server'

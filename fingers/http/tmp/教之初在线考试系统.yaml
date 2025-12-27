@@ -1,0 +1,5 @@
+- name: 教之初在线考试系统
+  rule:
+  - regexps:
+      body:
+      - JiaoZhiChu

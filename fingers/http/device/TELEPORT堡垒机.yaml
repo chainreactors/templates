@@ -1,0 +1,6 @@
+- name: TELEPORT堡垒机
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - blur/background-blur.js

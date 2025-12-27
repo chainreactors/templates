@@ -1,0 +1,5 @@
+- name: tilginab
+  rule:
+  - favicon:
+      mmh3:
+      - '-1346447358'

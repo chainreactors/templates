@@ -1,0 +1,5 @@
+- name: Wallarm-WAF
+  rule:
+  - regexps:
+      header:
+      - 'Server: nginx-wallarm'

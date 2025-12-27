@@ -1,0 +1,5 @@
+- name: sogou站长平台
+  rule:
+  - regexps:
+      body:
+      - sogou_site_verification

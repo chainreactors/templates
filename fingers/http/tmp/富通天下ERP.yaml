@@ -1,0 +1,5 @@
+- name: 富通天下ERP
+  rule:
+  - regexps:
+      body:
+      - 用户登录_富通天下外贸ERP

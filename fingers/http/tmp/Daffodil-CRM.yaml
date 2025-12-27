@@ -1,0 +1,6 @@
+- name: Daffodil-CRM
+  rule:
+  - regexps:
+      body:
+      - Design & Development by Daffodil Software Ltd
+      - href="http://vus.daffodilvarsity.edu.bd/?app=result_show">Academic Results

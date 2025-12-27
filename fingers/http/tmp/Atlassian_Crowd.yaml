@@ -1,0 +1,5 @@
+- name: Atlassian Crowd
+  rule:
+  - regexps:
+      body:
+      - Atlassian Crowd

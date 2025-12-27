@@ -1,0 +1,5 @@
+- name: 北京清科锐华cemis
+  rule:
+  - regexps:
+      body:
+      - /theme/2009/image

@@ -1,0 +1,10 @@
+- name: IDocView
+  rule:
+  - favicon:
+      mmh3:
+      - '489934076'
+    regexps:
+      body:
+      - 在线文档预览 - I Doc View
+      - I Doc View
+      - idocview

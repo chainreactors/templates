@@ -1,0 +1,5 @@
+- name: 快普 M6
+  rule:
+  - regexps:
+      body:
+      - src="resource/javascript/jkpm6.datetime.js

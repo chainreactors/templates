@@ -1,0 +1,6 @@
+- name: jcms(捷点)
+  rule:
+  - regexps:
+      body:
+      - JCms
+      - cnvp.com.cn

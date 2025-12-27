@@ -1,0 +1,5 @@
+- name: F_Secure-Anti-Virus
+  rule:
+  - regexps:
+      body:
+      - F-Secure Anti-Virus for Internet Mail

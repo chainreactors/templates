@@ -1,0 +1,5 @@
+- name: o2ocms
+  rule:
+  - regexps:
+      body:
+      - /index.php/clasify/showone/gtitle/

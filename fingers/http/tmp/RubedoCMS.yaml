@@ -1,0 +1,6 @@
+- name: RubedoCMS
+  rule:
+  - regexps:
+      body:
+      - ng-attr-lang="{{rubedo.current.page.locale}
+      - '{rubedo.current.page.title}'

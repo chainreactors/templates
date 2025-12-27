@@ -1,0 +1,6 @@
+- name: alstrasoft-epay-enterprise
+  rule:
+  - regexps:
+      body:
+      - EPay Enterprise
+      - /shop.htm?action=view

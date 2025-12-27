@@ -1,0 +1,5 @@
+- name: EleanorCMS
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-Cms: Eleanor CMS'

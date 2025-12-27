@@ -1,0 +1,5 @@
+- name: 中企动力-Zshop业务支撑系统
+  rule:
+  - regexps:
+      body:
+      - Zshop业务支撑系统

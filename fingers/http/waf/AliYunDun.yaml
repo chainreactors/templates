@@ -1,0 +1,5 @@
+- name: AliYunDun
+  rule:
+  - regexps:
+      body:
+      - errors.aliyun.com

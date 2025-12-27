@@ -1,0 +1,5 @@
+- name: akamai
+  rule:
+  - regexps:
+      header:
+      - X-Akamai-Transformed

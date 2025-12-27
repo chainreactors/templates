@@ -1,0 +1,5 @@
+- name: Newdefend-WAF
+  rule:
+  - regexps:
+      header:
+      - 'Server: NewDefend'

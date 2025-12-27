@@ -1,0 +1,5 @@
+- name: teltonika
+  rule:
+  - favicon:
+      mmh3:
+      - '-1612496354'

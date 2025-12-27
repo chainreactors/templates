@@ -1,0 +1,5 @@
+- name: ZYCH自由策划网站管理系统
+  rule:
+  - regexps:
+      body:
+      - ZYCH自由策划网站管理系统

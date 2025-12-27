@@ -1,0 +1,5 @@
+- name: smc wbr14s-n5
+  rule:
+  - regexps:
+      header:
+      - SMCWBR14S-N5

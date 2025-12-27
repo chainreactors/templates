@@ -1,0 +1,5 @@
+- name: 金万维 异速联
+  rule:
+  - regexps:
+      body:
+      - action="/GNRemote.dll

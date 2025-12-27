@@ -1,0 +1,5 @@
+- name: 阿里巴巴 EagleEye
+  rule:
+  - regexps:
+      body:
+      - EagleEye

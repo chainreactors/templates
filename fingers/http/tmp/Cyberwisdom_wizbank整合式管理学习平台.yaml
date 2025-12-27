@@ -1,0 +1,5 @@
+- name: Cyberwisdom wizbank整合式管理学习平台
+  rule:
+  - regexps:
+      body:
+      - wizbank

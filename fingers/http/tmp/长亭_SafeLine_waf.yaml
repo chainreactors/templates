@@ -1,0 +1,5 @@
+- name: 长亭 SafeLine waf
+  rule:
+  - regexps:
+      body:
+      - SafeLine

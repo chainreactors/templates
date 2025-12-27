@@ -1,0 +1,6 @@
+- name: PrestaShop
+  rule:
+  - regexps:
+      body:
+      - content="PrestaShop"
+      - 'Powered-By: PrestaShop'

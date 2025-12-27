@@ -1,0 +1,5 @@
+- name: bamboo
+  rule:
+  - favicon:
+      mmh3:
+      - '-1379982221'

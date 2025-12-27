@@ -1,0 +1,5 @@
+- name: dell-kace-appliance
+  rule:
+  - regexps:
+      header:
+      - x-dellkace-

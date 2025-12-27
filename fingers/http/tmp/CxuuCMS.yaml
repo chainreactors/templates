@@ -1,0 +1,5 @@
+- name: CxuuCMS
+  rule:
+  - regexps:
+      body:
+      - by CxuuCMS

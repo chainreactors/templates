@@ -1,0 +1,6 @@
+- name: telerik sitefinity
+  rule:
+  - regexps:
+      body:
+      - Telerik.Web.UI.WebResource.axd
+      - content="Sitefinity

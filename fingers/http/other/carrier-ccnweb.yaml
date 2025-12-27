@@ -1,0 +1,6 @@
+- name: carrier-ccnweb
+  rule:
+  - regexps:
+      body:
+      - /images/CCNWeb.gif
+      - <APPLET CODE="JLogin.class" ARCHIVE="JLogin.jar

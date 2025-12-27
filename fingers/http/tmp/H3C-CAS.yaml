@@ -1,0 +1,7 @@
+- name: H3C-CAS
+  rule:
+  - regexps:
+      body:
+      - cas.css
+      header:
+      - Path=/cas

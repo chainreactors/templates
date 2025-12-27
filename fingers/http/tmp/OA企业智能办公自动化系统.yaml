@@ -1,0 +1,5 @@
+- name: OA企业智能办公自动化系统
+  rule:
+  - regexps:
+      body:
+      - count/mystat.asp

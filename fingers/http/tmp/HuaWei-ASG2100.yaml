@@ -1,0 +1,7 @@
+- name: HuaWei-ASG2100
+  rule:
+  - regexps:
+      body:
+      - asg2100
+      header:
+      - huawei asg2050

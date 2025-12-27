@@ -1,0 +1,5 @@
+- name: 科荣AIO企业管理软件
+  rule:
+  - regexps:
+      body:
+      - 科荣AIO

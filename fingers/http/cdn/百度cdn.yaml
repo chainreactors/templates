@@ -1,0 +1,8 @@
+- name: 百度cdn
+  rule:
+  - regexps:
+      body:
+      - apps.bdimg.com
+      - libs.baidu.com
+      header:
+      - libs.baidu.com

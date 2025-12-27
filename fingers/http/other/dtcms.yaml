@@ -1,0 +1,6 @@
+- name: dtcms
+  rule:
+  - regexps:
+      body:
+      - dtcms
+      - content="动力启航,DTCMS

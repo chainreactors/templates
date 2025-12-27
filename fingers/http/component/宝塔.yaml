@@ -1,0 +1,9 @@
+- name: 宝塔
+  rule:
+  - regexps:
+      body:
+      - 恭喜，站点创建成功
+      - 没有找到站点
+    favicon:
+      md5:
+      - 3c3804ddad747313df58112a3e1bc680

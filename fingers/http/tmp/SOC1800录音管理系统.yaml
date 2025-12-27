@@ -1,0 +1,5 @@
+- name: SOC1800录音管理系统
+  rule:
+  - regexps:
+      body:
+      - SOC1800录音管理系统

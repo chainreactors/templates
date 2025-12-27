@@ -1,0 +1,5 @@
+- name: spiceworks
+  rule:
+  - favicon:
+      mmh3:
+      - '-2117390767'

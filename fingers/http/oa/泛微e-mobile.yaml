@@ -1,0 +1,9 @@
+- name: 泛微e-mobile
+  rule:
+  - regexps:
+      body:
+      - /page/manage/css/main.css
+      - weaver,e-mobile
+    favicon:
+      md5:
+      - f51746305f07a64eafa401adab364ad9

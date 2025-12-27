@@ -1,0 +1,5 @@
+- name: OSSIM
+  rule:
+  - regexps:
+      body:
+      - AlienVault OSSIM

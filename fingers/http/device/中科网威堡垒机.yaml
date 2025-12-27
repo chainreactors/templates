@@ -1,0 +1,6 @@
+- name: 中科网威堡垒机
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - zk.appname

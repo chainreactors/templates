@@ -1,0 +1,5 @@
+- name: technicolor / thomson speedtouch
+  rule:
+  - favicon:
+      mmh3:
+      - '156312019'

@@ -1,0 +1,6 @@
+- name: buddy-zone
+  rule:
+  - regexps:
+      body:
+      - www.vastal.com
+      - '>Buddy Zone</a>'

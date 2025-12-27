@@ -1,0 +1,7 @@
+- name: 可道云系统
+  rule:
+  - regexps:
+      body:
+      - 可道云.资源管理器<
+      - Powered by KodExplorer
+      - content="KodExplorer

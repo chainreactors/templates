@@ -1,0 +1,6 @@
+- name: kingosoft
+  rule:
+  - regexps:
+      body:
+      - kingosoft
+      - 青果

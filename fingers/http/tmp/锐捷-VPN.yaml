@@ -1,0 +1,5 @@
+- name: 锐捷-VPN
+  rule:
+  - favicon:
+      mmh3:
+      - '-1525950034'

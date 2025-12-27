@@ -1,0 +1,5 @@
+- name: ZKTIME打卡机
+  rule:
+  - regexps:
+      body:
+      - ZKTECO

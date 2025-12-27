@@ -1,0 +1,5 @@
+- name: ElasticSearch head
+  rule:
+  - regexps:
+      body:
+      - elasticsearch-head

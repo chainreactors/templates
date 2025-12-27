@@ -1,0 +1,5 @@
+- name: OpenDocMan
+  rule:
+  - regexps:
+      body:
+      - www.opendocman.com

@@ -1,0 +1,5 @@
+- name: privoxy代理
+  rule:
+  - regexps:
+      header:
+      - Privoxy

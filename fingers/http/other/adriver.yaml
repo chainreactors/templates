@@ -1,0 +1,5 @@
+- name: adriver
+  rule:
+  - regexps:
+      body:
+      - ad.adriver.ru/cgi-bin

@@ -1,0 +1,5 @@
+- name: mac1200r
+  rule:
+  - regexps:
+      header:
+      - MAC1200R

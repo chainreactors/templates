@@ -1,0 +1,5 @@
+- name: 信源-豆豆IM
+  rule:
+  - regexps:
+      body:
+      - 信源豆豆官网

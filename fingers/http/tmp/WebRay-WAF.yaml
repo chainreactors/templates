@@ -1,0 +1,6 @@
+- name: WebRay-WAF
+  rule:
+  - regexps:
+      header:
+      - 'Drivedby: RaySrv'
+      - 'Rayengine: RayEngine'

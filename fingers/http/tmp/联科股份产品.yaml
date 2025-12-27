@@ -1,0 +1,7 @@
+- name: 联科股份产品
+  rule:
+  - regexps:
+      body:
+      - 联科股份出品
+      - A Linkey System
+      - lkyun.net

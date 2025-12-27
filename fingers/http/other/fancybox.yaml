@@ -1,0 +1,5 @@
+- name: fancybox
+  rule:
+  - regexps:
+      body:
+      - jquery.fancybox.js

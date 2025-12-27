@@ -1,0 +1,5 @@
+- name: openvpn
+  rule:
+  - favicon:
+      mmh3:
+      - '396533629'

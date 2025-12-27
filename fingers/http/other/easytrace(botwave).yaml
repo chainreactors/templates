@@ -1,0 +1,5 @@
+- name: easytrace(botwave)
+  rule:
+  - regexps:
+      body:
+      - EasyTrace

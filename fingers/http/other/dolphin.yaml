@@ -1,0 +1,5 @@
+- name: dolphin
+  rule:
+  - regexps:
+      body:
+      - bx_css_async

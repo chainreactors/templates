@@ -1,0 +1,6 @@
+- name: 智能仓储管理系统
+  rule:
+  - regexps:
+      body:
+      - event.srcelement.type!='reset
+      - 智能仓储管理系统

@@ -1,0 +1,5 @@
+- name: 科蚁CMS
+  rule:
+  - regexps:
+      body:
+      - KeyiCMS

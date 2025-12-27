@@ -1,0 +1,5 @@
+- name: South_River-CORNERSTONE-MFT
+  rule:
+  - regexps:
+      header:
+      - 'Server: SouthRiver'

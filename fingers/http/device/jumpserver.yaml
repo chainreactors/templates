@@ -1,0 +1,10 @@
+- name: jumpserver
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /static/img/facio.jico
+      - JumpServer</title>
+    favicon:
+      md5:
+      - 20334371817c7368907b5ea52aab2d9e

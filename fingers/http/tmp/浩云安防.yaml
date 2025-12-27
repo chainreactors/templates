@@ -1,0 +1,5 @@
+- name: 浩云安防
+  rule:
+  - regexps:
+      body:
+      - 浩云安防

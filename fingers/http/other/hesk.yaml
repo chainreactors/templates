@@ -1,0 +1,7 @@
+- name: hesk
+  rule:
+  - regexps:
+      body:
+      - hesk_javascript.js
+      - hesk_style.css
+      - hesk.com

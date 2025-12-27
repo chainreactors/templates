@@ -1,0 +1,5 @@
+- name: Go129行为管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>Go129行为管理系统

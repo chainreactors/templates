@@ -1,0 +1,5 @@
+- name: 神州云动CRM系统
+  rule:
+  - regexps:
+      body:
+      - <META name="description" content="CloudCC.com

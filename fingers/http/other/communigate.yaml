@@ -1,0 +1,5 @@
+- name: communigate
+  rule:
+  - favicon:
+      mmh3:
+      - '-1588746893'

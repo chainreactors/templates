@@ -1,0 +1,7 @@
+- name: vmware zimbra
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - Zimbra Collaboration
+      - /zimbra/css/common

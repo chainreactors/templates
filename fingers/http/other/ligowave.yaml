@@ -1,0 +1,5 @@
+- name: ligowave
+  rule:
+  - favicon:
+      mmh3:
+      - '1467395679'

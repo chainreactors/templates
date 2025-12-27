@@ -1,0 +1,5 @@
+- name: yunec
+  rule:
+  - regexps:
+      body:
+      - href="http://www.yunec.cn/" target="_blank"

@@ -1,0 +1,5 @@
+- name: twcms
+  rule:
+  - regexps:
+      body:
+      - twcms/theme

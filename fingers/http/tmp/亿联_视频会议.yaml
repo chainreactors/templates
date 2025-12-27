@@ -1,0 +1,5 @@
+- name: 亿联 视频会议
+  rule:
+  - regexps:
+      header:
+      - yealink embed httpd

@@ -1,0 +1,5 @@
+- name: ArmorLogic
+  rule:
+  - regexps:
+      header:
+      - Profense

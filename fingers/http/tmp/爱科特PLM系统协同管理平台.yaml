@@ -1,0 +1,5 @@
+- name: 爱科特PLM系统协同管理平台
+  rule:
+  - regexps:
+      body:
+      - 爱科特PLM系统协同管理平台

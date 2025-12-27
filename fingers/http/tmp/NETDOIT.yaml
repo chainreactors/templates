@@ -1,0 +1,6 @@
+- name: NETDOIT
+  rule:
+  - regexps:
+      body:
+      - POWER BY NETDOIT
+      - class="copyrightnetdoit"

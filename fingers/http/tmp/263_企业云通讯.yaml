@@ -1,0 +1,8 @@
+- name: 263 企业云通讯
+  rule:
+  - favicon:
+      mmh3:
+      - '1081820320'
+    regexps:
+      body:
+      - 北京二六三企业通信有限公司

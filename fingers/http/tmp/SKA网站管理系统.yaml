@@ -1,0 +1,5 @@
+- name: SKA网站管理系统
+  rule:
+  - regexps:
+      body:
+      - SKA网站管理系统

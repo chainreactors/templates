@@ -1,0 +1,5 @@
+- name: Nuxeo Platform
+  rule:
+  - regexps:
+      body:
+      - Nuxeo Platform

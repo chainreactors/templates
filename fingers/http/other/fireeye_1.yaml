@@ -1,0 +1,5 @@
+- name: fireeye
+  rule:
+  - favicon:
+      mmh3:
+      - '-842192932'

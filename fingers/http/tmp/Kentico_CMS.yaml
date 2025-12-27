@@ -1,0 +1,5 @@
+- name: Kentico CMS
+  rule:
+  - regexps:
+      body:
+      - Kentico CMS

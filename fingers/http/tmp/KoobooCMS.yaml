@@ -1,0 +1,7 @@
+- name: KoobooCMS
+  rule:
+  - regexps:
+      body:
+      - Kooboo CMS
+      - action="/Kooboo-Submit
+      - src="/Kooboo-WebResource

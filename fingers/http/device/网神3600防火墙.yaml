@@ -1,0 +1,5 @@
+- name: 网神3600防火墙
+  rule:
+  - regexps:
+      body:
+      - 网神SecGate

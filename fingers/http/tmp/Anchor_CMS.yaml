@@ -1,0 +1,5 @@
+- name: Anchor CMS
+  rule:
+  - regexps:
+      body:
+      - content="Anchor CMS"

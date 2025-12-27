@@ -1,0 +1,5 @@
+- name: HULU电商平台管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>HULU电商平台管理系统

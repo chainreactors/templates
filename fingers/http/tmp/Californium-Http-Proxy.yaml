@@ -1,0 +1,5 @@
+- name: Californium-Http-Proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: Californium Http Proxy'

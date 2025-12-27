@@ -1,0 +1,8 @@
+- name: vmware esxi
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - ID_EESX_Welcome
+      - ID_ESX_Welcome
+      - 0;URL='/ui'

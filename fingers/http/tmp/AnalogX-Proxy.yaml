@@ -1,0 +1,7 @@
+- name: AnalogX-Proxy
+  rule:
+  - regexps:
+      body:
+      - FTP AnalogX Proxy
+      - POP3 AnalogX Proxy
+      - SMTP AnalogX Proxy

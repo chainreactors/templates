@@ -1,0 +1,5 @@
+- name: Microweber
+  rule:
+  - regexps:
+      body:
+      - /userfiles/modules/microweber/

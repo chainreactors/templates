@@ -1,0 +1,5 @@
+- name: zte_mifi_une
+  rule:
+  - regexps:
+      body:
+      - MiFi UNE 4G LTE

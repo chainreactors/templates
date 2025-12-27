@@ -1,0 +1,5 @@
+- name: Metaflow Admin
+  rule:
+  - regexps:
+      body:
+      - Metaflow Admin

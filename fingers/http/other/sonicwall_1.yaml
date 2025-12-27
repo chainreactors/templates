@@ -1,0 +1,5 @@
+- name: sonicwall
+  rule:
+  - favicon:
+      mmh3:
+      - '631108382'

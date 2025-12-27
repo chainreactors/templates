@@ -1,0 +1,6 @@
+- name: Foxycart
+  rule:
+  - regexps:
+      body:
+      - Foxycart.colorbox.js
+      - Foxycart.css

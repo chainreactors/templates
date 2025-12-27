@@ -1,0 +1,7 @@
+- name: broadwin-webaccess
+  rule:
+  - regexps:
+      body:
+      - '<!-- #BeginTemplate "/Templates/bw_templete1.dwt" -->'
+      header:
+      - /broadWeb/bwRoot.asp?username=

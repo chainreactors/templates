@@ -1,0 +1,5 @@
+- name: zenoss
+  rule:
+  - regexps:
+      body:
+      - /zport/dmd/

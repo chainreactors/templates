@@ -1,0 +1,5 @@
+- name: okofen pellematic
+  rule:
+  - favicon:
+      mmh3:
+      - '-625364318'

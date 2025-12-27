@@ -1,0 +1,5 @@
+- name: backbee
+  rule:
+  - regexps:
+      body:
+      - <div id="bb5-site-wrapper">

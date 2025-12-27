@@ -1,0 +1,5 @@
+- name: 青木林 TuziCMS
+  rule:
+  - regexps:
+      body:
+      - Powered by TuziCMS

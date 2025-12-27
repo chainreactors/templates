@@ -1,0 +1,6 @@
+- name: ruioa
+  rule:
+  - regexps:
+      body:
+      - /hqbadmin/
+      - 新锐网络网站管理平台

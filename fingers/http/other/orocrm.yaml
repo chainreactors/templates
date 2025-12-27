@@ -1,0 +1,5 @@
+- name: orocrm
+  rule:
+  - regexps:
+      body:
+      - /bundles/oroui/

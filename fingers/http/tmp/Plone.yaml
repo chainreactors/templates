@@ -1,0 +1,5 @@
+- name: Plone
+  rule:
+  - regexps:
+      body:
+      - content="Plone - http://plone.org"

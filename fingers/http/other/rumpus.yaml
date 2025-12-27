@@ -1,0 +1,5 @@
+- name: rumpus
+  rule:
+  - favicon:
+      mmh3:
+      - '-1528414776'

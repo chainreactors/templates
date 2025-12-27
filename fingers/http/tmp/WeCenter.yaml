@@ -1,0 +1,5 @@
+- name: WeCenter
+  rule:
+  - regexps:
+      body:
+      - Powered By <a href="http://www.wecenter.com/

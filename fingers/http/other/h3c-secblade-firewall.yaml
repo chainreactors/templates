@@ -1,0 +1,5 @@
+- name: h3c-secblade-firewall
+  rule:
+  - regexps:
+      body:
+      - js/MulPlatAPI.js

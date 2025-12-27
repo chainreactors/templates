@@ -1,0 +1,6 @@
+- name: 火云网络 网络用户管理系统
+  rule:
+  - regexps:
+      body:
+      - 火云网络工作室 http://www.hphu.com QQ188372002
+      - kss_admin/index.php

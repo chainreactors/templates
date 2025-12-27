@@ -1,0 +1,5 @@
+- name: ModSecurity
+  rule:
+  - regexps:
+      header:
+      - mod_security

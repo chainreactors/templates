@@ -1,0 +1,6 @@
+- name: 易普拉格科研管理系统
+  rule:
+  - regexps:
+      body:
+      - lan12-jingbian-hong
+      - 科研管理系统，北京易普拉格科技

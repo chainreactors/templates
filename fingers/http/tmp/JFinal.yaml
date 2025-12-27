@@ -1,0 +1,7 @@
+- name: JFinal
+  rule:
+  - regexps:
+      body:
+      - JFinal
+      header:
+      - 'Server: JFinal'

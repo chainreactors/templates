@@ -1,0 +1,5 @@
+- name: 天兔-数据库监控系统
+  rule:
+  - regexps:
+      body:
+      - http://www.lepus.cc

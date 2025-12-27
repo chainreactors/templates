@@ -1,0 +1,6 @@
+- name: cmstop
+  rule:
+  - regexps:
+      body:
+      - /js/cmstop-common.js
+      - www.cmstop.com

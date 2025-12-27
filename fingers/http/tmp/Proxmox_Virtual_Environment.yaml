@@ -1,0 +1,5 @@
+- name: Proxmox Virtual Environment
+  rule:
+  - regexps:
+      body:
+      - Proxmox Virtual Environment

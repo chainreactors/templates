@@ -1,0 +1,10 @@
+- name: 畅捷通 T-plus
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - 畅捷通 T+
+      - tp.control.css.ashx
+    favicon:
+      mmh3:
+      - '-2067519629'

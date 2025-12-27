@@ -1,0 +1,5 @@
+- name: ZYWALL
+  rule:
+  - regexps:
+      body:
+      - ZYWALL

@@ -1,0 +1,6 @@
+- name: dota-openstats
+  rule:
+  - regexps:
+      body:
+      - content="dota OpenStats
+      - content="openstats.iz.rs

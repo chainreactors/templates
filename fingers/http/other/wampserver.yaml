@@ -1,0 +1,5 @@
+- name: wampserver
+  rule:
+  - favicon:
+      mmh3:
+      - '929825723'

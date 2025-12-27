@@ -1,0 +1,6 @@
+- name: 08cms
+  rule:
+  - regexps:
+      body:
+      - content="08CMS
+      - typeof(_08cms)

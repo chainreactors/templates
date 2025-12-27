@@ -1,0 +1,6 @@
+- name: vicworl
+  rule:
+  - regexps:
+      body:
+      - Vicworl
+      - vindex_right_d

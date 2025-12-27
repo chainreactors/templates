@@ -1,0 +1,5 @@
+- name: KkFileView
+  rule:
+  - regexps:
+      body:
+      - /onlinePreview?url=

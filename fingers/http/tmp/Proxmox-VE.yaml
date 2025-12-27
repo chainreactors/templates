@@ -1,0 +1,5 @@
+- name: Proxmox-VE
+  rule:
+  - regexps:
+      header:
+      - pve-api-daemon

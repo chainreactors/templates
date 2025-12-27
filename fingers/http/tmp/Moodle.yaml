@@ -1,0 +1,6 @@
+- name: Moodle
+  rule:
+  - regexps:
+      body:
+      - href="http://moodle.org/"
+      - content="moodle

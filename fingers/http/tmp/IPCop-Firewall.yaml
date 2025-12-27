@@ -1,0 +1,5 @@
+- name: IPCop-Firewall
+  rule:
+  - regexps:
+      body:
+      - IPCop

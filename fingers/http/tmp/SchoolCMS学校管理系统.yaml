@@ -1,0 +1,5 @@
+- name: SchoolCMS学校管理系统
+  rule:
+  - regexps:
+      body:
+      - SchoolCMS学校管理系统

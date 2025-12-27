@@ -1,0 +1,5 @@
+- name: FH Admin
+  rule:
+  - regexps:
+      body:
+      - FH Admin

@@ -1,0 +1,5 @@
+- name: citrix Endpoint Management
+  rule:
+  - regexps:
+      body:
+      - Endpoint Management

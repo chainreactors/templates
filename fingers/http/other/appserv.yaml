@@ -1,0 +1,6 @@
+- name: appserv
+  rule:
+  - regexps:
+      body:
+      - appserv/softicon.gif
+      - index.php?appservlang=th

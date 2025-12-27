@@ -1,0 +1,5 @@
+- name: hadoop yarn
+  rule:
+  - regexps:
+      body:
+      - /static/yarn.css

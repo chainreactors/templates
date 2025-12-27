@@ -1,0 +1,7 @@
+- name: directadmin
+  rule:
+  - regexps:
+      body:
+      - DirectAdmin Login
+      header:
+      - DirectAdmin Daemon

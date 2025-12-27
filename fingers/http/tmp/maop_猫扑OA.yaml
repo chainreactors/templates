@@ -1,0 +1,6 @@
+- name: maop 猫扑OA
+  rule:
+  - regexps:
+      body:
+      - For 猫扑OA
+      - For MaopSoft OA

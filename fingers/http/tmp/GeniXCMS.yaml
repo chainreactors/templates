@@ -1,0 +1,5 @@
+- name: GeniXCMS
+  rule:
+  - regexps:
+      body:
+      - GeniXCMS

@@ -1,0 +1,6 @@
+- name: PHPOA
+  rule:
+  - regexps:
+      body:
+      - PHPOA协同办公软件
+      - template/default/images/admin_img/msg.png

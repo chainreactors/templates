@@ -1,0 +1,5 @@
+- name: Spark-HistoryServer
+  rule:
+  - regexps:
+      body:
+      - spark.history

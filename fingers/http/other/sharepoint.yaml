@@ -1,0 +1,5 @@
+- name: sharepoint
+  rule:
+  - regexps:
+      header:
+      - Microsoftsharepointteamservices

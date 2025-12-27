@@ -1,0 +1,5 @@
+- name: 同之杰 ERP信息管理系统
+  rule:
+  - regexps:
+      body:
+      - href="/content/home/tzjlog.ico"

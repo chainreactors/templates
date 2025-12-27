@@ -1,0 +1,5 @@
+- name: opengeo suite
+  rule:
+  - favicon:
+      mmh3:
+      - '-609520537'

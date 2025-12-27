@@ -1,0 +1,5 @@
+- name: tidb-web
+  rule:
+  - regexps:
+      body:
+      - TiDB Status

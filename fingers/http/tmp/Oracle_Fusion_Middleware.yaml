@@ -1,0 +1,7 @@
+- name: Oracle Fusion Middleware
+  rule:
+  - regexps:
+      body:
+      - Welcome to Oracle Fusion Middleware
+      header:
+      - Oracle-Application-Server

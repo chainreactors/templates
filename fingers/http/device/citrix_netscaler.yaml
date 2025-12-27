@@ -1,0 +1,5 @@
+- name: citrix_netscaler
+  rule:
+  - regexps:
+      body:
+      - ns_af

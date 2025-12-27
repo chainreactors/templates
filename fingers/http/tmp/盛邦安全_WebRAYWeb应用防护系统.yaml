@@ -1,0 +1,5 @@
+- name: 盛邦安全 WebRAYWeb应用防护系统
+  rule:
+  - regexps:
+      body:
+      - WebRAYWeb应用防护系统

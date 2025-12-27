@@ -1,0 +1,5 @@
+- name: 山石网科Hillstone设备
+  rule:
+  - regexps:
+      body:
+      - HILLSTONE

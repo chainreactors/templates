@@ -1,0 +1,5 @@
+- name: kangle-proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: kangle-proxy'

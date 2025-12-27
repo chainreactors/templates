@@ -1,0 +1,5 @@
+- name: weidun
+  rule:
+  - regexps:
+      header:
+      - 'Firewall: www.weidun.com.cn'

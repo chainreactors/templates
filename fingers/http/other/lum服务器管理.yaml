@@ -1,0 +1,5 @@
+- name: lum服务器管理
+  rule:
+  - regexps:
+      header:
+      - LUM_SESSION

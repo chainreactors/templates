@@ -1,0 +1,6 @@
+- name: Verydows
+  rule:
+  - regexps:
+      body:
+      - <meta name="verydows-baseurl"
+      - href="http://www.verydows.com">Verydows</a>

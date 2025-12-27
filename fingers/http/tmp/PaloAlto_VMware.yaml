@@ -1,0 +1,5 @@
+- name: PaloAlto VMware
+  rule:
+  - regexps:
+      header:
+      - C=US, L=Palo Alto, OU=VMware, CN=VMware/email

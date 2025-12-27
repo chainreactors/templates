@@ -1,0 +1,7 @@
+- name: piwigo
+  rule:
+  - regexps:
+      body:
+      - generator" content="Piwigo
+      header:
+      - pwg_id

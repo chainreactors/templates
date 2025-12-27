@@ -1,0 +1,5 @@
+- name: phpscripte
+  rule:
+  - regexps:
+      body:
+      - content="Hi Web Wiesbaden - phpscripte24

@@ -1,0 +1,5 @@
+- name: ESPCMS
+  rule:
+  - regexps:
+      body:
+      - Powered by ESPCMS

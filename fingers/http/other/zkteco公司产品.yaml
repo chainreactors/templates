@@ -1,0 +1,8 @@
+- name: zkteco公司产品
+  rule:
+  - regexps:
+      body:
+      - /media/images/ZKECO16.ico
+      - ZKTeco Inc. All Rights Reserved
+      header:
+      - sessionidadms

@@ -1,0 +1,6 @@
+- name: 百为智能流控路由器
+  rule:
+  - regexps:
+      body:
+      - BYTEVALUE 智能流控路由器
+      - <a href="http://www.bytevalue.com/" target="_blank">

@@ -1,0 +1,6 @@
+- name: mallbuilder
+  rule:
+  - regexps:
+      body:
+      - content="MallBuilder
+      - Powered by MallBuilder

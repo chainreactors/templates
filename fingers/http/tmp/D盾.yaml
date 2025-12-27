@@ -1,0 +1,5 @@
+- name: D盾
+  rule:
+  - regexps:
+      header:
+      - JSESSIONID_USER

@@ -1,0 +1,5 @@
+- name: H3C SecPath F5000 M
+  rule:
+  - regexps:
+      body:
+      - h3c secpath f5000-m

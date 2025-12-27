@@ -1,0 +1,5 @@
+- name: HostBill
+  rule:
+  - regexps:
+      body:
+      - <strong>HostBill</strong>

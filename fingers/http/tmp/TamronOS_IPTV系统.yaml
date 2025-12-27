@@ -1,0 +1,6 @@
+- name: TamronOS IPTV系统
+  link: http://111.225.11.68:8811/login?redirect=%2Fmanage
+  rule:
+  - regexps:
+      body:
+      - TamronOS

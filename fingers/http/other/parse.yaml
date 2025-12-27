@@ -1,0 +1,5 @@
+- name: parse
+  rule:
+  - favicon:
+      mmh3:
+      - '246145559'

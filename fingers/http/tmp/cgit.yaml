@@ -1,0 +1,6 @@
+- name: cgit
+  rule:
+  - regexps:
+      body:
+      - Git repository browser
+      - /cgit.css

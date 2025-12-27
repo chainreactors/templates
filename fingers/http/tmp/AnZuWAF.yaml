@@ -1,0 +1,5 @@
+- name: AnZuWAF
+  rule:
+  - regexps:
+      header:
+      - 'Server: AnZu Web Firewall'

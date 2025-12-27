@@ -1,0 +1,8 @@
+- name: activeweb
+  rule:
+  - regexps:
+      body:
+      - AWNOCACHEBEGIN
+      - activeWeb cache extension
+      header:
+      - x-awcache

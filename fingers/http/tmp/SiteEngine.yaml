@@ -1,0 +1,5 @@
+- name: SiteEngine
+  rule:
+  - regexps:
+      body:
+      - Boka SiteEngine">

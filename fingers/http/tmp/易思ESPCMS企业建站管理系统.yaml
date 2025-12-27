@@ -1,0 +1,5 @@
+- name: 易思ESPCMS企业建站管理系统
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://www.earclink.com" title="易思ESPCMS企业建站管理系统">ESPCSM-P8</a>

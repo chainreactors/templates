@@ -1,0 +1,5 @@
+- name: Github_Enterprise
+  rule:
+  - regexps:
+      body:
+      - Setup GitHub Enterprise

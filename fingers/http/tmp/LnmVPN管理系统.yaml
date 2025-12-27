@@ -1,0 +1,5 @@
+- name: LnmVPN管理系统
+  rule:
+  - regexps:
+      body:
+      - LnmVPN管理系统

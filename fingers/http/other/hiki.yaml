@@ -1,0 +1,7 @@
+- name: hiki
+  rule:
+  - regexps:
+      body:
+      - content="Hiki
+      - /hiki_base.css
+      - by <a href="http://hikiwiki.org/

@@ -1,0 +1,6 @@
+- name: 信锐企业AP
+  rule:
+  - regexps:
+      body:
+      - http://bbs.sundray.com.cn
+      - index.php/welcome/login

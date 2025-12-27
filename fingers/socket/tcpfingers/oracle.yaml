@@ -1,0 +1,9 @@
+- name: oracle
+  default_port:
+  - '1521'
+  protocol: tcp
+  rule:
+  - regexps:
+      regexp:
+      - DESCRIPTION=
+    send_data: b64de|AFoAAAEAAAABNgEsAAAIAH//fwgAAAABACAAOgAAAAAAAAAAAAAAAAAAAAA05gAAAAEAAAAAAAAAAChDT05ORUNUX0RBVEE9KENPTU1BTkQ9dmVyc2lvbikp

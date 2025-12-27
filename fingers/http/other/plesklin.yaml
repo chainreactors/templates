@@ -1,0 +1,5 @@
+- name: plesklin
+  rule:
+  - regexps:
+      header:
+      - PleskLin

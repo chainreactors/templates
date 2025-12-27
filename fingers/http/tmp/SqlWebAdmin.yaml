@@ -1,0 +1,5 @@
+- name: SqlWebAdmin
+  rule:
+  - regexps:
+      body:
+      - Web Data Administrator

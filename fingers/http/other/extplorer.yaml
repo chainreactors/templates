@@ -1,0 +1,5 @@
+- name: extplorer
+  rule:
+  - regexps:
+      body:
+      - Login - eXtplorer

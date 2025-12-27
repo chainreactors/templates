@@ -1,0 +1,5 @@
+- name: go-json-rest
+  rule:
+  - regexps:
+      header:
+      - go-json-rest

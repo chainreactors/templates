@@ -1,0 +1,6 @@
+- name: NSFOCUS NGFW
+  rule:
+  - regexps:
+      body:
+      - nsfocus nf
+      - /login_logo_nf_zh_cn.png

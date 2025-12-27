@@ -1,0 +1,5 @@
+- name: Informatica
+  rule:
+  - regexps:
+      body:
+      - Informatica Administrator

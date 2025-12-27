@@ -1,0 +1,6 @@
+- name: daffodil-crm
+  rule:
+  - regexps:
+      body:
+      - Powered by Daffodil
+      - Design & Development by Daffodil Software Ltd

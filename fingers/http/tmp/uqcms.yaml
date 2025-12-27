@@ -1,0 +1,7 @@
+- name: uqcms
+  rule:
+  - regexps:
+      body:
+      - css/common_uqcms.css
+      header:
+      - UQCMSID

@@ -1,0 +1,5 @@
+- name: WECLOUD-Proxy-Server
+  rule:
+  - regexps:
+      header:
+      - 'Server: WECLOUD Proxy Server'

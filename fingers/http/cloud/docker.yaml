@@ -1,0 +1,14 @@
+- name: docker
+  default_port:
+  - '2375'
+  focus: true
+  rule:
+  - favicon:
+      mmh3:
+      - '-1814887000'
+    regexps:
+      vuln:
+      - KernelVersion
+      - DockerRootDir
+    send_data: /info
+    vuln: docker-api_unauth

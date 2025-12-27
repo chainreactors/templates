@@ -1,0 +1,6 @@
+- name: 用友GRP RMIS系统
+  rule:
+  - regexps:
+      body:
+      - 用友grp-rmis系统
+      - href="clientfile/rmisupdate.exe

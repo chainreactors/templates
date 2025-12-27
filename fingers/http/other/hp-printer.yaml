@@ -1,0 +1,5 @@
+- name: hp-printer
+  rule:
+  - regexps:
+      header:
+      - HP HTTP Server

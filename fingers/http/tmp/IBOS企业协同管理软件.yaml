@@ -1,0 +1,7 @@
+- name: IBOS企业协同管理软件
+  rule:
+  - regexps:
+      body:
+      - Powered by <strong>IBOS
+      - IBOS Inc.
+      - content="IBOS Team"

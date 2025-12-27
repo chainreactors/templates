@@ -1,0 +1,6 @@
+- name: Smartweb管理系统
+  link: http://222.87.54.50:8888/
+  rule:
+  - regexps:
+      body:
+      - 无线smartWeb 2129839604

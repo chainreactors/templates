@@ -1,0 +1,5 @@
+- name: rompager embedded web
+  rule:
+  - regexps:
+      header:
+      - RomPager

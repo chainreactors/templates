@@ -1,0 +1,5 @@
+- name: 任我行grasp 电商系统
+  rule:
+  - regexps:
+      body:
+      - '&Site=任我行'

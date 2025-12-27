@@ -1,0 +1,8 @@
+- name: Apexsoft
+  rule:
+  - favicon:
+      mmh3:
+      - '-1305965720'
+    regexps:
+      body:
+      - 顶点软件

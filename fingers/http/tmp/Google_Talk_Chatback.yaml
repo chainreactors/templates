@@ -1,0 +1,5 @@
+- name: Google Talk Chatback
+  rule:
+  - regexps:
+      body:
+      - http://www.google.com/talk/service/badge

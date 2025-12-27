@@ -1,0 +1,6 @@
+- name: jieqi cms
+  rule:
+  - regexps:
+      body:
+      - content="jieqi cms
+      - jieqi cms

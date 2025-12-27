@@ -1,0 +1,6 @@
+- name: arris-touchstone-router
+  rule:
+  - regexps:
+      body:
+      - ARRIS Group
+      - /arris_style.css

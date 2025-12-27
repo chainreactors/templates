@@ -1,0 +1,5 @@
+- name: ARE InfoTech
+  rule:
+  - regexps:
+      body:
+      - ARE InfoTech

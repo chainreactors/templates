@@ -1,0 +1,5 @@
+- name: universal devices
+  rule:
+  - favicon:
+      mmh3:
+      - '16202868'

@@ -1,0 +1,5 @@
+- name: 腾讯企业邮箱
+  rule:
+  - regexps:
+      body:
+      - /cgi-bin/getinvestigate?flowid=

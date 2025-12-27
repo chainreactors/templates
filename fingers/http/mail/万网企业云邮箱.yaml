@@ -1,0 +1,5 @@
+- name: 万网企业云邮箱
+  rule:
+  - regexps:
+      body:
+      - mxhichina

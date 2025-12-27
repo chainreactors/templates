@@ -1,0 +1,7 @@
+- name: Netlify-CMS
+  rule:
+  - regexps:
+      body:
+      - netlify
+      header:
+      - 'Server: Netlify'

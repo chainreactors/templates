@@ -1,0 +1,5 @@
+- name: wspx
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: ANSI C'

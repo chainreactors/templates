@@ -1,0 +1,5 @@
+- name: DnP-Firewall
+  rule:
+  - regexps:
+      body:
+      - Forum Gateway - Powered by DnP Firewall

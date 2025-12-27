@@ -1,0 +1,5 @@
+- name: Diferior
+  rule:
+  - regexps:
+      body:
+      - Powered by Diferior

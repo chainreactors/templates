@@ -1,0 +1,5 @@
+- name: WpdCms网站管理系统
+  rule:
+  - regexps:
+      body:
+      - WpdCms网站管理系统

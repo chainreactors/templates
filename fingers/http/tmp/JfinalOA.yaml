@@ -1,0 +1,5 @@
+- name: JfinalOA
+  rule:
+  - regexps:
+      body:
+      - JfinalOA

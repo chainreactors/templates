@@ -1,0 +1,6 @@
+- name: HubSpot
+  rule:
+  - regexps:
+      body:
+      - HubSpot Analytics Code
+      - js.hubspot.com

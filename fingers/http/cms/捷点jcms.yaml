@@ -1,0 +1,5 @@
+- name: 捷点jcms
+  rule:
+  - regexps:
+      body:
+      - Publish By JCms2010

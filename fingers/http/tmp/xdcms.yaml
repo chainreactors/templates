@@ -1,0 +1,5 @@
+- name: xdcms
+  rule:
+  - regexps:
+      body:
+      - /system/templates/xdcms/

@@ -1,0 +1,5 @@
+- name: 蝶贷渠道商管理系统
+  rule:
+  - regexps:
+      body:
+      - 蝶贷渠道商管理系统

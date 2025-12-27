@@ -1,0 +1,6 @@
+- name: Infosec UTRUST
+  rule:
+  - regexps:
+      body:
+      - utrust统一身份认证和身份管理平台
+      - china utrust infortech co,.ltd

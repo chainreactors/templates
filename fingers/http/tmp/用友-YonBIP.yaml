@@ -1,0 +1,5 @@
+- name: 用友-YonBIP
+  rule:
+  - favicon:
+      mmh3:
+      - '1183274548'

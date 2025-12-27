@@ -1,0 +1,5 @@
+- name: paloaltoWAF
+  rule:
+  - regexps:
+      body:
+      - Palo Alto Next Generation Security Platform

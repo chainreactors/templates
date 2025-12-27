@@ -1,0 +1,5 @@
+- name: 小脑袋
+  rule:
+  - regexps:
+      body:
+      - http://stat.xiaonaodai.com/stat.php

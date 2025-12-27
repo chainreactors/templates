@@ -1,0 +1,5 @@
+- name: citrix-xenserver
+  rule:
+  - regexps:
+      body:
+      - Citrix Systems, Inc. XenServer

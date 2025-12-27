@@ -1,0 +1,5 @@
+- name: huawei-quidway-switch
+  rule:
+  - regexps:
+      header:
+      - 'Lanswitch - '

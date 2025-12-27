@@ -1,0 +1,6 @@
+- name: CGIProxy
+  rule:
+  - regexps:
+      body:
+      - CGItrick
+      - location='/cgiproxy/

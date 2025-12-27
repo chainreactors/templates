@@ -1,0 +1,5 @@
+- name: TECLIBGLPI
+  rule:
+  - regexps:
+      body:
+      - name="_glpi_csrf_token"

@@ -1,0 +1,5 @@
+- name: openerp
+  rule:
+  - favicon:
+      mmh3:
+      - '1966198264'

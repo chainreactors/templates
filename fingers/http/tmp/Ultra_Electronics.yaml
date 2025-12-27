@@ -1,0 +1,5 @@
+- name: Ultra_Electronics
+  rule:
+  - regexps:
+      body:
+      - href="/preauth/manifest.json"

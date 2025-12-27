@@ -1,0 +1,5 @@
+- name: ComersusCart
+  rule:
+  - regexps:
+      body:
+      - comersus.css

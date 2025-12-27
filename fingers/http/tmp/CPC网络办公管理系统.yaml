@@ -1,0 +1,5 @@
+- name: CPC网络办公管理系统
+  rule:
+  - regexps:
+      body:
+      - CPC网络办公管理系统

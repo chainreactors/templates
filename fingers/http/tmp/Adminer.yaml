@@ -1,0 +1,5 @@
+- name: Adminer
+  rule:
+  - regexps:
+      body:
+      - Adminer</a> <span class="version">

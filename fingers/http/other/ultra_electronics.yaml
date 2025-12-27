@@ -1,0 +1,6 @@
+- name: ultra_electronics
+  rule:
+  - regexps:
+      body:
+      - /preauth/login.cgi
+      - /preauth/style.css

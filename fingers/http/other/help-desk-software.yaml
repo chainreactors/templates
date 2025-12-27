@@ -1,0 +1,5 @@
+- name: help-desk-software
+  rule:
+  - regexps:
+      body:
+      - target="_blank">freehelpdesk.org

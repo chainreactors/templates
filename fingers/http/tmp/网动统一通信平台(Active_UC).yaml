@@ -1,0 +1,5 @@
+- name: 网动统一通信平台(Active UC)
+  rule:
+  - regexps:
+      body:
+      - 网动统一通信平台(Active UC)

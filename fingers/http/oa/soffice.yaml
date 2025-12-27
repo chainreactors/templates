@@ -1,0 +1,5 @@
+- name: soffice
+  rule:
+  - regexps:
+      body:
+      - OA办公管理平台

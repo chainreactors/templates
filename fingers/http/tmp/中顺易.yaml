@@ -1,0 +1,8 @@
+- name: 中顺易
+  rule:
+  - favicon:
+      mmh3:
+      - '435880159'
+    regexps:
+      body:
+      - 深圳中顺易金融服务有限公司

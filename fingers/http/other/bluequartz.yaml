@@ -1,0 +1,6 @@
+- name: bluequartz
+  rule:
+  - regexps:
+      body:
+      - VALUE="Copyright (C) 2000, Cobalt Networks
+      - Login - BlueQuartz

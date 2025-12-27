@@ -1,0 +1,5 @@
+- name: huawei espace 7910
+  rule:
+  - regexps:
+      body:
+      - HUAWEI ESPACE 7910

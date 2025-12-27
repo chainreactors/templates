@@ -1,0 +1,6 @@
+- name: netmizer 日志管理系统
+  rule:
+  - regexps:
+      body:
+      - window.location.href="main.html";
+      - netmizer 日志管理系统

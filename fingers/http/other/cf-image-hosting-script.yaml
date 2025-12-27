@@ -1,0 +1,5 @@
+- name: cf-image-hosting-script
+  rule:
+  - regexps:
+      body:
+      - codefuture.co.uk/projects/imagehost/

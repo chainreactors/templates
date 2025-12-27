@@ -1,0 +1,5 @@
+- name: QNAP-QGenie
+  rule:
+  - regexps:
+      header:
+      - 'Server: QGenie'

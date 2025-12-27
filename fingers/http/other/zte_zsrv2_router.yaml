@@ -1,0 +1,6 @@
+- name: zte_zsrv2_router
+  rule:
+  - regexps:
+      body:
+      - ZSRV2路由器Web管理系统
+      - ZTE Corporation. All Rights Reserved.

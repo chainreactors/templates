@@ -1,0 +1,8 @@
+- name: opennms
+  rule:
+  - regexps:
+      body:
+      - /css/gwt-asset.css
+      - OpenNMS® is a registered trademark of
+      header:
+      - /opennms/login.jsp

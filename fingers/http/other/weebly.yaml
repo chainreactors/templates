@@ -1,0 +1,7 @@
+- name: weebly
+  rule:
+  - regexps:
+      body:
+      - wsite-page-index
+      header:
+      - intern.weebly.net

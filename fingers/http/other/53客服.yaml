@@ -1,0 +1,5 @@
+- name: 53客服
+  rule:
+  - regexps:
+      body:
+      - tb.53kf.com/code/

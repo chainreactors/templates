@@ -1,0 +1,5 @@
+- name: 百傲瑞达 安防管理系统平台
+  rule:
+  - regexps:
+      body:
+      - else if("百傲瑞达"=="百傲瑞达")

@@ -1,0 +1,5 @@
+- name: TQ云呼叫中心
+  rule:
+  - regexps:
+      body:
+      - float2006.tq.cn/floatcard?adminid=

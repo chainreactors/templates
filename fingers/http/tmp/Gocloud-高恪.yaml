@@ -1,0 +1,6 @@
+- name: Gocloud-高恪
+  link: http://111.254.70.176:8088/cgi-bin/webui/admin
+  rule:
+  - regexps:
+      body:
+      - GOCLOUD

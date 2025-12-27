@@ -1,0 +1,6 @@
+- name: Shop7z
+  rule:
+  - regexps:
+      body:
+      - Shop7z购物系统
+      - http://www.Shop7z.com

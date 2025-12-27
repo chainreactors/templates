@@ -1,0 +1,5 @@
+- name: zuitu 最土团购
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://www.zuitu.com/" target="_blank">ZuiTu

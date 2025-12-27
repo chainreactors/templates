@@ -1,0 +1,5 @@
+- name: panabit智能网关
+  rule:
+  - regexps:
+      body:
+      - panabit

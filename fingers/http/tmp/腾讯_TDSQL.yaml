@@ -1,0 +1,6 @@
+- name: 腾讯 TDSQL
+  rule:
+  - regexps:
+      body:
+      - TDSQL
+      - src="/chunks/vendors~

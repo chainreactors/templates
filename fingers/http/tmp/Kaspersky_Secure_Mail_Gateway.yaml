@@ -1,0 +1,5 @@
+- name: Kaspersky Secure Mail Gateway
+  rule:
+  - regexps:
+      body:
+      - kaspersky secure mail gateway

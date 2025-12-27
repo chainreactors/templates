@@ -1,0 +1,5 @@
+- name: 百卓-Smart
+  rule:
+  - regexps:
+      body:
+      - Smart管理平台

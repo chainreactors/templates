@@ -1,0 +1,5 @@
+- name: UseResponse
+  rule:
+  - regexps:
+      body:
+      - UseResponse <http://www.useresponse.com

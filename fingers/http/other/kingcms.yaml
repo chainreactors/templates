@@ -1,0 +1,7 @@
+- name: kingcms
+  rule:
+  - regexps:
+      body:
+      - kingcms
+      - content="KingCMS
+      - Powered by KingCMS

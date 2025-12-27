@@ -1,0 +1,5 @@
+- name: ubnt_unifi系列路由
+  rule:
+  - regexps:
+      body:
+      - <div class="appGlobalHeader">

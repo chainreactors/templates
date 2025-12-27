@@ -1,0 +1,7 @@
+- name: axis2
+  level: 2
+  rule:
+  - regexps:
+      body:
+      - faultstring
+    send_data: /axis2/services/testunknown

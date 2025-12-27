@@ -1,0 +1,5 @@
+- name: communigate-pro
+  rule:
+  - regexps:
+      header:
+      - CommuniGatePro

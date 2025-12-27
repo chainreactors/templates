@@ -1,0 +1,6 @@
+- name: CheungSSH
+  rule:
+  - regexps:
+      body:
+      - CheungSSH 版权所有
+      - /img/cheungssh.ico

@@ -1,0 +1,5 @@
+- name: 迅博-NG500-VPN-Firewall
+  rule:
+  - regexps:
+      header:
+      - Basic realm="NG500 VPN-Firewall"

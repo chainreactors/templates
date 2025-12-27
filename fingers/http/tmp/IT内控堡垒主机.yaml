@@ -1,0 +1,5 @@
+- name: IT内控堡垒主机
+  rule:
+  - regexps:
+      body:
+      - IT内控堡垒主机

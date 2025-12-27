@@ -1,0 +1,5 @@
+- name: 万物工业ERP
+  rule:
+  - regexps:
+      body:
+      - <meta name="keywords" content="万物商砼云管理系统">

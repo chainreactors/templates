@@ -1,0 +1,7 @@
+- name: 用友 NC cloud
+  rule:
+  - regexps:
+      body:
+      - <meta http-equiv=refresh content=0;url=nccloud>
+      - window.location.href="platform/pub/welcome.do";
+      - window.location.href="html/downloadBroswer.html";

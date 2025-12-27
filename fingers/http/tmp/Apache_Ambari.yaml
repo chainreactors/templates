@@ -1,0 +1,5 @@
+- name: Apache Ambari
+  rule:
+  - regexps:
+      body:
+      - Ambari

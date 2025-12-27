@@ -1,0 +1,5 @@
+- name: huawei hg630
+  rule:
+  - regexps:
+      body:
+      - Huawei HG630

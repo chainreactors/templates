@@ -1,0 +1,5 @@
+- name: Hadoop Hue
+  rule:
+  - regexps:
+      body:
+      - Welcome to Hue

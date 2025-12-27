@@ -1,0 +1,11 @@
+- name: 通达oa
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /static/images/tongda.ico
+    favicon:
+      md5:
+      - ed0044587917c76d08573577c8b72883
+      mmh3:
+      - '-759108386'

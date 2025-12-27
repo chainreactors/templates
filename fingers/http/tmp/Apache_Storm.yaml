@@ -1,0 +1,6 @@
+- name: Apache Storm
+  rule:
+  - regexps:
+      body:
+      - Storm UI
+      - Storm Logviewer

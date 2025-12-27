@@ -1,0 +1,5 @@
+- name: HuaWei FusionInsight
+  rule:
+  - regexps:
+      header:
+      - fusioninsight

@@ -1,0 +1,6 @@
+- name: 小鱼易连云视讯
+  link: https://219.138.214.7:9443/console/management#/login
+  rule:
+  - regexps:
+      body:
+      - font_1957344_lqkodjqdbl.css

@@ -1,0 +1,5 @@
+- name: LinkBroad YunGW
+  rule:
+  - regexps:
+      body:
+      - linkbroad yungw

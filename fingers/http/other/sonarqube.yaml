@@ -1,0 +1,5 @@
+- name: sonarqube
+  rule:
+  - favicon:
+      mmh3:
+      - '1485257654'

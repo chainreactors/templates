@@ -1,0 +1,8 @@
+- name: 网神vpn
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - admin/js/virtual_keyboard.js
+      header:
+      - host_for_cookie

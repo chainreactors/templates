@@ -1,0 +1,6 @@
+- name: blogengine_net
+  rule:
+  - regexps:
+      body:
+      - pics/blogengine.ico
+      - http://www.dotnetblogengine.net

@@ -1,0 +1,5 @@
+- name: 金方时代 建站系统
+  rule:
+  - regexps:
+      body:
+      - 金方时代

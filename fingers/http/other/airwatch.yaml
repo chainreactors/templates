@@ -1,0 +1,6 @@
+- name: airwatch
+  rule:
+  - favicon:
+      mmh3:
+      - '-1153873472'
+      - '-1863663974'

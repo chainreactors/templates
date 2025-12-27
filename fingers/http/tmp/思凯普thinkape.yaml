@@ -1,0 +1,11 @@
+- name: 思凯普thinkape
+  rule:
+  - favicon:
+      mmh3:
+      - '-1574451046'
+    regexps:
+      body:
+      - 思凯普
+      - ThinkApe
+      - 版权所有@ThinkApe思凯普
+      - Ashx/MobileSSOYL.ashx

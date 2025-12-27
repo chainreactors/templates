@@ -1,0 +1,5 @@
+- name: Oracle PeopleSoft
+  rule:
+  - regexps:
+      body:
+      - Oracle PeopleSoft

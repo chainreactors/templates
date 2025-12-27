@@ -1,0 +1,8 @@
+- name: wordpress
+  rule:
+  - regexps:
+      body:
+      - content="WordPress
+      - /wp-includes/
+      header:
+      - /xmlrpc.php

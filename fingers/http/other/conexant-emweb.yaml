@@ -1,0 +1,5 @@
+- name: conexant-emweb
+  rule:
+  - regexps:
+      header:
+      - Virata-EmWeb

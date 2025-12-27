@@ -1,0 +1,5 @@
+- name: juniper
+  rule:
+  - favicon:
+      mmh3:
+      - '2141724739'

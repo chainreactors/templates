@@ -1,0 +1,5 @@
+- name: caprover
+  rule:
+  - favicon:
+      mmh3:
+      - '988422585'

@@ -1,0 +1,5 @@
+- name: asus aicloud
+  rule:
+  - favicon:
+      mmh3:
+      - '552592949'

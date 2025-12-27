@@ -1,0 +1,5 @@
+- name: bluedragon
+  rule:
+  - regexps:
+      header:
+      - BlueDragon

@@ -1,0 +1,5 @@
+- name: shopbuilder
+  rule:
+  - regexps:
+      body:
+      - ShopBuilder

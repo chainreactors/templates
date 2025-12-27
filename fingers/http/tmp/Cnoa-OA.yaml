@@ -1,0 +1,5 @@
+- name: Cnoa-OA
+  rule:
+  - regexps:
+      body:
+      - powered by cnoa.cn

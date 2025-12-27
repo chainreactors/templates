@@ -1,0 +1,5 @@
+- name: TVTczentrix
+  rule:
+  - regexps:
+      body:
+      - images/zentrix_logo.png

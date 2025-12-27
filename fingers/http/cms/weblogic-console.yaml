@@ -1,0 +1,8 @@
+- name: weblogic-console
+  focus: true
+  rule:
+  - regexps:
+      vuln:
+      - 'WebLogic Server Version: (.*?)<'
+    send_data: /console/login/LoginForm.jsp
+    info: weblogic_console_leak

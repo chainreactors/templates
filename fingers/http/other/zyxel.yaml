@@ -1,0 +1,9 @@
+- name: zyxel
+  rule:
+  - regexps:
+      body:
+      - Forms/rpAuth_1
+    favicon:
+      mmh3:
+      - '943925975'
+      - '-882760066'

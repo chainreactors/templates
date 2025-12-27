@@ -1,0 +1,5 @@
+- name: urlrewriter.net
+  rule:
+  - regexps:
+      header:
+      - UrlRewriter.NET

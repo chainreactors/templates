@@ -1,0 +1,5 @@
+- name: ADTsec 安达通 SJW74 VPN网关
+  rule:
+  - regexps:
+      body:
+      - SJW74 VPN网关控制台管理员登录

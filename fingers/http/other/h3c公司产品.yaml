@@ -1,0 +1,7 @@
+- name: h3c公司产品
+  rule:
+  - regexps:
+      body:
+      - service@h3c.com
+      - H3C Corporation
+      - icg_helpScript.js

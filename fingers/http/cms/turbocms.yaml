@@ -1,0 +1,7 @@
+- name: turbocms
+  rule:
+  - regexps:
+      body:
+      - Powered by TurboCMS
+      - /cmsapp/zxdcADD.jsp
+      - /cmsapp/count/newstop_index.jsp?siteid=

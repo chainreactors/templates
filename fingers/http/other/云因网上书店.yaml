@@ -1,0 +1,6 @@
+- name: 云因网上书店
+  rule:
+  - regexps:
+      body:
+      - main/building.cfm
+      - href="../css/newscomm.css

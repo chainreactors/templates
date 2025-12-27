@@ -1,0 +1,5 @@
+- name: sonatype nexus repository manager
+  rule:
+  - favicon:
+      mmh3:
+      - '-1546574541'

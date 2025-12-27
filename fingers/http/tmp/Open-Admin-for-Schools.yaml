@@ -1,0 +1,5 @@
+- name: Open-Admin-for-Schools
+  rule:
+  - regexps:
+      body:
+      - Open Admin for Schools

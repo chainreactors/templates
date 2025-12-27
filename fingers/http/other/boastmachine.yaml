@@ -1,0 +1,6 @@
+- name: boastmachine
+  rule:
+  - regexps:
+      body:
+      - powered by boastMachine
+      - Powered by <a href="http://boastology.com

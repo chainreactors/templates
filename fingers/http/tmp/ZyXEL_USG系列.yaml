@@ -1,0 +1,5 @@
+- name: ZyXEL USG系列
+  rule:
+  - regexps:
+      body:
+      - <div class="model" id="model" name="model">(?P<app_name>Zyxel.{0,50}?)</div>

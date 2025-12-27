@@ -1,0 +1,5 @@
+- name: 百度WAF
+  rule:
+  - regexps:
+      body:
+      - DuEdge

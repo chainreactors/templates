@@ -1,0 +1,5 @@
+- name: cafe24
+  rule:
+  - favicon:
+      mmh3:
+      - '1251810433'

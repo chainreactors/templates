@@ -1,0 +1,5 @@
+- name: dwr
+  rule:
+  - regexps:
+      body:
+      - dwr/engine.js

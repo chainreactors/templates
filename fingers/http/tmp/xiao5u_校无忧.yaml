@@ -1,0 +1,5 @@
+- name: xiao5u 校无忧
+  rule:
+  - regexps:
+      body:
+      - 校无忧软件

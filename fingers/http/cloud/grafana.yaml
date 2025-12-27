@@ -1,0 +1,8 @@
+- name: grafana
+  focus: true
+  default_port:
+  - '3000'
+  rule:
+  - regexps:
+      body:
+      - Grafana</title>

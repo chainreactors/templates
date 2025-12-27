@@ -1,0 +1,5 @@
+- name: sun-one-web-server
+  rule:
+  - regexps:
+      header:
+      - Sun-ONE-Web-Server

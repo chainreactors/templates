@@ -1,0 +1,7 @@
+- name: phpwcms
+  rule:
+  - regexps:
+      body:
+      - content="phpwcms"
+      header:
+      - phpwcms

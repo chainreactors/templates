@@ -1,0 +1,5 @@
+- name: MUIBOOT权限管理系统
+  rule:
+  - regexps:
+      body:
+      - MUIBOOT权限管理系统-用户登录

@@ -1,0 +1,5 @@
+- name: WSO2 API管理
+  rule:
+  - regexps:
+      body:
+      - WSO2 Management Console

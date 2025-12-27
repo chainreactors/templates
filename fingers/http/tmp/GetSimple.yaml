@@ -1,0 +1,6 @@
+- name: GetSimple
+  rule:
+  - regexps:
+      body:
+      - content="getsimple, easy, content management system"
+      - Powered by GetSimple

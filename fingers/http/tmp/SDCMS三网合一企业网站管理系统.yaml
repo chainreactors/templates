@@ -1,0 +1,5 @@
+- name: SDCMS三网合一企业网站管理系统
+  rule:
+  - regexps:
+      body:
+      - SDCMS三网合一企业网站管理系统

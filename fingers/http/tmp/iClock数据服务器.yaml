@@ -1,0 +1,5 @@
+- name: iClock数据服务器
+  rule:
+  - regexps:
+      body:
+      - site-name">iClock数据服务器

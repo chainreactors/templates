@@ -1,0 +1,6 @@
+- name: any800
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - any800

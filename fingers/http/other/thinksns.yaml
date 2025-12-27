@@ -1,0 +1,7 @@
+- name: thinksns
+  rule:
+  - regexps:
+      body:
+      - _static/image/favicon.ico
+      header:
+      - TSV3_lang

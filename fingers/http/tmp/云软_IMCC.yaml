@@ -1,0 +1,5 @@
+- name: 云软 IMCC
+  rule:
+  - regexps:
+      body:
+      - 云软云客服

@@ -1,0 +1,9 @@
+- name: VisionSoft
+  rule:
+  - favicon:
+      mmh3:
+      - '-1590619462'
+    regexps:
+      body:
+      - CopyRight(C) Visionsoft
+      - Visionsoft

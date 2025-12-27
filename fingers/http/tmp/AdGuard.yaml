@@ -1,0 +1,6 @@
+- name: AdGuard
+  link: http://47.108.131.255:3000/login.html
+  rule:
+  - regexps:
+      body:
+      - AdGuardTeam

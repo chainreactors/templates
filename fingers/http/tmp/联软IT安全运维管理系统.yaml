@@ -1,0 +1,5 @@
+- name: 联软IT安全运维管理系统
+  rule:
+  - regexps:
+      body:
+      - '::联软IT安全运维管理系统::'

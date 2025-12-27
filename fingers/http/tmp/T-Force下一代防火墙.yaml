@@ -1,0 +1,5 @@
+- name: T-Force下一代防火墙
+  rule:
+  - regexps:
+      body:
+      - T-Force下一代防火墙

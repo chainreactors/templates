@@ -1,0 +1,7 @@
+- name: 天融信上网行为管理
+  rule:
+  - regexps:
+      body:
+      - dkey_activex_download.php"
+      - <title>Technology, Inc.</title>
+      - <title>Login @ Reporter</title>

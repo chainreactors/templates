@@ -1,0 +1,6 @@
+- name: interred
+  rule:
+  - regexps:
+      body:
+      - content="InterRed
+      - Created with InterRed

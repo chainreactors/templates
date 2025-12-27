@@ -1,0 +1,5 @@
+- name: xProxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: xProxy'

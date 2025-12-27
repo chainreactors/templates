@@ -1,0 +1,5 @@
+- name: jaws web server
+  rule:
+  - favicon:
+      mmh3:
+      - '768231242'

@@ -1,0 +1,5 @@
+- name: amazon
+  rule:
+  - favicon:
+      mmh3:
+      - '-1544605732'

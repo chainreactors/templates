@@ -1,0 +1,5 @@
+- name: liquidgis
+  rule:
+  - regexps:
+      header:
+      - 'Productname: LiquidGIS'

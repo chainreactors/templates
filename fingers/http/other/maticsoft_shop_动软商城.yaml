@@ -1,0 +1,7 @@
+- name: maticsoft_shop_动软商城
+  rule:
+  - regexps:
+      body:
+      - Maticsoft Shop
+      - maticsoft
+      - /Areas/Shop/

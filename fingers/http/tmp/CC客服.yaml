@@ -1,0 +1,5 @@
+- name: CC客服
+  rule:
+  - regexps:
+      body:
+      - http://kefu.qycn.com/vclient/state.php

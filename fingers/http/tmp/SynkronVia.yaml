@@ -1,0 +1,5 @@
+- name: SynkronVia
+  rule:
+  - regexps:
+      header:
+      - 'X-Generator: Synkron Via CMS'

@@ -1,0 +1,5 @@
+- name: lebishop
+  rule:
+  - regexps:
+      body:
+      - Powered by lebishop

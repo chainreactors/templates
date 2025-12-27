@@ -1,0 +1,6 @@
+- name: alibaba AnyProxy
+  link: http://42.159.95.115:8002/
+  rule:
+  - regexps:
+      body:
+      - AnyProxy

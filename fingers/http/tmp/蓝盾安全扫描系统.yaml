@@ -1,0 +1,5 @@
+- name: 蓝盾安全扫描系统
+  rule:
+  - regexps:
+      body:
+      - 蓝盾安全扫描系统

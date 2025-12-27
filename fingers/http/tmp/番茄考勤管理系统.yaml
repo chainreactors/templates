@@ -1,0 +1,6 @@
+- name: 番茄考勤管理系统
+  rule:
+  - regexps:
+      body:
+      - 番茄考勤管理系统
+      - <title>番茄考勤管理系统</title>

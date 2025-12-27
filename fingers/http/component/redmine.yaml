@@ -1,0 +1,9 @@
+- name: redmine
+  rule:
+  - regexps:
+      body:
+      - Redmine
+      - authenticity_token
+    favicon:
+      mmh3:
+      - '603314'

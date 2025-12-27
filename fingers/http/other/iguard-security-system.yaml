@@ -1,0 +1,7 @@
+- name: iguard-security-system
+  rule:
+  - regexps:
+      body:
+      - content="Lucky-Tech iGuard
+      header:
+      - iGuard Embedded Web Server

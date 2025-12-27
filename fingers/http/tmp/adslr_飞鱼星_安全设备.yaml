@@ -1,0 +1,5 @@
+- name: adslr 飞鱼星 安全设备
+  rule:
+  - regexps:
+      body:
+      - 飞鱼星设备WEB配置系统

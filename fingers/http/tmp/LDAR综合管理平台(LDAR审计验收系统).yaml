@@ -1,0 +1,5 @@
+- name: LDAR综合管理平台(LDAR审计验收系统)
+  rule:
+  - regexps:
+      body:
+      - LDAR综合管理平台(LDAR审计验收系统)

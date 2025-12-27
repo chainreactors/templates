@@ -1,0 +1,5 @@
+- name: PulseSecure SSL VPN
+  rule:
+  - regexps:
+      body:
+      - <b>pulse connect secure</b>

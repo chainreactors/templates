@@ -1,0 +1,11 @@
+- name: sonarqube
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - SonarQube
+    favicon:
+      md5:
+      - b4e4785d5852c563b9ae47cbb7af06fe
+      mmh3:
+      - '1485257654'

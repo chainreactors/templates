@@ -1,0 +1,5 @@
+- name: dokuwiki
+  rule:
+  - favicon:
+      mmh3:
+      - '-630493013'

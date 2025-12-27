@@ -1,0 +1,5 @@
+- name: ZyXEL USG60W
+  rule:
+  - regexps:
+      body:
+      - usg60w

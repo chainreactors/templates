@@ -1,0 +1,6 @@
+- name: dt-centrepiece
+  rule:
+  - regexps:
+      body:
+      - content="DT Centrepiece
+      - Powered By DT Centrepiece

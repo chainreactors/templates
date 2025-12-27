@@ -1,0 +1,5 @@
+- name: TRS 拓尔思 Hybase
+  rule:
+  - regexps:
+      body:
+      - TRS Hybase管理台

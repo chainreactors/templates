@@ -1,0 +1,5 @@
+- name: Zarafa
+  rule:
+  - regexps:
+      body:
+      - Zarafa WebAccess

@@ -1,0 +1,5 @@
+- name: siteengine
+  rule:
+  - regexps:
+      body:
+      - content="Boka SiteEngine

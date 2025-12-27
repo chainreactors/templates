@@ -1,0 +1,5 @@
+- name: 欧索软件
+  rule:
+  - regexps:
+      body:
+      - 技术支持：江苏欧索软件有限公司

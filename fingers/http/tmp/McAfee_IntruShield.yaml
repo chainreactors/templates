@@ -1,0 +1,5 @@
+- name: McAfee IntruShield
+  rule:
+  - regexps:
+      body:
+      - intruvert

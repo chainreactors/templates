@@ -1,0 +1,5 @@
+- name: PHPM
+  rule:
+  - regexps:
+      body:
+      - <title>PHPFM

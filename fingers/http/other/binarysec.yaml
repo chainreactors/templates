@@ -1,0 +1,5 @@
+- name: binarysec
+  rule:
+  - regexps:
+      header:
+      - X-Binarysec-Via

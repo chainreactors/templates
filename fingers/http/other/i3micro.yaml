@@ -1,0 +1,5 @@
+- name: i3micro
+  rule:
+  - regexps:
+      header:
+      - i3micro

@@ -1,0 +1,6 @@
+- name: fcms
+  rule:
+  - regexps:
+      body:
+      - content="Ryan Haudenschilt
+      - Powered by Family Connections

@@ -1,0 +1,5 @@
+- name: uplusftp
+  rule:
+  - regexps:
+      header:
+      - uPlusFtp

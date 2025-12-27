@@ -1,0 +1,7 @@
+- name: fex
+  rule:
+  - regexps:
+      body:
+      - HREF="mailto:fexmaster@ostc.de
+      header:
+      - fexsrv

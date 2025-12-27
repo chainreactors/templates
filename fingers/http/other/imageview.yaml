@@ -1,0 +1,7 @@
+- name: imageview
+  rule:
+  - regexps:
+      body:
+      - content="Imageview
+      - By Jorge Schrauwen
+      - href="http://www.blackdot.be" title="Blackdot.be

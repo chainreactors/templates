@@ -1,0 +1,5 @@
+- name: MetaCRM6客户关系管理系统
+  rule:
+  - regexps:
+      body:
+      - MetaCRM6客户关系管理系统

@@ -1,0 +1,5 @@
+- name: PIOLINK-Web-Manager
+  rule:
+  - regexps:
+      body:
+      - PIOLINK Web Manager

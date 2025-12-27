@@ -1,0 +1,5 @@
+- name: Scriptis
+  rule:
+  - regexps:
+      body:
+      - Scriptis

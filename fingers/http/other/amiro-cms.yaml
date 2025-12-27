@@ -1,0 +1,5 @@
+- name: amiro-cms
+  rule:
+  - regexps:
+      body:
+      - 'Powered by: Amiro CMS'

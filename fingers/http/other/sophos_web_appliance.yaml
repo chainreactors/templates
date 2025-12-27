@@ -1,0 +1,7 @@
+- name: sophos web appliance
+  rule:
+  - regexps:
+      body:
+      - Sophos Web Appliance
+      - resources/images/sophos_web.ico
+      - url(resources/images/en/login_swa.jpg)

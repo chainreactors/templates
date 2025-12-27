@@ -1,0 +1,8 @@
+- name: Nextcloud
+  rule:
+  - favicon:
+      mmh3:
+      - '167837543'
+    regexps:
+      body:
+      - Nextcloud

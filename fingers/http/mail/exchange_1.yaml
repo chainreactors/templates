@@ -1,0 +1,10 @@
+- name: exchange
+  rule:
+  - regexps:
+      body:
+      - owaLgnBdy
+      header:
+      - OutlookSession
+    favicon:
+      mmh3:
+      - '1768726119'

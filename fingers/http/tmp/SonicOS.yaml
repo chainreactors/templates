@@ -1,0 +1,6 @@
+- name: SonicOS
+  rule:
+  - regexps:
+      body:
+      - SonicOS avSummary page to cc.sonicwall.com
+      - SonicOS Enhanced

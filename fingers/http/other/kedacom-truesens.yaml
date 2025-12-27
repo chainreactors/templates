@@ -1,0 +1,7 @@
+- name: kedacom-truesens
+  rule:
+  - regexps:
+      body:
+      - /img/kedacom-logo.jpg
+      header:
+      - KEDACOM

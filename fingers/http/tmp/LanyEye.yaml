@@ -1,0 +1,5 @@
+- name: LanyEye
+  rule:
+  - regexps:
+      body:
+      - /skin/admin/img/login/laneye.png

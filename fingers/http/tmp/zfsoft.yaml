@@ -1,0 +1,5 @@
+- name: zfsoft
+  rule:
+  - regexps:
+      body:
+      - style/base/jw.css

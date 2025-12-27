@@ -1,0 +1,6 @@
+- name: SiteFactory
+  rule:
+  - regexps:
+      body:
+      - /sitefactory/assets/download.aspx
+      - id="SiteFactoryForm"

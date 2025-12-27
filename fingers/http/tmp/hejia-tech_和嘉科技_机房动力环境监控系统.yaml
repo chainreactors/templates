@@ -1,0 +1,6 @@
+- name: hejia-tech 和嘉科技 机房动力环境监控系统
+  rule:
+  - regexps:
+      body:
+      - 和嘉科技
+      - 动力环境监控系统

@@ -1,0 +1,5 @@
+- name: magicwinmail
+  rule:
+  - regexps:
+      header:
+      - magicwinmail_default_theme

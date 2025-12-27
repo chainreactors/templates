@@ -1,0 +1,7 @@
+- name: amh-云主机面板
+  rule:
+  - regexps:
+      body:
+      - 登录 - AMH
+      - 403 Forbidden - 403.html - AMH
+      - 404 Not Found - 404.html - AMH

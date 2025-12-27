@@ -1,0 +1,5 @@
+- name: USP-Secure-Entry-Server
+  rule:
+  - regexps:
+      header:
+      - Secure Entry Server

@@ -1,0 +1,5 @@
+- name: 泛微云桥e-bridge
+  rule:
+  - regexps:
+      body:
+      - /main/assets/images/favicon.ico

@@ -1,0 +1,6 @@
+- name: HertzBeat
+  link: http://health.seetong.com/passport/login
+  rule:
+  - regexps:
+      body:
+      - HertzBeat

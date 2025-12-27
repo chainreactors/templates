@@ -1,0 +1,5 @@
+- name: Doctor-Web-反病毒产品
+  rule:
+  - regexps:
+      body:
+      - '&copy; Doctor Web'

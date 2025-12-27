@@ -1,0 +1,5 @@
+- name: egroupware
+  rule:
+  - regexps:
+      body:
+      - content="eGroupWare

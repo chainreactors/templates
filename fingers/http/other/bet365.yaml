@@ -1,0 +1,5 @@
+- name: bet365
+  rule:
+  - favicon:
+      mmh3:
+      - '-2116540786'

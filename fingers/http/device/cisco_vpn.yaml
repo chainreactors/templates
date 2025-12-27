@@ -1,0 +1,5 @@
+- name: cisco_vpn
+  rule:
+  - regexps:
+      header:
+      - webvpn

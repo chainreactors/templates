@@ -1,0 +1,5 @@
+- name: Vigor
+  rule:
+  - regexps:
+      body:
+      - Vigor 登录页面

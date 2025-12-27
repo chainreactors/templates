@@ -1,0 +1,6 @@
+- name: 火星舱
+  link: http://61.188.178.220/template/login.xhtml
+  rule:
+  - regexps:
+      body:
+      - 火星舱系统管理

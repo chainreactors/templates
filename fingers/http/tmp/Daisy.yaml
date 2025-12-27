@@ -1,0 +1,5 @@
+- name: Daisy
+  rule:
+  - regexps:
+      body:
+      - <meta content="Daisy

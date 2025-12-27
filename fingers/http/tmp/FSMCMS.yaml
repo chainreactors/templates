@@ -1,0 +1,5 @@
+- name: FSMCMS
+  rule:
+  - regexps:
+      body:
+      - FSMCMS

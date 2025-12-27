@@ -1,0 +1,6 @@
+- name: Yonyou GRP U8
+  rule:
+  - regexps:
+      body:
+      - window.location.replace("login.jsp?up=1")
+      - 用友grp-u8

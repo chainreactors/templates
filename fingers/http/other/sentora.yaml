@@ -1,0 +1,5 @@
+- name: sentora
+  rule:
+  - favicon:
+      mmh3:
+      - '-2054889066'

@@ -1,0 +1,6 @@
+- name: 联软 UniNID网络智能防御系统
+  rule:
+  - regexps:
+      body:
+      - UniNID网络智能防御系统
+      - /agentless/login.jsp

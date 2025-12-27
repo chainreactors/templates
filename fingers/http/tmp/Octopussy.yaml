@@ -1,0 +1,5 @@
+- name: Octopussy
+  rule:
+  - regexps:
+      body:
+      - Octopussy

@@ -1,0 +1,6 @@
+- name: gallery
+  rule:
+  - regexps:
+      body:
+      - Gallery 3 Installer
+      - /gallery/images

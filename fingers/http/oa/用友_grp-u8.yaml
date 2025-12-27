@@ -1,0 +1,6 @@
+- name: 用友 grp-u8
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /R9iPortal/js/jquery.js

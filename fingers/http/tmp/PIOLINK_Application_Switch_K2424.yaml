@@ -1,0 +1,5 @@
+- name: PIOLINK Application Switch K2424
+  rule:
+  - regexps:
+      body:
+      - piolink application switch k2424

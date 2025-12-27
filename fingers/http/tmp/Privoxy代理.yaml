@@ -1,0 +1,7 @@
+- name: Privoxy代理
+  rule:
+  - regexps:
+      body:
+      - Privoxy
+      header:
+      - Privoxy

@@ -1,0 +1,5 @@
+- name: 益用TMS
+  rule:
+  - regexps:
+      body:
+      - 'title: ''TMS'','

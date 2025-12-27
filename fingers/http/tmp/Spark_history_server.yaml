@@ -1,0 +1,6 @@
+- name: Spark history server
+  rule:
+  - regexps:
+      body:
+      - history server
+      - src="/static/historypage-common.js">

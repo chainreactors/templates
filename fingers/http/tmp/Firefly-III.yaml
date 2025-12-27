@@ -1,0 +1,5 @@
+- name: Firefly-III
+  rule:
+  - regexps:
+      body:
+      - <meta name="application-name" content="Firefly III">

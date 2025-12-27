@@ -1,0 +1,6 @@
+- name: genohm-scada
+  rule:
+  - regexps:
+      body:
+      - GenOHM Scada Launcher
+      - /cgi-bin/scada-vis/

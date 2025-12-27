@@ -1,0 +1,6 @@
+- name: e看牙文件上传
+  link: https://xyyhyy.linkedcare.cn:9201/
+  rule:
+  - regexps:
+      body:
+      - e看牙

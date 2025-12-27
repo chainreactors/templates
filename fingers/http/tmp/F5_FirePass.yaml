@@ -1,0 +1,5 @@
+- name: F5 FirePass
+  rule:
+  - regexps:
+      body:
+      - F5 Networks FirePass

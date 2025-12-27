@@ -1,0 +1,5 @@
+- name: polycom
+  rule:
+  - favicon:
+      mmh3:
+      - '77044418'

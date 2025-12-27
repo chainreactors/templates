@@ -1,0 +1,5 @@
+- name: ibm server
+  rule:
+  - favicon:
+      mmh3:
+      - '1726027799'

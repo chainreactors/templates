@@ -1,0 +1,5 @@
+- name: arris
+  rule:
+  - favicon:
+      mmh3:
+      - '-360566773'

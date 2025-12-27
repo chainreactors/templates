@@ -1,0 +1,5 @@
+- name: Repro-Proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: Repro Proxy Repro'

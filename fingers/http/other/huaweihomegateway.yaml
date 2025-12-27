@@ -1,0 +1,7 @@
+- name: huaweihomegateway
+  rule:
+  - regexps:
+      body:
+      - Menu.HomeGatewayTitle
+      header:
+      - HuaweiHomeGateway

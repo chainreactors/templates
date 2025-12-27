@@ -1,0 +1,6 @@
+- name: vmware horizon
+  rule:
+  - favicon:
+      mmh3:
+      - '-1255992602'
+      - '-991123252'

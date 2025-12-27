@@ -1,0 +1,5 @@
+- name: CNPOWER-OA(OA8000)
+  rule:
+  - regexps:
+      body:
+      - /oaapp/webobjects/oaapp.woa

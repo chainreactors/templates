@@ -1,0 +1,5 @@
+- name: 友旺-WB-02N
+  rule:
+  - regexps:
+      body:
+      - <title>WB-02N </title>

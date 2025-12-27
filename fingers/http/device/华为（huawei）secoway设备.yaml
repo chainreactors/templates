@@ -1,0 +1,5 @@
+- name: 华为（huawei）secoway设备
+  rule:
+  - regexps:
+      body:
+      - Secoway

@@ -1,0 +1,5 @@
+- name: ESAFENET CDG
+  rule:
+  - regexps:
+      body:
+      - CDGServer3

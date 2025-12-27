@@ -1,0 +1,5 @@
+- name: nginx
+  rule:
+  - regexps:
+      header:
+      - nginx

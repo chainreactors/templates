@@ -1,0 +1,7 @@
+- name: Weebly
+  rule:
+  - regexps:
+      body:
+      - www.weebly.com
+      header:
+      - www.weebly.com

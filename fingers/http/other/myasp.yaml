@@ -1,0 +1,5 @@
+- name: myasp
+  rule:
+  - favicon:
+      mmh3:
+      - '-736276076'

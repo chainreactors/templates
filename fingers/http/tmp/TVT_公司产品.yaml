@@ -1,0 +1,6 @@
+- name: TVT 公司产品
+  link: http://172.88.61.155/#login
+  rule:
+  - favicon:
+      mmh3:
+      - '492290497'

@@ -1,0 +1,5 @@
+- name: Crafter CMS
+  rule:
+  - regexps:
+      body:
+      - Crafter CMS

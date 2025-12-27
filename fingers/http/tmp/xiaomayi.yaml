@@ -1,0 +1,7 @@
+- name: xiaomayi
+  rule:
+  - regexps:
+      body:
+      - /Template/Ant/Css/AntHomeComm.css
+      header:
+      - AntXiaouserslogin

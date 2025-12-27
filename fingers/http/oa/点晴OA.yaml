@@ -1,0 +1,5 @@
+- name: 点晴OA
+  rule:
+  - regexps:
+      body:
+      - /mis/pc_desk/download_pc_msg.asp

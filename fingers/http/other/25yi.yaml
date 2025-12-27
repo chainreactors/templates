@@ -1,0 +1,6 @@
+- name: 25yi
+  rule:
+  - regexps:
+      body:
+      - Powered by 25yi
+      - css/25yi.css

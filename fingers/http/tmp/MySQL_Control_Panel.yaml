@@ -1,0 +1,5 @@
+- name: MySQL Control Panel
+  rule:
+  - regexps:
+      header:
+      - Basic realm="MySQL Control Panel

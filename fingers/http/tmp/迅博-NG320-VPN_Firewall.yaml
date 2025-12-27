@@ -1,0 +1,5 @@
+- name: 迅博-NG320-VPN/Firewall
+  rule:
+  - regexps:
+      header:
+      - Basic realm="NG320-VPN-Firewall"

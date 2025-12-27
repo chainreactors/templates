@@ -1,0 +1,6 @@
+- name: 梭子鱼防火墙
+  rule:
+  - regexps:
+      body:
+      - http://www.barracudanetworks.com?a=bsf_product" class="transbutton
+      - /cgi-mod/header_logo.cgi

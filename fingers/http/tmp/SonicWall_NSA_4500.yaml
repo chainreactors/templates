@@ -1,0 +1,5 @@
+- name: SonicWall NSA 4500
+  rule:
+  - regexps:
+      body:
+      - sonicwall nsa 4500

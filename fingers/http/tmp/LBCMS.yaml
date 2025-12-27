@@ -1,0 +1,5 @@
+- name: LBCMS
+  rule:
+  - regexps:
+      body:
+      - 贵州狼邦科技有限公司

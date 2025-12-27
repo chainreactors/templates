@@ -1,0 +1,5 @@
+- name: SinGooCMS内容管理系统
+  rule:
+  - regexps:
+      body:
+      - SinGooCMS内容管理系统

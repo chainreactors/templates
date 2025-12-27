@@ -1,0 +1,8 @@
+- name: 地平线cms
+  rule:
+  - regexps:
+      body:
+      - labelOppInforStyle
+      - Powered by deep soon
+      - search_result.aspx
+      - frmsearch

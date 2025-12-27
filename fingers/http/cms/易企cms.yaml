@@ -1,0 +1,5 @@
+- name: 易企cms
+  rule:
+  - regexps:
+      body:
+      - content="YiqiCMS

@@ -1,0 +1,7 @@
+- name: cms-made-simple
+  rule:
+  - regexps:
+      body:
+      - content="CMS Made Simple
+      header:
+      - CMSSESSID

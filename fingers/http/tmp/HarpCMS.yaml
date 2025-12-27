@@ -1,0 +1,5 @@
+- name: HarpCMS
+  rule:
+  - regexps:
+      header:
+      - HarpCMS"

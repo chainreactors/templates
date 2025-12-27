@@ -1,0 +1,5 @@
+- name: RMS-Case-Manager
+  rule:
+  - regexps:
+      body:
+      - RMS Case Manager

@@ -1,0 +1,5 @@
+- name: UsualToolCMS
+  rule:
+  - regexps:
+      body:
+      - UsualToolCMS

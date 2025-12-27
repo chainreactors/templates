@@ -1,0 +1,5 @@
+- name: Zcms
+  rule:
+  - regexps:
+      body:
+      - Zcms内容管理系统

@@ -1,0 +1,5 @@
+- name: tapestry
+  rule:
+  - regexps:
+      body:
+      - tapestry

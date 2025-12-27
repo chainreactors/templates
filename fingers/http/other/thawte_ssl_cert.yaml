@@ -1,0 +1,5 @@
+- name: thawte_ssl_cert
+  rule:
+  - regexps:
+      body:
+      - https://seal.thawte.com/getthawteseal

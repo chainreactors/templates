@@ -1,0 +1,5 @@
+- name: FastAdmin
+  rule:
+  - regexps:
+      body:
+      - Powered by FastAdmin

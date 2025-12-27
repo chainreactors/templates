@@ -1,0 +1,5 @@
+- name: MvMmall
+  rule:
+  - regexps:
+      body:
+      - <meta name="Copyright" content="www.mvmmall.cn" />

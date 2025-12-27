@@ -1,0 +1,5 @@
+- name: 中网可信网站权威数据库
+  rule:
+  - regexps:
+      body:
+      - https://ss.knet.cn/verifyseal.dll

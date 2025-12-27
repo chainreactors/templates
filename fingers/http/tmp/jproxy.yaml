@@ -1,0 +1,5 @@
+- name: jproxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: jproxy'

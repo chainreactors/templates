@@ -1,0 +1,7 @@
+- name: 通软edr
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /default/uninstall.html
+      - /Gsc/

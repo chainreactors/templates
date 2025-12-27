@@ -1,0 +1,6 @@
+- name: 铱讯WAF
+  rule:
+  - regexps:
+      body:
+      - 检测到可疑访问，事件编号
+      - <TITLE>访问禁止</TITLE>

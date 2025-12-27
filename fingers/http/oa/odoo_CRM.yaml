@@ -1,0 +1,10 @@
+- name: odoo CRM
+  rule:
+  - regexps:
+      body:
+      - odoo
+    favicon:
+      md5:
+      - ec38664cbd12ffda74d04541be9956ad
+      mmh3:
+      - '1393281917'

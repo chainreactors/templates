@@ -1,0 +1,5 @@
+- name: citrix-netscaler
+  rule:
+  - regexps:
+      body:
+      - NS-CACHE

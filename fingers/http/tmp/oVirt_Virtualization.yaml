@@ -1,0 +1,7 @@
+- name: oVirt Virtualization
+  rule:
+  - regexps:
+      body:
+      - <a href="https://www.ovirt.org" class="obrand_loginpagelogolink">
+      header:
+      - /ovirt-engine/

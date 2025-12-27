@@ -1,0 +1,5 @@
+- name: D-Link-DCS-prod
+  rule:
+  - regexps:
+      header:
+      - Basic realm="DCS-prod

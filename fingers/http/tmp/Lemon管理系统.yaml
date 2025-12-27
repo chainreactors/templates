@@ -1,0 +1,5 @@
+- name: Lemon管理系统
+  rule:
+  - regexps:
+      body:
+      - LEMON管理系统

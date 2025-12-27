@@ -1,0 +1,5 @@
+- name: RemotelyAnywhere
+  rule:
+  - regexps:
+      header:
+      - 'Server: RemotelyAnywhere'

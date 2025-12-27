@@ -1,0 +1,6 @@
+- name: thinkox
+  rule:
+  - regexps:
+      body:
+      - Powered By ThinkOX
+      - ThinkOX

@@ -1,0 +1,5 @@
+- name: isolsoft-support-center
+  rule:
+  - regexps:
+      body:
+      - 'Powered by: Support Center'

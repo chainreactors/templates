@@ -1,0 +1,6 @@
+- name: 睿博士云办公系统
+  rule:
+  - regexps:
+      body:
+      - /studentSign/toLogin.di
+      - /user/toUpdatePasswordPage.di

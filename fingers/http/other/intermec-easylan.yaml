@@ -1,0 +1,7 @@
+- name: intermec-easylan
+  rule:
+  - regexps:
+      body:
+      - COLOR="BLACK" SIZE="5">Intermec EasyLAN
+      header:
+      - XCD WebAdmin

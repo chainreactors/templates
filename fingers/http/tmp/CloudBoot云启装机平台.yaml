@@ -1,0 +1,6 @@
+- name: CloudBoot云启装机平台
+  rule:
+  - regexps:
+      body:
+      - cloudboot
+      - /clipboard/zeroclipboard.min

@@ -1,0 +1,5 @@
+- name: NPort web console
+  rule:
+  - regexps:
+      body:
+      - NPort web console

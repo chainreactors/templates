@@ -1,0 +1,5 @@
+- name: haproxy
+  rule:
+  - regexps:
+      header:
+      - HAProxy Statistics

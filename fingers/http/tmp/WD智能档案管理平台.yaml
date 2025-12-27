@@ -1,0 +1,5 @@
+- name: WD智能档案管理平台
+  rule:
+  - regexps:
+      body:
+      - WD智能档案管理平台

@@ -1,0 +1,5 @@
+- name: CactuShop
+  rule:
+  - regexps:
+      body:
+      - <!-- CactuShop

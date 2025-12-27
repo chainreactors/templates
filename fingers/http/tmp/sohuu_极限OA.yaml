@@ -1,0 +1,5 @@
+- name: sohuu 极限OA
+  rule:
+  - regexps:
+      body:
+      - sohuu.ico

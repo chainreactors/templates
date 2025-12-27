@@ -1,0 +1,9 @@
+- name: casino
+  rule:
+  - regexps:
+      body:
+      - rbcas.com
+      - CASino
+      - casino_and_overrides.css
+      header:
+      - _my-casino_session

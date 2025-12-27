@@ -1,0 +1,5 @@
+- name: H3C SecPath F1000 A EI
+  rule:
+  - regexps:
+      body:
+      - h3c firewall secpath f1000-a-ei

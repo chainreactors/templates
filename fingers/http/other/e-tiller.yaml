@@ -1,0 +1,5 @@
+- name: e-tiller
+  rule:
+  - regexps:
+      body:
+      - reader/view_abstract.aspx

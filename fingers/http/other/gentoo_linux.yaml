@@ -1,0 +1,5 @@
+- name: gentoo linux
+  rule:
+  - regexps:
+      header:
+      - Gentoo

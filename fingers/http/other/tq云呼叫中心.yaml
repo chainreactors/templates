@@ -1,0 +1,5 @@
+- name: tq云呼叫中心
+  rule:
+  - regexps:
+      body:
+      - tq.cn/floatcard?

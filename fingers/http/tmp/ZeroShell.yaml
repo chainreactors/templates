@@ -1,0 +1,5 @@
+- name: ZeroShell
+  rule:
+  - regexps:
+      body:
+      - ZeroShell

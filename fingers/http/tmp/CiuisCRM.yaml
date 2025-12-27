@@ -1,0 +1,5 @@
+- name: CiuisCRM
+  rule:
+  - regexps:
+      body:
+      - s/ciuis.css

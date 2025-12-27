@@ -1,0 +1,5 @@
+- name: Apache Archiva
+  rule:
+  - regexps:
+      body:
+      - Apache Archiva

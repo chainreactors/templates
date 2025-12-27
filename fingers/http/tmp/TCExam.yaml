@@ -1,0 +1,6 @@
+- name: TCExam
+  rule:
+  - regexps:
+      body:
+      - content="TCExam
+      - http://www.tcexam.org

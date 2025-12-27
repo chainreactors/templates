@@ -1,0 +1,6 @@
+- name: g4studio
+  rule:
+  - regexps:
+      body:
+      - g4it
+      - g4.ico

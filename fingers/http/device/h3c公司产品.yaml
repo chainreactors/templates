@@ -1,0 +1,7 @@
+- name: h3c公司产品
+  rule:
+  - regexps:
+      body:
+      - <title>Web managerment Home
+      - .h3c.com
+      - service@h3c.com

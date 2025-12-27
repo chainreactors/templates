@@ -1,0 +1,5 @@
+- name: cachelogic-expired-domains-script
+  rule:
+  - regexps:
+      body:
+      - href="http://cachelogic.net">Cachelogic.net

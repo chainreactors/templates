@@ -1,0 +1,8 @@
+- name: EMC XtremIO
+  rule:
+  - regexps:
+      body:
+      - XtremIO Management Application
+      - href="mailto:xtremioinfo@emc.com"
+      - XtremIO - Download
+      - XtremIO - 下载

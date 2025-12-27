@@ -1,0 +1,5 @@
+- name: tcn
+  rule:
+  - favicon:
+      mmh3:
+      - '-702384832'

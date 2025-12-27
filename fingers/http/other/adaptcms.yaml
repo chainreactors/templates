@@ -1,0 +1,7 @@
+- name: adaptcms
+  rule:
+  - regexps:
+      body:
+      - AdaptCMS
+      header:
+      - adaptcms

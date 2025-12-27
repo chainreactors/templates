@@ -1,0 +1,5 @@
+- name: avigilon
+  rule:
+  - favicon:
+      mmh3:
+      - '1318124267'

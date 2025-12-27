@@ -1,0 +1,8 @@
+- name: espcms
+  rule:
+  - regexps:
+      body:
+      - Powered by ESPCMS
+      - Powered by ESPCMS
+      - infolist_fff
+      - /templates/default/style/tempates_div.css

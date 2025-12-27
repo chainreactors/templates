@@ -1,0 +1,5 @@
+- name: Acidcat CMS
+  rule:
+  - regexps:
+      body:
+      - Powered by Acidcat CMS

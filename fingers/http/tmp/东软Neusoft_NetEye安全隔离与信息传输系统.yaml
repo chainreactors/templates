@@ -1,0 +1,5 @@
+- name: 东软Neusoft NetEye安全隔离与信息传输系统
+  rule:
+  - regexps:
+      body:
+      - 东软NetEye安全隔离与信息传输系统

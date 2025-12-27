@@ -1,0 +1,5 @@
+- name: Apereo CAS
+  rule:
+  - regexps:
+      body:
+      - Jasig Central Authentication Service

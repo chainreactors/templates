@@ -1,0 +1,5 @@
+- name: recaptcha
+  rule:
+  - regexps:
+      body:
+      - recaptcha_ajax.js

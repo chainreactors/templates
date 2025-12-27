@@ -1,0 +1,5 @@
+- name: luma surveillance
+  rule:
+  - favicon:
+      mmh3:
+      - '-1351901211'

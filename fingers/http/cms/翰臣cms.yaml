@@ -1,0 +1,5 @@
+- name: 翰臣cms
+  rule:
+  - regexps:
+      body:
+      - 翰臣科技

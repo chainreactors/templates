@@ -1,0 +1,5 @@
+- name: jboss application server 7
+  rule:
+  - favicon:
+      mmh3:
+      - '937999361'

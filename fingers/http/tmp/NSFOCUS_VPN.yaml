@@ -1,0 +1,5 @@
+- name: NSFOCUS VPN
+  rule:
+  - regexps:
+      body:
+      - /logo_login_nsfocus.png

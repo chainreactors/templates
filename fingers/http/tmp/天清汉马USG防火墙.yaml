@@ -1,0 +1,6 @@
+- name: 天清汉马USG防火墙
+  link: https://222.175.173.206:4431/login.html
+  rule:
+  - regexps:
+      body:
+      - 天清汉马USG

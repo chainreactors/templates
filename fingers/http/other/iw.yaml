@@ -1,0 +1,5 @@
+- name: iw
+  rule:
+  - favicon:
+      mmh3:
+      - '896412703'

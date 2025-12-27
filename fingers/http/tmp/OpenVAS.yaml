@@ -1,0 +1,9 @@
+- name: OpenVAS
+  rule:
+  - favicon:
+      mmh3:
+      - '20649669'
+    regexps:
+      body:
+      - openvas.css
+      - OpenVAS

@@ -1,0 +1,6 @@
+- name: cmsqlite
+  rule:
+  - regexps:
+      body:
+      - powered by CMSQLite
+      - content="www.CMSQLite.net

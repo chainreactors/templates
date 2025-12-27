@@ -1,0 +1,5 @@
+- name: openLooKeng
+  rule:
+  - regexps:
+      body:
+      - OpenLooKeng Query Editor

@@ -1,0 +1,6 @@
+- name: vmware center
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - ID_VC_Welcome

@@ -1,0 +1,7 @@
+- name: CitrixWAF
+  rule:
+  - regexps:
+      body:
+      - Application Firewall Block Page
+      - 'Violation Category: APPFW_'
+      - AppFW Session ID

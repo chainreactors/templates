@@ -1,0 +1,5 @@
+- name: NetWin-DBabble
+  rule:
+  - regexps:
+      header:
+      - 'Server: DBabble'

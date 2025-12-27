@@ -1,0 +1,6 @@
+- name: Destoon
+  rule:
+  - regexps:
+      body:
+      - id="destoon
+      - content="destoon

@@ -1,0 +1,5 @@
+- name: 拓尔思sso
+  rule:
+  - regexps:
+      body:
+      - /ids/admin/js/oslib

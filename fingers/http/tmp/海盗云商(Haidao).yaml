@@ -1,0 +1,5 @@
+- name: 海盗云商(Haidao)
+  rule:
+  - regexps:
+      body:
+      - /haidao.css

@@ -1,0 +1,7 @@
+- name: Telerik
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /Telerik.Web.UI.WebResource.axd
+      - content="Sitefinity

@@ -1,0 +1,7 @@
+- name: 50cms
+  rule:
+  - favicon:
+      mmh3:
+      - '-299974513'
+      md5:
+      - d1b2495284e172a52abc355c63b25341

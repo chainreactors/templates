@@ -1,0 +1,6 @@
+- name: 泛微e-office
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /lang/cn/javascript.lang.js

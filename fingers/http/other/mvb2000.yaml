@@ -1,0 +1,6 @@
+- name: mvb2000
+  rule:
+  - regexps:
+      body:
+      - MVB2000
+      - The Magic Voice Box

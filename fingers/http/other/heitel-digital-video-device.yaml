@@ -1,0 +1,5 @@
+- name: heitel-digital-video-device
+  rule:
+  - regexps:
+      header:
+      - HeiTel GmbH Web Server

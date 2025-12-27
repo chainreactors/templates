@@ -1,0 +1,5 @@
+- name: 乐视路由器
+  rule:
+  - regexps:
+      body:
+      - 乐视路由器

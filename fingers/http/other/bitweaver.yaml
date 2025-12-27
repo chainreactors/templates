@@ -1,0 +1,6 @@
+- name: bitweaver
+  rule:
+  - regexps:
+      body:
+      - content="bitweaver
+      - href="http://www.bitweaver.org">Powered by

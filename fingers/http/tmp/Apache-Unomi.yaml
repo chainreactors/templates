@@ -1,0 +1,6 @@
+- name: Apache-Unomi
+  link: http://52.11.238.83:8181/
+  rule:
+  - regexps:
+      body:
+      - logo apache unomi

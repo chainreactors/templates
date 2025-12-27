@@ -1,0 +1,5 @@
+- name: Digital-Guardian-Digital-Guardian
+  rule:
+  - regexps:
+      body:
+      - class="theme_default brand_Guardian mode_ wizard_

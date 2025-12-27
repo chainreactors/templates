@@ -1,0 +1,5 @@
+- name: Palladium-Unified-security-management-and-comprehensive-audit-system
+  rule:
+  - regexps:
+      body:
+      - module/image/pldsec.css

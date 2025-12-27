@@ -1,0 +1,6 @@
+- name: ADTsec 安达通 VPN
+  rule:
+  - regexps:
+      body:
+      - <title>SJW74 VPN网关控制台管理员登录</title>
+      - TPN-2G网关控制台管理员登录

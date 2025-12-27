@@ -1,0 +1,5 @@
+- name: JGI
+  rule:
+  - regexps:
+      body:
+      - content="JGI - http://www.jgi.com.br

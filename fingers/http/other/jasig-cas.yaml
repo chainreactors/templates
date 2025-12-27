@@ -1,0 +1,5 @@
+- name: jasig-cas
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://www.jasig.org/cas

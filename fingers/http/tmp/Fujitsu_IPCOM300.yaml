@@ -1,0 +1,5 @@
+- name: Fujitsu IPCOM300
+  rule:
+  - regexps:
+      header:
+      - fujitsu-ipcom300

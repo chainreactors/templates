@@ -1,0 +1,6 @@
+- name: UNIS Firewall
+  rule:
+  - regexps:
+      body:
+      - <b><nobr>紫光防火墙
+      - 紫光防火墙

@@ -1,0 +1,5 @@
+- name: ASPilot Cart
+  rule:
+  - regexps:
+      body:
+      - <meta name="copyright" content="Pilot Cart

@@ -1,0 +1,12 @@
+- name: 万户oa
+  focus: true
+  rule:
+  - regexps:
+      header:
+      - LocLan
+      body:
+      - css/css_whir.css
+      - ezOFFICE
+      - 万户OA
+      - whirRootPath
+      - /defaultroot

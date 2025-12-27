@@ -1,0 +1,7 @@
+- name: 安恒设备
+  rule:
+  - regexps:
+      body:
+      - 明御
+      - 安恒
+      - 明鉴

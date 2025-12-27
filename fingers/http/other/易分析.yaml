@@ -1,0 +1,6 @@
+- name: 易分析
+  rule:
+  - regexps:
+      body:
+      - 易分析 PHPStat Analytics
+      - PHPStat Analytics 网站数据分析系统

@@ -1,0 +1,7 @@
+- name: CmsEasy
+  rule:
+  - regexps:
+      body:
+      - content="CmsEasy
+      - powered by cmseasy
+      - http://www.cmseasy.cn/service_1.html

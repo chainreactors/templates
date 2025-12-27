@@ -1,0 +1,5 @@
+- name: 帝国empirecms
+  rule:
+  - regexps:
+      body:
+      - Powered by EmpireCMS

@@ -1,0 +1,5 @@
+- name: 拓尔思mas
+  rule:
+  - regexps:
+      header:
+      - X-Mas-Server

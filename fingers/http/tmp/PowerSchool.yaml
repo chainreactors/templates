@@ -1,0 +1,5 @@
+- name: PowerSchool
+  rule:
+  - regexps:
+      header:
+      - 'Server: PowerSchool'

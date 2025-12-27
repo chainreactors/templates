@@ -1,0 +1,5 @@
+- name: ClassCMS
+  rule:
+  - regexps:
+      body:
+      - ClassCMS

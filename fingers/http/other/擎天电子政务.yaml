@@ -1,0 +1,7 @@
+- name: 擎天电子政务
+  rule:
+  - regexps:
+      body:
+      - App_Themes/1/Style.css
+      - window.location = "homepages/index.aspx
+      - homepages/content_page.aspx

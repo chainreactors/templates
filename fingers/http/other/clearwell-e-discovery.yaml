@@ -1,0 +1,7 @@
+- name: clearwell-e-discovery
+  rule:
+  - regexps:
+      body:
+      - Clearwell E-Discovery Platform log in
+      header:
+      - Clearwell

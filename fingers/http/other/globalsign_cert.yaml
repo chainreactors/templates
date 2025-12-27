@@ -1,0 +1,5 @@
+- name: globalsign_cert
+  rule:
+  - regexps:
+      body:
+      - //seal.globalsign.com/SiteSeal

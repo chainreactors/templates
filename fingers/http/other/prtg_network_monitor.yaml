@@ -1,0 +1,5 @@
+- name: prtg network monitor
+  rule:
+  - favicon:
+      mmh3:
+      - '-655683626'

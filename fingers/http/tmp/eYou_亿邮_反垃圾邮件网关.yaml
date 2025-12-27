@@ -1,0 +1,5 @@
+- name: eYou 亿邮 反垃圾邮件网关
+  rule:
+  - regexps:
+      body:
+      - 反垃圾邮件网关 - 亿邮通讯

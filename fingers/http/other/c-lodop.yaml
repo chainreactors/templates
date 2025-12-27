@@ -1,0 +1,5 @@
+- name: c-lodop
+  rule:
+  - favicon:
+      mmh3:
+      - '-329747115'

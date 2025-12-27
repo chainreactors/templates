@@ -1,0 +1,5 @@
+- name: Leadsec SOC
+  rule:
+  - regexps:
+      body:
+      - action="/leadsec-soc/signin

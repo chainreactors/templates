@@ -1,0 +1,7 @@
+- name: litespeed_web_admin_console
+  rule:
+  - regexps:
+      body:
+      - LiteSpeed Web Admin Console
+      header:
+      - LSWSWEBUI

@@ -1,0 +1,7 @@
+- name: prestashop
+  rule:
+  - regexps:
+      body:
+      - Shop powered by PrestaShop
+      header:
+      - PrestaShop

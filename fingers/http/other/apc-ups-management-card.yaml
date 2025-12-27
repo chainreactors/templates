@@ -1,0 +1,7 @@
+- name: apc-ups-management-card
+  rule:
+  - regexps:
+      body:
+      - class="apclogo"
+      header:
+      - APC Management Card

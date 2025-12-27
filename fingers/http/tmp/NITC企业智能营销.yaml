@@ -1,0 +1,5 @@
+- name: NITC企业智能营销
+  rule:
+  - regexps:
+      body:
+      - alt="http://www.nitc.cc" title="http://www.nitc.cc"

@@ -1,0 +1,6 @@
+- name: telerik
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - telerik

@@ -1,0 +1,5 @@
+- name: mitel networks
+  rule:
+  - favicon:
+      mmh3:
+      - '-1922044295'

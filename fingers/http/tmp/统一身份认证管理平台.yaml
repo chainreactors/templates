@@ -1,0 +1,5 @@
+- name: 统一身份认证管理平台
+  rule:
+  - regexps:
+      body:
+      - <title>统一身份认证管理平台</title>

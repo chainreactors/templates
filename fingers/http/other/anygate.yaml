@@ -1,0 +1,6 @@
+- name: anygate
+  rule:
+  - regexps:
+      body:
+      - AnyGate
+      - /anygate.php

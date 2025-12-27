@@ -1,0 +1,5 @@
+- name: sierra wireless ace manager
+  rule:
+  - favicon:
+      mmh3:
+      - '-1571472432'

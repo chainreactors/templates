@@ -1,0 +1,5 @@
+- name: HuaWei SRG3240
+  rule:
+  - regexps:
+      body:
+      - srg3240

@@ -1,0 +1,6 @@
+- name: 合勤科技-NSA
+  rule:
+  - regexps:
+      header:
+      - Basic realm="NSA320"
+      - Basic realm="NSA310"

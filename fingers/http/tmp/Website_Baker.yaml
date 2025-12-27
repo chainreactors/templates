@@ -1,0 +1,5 @@
+- name: Website Baker
+  rule:
+  - regexps:
+      body:
+      - href="http://www.websitebaker.org/"

@@ -1,0 +1,5 @@
+- name: netiaspot
+  rule:
+  - favicon:
+      mmh3:
+      - '-978656757'

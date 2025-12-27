@@ -1,0 +1,5 @@
+- name: cambium networks
+  rule:
+  - favicon:
+      mmh3:
+      - '-435817905'

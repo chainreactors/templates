@@ -1,0 +1,5 @@
+- name: 中望 OA
+  rule:
+  - regexps:
+      body:
+      - <a href="http://www.xtoa.cn" target="_blank">中望软件</a> &copy; 版权所有

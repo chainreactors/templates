@@ -1,0 +1,5 @@
+- name: ossia camera
+  rule:
+  - favicon:
+      mmh3:
+      - '-374235895'

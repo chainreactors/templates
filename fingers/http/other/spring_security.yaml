@@ -1,0 +1,7 @@
+- name: spring security
+  rule:
+  - regexps:
+      body:
+      - j_spring_security_check
+      header:
+      - Spring Security Application

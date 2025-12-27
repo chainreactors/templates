@@ -1,0 +1,5 @@
+- name: netgear产品
+  rule:
+  - regexps:
+      header:
+      - NETGEAR

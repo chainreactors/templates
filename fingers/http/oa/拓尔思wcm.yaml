@@ -1,0 +1,5 @@
+- name: 拓尔思wcm
+  rule:
+  - regexps:
+      body:
+      - forum.trs.com.cn

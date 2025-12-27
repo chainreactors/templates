@@ -1,0 +1,5 @@
+- name: Mailmax 邮件服务器
+  rule:
+  - regexps:
+      body:
+      - ESMTP mailMAX ready

@@ -1,0 +1,6 @@
+- name: lotus
+  rule:
+  - regexps:
+      body:
+      - IBM Lotus iNotes Login
+      - iwaredir.nsf

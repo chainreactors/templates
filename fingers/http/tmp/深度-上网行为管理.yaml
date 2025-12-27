@@ -1,0 +1,5 @@
+- name: 深度-上网行为管理
+  rule:
+  - regexps:
+      body:
+      - 深度上网行为管理

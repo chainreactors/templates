@@ -1,0 +1,5 @@
+- name: cisco asr
+  rule:
+  - regexps:
+      body:
+      - CISCO ASR

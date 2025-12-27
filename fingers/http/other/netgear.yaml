@@ -1,0 +1,5 @@
+- name: netgear
+  rule:
+  - favicon:
+      mmh3:
+      - '-1319025408'

@@ -1,0 +1,5 @@
+- name: zoom-search-engine
+  rule:
+  - regexps:
+      body:
+      - name="zoom_query"

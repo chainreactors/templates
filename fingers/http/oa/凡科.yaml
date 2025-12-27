@@ -1,0 +1,5 @@
+- name: 凡科
+  rule:
+  - regexps:
+      body:
+      - 凡科

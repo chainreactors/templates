@@ -1,0 +1,7 @@
+- name: hims酒店云计算服务
+  rule:
+  - regexps:
+      body:
+      - GB_ROOT_DIR
+      - maincontent.css
+      - HIMS酒店云计算服务

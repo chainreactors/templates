@@ -1,0 +1,5 @@
+- name: phpRechnung
+  rule:
+  - regexps:
+      body:
+      - include/phprechnung.css

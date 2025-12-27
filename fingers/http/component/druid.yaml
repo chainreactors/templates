@@ -1,0 +1,11 @@
+- name: druid
+  focus: true
+  rule:
+  - regexps:
+      vuln:
+      - Druid Stat Index
+      body:
+      - druid/login.html
+      - druid.login
+    send_data: /druid/index.html
+    info: druid leak

@@ -1,0 +1,5 @@
+- name: 腾讯WAF
+  rule:
+  - regexps:
+      body:
+      - waf.tencent-cloud.com

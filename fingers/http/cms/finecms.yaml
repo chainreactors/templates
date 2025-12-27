@@ -1,0 +1,5 @@
+- name: finecms
+  rule:
+  - regexps:
+      body:
+      - FineCMS

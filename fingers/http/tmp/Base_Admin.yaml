@@ -1,0 +1,5 @@
+- name: Base Admin
+  rule:
+  - regexps:
+      body:
+      - Base Admin

@@ -1,0 +1,5 @@
+- name: esyndicat
+  rule:
+  - regexps:
+      body:
+      - content="eSyndiCat

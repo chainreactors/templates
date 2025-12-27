@@ -1,0 +1,7 @@
+- name: bxemail
+  rule:
+  - regexps:
+      body:
+      - 百讯安全邮件系统
+      - 百姓邮局
+      - bxemail.com

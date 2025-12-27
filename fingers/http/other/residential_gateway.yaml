@@ -1,0 +1,5 @@
+- name: residential gateway
+  rule:
+  - favicon:
+      mmh3:
+      - '-1933493443'

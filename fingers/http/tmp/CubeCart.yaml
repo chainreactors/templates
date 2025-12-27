@@ -1,0 +1,5 @@
+- name: CubeCart
+  rule:
+  - regexps:
+      body:
+      - Powered by CubeCart

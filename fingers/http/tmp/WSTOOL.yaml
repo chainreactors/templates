@@ -1,0 +1,5 @@
+- name: WSTOOL
+  rule:
+  - regexps:
+      body:
+      - The Prices vs. Features of Web Application Vulnerability Scanners

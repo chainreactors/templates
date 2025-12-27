@@ -1,0 +1,8 @@
+- name: Doggie
+  rule:
+  - favicon:
+      mmh3:
+      - '817193734'
+    regexps:
+      body:
+      - doggieUI

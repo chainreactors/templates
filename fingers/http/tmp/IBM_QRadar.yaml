@@ -1,0 +1,5 @@
+- name: IBM QRadar
+  rule:
+  - regexps:
+      body:
+      - IBM QRadar

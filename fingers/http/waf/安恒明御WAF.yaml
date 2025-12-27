@@ -1,0 +1,5 @@
+- name: 安恒明御WAF
+  rule:
+  - regexps:
+      body:
+      - 因权限问题或行为非法，您的访问被拒绝

@@ -1,0 +1,5 @@
+- name: Edito-CMS
+  rule:
+  - regexps:
+      body:
+      - title="Edito CMS

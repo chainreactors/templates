@@ -1,0 +1,5 @@
+- name: nagios
+  rule:
+  - regexps:
+      header:
+      - Nagios Access

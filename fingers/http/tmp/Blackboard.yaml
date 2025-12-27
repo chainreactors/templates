@@ -1,0 +1,5 @@
+- name: Blackboard
+  rule:
+  - regexps:
+      body:
+      - <meta name="keywords" content="Blackboard">

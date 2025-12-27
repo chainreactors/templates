@@ -1,0 +1,5 @@
+- name: CustomCMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="CustomCMS">

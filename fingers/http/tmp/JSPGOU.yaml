@@ -1,0 +1,5 @@
+- name: JSPGOU
+  rule:
+  - regexps:
+      body:
+      - jsPGOU-

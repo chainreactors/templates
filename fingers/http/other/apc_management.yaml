@@ -1,0 +1,7 @@
+- name: apc_management
+  rule:
+  - regexps:
+      body:
+      - This object on the APC Management Web Server is protected
+      header:
+      - APC Management Card

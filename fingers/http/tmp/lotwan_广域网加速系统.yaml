@@ -1,0 +1,6 @@
+- name: lotwan 广域网加速系统
+  rule:
+  - regexps:
+      body:
+      - lotwan 广域网加速系统
+      - 北京华夏创新科技有限公司

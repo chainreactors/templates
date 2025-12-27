@@ -1,0 +1,5 @@
+- name: bw-CodeMeter
+  rule:
+  - regexps:
+      body:
+      - CodeMeter许可管理系统

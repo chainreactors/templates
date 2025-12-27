@@ -1,0 +1,5 @@
+- name: Ioa
+  rule:
+  - regexps:
+      body:
+      - id="foot_version">厦门容能科技有限公司

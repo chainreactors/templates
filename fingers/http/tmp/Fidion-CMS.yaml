@@ -1,0 +1,5 @@
+- name: Fidion-CMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="fCMS by fidion

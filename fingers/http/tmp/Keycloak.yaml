@@ -1,0 +1,9 @@
+- name: Keycloak
+  rule:
+  - favicon:
+      mmh3:
+      - '-1105083093'
+    regexps:
+      body:
+      - Welcome to Keycloak
+      - www.keycloak.org

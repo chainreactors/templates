@@ -1,0 +1,5 @@
+- name: HttpFS
+  rule:
+  - regexps:
+      body:
+      - <b>HttpFS service</b>

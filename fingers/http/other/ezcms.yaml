@@ -1,0 +1,6 @@
+- name: ezcms
+  rule:
+  - regexps:
+      body:
+      - Powered by EZCMS
+      - EZCMS Content Management System

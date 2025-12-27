@@ -1,0 +1,5 @@
+- name: dotdefender
+  rule:
+  - regexps:
+      header:
+      - X-Dotdefender-Denied

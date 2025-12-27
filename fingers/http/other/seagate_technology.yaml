@@ -1,0 +1,5 @@
+- name: seagate technology
+  rule:
+  - favicon:
+      mmh3:
+      - '240136437'

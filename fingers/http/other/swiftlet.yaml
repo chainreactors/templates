@@ -1,0 +1,5 @@
+- name: swiftlet
+  rule:
+  - regexps:
+      header:
+      - Swiftlet

@@ -1,0 +1,5 @@
+- name: OpenShift
+  rule:
+  - regexps:
+      body:
+      - apis/apps.openshift.io/v1

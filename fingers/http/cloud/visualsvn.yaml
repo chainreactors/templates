@@ -1,0 +1,10 @@
+- name: visualsvn
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - VisualSVN Server
+      - =svn/
+    favicon:
+      mmh3:
+      - '706602230'

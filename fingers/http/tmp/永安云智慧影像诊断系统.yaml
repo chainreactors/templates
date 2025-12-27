@@ -1,0 +1,5 @@
+- name: 永安云智慧影像诊断系统
+  rule:
+  - regexps:
+      body:
+      - YA C-MID

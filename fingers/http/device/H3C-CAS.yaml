@@ -1,0 +1,7 @@
+- name: H3C-CAS
+  focus: true
+  rule:
+  - regexps:
+      header:
+      - 'Server: CVM'
+      - 'Server: H3C-CVM'

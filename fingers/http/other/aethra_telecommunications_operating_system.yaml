@@ -1,0 +1,5 @@
+- name: aethra_telecommunications_operating_system
+  rule:
+  - regexps:
+      header:
+      - atos

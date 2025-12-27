@@ -1,0 +1,5 @@
+- name: tipask
+  rule:
+  - regexps:
+      body:
+      - content="tipask

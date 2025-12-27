@@ -1,0 +1,7 @@
+- name: hp-sitescope
+  rule:
+  - regexps:
+      body:
+      - SiteScope Login
+      header:
+      - SiteScope

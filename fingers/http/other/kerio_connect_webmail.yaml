@@ -1,0 +1,5 @@
+- name: kerio connect webmail
+  rule:
+  - favicon:
+      mmh3:
+      - '-1678298769'

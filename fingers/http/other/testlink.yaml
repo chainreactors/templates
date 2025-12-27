@@ -1,0 +1,5 @@
+- name: testlink
+  rule:
+  - regexps:
+      body:
+      - testlink_library.js

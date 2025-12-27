@@ -1,0 +1,5 @@
+- name: 'css tools: reset css'
+  rule:
+  - regexps:
+      body:
+      - css/skel-noscript.css

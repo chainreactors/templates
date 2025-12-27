@@ -1,0 +1,7 @@
+- name: vTiger CRM
+  rule:
+  - regexps:
+      body:
+      - vtiger CRM
+      - Powered by vtiger CRM
+      - themes/images/vtigercrm_icon.ico

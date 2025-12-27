@@ -1,0 +1,5 @@
+- name: netdata dashboard
+  rule:
+  - favicon:
+      mmh3:
+      - '-182423204'

@@ -1,0 +1,5 @@
+- name: netteframework
+  rule:
+  - regexps:
+      header:
+      - Nette Framework

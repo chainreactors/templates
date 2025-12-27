@@ -1,0 +1,6 @@
+- name: Indexer Coordinator
+  rule:
+  - regexps:
+      body:
+      - druid indexer coordinator console
+      - content="druid indexer coordinator console

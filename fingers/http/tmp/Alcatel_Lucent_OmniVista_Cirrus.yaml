@@ -1,0 +1,5 @@
+- name: Alcatel_Lucent OmniVista Cirrus
+  rule:
+  - regexps:
+      body:
+      - /help/en-us/others/ov-cirrus_cookiepolicy.html

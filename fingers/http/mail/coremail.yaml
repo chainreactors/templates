@@ -1,0 +1,6 @@
+- name: coremail
+  rule:
+  - regexps:
+      body:
+      - /coremail/common/assets
+      - Coremail邮件系统

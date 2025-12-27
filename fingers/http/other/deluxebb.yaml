@@ -1,0 +1,5 @@
+- name: deluxebb
+  rule:
+  - regexps:
+      body:
+      - content="powered by DeluxeBB

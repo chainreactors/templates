@@ -1,0 +1,5 @@
+- name: jeecms
+  rule:
+  - regexps:
+      body:
+      - /r/cms

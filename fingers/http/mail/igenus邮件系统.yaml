@@ -1,0 +1,6 @@
+- name: igenus邮件系统
+  rule:
+  - regexps:
+      body:
+      - Copyright by<A HREF="http://www.igenus.org
+      - iGENUS webmail

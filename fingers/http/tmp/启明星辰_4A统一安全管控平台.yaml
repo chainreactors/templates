@@ -1,0 +1,5 @@
+- name: 启明星辰 4A统一安全管控平台
+  rule:
+  - regexps:
+      body:
+      - 4A统一安全管控平台

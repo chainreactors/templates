@@ -1,0 +1,5 @@
+- name: 速达荣耀G5.XP
+  rule:
+  - regexps:
+      body:
+      - 速达荣耀G5.XP

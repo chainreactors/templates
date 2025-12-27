@@ -1,0 +1,5 @@
+- name: lighttpd
+  rule:
+  - regexps:
+      header:
+      - 'server: lighttpd'

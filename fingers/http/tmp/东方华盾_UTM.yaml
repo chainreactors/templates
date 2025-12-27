@@ -1,0 +1,5 @@
+- name: 东方华盾 UTM
+  rule:
+  - regexps:
+      body:
+      - content="huadun network security technology co.,ltd"

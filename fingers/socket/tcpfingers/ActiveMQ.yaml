@@ -1,0 +1,8 @@
+- name: ActiveMQ
+  default_port:
+  - '61616'
+  protocol: tcp
+  rule:
+  - regexps:
+      body:
+      - ActiveMQ

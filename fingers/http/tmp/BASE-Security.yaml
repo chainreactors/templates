@@ -1,0 +1,5 @@
+- name: BASE-Security
+  rule:
+  - regexps:
+      body:
+      - HSFCSR Neuroinformatics Wiki

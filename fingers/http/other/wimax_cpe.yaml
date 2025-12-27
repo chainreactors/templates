@@ -1,0 +1,5 @@
+- name: wimax_cpe
+  rule:
+  - regexps:
+      body:
+      - Wimax CPE Configuration

@@ -1,0 +1,5 @@
+- name: FileMaker
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: fmi-cookie'

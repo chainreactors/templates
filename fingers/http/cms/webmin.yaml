@@ -1,0 +1,11 @@
+- name: webmin
+  rule:
+  - regexps:
+      body:
+      - Webmin
+    favicon:
+      mmh3:
+      - '479413330'
+      - '1280907310'
+      - '1453890729'
+      - '-1038557304'

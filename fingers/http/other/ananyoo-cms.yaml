@@ -1,0 +1,5 @@
+- name: ananyoo-cms
+  rule:
+  - regexps:
+      body:
+      - content="http://www.ananyoo.com

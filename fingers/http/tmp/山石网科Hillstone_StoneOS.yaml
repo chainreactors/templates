@@ -1,0 +1,5 @@
+- name: 山石网科Hillstone StoneOS
+  rule:
+  - regexps:
+      body:
+      - Hillstone StoneOS Software Version

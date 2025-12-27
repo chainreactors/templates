@@ -1,0 +1,6 @@
+- name: soeasy网站集群系统
+  rule:
+  - regexps:
+      body:
+      - EGSS_User
+      - SoEasy网站集群

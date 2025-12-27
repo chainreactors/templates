@@ -1,0 +1,6 @@
+- name: H5S视频平台
+  link: http://139.198.166.115:9002/
+  rule:
+  - regexps:
+      body:
+      - h5s视频平台|web

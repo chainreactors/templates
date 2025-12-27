@@ -1,0 +1,6 @@
+- name: opencms
+  rule:
+  - regexps:
+      body:
+      - content="OpenCms
+      - Powered by OpenCms

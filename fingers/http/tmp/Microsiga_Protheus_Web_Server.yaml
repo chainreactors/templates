@@ -1,0 +1,5 @@
+- name: Microsiga Protheus Web Server
+  rule:
+  - regexps:
+      header:
+      - Microsiga Protheus Web Server

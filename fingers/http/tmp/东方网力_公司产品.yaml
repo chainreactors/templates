@@ -1,0 +1,5 @@
+- name: 东方网力 公司产品
+  rule:
+  - regexps:
+      body:
+      - <h1>万解 - 东方网力</h1>

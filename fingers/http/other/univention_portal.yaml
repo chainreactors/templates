@@ -1,0 +1,5 @@
+- name: univention portal
+  rule:
+  - favicon:
+      mmh3:
+      - '-1697334194'

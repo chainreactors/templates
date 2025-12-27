@@ -1,0 +1,5 @@
+- name: 网御waf设备
+  rule:
+  - regexps:
+      body:
+      - 网御WAF

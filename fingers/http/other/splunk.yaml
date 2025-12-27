@@ -1,0 +1,5 @@
+- name: splunk
+  rule:
+  - regexps:
+      body:
+      - Splunk.util.normalizeBoolean

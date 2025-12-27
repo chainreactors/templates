@@ -1,0 +1,5 @@
+- name: TITANS 周报管理系统
+  rule:
+  - regexps:
+      body:
+      - TITANS-周报管理系统

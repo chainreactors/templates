@@ -1,0 +1,5 @@
+- name: WEBSOC
+  rule:
+  - regexps:
+      body:
+      - 登录 - WebSOC知道网站立体监控系统 - 知道创宇

@@ -1,0 +1,5 @@
+- name: synkronvia
+  rule:
+  - regexps:
+      header:
+      - Synkron Via CMS

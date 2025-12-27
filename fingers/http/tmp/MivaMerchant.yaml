@@ -1,0 +1,5 @@
+- name: MivaMerchant
+  rule:
+  - regexps:
+      body:
+      - Miva Merchant

@@ -1,0 +1,5 @@
+- name: netcore产品
+  rule:
+  - regexps:
+      header:
+      - netcore产品

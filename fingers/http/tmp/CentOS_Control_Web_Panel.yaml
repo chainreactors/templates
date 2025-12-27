@@ -1,0 +1,5 @@
+- name: CentOS Control Web Panel
+  rule:
+  - regexps:
+      body:
+      - CentOS WebPanel

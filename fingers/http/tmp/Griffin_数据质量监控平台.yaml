@@ -1,0 +1,5 @@
+- name: Griffin 数据质量监控平台
+  rule:
+  - regexps:
+      body:
+      - Griffin - Data Quality Service

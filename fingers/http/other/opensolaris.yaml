@@ -1,0 +1,5 @@
+- name: opensolaris
+  rule:
+  - regexps:
+      header:
+      - OpenSolaris

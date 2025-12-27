@@ -1,0 +1,5 @@
+- name: FortinetWAF
+  rule:
+  - regexps:
+      body:
+      - Server Unavailable!

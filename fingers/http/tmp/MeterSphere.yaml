@@ -1,0 +1,6 @@
+- name: MeterSphere
+  link: http://124.78.193.84:8081/login
+  rule:
+  - favicon:
+      mmh3:
+      - '1023469568'

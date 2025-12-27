@@ -1,0 +1,5 @@
+- name: goahead-webs
+  rule:
+  - regexps:
+      header:
+      - GoAhead-Webs

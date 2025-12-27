@@ -1,0 +1,5 @@
+- name: Join-Cheer-General-financial-system
+  rule:
+  - regexps:
+      body:
+      - 久其报表大厅

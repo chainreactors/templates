@@ -1,0 +1,5 @@
+- name: lanmp集成环境
+  rule:
+  - regexps:
+      body:
+      - <title>LANMP

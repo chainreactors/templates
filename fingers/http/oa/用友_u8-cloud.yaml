@@ -1,0 +1,6 @@
+- name: 用友 u8-cloud
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - uclient.yonyou.com/api/uclient/public/download

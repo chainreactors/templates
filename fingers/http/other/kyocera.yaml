@@ -1,0 +1,5 @@
+- name: kyocera
+  rule:
+  - favicon:
+      mmh3:
+      - '-50306417'

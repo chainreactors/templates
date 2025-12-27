@@ -1,0 +1,5 @@
+- name: SCYTHE-Crossbow
+  rule:
+  - regexps:
+      body:
+      - SCYTHE

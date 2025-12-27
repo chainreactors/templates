@@ -1,0 +1,10 @@
+- name: showdoc
+  rule:
+  - regexps:
+      body:
+      - showdoc
+    favicon:
+      md5:
+      - 1fbc02dc6f980f075779049bf687128a
+      mmh3:
+      - '1969934080'

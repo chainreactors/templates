@@ -1,0 +1,5 @@
+- name: Secure-SnapGear
+  rule:
+  - regexps:
+      body:
+      - SnapGear

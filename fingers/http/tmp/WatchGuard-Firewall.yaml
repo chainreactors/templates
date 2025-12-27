@@ -1,0 +1,5 @@
+- name: WatchGuard-Firewall
+  rule:
+  - regexps:
+      body:
+      - Fireware XTM User Authentication

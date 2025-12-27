@@ -1,0 +1,5 @@
+- name: VMware vCloud Director
+  rule:
+  - regexps:
+      body:
+      - VMware vCloud Director

@@ -1,0 +1,5 @@
+- name: bm-classifieds
+  rule:
+  - regexps:
+      body:
+      - <!-- START HEADER TABLE - HOLDS GRAPHIC AND SITE NAME -->

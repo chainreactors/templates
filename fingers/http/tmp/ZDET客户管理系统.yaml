@@ -1,0 +1,5 @@
+- name: ZDET客户管理系统
+  rule:
+  - regexps:
+      body:
+      - 欢迎使用浙大恩特客户资源管理系统

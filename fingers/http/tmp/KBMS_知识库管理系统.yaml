@@ -1,0 +1,5 @@
+- name: KBMS 知识库管理系统
+  rule:
+  - regexps:
+      body:
+      - KBMS_知识库管理系统

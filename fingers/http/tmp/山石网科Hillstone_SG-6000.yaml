@@ -1,0 +1,7 @@
+- name: 山石网科Hillstone SG-6000
+  rule:
+  - regexps:
+      body:
+      - Web Management
+      header:
+      - 'Set-Cookie: _WebSessionId'

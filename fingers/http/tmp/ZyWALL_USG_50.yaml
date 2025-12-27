@@ -1,0 +1,5 @@
+- name: ZyWALL USG 50
+  rule:
+  - regexps:
+      body:
+      - model">zywall usg 50

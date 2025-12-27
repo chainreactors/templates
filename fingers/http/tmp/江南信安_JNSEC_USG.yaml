@@ -1,0 +1,5 @@
+- name: 江南信安 JNSEC USG
+  rule:
+  - regexps:
+      body:
+      - content="jnsec web ui"

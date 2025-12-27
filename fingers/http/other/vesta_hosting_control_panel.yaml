@@ -1,0 +1,5 @@
+- name: vesta hosting control panel
+  rule:
+  - favicon:
+      mmh3:
+      - '1954835352'

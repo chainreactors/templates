@@ -1,0 +1,5 @@
+- name: ONLYOFFICE
+  rule:
+  - regexps:
+      body:
+      - ONLYOFFICE

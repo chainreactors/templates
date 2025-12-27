@@ -1,0 +1,5 @@
+- name: vertx
+  rule:
+  - regexps:
+      header:
+      - vertx-web.session

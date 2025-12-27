@@ -1,0 +1,6 @@
+- name: 中望oa
+  rule:
+  - regexps:
+      body:
+      - xtoa_logo.png
+      - qjuserinfoadd.jsp

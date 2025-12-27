@@ -1,0 +1,7 @@
+- name: EQmail
+  link: http://124.204.60.248/
+  rule:
+  - regexps:
+      body:
+      - eqmail.ico
+      - powered by eqmail!

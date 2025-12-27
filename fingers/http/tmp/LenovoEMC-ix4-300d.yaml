@@ -1,0 +1,5 @@
+- name: LenovoEMC-ix4-300d
+  rule:
+  - regexps:
+      header:
+      - <h2 id="devicename">ix4-300d - 主页</h2>

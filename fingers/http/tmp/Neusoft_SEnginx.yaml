@@ -1,0 +1,7 @@
+- name: Neusoft SEnginx
+  rule:
+  - regexps:
+      body:
+      - senginx-robot-mitigation
+      header:
+      - senginx

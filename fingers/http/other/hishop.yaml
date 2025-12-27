@@ -1,0 +1,6 @@
+- name: hishop
+  rule:
+  - regexps:
+      body:
+      - hishop.plugins.openid
+      - Hishop development team

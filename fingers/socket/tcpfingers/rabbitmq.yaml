@@ -1,0 +1,8 @@
+- name: rabbitmq
+  default_port:
+  - '5672'
+  protocol: tcp
+  rule:
+  - regexps:
+      body:
+      - AMQP

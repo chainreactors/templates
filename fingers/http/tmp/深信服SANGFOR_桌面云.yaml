@@ -1,0 +1,6 @@
+- name: 深信服SANGFOR 桌面云
+  rule:
+  - regexps:
+      body:
+      - Installing Client Mgt ActiveX Controls
+      - 这里假定安装包目录为

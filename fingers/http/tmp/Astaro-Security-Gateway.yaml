@@ -1,0 +1,5 @@
+- name: Astaro-Security-Gateway
+  rule:
+  - regexps:
+      body:
+      - astaro security gateway

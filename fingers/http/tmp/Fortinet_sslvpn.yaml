@@ -1,0 +1,6 @@
+- name: Fortinet sslvpn
+  rule:
+  - regexps:
+      body:
+      - /sslvpn/portal.html
+      - fortinet

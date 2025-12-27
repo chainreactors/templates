@@ -1,0 +1,5 @@
+- name: RG WALL 1600 VPN3000E
+  rule:
+  - regexps:
+      body:
+      - rg-wall-1600-vpn3000e

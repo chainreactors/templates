@@ -1,0 +1,5 @@
+- name: ECCart
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: ec_cart_id='

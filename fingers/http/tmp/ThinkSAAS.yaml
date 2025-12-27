@@ -1,0 +1,5 @@
+- name: ThinkSAAS
+  rule:
+  - regexps:
+      body:
+      - www.thinksaas.cn

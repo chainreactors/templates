@@ -1,0 +1,5 @@
+- name: RProxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: Gnway RProxy Server'

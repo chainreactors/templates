@@ -1,0 +1,5 @@
+- name: ShowDoc
+  rule:
+  - regexps:
+      body:
+      - ShowDoc

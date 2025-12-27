@@ -1,0 +1,5 @@
+- name: Contentteller-CMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="Esselbach Contentteller CMS" />

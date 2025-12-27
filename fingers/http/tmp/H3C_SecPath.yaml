@@ -1,0 +1,6 @@
+- name: H3C SecPath
+  rule:
+  - regexps:
+      body:
+      - h3c secpath 运维审计
+      - <span>h3c secpath 运维审计系统</span></div>

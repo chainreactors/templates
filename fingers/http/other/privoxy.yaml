@@ -1,0 +1,5 @@
+- name: privoxy
+  rule:
+  - regexps:
+      header:
+      - 'Proxy-Agent: Privoxy'

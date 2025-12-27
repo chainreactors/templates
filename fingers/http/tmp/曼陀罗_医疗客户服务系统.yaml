@@ -1,0 +1,5 @@
+- name: 曼陀罗 医疗客户服务系统
+  rule:
+  - regexps:
+      body:
+      - <h2>曼陀罗医疗</h2>

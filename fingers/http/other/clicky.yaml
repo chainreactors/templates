@@ -1,0 +1,5 @@
+- name: clicky
+  rule:
+  - regexps:
+      body:
+      - <script src="//static.getclicky.com/js

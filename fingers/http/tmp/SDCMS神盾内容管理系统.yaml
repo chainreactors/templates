@@ -1,0 +1,5 @@
+- name: SDCMS神盾内容管理系统
+  rule:
+  - regexps:
+      body:
+      - SDCMS神盾内容管理系统

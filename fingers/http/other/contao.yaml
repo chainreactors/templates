@@ -1,0 +1,5 @@
+- name: contao
+  rule:
+  - regexps:
+      body:
+      - system/contao.css

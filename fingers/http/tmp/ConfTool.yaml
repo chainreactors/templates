@@ -1,0 +1,5 @@
+- name: ConfTool
+  rule:
+  - regexps:
+      body:
+      - ConfTool

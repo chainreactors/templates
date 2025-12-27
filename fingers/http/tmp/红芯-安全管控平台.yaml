@@ -1,0 +1,5 @@
+- name: 红芯-安全管控平台
+  rule:
+  - regexps:
+      body:
+      - <title>红芯安全管控平台</title>

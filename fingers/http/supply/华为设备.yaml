@@ -1,0 +1,5 @@
+- name: 华为设备
+  rule:
+  - regexps:
+      body:
+      - huawei

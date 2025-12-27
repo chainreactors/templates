@@ -1,0 +1,5 @@
+- name: timber
+  rule:
+  - regexps:
+      body:
+      - App_Image/PXSystem

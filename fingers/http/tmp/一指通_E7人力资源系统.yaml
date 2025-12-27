@@ -1,0 +1,6 @@
+- name: 一指通 E7人力资源系统
+  rule:
+  - regexps:
+      body:
+      - href='http://www.xmyzt.com.cn
+      - 一指通

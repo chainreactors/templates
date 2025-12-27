@@ -1,0 +1,5 @@
+- name: dorado
+  rule:
+  - regexps:
+      body:
+      - Dorado Login Page

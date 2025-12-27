@@ -1,0 +1,5 @@
+- name: wygkcms 网域高科
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: SYSIMG'

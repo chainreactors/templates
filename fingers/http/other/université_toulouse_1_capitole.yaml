@@ -1,0 +1,5 @@
+- name: université toulouse 1 capitole
+  rule:
+  - favicon:
+      mmh3:
+      - '1632780968'

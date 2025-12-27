@@ -1,0 +1,7 @@
+- name: Nessus
+  rule:
+  - regexps:
+      body:
+      - Nessus
+      header:
+      - NessusWWW

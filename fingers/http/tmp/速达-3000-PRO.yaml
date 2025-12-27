@@ -1,0 +1,5 @@
+- name: 速达-3000-PRO
+  rule:
+  - regexps:
+      body:
+      - 速达3000-PRO商业版

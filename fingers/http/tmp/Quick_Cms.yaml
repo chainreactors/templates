@@ -1,0 +1,5 @@
+- name: Quick Cms
+  rule:
+  - regexps:
+      body:
+      - powered by Quick.Cart

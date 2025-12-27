@@ -1,0 +1,9 @@
+- name: flink
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - flink
+      vuln:
+      - Apache Flink Web Dashboard
+    vuln: flink-unauth

@@ -1,0 +1,5 @@
+- name: microsoft owa
+  rule:
+  - favicon:
+      mmh3:
+      - '442749392'

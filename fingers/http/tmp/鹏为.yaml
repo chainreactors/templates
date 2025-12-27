@@ -1,0 +1,5 @@
+- name: 鹏为
+  rule:
+  - regexps:
+      body:
+      - 鹏为软件

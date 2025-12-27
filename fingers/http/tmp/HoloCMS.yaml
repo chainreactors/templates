@@ -1,0 +1,5 @@
+- name: HoloCMS
+  rule:
+  - regexps:
+      body:
+      - Powered by HoloCMS

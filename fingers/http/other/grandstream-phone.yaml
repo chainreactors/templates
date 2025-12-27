@@ -1,0 +1,7 @@
+- name: grandstream-phone
+  rule:
+  - regexps:
+      body:
+      - Grandstream Device Configuration
+      header:
+      - Grandstream

@@ -1,0 +1,5 @@
+- name: PHP F1
+  rule:
+  - regexps:
+      body:
+      - Powered by PHP F1

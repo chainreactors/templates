@@ -1,0 +1,6 @@
+- name: edito-cms
+  rule:
+  - regexps:
+      body:
+      - content="edito
+      - title="CMS" href="http://www.edito.pl/

@@ -1,0 +1,5 @@
+- name: fastadmin
+  rule:
+  - regexps:
+      body:
+      - fastadmin

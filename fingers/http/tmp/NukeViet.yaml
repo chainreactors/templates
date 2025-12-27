@@ -1,0 +1,5 @@
+- name: NukeViet
+  rule:
+  - regexps:
+      body:
+      - content="NukeViet

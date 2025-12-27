@@ -1,0 +1,6 @@
+- name: jgs-portal
+  rule:
+  - regexps:
+      body:
+      - Powered by <b>JGS-Portal Version
+      - href="jgs_portal_box.php?id=

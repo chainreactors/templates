@@ -1,0 +1,5 @@
+- name: Web-Data-Administrator
+  rule:
+  - regexps:
+      body:
+      - Web Data Administrator

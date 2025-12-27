@@ -1,0 +1,5 @@
+- name: 速达V3.NET财务
+  rule:
+  - regexps:
+      body:
+      - 速达V3.NET财务

@@ -1,0 +1,7 @@
+- name: ecmall
+  rule:
+  - regexps:
+      body:
+      - ECMall
+      header:
+      - ECM_ID

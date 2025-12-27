@@ -1,0 +1,9 @@
+- name: hfs
+  rule:
+  - regexps:
+      header:
+      - HFS_SID_=
+    favicon:
+      mmh3:
+      - '731374291'
+      - '2124459909'

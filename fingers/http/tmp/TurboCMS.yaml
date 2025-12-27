@@ -1,0 +1,5 @@
+- name: TurboCMS
+  rule:
+  - regexps:
+      header:
+      - /turbosearch/search.jsp

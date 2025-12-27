@@ -1,0 +1,5 @@
+- name: PIOLINK Application Switch
+  rule:
+  - regexps:
+      body:
+      - piolink application switch

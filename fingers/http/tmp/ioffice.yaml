@@ -1,0 +1,6 @@
+- name: ioffice
+  rule:
+  - regexps:
+      body:
+      - ioffice.net
+      - hongfan. all rights reserved

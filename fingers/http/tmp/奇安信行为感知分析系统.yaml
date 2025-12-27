@@ -1,0 +1,6 @@
+- name: 奇安信行为感知分析系统
+  link: https://183.61.125.203/
+  rule:
+  - regexps:
+      body:
+      - 行为感知分析系统

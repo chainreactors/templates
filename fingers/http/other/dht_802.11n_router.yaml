@@ -1,0 +1,7 @@
+- name: dht_802.11n_router
+  rule:
+  - regexps:
+      body:
+      - DHT 802.11n QoS Router
+      header:
+      - mini_httpd

@@ -1,0 +1,6 @@
+- name: apisix
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - 'error_msg: "failed to match any routes"'

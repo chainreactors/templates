@@ -1,0 +1,6 @@
+- name: webplusr
+  rule:
+  - regexps:
+      body:
+      - webplus
+      - 高校网站群管理平台

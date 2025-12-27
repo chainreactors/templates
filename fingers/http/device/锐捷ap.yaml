@@ -1,0 +1,6 @@
+- name: 锐捷ap
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - common.sea.config.js

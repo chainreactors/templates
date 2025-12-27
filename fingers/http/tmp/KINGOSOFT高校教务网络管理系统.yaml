@@ -1,0 +1,5 @@
+- name: KINGOSOFT高校教务网络管理系统
+  rule:
+  - regexps:
+      body:
+      - KINGOSOFT高校教务网络管理系统

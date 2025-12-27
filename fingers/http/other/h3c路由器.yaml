@@ -1,0 +1,6 @@
+- name: h3c路由器
+  rule:
+  - regexps:
+      body:
+      - Web user login
+      - nLanguageSupported

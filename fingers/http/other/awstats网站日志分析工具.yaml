@@ -1,0 +1,6 @@
+- name: awstats网站日志分析工具
+  rule:
+  - regexps:
+      body:
+      - content="AWStats
+      - Created by awstats

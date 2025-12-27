@@ -1,0 +1,5 @@
+- name: dzzoffice
+  rule:
+  - regexps:
+      body:
+      - <meta name="author" content="dzzoffice" />

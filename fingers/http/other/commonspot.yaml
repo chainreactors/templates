@@ -1,0 +1,5 @@
+- name: commonspot
+  rule:
+  - regexps:
+      body:
+      - content="CommonSpot

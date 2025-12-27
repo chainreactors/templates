@@ -1,0 +1,8 @@
+- name: websphere
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - SRVE0255E
+      - ibm.ws.webcontainer.servlet
+      - IBM WebSphere Application Server

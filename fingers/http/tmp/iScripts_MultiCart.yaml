@@ -1,0 +1,5 @@
+- name: iScripts MultiCart
+  rule:
+  - regexps:
+      body:
+      - iScripts Multicart

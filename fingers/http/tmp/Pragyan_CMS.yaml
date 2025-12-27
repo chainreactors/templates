@@ -1,0 +1,5 @@
+- name: Pragyan CMS
+  rule:
+  - regexps:
+      body:
+      - Pragyan CMS

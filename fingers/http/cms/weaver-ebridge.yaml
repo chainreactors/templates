@@ -1,0 +1,5 @@
+- name: weaver-ebridge
+  rule:
+  - regexps:
+      body:
+      - e-Bridge

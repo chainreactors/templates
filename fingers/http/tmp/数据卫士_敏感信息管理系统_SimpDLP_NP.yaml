@@ -1,0 +1,5 @@
+- name: 数据卫士 敏感信息管理系统 SimpDLP NP
+  rule:
+  - regexps:
+      body:
+      - <title>数据卫士-敏感信息管理系统-SimpDLP-NP</title>

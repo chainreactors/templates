@@ -1,0 +1,5 @@
+- name: technicolor
+  rule:
+  - favicon:
+      mmh3:
+      - '-2138771289'

@@ -1,0 +1,5 @@
+- name: Fastpublish-CMS
+  rule:
+  - regexps:
+      body:
+      - fastpublish CMS

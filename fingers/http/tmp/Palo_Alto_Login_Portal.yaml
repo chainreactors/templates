@@ -1,0 +1,6 @@
+- name: Palo Alto Login Portal
+  link: https://217.115.55.245:5577/global-protect/login.esp
+  rule:
+  - favicon:
+      mmh3:
+      - '602431586'

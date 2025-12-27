@@ -1,0 +1,5 @@
+- name: ujian
+  rule:
+  - regexps:
+      body:
+      - ujian.cc/code/ujian.js

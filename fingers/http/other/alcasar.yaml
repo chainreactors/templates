@@ -1,0 +1,5 @@
+- name: alcasar
+  rule:
+  - regexps:
+      body:
+      - valoriserDiv5

@@ -1,0 +1,5 @@
+- name: dell
+  rule:
+  - favicon:
+      mmh3:
+      - '-1153950306'

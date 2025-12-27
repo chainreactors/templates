@@ -1,0 +1,5 @@
+- name: CLTPHP
+  rule:
+  - regexps:
+      body:
+      - CLTPHP

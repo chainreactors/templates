@@ -1,0 +1,5 @@
+- name: fastpanel hosting
+  rule:
+  - favicon:
+      mmh3:
+      - '774252049'

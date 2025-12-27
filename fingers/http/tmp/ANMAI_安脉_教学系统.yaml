@@ -1,0 +1,5 @@
+- name: ANMAI 安脉 教学系统
+  rule:
+  - regexps:
+      body:
+      - ANMAI, All Rights Reserved

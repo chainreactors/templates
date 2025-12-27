@@ -1,0 +1,6 @@
+- name: Jakarta Project
+  link: http://eedsmdmkygb.gnway.cc:7415/
+  rule:
+  - regexps:
+      body:
+      - alt=\"the jakarta project

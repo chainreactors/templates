@@ -1,0 +1,5 @@
+- name: LD2100
+  rule:
+  - regexps:
+      header:
+      - Digest realm="LD2100"

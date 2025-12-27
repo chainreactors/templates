@@ -1,0 +1,9 @@
+- name: sqlserver
+  default_port:
+  - '1433'
+  protocol: tcp
+  rule:
+  - regexps:
+      regexp:
+      - "^\x04\x01\0%\0\0\x01\0\0\0\x15\0\x06\x01\0\e\0\x01\x02"
+    send_data: b64de|EgEANAAAAAAAABUABgEAGwABAgAcAAwDACgABP8IAAFVAAAATVNTUUxTZXJ2ZXIASA8AAA==

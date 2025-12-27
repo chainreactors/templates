@@ -1,0 +1,5 @@
+- name: cybozu-garoon
+  rule:
+  - regexps:
+      header:
+      - Cybozu-WS

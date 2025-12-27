@@ -1,0 +1,5 @@
+- name: D-Link Firewall
+  rule:
+  - regexps:
+      body:
+      - d-link firewall

@@ -1,0 +1,5 @@
+- name: codiad
+  rule:
+  - regexps:
+      body:
+      - codiad

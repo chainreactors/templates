@@ -1,0 +1,5 @@
+- name: zfaka
+  rule:
+  - regexps:
+      body:
+      - alt="zfaka"

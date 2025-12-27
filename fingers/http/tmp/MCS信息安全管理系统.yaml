@@ -1,0 +1,5 @@
+- name: MCS信息安全管理系统
+  rule:
+  - regexps:
+      body:
+      - MCS信息安全管理系统

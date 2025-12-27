@@ -1,0 +1,5 @@
+- name: ABO.CMS
+  rule:
+  - regexps:
+      header:
+      - 'A-Powered-By: ABO.CMS'

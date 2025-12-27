@@ -1,0 +1,9 @@
+- name: uniemm
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - com.leagsoft.emm
+      - emm-api
+      header:
+      - emm-tunnel

@@ -1,0 +1,5 @@
+- name: 蓝盾-入侵检测
+  rule:
+  - regexps:
+      body:
+      - bluedon-idp

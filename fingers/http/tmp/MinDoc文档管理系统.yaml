@@ -1,0 +1,5 @@
+- name: MinDoc文档管理系统
+  rule:
+  - regexps:
+      body:
+      - MinDoc文档管理系统 - Powered by MinDoc

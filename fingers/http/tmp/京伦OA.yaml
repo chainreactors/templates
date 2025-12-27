@@ -1,0 +1,5 @@
+- name: 京伦OA
+  rule:
+  - regexps:
+      body:
+      - ThemeCssCookie

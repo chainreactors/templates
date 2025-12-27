@@ -1,0 +1,5 @@
+- name: 尚医健康CMS管理系统
+  rule:
+  - regexps:
+      body:
+      - 尚医健康CMS管理系统

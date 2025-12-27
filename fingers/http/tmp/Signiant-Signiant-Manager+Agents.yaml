@@ -1,0 +1,5 @@
+- name: Signiant-Signiant-Manager+Agents
+  rule:
+  - regexps:
+      header:
+      - 'Server: Signiant'

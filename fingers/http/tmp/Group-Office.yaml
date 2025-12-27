@@ -1,0 +1,6 @@
+- name: Group-Office
+  rule:
+  - regexps:
+      body:
+      - Group-Office
+      - Powered by Group-Office

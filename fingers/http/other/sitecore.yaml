@@ -1,0 +1,5 @@
+- name: sitecore
+  rule:
+  - regexps:
+      header:
+      - Sitecore CMS

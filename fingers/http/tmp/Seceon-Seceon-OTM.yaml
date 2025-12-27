@@ -1,0 +1,5 @@
+- name: Seceon-Seceon-OTM
+  rule:
+  - regexps:
+      body:
+      - <title>Seceon OTM</title>

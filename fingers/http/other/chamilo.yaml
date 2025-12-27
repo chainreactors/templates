@@ -1,0 +1,8 @@
+- name: chamilo
+  rule:
+  - regexps:
+      body:
+      - <link href="http://www.chamilo.org/documentation.php
+      - content="Chamilo
+      header:
+      - 'X-Powered-By: Chamilo'

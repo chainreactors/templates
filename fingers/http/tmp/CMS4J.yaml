@@ -1,0 +1,5 @@
+- name: CMS4J
+  rule:
+  - regexps:
+      body:
+      - name="CMS4JSearchForm" id="CMS4JSearchForm"

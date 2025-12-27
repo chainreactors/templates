@@ -1,0 +1,5 @@
+- name: S-CMS
+  rule:
+  - regexps:
+      body:
+      - content="S-CMS"

@@ -1,0 +1,6 @@
+- name: Cisco HyperFlex Connect
+  link: https://64.100.12.67/#/clusters/1
+  rule:
+  - regexps:
+      body:
+      - Cisco HyperFlex Connect

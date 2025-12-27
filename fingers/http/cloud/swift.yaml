@@ -1,0 +1,5 @@
+- name: swift
+  rule:
+  - regexps:
+      body:
+      - swift.generic

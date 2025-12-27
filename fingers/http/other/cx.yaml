@@ -1,0 +1,5 @@
+- name: cx
+  rule:
+  - favicon:
+      mmh3:
+      - '-532394952'

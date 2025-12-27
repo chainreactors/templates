@@ -1,0 +1,6 @@
+- name: cmsimple
+  rule:
+  - regexps:
+      body:
+      - Powered by CMSimple.dk
+      - content="CMSimple

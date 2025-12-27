@@ -1,0 +1,5 @@
+- name: Kajona
+  rule:
+  - regexps:
+      body:
+      - Kajona

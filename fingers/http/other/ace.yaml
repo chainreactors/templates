@@ -1,0 +1,5 @@
+- name: ace
+  rule:
+  - favicon:
+      mmh3:
+      - '-183163807'

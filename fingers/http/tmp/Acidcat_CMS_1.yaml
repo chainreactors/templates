@@ -1,0 +1,6 @@
+- name: Acidcat_CMS
+  rule:
+  - regexps:
+      body:
+      - www.acidcat.com
+      - Powered by Acidcat CMS

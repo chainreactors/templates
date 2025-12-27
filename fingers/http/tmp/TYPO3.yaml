@@ -1,0 +1,5 @@
+- name: TYPO3
+  rule:
+  - regexps:
+      body:
+      - This website is powered by TYPO3

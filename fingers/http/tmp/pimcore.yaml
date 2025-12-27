@@ -1,0 +1,5 @@
+- name: pimcore
+  rule:
+  - regexps:
+      header:
+      - pimcore

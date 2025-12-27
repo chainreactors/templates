@@ -1,0 +1,6 @@
+- name: spammark邮件信息安全网关
+  rule:
+  - regexps:
+      body:
+      - Spammark邮件信息安全网关
+      - /cgi-bin/spammark?empty=1

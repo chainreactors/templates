@@ -1,0 +1,6 @@
+- name: 万欣软件
+  rule:
+  - regexps:
+      body:
+      - jdMarquee/jdMarquee.js
+      - home/template/headIndex.aspx

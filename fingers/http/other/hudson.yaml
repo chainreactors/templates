@@ -1,0 +1,5 @@
+- name: hudson
+  rule:
+  - regexps:
+      header:
+      - X-Hudson

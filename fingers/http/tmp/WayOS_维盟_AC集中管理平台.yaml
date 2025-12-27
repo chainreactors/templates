@@ -1,0 +1,6 @@
+- name: WayOS 维盟 AC集中管理平台
+  rule:
+  - regexps:
+      body:
+      - AC集中管理平台
+      - /images/login_25.jpg

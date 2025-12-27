@@ -1,0 +1,6 @@
+- name: 思迪数据池管理平台
+  link: http://47.93.193.197:9090/
+  rule:
+  - regexps:
+      body:
+      - 思迪

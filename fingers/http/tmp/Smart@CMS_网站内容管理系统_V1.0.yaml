@@ -1,0 +1,5 @@
+- name: Smart@CMS 网站内容管理系统 V1.0
+  rule:
+  - regexps:
+      body:
+      - Smart@CMS 网站内容管理系统 V1.0

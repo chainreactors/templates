@@ -1,0 +1,5 @@
+- name: OSSEAN
+  rule:
+  - regexps:
+      body:
+      - Trustie-OSSEAN

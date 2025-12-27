@@ -1,0 +1,5 @@
+- name: bitnami
+  rule:
+  - favicon:
+      mmh3:
+      - '-1607644090'

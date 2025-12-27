@@ -1,0 +1,5 @@
+- name: SAS
+  rule:
+  - regexps:
+      body:
+      - Basic realm="SAS University Edition"

@@ -1,0 +1,5 @@
+- name: kerio connect
+  rule:
+  - favicon:
+      mmh3:
+      - '-677167908'

@@ -1,0 +1,6 @@
+- name: ManageEngine-ADAudit
+  rule:
+  - regexps:
+      body:
+      - <option value = "ADAuditPlus Authentication">
+      - ManageEngine - ADManager Plus

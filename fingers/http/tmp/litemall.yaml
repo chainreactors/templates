@@ -1,0 +1,5 @@
+- name: litemall
+  rule:
+  - regexps:
+      body:
+      - litemall-admin

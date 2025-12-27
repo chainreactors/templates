@@ -1,0 +1,6 @@
+- name: 智睿软件
+  rule:
+  - regexps:
+      body:
+      - content="智睿软件
+      - Zhirui.js

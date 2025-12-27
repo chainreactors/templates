@@ -1,0 +1,5 @@
+- name: Link Admin
+  rule:
+  - regexps:
+      body:
+      - Link Admin

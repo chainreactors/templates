@@ -1,0 +1,8 @@
+- name: 通达信
+  rule:
+  - favicon:
+      mmh3:
+      - '-92142703'
+    regexps:
+      body:
+      - 深圳市财富趋势科技股份有限公司 版权所有

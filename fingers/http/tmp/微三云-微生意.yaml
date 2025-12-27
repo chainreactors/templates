@@ -1,0 +1,5 @@
+- name: 微三云-微生意
+  rule:
+  - regexps:
+      body:
+      - WSY_copyright

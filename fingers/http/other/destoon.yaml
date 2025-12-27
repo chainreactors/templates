@@ -1,0 +1,6 @@
+- name: destoon
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="Destoon
+      - destoon_moduleid

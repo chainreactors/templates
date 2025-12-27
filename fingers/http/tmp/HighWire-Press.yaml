@@ -1,0 +1,5 @@
+- name: HighWire-Press
+  rule:
+  - regexps:
+      body:
+      - title="HighWire Press"

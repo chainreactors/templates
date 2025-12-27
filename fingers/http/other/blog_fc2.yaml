@@ -1,0 +1,5 @@
+- name: blog_fc2
+  rule:
+  - regexps:
+      header:
+      - cookietest=test

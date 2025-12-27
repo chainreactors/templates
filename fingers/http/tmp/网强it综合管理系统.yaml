@@ -1,0 +1,6 @@
+- name: 网强it综合管理系统
+  rule:
+  - regexps:
+      body:
+      - 网强it综合管理系统
+      - netstrong

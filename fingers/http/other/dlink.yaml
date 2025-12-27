@@ -1,0 +1,5 @@
+- name: dlink
+  rule:
+  - regexps:
+      header:
+      - dlinkrouter

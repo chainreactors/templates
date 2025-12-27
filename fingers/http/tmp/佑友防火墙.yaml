@@ -1,0 +1,5 @@
+- name: 佑友防火墙
+  rule:
+  - regexps:
+      body:
+      - 佑友防火墙

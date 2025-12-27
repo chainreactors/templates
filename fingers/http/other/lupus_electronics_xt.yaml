@@ -1,0 +1,5 @@
+- name: lupus electronics xt
+  rule:
+  - favicon:
+      mmh3:
+      - '-299324825'

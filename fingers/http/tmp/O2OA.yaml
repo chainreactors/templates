@@ -1,0 +1,6 @@
+- name: O2OA
+  rule:
+  - regexps:
+      body:
+      - O2OA
+      - o2_core

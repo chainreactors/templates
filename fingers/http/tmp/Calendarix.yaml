@@ -1,0 +1,5 @@
+- name: Calendarix
+  rule:
+  - regexps:
+      body:
+      - Calendarix User Login

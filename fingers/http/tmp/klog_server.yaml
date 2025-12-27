@@ -1,0 +1,5 @@
+- name: klog server
+  rule:
+  - regexps:
+      body:
+      - klog server

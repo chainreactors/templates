@@ -1,0 +1,6 @@
+- name: 吉安机房动力环境系统 xCenter
+  rule:
+  - regexps:
+      body:
+      - 环境动力监控系统
+      - /egi/download

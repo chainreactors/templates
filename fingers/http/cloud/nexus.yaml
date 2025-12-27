@@ -1,0 +1,8 @@
+- name: nexus
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - Nexus Repository Manager
+      header:
+      - NX-ANTI-CSRF-TOKEN

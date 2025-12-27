@@ -1,0 +1,5 @@
+- name: JFun Box（解放云盘）
+  rule:
+  - regexps:
+      body:
+      - JFun Box

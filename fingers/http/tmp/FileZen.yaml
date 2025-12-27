@@ -1,0 +1,5 @@
+- name: FileZen
+  rule:
+  - regexps:
+      body:
+      - FileZen

@@ -1,0 +1,5 @@
+- name: Yuanian-Accounting-Software
+  rule:
+  - regexps:
+      body:
+      - /image/logo/yuannian.gif

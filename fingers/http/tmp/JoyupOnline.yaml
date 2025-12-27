@@ -1,0 +1,5 @@
+- name: JoyupOnline
+  rule:
+  - regexps:
+      body:
+      - Powered By JoyupOnline JoyupOnline.com

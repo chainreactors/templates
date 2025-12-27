@@ -1,0 +1,5 @@
+- name: KesionICMS
+  rule:
+  - regexps:
+      body:
+      - <title>KesionICMS

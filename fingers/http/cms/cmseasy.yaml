@@ -1,0 +1,8 @@
+- name: cmseasy
+  rule:
+  - regexps:
+      body:
+      - Powered by CmsEasy
+      - content="CmsEasy
+      header:
+      - http://www.cmseasy.cn/service_1.html

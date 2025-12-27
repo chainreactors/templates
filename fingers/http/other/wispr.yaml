@@ -1,0 +1,5 @@
+- name: wispr
+  rule:
+  - favicon:
+      mmh3:
+      - '-106646451'

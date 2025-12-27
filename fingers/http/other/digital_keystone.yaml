@@ -1,0 +1,5 @@
+- name: digital keystone
+  rule:
+  - favicon:
+      mmh3:
+      - '-373674173'

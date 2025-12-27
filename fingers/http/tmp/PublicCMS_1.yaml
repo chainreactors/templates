@@ -1,0 +1,7 @@
+- name: PublicCMS
+  rule:
+  - regexps:
+      header:
+      - X-Powered-Publiccms
+      body:
+      - publiccms

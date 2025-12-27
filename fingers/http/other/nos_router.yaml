@@ -1,0 +1,5 @@
+- name: nos router
+  rule:
+  - favicon:
+      mmh3:
+      - '-831826827'

@@ -1,0 +1,12 @@
+- name: vmware oneaccess
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - SAAS/horizon/css
+      - Workspace ONE Access
+    favicon:
+      md5:
+      - 6ed1fb0e8c0383b5a2e39d64d8b25442
+      mmh3:
+      - '-1250474341'

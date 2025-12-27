@@ -1,0 +1,6 @@
+- name: KILL Mail security gateway
+  rule:
+  - regexps:
+      body:
+      - kill邮件安全网关
+      - background="skins/default/images/login_ksgm.jpg

@@ -1,0 +1,5 @@
+- name: dotclear
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://dotclear.org/

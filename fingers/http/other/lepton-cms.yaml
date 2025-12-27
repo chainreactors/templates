@@ -1,0 +1,6 @@
+- name: lepton-cms
+  rule:
+  - regexps:
+      body:
+      - content="LEPTON-CMS
+      - Powered by LEPTON CMS

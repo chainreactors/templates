@@ -1,0 +1,6 @@
+- name: Slife
+  rule:
+  - regexps:
+      body:
+      - <meta name="keywords" content="slife管理系统"
+      - <script src="/js/slife/toast.js

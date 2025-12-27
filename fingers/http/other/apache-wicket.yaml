@@ -1,0 +1,6 @@
+- name: apache-wicket
+  rule:
+  - regexps:
+      body:
+      - xmlns:wicket=
+      - /org.apache.wicket.

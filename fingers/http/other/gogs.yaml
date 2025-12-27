@@ -1,0 +1,5 @@
+- name: gogs
+  rule:
+  - favicon:
+      mmh3:
+      - '917966895'

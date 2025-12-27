@@ -1,0 +1,10 @@
+- name: afterlogic
+  rule:
+  - favicon:
+      mmh3:
+      - '-194791768'
+    regexps:
+      body:
+      - AfterLogic WebMail Pro
+      header:
+      - PHPWEBMAILSESSID

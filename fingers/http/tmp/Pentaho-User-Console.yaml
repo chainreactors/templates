@@ -1,0 +1,5 @@
+- name: Pentaho-User-Console
+  rule:
+  - regexps:
+      body:
+      - Pentaho User Console

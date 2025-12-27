@@ -1,0 +1,5 @@
+- name: emlog
+  rule:
+  - regexps:
+      body:
+      - content="emlog"

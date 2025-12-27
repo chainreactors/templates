@@ -1,0 +1,5 @@
+- name: 中兴路由器
+  rule:
+  - regexps:
+      header:
+      - 'Server: Mini web server 1.0 ZTE corp 2005.'

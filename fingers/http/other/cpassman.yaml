@@ -1,0 +1,5 @@
+- name: cpassman
+  rule:
+  - regexps:
+      body:
+      - Collaborative Passwords Manager

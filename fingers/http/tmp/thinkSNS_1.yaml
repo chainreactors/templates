@@ -1,0 +1,7 @@
+- name: thinkSNS
+  rule:
+  - regexps:
+      body:
+      - www.thinksns.com
+      header:
+      - TSV3_lang

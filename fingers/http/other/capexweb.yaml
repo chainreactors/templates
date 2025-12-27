@@ -1,0 +1,6 @@
+- name: capexweb
+  rule:
+  - regexps:
+      body:
+      - /capexweb.parentvalidatepassword
+      - name="dfparentdb

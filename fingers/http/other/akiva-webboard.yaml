@@ -1,0 +1,7 @@
+- name: akiva-webboard
+  rule:
+  - regexps:
+      body:
+      - Powered by WebBoard
+      header:
+      - webboard=

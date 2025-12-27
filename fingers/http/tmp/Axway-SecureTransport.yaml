@@ -1,0 +1,5 @@
+- name: Axway-SecureTransport
+  rule:
+  - regexps:
+      header:
+      - 'Server: SecureTransport'

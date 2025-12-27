@@ -1,0 +1,6 @@
+- name: zotonic
+  rule:
+  - regexps:
+      body:
+      - 'powered by: Zotonic'
+      - /lib/js/apps/zotonic-1.0

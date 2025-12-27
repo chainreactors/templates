@@ -1,0 +1,5 @@
+- name: WD-MyBook
+  rule:
+  - regexps:
+      header:
+      - <title>My Book World Edition - MyBookWorld</title>

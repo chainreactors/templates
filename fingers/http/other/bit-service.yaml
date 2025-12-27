@@ -1,0 +1,6 @@
+- name: bit-service
+  rule:
+  - regexps:
+      body:
+      - bit-xxzs
+      - xmlpzs/webissue.asp

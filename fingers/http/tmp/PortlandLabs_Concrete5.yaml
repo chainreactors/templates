@@ -1,0 +1,5 @@
+- name: PortlandLabs Concrete5
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: CONCRETE5='

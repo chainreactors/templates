@@ -1,0 +1,5 @@
+- name: Jamroom
+  rule:
+  - regexps:
+      body:
+      - Jamroom

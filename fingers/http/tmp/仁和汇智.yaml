@@ -1,0 +1,5 @@
+- name: 仁和汇智
+  rule:
+  - regexps:
+      body:
+      - 仁和汇智

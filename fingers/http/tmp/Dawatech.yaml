@@ -1,0 +1,5 @@
+- name: Dawatech
+  rule:
+  - regexps:
+      body:
+      - Dawatech

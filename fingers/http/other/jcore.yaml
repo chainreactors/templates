@@ -1,0 +1,5 @@
+- name: jcore
+  rule:
+  - regexps:
+      body:
+      - 'JCORE_VERSION = '

@@ -1,0 +1,5 @@
+- name: TightVNC
+  rule:
+  - regexps:
+      body:
+      - <APPLET ARCHIVE="tightvnc-jviewer.jar"

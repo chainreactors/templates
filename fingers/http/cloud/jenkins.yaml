@@ -1,0 +1,13 @@
+- name: jenkins
+  focus: true
+  rule:
+  - regexps:
+      header:
+      - X-Jenkins
+      body:
+      - Jenkins
+    favicon:
+      md5:
+      - 23e8c7bd78e8cd826c5a6073b15068b1
+      mmh3:
+      - '81586312'

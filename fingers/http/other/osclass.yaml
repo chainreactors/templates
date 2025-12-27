@@ -1,0 +1,7 @@
+- name: osclass
+  rule:
+  - regexps:
+      body:
+      - generator" content="Osclass
+      header:
+      - osclass

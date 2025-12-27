@@ -1,0 +1,5 @@
+- name: WonderCMS
+  rule:
+  - regexps:
+      body:
+      - WonderCMS

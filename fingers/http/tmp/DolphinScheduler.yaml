@@ -1,0 +1,6 @@
+- name: DolphinScheduler
+  rule:
+  - regexps:
+      body:
+      - DolphinScheduler
+      - EasyScheduler

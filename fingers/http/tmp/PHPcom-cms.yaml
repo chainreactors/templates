@@ -1,0 +1,5 @@
+- name: PHPcom-cms
+  rule:
+  - regexps:
+      body:
+      - PHPcom Team and cnxinyun UI Team

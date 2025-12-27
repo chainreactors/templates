@@ -1,0 +1,5 @@
+- name: Saman Portal
+  rule:
+  - regexps:
+      body:
+      - content="Saman Information Structure"

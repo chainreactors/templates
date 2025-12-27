@@ -1,0 +1,6 @@
+- name: 金龙卡金融化一卡通网站查询子系统
+  rule:
+  - regexps:
+      body:
+      - 金龙卡金融化一卡通网站查询子系统
+      - location.href="homeLogin.action

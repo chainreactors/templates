@@ -1,0 +1,5 @@
+- name: BinarySec-Cloud-Defense
+  rule:
+  - regexps:
+      header:
+      - x-binarysec-nocache

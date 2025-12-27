@@ -1,0 +1,5 @@
+- name: SNMP-manage
+  rule:
+  - regexps:
+      body:
+      - 'WwW-Authenticate: Basic realm="SNMP'

@@ -1,0 +1,5 @@
+- name: JTBC(CMS)
+  rule:
+  - regexps:
+      body:
+      - jtbc.frontend.ready();

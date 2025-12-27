@@ -1,0 +1,5 @@
+- name: ManageEngine-SupportCenter
+  rule:
+  - regexps:
+      body:
+      - <title>ManageEngine SupportCenter Plus</title>

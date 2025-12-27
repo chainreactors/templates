@@ -1,0 +1,5 @@
+- name: DataSphere
+  rule:
+  - regexps:
+      body:
+      - DataSphere

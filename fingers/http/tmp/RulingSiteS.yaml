@@ -1,0 +1,5 @@
+- name: RulingSiteS
+  rule:
+  - regexps:
+      body:
+      - RulingSite-S

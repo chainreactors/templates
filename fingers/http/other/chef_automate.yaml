@@ -1,0 +1,5 @@
+- name: chef automate
+  rule:
+  - favicon:
+      mmh3:
+      - '-276759139'

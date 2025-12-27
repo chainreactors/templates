@@ -1,0 +1,9 @@
+- name: 群杰印章物联网平台
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - 印章物联网平台-让用印更安全
+    favicon:
+      md5:
+      - 8d51bc407f98aa7b6919dda75b6da5f4

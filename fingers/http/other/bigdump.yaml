@@ -1,0 +1,6 @@
+- name: bigdump
+  rule:
+  - regexps:
+      body:
+      - BigDump
+      - 'BigDump: Staggered MySQL Dump Importer'

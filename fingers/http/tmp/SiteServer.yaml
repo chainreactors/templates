@@ -1,0 +1,6 @@
+- name: SiteServer
+  rule:
+  - regexps:
+      body:
+      - content="SiteServer
+      - SiteServer CMS

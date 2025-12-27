@@ -1,0 +1,5 @@
+- name: vivotek
+  rule:
+  - favicon:
+      mmh3:
+      - '-1654229048'

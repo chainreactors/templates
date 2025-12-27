@@ -1,0 +1,7 @@
+- name: Splunk
+  rule:
+  - regexps:
+      body:
+      - Splunk
+      header:
+      - Splunkd

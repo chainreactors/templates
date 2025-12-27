@@ -1,0 +1,5 @@
+- name: WEBCOMpro CMS
+  rule:
+  - regexps:
+      body:
+      - WEBCOMpro CMS

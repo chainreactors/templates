@@ -1,0 +1,7 @@
+- name: YoudianCMS
+  rule:
+  - regexps:
+      body:
+      - YoudianCMS
+      header:
+      - 'X-Powered-By: YoudianCMS'

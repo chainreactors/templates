@@ -1,0 +1,5 @@
+- name: EasyGame后台运维管理系统
+  rule:
+  - regexps:
+      body:
+      - EasyGame后台运维管理系统

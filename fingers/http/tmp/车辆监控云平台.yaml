@@ -1,0 +1,5 @@
+- name: 车辆监控云平台
+  rule:
+  - regexps:
+      body:
+      - gps-web"></iframe>

@@ -1,0 +1,5 @@
+- name: hp-storageworks-library
+  rule:
+  - regexps:
+      body:
+      - HP StorageWorks

@@ -1,0 +1,7 @@
+- name: 用友 nc
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - UFIDA
+      - /nc/servlet/nc.ui.iufo.login.Index

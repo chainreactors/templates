@@ -1,0 +1,5 @@
+- name: 大华视频监控
+  rule:
+  - regexps:
+      header:
+      - ZheJiang Dahua Technology

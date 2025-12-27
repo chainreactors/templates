@@ -1,0 +1,5 @@
+- name: trendnet ip camera
+  rule:
+  - favicon:
+      mmh3:
+      - '512590457'

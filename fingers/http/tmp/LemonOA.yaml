@@ -1,0 +1,5 @@
+- name: LemonOA
+  rule:
+  - regexps:
+      body:
+      - 首页 - Mossle

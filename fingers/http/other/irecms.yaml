@@ -1,0 +1,5 @@
+- name: irecms
+  rule:
+  - regexps:
+      header:
+      - IRe.CMS

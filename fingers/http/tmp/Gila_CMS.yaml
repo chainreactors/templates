@@ -1,0 +1,5 @@
+- name: Gila CMS
+  rule:
+  - regexps:
+      body:
+      - Gila CMS

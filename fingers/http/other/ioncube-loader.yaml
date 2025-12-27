@@ -1,0 +1,5 @@
+- name: ioncube-loader
+  rule:
+  - regexps:
+      body:
+      - alt="ionCube logo

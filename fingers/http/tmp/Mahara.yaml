@@ -1,0 +1,5 @@
+- name: Mahara
+  rule:
+  - regexps:
+      body:
+      - content="Mahara

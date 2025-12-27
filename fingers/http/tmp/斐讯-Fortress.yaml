@@ -1,0 +1,5 @@
+- name: 斐讯-Fortress
+  rule:
+  - regexps:
+      body:
+      - <title>斐讯Fortress防火墙</title>

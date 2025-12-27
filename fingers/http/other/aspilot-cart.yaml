@@ -1,0 +1,6 @@
+- name: aspilot-cart
+  rule:
+  - regexps:
+      body:
+      - content="Pilot Cart
+      - /pilot_css_default.css

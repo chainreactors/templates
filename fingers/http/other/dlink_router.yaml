@@ -1,0 +1,5 @@
+- name: dlink router
+  rule:
+  - favicon:
+      mmh3:
+      - '1037387972'

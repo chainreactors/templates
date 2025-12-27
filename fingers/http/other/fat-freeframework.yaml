@@ -1,0 +1,5 @@
+- name: fat-freeframework
+  rule:
+  - regexps:
+      header:
+      - Fat-Free Framework

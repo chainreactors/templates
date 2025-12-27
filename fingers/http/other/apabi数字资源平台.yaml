@@ -1,0 +1,7 @@
+- name: apabi数字资源平台
+  rule:
+  - regexps:
+      body:
+      - Default/apabi.css
+      - <link href="HTTP://apabi
+      - 数字资源平台

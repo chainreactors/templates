@@ -1,0 +1,5 @@
+- name: Elxis-CMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="Generator" content="Elxis

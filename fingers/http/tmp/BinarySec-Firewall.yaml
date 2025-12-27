@@ -1,0 +1,5 @@
+- name: BinarySec-Firewall
+  rule:
+  - regexps:
+      header:
+      - x-binarysec

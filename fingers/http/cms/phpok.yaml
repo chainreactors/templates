@@ -1,0 +1,7 @@
+- name: phpok
+  rule:
+  - regexps:
+      body:
+      - phpok
+      - Powered By phpok.com
+      - content="phpok

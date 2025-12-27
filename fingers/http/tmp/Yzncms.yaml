@@ -1,0 +1,5 @@
+- name: Yzncms
+  rule:
+  - regexps:
+      body:
+      - www.kancloud.cn/ken678/yzncms

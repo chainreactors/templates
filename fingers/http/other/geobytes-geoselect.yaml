@@ -1,0 +1,5 @@
+- name: geobytes-geoselect
+  rule:
+  - regexps:
+      header:
+      - Geobytes-GeoSelect

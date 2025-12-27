@@ -1,0 +1,5 @@
+- name: Biscom-Delivery-Server
+  rule:
+  - regexps:
+      body:
+      - ANSYS Secure Transfer

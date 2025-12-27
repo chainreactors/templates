@@ -1,0 +1,5 @@
+- name: TUTUCMS
+  rule:
+  - regexps:
+      body:
+      - Powered by TUTUCMS

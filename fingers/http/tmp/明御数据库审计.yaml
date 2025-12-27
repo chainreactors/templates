@@ -1,0 +1,5 @@
+- name: 明御数据库审计
+  rule:
+  - regexps:
+      body:
+      - 明御数据库审计

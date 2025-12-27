@@ -1,0 +1,7 @@
+- name: Spring Eureka
+  link: http://47.96.172.221:8899/
+  rule:
+  - regexps:
+      body:
+      - <title>Eureka</title>
+      - eureka

@@ -1,0 +1,5 @@
+- name: 艺麟魔方(YLICMS)
+  rule:
+  - regexps:
+      body:
+      - <title>艺麟魔方 - 专注网站建设服务(YLICMS)</title>

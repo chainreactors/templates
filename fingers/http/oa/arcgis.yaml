@@ -1,0 +1,6 @@
+- name: arcgis
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - arcgis

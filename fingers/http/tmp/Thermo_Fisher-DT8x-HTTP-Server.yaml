@@ -1,0 +1,5 @@
+- name: Thermo_Fisher-DT8x-HTTP-Server
+  rule:
+  - regexps:
+      header:
+      - 'Server: DT8x HTTP Server'

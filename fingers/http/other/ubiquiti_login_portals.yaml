@@ -1,0 +1,5 @@
+- name: ubiquiti login portals
+  rule:
+  - favicon:
+      mmh3:
+      - '-1446794564'

@@ -1,0 +1,5 @@
+- name: ashnews
+  rule:
+  - regexps:
+      body:
+      - ashnews

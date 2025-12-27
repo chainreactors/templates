@@ -1,0 +1,5 @@
+- name: acidcat cms
+  rule:
+  - regexps:
+      body:
+      - Acidcat

@@ -1,0 +1,5 @@
+- name: PHP Update
+  rule:
+  - regexps:
+      body:
+      - PHP-Update

@@ -1,0 +1,6 @@
+- name: Profense Firewall
+  rule:
+  - regexps:
+      header:
+      - plbsid=
+      - profense

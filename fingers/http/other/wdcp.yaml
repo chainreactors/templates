@@ -1,0 +1,8 @@
+- name: wdcp
+  rule:
+  - regexps:
+      body:
+      - wdcp服务器
+    favicon:
+      mmh3:
+      - '1786752597'

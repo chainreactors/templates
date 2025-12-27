@@ -1,0 +1,5 @@
+- name: 正方数字化校园
+  rule:
+  - regexps:
+      body:
+      - 正方软件股份有限公司

@@ -1,0 +1,6 @@
+- name: ibm-cognos
+  rule:
+  - regexps:
+      body:
+      - /cgi-bin/cognos.cgi
+      - Cognos &#26159; International Business Machines Corp

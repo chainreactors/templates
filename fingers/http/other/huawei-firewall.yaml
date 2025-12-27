@@ -1,0 +1,7 @@
+- name: huawei-firewall
+  rule:
+  - regexps:
+      body:
+      - Modify by wangxiangguang
+      header:
+      - Eudemon Server

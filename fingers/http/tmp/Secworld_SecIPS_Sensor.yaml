@@ -1,0 +1,5 @@
+- name: Secworld SecIPS Sensor
+  rule:
+  - regexps:
+      body:
+      - secips sensor

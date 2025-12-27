@@ -1,0 +1,5 @@
+- name: tp-shop
+  rule:
+  - regexps:
+      body:
+      - mn-c-top

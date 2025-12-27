@@ -1,0 +1,6 @@
+- name: urp教务系统
+  rule:
+  - regexps:
+      body:
+      - URP 综合教务系统
+      - 北京清元优软科技有限公司

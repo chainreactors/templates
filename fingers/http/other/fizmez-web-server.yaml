@@ -1,0 +1,5 @@
+- name: fizmez-web-server
+  rule:
+  - regexps:
+      header:
+      - Fizmez

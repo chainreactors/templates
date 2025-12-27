@@ -1,0 +1,9 @@
+- name: atmail
+  rule:
+  - regexps:
+      header:
+      - atmail6
+      body:
+      - Powered by Atmail
+      - /index.php/mail/auth/processlogin
+      - <input id="Mailserverinput

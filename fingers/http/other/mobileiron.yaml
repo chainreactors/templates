@@ -1,0 +1,5 @@
+- name: mobileiron
+  rule:
+  - favicon:
+      mmh3:
+      - '2086228042'

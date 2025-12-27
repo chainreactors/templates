@@ -1,0 +1,6 @@
+- name: EOVA
+  link: http://47.104.189.130:8082/toLogin
+  rule:
+  - regexps:
+      body:
+      - EOVA

@@ -1,0 +1,5 @@
+- name: pretsashop
+  rule:
+  - regexps:
+      body:
+      - content="PrestaShop"

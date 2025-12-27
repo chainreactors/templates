@@ -1,0 +1,10 @@
+- name: NSFOCUS WAF
+  rule:
+  - regexps:
+      body:
+      - waf nsfocus
+      - /images/logo/nsfocus.png
+      cert:
+      - 'commonname: wafg2'
+      header:
+      - nsfocus vmwaf

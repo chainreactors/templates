@@ -1,0 +1,5 @@
+- name: Escenic
+  rule:
+  - regexps:
+      body:
+      - content="Escenic"

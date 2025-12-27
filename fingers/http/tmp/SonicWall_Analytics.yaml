@@ -1,0 +1,5 @@
+- name: SonicWall Analytics
+  rule:
+  - regexps:
+      body:
+      - SonicWall Analytics

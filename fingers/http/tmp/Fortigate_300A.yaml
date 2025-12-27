@@ -1,0 +1,5 @@
+- name: Fortigate 300A
+  rule:
+  - regexps:
+      body:
+      - fortigate-300a

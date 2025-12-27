@@ -1,0 +1,5 @@
+- name: drupal
+  rule:
+  - favicon:
+      mmh3:
+      - '-167656799'

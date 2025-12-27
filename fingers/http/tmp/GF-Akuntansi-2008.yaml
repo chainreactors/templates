@@ -1,0 +1,5 @@
+- name: GF-Akuntansi-2008
+  rule:
+  - regexps:
+      body:
+      - GF-Akuntansi 2008

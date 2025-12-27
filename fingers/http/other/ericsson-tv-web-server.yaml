@@ -1,0 +1,5 @@
+- name: ericsson-tv-web-server
+  rule:
+  - regexps:
+      header:
+      - Ericsson Television Web server

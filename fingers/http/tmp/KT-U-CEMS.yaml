@@ -1,0 +1,5 @@
+- name: KT-U-CEMS
+  rule:
+  - regexps:
+      body:
+      - Digest realm="ktcems.com"

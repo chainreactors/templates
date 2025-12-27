@@ -1,0 +1,5 @@
+- name: asp168
+  rule:
+  - regexps:
+      body:
+      - www.asp168.com

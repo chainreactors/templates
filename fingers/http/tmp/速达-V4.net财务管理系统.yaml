@@ -1,0 +1,5 @@
+- name: 速达-V4.net财务管理系统
+  rule:
+  - regexps:
+      body:
+      - 速达V4.Net财务

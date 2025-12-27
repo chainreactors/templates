@@ -1,0 +1,5 @@
+- name: 利谱网闸
+  rule:
+  - regexps:
+      body:
+      - 利谱

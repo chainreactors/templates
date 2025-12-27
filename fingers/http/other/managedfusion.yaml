@@ -1,0 +1,5 @@
+- name: managedfusion
+  rule:
+  - regexps:
+      header:
+      - ManagedFusion

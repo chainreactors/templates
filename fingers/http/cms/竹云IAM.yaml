@@ -1,0 +1,6 @@
+- name: 竹云IAM
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - idp/AuthnEngine

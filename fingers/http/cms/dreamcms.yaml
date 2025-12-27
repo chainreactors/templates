@@ -1,0 +1,5 @@
+- name: dreamcms
+  rule:
+  - regexps:
+      body:
+      - dreamer-cms

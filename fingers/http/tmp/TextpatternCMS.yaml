@@ -1,0 +1,5 @@
+- name: TextpatternCMS
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="Textpattern CMS">

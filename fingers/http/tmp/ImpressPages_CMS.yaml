@@ -1,0 +1,5 @@
+- name: ImpressPages CMS
+  rule:
+  - regexps:
+      body:
+      - content="ImpressPages CMS"

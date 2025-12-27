@@ -1,0 +1,5 @@
+- name: TGate2000
+  rule:
+  - regexps:
+      body:
+      - TGate2000

@@ -1,0 +1,5 @@
+- name: AppServ
+  rule:
+  - regexps:
+      body:
+      - AppServ Open Project

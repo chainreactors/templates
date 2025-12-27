@@ -1,0 +1,7 @@
+- name: kloxo-single-server
+  rule:
+  - regexps:
+      body:
+      - src="/img/hypervm-logo.gif
+      - /htmllib/js/preop.js
+      - HyperVM

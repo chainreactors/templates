@@ -1,0 +1,5 @@
+- name: oracle-dms
+  rule:
+  - regexps:
+      header:
+      - X-Oracle-Dms-Ecid

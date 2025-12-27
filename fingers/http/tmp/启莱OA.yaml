@@ -1,0 +1,6 @@
+- name: 启莱OA
+  rule:
+  - regexps:
+      body:
+      - content="启莱
+      - <option value="index">个性风格</option>

@@ -1,0 +1,5 @@
+- name: 中兴-ZXSEC-US
+  rule:
+  - regexps:
+      body:
+      - ZXSEC US

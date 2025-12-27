@@ -1,0 +1,5 @@
+- name: 思途CMS
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: computer=deleted;'

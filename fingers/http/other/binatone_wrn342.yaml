@@ -1,0 +1,5 @@
+- name: binatone wrn342
+  rule:
+  - regexps:
+      header:
+      - WRN342

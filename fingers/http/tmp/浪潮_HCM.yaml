@@ -1,0 +1,6 @@
+- name: 浪潮 HCM
+  rule:
+  - regexps:
+      body:
+      - inPageLoginMethod
+      - more_login_method

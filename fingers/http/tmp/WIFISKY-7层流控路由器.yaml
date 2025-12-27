@@ -1,0 +1,7 @@
+- name: WIFISKY-7层流控路由器
+  link: https://221.15.134.220:1443/
+  rule:
+  - regexps:
+      body:
+      - WIFISKY
+      - 深圳市领空技术

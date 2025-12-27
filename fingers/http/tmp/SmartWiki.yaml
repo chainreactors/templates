@@ -1,0 +1,5 @@
+- name: SmartWiki
+  rule:
+  - regexps:
+      body:
+      - Smartwiki

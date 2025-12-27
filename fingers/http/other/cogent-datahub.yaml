@@ -1,0 +1,6 @@
+- name: cogent-datahub
+  rule:
+  - regexps:
+      body:
+      - /images/Cogent.gif
+      - Cogent DataHub WebView

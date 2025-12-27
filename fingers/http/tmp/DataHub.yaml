@@ -1,0 +1,9 @@
+- name: DataHub
+  rule:
+  - favicon:
+      mmh3:
+      - '1959205744'
+    regexps:
+      body:
+      - DataHub
+      - A Metadata Platform for the Modern Data Stack

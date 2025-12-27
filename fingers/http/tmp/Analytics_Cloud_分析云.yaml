@@ -1,0 +1,5 @@
+- name: Analytics Cloud 分析云
+  rule:
+  - regexps:
+      body:
+      - Analytics Cloud 分析云

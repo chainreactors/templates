@@ -1,0 +1,6 @@
+- name: bloofoxcms
+  rule:
+  - regexps:
+      body:
+      - content="bloofoxCMS
+      - Powered by <a href="http://www.bloofox.com

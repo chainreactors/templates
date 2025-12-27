@@ -1,0 +1,5 @@
+- name: DoceboLMS
+  rule:
+  - regexps:
+      body:
+      - <body class="yui-skin-docebo yui-skin-sam">

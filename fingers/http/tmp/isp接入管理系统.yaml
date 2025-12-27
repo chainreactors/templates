@@ -1,0 +1,6 @@
+- name: isp接入管理系统
+  rule:
+  - regexps:
+      body:
+      - isp接入管理系统
+      - winisp.gif

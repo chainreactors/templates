@@ -1,0 +1,5 @@
+- name: 菲尔教学管理ERP
+  rule:
+  - regexps:
+      body:
+      - 菲尔教学管理ERP 系统登录

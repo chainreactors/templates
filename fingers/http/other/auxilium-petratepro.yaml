@@ -1,0 +1,5 @@
+- name: auxilium-petratepro
+  rule:
+  - regexps:
+      body:
+      - index.php?cmd=11

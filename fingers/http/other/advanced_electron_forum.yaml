@@ -1,0 +1,8 @@
+- name: advanced electron forum
+  rule:
+  - regexps:
+      body:
+      - Powered By AEF
+      - content="aef
+      header:
+      - aefsid

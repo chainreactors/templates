@@ -1,0 +1,6 @@
+- name: 易点cms
+  rule:
+  - regexps:
+      body:
+      - DianCMS_SiteName
+      - DianCMS_用户登陆引用

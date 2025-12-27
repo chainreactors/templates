@@ -1,0 +1,5 @@
+- name: 泛微 消息管理平台
+  rule:
+  - regexps:
+      body:
+      - 移动管理平台消息服务

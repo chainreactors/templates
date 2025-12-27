@@ -1,0 +1,5 @@
+- name: LANCOM-防火墙
+  rule:
+  - regexps:
+      body:
+      - LANCOM

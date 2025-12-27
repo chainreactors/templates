@@ -1,0 +1,5 @@
+- name: 思福迪-LOGBASE日志管理综合审计系统
+  rule:
+  - regexps:
+      body:
+      - /login/sls/auth?RequestedPage

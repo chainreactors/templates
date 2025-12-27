@@ -1,0 +1,5 @@
+- name: SanDu OA
+  rule:
+  - regexps:
+      body:
+      - 青岛叁度信息技术有限公司

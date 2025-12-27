@@ -1,0 +1,5 @@
+- name: parallels plesk panel
+  rule:
+  - favicon:
+      mmh3:
+      - '-771764544'

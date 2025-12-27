@@ -1,0 +1,5 @@
+- name: LightNEasy
+  rule:
+  - regexps:
+      body:
+      - content='LightNEasy

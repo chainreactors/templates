@@ -1,0 +1,5 @@
+- name: InterRed
+  rule:
+  - regexps:
+      body:
+      - InterRed

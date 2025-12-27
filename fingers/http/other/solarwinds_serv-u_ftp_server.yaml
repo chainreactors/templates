@@ -1,0 +1,5 @@
+- name: solarwinds serv-u ftp server
+  rule:
+  - favicon:
+      mmh3:
+      - '812385209'

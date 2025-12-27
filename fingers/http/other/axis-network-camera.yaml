@@ -1,0 +1,6 @@
+- name: axis-network-camera
+  rule:
+  - regexps:
+      body:
+      - AXIS Video Server
+      - /incl/trash.shtml

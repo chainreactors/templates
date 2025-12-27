@@ -1,0 +1,5 @@
+- name: Koobi CMS
+  rule:
+  - regexps:
+      body:
+      - content="(c) Koobi

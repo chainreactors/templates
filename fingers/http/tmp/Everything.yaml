@@ -1,0 +1,7 @@
+- name: Everything
+  rule:
+  - regexps:
+      body:
+      - Everything.gif
+      header:
+      - Everything HTTP Server

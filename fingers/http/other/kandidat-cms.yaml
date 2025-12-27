@@ -1,0 +1,5 @@
+- name: kandidat-cms
+  rule:
+  - regexps:
+      body:
+      - content="Kandidat-CMS

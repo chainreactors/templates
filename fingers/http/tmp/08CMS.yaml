@@ -1,0 +1,5 @@
+- name: 08CMS
+  rule:
+  - regexps:
+      body:
+      - 08CMS

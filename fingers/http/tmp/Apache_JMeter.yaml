@@ -1,0 +1,5 @@
+- name: Apache JMeter
+  rule:
+  - regexps:
+      body:
+      - Apache JMeter Dashboard

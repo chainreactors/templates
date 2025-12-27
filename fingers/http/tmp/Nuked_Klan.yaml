@@ -1,0 +1,5 @@
+- name: Nuked Klan
+  rule:
+  - regexps:
+      body:
+      - Nuked Klan

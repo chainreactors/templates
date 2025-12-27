@@ -1,0 +1,5 @@
+- name: 融商云考勤管理系统
+  rule:
+  - regexps:
+      body:
+      - <title>融商云——考勤管理系统

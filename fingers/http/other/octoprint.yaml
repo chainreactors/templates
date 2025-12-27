@@ -1,0 +1,5 @@
+- name: octoprint
+  rule:
+  - favicon:
+      mmh3:
+      - '1307375944'

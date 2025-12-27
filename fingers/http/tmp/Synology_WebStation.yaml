@@ -1,0 +1,5 @@
+- name: Synology WebStation
+  rule:
+  - regexps:
+      body:
+      - Welcome to Synology Web Station

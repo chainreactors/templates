@@ -1,0 +1,5 @@
+- name: 小鱼易连 云视讯管理平台
+  rule:
+  - regexps:
+      body:
+      - <title>云视讯管理平台</title>

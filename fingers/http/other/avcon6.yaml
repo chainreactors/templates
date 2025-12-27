@@ -1,0 +1,7 @@
+- name: avcon6
+  rule:
+  - regexps:
+      body:
+      - filename=AVCON6Setup.exe
+      - AVCON6系统管理平台
+      - language_dispose.action

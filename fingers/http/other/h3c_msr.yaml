@@ -1,0 +1,5 @@
+- name: h3c msr
+  rule:
+  - regexps:
+      body:
+      - wnm/ssl/web/frame/login.html

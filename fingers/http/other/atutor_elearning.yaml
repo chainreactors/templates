@@ -1,0 +1,8 @@
+- name: atutor elearning
+  rule:
+  - regexps:
+      body:
+      - content="ATutor
+      - ATutor.course
+      header:
+      - ATutorID

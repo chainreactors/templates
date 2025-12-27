@@ -1,0 +1,6 @@
+- name: 泛鹏天地财务系统
+  rule:
+  - regexps:
+      body:
+      - 泛鹏天地
+      - instantclick.js

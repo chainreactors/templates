@@ -1,0 +1,5 @@
+- name: ZyWALL USG100 PLUS
+  rule:
+  - regexps:
+      body:
+      - zywall usg100-plus

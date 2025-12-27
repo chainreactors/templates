@@ -1,0 +1,6 @@
+- name: 普元cms
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /default/common/nui/nui.js

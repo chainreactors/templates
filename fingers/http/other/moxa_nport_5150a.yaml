@@ -1,0 +1,8 @@
+- name: moxa_nport_5150a
+  rule:
+  - regexps:
+      body:
+      - NPort Web Console
+      - 5150A
+      header:
+      - MoxaHttp

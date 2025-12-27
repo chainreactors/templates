@@ -1,0 +1,8 @@
+- name: 玛格泰克网刊系统
+  level: 2
+  rule:
+  - regexps:
+      body:
+      - <a href="/ht-password.jsp
+      - 北京玛格泰克科技发展有限公司
+    send_data: /ht-login.jsp

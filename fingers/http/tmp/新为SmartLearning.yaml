@@ -1,0 +1,9 @@
+- name: 新为SmartLearning
+  link: http://123.135.130.43:8089/customize/nwc_user_enterprise/login/login.html
+  rule:
+  - regexps:
+      body:
+      - 新为
+      - SmartLearning
+      - SmartMOOC
+      - SmartExam

@@ -1,0 +1,5 @@
+- name: PBM
+  rule:
+  - regexps:
+      body:
+      - content='PMB Group'

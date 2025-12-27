@@ -1,0 +1,8 @@
+- name: idvr
+  rule:
+  - regexps:
+      body:
+      - iDVR
+      - name="iDVRForm
+      header:
+      - iDVRhttpSvr

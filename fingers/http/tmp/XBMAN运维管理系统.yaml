@@ -1,0 +1,5 @@
+- name: XBMAN运维管理系统
+  rule:
+  - regexps:
+      body:
+      - XBMAN

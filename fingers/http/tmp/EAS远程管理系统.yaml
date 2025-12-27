@@ -1,0 +1,5 @@
+- name: EAS远程管理系统
+  rule:
+  - regexps:
+      body:
+      - EAS远程管理系统

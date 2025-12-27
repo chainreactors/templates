@@ -1,0 +1,9 @@
+- name: ecshop
+  rule:
+  - regexps:
+      body:
+      - Powered by ECShop
+      - content="ECSHOP
+      - /api/cron.php
+      header:
+      - ECS_ID

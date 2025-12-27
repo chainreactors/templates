@@ -1,0 +1,5 @@
+- name: gws (google web server)
+  rule:
+  - regexps:
+      header:
+      - 'Server: gws'

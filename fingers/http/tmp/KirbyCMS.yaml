@@ -1,0 +1,6 @@
+- name: KirbyCMS
+  rule:
+  - regexps:
+      body:
+      - kirbycms
+      - <meta name="keywords" content="kirby

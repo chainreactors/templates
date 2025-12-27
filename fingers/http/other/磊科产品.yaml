@@ -1,0 +1,5 @@
+- name: 磊科产品
+  rule:
+  - regexps:
+      header:
+      - netcore

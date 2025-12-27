@@ -1,0 +1,7 @@
+- name: i-catcher-console
+  rule:
+  - regexps:
+      body:
+      - by i-Catcher Console
+      header:
+      - i-Catcher

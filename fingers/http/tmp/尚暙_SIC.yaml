@@ -1,0 +1,5 @@
+- name: 尚暙 SIC
+  rule:
+  - regexps:
+      header:
+      - Basic realm="SICPT

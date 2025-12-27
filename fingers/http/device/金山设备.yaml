@@ -1,0 +1,11 @@
+- name: 金山设备
+  rule:
+  - favicon:
+      mmh3:
+      - '-1786140609'
+      md5:
+      - 18d34be498cfd133d32e83a49af461b4
+    regexps:
+      body:
+      - 金山
+      - 猎鹰安全

@@ -1,0 +1,6 @@
+- name: SANGFOR-深信服数据中心
+  link: https://hlwx.e-autolife.com:85/LogInOut.php
+  rule:
+  - regexps:
+      body:
+      - /LogInOut.php

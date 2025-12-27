@@ -1,0 +1,5 @@
+- name: 正方离校系统
+  rule:
+  - regexps:
+      body:
+      - 正方软件-离校系统

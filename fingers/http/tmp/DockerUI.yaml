@@ -1,0 +1,5 @@
+- name: DockerUI
+  rule:
+  - regexps:
+      body:
+      - DockerUI

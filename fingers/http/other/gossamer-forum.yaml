@@ -1,0 +1,6 @@
+- name: gossamer-forum
+  rule:
+  - regexps:
+      body:
+      - href="gforum.cgi?username=
+      - Gossamer Forum

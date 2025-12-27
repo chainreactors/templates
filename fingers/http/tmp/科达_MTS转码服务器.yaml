@@ -1,0 +1,6 @@
+- name: 科达 MTS转码服务器
+  rule:
+  - regexps:
+      body:
+      - MTS转码服务器
+      - ext-el-mask-msg x-mask-loading

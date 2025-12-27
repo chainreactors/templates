@@ -1,0 +1,7 @@
+- name: Fortinet FortiWeb
+  rule:
+  - regexps:
+      body:
+      - var CONFIG_GUI_NO
+      header:
+      - 'Server: FortiWeb'

@@ -1,0 +1,5 @@
+- name: ischoolsite
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://www.ischoolsite.com

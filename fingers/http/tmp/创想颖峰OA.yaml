@@ -1,0 +1,5 @@
+- name: 创想颖峰OA
+  rule:
+  - regexps:
+      body:
+      - 创想颖峰

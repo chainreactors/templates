@@ -1,0 +1,5 @@
+- name: untangle
+  rule:
+  - favicon:
+      mmh3:
+      - '1103599349'

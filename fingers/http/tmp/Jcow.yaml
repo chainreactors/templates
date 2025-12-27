@@ -1,0 +1,5 @@
+- name: Jcow
+  rule:
+  - regexps:
+      body:
+      - Powered by Jcow

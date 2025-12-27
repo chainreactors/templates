@@ -1,0 +1,5 @@
+- name: Oracle GlassFish Server
+  rule:
+  - regexps:
+      header:
+      - 'Server: Oracle GlassFish Server'

@@ -1,0 +1,5 @@
+- name: Sylius
+  rule:
+  - regexps:
+      body:
+      - class="header sylius-product-name"

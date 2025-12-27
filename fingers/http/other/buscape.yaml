@@ -1,0 +1,5 @@
+- name: buscape
+  rule:
+  - regexps:
+      header:
+      - sessao3

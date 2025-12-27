@@ -1,0 +1,5 @@
+- name: phpMyBackupPro
+  rule:
+  - regexps:
+      header:
+      - Basic realm="phpMyBackupPro

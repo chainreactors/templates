@@ -1,0 +1,5 @@
+- name: 用友 U9
+  rule:
+  - regexps:
+      body:
+      - U9-登录

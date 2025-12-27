@@ -1,0 +1,5 @@
+- name: 用友-MA插件
+  rule:
+  - regexps:
+      body:
+      - 用友_MA插件管理

@@ -1,0 +1,5 @@
+- name: HiShop
+  rule:
+  - regexps:
+      body:
+      - Hishop development team

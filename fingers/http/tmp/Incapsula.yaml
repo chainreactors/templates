@@ -1,0 +1,5 @@
+- name: Incapsula
+  rule:
+  - regexps:
+      header:
+      - 'x-cdn: incapsula'

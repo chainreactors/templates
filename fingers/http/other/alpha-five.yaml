@@ -1,0 +1,5 @@
+- name: alpha-five
+  rule:
+  - regexps:
+      header:
+      - A5wSessionId

@@ -1,0 +1,6 @@
+- name: bigace
+  rule:
+  - regexps:
+      body:
+      - content="BIGACE
+      - Site is running BIGACE

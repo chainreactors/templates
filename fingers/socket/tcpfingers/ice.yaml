@@ -1,0 +1,9 @@
+- name: ice
+  default_port:
+  - '5000'
+  - '10000'
+  protocol: tcp
+  rule:
+  - regexps:
+      body:
+      - IceP

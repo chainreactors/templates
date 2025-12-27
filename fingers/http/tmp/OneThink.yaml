@@ -1,0 +1,6 @@
+- name: OneThink
+  link: http://flyer.parkyardhotel.com:8812/index.php?s=/Admin/Public/login.html
+  rule:
+  - regexps:
+      body:
+      - OneThink管理平台

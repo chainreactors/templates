@@ -1,0 +1,5 @@
+- name: MAS移动代理服务器
+  rule:
+  - regexps:
+      body:
+      - MAS移动代理服务器-登录

@@ -1,0 +1,5 @@
+- name: WebKnight
+  rule:
+  - regexps:
+      header:
+      - WebKnight

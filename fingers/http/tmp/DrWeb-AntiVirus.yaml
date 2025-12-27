@@ -1,0 +1,5 @@
+- name: DrWeb-AntiVirus
+  rule:
+  - regexps:
+      body:
+      - <div id="DrWeb">

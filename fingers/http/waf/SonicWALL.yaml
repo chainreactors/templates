@@ -1,0 +1,7 @@
+- name: SonicWALL
+  rule:
+  - regexps:
+      header:
+      - SonicWALL
+      body:
+      - <title>Web Site Blocked</title>

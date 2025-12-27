@@ -1,0 +1,5 @@
+- name: PortSwigger-Burp-Suite
+  rule:
+  - regexps:
+      body:
+      - Burp Suite Professional

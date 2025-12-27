@@ -1,0 +1,11 @@
+- name: 达观RPA
+  rule:
+  - regexps:
+      body:
+      - <title>RPA</title>
+      - DataGrand
+    favicon:
+      md5:
+      - e2e2ba13339c2fea220f8b4fa6c32c0d
+      mmh3:
+      - '-773042386'

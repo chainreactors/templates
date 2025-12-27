@@ -1,0 +1,5 @@
+- name: 友点CMS
+  rule:
+  - regexps:
+      body:
+      - 友点企业网站管理系统

@@ -1,0 +1,7 @@
+- name: dell-remote-access-controller
+  rule:
+  - regexps:
+      body:
+      - /cgi-bin/webcgi/ssologin
+      header:
+      - RAC_ONE_HTTP

@@ -1,0 +1,5 @@
+- name: asp.net
+  rule:
+  - regexps:
+      header:
+      - ASP.NET_SessionId

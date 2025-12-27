@@ -1,0 +1,9 @@
+- name: rsync
+  default_port:
+  - '873'
+  protocol: tcp
+  rule:
+  - regexps:
+      body:
+      - '@RSYNC:'
+      - '@ERROR:'

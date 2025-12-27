@@ -1,0 +1,6 @@
+- name: MessageSolution Enterprise Email Archiving (EEA)
+  link: https://63.128.135.13/index.jsp
+  rule:
+  - regexps:
+      body:
+      - MessageSolution

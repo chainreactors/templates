@@ -1,0 +1,6 @@
+- name: SOMANSA DLP+Center
+  rule:
+  - regexps:
+      body:
+      - <span>SOMANSA</span>
+      - <a href="/DLPCenter/" class="btn DLPCenter"></a>

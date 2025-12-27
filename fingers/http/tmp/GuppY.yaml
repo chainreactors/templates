@@ -1,0 +1,6 @@
+- name: GuppY
+  rule:
+  - regexps:
+      body:
+      - Laurent Duveau - http://www.freeguppy.org/
+      - GuppY

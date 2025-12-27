@@ -1,0 +1,5 @@
+- name: nopCommerce
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://www.nopCommerce.com/">

@@ -1,0 +1,5 @@
+- name: Bluedon Intrusion Detection
+  rule:
+  - regexps:
+      body:
+      - bluedon-idp

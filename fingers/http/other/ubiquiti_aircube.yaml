@@ -1,0 +1,5 @@
+- name: ubiquiti aircube
+  rule:
+  - favicon:
+      mmh3:
+      - '1249285083'

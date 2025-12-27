@@ -1,0 +1,5 @@
+- name: facebook_insights
+  rule:
+  - regexps:
+      body:
+      - fb:app_id

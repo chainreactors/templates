@@ -1,0 +1,5 @@
+- name: 用友 grp-r9i
+  rule:
+  - regexps:
+      body:
+      - R9iPortal/index.jsp

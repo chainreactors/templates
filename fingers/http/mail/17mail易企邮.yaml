@@ -1,0 +1,5 @@
+- name: 17mail易企邮
+  rule:
+  - regexps:
+      body:
+      - 易企邮

@@ -1,0 +1,5 @@
+- name: 红帆oa
+  rule:
+  - regexps:
+      body:
+      - 红帆ioffice

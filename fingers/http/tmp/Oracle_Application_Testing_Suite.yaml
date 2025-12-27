@@ -1,0 +1,5 @@
+- name: Oracle Application Testing Suite
+  rule:
+  - regexps:
+      body:
+      - Oracle Application Testing Suite

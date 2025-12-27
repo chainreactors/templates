@@ -1,0 +1,7 @@
+- name: docebolms
+  rule:
+  - regexps:
+      body:
+      - Powered by Docebo
+      header:
+      - docebo_session=

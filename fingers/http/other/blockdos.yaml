@@ -1,0 +1,5 @@
+- name: blockdos
+  rule:
+  - regexps:
+      header:
+      - BlockDos.net

@@ -1,0 +1,5 @@
+- name: barracuda-load-balancer
+  rule:
+  - regexps:
+      header:
+      - BARRACUDA_LB_COOKIE

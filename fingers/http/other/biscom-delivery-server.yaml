@@ -1,0 +1,6 @@
+- name: biscom-delivery-server
+  rule:
+  - regexps:
+      body:
+      - /bds/stylesheets/fds.css
+      - /bds/includes/fdsJavascript.do

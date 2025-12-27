@@ -1,0 +1,11 @@
+- name: ftp
+  default_port:
+  - ftp
+  protocol: tcp
+  rule:
+  - regexps:
+      body:
+      - FTPd
+      - FTP service
+      regexp:
+      - ^220-

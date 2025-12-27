@@ -1,0 +1,5 @@
+- name: tc-group
+  rule:
+  - favicon:
+      mmh3:
+      - '-1734573358'

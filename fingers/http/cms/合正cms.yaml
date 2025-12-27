@@ -1,0 +1,5 @@
+- name: 合正cms
+  rule:
+  - regexps:
+      body:
+      - /cms/cmsadmin/infopub

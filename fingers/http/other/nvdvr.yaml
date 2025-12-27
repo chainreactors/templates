@@ -1,0 +1,5 @@
+- name: nvdvr
+  rule:
+  - regexps:
+      body:
+      - XWebPlay

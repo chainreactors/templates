@@ -1,0 +1,5 @@
+- name: oracle solaris
+  rule:
+  - regexps:
+      header:
+      - Oracle Solaris

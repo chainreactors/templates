@@ -1,0 +1,5 @@
+- name: TP LINK Omada Controller
+  rule:
+  - regexps:
+      body:
+      - Omada Controller

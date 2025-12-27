@@ -1,0 +1,6 @@
+- name: synology_diskstation
+  rule:
+  - regexps:
+      body:
+      - Synology DiskStation
+      - SYNO.SDS.Session

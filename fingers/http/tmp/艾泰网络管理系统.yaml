@@ -1,0 +1,5 @@
+- name: 艾泰网络管理系统
+  rule:
+  - regexps:
+      body:
+      - /noAuth/BrowserVersion.js"

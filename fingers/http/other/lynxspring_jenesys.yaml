@@ -1,0 +1,5 @@
+- name: lynxspring_jenesys
+  rule:
+  - regexps:
+      body:
+      - LX JENEsys

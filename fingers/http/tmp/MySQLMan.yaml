@@ -1,0 +1,7 @@
+- name: MySQLMan
+  rule:
+  - regexps:
+      body:
+      - MySQLMan
+      header:
+      - MySQLMan_url

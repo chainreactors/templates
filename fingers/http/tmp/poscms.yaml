@@ -1,0 +1,5 @@
+- name: poscms
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: poscms_ci_session='

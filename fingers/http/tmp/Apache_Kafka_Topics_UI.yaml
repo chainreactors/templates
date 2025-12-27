@@ -1,0 +1,5 @@
+- name: Apache Kafka Topics UI
+  rule:
+  - regexps:
+      body:
+      - Kafka Topics UI

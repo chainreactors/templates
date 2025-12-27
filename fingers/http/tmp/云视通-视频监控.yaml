@@ -1,0 +1,5 @@
+- name: 云视通-视频监控
+  rule:
+  - regexps:
+      body:
+      - classid="clsid:6377DAC5-37F6-40BD-9F0D-78F78046D754"

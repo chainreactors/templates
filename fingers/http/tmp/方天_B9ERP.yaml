@@ -1,0 +1,6 @@
+- name: 方天 B9ERP
+  rule:
+  - regexps:
+      body:
+      - name="dbnameddl"
+      - 方天云端ERP企业管理软件

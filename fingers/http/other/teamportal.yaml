@@ -1,0 +1,5 @@
+- name: teamportal
+  rule:
+  - regexps:
+      body:
+      - TS_expiredurl

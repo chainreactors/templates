@@ -1,0 +1,5 @@
+- name: kamailio
+  rule:
+  - regexps:
+      header:
+      - kamailio

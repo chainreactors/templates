@@ -1,0 +1,5 @@
+- name: 丽升阅卷系统
+  rule:
+  - regexps:
+      body:
+      - LeaScentPaper.exe

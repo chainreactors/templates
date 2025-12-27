@@ -1,0 +1,7 @@
+- name: SipProxyModuleCtx
+  rule:
+  - regexps:
+      body:
+      - SipProxyModuleCtx
+      header:
+      - SipProxyModuleCtx

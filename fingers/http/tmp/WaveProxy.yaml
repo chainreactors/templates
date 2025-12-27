@@ -1,0 +1,5 @@
+- name: WaveProxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: WaveProxy'

@@ -1,0 +1,5 @@
+- name: 迪普-dptech-server
+  rule:
+  - regexps:
+      header:
+      - 'Server: dptech server'

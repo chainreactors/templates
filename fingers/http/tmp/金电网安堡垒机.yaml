@@ -1,0 +1,5 @@
+- name: 金电网安堡垒机
+  rule:
+  - regexps:
+      body:
+      - 金电网安可信运维管理系统

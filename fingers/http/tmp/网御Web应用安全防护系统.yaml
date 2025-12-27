@@ -1,0 +1,6 @@
+- name: 网御Web应用安全防护系统
+  link: https://49.87.110.138:13443/login
+  rule:
+  - regexps:
+      body:
+      - 网御Web应用安全防护系统

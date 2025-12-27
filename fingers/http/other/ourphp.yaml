@@ -1,0 +1,6 @@
+- name: ourphp
+  rule:
+  - regexps:
+      body:
+      - content="OURPHP
+      - Powered by ourphp

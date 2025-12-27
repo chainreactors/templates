@@ -1,0 +1,5 @@
+- name: proxygen
+  rule:
+  - regexps:
+      header:
+      - 'Server: proxygen'

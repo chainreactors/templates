@@ -1,0 +1,5 @@
+- name: niagara web server
+  rule:
+  - favicon:
+      mmh3:
+      - '-676077969'

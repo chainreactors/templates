@@ -1,0 +1,5 @@
+- name: CacheCloud系统
+  rule:
+  - regexps:
+      body:
+      - <title>CacheCloud系统</title>

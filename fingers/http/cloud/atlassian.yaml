@@ -1,0 +1,6 @@
+- name: atlassian
+  focus: true
+  rule:
+  - favicon:
+      mmh3:
+      - '743365239'

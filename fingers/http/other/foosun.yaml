@@ -1,0 +1,7 @@
+- name: foosun
+  rule:
+  - regexps:
+      body:
+      - Created by DotNetCMS
+      - For Foosun
+      - Powered by www.Foosun.net,Products:Foosun Content Manage system

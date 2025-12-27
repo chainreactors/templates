@@ -1,0 +1,6 @@
+- name: Huawei-AnyOffice
+  link: https://124.133.23.188:8443/MDMServer/loginPage.action
+  rule:
+  - regexps:
+      body:
+      - cancelchangepwbtn

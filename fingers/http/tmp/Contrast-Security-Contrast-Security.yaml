@@ -1,0 +1,5 @@
+- name: Contrast-Security-Contrast-Security
+  rule:
+  - regexps:
+      body:
+      - Toggle High Contrast

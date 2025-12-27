@@ -1,0 +1,5 @@
+- name: Dolibarr
+  rule:
+  - regexps:
+      body:
+      - title="Dolibarr

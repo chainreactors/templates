@@ -1,0 +1,5 @@
+- name: 微门户
+  rule:
+  - regexps:
+      body:
+      - /tpl/Home/weimeng/common/css/

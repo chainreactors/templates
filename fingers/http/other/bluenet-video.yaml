@@ -1,0 +1,6 @@
+- name: bluenet-video
+  rule:
+  - regexps:
+      body:
+      - /cgi-bin/client_execute.cgi?tUD=0
+      - BlueNet Video Viewer Version

@@ -1,0 +1,5 @@
+- name: ECS 易创思CMS
+  rule:
+  - regexps:
+      body:
+      - 上海弘育信息技术有限公司

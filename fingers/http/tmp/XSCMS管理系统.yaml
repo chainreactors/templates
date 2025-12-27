@@ -1,0 +1,5 @@
+- name: XSCMS管理系统
+  rule:
+  - regexps:
+      body:
+      - XSCMS管理系统

@@ -1,0 +1,5 @@
+- name: SmartNac
+  rule:
+  - regexps:
+      body:
+      - SmartNac

@@ -1,0 +1,5 @@
+- name: 汉码软件
+  rule:
+  - regexps:
+      body:
+      - 汉码软件

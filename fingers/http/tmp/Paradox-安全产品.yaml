@@ -1,0 +1,5 @@
+- name: Paradox-安全产品
+  rule:
+  - regexps:
+      body:
+      - Your Paradox System

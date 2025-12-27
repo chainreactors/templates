@@ -1,0 +1,6 @@
+- name: Sundray Firewall
+  rule:
+  - regexps:
+      body:
+      - help = decodeuricomponent(version_info_ch)
+      - http://www.sundray.com.cn/Support/feedback.html

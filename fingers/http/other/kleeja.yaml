@@ -1,0 +1,5 @@
+- name: kleeja
+  rule:
+  - regexps:
+      body:
+      - Powered by Kleeja

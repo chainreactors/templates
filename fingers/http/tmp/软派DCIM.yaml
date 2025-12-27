@@ -1,0 +1,7 @@
+- name: 软派DCIM
+  rule:
+  - regexps:
+      body:
+      - <link rel="stylesheet" href="../../../api/Plugin.Base/Theme/Css" />
+      header:
+      - Plugin.Base

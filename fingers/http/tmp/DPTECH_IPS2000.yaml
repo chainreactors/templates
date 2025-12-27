@@ -1,0 +1,5 @@
+- name: DPTECH IPS2000
+  rule:
+  - regexps:
+      body:
+      - ips2000

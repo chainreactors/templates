@@ -1,0 +1,5 @@
+- name: Huawei-华为-AR-Web-管理平台
+  rule:
+  - regexps:
+      body:
+      - ar web登录

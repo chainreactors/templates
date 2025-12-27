@@ -1,0 +1,7 @@
+- name: Pritunl
+  rule:
+  - regexps:
+      body:
+      - Pritunl
+      header:
+      - Pritunl

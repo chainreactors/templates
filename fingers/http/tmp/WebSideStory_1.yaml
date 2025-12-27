@@ -1,0 +1,5 @@
+- name: WebSideStory
+  rule:
+  - regexps:
+      body:
+      - WEBSIDESTORY CODE

@@ -1,0 +1,5 @@
+- name: 迪普vpn
+  rule:
+  - regexps:
+      body:
+      - dptech_ssl

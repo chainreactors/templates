@@ -1,0 +1,10 @@
+- name: spring-cloud-hystrix
+  focus: true
+  default_port:
+  - '2001'
+  rule:
+  - regexps:
+      header:
+      - hystrix-dashboard
+      body:
+      - hystrix

@@ -1,0 +1,6 @@
+- name: MSVOD cms
+  rule:
+  - regexps:
+      body:
+      - /msvod.js
+      - images/lists?cid=

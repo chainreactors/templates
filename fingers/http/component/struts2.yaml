@@ -1,0 +1,10 @@
+- name: struts2
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - org.apache.struts2
+      - struts.devMode
+      - struts-tags
+      - Action mapped for namespace
+      - .action

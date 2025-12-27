@@ -1,0 +1,5 @@
+- name: spid http server
+  rule:
+  - regexps:
+      header:
+      - SPID HTTP Server

@@ -1,0 +1,6 @@
+- name: dmxready-portfolio-manager
+  rule:
+  - regexps:
+      body:
+      - /css/PortfolioManager/styles_display_page.css
+      - rememberme_portfoliomanager

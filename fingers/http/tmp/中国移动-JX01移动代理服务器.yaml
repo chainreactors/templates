@@ -1,0 +1,5 @@
+- name: 中国移动-JX01移动代理服务器
+  rule:
+  - regexps:
+      body:
+      - JX01移动代理服务器

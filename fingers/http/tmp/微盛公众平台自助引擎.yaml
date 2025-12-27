@@ -1,0 +1,5 @@
+- name: 微盛公众平台自助引擎
+  rule:
+  - regexps:
+      body:
+      - <b>微盛</b></a>

@@ -1,0 +1,6 @@
+- name: 云安宝-云匣子
+  rule:
+  - regexps:
+      body:
+      - 'CommonName: 云匣子'
+      - 'Organization: 深圳云安宝科技有限公司'

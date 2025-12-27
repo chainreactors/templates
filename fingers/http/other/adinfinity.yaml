@@ -1,0 +1,5 @@
+- name: adinfinity
+  rule:
+  - regexps:
+      body:
+      - adinfinity.com.au/adapt

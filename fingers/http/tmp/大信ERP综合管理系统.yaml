@@ -1,0 +1,5 @@
+- name: 大信ERP综合管理系统
+  rule:
+  - regexps:
+      body:
+      - 大信ERP综合管理系统

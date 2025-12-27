@@ -1,0 +1,5 @@
+- name: freebsd
+  rule:
+  - regexps:
+      header:
+      - FreeBSD

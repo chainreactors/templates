@@ -1,0 +1,5 @@
+- name: lancom
+  rule:
+  - favicon:
+      mmh3:
+      - '-325082670'

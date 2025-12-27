@@ -1,0 +1,6 @@
+- name: wecenter
+  rule:
+  - regexps:
+      body:
+      - aw_template.js
+      - WeCenter

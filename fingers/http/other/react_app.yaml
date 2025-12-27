@@ -1,0 +1,5 @@
+- name: react app
+  rule:
+  - favicon:
+      mmh3:
+      - '1170430551'

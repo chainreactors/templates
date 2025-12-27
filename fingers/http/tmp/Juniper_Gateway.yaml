@@ -1,0 +1,5 @@
+- name: Juniper Gateway
+  rule:
+  - regexps:
+      body:
+      - juniper gateway

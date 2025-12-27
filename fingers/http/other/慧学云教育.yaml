@@ -1,0 +1,7 @@
+- name: 慧学云教育
+  rule:
+  - regexps:
+      body:
+      - ctl00_ContentPlaceHolder1_dltTopVideos
+      header:
+      - SchoolCopyRight

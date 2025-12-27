@@ -1,0 +1,8 @@
+- name: YiBot
+  rule:
+  - favicon:
+      mmh3:
+      - '-702393003'
+    regexps:
+      body:
+      - YiBot

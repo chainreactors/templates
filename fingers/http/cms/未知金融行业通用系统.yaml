@@ -1,0 +1,5 @@
+- name: 未知金融行业通用系统
+  rule:
+  - regexps:
+      body:
+      - hsea.min.css

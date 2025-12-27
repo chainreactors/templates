@@ -1,0 +1,5 @@
+- name: SysAid Help Desk
+  rule:
+  - regexps:
+      body:
+      - SysAid Help Desk Software

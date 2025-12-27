@@ -1,0 +1,5 @@
+- name: unknown_cms
+  rule:
+  - regexps:
+      header:
+      - Requestsuccess4ajax

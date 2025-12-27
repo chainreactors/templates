@@ -1,0 +1,5 @@
+- name: entronix energy management platform
+  rule:
+  - favicon:
+      mmh3:
+      - '-368490461'

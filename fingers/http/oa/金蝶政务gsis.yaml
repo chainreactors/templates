@@ -1,0 +1,6 @@
+- name: 金蝶政务gsis
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /kdgs/script/kdgs.js

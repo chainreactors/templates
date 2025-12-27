@@ -1,0 +1,5 @@
+- name: Novell Sentinel
+  rule:
+  - regexps:
+      body:
+      - Novell Sentinel Log Manager

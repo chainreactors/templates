@@ -1,0 +1,7 @@
+- name: kindeditor
+  rule:
+  - regexps:
+      body:
+      - kindeditor.js
+      - KindEditor.ready
+      - K.create

@@ -1,0 +1,5 @@
+- name: oracle_applicaton_server
+  rule:
+  - regexps:
+      body:
+      - OraLightHeaderSub

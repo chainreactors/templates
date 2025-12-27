@@ -1,0 +1,5 @@
+- name: 新晨阳光 教务办公管理平台
+  rule:
+  - regexps:
+      body:
+      - <h2 class="cn">数字通云平台</h2>

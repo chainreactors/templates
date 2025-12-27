@@ -1,0 +1,8 @@
+- name: 吉大正元身份认证网关
+  rule:
+  - regexps:
+      body:
+      - 吉大正元身份认证网关
+      - /jit_pnx_portal/
+      header:
+      - jit_pnxcore1 web service

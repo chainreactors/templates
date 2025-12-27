@@ -1,0 +1,5 @@
+- name: Juniper-HDR
+  rule:
+  - regexps:
+      body:
+      - Juniper

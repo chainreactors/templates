@@ -1,0 +1,5 @@
+- name: Roxx Auderis CMS
+  rule:
+  - regexps:
+      body:
+      - content="Roxx Auderis"

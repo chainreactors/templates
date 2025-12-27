@@ -1,0 +1,5 @@
+- name: 东华 OA系统
+  rule:
+  - regexps:
+      body:
+      - <span>东华软件股份公司版权所有</span>

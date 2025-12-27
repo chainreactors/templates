@@ -1,0 +1,6 @@
+- name: OM视频会议
+  rule:
+  - regexps:
+      body:
+      - OM视频会议
+      - Powered by <span style="color:#F60;">OM</span>eeting

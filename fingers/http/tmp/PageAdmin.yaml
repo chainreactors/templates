@@ -1,0 +1,7 @@
+- name: PageAdmin
+  rule:
+  - regexps:
+      body:
+      - Powered By PageAdmin Cms
+      - content="PageAdmin CMS"
+      - PageAdmin企业网站管理系统

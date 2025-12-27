@@ -1,0 +1,5 @@
+- name: DataSphere Studio
+  rule:
+  - regexps:
+      body:
+      - DataSphere Studio

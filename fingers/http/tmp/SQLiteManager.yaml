@@ -1,0 +1,5 @@
+- name: SQLiteManager
+  rule:
+  - regexps:
+      body:
+      - SQLiteManager

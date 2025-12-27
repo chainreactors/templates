@@ -1,0 +1,5 @@
+- name: lucee!
+  rule:
+  - favicon:
+      mmh3:
+      - '784872924'

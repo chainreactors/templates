@@ -1,0 +1,5 @@
+- name: 宁盾 一体化安全认证平台
+  rule:
+  - regexps:
+      body:
+      - id="dynamicpasswordwithmobile">

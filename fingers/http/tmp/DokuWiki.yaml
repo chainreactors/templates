@@ -1,0 +1,5 @@
+- name: DokuWiki
+  rule:
+  - regexps:
+      body:
+      - Driven by DokuWiki

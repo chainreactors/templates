@@ -1,0 +1,6 @@
+- name: CloudFlareWAF
+  rule:
+  - regexps:
+      body:
+      - Attention Required!
+      - CLOUDFLARE_ERROR_

@@ -1,0 +1,5 @@
+- name: Symantec-SG-S500
+  rule:
+  - regexps:
+      header:
+      - 'Www-Authenticate: Basic realm="Symantec SGS S500"'

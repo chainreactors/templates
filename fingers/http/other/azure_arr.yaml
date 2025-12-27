@@ -1,0 +1,5 @@
+- name: azure_arr
+  rule:
+  - regexps:
+      header:
+      - ARRAffinity

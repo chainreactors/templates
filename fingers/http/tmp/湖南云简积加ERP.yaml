@@ -1,0 +1,5 @@
+- name: 湖南云简积加ERP
+  rule:
+  - regexps:
+      body:
+      - 湖南云简信息技术有限公司

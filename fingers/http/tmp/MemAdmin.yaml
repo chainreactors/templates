@@ -1,0 +1,5 @@
+- name: MemAdmin
+  rule:
+  - regexps:
+      body:
+      - MemAdmin - 1.0.12

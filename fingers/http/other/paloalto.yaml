@@ -1,0 +1,5 @@
+- name: paloalto
+  rule:
+  - favicon:
+      mmh3:
+      - '602431586'

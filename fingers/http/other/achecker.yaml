@@ -1,0 +1,6 @@
+- name: achecker
+  rule:
+  - regexps:
+      body:
+      - content="AChecker is a Web accessibility
+      - 'Checker : Web Accessibility Checker'

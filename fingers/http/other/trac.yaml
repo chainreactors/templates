@@ -1,0 +1,8 @@
+- name: trac
+  rule:
+  - regexps:
+      body:
+      - <h1>Available Projects</h1>
+      - wiki/TracGuide
+      header:
+      - trac_session

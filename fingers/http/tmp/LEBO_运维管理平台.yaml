@@ -1,0 +1,5 @@
+- name: LEBO 运维管理平台
+  rule:
+  - regexps:
+      body:
+      - LEBO 运维管理平台

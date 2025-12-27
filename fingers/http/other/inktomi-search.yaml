@@ -1,0 +1,5 @@
+- name: inktomi-search
+  rule:
+  - regexps:
+      header:
+      - Inktomi Search

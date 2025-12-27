@@ -1,0 +1,6 @@
+- name: 日志易管理系统
+  rule:
+  - regexps:
+      body:
+      - href="/static/assets/yottaweb-elements/index.css"
+      - 日志易管理系统

@@ -1,0 +1,7 @@
+- name: Gitorious
+  rule:
+  - regexps:
+      body:
+      - Gitorious
+      header:
+      - _gitorious_sess

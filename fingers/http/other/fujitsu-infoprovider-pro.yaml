@@ -1,0 +1,5 @@
+- name: fujitsu-infoprovider-pro
+  rule:
+  - regexps:
+      header:
+      - Fujitsu-InfoProvider-Pro

@@ -1,0 +1,5 @@
+- name: 泰信tmailer邮件系统
+  rule:
+  - regexps:
+      body:
+      - Tmailer

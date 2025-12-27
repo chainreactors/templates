@@ -1,0 +1,5 @@
+- name: powereasy
+  rule:
+  - regexps:
+      body:
+      - Powered by PowerEasy

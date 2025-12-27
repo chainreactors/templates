@@ -1,0 +1,9 @@
+- name: b2bbuilder
+  rule:
+  - regexps:
+      body:
+      - content="B2Bbuilder
+      - translateButtonId = "B2Bbuilder
+    favicon:
+      mmh3:
+      - '492941040'

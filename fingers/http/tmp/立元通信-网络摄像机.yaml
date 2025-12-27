@@ -1,0 +1,5 @@
+- name: 立元通信-网络摄像机
+  rule:
+  - regexps:
+      body:
+      - CLASSID="CLSID:2BDCA6AD-9A68-4A7A-964A-CB74FC4F3000"

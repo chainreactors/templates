@@ -1,0 +1,7 @@
+- name: datalife-engine
+  rule:
+  - regexps:
+      body:
+      - content="DataLife Engine
+      header:
+      - dle_

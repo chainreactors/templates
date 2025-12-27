@@ -1,0 +1,5 @@
+- name: ContentXXL
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="contentXXL Business Content Management System

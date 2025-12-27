@@ -1,0 +1,5 @@
+- name: Parallels-H-Sphere
+  rule:
+  - regexps:
+      body:
+      - Parallels H-Sphere

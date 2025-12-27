@@ -1,0 +1,10 @@
+- name: jetty
+  rule:
+  - regexps:
+      header:
+      - Jetty
+      body:
+      - Powered by Jetty
+    favicon:
+      mmh3:
+      - '-629047854'

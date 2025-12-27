@@ -1,0 +1,5 @@
+- name: powercdn
+  rule:
+  - regexps:
+      header:
+      - Powercdn

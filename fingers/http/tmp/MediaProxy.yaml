@@ -1,0 +1,5 @@
+- name: MediaProxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: Dennree MediaProxy'

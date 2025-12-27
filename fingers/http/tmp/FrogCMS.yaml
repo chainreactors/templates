@@ -1,0 +1,5 @@
+- name: FrogCMS
+  rule:
+  - regexps:
+      body:
+      - '">Frog CMS</a>'

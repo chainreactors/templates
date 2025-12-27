@@ -1,0 +1,5 @@
+- name: 海泰-key验证
+  rule:
+  - regexps:
+      body:
+      - /general/login/index.php

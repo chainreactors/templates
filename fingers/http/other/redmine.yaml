@@ -1,0 +1,5 @@
+- name: redmine
+  rule:
+  - favicon:
+      mmh3:
+      - '603314'

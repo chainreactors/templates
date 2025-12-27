@@ -1,0 +1,7 @@
+- name: isc-scada-service
+  rule:
+  - regexps:
+      body:
+      - ISC SCADA
+      header:
+      - ISC SCADA Service

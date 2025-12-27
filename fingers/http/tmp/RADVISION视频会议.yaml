@@ -1,0 +1,7 @@
+- name: RADVISION视频会议
+  rule:
+  - regexps:
+      body:
+      - RADVISION iVIEW Suite
+      header:
+      - 'Server: Apache/2.0.59 (Unix) PHP/5.1.0 mod_ssl/2.0.59 OpenSSL/0.9.8h DAV/2'

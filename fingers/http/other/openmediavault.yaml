@@ -1,0 +1,5 @@
+- name: openmediavault
+  rule:
+  - favicon:
+      mmh3:
+      - '-693082538'

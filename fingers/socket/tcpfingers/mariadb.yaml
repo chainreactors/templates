@@ -1,0 +1,9 @@
+- name: mariadb
+  default_port:
+  - mysql
+  protocol: tcp
+  rule:
+  - regexps:
+      regexp:
+      - Host .* is not allowed to connect to this MariaDB server
+      - "^.\0\0\0\n(5\\.[-_~.+:\\w]+MariaDB-[-_~.+:\\w]+)\0"

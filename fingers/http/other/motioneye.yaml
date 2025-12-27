@@ -1,0 +1,5 @@
+- name: motioneye
+  rule:
+  - favicon:
+      mmh3:
+      - '-923693877'

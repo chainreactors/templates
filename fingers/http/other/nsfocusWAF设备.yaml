@@ -1,0 +1,6 @@
+- name: nsfocusWAF设备
+  rule:
+  - regexps:
+      body:
+      - WAF NSFOCUS
+      - /images/logo/nsfocus.png

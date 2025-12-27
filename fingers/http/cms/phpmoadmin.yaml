@@ -1,0 +1,5 @@
+- name: phpmoadmin
+  rule:
+  - regexps:
+      body:
+      - phpmoadmin

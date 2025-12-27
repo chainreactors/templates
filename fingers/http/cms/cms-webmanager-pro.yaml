@@ -1,0 +1,6 @@
+- name: cms-webmanager-pro
+  rule:
+  - regexps:
+      body:
+      - content="Webmanager-pro
+      - href="http://webmanager-pro.com">Web.Manager

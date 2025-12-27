@@ -1,0 +1,5 @@
+- name: fpoll
+  rule:
+  - regexps:
+      body:
+      - admincp/css.css

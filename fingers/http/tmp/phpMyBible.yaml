@@ -1,0 +1,5 @@
+- name: phpMyBible
+  rule:
+  - regexps:
+      body:
+      - Elbląg ma swoje dobre strony - Elbląska Gazeta Internetowa portEl.pl

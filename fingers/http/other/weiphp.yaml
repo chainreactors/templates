@@ -1,0 +1,8 @@
+- name: weiphp
+  rule:
+  - regexps: null
+    favicon:
+      md5:
+      - 820d3b66204fbcd3560b9358632b9c8a
+      mmh3:
+      - '37052027'

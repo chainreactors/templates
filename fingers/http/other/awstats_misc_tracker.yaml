@@ -1,0 +1,5 @@
+- name: awstats_misc_tracker
+  rule:
+  - regexps:
+      body:
+      - /js/awstats_misc_tracker.js

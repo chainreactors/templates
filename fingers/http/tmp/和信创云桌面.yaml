@@ -1,0 +1,5 @@
+- name: 和信创云桌面
+  rule:
+  - regexps:
+      body:
+      - 和信下一代云桌面VENGD

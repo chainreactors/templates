@@ -1,0 +1,5 @@
+- name: mobotix camera
+  rule:
+  - favicon:
+      mmh3:
+      - '661332347'

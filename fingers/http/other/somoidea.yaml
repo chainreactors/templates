@@ -1,0 +1,5 @@
+- name: somoidea
+  rule:
+  - regexps:
+      body:
+      - DESIGN BY SOMOIDEA

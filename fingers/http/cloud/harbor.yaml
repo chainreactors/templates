@@ -1,0 +1,10 @@
+- name: harbor
+  rule:
+  - regexps:
+      body:
+      - <title>Harbor</title>
+      header:
+      - harbor-lang
+    favicon:
+      md5:
+      - 5a508149f630bfd801df6e04369527f9

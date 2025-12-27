@@ -1,0 +1,6 @@
+- name: ASUS AiCloud
+  rule:
+  - regexps:
+      body:
+      - href="/smb/css/startup.png"
+      - AiCloud

@@ -1,0 +1,5 @@
+- name: A8音乐网内容管理系统
+  rule:
+  - regexps:
+      body:
+      - A8音乐网内容管理系统

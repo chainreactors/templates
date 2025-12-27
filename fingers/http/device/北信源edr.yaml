@@ -1,0 +1,5 @@
+- name: 北信源edr
+  rule:
+  - regexps:
+      body:
+      - 北信源网络防病毒系统

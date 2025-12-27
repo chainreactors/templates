@@ -1,0 +1,7 @@
+- name: anysec
+  rule:
+  - regexps:
+      body:
+      - anysec login
+      cert:
+      - sz_dalton

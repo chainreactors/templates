@@ -1,0 +1,6 @@
+- name: tpAdmin
+  rule:
+  - regexps:
+      body:
+      - tpAdmin
+      - content="tpadmin

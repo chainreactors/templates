@@ -1,0 +1,5 @@
+- name: yycms
+  rule:
+  - regexps:
+      body:
+      - /templets/yycms/js/

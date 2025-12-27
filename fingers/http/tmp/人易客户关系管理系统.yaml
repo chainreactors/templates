@@ -1,0 +1,6 @@
+- name: 人易客户关系管理系统
+  rule:
+  - regexps:
+      body:
+      - 广州市人易软件技术有限公司
+      - href="http://www.runecrm.com"

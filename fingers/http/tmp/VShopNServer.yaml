@@ -1,0 +1,5 @@
+- name: VShopNServer
+  rule:
+  - regexps:
+      header:
+      - 'Server: VShopNServer'

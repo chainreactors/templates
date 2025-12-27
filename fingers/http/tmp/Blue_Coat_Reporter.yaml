@@ -1,0 +1,6 @@
+- name: Blue Coat Reporter
+  rule:
+  - regexps:
+      body:
+      - Blue Coat Reporter
+      - Blue Coat Reporter

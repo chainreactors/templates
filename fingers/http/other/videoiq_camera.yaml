@@ -1,0 +1,5 @@
+- name: videoiq camera
+  rule:
+  - regexps:
+      body:
+      - VideoIQ Camera Login

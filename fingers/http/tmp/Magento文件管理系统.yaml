@@ -1,0 +1,5 @@
+- name: Magento文件管理系统
+  rule:
+  - regexps:
+      body:
+      - Magento文件管理系统

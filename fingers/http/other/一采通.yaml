@@ -1,0 +1,5 @@
+- name: 一采通
+  rule:
+  - regexps:
+      body:
+      - /custom/GroupNewsList.aspx?GroupId=

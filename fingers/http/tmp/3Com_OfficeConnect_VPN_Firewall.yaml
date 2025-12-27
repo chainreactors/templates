@@ -1,0 +1,5 @@
+- name: 3Com OfficeConnect VPN Firewall
+  rule:
+  - regexps:
+      body:
+      - 3com - officeconnect vpn firewall

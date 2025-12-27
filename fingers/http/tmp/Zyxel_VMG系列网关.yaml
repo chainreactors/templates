@@ -1,0 +1,5 @@
+- name: Zyxel VMG系列网关
+  rule:
+  - regexps:
+      body:
+      - zyxelhelp.js

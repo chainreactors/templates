@@ -1,0 +1,5 @@
+- name: WaiKuCMS
+  rule:
+  - regexps:
+      body:
+      - WaiKuCMS

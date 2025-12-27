@@ -1,0 +1,7 @@
+- name: 微普外卖点餐系统
+  rule:
+  - regexps:
+      body:
+      - Author" content="微普外卖点餐系统
+      - Powered By 点餐系统
+      - userfiles/shoppics/

@@ -1,0 +1,5 @@
+- name: AWStats网站日志分析工具
+  rule:
+  - regexps:
+      body:
+      - Statistics for localhost

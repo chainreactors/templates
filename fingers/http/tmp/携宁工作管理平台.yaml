@@ -1,0 +1,5 @@
+- name: 携宁工作管理平台
+  rule:
+  - regexps:
+      body:
+      - 携宁工作

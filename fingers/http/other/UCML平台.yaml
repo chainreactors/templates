@@ -1,0 +1,5 @@
+- name: UCML平台
+  rule:
+  - regexps:
+      body:
+      - ucmlskin_v1.0

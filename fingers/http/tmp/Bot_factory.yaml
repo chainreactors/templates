@@ -1,0 +1,5 @@
+- name: Bot factory
+  rule:
+  - regexps:
+      body:
+      - Bot factory

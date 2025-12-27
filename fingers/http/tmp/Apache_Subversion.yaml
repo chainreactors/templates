@@ -1,0 +1,5 @@
+- name: Apache Subversion
+  rule:
+  - regexps:
+      body:
+      - CollabNet Subversion Edge 登录

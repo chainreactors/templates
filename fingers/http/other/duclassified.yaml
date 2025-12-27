@@ -1,0 +1,6 @@
+- name: duclassified
+  rule:
+  - regexps:
+      body:
+      - assets/DUclassified.css
+      - DUclassified

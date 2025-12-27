@@ -1,0 +1,5 @@
+- name: Free Simple
+  rule:
+  - regexps:
+      body:
+      - freesimple

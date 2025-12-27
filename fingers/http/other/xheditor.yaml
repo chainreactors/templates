@@ -1,0 +1,7 @@
+- name: xheditor
+  rule:
+  - regexps:
+      body:
+      - xheditor_lang/zh-cn.js
+      - class="xheditor
+      - .xheditor(

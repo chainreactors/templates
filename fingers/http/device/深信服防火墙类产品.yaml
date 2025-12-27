@@ -1,0 +1,5 @@
+- name: 深信服防火墙类产品
+  rule:
+  - regexps:
+      body:
+      - SANGFOR FW

@@ -1,0 +1,7 @@
+- name: 会讯通
+  rule:
+  - regexps:
+      body:
+      - 电话会议系统
+      header:
+      - EasyMeetingSession

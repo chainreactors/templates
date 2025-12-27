@@ -1,0 +1,5 @@
+- name: bitrixsitemanager
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-Cms: Bitrix Site Manager'

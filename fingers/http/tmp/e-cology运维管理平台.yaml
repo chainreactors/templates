@@ -1,0 +1,5 @@
+- name: e-cology运维管理平台
+  rule:
+  - regexps:
+      body:
+      - e-cology运维管理平台

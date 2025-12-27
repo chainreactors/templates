@@ -1,0 +1,6 @@
+- name: qno_router
+  rule:
+  - regexps:
+      body:
+      - /QNOVirtual_Keyboard.js
+      - /images/login_img01_03.gif

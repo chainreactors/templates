@@ -1,0 +1,5 @@
+- name: DataLife Engine
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="DataLife Engine

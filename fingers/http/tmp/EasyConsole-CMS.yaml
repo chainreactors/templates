@@ -1,0 +1,5 @@
+- name: EasyConsole-CMS
+  rule:
+  - regexps:
+      body:
+      - window.status='Powered by EasyConsole CMS';

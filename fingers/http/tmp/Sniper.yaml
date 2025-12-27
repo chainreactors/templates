@@ -1,0 +1,6 @@
+- name: Sniper
+  rule:
+  - regexps:
+      body:
+      - Sniper Login
+      - REI Sniper Login

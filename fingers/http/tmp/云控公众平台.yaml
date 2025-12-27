@@ -1,0 +1,5 @@
+- name: 云控公众平台
+  rule:
+  - regexps:
+      body:
+      - 云控 - 公众平台自助引擎 - Powered by WE7.CC

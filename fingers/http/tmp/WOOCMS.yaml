@@ -1,0 +1,5 @@
+- name: WOOCMS
+  rule:
+  - regexps:
+      body:
+      - WOOCMS

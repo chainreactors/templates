@@ -1,0 +1,5 @@
+- name: sucuri
+  rule:
+  - regexps:
+      header:
+      - Sucuri/Cloudproxy

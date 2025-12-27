@@ -1,0 +1,5 @@
+- name: Mission-Control-Application-Shield
+  rule:
+  - regexps:
+      body:
+      - alt="mission control application shield

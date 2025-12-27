@@ -1,0 +1,5 @@
+- name: orientdb
+  rule:
+  - regexps:
+      body:
+      - Redirecting to OrientDB

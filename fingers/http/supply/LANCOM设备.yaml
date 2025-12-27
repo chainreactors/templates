@@ -1,0 +1,7 @@
+- name: LANCOM设备
+  rule:
+  - regexps:
+      body:
+      - Copyright (c) LANCOM Systems
+      header:
+      - 'Server: LANCOM'

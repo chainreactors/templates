@@ -1,0 +1,5 @@
+- name: securepoint
+  rule:
+  - favicon:
+      mmh3:
+      - '1051648103'

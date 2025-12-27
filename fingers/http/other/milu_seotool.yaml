@@ -1,0 +1,5 @@
+- name: milu_seotool
+  rule:
+  - regexps:
+      body:
+      - plugin.php?id=milu_seotool

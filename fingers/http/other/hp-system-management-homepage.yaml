@@ -1,0 +1,7 @@
+- name: hp-system-management-homepage
+  rule:
+  - regexps:
+      body:
+      - HP System Management Homepage
+      header:
+      - CompaqHTTPServer

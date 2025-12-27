@@ -1,0 +1,5 @@
+- name: kitecms
+  rule:
+  - regexps:
+      body:
+      - kitecms

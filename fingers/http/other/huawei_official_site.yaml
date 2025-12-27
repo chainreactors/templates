@@ -1,0 +1,5 @@
+- name: huawei official site
+  rule:
+  - regexps:
+      body:
+      - Huawei Official Site

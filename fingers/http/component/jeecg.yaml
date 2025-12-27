@@ -1,0 +1,7 @@
+- name: jeecg
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - jeecg
+      - window._CONFIG['onlinePreviewDomainURL

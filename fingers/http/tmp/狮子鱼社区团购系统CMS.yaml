@@ -1,0 +1,7 @@
+- name: 狮子鱼社区团购系统CMS
+  rule:
+  - regexps:
+      body:
+      - /seller.php?s=/Public/login
+      header:
+      - 'X-Powered-By: oscshop'

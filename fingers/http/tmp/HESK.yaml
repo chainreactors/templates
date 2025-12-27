@@ -1,0 +1,5 @@
+- name: HESK
+  rule:
+  - regexps:
+      body:
+      - https://www.sysaid.com/?utm_source=Hesk

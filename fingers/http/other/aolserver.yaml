@@ -1,0 +1,5 @@
+- name: aolserver
+  rule:
+  - regexps:
+      header:
+      - AOLserver

@@ -1,0 +1,5 @@
+- name: reolink
+  rule:
+  - favicon:
+      mmh3:
+      - '-38705358'

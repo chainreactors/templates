@@ -1,0 +1,5 @@
+- name: alibi nvr
+  rule:
+  - favicon:
+      mmh3:
+      - '1876585825'

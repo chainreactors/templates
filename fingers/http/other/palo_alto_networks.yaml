@@ -1,0 +1,5 @@
+- name: palo alto networks
+  rule:
+  - favicon:
+      mmh3:
+      - '-318947884'

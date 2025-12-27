@@ -1,0 +1,5 @@
+- name: appnode
+  rule:
+  - regexps:
+      header:
+      - 'Server: appnode/ccenter'

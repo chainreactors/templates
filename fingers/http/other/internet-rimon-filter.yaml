@@ -1,0 +1,5 @@
+- name: internet-rimon-filter
+  rule:
+  - regexps:
+      header:
+      - rimon

@@ -1,0 +1,5 @@
+- name: urlscan
+  rule:
+  - regexps:
+      header:
+      - Rejected-By-UrlScan

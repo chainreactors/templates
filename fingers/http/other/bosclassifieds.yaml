@@ -1,0 +1,6 @@
+- name: bosclassifieds
+  rule:
+  - regexps:
+      body:
+      - Powered by <a href="http://www.bosdev.com
+      - content="BosClassifieds

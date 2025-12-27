@@ -1,0 +1,6 @@
+- name: 53kf
+  rule:
+  - regexps:
+      body:
+      - 53kf.com
+      - 53KF登录

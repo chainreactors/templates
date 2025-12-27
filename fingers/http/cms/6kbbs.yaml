@@ -1,0 +1,6 @@
+- name: 6kbbs
+  rule:
+  - regexps:
+      body:
+      - Powered by 6kbbs
+      - generator" content="6KBBS

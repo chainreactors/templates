@@ -1,0 +1,5 @@
+- name: 育友软件
+  rule:
+  - regexps:
+      body:
+      - yuysoft.com

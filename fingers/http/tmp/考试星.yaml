@@ -1,0 +1,5 @@
+- name: 考试星
+  rule:
+  - regexps:
+      body:
+      - /account/static/newVersion

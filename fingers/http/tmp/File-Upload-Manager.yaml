@@ -1,0 +1,5 @@
+- name: File-Upload-Manager
+  rule:
+  - regexps:
+      body:
+      - File Upload Manager

@@ -1,0 +1,5 @@
+- name: AiCart
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="AiCart

@@ -1,0 +1,7 @@
+- name: 海康威视ivms
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - g_szCacheTime
+      - iVMS

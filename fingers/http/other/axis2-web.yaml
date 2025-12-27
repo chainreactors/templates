@@ -1,0 +1,5 @@
+- name: axis2-web
+  rule:
+  - regexps:
+      body:
+      - axis2-web/css/axis-style.css

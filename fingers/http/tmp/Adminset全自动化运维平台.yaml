@@ -1,0 +1,5 @@
+- name: Adminset全自动化运维平台
+  rule:
+  - regexps:
+      body:
+      - AdminSet Login

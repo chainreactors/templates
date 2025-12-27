@@ -1,0 +1,5 @@
+- name: SDL Studio
+  rule:
+  - regexps:
+      body:
+      - sdl studio groupshare

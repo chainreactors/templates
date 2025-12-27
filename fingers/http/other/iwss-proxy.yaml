@@ -1,0 +1,5 @@
+- name: iwss-proxy
+  rule:
+  - regexps:
+      header:
+      - IWSS

@@ -1,0 +1,7 @@
+- name: epson printer
+  rule:
+  - regexps:
+      body:
+      - EpsonNet
+      header:
+      - EPSON-HTTP

@@ -1,0 +1,6 @@
+- name: bulletlink-newspaper-template
+  rule:
+  - regexps:
+      body:
+      - /ModalPopup/core-modalpopup.css
+      - powered by bulletlink

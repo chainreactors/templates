@@ -1,0 +1,5 @@
+- name: uproxy
+  rule:
+  - regexps:
+      header:
+      - uproxy

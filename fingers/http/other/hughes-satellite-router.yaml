@@ -1,0 +1,7 @@
+- name: hughes-satellite-router
+  rule:
+  - regexps:
+      body:
+      - <frame src=/fs/dynaform/dw_logo.html
+      header:
+      - HUGHES Terminal

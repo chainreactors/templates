@@ -1,0 +1,5 @@
+- name: Full Decent Camera Life
+  rule:
+  - regexps:
+      body:
+      - Full Decent Camera Life

@@ -1,0 +1,5 @@
+- name: Contao
+  rule:
+  - regexps:
+      body:
+      - /contao.css"

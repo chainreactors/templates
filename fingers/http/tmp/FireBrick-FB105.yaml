@@ -1,0 +1,5 @@
+- name: FireBrick-FB105
+  rule:
+  - regexps:
+      header:
+      - FireBrick 105

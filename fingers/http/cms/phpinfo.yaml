@@ -1,0 +1,6 @@
+- name: phpinfo
+  rule:
+  - regexps:
+      body:
+      - phpinfo
+      - 'Virtual Directory Support '

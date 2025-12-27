@@ -1,0 +1,5 @@
+- name: exacq
+  rule:
+  - favicon:
+      mmh3:
+      - '476213314'

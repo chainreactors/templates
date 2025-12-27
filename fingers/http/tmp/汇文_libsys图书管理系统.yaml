@@ -1,0 +1,8 @@
+- name: 汇文 libsys图书管理系统
+  rule:
+  - favicon:
+      mmh3:
+      - '1805953451'
+    regexps:
+      body:
+      - 书目检索系统

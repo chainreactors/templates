@@ -1,0 +1,5 @@
+- name: 辰锐单向传输系统
+  rule:
+  - regexps:
+      body:
+      - 辰锐单向传输系统

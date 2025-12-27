@@ -1,0 +1,9 @@
+- name: Gitblit
+  rule:
+  - favicon:
+      mmh3:
+      - '573035254'
+    regexps:
+      body:
+      - Gitblit
+      - <a title="gitblit homepage" href="http://gitblit.com/">

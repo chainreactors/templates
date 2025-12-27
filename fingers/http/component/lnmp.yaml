@@ -1,0 +1,5 @@
+- name: lnmp
+  rule:
+  - regexps:
+      body:
+      - lnmp.gif

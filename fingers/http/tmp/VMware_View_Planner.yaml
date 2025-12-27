@@ -1,0 +1,5 @@
+- name: VMware View Planner
+  rule:
+  - regexps:
+      body:
+      - Viewplanner

@@ -1,0 +1,9 @@
+- name: 泛微 e-cology
+  focus: true
+  rule:
+  - regexps:
+      header:
+      - ecology_JSessionid
+      body:
+      - /wui/theme/ecology
+      - /cloudstore/resource/pc/com

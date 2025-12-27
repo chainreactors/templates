@@ -1,0 +1,5 @@
+- name: PnP Secure Access Gateway
+  rule:
+  - regexps:
+      body:
+      - pnp secure access gateway

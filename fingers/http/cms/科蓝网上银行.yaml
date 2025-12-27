@@ -1,0 +1,5 @@
+- name: 科蓝网上银行
+  rule:
+  - regexps:
+      body:
+      - /prelogin.do

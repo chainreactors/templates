@@ -1,0 +1,5 @@
+- name: Polaris cms
+  rule:
+  - regexps:
+      body:
+      - by Polaris

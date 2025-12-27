@@ -1,0 +1,7 @@
+- name: WHOLETON 惠尔顿 上网行为管理系统
+  rule:
+  - regexps:
+      body:
+      - 惠尔顿安全接入平台
+      - /base/login/login.php
+      - 惠尔顿远程接入平台

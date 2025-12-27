@@ -1,0 +1,6 @@
+- name: burning-board-lite
+  rule:
+  - regexps:
+      body:
+      - www.woltlab.de
+      - Powered by <b>Burning Board

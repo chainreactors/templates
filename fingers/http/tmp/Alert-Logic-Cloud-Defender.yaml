@@ -1,0 +1,5 @@
+- name: Alert-Logic-Cloud-Defender
+  rule:
+  - regexps:
+      body:
+      - <title>Alert Logic Appliance</title>

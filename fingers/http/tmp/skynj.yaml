@@ -1,0 +1,5 @@
+- name: skynj
+  rule:
+  - regexps:
+      body:
+      - www.skynj.com

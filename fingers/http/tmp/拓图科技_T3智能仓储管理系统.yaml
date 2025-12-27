@@ -1,0 +1,5 @@
+- name: 拓图科技 T3智能仓储管理系统
+  rule:
+  - regexps:
+      body:
+      - T3智能仓储管理系统

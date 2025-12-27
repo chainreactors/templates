@@ -1,0 +1,5 @@
+- name: XOOPS
+  rule:
+  - regexps:
+      body:
+      - content="XOOPS"

@@ -1,0 +1,6 @@
+- name: Jedis
+  rule:
+  - regexps:
+      body:
+      - jedis.JedisConnectionFactory
+      - get Jedis connection

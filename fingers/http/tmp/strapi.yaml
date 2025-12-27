@@ -1,0 +1,5 @@
+- name: strapi
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: Strapi'

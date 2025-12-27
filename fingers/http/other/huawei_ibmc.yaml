@@ -1,0 +1,5 @@
+- name: huawei ibmc
+  rule:
+  - regexps:
+      body:
+      - bmc/resources/css/frame

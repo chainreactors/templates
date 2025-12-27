@@ -1,0 +1,5 @@
+- name: Exagono Software
+  rule:
+  - regexps:
+      body:
+      - content="Exagono Software"

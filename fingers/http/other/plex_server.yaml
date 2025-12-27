@@ -1,0 +1,5 @@
+- name: plex server
+  rule:
+  - favicon:
+      mmh3:
+      - '-895890586'

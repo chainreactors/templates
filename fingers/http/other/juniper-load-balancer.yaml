@@ -1,0 +1,5 @@
+- name: juniper-load-balancer
+  rule:
+  - regexps:
+      header:
+      - Juniper Networks Application Acceleration Platform

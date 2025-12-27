@@ -1,0 +1,5 @@
+- name: lotus-domino
+  rule:
+  - regexps:
+      header:
+      - 'Server: Lotus-Domino'

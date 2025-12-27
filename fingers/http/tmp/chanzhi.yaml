@@ -1,0 +1,5 @@
+- name: chanzhi
+  rule:
+  - regexps:
+      body:
+      - www.chanzhi.org

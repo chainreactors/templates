@@ -1,0 +1,5 @@
+- name: shoutcast server
+  rule:
+  - favicon:
+      mmh3:
+      - '-632583950'

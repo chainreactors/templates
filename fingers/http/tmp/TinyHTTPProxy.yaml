@@ -1,0 +1,5 @@
+- name: TinyHTTPProxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: TinyHTTPProxy'

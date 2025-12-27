@@ -1,0 +1,11 @@
+- name: dedecms
+  rule:
+  - regexps:
+      body:
+      - DedeCMS
+      - /templets/default/style/dedecms.css
+    favicon:
+      md5:
+      - 7ef1f0a0093460fe46bb691578c07c95
+      mmh3:
+      - '-47597126'

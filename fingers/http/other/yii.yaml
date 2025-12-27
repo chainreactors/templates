@@ -1,0 +1,8 @@
+- name: yii
+  rule:
+  - regexps:
+      header:
+      - YII_CSRF_TOKEN
+    favicon:
+      md5:
+      - a976d227e5d1dcf62f5f7e623211dd1b

@@ -1,0 +1,5 @@
+- name: solvonet device (voip)
+  rule:
+  - regexps:
+      header:
+      - Basic realm="SOLVONET"

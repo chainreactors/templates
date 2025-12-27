@@ -1,0 +1,7 @@
+- name: kingdee OA
+  rule:
+  - regexps:
+      body:
+      - logo-kingdee.png
+      header:
+      - oa/login/logout.jsp

@@ -1,0 +1,7 @@
+- name: 亿信华辰财务BI
+  rule:
+  - regexps:
+      header:
+      - X-ESEN
+      body:
+      - esen_mainframe

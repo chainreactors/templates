@@ -1,0 +1,5 @@
+- name: osTicket
+  rule:
+  - regexps:
+      body:
+      - osTicket Installer

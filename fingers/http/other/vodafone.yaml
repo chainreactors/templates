@@ -1,0 +1,5 @@
+- name: vodafone
+  rule:
+  - favicon:
+      mmh3:
+      - '165976831'

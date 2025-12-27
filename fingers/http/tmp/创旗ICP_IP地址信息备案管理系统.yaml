@@ -1,0 +1,5 @@
+- name: 创旗ICP/IP地址信息备案管理系统
+  rule:
+  - regexps:
+      body:
+      - 创旗ICP/IP地址信息备案管理系统

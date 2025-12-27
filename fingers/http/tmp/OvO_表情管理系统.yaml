@@ -1,0 +1,5 @@
+- name: OvO 表情管理系统
+  rule:
+  - regexps:
+      body:
+      - OvO 表情管理系统

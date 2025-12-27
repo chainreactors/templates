@@ -1,0 +1,5 @@
+- name: geeklog
+  rule:
+  - regexps:
+      body:
+      - Powered By <a href="http://www.geeklog.net/

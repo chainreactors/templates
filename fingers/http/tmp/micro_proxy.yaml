@@ -1,0 +1,5 @@
+- name: micro_proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: micro_proxy'

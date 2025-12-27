@@ -1,0 +1,5 @@
+- name: Sendmail
+  rule:
+  - regexps:
+      header:
+      - ESMTP Sendmail

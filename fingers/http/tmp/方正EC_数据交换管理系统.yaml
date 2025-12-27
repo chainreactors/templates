@@ -1,0 +1,5 @@
+- name: 方正EC 数据交换管理系统
+  rule:
+  - regexps:
+      body:
+      - 方正EC-数据交换管理系统

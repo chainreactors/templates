@@ -1,0 +1,5 @@
+- name: Ektron-CMS
+  rule:
+  - regexps:
+      body:
+      - id="EktronClientManager"

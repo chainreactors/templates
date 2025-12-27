@@ -1,0 +1,5 @@
+- name: Pothos
+  rule:
+  - regexps:
+      body:
+      - Pothos

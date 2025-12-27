@@ -1,0 +1,5 @@
+- name: XYCMS
+  rule:
+  - regexps:
+      body:
+      - powered by xycms

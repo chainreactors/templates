@@ -1,0 +1,6 @@
+- name: blueonyx
+  rule:
+  - regexps:
+      body:
+      - Login - BlueOnyx
+      - Thank you for using the BlueOnyx

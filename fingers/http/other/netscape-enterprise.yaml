@@ -1,0 +1,5 @@
+- name: netscape-enterprise
+  rule:
+  - regexps:
+      header:
+      - Netscape-Enterprise

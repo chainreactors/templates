@@ -1,0 +1,6 @@
+- name: intraxxion-cms
+  rule:
+  - regexps:
+      body:
+      - content="Intraxxion
+      - <!-- site built by Intraxxion

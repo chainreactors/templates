@@ -1,0 +1,5 @@
+- name: bjyadmin
+  rule:
+  - regexps:
+      header:
+      - 'Set-Cookie: BJYADMIN'

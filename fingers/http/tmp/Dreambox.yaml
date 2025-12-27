@@ -1,0 +1,5 @@
+- name: Dreambox
+  rule:
+  - regexps:
+      header:
+      - Basic realm="dreambox"

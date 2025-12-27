@@ -1,0 +1,6 @@
+- name: array_vpn
+  rule:
+  - regexps:
+      body:
+      - an_util.js
+      - /prx/000/http/

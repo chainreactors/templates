@@ -1,0 +1,9 @@
+- name: 蓝凌oa-ekp
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /ekp/login.jsp
+      - ekpwx-v.oa.camc
+      - resource/anonym.jsp
+      - /sys/ui/js/LUI.js

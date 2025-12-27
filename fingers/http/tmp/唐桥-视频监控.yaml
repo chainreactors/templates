@@ -1,0 +1,7 @@
+- name: 唐桥-视频监控
+  rule:
+  - regexps:
+      body:
+      - you need to use IE brower
+      header:
+      - mtUserLanguage1=deleted;

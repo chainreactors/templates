@@ -1,0 +1,7 @@
+- name: dradis-framework
+  rule:
+  - regexps:
+      body:
+      - <p class="copyright">Dradis
+      header:
+      - _dradis_session=

@@ -1,0 +1,7 @@
+- name: AWS-Elastic-Beanstalk
+  rule:
+  - regexps:
+      body:
+      - AWS Elastic Beanstalk
+      - AWS Elastic Beanstalk Application is now running on your own dedicated environment
+        in the AWS Cloud

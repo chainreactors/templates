@@ -1,0 +1,6 @@
+- name: 安恒日志审计
+  rule:
+  - regexps:
+      body:
+      - /js/app/App.Message.js
+      - /js/mango/Mango.Util.Top.js

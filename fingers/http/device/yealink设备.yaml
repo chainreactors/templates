@@ -1,0 +1,5 @@
+- name: yealink设备
+  rule:
+  - regexps:
+      header:
+      - yealink embed httpd

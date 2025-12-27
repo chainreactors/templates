@@ -1,0 +1,5 @@
+- name: TechartCMS
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-Cms: Techart CMS'

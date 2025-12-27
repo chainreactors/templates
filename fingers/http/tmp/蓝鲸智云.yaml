@@ -1,0 +1,5 @@
+- name: 蓝鲸智云
+  rule:
+  - regexps:
+      body:
+      - 蓝鲸智云

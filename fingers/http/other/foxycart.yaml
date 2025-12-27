@@ -1,0 +1,5 @@
+- name: foxycart
+  rule:
+  - regexps:
+      body:
+      - <script src="//cdn.foxycart.com

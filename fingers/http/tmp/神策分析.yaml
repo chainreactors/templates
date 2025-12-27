@@ -1,0 +1,5 @@
+- name: 神策分析
+  rule:
+  - regexps:
+      header:
+      - sensorsdata

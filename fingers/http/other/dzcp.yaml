@@ -1,0 +1,5 @@
+- name: dzcp
+  rule:
+  - regexps:
+      body:
+      - <!--[ DZCP

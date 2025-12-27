@@ -1,0 +1,5 @@
+- name: WEBSIDESTORY
+  rule:
+  - regexps:
+      body:
+      - WEBSIDESTORY CODE HBX

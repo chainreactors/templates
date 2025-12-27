@@ -1,0 +1,6 @@
+- name: kayako-supportsuite
+  rule:
+  - regexps:
+      body:
+      - Powered By Kayako eSupport
+      - Help Desk Software By Kayako eSupport

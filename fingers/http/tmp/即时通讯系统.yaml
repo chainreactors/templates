@@ -1,0 +1,5 @@
+- name: 即时通讯系统
+  rule:
+  - regexps:
+      body:
+      - <title>即时通讯 系统登录 </title>

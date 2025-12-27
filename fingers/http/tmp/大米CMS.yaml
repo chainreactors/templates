@@ -1,0 +1,6 @@
+- name: 大米CMS
+  rule:
+  - regexps:
+      body:
+      - id="tp_dami_kf"
+      - content="damicms"

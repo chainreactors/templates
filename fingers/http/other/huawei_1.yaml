@@ -1,0 +1,5 @@
+- name: huawei
+  rule:
+  - favicon:
+      mmh3:
+      - '-884776764'

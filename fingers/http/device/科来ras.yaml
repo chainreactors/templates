@@ -1,0 +1,7 @@
+- name: 科来ras
+  rule:
+  - regexps:
+      body:
+      - 科来网络回溯
+      - 科来软件 版权所有
+      - i18ninit.min.js

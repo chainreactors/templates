@@ -1,0 +1,5 @@
+- name: Sitefinity
+  rule:
+  - regexps:
+      body:
+      - Sitefinity

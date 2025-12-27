@@ -1,0 +1,6 @@
+- name: QNAP NAS
+  rule:
+  - regexps:
+      body:
+      - redirect_suffix
+      - location.hostname.indexOf

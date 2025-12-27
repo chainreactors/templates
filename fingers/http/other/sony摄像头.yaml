@@ -1,0 +1,6 @@
+- name: sony摄像头
+  rule:
+  - regexps:
+      body:
+      - Sony Network Camera
+      - inquiry.cgi?inqjs=system&inqjs=camera

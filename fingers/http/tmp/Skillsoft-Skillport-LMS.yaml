@@ -1,0 +1,5 @@
+- name: Skillsoft-Skillport-LMS
+  rule:
+  - regexps:
+      body:
+      - value='com.skillsoft.scmlauncher.

@@ -1,0 +1,5 @@
+- name: MySQL-Squid-Access-Report
+  rule:
+  - regexps:
+      body:
+      - MySQL-Squid-Access-Report

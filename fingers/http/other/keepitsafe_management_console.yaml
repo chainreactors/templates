@@ -1,0 +1,5 @@
+- name: keepitsafe management console
+  rule:
+  - favicon:
+      mmh3:
+      - '-1738727418'

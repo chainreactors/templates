@@ -1,0 +1,5 @@
+- name: minicms
+  rule:
+  - regexps:
+      body:
+      - MiniCMS</a>

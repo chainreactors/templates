@@ -1,0 +1,6 @@
+- name: gogs
+  rule:
+  - regexps:
+      header:
+      - i_like_gog
+      - i_like_gitea

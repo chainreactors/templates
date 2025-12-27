@@ -1,0 +1,6 @@
+- name: 管理易
+  rule:
+  - regexps:
+      body:
+      - 管理易
+      - minierp

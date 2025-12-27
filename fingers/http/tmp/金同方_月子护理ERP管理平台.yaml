@@ -1,0 +1,5 @@
+- name: 金同方 月子护理ERP管理平台
+  rule:
+  - regexps:
+      body:
+      - 月子护理ERP管理平台

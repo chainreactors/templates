@@ -1,0 +1,5 @@
+- name: UniCMS紫光新华内容管理系统
+  rule:
+  - regexps:
+      body:
+      - UniCMS紫光新华内容管理系统

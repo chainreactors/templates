@@ -1,0 +1,5 @@
+- name: SilverStripe
+  rule:
+  - regexps:
+      body:
+      - <meta name="generator" content="SilverStripe

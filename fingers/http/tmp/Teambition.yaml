@@ -1,0 +1,5 @@
+- name: Teambition
+  rule:
+  - regexps:
+      body:
+      - Teambition

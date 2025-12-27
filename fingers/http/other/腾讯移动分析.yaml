@@ -1,0 +1,5 @@
+- name: 腾讯移动分析
+  rule:
+  - regexps:
+      body:
+      - tajs.qq.com

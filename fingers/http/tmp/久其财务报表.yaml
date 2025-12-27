@@ -1,0 +1,6 @@
+- name: 久其财务报表
+  rule:
+  - regexps:
+      body:
+      - <center>JQCI</center>
+      - /netrep

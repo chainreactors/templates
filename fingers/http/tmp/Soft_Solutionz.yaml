@@ -1,0 +1,5 @@
+- name: Soft Solutionz
+  rule:
+  - regexps:
+      body:
+      - SoftSolutionz

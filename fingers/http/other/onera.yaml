@@ -1,0 +1,5 @@
+- name: onera
+  rule:
+  - favicon:
+      mmh3:
+      - '1234311970'

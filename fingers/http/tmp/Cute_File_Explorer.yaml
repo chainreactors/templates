@@ -1,0 +1,5 @@
+- name: Cute File Explorer
+  rule:
+  - regexps:
+      body:
+      - Cute File Explorer

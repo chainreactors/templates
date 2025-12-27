@@ -1,0 +1,7 @@
+- name: dayrui系列产品
+  rule:
+  - regexps:
+      body:
+      - dayrui/statics
+      header:
+      - dr_ci_session

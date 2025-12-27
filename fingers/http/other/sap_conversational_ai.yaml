@@ -1,0 +1,5 @@
+- name: sap conversational ai
+  rule:
+  - favicon:
+      mmh3:
+      - '1347937389'

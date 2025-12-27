@@ -1,0 +1,5 @@
+- name: J&A杰恩设计 J&A杰恩设计企业信息化管理系统
+  rule:
+  - regexps:
+      body:
+      - J&A杰恩设计企业信息化管理系统

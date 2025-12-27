@@ -1,0 +1,6 @@
+- name: alstrasoft-askme
+  rule:
+  - regexps:
+      body:
+      - <a href="pass_recover.php">
+      - http://www.alstrasoft.com

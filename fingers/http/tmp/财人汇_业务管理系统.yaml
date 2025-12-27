@@ -1,0 +1,6 @@
+- name: 财人汇 业务管理系统
+  rule:
+  - regexps:
+      body:
+      - XPE后台管理系统
+      - anychat

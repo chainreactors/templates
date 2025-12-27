@@ -1,0 +1,5 @@
+- name: dxsock
+  rule:
+  - regexps:
+      header:
+      - RemObjects

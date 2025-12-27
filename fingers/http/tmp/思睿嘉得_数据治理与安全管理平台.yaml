@@ -1,0 +1,5 @@
+- name: 思睿嘉得 数据治理与安全管理平台
+  rule:
+  - regexps:
+      body:
+      - DLP管理平台

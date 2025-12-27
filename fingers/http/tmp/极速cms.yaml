@@ -1,0 +1,5 @@
+- name: 极速cms
+  rule:
+  - regexps:
+      body:
+      - 台州市极速网络有限公司

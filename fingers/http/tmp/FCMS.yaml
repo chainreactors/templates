@@ -1,0 +1,5 @@
+- name: FCMS
+  rule:
+  - regexps:
+      body:
+      - ui/css/fcms-core.css

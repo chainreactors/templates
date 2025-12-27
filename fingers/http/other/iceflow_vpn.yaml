@@ -1,0 +1,5 @@
+- name: iceflow_vpn
+  rule:
+  - regexps:
+      header:
+      - 'Server: ICEFLOW'

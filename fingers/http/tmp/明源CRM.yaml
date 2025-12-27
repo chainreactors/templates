@@ -1,0 +1,5 @@
+- name: 明源CRM
+  rule:
+  - regexps:
+      body:
+      - 明源售楼管理系统

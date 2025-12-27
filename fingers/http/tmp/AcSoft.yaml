@@ -1,0 +1,5 @@
+- name: AcSoft
+  rule:
+  - regexps:
+      body:
+      - 费用报销系统

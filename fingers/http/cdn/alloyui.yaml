@@ -1,0 +1,5 @@
+- name: alloyui
+  rule:
+  - regexps:
+      body:
+      - cdn.alloyui.com

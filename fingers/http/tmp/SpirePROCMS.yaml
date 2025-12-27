@@ -1,0 +1,5 @@
+- name: SpirePROCMS
+  rule:
+  - regexps:
+      header:
+      - 'X-Generator: SpirePRO CMS'

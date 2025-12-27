@@ -1,0 +1,5 @@
+- name: Juniper srx1500
+  rule:
+  - regexps:
+      body:
+      - var modelphpstr = "srx1500"

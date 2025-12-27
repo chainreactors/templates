@@ -1,0 +1,5 @@
+- name: 德讯科技数据中心
+  rule:
+  - regexps:
+      body:
+      - Datcent .All Rights Reserved.

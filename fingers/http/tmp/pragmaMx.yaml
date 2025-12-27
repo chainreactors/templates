@@ -1,0 +1,5 @@
+- name: pragmaMx
+  rule:
+  - regexps:
+      body:
+      - content="pragmaMx

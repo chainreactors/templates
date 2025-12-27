@@ -1,0 +1,5 @@
+- name: edgeprism
+  rule:
+  - regexps:
+      header:
+      - EdgePrismSSL

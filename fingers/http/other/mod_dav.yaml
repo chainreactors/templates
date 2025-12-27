@@ -1,0 +1,5 @@
+- name: mod_dav
+  rule:
+  - regexps:
+      header:
+      - DAV/2

@@ -1,0 +1,5 @@
+- name: InnesSAPlugncast
+  rule:
+  - regexps:
+      header:
+      - 'Server: Plugncast'

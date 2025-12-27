@@ -1,0 +1,5 @@
+- name: phpMyChat Plus
+  rule:
+  - regexps:
+      body:
+      - phpMyChat Plus

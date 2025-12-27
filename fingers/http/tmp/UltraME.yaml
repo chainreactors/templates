@@ -1,0 +1,5 @@
+- name: UltraME
+  rule:
+  - regexps:
+      body:
+      - me移动协调办公平台

@@ -1,0 +1,5 @@
+- name: supesite
+  rule:
+  - regexps:
+      header:
+      - supe_sid

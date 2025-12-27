@@ -1,0 +1,7 @@
+- name: gitorious
+  rule:
+  - regexps:
+      body:
+      - Powered by Gitorious
+      header:
+      - _gitorious_sess

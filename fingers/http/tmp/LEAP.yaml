@@ -1,0 +1,5 @@
+- name: LEAP
+  rule:
+  - regexps:
+      body:
+      - content="Leap

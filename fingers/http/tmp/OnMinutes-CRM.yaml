@@ -1,0 +1,5 @@
+- name: OnMinutes-CRM
+  rule:
+  - regexps:
+      header:
+      - 'X-Powered-By: Phusion Passenger (mod_rails/mod_rack)'

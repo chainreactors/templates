@@ -1,0 +1,5 @@
+- name: iBase4J
+  rule:
+  - regexps:
+      body:
+      - <meta name="description" content="iBase4J" />

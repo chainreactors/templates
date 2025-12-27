@@ -1,0 +1,5 @@
+- name: 爱你特 决策分析管理系统
+  rule:
+  - regexps:
+      body:
+      - Ainit决策分析管理系统

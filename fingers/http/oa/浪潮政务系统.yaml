@@ -1,0 +1,7 @@
+- name: 浪潮政务系统
+  rule:
+  - regexps:
+      body:
+      - OnlineQuery/QueryList.aspx
+      - 浪潮政务
+      - LangChao.ECGAP.OutPortal

@@ -1,0 +1,5 @@
+- name: electro-industries-gaugetech
+  rule:
+  - regexps:
+      header:
+      - EIG Embedded Web Server

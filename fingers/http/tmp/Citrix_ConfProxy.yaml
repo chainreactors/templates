@@ -1,0 +1,5 @@
+- name: Citrix ConfProxy
+  rule:
+  - regexps:
+      header:
+      - confproxy

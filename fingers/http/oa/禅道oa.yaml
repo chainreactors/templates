@@ -1,0 +1,10 @@
+- name: 禅道oa
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - /theme/default/images/main/zt-logo.png
+      - /zentao/theme/zui/css/min.css
+      - <script>self.location='/user-login-
+      header:
+      - zentaosid

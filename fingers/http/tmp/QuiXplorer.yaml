@@ -1,0 +1,6 @@
+- name: QuiXplorer
+  rule:
+  - regexps:
+      body:
+      - QuiXplorer
+      - the QuiX project

@@ -1,0 +1,5 @@
+- name: iF.SVNAdmin
+  rule:
+  - regexps:
+      body:
+      - iF.SVNAdmin

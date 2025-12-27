@@ -1,0 +1,5 @@
+- name: hikashop
+  rule:
+  - regexps:
+      body:
+      - /media/com_hikashop/css/

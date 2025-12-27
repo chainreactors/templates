@@ -1,0 +1,5 @@
+- name: OpenCMS
+  rule:
+  - regexps:
+      header:
+      - 'Server: OpenCms'

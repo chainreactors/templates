@@ -1,0 +1,5 @@
+- name: Mesosphere DC/OS
+  rule:
+  - regexps:
+      body:
+      - 天宫dc/os

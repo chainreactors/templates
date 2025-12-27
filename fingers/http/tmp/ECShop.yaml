@@ -1,0 +1,6 @@
+- name: ECShop
+  rule:
+  - regexps:
+      body:
+      - content="ECShop
+      - content="68ECShop

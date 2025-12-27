@@ -1,0 +1,5 @@
+- name: 安慧网盾
+  rule:
+  - regexps:
+      header:
+      - 'Protected-By: AnHui Web Firewall'

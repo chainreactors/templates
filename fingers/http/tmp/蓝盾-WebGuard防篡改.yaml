@@ -1,0 +1,5 @@
+- name: 蓝盾-WebGuard防篡改
+  rule:
+  - regexps:
+      body:
+      - 蓝盾网页防篡改保护系统

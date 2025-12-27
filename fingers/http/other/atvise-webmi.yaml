@@ -1,0 +1,7 @@
+- name: atvise-webmi
+  rule:
+  - regexps:
+      body:
+      - alarmlistbutton
+      header:
+      - atvise

@@ -1,0 +1,6 @@
+- name: jamroom
+  rule:
+  - regexps:
+      body:
+      - content="Talldude Networks
+      - content="Jamroom

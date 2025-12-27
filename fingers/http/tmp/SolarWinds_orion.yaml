@@ -1,0 +1,6 @@
+- name: SolarWinds orion
+  link: https://supervision.icosnet.net/Orion/Login.aspx?ReturnUrl=%2f
+  rule:
+  - regexps:
+      body:
+      - SolarWinds orion

@@ -1,0 +1,7 @@
+- name: Elastic Job Console
+  rule:
+  - regexps:
+      body:
+      - Elastic Job Lite Console
+      header:
+      - Elastic Job Console

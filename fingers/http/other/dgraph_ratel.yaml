@@ -1,0 +1,5 @@
+- name: dgraph ratel
+  rule:
+  - favicon:
+      mmh3:
+      - '-1961046099'

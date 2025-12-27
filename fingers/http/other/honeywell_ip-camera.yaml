@@ -1,0 +1,5 @@
+- name: honeywell ip-camera
+  rule:
+  - regexps:
+      body:
+      - Honeywell IP-Camera

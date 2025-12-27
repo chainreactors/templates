@@ -1,0 +1,5 @@
+- name: 思迪thinkive
+  rule:
+  - regexps:
+      body:
+      - thinkiveJs.min.js

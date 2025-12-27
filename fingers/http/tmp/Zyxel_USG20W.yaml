@@ -1,0 +1,7 @@
+- name: Zyxel USG20W
+  rule:
+  - regexps:
+      body:
+      - usg20w-vpn
+      - class="usg_icon"
+      - usg20w-vpn

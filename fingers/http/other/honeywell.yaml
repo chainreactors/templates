@@ -1,0 +1,5 @@
+- name: honeywell
+  rule:
+  - favicon:
+      mmh3:
+      - '903086190'

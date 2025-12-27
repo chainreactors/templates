@@ -1,0 +1,5 @@
+- name: 易点内容管理系统DianCMSv7.0.0
+  rule:
+  - regexps:
+      body:
+      - <title>易点内容管理系统（DianCMS）v7.0.0</title>

@@ -1,0 +1,5 @@
+- name: gatequest-php-site-recommender
+  rule:
+  - regexps:
+      body:
+      - GateQuest

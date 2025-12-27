@@ -1,0 +1,5 @@
+- name: ScrapydWeb
+  rule:
+  - regexps:
+      body:
+      - servers - ScrapydWeb

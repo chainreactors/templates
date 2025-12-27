@@ -1,0 +1,6 @@
+- name: 金蝶云星空
+  focus: true
+  rule:
+  - regexps:
+      body:
+      - Kingdee.BOS.XPF.App.xap

@@ -1,0 +1,5 @@
+- name: u-mail
+  rule:
+  - regexps:
+      body:
+      - <BODY LINK="White" VLINK="White" ALINK="White">

@@ -1,0 +1,5 @@
+- name: BbZL.PhP
+  rule:
+  - regexps:
+      body:
+      - BbZL.PhP

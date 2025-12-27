@@ -1,0 +1,5 @@
+- name: dolibarr
+  rule:
+  - regexps:
+      body:
+      - Dolibarr Development Team

@@ -1,0 +1,8 @@
+- name: Gitblit
+  rule:
+  - favicon:
+      mmh3:
+      - '573035254'
+    regexps:
+      body:
+      - Gitblit

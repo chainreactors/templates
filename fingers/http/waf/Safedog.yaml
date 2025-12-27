@@ -1,0 +1,7 @@
+- name: Safedog
+  rule:
+  - regexps:
+      header:
+      - Safedog
+      body:
+      - safedogsite

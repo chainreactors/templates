@@ -1,0 +1,5 @@
+- name: 金山timon云杀毒
+  rule:
+  - regexps:
+      body:
+      - iepngfix_tilebg.js

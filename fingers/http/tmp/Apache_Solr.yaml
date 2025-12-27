@@ -1,0 +1,6 @@
+- name: Apache Solr
+  rule:
+  - regexps:
+      body:
+      - solr admin
+      - app_config.solr_path

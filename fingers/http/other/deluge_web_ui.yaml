@@ -1,0 +1,5 @@
+- name: deluge web ui
+  rule:
+  - favicon:
+      mmh3:
+      - '-1589842876'

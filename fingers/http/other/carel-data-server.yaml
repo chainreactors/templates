@@ -1,0 +1,7 @@
+- name: carel-data-server
+  rule:
+  - regexps:
+      body:
+      - src="/MPwebCoreFn.js
+      header:
+      - CarelDataServer

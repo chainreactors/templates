@@ -1,0 +1,5 @@
+- name: adobe campaign classic
+  rule:
+  - favicon:
+      mmh3:
+      - '-333791179'

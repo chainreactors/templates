@@ -1,0 +1,7 @@
+- name: 溢信审批管理
+  rule:
+  - regexps:
+      body:
+      - <title>审批管理</title>
+      header:
+      - oappr_cise

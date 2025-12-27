@@ -1,0 +1,6 @@
+- name: Video CMS
+  rule:
+  - regexps:
+      body:
+      - <p>Video CMS by <a target="_blank" rel="nofollow" href="https://www.cobrasoftwares.org">Cobra
+        Softwares Inc</a></p></footer>

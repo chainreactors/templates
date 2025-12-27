@@ -1,0 +1,5 @@
+- name: h3c icg 1000
+  rule:
+  - regexps:
+      body:
+      - ICG 1000系统管理

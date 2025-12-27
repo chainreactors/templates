@@ -1,0 +1,5 @@
+- name: MuseProxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: MuseProxy'

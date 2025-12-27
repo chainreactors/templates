@@ -1,0 +1,5 @@
+- name: Pubwin
+  rule:
+  - regexps:
+      body:
+      - Pubwin

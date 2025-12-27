@@ -1,0 +1,5 @@
+- name: niagara
+  rule:
+  - favicon:
+      mmh3:
+      - '1991562061'

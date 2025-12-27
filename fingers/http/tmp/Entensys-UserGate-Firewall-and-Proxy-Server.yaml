@@ -1,0 +1,5 @@
+- name: Entensys-UserGate-Firewall-and-Proxy-Server
+  rule:
+  - regexps:
+      header:
+      - UserGate Firewall and Proxy Server

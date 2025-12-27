@@ -1,0 +1,5 @@
+- name: NPS内网穿透
+  rule:
+  - regexps:
+      body:
+      - nps admin login

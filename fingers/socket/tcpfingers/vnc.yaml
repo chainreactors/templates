@@ -1,0 +1,9 @@
+- name: vnc
+  focus: true
+  default_port:
+  - vnc
+  protocol: tcp
+  rule:
+  - regexps:
+      regexp:
+      - RFB 00

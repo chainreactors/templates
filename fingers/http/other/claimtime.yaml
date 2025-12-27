@@ -1,0 +1,5 @@
+- name: claimtime
+  rule:
+  - favicon:
+      mmh3:
+      - '-687783882'

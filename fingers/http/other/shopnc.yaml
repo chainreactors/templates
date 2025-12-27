@@ -1,0 +1,5 @@
+- name: shopnc
+  rule:
+  - regexps:
+      body:
+      - ShopNC

@@ -1,0 +1,5 @@
+- name: hp printer / server
+  rule:
+  - favicon:
+      mmh3:
+      - '-2144363468'

@@ -1,0 +1,5 @@
+- name: barracuda
+  rule:
+  - favicon:
+      mmh3:
+      - '1436966696'

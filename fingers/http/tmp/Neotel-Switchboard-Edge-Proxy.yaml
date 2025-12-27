@@ -1,0 +1,5 @@
+- name: Neotel-Switchboard-Edge-Proxy
+  rule:
+  - regexps:
+      header:
+      - 'Server: Switchboard Edge Proxy'

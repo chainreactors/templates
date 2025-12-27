@@ -1,0 +1,7 @@
+- name: expressionengine
+  rule:
+  - regexps:
+      body:
+      - exp_tracker
+      header:
+      - exp_last_activity

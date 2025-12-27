@@ -1,0 +1,8 @@
+- name: 普元eos_console
+  focus: true
+  rule:
+  - regexps:
+      vuln:
+      - EOS管理控制台
+    info: 普元EOS_console_leak
+    send_data: /eosmgr/eos/EventDispatcher

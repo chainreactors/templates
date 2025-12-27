@@ -1,0 +1,5 @@
+- name: 资产灯塔系统
+  rule:
+  - regexps:
+      body:
+      - 资产灯塔系统

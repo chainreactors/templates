@@ -1,0 +1,5 @@
+- name: 网宿
+  rule:
+  - regexps:
+      header:
+      - WS CDN Server
