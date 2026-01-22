@@ -80,9 +80,9 @@ def split_yaml_file(input_file):
                 yaml.dump([finger], f, allow_unicode=True,
                          default_flow_style=False, sort_keys=False)
             success += 1
-            print(f"  ✓ [{idx}/{total}] {finger_name} -> {output_file.relative_to(input_path.parent)}")
+            print(f"  [OK] [{idx}/{total}] {finger_name} -> {output_file.relative_to(input_path.parent)}")
         except Exception as e:
-            print(f"  ✗ [{idx}/{total}] {finger_name} - 写入失败: {e}")
+            print(f"  [FAIL] [{idx}/{total}] {finger_name} - 写入失败: {e}")
 
     print(f"  完成: {success}/{total} 个指纹已拆分\n")
 
