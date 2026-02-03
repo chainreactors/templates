@@ -4,13 +4,15 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	en "github.com/chainreactors/utils/encode"
 	"io/ioutil"
 	"os"
 	"path"
 	"path/filepath"
-	"sigs.k8s.io/yaml"
 	"strings"
+
+	"github.com/chainreactors/fingers/resources"
+	en "github.com/chainreactors/utils/encode"
+	"sigs.k8s.io/yaml"
 )
 
 var (
@@ -18,9 +20,10 @@ var (
 	resultPath   string
 )
 
+// encode 使用 deflate 压缩和 base64 编码，保持所有数据的一致性
 func encode(input []byte) string {
-	s := en.MustDeflateCompress(input)
-	return en.Base64Encode(s)
+	compressed := en.MustDeflateCompress(input)
+	return en.Base64Encode(compressed)
 }
 
 func loadYamlFile(filename string) string {
@@ -32,6 +35,32 @@ func loadYamlFile(filename string) string {
 
 	bs, _ := ioutil.ReadAll(file)
 	return encode(bs)
+}
+
+// getFingersResource 根据 key 返回对应的 fingers/resources 数据
+// 这些数据已经是 gzip 压缩的，需要解压后再用 deflate 压缩以保持一致性
+func getFingersResource(key string) string {
+	var data []byte
+	switch key {
+	case "fingerprinthub_web":
+		data = resources.FingerprinthubWebData
+	case "nmap_service_probes":
+		data = resources.NmapServiceProbesData
+	case "nmap_services":
+		data = resources.NmapServicesData
+	default:
+		panic(fmt.Sprintf("unknown fingers resource key: %s", key))
+	}
+
+	// 数据是 gzip 压缩的，需要先解压
+	decompressed, err := en.GzipDecompress(data)
+	if err != nil {
+		panic(fmt.Sprintf("failed to decompress %s: %v", key, err))
+	}
+
+	// 然后使用 deflate 压缩以保持与其他数据的一致性
+	compressed := en.MustDeflateCompress(decompressed)
+	return en.Base64Encode(compressed)
 }
 
 func visit(files *[]string) filepath.WalkFunc {
@@ -66,14 +95,6 @@ func loadRawFiles(dir string) string {
 	}
 
 	return encode(jsonstr)
-}
-
-func loadRawFile(dir string) string {
-	content, err := os.ReadFile(path.Join(templatePath, dir))
-	if err != nil {
-		panic(err)
-	}
-	return encode(content)
 }
 
 func recuLoadPoc(dir string) string {
@@ -169,6 +190,12 @@ func parser(key string) string {
 		return recuLoadFinger("fingers/socket", true)
 	case "http":
 		return recuLoadFinger("fingers/http", true)
+	case "fingerprinthub_web":
+		return getFingersResource("fingerprinthub_web")
+	case "nmap_service_probes":
+		return getFingersResource("nmap_service_probes")
+	case "nmap_services":
+		return getFingersResource("nmap_services")
 	case "port":
 		return loadYamlFile("port.yaml")
 	case "workflow":
@@ -204,7 +231,12 @@ func main() {
 	flag.Parse()
 
 	if *need == "gogo" {
-		needs = []string{"socket", "http", "port", "workflow", "neutron", "extract"}
+		needs = []string{
+			"socket", "http",
+			"fingerprinthub_web",
+			"nmap_service_probes", "nmap_services",
+			"port", "workflow", "neutron", "extract",
+		}
 	} else if *need == "spray" {
 		needs = []string{"spray_rule", "spray_common", "spray_dict", "extract", "port"}
 	} else if *need == "zombie" {

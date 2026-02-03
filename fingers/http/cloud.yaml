@@ -65,11 +65,12 @@
           - X-Jenkins
         body:
           - Jenkins
-      favicon:
-        md5:
-          - 23e8c7bd78e8cd826c5a6073b15068b1
-        mmh3:
-          - '81586312'
+    - regexps:
+        favicon:
+          md5:
+            - 23e8c7bd78e8cd826c5a6073b15068b1
+          mmh3:
+            - '81586312'
 - name: nexus
   focus: true
   rule:

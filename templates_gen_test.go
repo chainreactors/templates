@@ -21,5 +21,5 @@ func Decode(input string) []byte {
 }
 
 func Test_parser(t *testing.T) {
-	ioutil.WriteFile("fingers.json", Decode(recuLoadFinger("fingers/socket")), 0777)
+	ioutil.WriteFile("fingers.json", Decode(recuLoadFinger("fingers/socket", true)), 0777)
 }
