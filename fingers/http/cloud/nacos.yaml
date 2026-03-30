@@ -7,3 +7,8 @@
       body:
       - <title>Nacos</title>
     send_data: /nacos/
+  - version: _
+    favicon:
+      mmh3:
+        - "13942501"
+    send_data: /nacos/console-ui/public/img/nacos-logo.png
