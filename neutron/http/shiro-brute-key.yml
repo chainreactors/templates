@@ -1,4 +1,6 @@
 id: shiro-brute-key
+finger:
+  - shiro
 opsec: true
 info:
   name: brute Shiro key

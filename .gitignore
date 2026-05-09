@@ -31,3 +31,4 @@ gen
 /bbin
 /script
 /v2/pkg/templates.go
+/fingers.json
