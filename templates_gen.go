@@ -18,15 +18,14 @@ import (
 var (
 	templatePath string
 	resultPath   string
+	embedMode    bool
 )
 
-// encode 使用 deflate 压缩和 base64 编码，保持所有数据的一致性
-func encode(input []byte) string {
-	compressed := en.MustDeflateCompress(input)
-	return en.Base64Encode(compressed)
+func deflateCompress(input []byte) []byte {
+	return en.MustDeflateCompress(input)
 }
 
-func loadYamlFile(filename string) string {
+func loadYamlFile(filename string) []byte {
 	var err error
 	file, err := os.Open(path.Join(templatePath, filename))
 	if err != nil {
@@ -34,12 +33,12 @@ func loadYamlFile(filename string) string {
 	}
 
 	bs, _ := ioutil.ReadAll(file)
-	return encode(bs)
+	return deflateCompress(bs)
 }
 
 // getFingersResource 根据 key 返回对应的 fingers/resources 数据
 // 这些数据已经是 gzip 压缩的，需要解压后再用 deflate 压缩以保持一致性
-func getFingersResource(key string) string {
+func getFingersResource(key string) []byte {
 	var data []byte
 	switch key {
 	case "fingerprinthub_web":
@@ -58,9 +57,7 @@ func getFingersResource(key string) string {
 		panic(fmt.Sprintf("failed to decompress %s: %v", key, err))
 	}
 
-	// 然后使用 deflate 压缩以保持与其他数据的一致性
-	compressed := en.MustDeflateCompress(decompressed)
-	return en.Base64Encode(compressed)
+	return deflateCompress(decompressed)
 }
 
 func visit(files *[]string) filepath.WalkFunc {
@@ -75,7 +72,7 @@ func visit(files *[]string) filepath.WalkFunc {
 	}
 }
 
-func loadRawFiles(dir string) string {
+func loadRawFiles(dir string) []byte {
 	var files []string
 	err := filepath.Walk(path.Join(templatePath, dir), visit(&files))
 	if err != nil {
@@ -94,10 +91,10 @@ func loadRawFiles(dir string) string {
 		panic(err)
 	}
 
-	return encode(jsonstr)
+	return deflateCompress(jsonstr)
 }
 
-func recuLoadPoc(dir string) string {
+func recuLoadPoc(dir string) []byte {
 	var files []string
 	err := filepath.Walk(path.Join(templatePath, dir), visit(&files))
 	if err != nil {
@@ -129,10 +126,10 @@ func recuLoadPoc(dir string) string {
 		panic(err)
 	}
 
-	return encode(jsonstr)
+	return deflateCompress(jsonstr)
 }
 
-func recuLoadFinger(dir string, isJson bool) string {
+func recuLoadFinger(dir string, isJson bool) []byte {
 	var files []string
 	err := filepath.Walk(path.Join(templatePath, dir), visit(&files))
 	if err != nil {
@@ -181,10 +178,10 @@ func recuLoadFinger(dir string, isJson bool) string {
 		}
 	}
 
-	return encode(content)
+	return deflateCompress(content)
 }
 
-func parser(key string) string {
+func parser(key string) []byte {
 	switch key {
 	case "socket":
 		return recuLoadFinger("fingers/socket", true)
@@ -231,11 +228,26 @@ func parser(key string) string {
 	}
 }
 
+func toVarName(key string) string {
+	parts := strings.Split(key, "_")
+	for i, p := range parts {
+		if len(p) > 0 {
+			if i == 0 {
+				parts[i] = strings.ToLower(p[:1]) + p[1:]
+			} else {
+				parts[i] = strings.ToUpper(p[:1]) + p[1:]
+			}
+		}
+	}
+	return strings.Join(parts, "") + "Data"
+}
+
 func main() {
 	var needs []string
 	flag.StringVar(&templatePath, "t", ".", "templates repo path")
 	flag.StringVar(&resultPath, "o", "templates.go", "result filename")
 	need := flag.String("need", "gogo", "socket|http|port|workflow|neutron")
+	flag.BoolVar(&embedMode, "embed", false, "use go:embed for binary data (requires Go 1.16+)")
 	flag.Parse()
 
 	if *need == "gogo" {
@@ -255,36 +267,104 @@ func main() {
 		needs = strings.Split(*need, ",")
 	}
 
+	if embedMode {
+		generateEmbed(needs)
+	} else {
+		generateLegacy(needs)
+	}
+}
+
+func generateLegacy(needs []string) {
 	var s strings.Builder
 	var first bool
 	for _, n := range needs {
+		b64 := en.Base64Encode(parser(n))
 		if !first {
-			s.WriteString(fmt.Sprintf("if typ == \"%s\" {\n\t\treturn encode.MustDeflateDeCompress(encode.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
+			s.WriteString(fmt.Sprintf("if typ == \"%s\" {\n\t\treturn encode.MustDeflateDeCompress(encode.Base64Decode(\"%s\"))\n\t}", n, b64))
 			first = true
 		} else {
-			s.WriteString(fmt.Sprintf("else if typ==\"%s\"{\n\t\treturn encode.MustDeflateDeCompress(encode.Base64Decode(\"%s\"))\n\t}", n, parser(n)))
+			s.WriteString(fmt.Sprintf("else if typ==\"%s\"{\n\t\treturn encode.MustDeflateDeCompress(encode.Base64Decode(\"%s\"))\n\t}", n, b64))
 		}
 	}
-	template := `package pkg
+	tmpl := `//go:build !emptytemplates
+// +build !emptytemplates
+
+package pkg
 
 import (
 	"github.com/chainreactors/utils/encode"
 )
 
-
 var RandomDir = "/g8kZMwp4oeKsL2in"
 
-func LoadConfig(typ string)[]byte  {
+func loadEmbeddedConfig(typ string) []byte {
 	%s
-	return []byte{}
+	return nil
 }
 `
-	template = fmt.Sprintf(template, s.String())
-	f, err := os.OpenFile(resultPath, os.O_WRONLY|os.O_TRUNC|os.O_CREATE, 0644)
+	tmpl = fmt.Sprintf(tmpl, s.String())
+	writeOutput(resultPath, tmpl)
+}
+
+func generateEmbed(needs []string) {
+	dataDir := filepath.Join(filepath.Dir(resultPath), "data")
+	if err := os.MkdirAll(dataDir, 0755); err != nil {
+		panic(fmt.Sprintf("create data dir: %v", err))
+	}
+
+	var embedDecls strings.Builder
+	var loadBody strings.Builder
+	first := false
+
+	for _, n := range needs {
+		data := parser(n)
+
+		binFile := n + ".bin"
+		binPath := filepath.Join(dataDir, binFile)
+		if err := os.WriteFile(binPath, data, 0644); err != nil {
+			panic(fmt.Sprintf("write %s: %v", binPath, err))
+		}
+		fmt.Printf("  embed: %s (%d bytes)\n", binFile, len(data))
+
+		varName := toVarName(n)
+		embedDecls.WriteString(fmt.Sprintf("//go:embed data/%s\nvar %s []byte\n\n", binFile, varName))
+
+		if !first {
+			loadBody.WriteString(fmt.Sprintf("if typ == \"%s\" {\n\t\treturn encode.MustDeflateDeCompress(%s)\n\t}", n, varName))
+			first = true
+		} else {
+			loadBody.WriteString(fmt.Sprintf("else if typ == \"%s\" {\n\t\treturn encode.MustDeflateDeCompress(%s)\n\t}", n, varName))
+		}
+	}
+
+	tmpl := fmt.Sprintf(`//go:build !emptytemplates
+// +build !emptytemplates
+
+package pkg
+
+import (
+	_ "embed"
+
+	"github.com/chainreactors/utils/encode"
+)
+
+%svar RandomDir = "/g8kZMwp4oeKsL2in"
+
+func loadEmbeddedConfig(typ string) []byte {
+	%s
+	return nil
+}
+`, embedDecls.String(), loadBody.String())
+
+	writeOutput(resultPath, tmpl)
+}
+
+func writeOutput(path, content string) {
+	f, err := os.OpenFile(path, os.O_WRONLY|os.O_TRUNC|os.O_CREATE, 0644)
 	if err != nil {
 		panic(err)
 	}
-	f.WriteString(template)
+	f.WriteString(content)
 	f.Sync()
 	f.Close()
 	println("generate templates.go successfully")

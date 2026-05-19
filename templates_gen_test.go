@@ -3,7 +3,6 @@ package main
 import (
 	"bytes"
 	"compress/flate"
-	en "github.com/chainreactors/utils/encode"
 	"io/ioutil"
 	"testing"
 )
@@ -15,11 +14,6 @@ func UnFlate(input []byte) []byte {
 	return s
 }
 
-func Decode(input string) []byte {
-	b := en.Base64Decode(input)
-	return UnFlate(b)
-}
-
 func Test_parser(t *testing.T) {
-	ioutil.WriteFile("fingers.json", Decode(recuLoadFinger("fingers/socket", true)), 0777)
+	ioutil.WriteFile("fingers.json", UnFlate(recuLoadFinger("fingers/socket", true)), 0777)
 }
