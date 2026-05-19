@@ -1,0 +1,87 @@
+# Extension deny lists grouped by category.
+# "always" is unconditionally filtered at walk level.
+# Other groups are filtered by default but can be included via CLI flags.
+
+always:
+  # Images
+  - ".png"
+  - ".jpg"
+  - ".jpeg"
+  - ".gif"
+  - ".gifv"
+  - ".bmp"
+  - ".ico"
+  - ".tif"
+  - ".tiff"
+  - ".psd"
+  - ".xcf"
+  - ".svg"
+  - ".webp"
+  # Video
+  - ".mp4"
+  - ".avi"
+  - ".mkv"
+  - ".mov"
+  - ".flv"
+  - ".wmv"
+  - ".webm"
+  - ".mpeg"
+  - ".mpg"
+  - ".3gp"
+  - ".3g2"
+  - ".h264"
+  - ".m4v"
+  - ".ogv"
+  - ".ogm"
+  - ".vob"
+  - ".swf"
+  # Audio
+  - ".mp3"
+  - ".wav"
+  - ".ogg"
+  - ".m4a"
+  - ".rm"
+  # Fonts
+  - ".ttf"
+  - ".otf"
+  - ".woff"
+  - ".woff2"
+  - ".eot"
+
+executable:
+  - ".exe"
+  - ".dll"
+  - ".so"
+  - ".dylib"
+  - ".sys"
+  - ".drv"
+  - ".msi"
+  - ".deb"
+  - ".rpm"
+  - ".pkg"
+  - ".class"
+  - ".pyc"
+  - ".o"
+  - ".a"
+
+archive:
+  - ".zip"
+  - ".tar"
+  - ".gz"
+  - ".7z"
+  - ".rar"
+  - ".apk"
+  - ".jar"
+  - ".iso"
+
+document:
+  - ".pdf"
+  - ".doc"
+  - ".ppt"
+  - ".xls"
+  - ".xlsx"
+
+misc:
+  - ".lock"
+  - ".map"
+  - ".axd"

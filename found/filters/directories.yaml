@@ -1,0 +1,98 @@
+# Directories unconditionally skipped at walk level.
+# Matched by basename — any directory with this name is skipped regardless of depth.
+# .git is intentionally NOT listed — history may contain leaked credentials.
+
+skip:
+  # Package managers — dependency directories
+  - "node_modules"
+  - "bower_components"
+  - "vendor"         # Go/PHP/Ruby vendor (third-party code)
+  - "site-packages"  # Python installed packages
+
+  # Package manager caches (dotdirs)
+  - ".npm"
+  - ".yarn"
+  - ".pnpm-store"
+
+  # Python
+  - "__pycache__"
+  - ".tox"
+  - ".eggs"
+  - ".mypy_cache"
+  - ".pytest_cache"
+  - ".venv"
+  - "venv"
+  - ".uv"
+
+  # Go
+  - ".goenv"
+  - "pkg"            # Go module cache (inside GOPATH)
+
+  # Rust
+  - ".cargo"
+  - ".rustup"
+  - "target"         # Rust build output
+
+  # Ruby
+  - ".rbenv"
+  - ".gem"
+  - ".bundle"
+
+  # Node/JS
+  - ".nvm"
+
+  # Java/JVM
+  - ".gradle"
+  - ".m2"
+  - ".ivy2"
+  - ".sdkman"
+
+  # .NET
+  - ".nuget"
+
+  # PHP
+  - ".composer"
+
+  # Elixir/Erlang
+  - ".hex"
+  - ".mix"
+
+  # Haskell
+  - ".stack"
+  - ".cabal"
+
+  # OCaml
+  - ".opam"
+
+  # Julia
+  - ".julia"
+
+  # Dart/Flutter
+  - ".pub-cache"
+  - ".dartServer"
+
+  # Python (uv, rye, pdm)
+  - ".rye"
+  - ".pdm-build"
+
+  # Perl
+  - ".cpan"
+
+  # Generic caches — catches uv/cache, pip cache, go-build, etc.
+  - "cache"
+  - ".cache"
+  - ".local"
+
+  # VCS (non-git)
+  - ".svn"
+  - ".hg"
+
+  # IDE / Editor
+  - ".idea"
+  - ".vscode"
+  - ".eclipse"
+  - ".vs"
+
+  # Build output
+  - ".terraform"
+  - ".serverless"

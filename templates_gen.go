@@ -222,6 +222,10 @@ func parser(key string) string {
 		return recuLoadPoc("found/keys")
 	case "found_auto":
 		return recuLoadPoc("found/auto")
+	case "found_filter_ext":
+		return loadYamlFile("found/filters/extensions.yaml")
+	case "found_filter_dir":
+		return loadYamlFile("found/filters/directories.yaml")
 	default:
 		panic("illegal key")
 	}
@@ -246,7 +250,7 @@ func main() {
 	} else if *need == "zombie" {
 		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template", "port", "socket", "http"}
 	} else if *need == "found" {
-		needs = []string{"found_keys", "found_auto"}
+		needs = []string{"found_keys", "found_auto", "found_filter_ext", "found_filter_dir"}
 	} else {
 		needs = strings.Split(*need, ",")
 	}
