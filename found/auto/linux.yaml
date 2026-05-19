@@ -1,0 +1,23 @@
+id: auto-linux
+info:
+  name: Linux Sensitive Directories
+  os: linux
+
+paths:
+  # 当前用户所有 dotfiles（.ssh, .aws, .config, .gnupg, .docker, .kube, ...）
+  - "~/.*"
+  # 当前用户桌面和文档（可能有导出的凭据、配置备份）
+  - "~/Desktop"
+  - "~/Documents"
+  - "~/Downloads"
+  # 所有用户的 home 目录
+  - "/home/*"
+  # root 用户
+  - "/root"
+  # 系统配置（ssh, ssl, nginx, apache, cron, ...）
+  - "/etc"
+  # 第三方应用和服务
+  - "/opt"
+  # Web 应用代码和配置
+  - "/var/www"
+  - "/srv"

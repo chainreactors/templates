@@ -1,0 +1,21 @@
+id: auto-windows
+info:
+  name: Windows Sensitive Directories
+  os: windows
+
+paths:
+  # 当前用户所有 dotfiles（.ssh, .aws, .kube, .docker, ...）
+  - "%USERPROFILE%\\.*"
+  # 桌面和文档
+  - "%USERPROFILE%\\Desktop"
+  - "%USERPROFILE%\\Documents"
+  - "%USERPROFILE%\\Downloads"
+  # 所有用户
+  - "C:\\Users\\*"
+  # 应用数据（各种工具的凭据缓存）
+  - "%APPDATA%"
+  - "%LOCALAPPDATA%"
+  # IIS Web 应用
+  - "C:\\inetpub"
+  # 系统级应用数据
+  - "C:\\ProgramData"

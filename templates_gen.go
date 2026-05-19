@@ -218,6 +218,10 @@ func parser(key string) string {
 		return loadRawFiles("zombie/rule")
 	case "zombie_template":
 		return recuLoadPoc("neutron/login")
+	case "found_keys":
+		return recuLoadPoc("found/keys")
+	case "found_auto":
+		return recuLoadPoc("found/auto")
 	default:
 		panic("illegal key")
 	}
@@ -241,6 +245,8 @@ func main() {
 		needs = []string{"spray_rule", "spray_common", "spray_dict", "extract", "port"}
 	} else if *need == "zombie" {
 		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template", "port", "socket", "http"}
+	} else if *need == "found" {
+		needs = []string{"found_keys", "found_auto"}
 	} else {
 		needs = strings.Split(*need, ",")
 	}

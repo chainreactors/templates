@@ -1,0 +1,21 @@
+id: auto-darwin
+info:
+  name: macOS Sensitive Directories
+  os: darwin
+
+paths:
+  # 当前用户所有 dotfiles
+  - "~/.*"
+  # 桌面和文档
+  - "~/Desktop"
+  - "~/Documents"
+  - "~/Downloads"
+  # macOS 应用数据（Keychains, Application Support, Preferences, ...）
+  - "~/Library"
+  # 所有用户
+  - "/Users/*"
+  # 系统配置
+  - "/etc"
+  # Homebrew 等第三方
+  - "/opt"
+  - "/usr/local/etc"
