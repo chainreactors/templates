@@ -1,0 +1,21 @@
+id: spray-source-map
+info:
+  name: JavaScript Source Map
+  severity: low
+  description: Detect JavaScript source map file references that may expose source code
+  tags: spray, info, crawl
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "sourceMappingURL"
+        condition: or
+    extractors:
+      - type: regex
+        name: source-map
+        regex:
+          - '//[#@]\s*sourceMappingURL\s*=\s*(\S+\.map)'
+          - '(?i)x-sourcemap:\s*(\S+)'

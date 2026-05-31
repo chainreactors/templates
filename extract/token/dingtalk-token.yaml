@@ -1,0 +1,21 @@
+id: spray-dingtalk-token
+info:
+  name: DingTalk Bot Token
+  severity: high
+  description: Detect DingTalk robot webhook tokens in web content
+  tags: spray, pentest, token
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "oapi.dingtalk.com"
+        condition: or
+    extractors:
+      - type: regex
+        name: dingtalk
+        regex:
+          - "https://oapi\\.dingtalk\\.com/robot/send\\?access_token=[a-f0-9]{64}"
+          - "(?i)dingtalk[_-]?(token|secret|key)\\s*[:=]\\s*[\"']?([a-zA-Z0-9_-]+)[\"']?"

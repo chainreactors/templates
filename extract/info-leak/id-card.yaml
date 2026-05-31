@@ -1,0 +1,16 @@
+id: spray-id-card
+info:
+  name: Chinese ID Card Number
+  severity: high
+  description: Detect Chinese national ID card numbers in web content
+  tags: spray, info
+
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        name: idcard
+        group: 1
+        regex:
+          - '[^0-9]((\d{8}(0\d|10|11|12)([0-2]\d|30|31)\d{3})|(\d{6}(18|19|20)\d{2}(0[1-9]|10|11|12)([0-2]\d|30|31)\d{3}(\d|X|x)))[^0-9]'

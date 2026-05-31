@@ -1,0 +1,24 @@
+id: spray-feishu-token
+info:
+  name: Feishu / Lark Token
+  severity: high
+  description: Detect Feishu (Lark) app credentials and webhook tokens in web content
+  tags: spray, pentest, token
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "open.feishu.cn"
+          - "open.larksuite.com"
+          - "app_id"
+        condition: or
+    extractors:
+      - type: regex
+        name: feishu
+        regex:
+          - "https://open\\.feishu\\.cn/open-apis/bot/v2/hook/[a-f0-9-]{36}"
+          - "(?i)app[_-]?id\\s*[:=]\\s*[\"']?(cli_[a-zA-Z0-9]+)[\"']?"
+          - "(?i)app[_-]?secret\\s*[:=]\\s*[\"']?([a-zA-Z0-9]{20,})[\"']?"

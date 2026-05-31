@@ -1,0 +1,17 @@
+id: spray-tencent-cloud-key
+info:
+  name: Tencent Cloud Key
+  severity: critical
+  description: Detect Tencent Cloud SecretId and SecretKey in web content
+  tags: spray, pentest, cloud
+
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        name: tencent-cloud
+        regex:
+          - "AKID[A-Za-z0-9]{13,20}"
+          - "(?i)secret[_-]?id\\s*[:=]\\s*[\"']?(AKID[A-Za-z0-9]+)[\"']?"
+          - "(?i)secret[_-]?key\\s*[:=]\\s*[\"']?([A-Za-z0-9]{32,})[\"']?"

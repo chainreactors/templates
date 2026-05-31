@@ -1,0 +1,16 @@
+id: spray-npm-token
+info:
+  name: NPM Access Token
+  severity: high
+  description: Detect NPM registry access tokens in web content
+  tags: spray, pentest, token
+
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        name: npm-token
+        regex:
+          - 'npm_[A-Za-z0-9]{36}'
+          - '//registry\.npmjs\.org/:_authToken=[A-Za-z0-9-]+'

@@ -1,0 +1,15 @@
+id: spray-phone-number
+info:
+  name: Chinese Phone Number
+  severity: low
+  description: Detect Chinese mobile phone numbers in web content
+  tags: spray, info
+
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        name: phone
+        regex:
+          - '(\+?0?86-?)?1[3-9]\d{9}'

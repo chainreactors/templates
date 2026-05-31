@@ -1,0 +1,23 @@
+id: spray-oss-key
+info:
+  name: Cloud Storage Access Key
+  severity: high
+  description: Detect cloud object storage access key identifiers in web content
+  tags: spray, pentest, cloud
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        case-insensitive: true
+        words:
+          - "accesskeyid"
+          - "accesskeysecret"
+        condition: or
+    extractors:
+      - type: regex
+        name: oss
+        regex:
+          - "(?i)access[_-]?key[_-]?id\\s*[:=]\\s*[\"']?([A-Za-z0-9/+=]{16,})[\"']?"
+          - "(?i)access[_-]?key[_-]?secret\\s*[:=]\\s*[\"']?([A-Za-z0-9/+=]{16,})[\"']?"

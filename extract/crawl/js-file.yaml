@@ -1,0 +1,18 @@
+id: spray-js-file
+info:
+  name: JavaScript File Reference
+  severity: info
+  description: Extract JavaScript file URLs from web response content
+  tags: spray, crawl
+
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        name: js
+        group: 1
+        regex:
+          - "(https?://[^\\s\"'><(){}&|*]{2,250}?\\.js)"
+          - "=\\s{0,6}[\"']?\\s{0,6}([^\\s\"',+><;()|*]{2,250}?\\.js)[\"']?"
+          - "[\"']([^\\s\"',><;()|*:]{2,250}?\\.js)[\"']"

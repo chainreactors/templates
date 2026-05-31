@@ -1,0 +1,23 @@
+id: spray-firebase-url
+info:
+  name: Firebase URL and Key
+  severity: medium
+  description: Detect Firebase database URLs and API keys in web content
+  tags: spray, pentest, cloud
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "firebaseio.com"
+          - "firebase"
+        condition: or
+    extractors:
+      - type: regex
+        name: firebase
+        regex:
+          - "[a-z0-9-]+\\.firebaseio\\.com"
+          - "[a-z0-9-]+\\.firebaseapp\\.com"
+          - "(?i)firebase[_-]?(api[_-]?key|token|secret)\\s*[:=]\\s*[\"']?([A-Za-z0-9_-]+)[\"']?"

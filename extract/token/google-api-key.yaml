@@ -1,0 +1,17 @@
+id: spray-google-api-key
+info:
+  name: Google API Key
+  severity: high
+  description: Detect Google API keys and OAuth credentials in web content
+  tags: spray, pentest, token, cloud
+
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        name: google-api-key
+        regex:
+          - 'AIza[0-9A-Za-z_-]{35}'
+          - '[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com'
+          - 'ya29\.[0-9A-Za-z_-]+'
