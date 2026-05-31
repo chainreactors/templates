@@ -1,0 +1,15 @@
+id: spray-ipv4-address
+info:
+  name: IPv4 Address
+  severity: info
+  description: Extract IPv4 addresses from web content
+  tags: spray, info, pentest
+
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        name: ip
+        regex:
+          - '((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})(\.(((2(5[0-5]|[0-4]\d)))|[0-1]?\d{1,2})){3}'

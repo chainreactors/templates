@@ -1,0 +1,24 @@
+id: spray-slack-webhook
+info:
+  name: Slack Webhook URL
+  severity: high
+  description: Detect Slack webhook and API token URLs in web content
+  tags: spray, pentest, token
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "hooks.slack.com"
+          - "xoxb-"
+          - "xoxp-"
+          - "xoxa-"
+        condition: or
+    extractors:
+      - type: regex
+        name: slack-webhook
+        regex:
+          - 'https://hooks\.slack\.com/services/T[A-Z0-9]+/B[A-Z0-9]+/[a-zA-Z0-9]+'
+          - 'xox[bpas]-[0-9]+-[0-9]+-[a-zA-Z0-9]+'

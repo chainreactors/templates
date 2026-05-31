@@ -1,0 +1,16 @@
+id: spray-windows-filepath
+info:
+  name: Windows File Path
+  severity: low
+  description: Detect Windows file path disclosure in web content
+  tags: spray, pentest
+
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        name: windows-file
+        group: 1
+        regex:
+          - '[^\w](([a-zA-Z]:\\(?:\w+\\?)*)|([a-zA-Z]:\\(?:\w+\\)*\w+\.\w+))'
