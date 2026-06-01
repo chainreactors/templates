@@ -17,4 +17,4 @@ file:
       - type: regex
         name: redirect
         regex:
-          - 'Location:\s*([^\r\n]+)'
+          - 'Location:\s*((?:https?://|/)[^\r\n]+)'

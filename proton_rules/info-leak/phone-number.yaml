@@ -11,5 +11,6 @@ file:
     extractors:
       - type: regex
         name: phone
+        group: 1
         regex:
-          - '(\+?0?86-?)?1[3-9]\d{9}'
+          - '[^0-9]((?:(?:\+|0{0,2})86-?)?1[3-9]\d{9})[^0-9]'

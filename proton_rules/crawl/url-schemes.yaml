@@ -17,4 +17,4 @@ file:
       - type: regex
         name: url-schemes
         regex:
-          - '(?i)\b((?!https?://)[a-z][a-z0-9+.-]{1,15}://[-\w+&@#/%?=~_|!:,.;]*[-\w+&@#/%=~_|])'
+          - '((?:ftp|ssh|sftp|file|ldap|telnet|smb|rtsp|mqtt|amqp|redis|mongodb)://[^\s"''<>]+)'

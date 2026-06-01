@@ -21,4 +21,4 @@ file:
       - type: regex
         name: sensitive-field
         regex:
-          - '(?i)(?:secret|token|apikey|api_key|app_secret|client_secret|secret_key)\s*[:=]\s*["\x27]([^"\x27\s]{8,})["\x27]'
+          - "(?i)[\"']?(?:secret|token|apikey|api_key|app_secret|client_secret|secret_key)[\"']?\\s*[:=]\\s*[\"']([A-Za-z0-9+/=_\\-]{8,})[\"']"
