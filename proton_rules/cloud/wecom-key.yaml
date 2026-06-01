@@ -1,0 +1,23 @@
+id: spray-wecom-key
+info:
+  name: WeCom Enterprise Key
+  severity: high
+  description: Detect WeCom (WeChat Work) enterprise credentials in web content
+  tags: spray, pentest, cloud, wecom-key
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        case-insensitive: true
+        words:
+          - "corpid"
+          - "corpsecret"
+        condition: or
+    extractors:
+      - type: regex
+        name: wecom-key
+        regex:
+          - "(?i)corp[_-]?id\\s*[:=]\\s*[\"']?([a-zA-Z0-9_-]+)[\"']?"
+          - "(?i)corp[_-]?secret\\s*[:=]\\s*[\"']?([a-zA-Z0-9_-]+)[\"']?"

@@ -1,0 +1,20 @@
+id: spray-url-schemes
+info:
+  name: URL Schemes
+  severity: info
+  description: Detect non-HTTP URL schemes (ftp, ssh, file, etc.)
+  tags: spray, crawl, url-schemes
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "://"
+        condition: or
+    extractors:
+      - type: regex
+        name: url-schemes
+        regex:
+          - '(?i)\b((?!https?://)[a-z][a-z0-9+.-]{1,15}://[-\w+&@#/%?=~_|!:,.;]*[-\w+&@#/%=~_|])'

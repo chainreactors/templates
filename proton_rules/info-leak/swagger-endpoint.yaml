@@ -1,0 +1,25 @@
+id: spray-swagger-endpoint
+info:
+  name: Swagger / OpenAPI Endpoint
+  severity: low
+  description: Detect Swagger and OpenAPI documentation endpoints in web content
+  tags: spray, info, crawl, swagger
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "swagger"
+          - "api-docs"
+          - "openapi"
+        condition: or
+    extractors:
+      - type: regex
+        name: swagger
+        regex:
+          - '["''](/swagger[a-zA-Z0-9./_-]*)["\'')\s]'
+          - '["''](/api-docs[a-zA-Z0-9./_-]*)["\'')\s]'
+          - '["''](/openapi[a-zA-Z0-9./_-]*)["\'')\s]'
+          - '["''](/v[0-9]+/api-docs[a-zA-Z0-9./_-]*)["\'')\s]'

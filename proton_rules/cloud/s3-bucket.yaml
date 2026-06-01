@@ -1,0 +1,26 @@
+id: spray-s3-bucket
+info:
+  name: AWS S3 Bucket
+  severity: medium
+  description: Detect AWS S3 bucket URLs and references in web content
+  tags: spray, pentest, cloud, s3
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "amazonaws.com"
+          - "s3://"
+          - "amzn.mws"
+        condition: or
+    extractors:
+      - type: regex
+        name: s3
+        regex:
+          - '(([a-zA-Z0-9._-]+\.s3|s3)[.-]+[a-zA-Z0-9._-]+|[a-zA-Z0-9._-]+\.s3|s3)\.amazonaws\.com'
+          - 's3://[a-zA-Z0-9._-]+'
+          - 's3\.console\.aws\.amazon\.com/s3/buckets/[a-zA-Z0-9._-]+'
+          - 'amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+          - 'ec2-[0-9-]+\.cd-[a-z0-9-]+\.compute\.amazonaws\.com'

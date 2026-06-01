@@ -1,0 +1,24 @@
+id: spray-sensitive-field
+info:
+  name: Sensitive Field Value
+  severity: medium
+  description: Detect generic sensitive field assignments (key, secret, token, etc.)
+  tags: spray, pentest, sensitive-field
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "secret"
+          - "token"
+          - "apikey"
+          - "api_key"
+        condition: or
+        case-insensitive: true
+    extractors:
+      - type: regex
+        name: sensitive-field
+        regex:
+          - '(?i)(?:secret|token|apikey|api_key|app_secret|client_secret|secret_key)\s*[:=]\s*["\x27]([^"\x27\s]{8,})["\x27]'

@@ -1,0 +1,19 @@
+id: spray-url-endpoint
+info:
+  name: URL Endpoint Reference
+  severity: info
+  description: Extract URL endpoints from web response content
+  tags: spray, crawl, url
+
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        name: url
+        group: 1
+        regex:
+          - "=\\s{0,6}(https?:[^\\s'\"\"><()|*\\[]{2,250})"
+          - "[\"'](/[^\\s,'\"\":\"<>@$;()|*\\[]{2,250})[\"']"
+          - "[\"'](https?:[^\\s'\"\"<>()@|*\\[]{2,250}?\\.[^\\s,'\"\"<>;()|*\\[]{2,250}?)[\"']"
+          - "\\x20href\\s{0,6}=\\s{0,6}[\"']{0,1}\\s{0,6}([^\\s',><$@;()|*\\[]{2,250})"

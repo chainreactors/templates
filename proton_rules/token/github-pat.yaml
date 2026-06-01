@@ -1,0 +1,30 @@
+id: spray-github-pat
+info:
+  name: GitHub Personal Access Token
+  severity: critical
+  description: Detect GitHub fine-grained or classic personal access tokens in web content
+  tags: spray, pentest, token, github-pat
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "ghp_"
+          - "gho_"
+          - "ghu_"
+          - "ghs_"
+          - "ghr_"
+          - "github_pat_"
+        condition: or
+    extractors:
+      - type: regex
+        name: github-pat
+        regex:
+          - 'ghp_[A-Za-z0-9]{36}'
+          - 'gho_[A-Za-z0-9]{36}'
+          - 'ghu_[A-Za-z0-9]{36}'
+          - 'ghs_[A-Za-z0-9]{36}'
+          - 'ghr_[A-Za-z0-9]{36}'
+          - 'github_pat_[A-Za-z0-9_]{82}'

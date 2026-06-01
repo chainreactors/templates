@@ -1,0 +1,23 @@
+id: spray-lfi-indicator
+info:
+  name: LFI Indicator
+  severity: critical
+  description: Detect local file inclusion evidence in response content
+  tags: spray, pentest, lfi
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "root:/bin/bash"
+          - "for 16-bit app"
+          - "root:x:0:0"
+        condition: or
+    extractors:
+      - type: regex
+        name: lfi
+        regex:
+          - '(root:[x*]:0:0:.*:/bin/(?:ba)?sh)'
+          - '(\[(?:fonts|extensions|mci extensions|files|Mail)\]\r?\n)'

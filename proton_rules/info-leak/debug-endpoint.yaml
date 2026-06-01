@@ -1,0 +1,33 @@
+id: spray-debug-endpoint
+info:
+  name: Debug / Admin Endpoint
+  severity: medium
+  description: Detect debug, admin, and monitoring endpoint references in web content
+  tags: spray, pentest, crawl, debug-endpoint
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "actuator"
+          - "/debug"
+          - "console"
+          - "druid"
+          - "monitoring"
+          - "metrics"
+          - "healthcheck"
+        condition: or
+    extractors:
+      - type: regex
+        name: debug-endpoint
+        regex:
+          - '["''](/actuator[a-zA-Z0-9./_-]*)["\'')\s]'
+          - '["''](/debug[a-zA-Z0-9./_-]*)["\'')\s]'
+          - '["''](/console[a-zA-Z0-9./_-]*)["\'')\s]'
+          - '["''](/druid[a-zA-Z0-9./_-]*)["\'')\s]'
+          - '["''](/monitoring[a-zA-Z0-9./_-]*)["\'')\s]'
+          - '["''](/metrics[a-zA-Z0-9./_-]*)["\'')\s]'
+          - '["''](/healthcheck[a-zA-Z0-9./_-]*)["\'')\s]'
+          - '["''](/env[a-zA-Z0-9./_-]*)["\'')\s]'

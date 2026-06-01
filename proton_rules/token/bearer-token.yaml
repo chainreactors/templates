@@ -1,0 +1,23 @@
+id: spray-bearer-token
+info:
+  name: Bearer / Authorization Token
+  severity: medium
+  description: Detect Bearer or Basic authorization tokens in web content
+  tags: spray, pentest, token, bearer-token
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        case-insensitive: true
+        words:
+          - "bearer"
+          - "authorization"
+        condition: or
+    extractors:
+      - type: regex
+        name: bearer-token
+        regex:
+          - "(?i)[\"':]?\\s*[Bb]earer\\s+([A-Za-z0-9_.-]{20,})"
+          - "(?i)[Aa]uthorization[\\s:=\"']+[Bb]asic\\s+([A-Za-z0-9+/=]{10,})"

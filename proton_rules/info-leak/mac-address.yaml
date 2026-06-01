@@ -1,0 +1,15 @@
+id: spray-mac-address
+info:
+  name: MAC Address
+  severity: info
+  description: Extract MAC addresses from response content
+  tags: spray, info, mac
+
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        name: mac
+        regex:
+          - '([0-9a-fA-F]{2}(?::[0-9a-fA-F]{2}){5})'

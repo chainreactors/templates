@@ -1,0 +1,25 @@
+id: spray-aws-access-key
+info:
+  name: AWS Access Key
+  severity: critical
+  description: Detect AWS access key IDs and secret keys in web content
+  tags: spray, pentest, cloud, aws-ak
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "AKIA"
+          - "AGPA"
+          - "AIDA"
+          - "AROA"
+          - "ASIA"
+        condition: or
+    extractors:
+      - type: regex
+        name: aws-ak
+        regex:
+          - "(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[a-zA-Z0-9]{16}"
+          - "(?i)aws[^\\s]{0,20}[\"'][0-9a-zA-Z/+]{40}[\"']"

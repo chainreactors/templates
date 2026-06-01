@@ -1,0 +1,21 @@
+id: spray-url-as-value
+info:
+  name: URL as Parameter Value
+  severity: low
+  description: Detect URLs passed as parameter values (potential SSRF)
+  tags: spray, pentest, ssrf
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "=http://"
+          - "=https://"
+        condition: or
+    extractors:
+      - type: regex
+        name: ssrf
+        regex:
+          - '(?:[?&][a-zA-Z0-9_-]+=)(https?://[^\s"''<>&]{5,})'

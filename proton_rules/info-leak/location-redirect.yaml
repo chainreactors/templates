@@ -1,0 +1,20 @@
+id: spray-location-redirect
+info:
+  name: Location Redirect
+  severity: info
+  description: Extract redirect target from Location header
+  tags: spray, info, redirect
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "Location:"
+        condition: or
+    extractors:
+      - type: regex
+        name: redirect
+        regex:
+          - 'Location:\s*([^\r\n]+)'

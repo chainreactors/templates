@@ -1,0 +1,24 @@
+id: spray-stripe-key
+info:
+  name: Stripe API Key
+  severity: critical
+  description: Detect Stripe API keys in web content
+  tags: spray, pentest, token, stripe-key
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "sk_live_"
+          - "pk_live_"
+          - "sk_test_"
+          - "rk_live_"
+        condition: or
+    extractors:
+      - type: regex
+        name: stripe-key
+        regex:
+          - '[sr]k_(live|test)_[0-9a-zA-Z]{24,}'
+          - 'pk_(live|test)_[0-9a-zA-Z]{24,}'

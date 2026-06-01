@@ -1,0 +1,15 @@
+id: spray-linkfinder
+info:
+  name: Linkfinder
+  severity: info
+  description: Discover URLs and paths from JavaScript content
+  tags: spray, crawl, linkfinder
+
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        name: linkfinder
+        regex:
+          - '(?:"|''|`)(((?:[a-zA-Z]{1,10}://|//)[^"''/]{1,}\.[a-zA-Z]{2,}[^"'']{0,})|((?:/|\.\./|\./)[^"''><,;| *()%%$^\\/\[\]][^"''><,;|()]{1,})|([a-zA-Z0-9_\-/]{1,}/[a-zA-Z0-9_\-/]{1,}\.(?:[a-zA-Z]{1,4}|action)(?:[?|#][^"|'']{0,}|))|([a-zA-Z0-9_\-/]{1,}/[a-zA-Z0-9_\-/]{3,}(?:[?|#][^"|'']{0,}|)))(?:"|''|`)'

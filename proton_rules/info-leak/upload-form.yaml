@@ -1,0 +1,23 @@
+id: spray-upload-form
+info:
+  name: Upload Form
+  severity: info
+  description: Detect file upload forms in HTML responses
+  tags: spray, info, upload
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "type=\"file\""
+          - "type='file'"
+          - "multipart/form-data"
+        condition: or
+    extractors:
+      - type: regex
+        name: upload
+        regex:
+          - '(<input[^>]*type=["\x27]file["\x27][^>]*>)'
+          - '(enctype=["\x27]multipart/form-data["\x27])'
