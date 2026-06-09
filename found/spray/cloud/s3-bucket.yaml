@@ -22,5 +22,4 @@ file:
           - '(([a-zA-Z0-9._-]+\.s3|s3)[.-]+[a-zA-Z0-9._-]+|[a-zA-Z0-9._-]+\.s3|s3)\.amazonaws\.com'
           - 's3://[a-zA-Z0-9._-]+'
           - 's3\.console\.aws\.amazon\.com/s3/buckets/[a-zA-Z0-9._-]+'
-          - 'amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
           - 'ec2-[0-9-]+\.cd-[a-z0-9-]+\.compute\.amazonaws\.com'

@@ -219,6 +219,8 @@ func parser(key string) []byte {
 		return recuLoadPoc("neutron/login")
 	case "found_keys":
 		return recuLoadPoc("found/keys")
+	case "found_spray":
+		return recuLoadPoc("found/spray")
 	case "found_auto":
 		return recuLoadPoc("found/auto")
 	case "found_filter_ext":
@@ -264,7 +266,7 @@ func main() {
 	} else if *need == "zombie" {
 		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template", "port", "socket", "http"}
 	} else if *need == "found" {
-		needs = []string{"found_keys", "found_auto", "found_filter_ext", "found_filter_dir"}
+		needs = []string{"found_keys", "found_spray", "found_auto", "found_filter_ext", "found_filter_dir"}
 	} else {
 		needs = strings.Split(*need, ",")
 	}
