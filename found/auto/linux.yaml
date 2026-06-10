@@ -5,19 +5,97 @@ info:
 
 paths:
   # 当前用户所有 dotfiles（.ssh, .aws, .config, .gnupg, .docker, .kube, ...）
-  - "~/.*"
+  - path: "~/.*"
+    tags: [dotfiles, user]
+  - path: "~/.docker"
+    tags: [docker, config]
+  - path: "~/.gitconfig"
+    tags: [git, config]
+  - path: "~/.git-credentials"
+    tags: [git, credential]
+  - path: "~/.ssh"
+    tags: [ssh, credential]
+  - path: "~/.netrc"
+    tags: [credential]
+  - path: "~/.config/git"
+    tags: [git, config]
+  - path: "~/.config/Code/User/settings.json"
+    tags: [ide, vscode, config]
+  - path: "~/.config/JetBrains"
+    tags: [ide, jetbrains, config]
   # 当前用户桌面和文档（可能有导出的凭据、配置备份）
-  - "~/Desktop"
-  - "~/Documents"
-  - "~/Downloads"
+  - path: "~/Desktop"
+    tags: [user-files]
+  - path: "~/Documents"
+    tags: [user-files]
+  - path: "~/Downloads"
+    tags: [user-files]
+  # Shell / REPL history
+  - path: "~/.bash_history"
+    tags: [bash, shell, history]
+  - path: "~/.zsh_history"
+    tags: [zsh, shell, history]
+  - path: "~/.sh_history"
+    tags: [sh, shell, history]
+  - path: "~/.history"
+    tags: [shell, history]
+  - path: "~/.mysql_history"
+    tags: [mysql, db, history]
+  - path: "~/.psql_history"
+    tags: [postgres, db, history]
+  - path: "~/.rediscli_history"
+    tags: [redis, db, history]
+  - path: "~/.python_history"
+    tags: [python, repl, history]
+  - path: "~/.local/share/fish/fish_history"
+    tags: [fish, shell, history]
   # 所有用户的 home 目录
-  - "/home/*"
+  - path: "/home/*"
+    tags: [home, user]
+  # 所有用户的 shell history
+  - path: "/home/*/.bash_history"
+    tags: [bash, shell, history]
+  - path: "/home/*/.zsh_history"
+    tags: [zsh, shell, history]
+  - path: "/home/*/.sh_history"
+    tags: [sh, shell, history]
+  - path: "/home/*/.history"
+    tags: [shell, history]
+  - path: "/home/*/.local/share/fish/fish_history"
+    tags: [fish, shell, history]
+  - path: "/home/*/.docker"
+    tags: [docker, config]
+  - path: "/home/*/.gitconfig"
+    tags: [git, config]
+  - path: "/home/*/.git-credentials"
+    tags: [git, credential]
   # root 用户
-  - "/root"
+  - path: "/root"
+    tags: [home, root]
+  - path: "/root/.bash_history"
+    tags: [bash, shell, history]
+  - path: "/root/.zsh_history"
+    tags: [zsh, shell, history]
+  - path: "/root/.sh_history"
+    tags: [sh, shell, history]
+  - path: "/root/.history"
+    tags: [shell, history]
+  - path: "/root/.docker"
+    tags: [docker, config]
   # 系统配置（ssh, ssl, nginx, apache, cron, ...）
-  - "/etc"
+  - path: "/etc"
+    tags: [system, config]
+  - path: "/etc/docker"
+    tags: [docker, config]
+  - path: "/var/log"
+    tags: [log]
+  - path: "/var/lib/docker/containers/*/*.log"
+    tags: [docker, log]
   # 第三方应用和服务
-  - "/opt"
+  - path: "/opt"
+    tags: [app, config]
   # Web 应用代码和配置
-  - "/var/www"
-  - "/srv"
+  - path: "/var/www"
+    tags: [web, config]
+  - path: "/srv"
+    tags: [web, config]

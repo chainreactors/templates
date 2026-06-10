@@ -5,17 +5,84 @@ info:
 
 paths:
   # 当前用户所有 dotfiles
-  - "~/.*"
+  - path: "~/.*"
+    tags: [dotfiles, user]
+  - path: "~/.docker"
+    tags: [docker, config]
+  - path: "~/.gitconfig"
+    tags: [git, config]
+  - path: "~/.git-credentials"
+    tags: [git, credential]
+  - path: "~/.ssh"
+    tags: [ssh, credential]
+  - path: "~/.netrc"
+    tags: [credential]
+  - path: "~/.config/git"
+    tags: [git, config]
+  - path: "~/.config/Code/User/settings.json"
+    tags: [ide, vscode, config]
   # 桌面和文档
-  - "~/Desktop"
-  - "~/Documents"
-  - "~/Downloads"
+  - path: "~/Desktop"
+    tags: [user-files]
+  - path: "~/Documents"
+    tags: [user-files]
+  - path: "~/Downloads"
+    tags: [user-files]
+  # Shell / REPL history
+  - path: "~/.bash_history"
+    tags: [bash, shell, history]
+  - path: "~/.zsh_history"
+    tags: [zsh, shell, history]
+  - path: "~/.sh_history"
+    tags: [sh, shell, history]
+  - path: "~/.history"
+    tags: [shell, history]
+  - path: "~/.mysql_history"
+    tags: [mysql, db, history]
+  - path: "~/.psql_history"
+    tags: [postgres, db, history]
+  - path: "~/.rediscli_history"
+    tags: [redis, db, history]
+  - path: "~/.python_history"
+    tags: [python, repl, history]
+  - path: "~/.local/share/fish/fish_history"
+    tags: [fish, shell, history]
   # macOS 应用数据（Keychains, Application Support, Preferences, ...）
-  - "~/Library"
+  - path: "~/Library"
+    tags: [app, config]
+  - path: "~/Library/Application Support/Code/User/settings.json"
+    tags: [ide, vscode, config]
+  - path: "~/Library/Application Support/JetBrains"
+    tags: [ide, jetbrains, config]
+  - path: "~/Library/Logs"
+    tags: [log]
   # 所有用户
-  - "/Users/*"
+  - path: "/Users/*"
+    tags: [home, user]
+  # 所有用户的 shell history
+  - path: "/Users/*/.bash_history"
+    tags: [bash, shell, history]
+  - path: "/Users/*/.zsh_history"
+    tags: [zsh, shell, history]
+  - path: "/Users/*/.sh_history"
+    tags: [sh, shell, history]
+  - path: "/Users/*/.history"
+    tags: [shell, history]
+  - path: "/Users/*/.local/share/fish/fish_history"
+    tags: [fish, shell, history]
+  - path: "/Users/*/.docker"
+    tags: [docker, config]
+  - path: "/Users/*/.gitconfig"
+    tags: [git, config]
+  - path: "/Users/*/.git-credentials"
+    tags: [git, credential]
   # 系统配置
-  - "/etc"
+  - path: "/etc"
+    tags: [system, config]
+  - path: "/Library/Logs"
+    tags: [log]
   # Homebrew 等第三方
-  - "/opt"
-  - "/usr/local/etc"
+  - path: "/opt"
+    tags: [app, config]
+  - path: "/usr/local/etc"
+    tags: [app, config]
