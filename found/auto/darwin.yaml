@@ -12,11 +12,11 @@ paths:
   - path: "~/.gitconfig"
     tags: [git, config]
   - path: "~/.git-credentials"
-    tags: [git, credential]
+    tags: [git, config]
   - path: "~/.ssh"
-    tags: [ssh, credential]
+    tags: [ssh, config]
   - path: "~/.netrc"
-    tags: [credential]
+    tags: [config]
   - path: "~/.config/git"
     tags: [git, config]
   - path: "~/.config/Code/User/settings.json"
@@ -38,11 +38,11 @@ paths:
   - path: "~/.history"
     tags: [shell, history]
   - path: "~/.mysql_history"
-    tags: [mysql, db, history]
+    tags: [mysql, config, history]
   - path: "~/.psql_history"
-    tags: [postgres, db, history]
+    tags: [postgres, config, history]
   - path: "~/.rediscli_history"
-    tags: [redis, db, history]
+    tags: [redis, config, history]
   - path: "~/.python_history"
     tags: [python, repl, history]
   - path: "~/.local/share/fish/fish_history"
@@ -75,7 +75,7 @@ paths:
   - path: "/Users/*/.gitconfig"
     tags: [git, config]
   - path: "/Users/*/.git-credentials"
-    tags: [git, credential]
+    tags: [git, config]
   # 系统配置
   - path: "/etc"
     tags: [system, config]

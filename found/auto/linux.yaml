@@ -12,11 +12,11 @@ paths:
   - path: "~/.gitconfig"
     tags: [git, config]
   - path: "~/.git-credentials"
-    tags: [git, credential]
+    tags: [git, config]
   - path: "~/.ssh"
-    tags: [ssh, credential]
+    tags: [ssh, config]
   - path: "~/.netrc"
-    tags: [credential]
+    tags: [config]
   - path: "~/.config/git"
     tags: [git, config]
   - path: "~/.config/Code/User/settings.json"
@@ -40,11 +40,11 @@ paths:
   - path: "~/.history"
     tags: [shell, history]
   - path: "~/.mysql_history"
-    tags: [mysql, db, history]
+    tags: [mysql, config, history]
   - path: "~/.psql_history"
-    tags: [postgres, db, history]
+    tags: [postgres, config, history]
   - path: "~/.rediscli_history"
-    tags: [redis, db, history]
+    tags: [redis, config, history]
   - path: "~/.python_history"
     tags: [python, repl, history]
   - path: "~/.local/share/fish/fish_history"
@@ -68,7 +68,7 @@ paths:
   - path: "/home/*/.gitconfig"
     tags: [git, config]
   - path: "/home/*/.git-credentials"
-    tags: [git, credential]
+    tags: [git, config]
   # root 用户
   - path: "/root"
     tags: [home, root]
@@ -96,6 +96,6 @@ paths:
     tags: [app, config]
   # Web 应用代码和配置
   - path: "/var/www"
-    tags: [web, config]
+    tags: [log, config]
   - path: "/srv"
-    tags: [web, config]
+    tags: [log, config]

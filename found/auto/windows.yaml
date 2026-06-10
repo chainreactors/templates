@@ -12,9 +12,9 @@ paths:
   - path: "%USERPROFILE%\\.gitconfig"
     tags: [git, config]
   - path: "%USERPROFILE%\\.git-credentials"
-    tags: [git, credential]
+    tags: [git, config]
   - path: "%USERPROFILE%\\.ssh"
-    tags: [ssh, credential]
+    tags: [ssh, config]
   # 桌面和文档（可能有导出的凭据、配置备份）
   - path: "%USERPROFILE%\\Desktop"
     tags: [user-files]
@@ -42,10 +42,10 @@ paths:
   - path: "C:\\Users\\*\\.gitconfig"
     tags: [git, config]
   - path: "C:\\Users\\*\\.git-credentials"
-    tags: [git, credential]
+    tags: [git, config]
   # 所有用户的 PowerShell history
   - path: "C:\\Users\\*\\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadLine\\ConsoleHost_history.txt"
     tags: [shell, powershell, history]
   # IIS Web 应用
   - path: "C:\\inetpub"
-    tags: [web, config]
+    tags: [log, config]
