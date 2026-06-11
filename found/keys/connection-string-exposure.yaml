@@ -1,0 +1,25 @@
+id: connection-string-exposure
+
+info:
+  name: Database Connection String with Credentials
+  author: proton
+  severity: high
+  description: Detects database connection strings containing embedded credentials (user:pass@host) across common database protocols.
+  tags: keys,database,connection,password
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          # Generic URI with credentials: proto://user:pass@host
+          - "(?:mysql|postgres(?:ql)?|mongodb(?:\\+srv)?|redis(?:s)?|amqp|mssql|sqlserver|oracle|mariadb|cockroachdb)://[^\\s:]+:([^@\\s]+)@[^\\s]+"
+          # JDBC with credentials: jdbc:mysql://user:pass@host or ;user=x;password=y
+          - "jdbc:[a-z]+://[^\\s:]+:([^@\\s]+)@[^\\s]+"
+          - "jdbc:[a-z]+://[^\\s]*[;?](?:user|username)=[^;\\s]+[;?]password=([^;\\s]+)"
+          # ODBC/ADO.NET: Password=xxx or Pwd=xxx
+          - "(?i)(?:Server|Data\\s*Source)=[^;]+;[^;]*(?:Password|Pwd)=([^;\\s]+)"
+          # DSN format: host=x password=y
+          - "(?:host|server)=[^\\s]+\\s[^\\n]*password=([^\\s]+)"

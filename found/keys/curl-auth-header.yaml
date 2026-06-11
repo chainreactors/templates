@@ -1,0 +1,20 @@
+id: curl-auth-header
+
+info:
+  name: curl/httpie Auth Header Exposure
+  author: proton
+  severity: medium
+  description: Detects API tokens and credentials passed via HTTP headers in curl, httpie, or wget commands. Common in shell history and CI scripts.
+  tags: keys,curl,http,token,history
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          # curl -H "Authorization: Bearer xxx" or -H "Authorization: token xxx"
+          - "(?:curl|http|https|wget)\\s[^\\n]*[\"'](?:Authorization|X-Api-Key|X-Auth-Token):\\s*(\\S+)[\"']"
+          # curl -H "X-API-KEY: xxx"
+          - "(?:curl|http)\\s[^\\n]*-[hH]\\s*[\"'](?:X-(?:API|Auth)[^:]*|Authorization):\\s*(?:Bearer\\s+|Basic\\s+|Token\\s+|token\\s+)?(\\S{20,})[\"']"
