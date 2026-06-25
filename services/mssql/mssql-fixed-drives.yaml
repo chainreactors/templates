@@ -1,0 +1,16 @@
+id: mssql-fixed-drives
+service: [mssql]
+info:
+  name: MSSQL Fixed Drives Enumeration
+  severity: info
+  tags: mssql,post-exploit,discovery
+
+services:
+  - ops:
+      - db: "EXEC xp_fixeddrives"
+        name: drives
+    extractors:
+      - type: regex
+        name: mssql_drives
+        part: drives
+        regex: ['(?m)^(.+)$']

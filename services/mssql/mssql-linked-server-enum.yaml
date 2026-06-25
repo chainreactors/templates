@@ -1,0 +1,26 @@
+id: mssql-linked-server-enum
+service: [mssql]
+info:
+  name: MSSQL Linked Server Enumeration
+  severity: high
+  tags: mssql,post-exploit,lateral,linked
+
+services:
+  - ops:
+      - db: "SELECT 'link=' + name + ':' + ISNULL(data_source,'') + ':' + ISNULL(provider,'') + ':' + ISNULL(provider_string,'') FROM sys.servers WHERE is_linked = 1"
+        name: links
+      - db: "SELECT 'login_map=' + s.name + ':' + ISNULL(ll.remote_name,'') FROM sys.linked_logins ll JOIN sys.servers s ON ll.server_id = s.server_id"
+        name: login_maps
+    matchers:
+      - type: word
+        part: links
+        words: ["link="]
+    extractors:
+      - type: regex
+        name: mssql_linked_servers
+        part: links
+        regex: ['(?m)^link=(.+)$']
+      - type: regex
+        name: mssql_linked_logins
+        part: login_maps
+        regex: ['(?m)^login_map=(.+)$']

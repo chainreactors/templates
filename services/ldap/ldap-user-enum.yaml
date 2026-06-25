@@ -1,0 +1,25 @@
+id: ldap-user-enum
+service: [ldap]
+info:
+  name: LDAP User Enumeration
+  severity: info
+  tags: ldap,post-exploit,ad
+
+services:
+  - ops:
+      - ldap:
+          base-dn: "{{base_dn}}"
+          filter: "(&(objectCategory=person)(objectClass=user))"
+          attrs: [sAMAccountName, cn, mail, description, lastLogon]
+    matchers:
+      - type: word
+        words: ["sAMAccountName"]
+    extractors:
+      - type: regex
+        name: user_list
+        regex: ['sAMAccountName:\s*(\S+)']
+        group: 1
+      - type: regex
+        name: user_descriptions
+        regex: ['description:\s*(.+)']
+        group: 1

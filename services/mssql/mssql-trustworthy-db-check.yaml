@@ -1,0 +1,26 @@
+id: mssql-trustworthy-db-check
+service: [mssql]
+info:
+  name: MSSQL Trustworthy Database Check
+  severity: high
+  tags: mssql,post-exploit,privesc,trustworthy
+
+services:
+  - ops:
+      - db: "SELECT 'trustworthy=' + name + ':owner=' + SUSER_SNAME(owner_sid) FROM sys.databases WHERE is_trustworthy_on = 1 AND name NOT IN ('msdb')"
+        name: trustworthy_dbs
+      - db: "SELECT 'db_owner_member=' + dp.name FROM sys.database_role_members drm JOIN sys.database_principals dp ON drm.member_principal_id = dp.principal_id JOIN sys.database_principals dr ON drm.role_principal_id = dr.principal_id WHERE dr.name = 'db_owner'"
+        name: db_owners
+    matchers:
+      - type: word
+        part: trustworthy_dbs
+        words: ["trustworthy="]
+    extractors:
+      - type: regex
+        name: mssql_trustworthy_databases
+        part: trustworthy_dbs
+        regex: ['(?m)^trustworthy=(.+)$']
+      - type: regex
+        name: mssql_db_owner_members
+        part: db_owners
+        regex: ['(?m)^db_owner_member=(.+)$']

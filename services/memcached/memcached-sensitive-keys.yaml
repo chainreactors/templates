@@ -1,0 +1,26 @@
+id: memcached-sensitive-keys
+service: [memcached]
+info:
+  name: Memcached Sensitive Key Discovery
+  severity: medium
+  tags: memcached,post-exploit,credential
+
+services:
+  - ops:
+      - kv: "KEYS *session*"
+        name: session_keys
+      - kv: "KEYS *token*"
+        name: token_keys
+      - kv: "KEYS *password*"
+        name: password_keys
+      - kv: "KEYS *secret*"
+        name: secret_keys
+    matchers-condition: or
+    matchers:
+      - type: dsl
+        dsl:
+          - "len(session_keys) > 0"
+          - "len(token_keys) > 0"
+          - "len(password_keys) > 0"
+          - "len(secret_keys) > 0"
+        condition: or

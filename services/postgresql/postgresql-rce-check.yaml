@@ -1,0 +1,39 @@
+id: postgresql-rce-check
+service: [postgresql]
+info:
+  name: PostgreSQL Command Execution Check
+  severity: critical
+  tags: postgresql,post-exploit,rce
+
+services:
+  - ops:
+      - db: "SELECT current_user"
+        name: current_user
+      - db: "SELECT usesuper FROM pg_catalog.pg_user WHERE usename = current_user"
+        name: is_super
+    matchers:
+      - type: word
+        part: is_super
+        words: ["t"]
+    extractors:
+      - type: regex
+        name: pg_user
+        internal: true
+        part: current_user
+        regex: ['(\w+)']
+
+  - ops:
+      - db: "SELECT lanname FROM pg_language WHERE lanname = 'plpythonu' OR lanname = 'plpython3u'"
+        name: python_lang
+    matchers:
+      - type: word
+        part: python_lang
+        words:
+          - "plpythonu"
+          - "plpython3u"
+        condition: or
+    extractors:
+      - type: regex
+        name: available_lang
+        part: python_lang
+        regex: ['(plpython\w+)']

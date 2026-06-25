@@ -1,0 +1,16 @@
+id: postgresql-user-role-enum
+service: [postgresql]
+info:
+  name: PostgreSQL User and Role Enumeration
+  severity: medium
+  tags: postgresql,post-exploit,credential
+
+services:
+  - ops:
+      - db: "SELECT 'user=' || rolname || ':super=' || rolsuper || ':login=' || rolcanlogin || ':createdb=' || rolcreatedb || ':createrole=' || rolcreaterole FROM pg_roles ORDER BY rolname"
+        name: roles
+    extractors:
+      - type: regex
+        name: postgresql_users
+        part: roles
+        regex: ['(?m)^user=(.+)$']

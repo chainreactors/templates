@@ -1,0 +1,21 @@
+id: ftp-sensitive-files
+service: [ftp]
+info:
+  name: FTP Sensitive File Discovery
+  severity: medium
+  tags: ftp,post-exploit,credential
+
+services:
+  - ops:
+      - file:
+          list: "/"
+        name: root_listing
+    matchers:
+      - type: regex
+        part: root_listing
+        regex: ['(?i)(\.env|\.git|config|backup|\.sql|credential|\.key|\.pem|\.p12|\.htpasswd|\.pgpass|\.my\.cnf|\.netrc|web\.config)']
+    extractors:
+      - type: regex
+        name: sensitive_entries
+        part: root_listing
+        regex: ['(?i)(\S*(?:\.env|\.git|config|backup|\.sql|credential|\.key|\.pem|\.p12|\.htpasswd|\.pgpass|\.my\.cnf|\.netrc|web\.config)\S*)']

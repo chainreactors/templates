@@ -1,0 +1,42 @@
+id: ftp-read-config
+service: [ftp]
+info:
+  name: FTP Configuration File Read
+  severity: high
+  tags: ftp,post-exploit,credential
+
+services:
+  - ops:
+      - file:
+          read: "/.env"
+        name: dotenv
+    matchers:
+      - type: word
+        part: dotenv
+        words:
+          - "DB_PASSWORD"
+          - "SECRET_KEY"
+          - "API_KEY"
+          - "AWS_ACCESS"
+        condition: or
+    extractors:
+      - type: regex
+        name: env_secrets
+        part: dotenv
+        regex: ['(?i)((?:password|secret|key|token)\s*=\s*\S+)']
+
+  - ops:
+      - file:
+          read: "/web.config"
+        name: webconfig
+    matchers:
+      - type: word
+        part: webconfig
+        words: ["connectionString", "password"]
+        condition: or
+    extractors:
+      - type: regex
+        name: connection_strings
+        part: webconfig
+        regex: ['connectionString="([^"]+)"']
+        group: 1

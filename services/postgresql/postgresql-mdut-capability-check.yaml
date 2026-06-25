@@ -1,0 +1,52 @@
+id: postgresql-mdut-capability-check
+service: [postgresql]
+info:
+  name: PostgreSQL MDUT Program Execution Capability Check
+  severity: high
+  tags: postgresql,post-exploit,mdut,rce
+
+services:
+  - ops:
+      - db: "SELECT 'server_version=' || current_setting('server_version')"
+        name: server_version
+      - db: "SELECT 'user=' || current_user"
+        name: current_user
+      - db: "SELECT 'superuser=' || CASE WHEN rolsuper THEN 'yes' ELSE 'no' END FROM pg_roles WHERE rolname = current_user"
+        name: is_superuser
+      - db: "SELECT 'copy_program=' || CASE WHEN (SELECT rolsuper FROM pg_roles WHERE rolname = current_user) OR pg_has_role(current_user, 'pg_execute_server_program', 'member') THEN 'yes' ELSE 'no' END"
+        name: copy_program
+      - db: "SELECT 'read_server_files=' || CASE WHEN (SELECT rolsuper FROM pg_roles WHERE rolname = current_user) OR pg_has_role(current_user, 'pg_read_server_files', 'member') THEN 'yes' ELSE 'no' END"
+        name: read_server_files
+      - db: "SELECT 'lang=' || lanname FROM pg_language WHERE lanname IN ('plpythonu','plpython3u')"
+        name: python_lang
+    extractors:
+      - type: regex
+        name: pg_server_version
+        part: server_version
+        regex: ['(?m)^server_version=(\d+(\.\d+)*)']
+        group: 1
+      - type: regex
+        name: pg_user
+        part: current_user
+        regex: ['(?m)^user=(\w+)']
+        group: 1
+      - type: regex
+        name: pg_superuser
+        part: is_superuser
+        regex: ['(?m)^superuser=(yes|no)']
+        group: 1
+      - type: regex
+        name: pg_copy_program
+        part: copy_program
+        regex: ['(?m)^copy_program=(yes|no)']
+        group: 1
+      - type: regex
+        name: pg_read_server_files
+        part: read_server_files
+        regex: ['(?m)^read_server_files=(yes|no)']
+        group: 1
+      - type: regex
+        name: available_lang
+        part: python_lang
+        regex: ['(?m)^lang=(plpython\w+)']
+        group: 1

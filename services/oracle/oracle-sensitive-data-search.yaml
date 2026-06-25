@@ -1,0 +1,20 @@
+id: oracle-sensitive-data-search
+service: [oracle]
+info:
+  name: Oracle Sensitive Column Discovery
+  severity: high
+  tags: oracle,post-exploit,credential,sensitive
+
+services:
+  - ops:
+      - db: "SELECT 'col=' || OWNER || '.' || TABLE_NAME || '.' || COLUMN_NAME FROM ALL_TAB_COLUMNS WHERE (LOWER(COLUMN_NAME) LIKE '%password%' OR LOWER(COLUMN_NAME) LIKE '%passwd%' OR LOWER(COLUMN_NAME) LIKE '%secret%' OR LOWER(COLUMN_NAME) LIKE '%credential%' OR LOWER(COLUMN_NAME) LIKE '%token%' OR LOWER(COLUMN_NAME) LIKE '%api_key%') AND OWNER NOT IN ('SYS','SYSTEM','CTXSYS','MDSYS','OLAPSYS','XDB','WMSYS','ORDDATA','ORDSYS')"
+        name: columns
+    matchers:
+      - type: word
+        part: columns
+        words: ["col="]
+    extractors:
+      - type: regex
+        name: oracle_sensitive_columns
+        part: columns
+        regex: ['(?m)^col=(.+)$']

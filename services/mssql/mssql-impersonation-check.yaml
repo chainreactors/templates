@@ -1,0 +1,31 @@
+id: mssql-impersonation-check
+service: [mssql]
+info:
+  name: MSSQL Impersonation Privilege Check
+  severity: high
+  tags: mssql,post-exploit,privesc,impersonate
+
+services:
+  - ops:
+      - db: "SELECT 'impersonate=' + dp.name FROM sys.server_permissions sp JOIN sys.server_principals dp ON sp.grantor_principal_id = dp.principal_id WHERE sp.permission_name = 'IMPERSONATE' AND sp.grantee_principal_id = (SELECT principal_id FROM sys.server_principals WHERE name = SYSTEM_USER)"
+        name: server_impersonate
+      - db: "SELECT 'db_impersonate=' + dp.name FROM sys.database_permissions dbp JOIN sys.database_principals dp ON dbp.grantor_principal_id = dp.principal_id WHERE dbp.permission_name = 'IMPERSONATE' AND dbp.grantee_principal_id = USER_ID()"
+        name: db_impersonate
+    matchers:
+      - type: word
+        part: server_impersonate
+        words: ["impersonate="]
+        condition: or
+      - type: word
+        part: db_impersonate
+        words: ["db_impersonate="]
+        condition: or
+    extractors:
+      - type: regex
+        name: mssql_server_impersonate_targets
+        part: server_impersonate
+        regex: ['(?m)^impersonate=(.+)$']
+      - type: regex
+        name: mssql_db_impersonate_targets
+        part: db_impersonate
+        regex: ['(?m)^db_impersonate=(.+)$']

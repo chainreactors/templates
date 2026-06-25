@@ -1,0 +1,37 @@
+id: oracle-privesc-check
+service: [oracle]
+info:
+  name: Oracle Privilege Escalation Check
+  severity: high
+  tags: oracle,post-exploit,privesc
+
+services:
+  - ops:
+      - db: "SELECT * FROM session_privs"
+        name: privs
+      - db: "SELECT granted_role FROM user_role_privs"
+        name: roles
+    matchers-condition: or
+    matchers:
+      - type: word
+        part: privs
+        words:
+          - "CREATE LIBRARY"
+          - "CREATE ANY PROCEDURE"
+          - "EXECUTE ANY PROCEDURE"
+        condition: or
+      - type: word
+        part: roles
+        words:
+          - "DBA"
+          - "JAVASYSPRIV"
+        condition: or
+    extractors:
+      - type: regex
+        name: dangerous_privs
+        part: privs
+        regex: ['(CREATE LIBRARY|CREATE ANY PROCEDURE|EXECUTE ANY PROCEDURE)']
+      - type: regex
+        name: admin_roles
+        part: roles
+        regex: ['(DBA|JAVASYSPRIV)']

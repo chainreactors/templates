@@ -1,0 +1,52 @@
+id: redis-info-extended
+service: [redis]
+info:
+  name: Redis Extended Information Gathering
+  severity: info
+  tags: redis,post-exploit,gather
+
+services:
+  - ops:
+      - kv: "INFO server"
+        name: server_info
+      - kv: "INFO replication"
+        name: repl_info
+      - kv: "INFO memory"
+        name: mem_info
+      - kv: "INFO clients"
+        name: client_info
+      - kv: "CONFIG GET masterauth"
+        name: masterauth
+      - kv: "CONFIG GET requirepass"
+        name: requirepass
+    extractors:
+      - type: regex
+        name: redis_version
+        part: server_info
+        regex: ['(?m)^redis_version:(.+)$']
+        group: 1
+      - type: regex
+        name: redis_os
+        part: server_info
+        regex: ['(?m)^os:(.+)$']
+        group: 1
+      - type: regex
+        name: redis_role
+        part: repl_info
+        regex: ['(?m)^role:(.+)$']
+        group: 1
+      - type: regex
+        name: redis_connected_slaves
+        part: repl_info
+        regex: ['(?m)^connected_slaves:(.+)$']
+        group: 1
+      - type: regex
+        name: redis_used_memory_human
+        part: mem_info
+        regex: ['(?m)^used_memory_human:(.+)$']
+        group: 1
+      - type: regex
+        name: redis_connected_clients
+        part: client_info
+        regex: ['(?m)^connected_clients:(.+)$']
+        group: 1

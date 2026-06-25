@@ -1,0 +1,27 @@
+id: mssql-info-gather
+service: [mssql]
+info:
+  name: MSSQL Information Gathering
+  severity: info
+  tags: mssql,post-exploit,gather
+
+services:
+  - ops:
+      - db: "SELECT @@VERSION"
+        name: version
+      - db: "SELECT SYSTEM_USER"
+        name: current_user
+      - db: "SELECT IS_SRVROLEMEMBER('sysadmin')"
+        name: is_sysadmin
+      - db: "SHOW DATABASES"
+        name: databases
+    extractors:
+      - type: regex
+        name: mssql_version
+        part: version
+        regex: ['Microsoft SQL Server\s+(\d+)']
+        group: 1
+      - type: regex
+        name: mssql_user
+        part: current_user
+        regex: ['(\S+)']

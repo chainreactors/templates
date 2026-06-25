@@ -1,0 +1,29 @@
+id: postgresql-info-gather
+service: [postgresql]
+info:
+  name: PostgreSQL Information Gathering
+  severity: info
+  tags: postgresql,post-exploit,gather
+
+services:
+  - ops:
+      - db: "SELECT version()"
+        name: version
+      - db: "SELECT current_user"
+        name: current_user
+      - db: "SELECT current_database()"
+        name: current_db
+      - db: "SHOW DATABASES"
+        name: databases
+      - db: "SELECT usename, usesuper FROM pg_catalog.pg_user"
+        name: users
+    extractors:
+      - type: regex
+        name: pg_version
+        part: version
+        regex: ['PostgreSQL\s+(\d+\.\d+)']
+        group: 1
+      - type: regex
+        name: superusers
+        part: users
+        regex: ['(\w+)\t(t)']

@@ -1,0 +1,19 @@
+id: ssh-env-files
+service: [ssh]
+info:
+  name: SSH Environment File Discovery
+  severity: medium
+  tags: ssh,post-exploit,credential
+
+services:
+  - ops:
+      - shell: "find /home /opt /srv /var/www -maxdepth 3 -name '.env*' -type f 2>/dev/null"
+        name: env_paths
+    matchers:
+      - type: dsl
+        dsl: ["len(env_paths) > 0"]
+    extractors:
+      - type: regex
+        name: env_files
+        part: env_paths
+        regex: ['(.+\.env\S*)']

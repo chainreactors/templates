@@ -1,0 +1,52 @@
+id: mssql-mdut-capability-check
+service: [mssql]
+info:
+  name: MSSQL MDUT Execution Surface Capability Check
+  severity: high
+  tags: mssql,post-exploit,mdut,rce
+
+services:
+  - ops:
+      - db: "SELECT 'version=' + @@VERSION"
+        name: version
+      - db: "SELECT 'user=' + SYSTEM_USER"
+        name: current_user
+      - db: "SELECT 'sysadmin=' + CAST(IS_SRVROLEMEMBER('sysadmin') AS varchar(10))"
+        name: is_sysadmin
+      - db: "SELECT 'config=' + name + ':' + CAST(value_in_use AS varchar(10)) FROM sys.configurations WHERE name IN ('xp_cmdshell', 'Ole Automation Procedures', 'clr enabled')"
+        name: feature_config
+      - db: "SELECT 'db=' + DB_NAME()"
+        name: current_db
+      - db: "SELECT 'trustworthy=' + name + ':' + CAST(is_trustworthy_on AS varchar(10)) FROM sys.databases WHERE name = DB_NAME()"
+        name: trustworthy
+      - db: "SELECT 'kitmain=' + CASE WHEN OBJECT_ID('dbo.kitmain', 'P') IS NULL THEN 'no' ELSE 'yes' END"
+        name: clr_proc
+    extractors:
+      - type: regex
+        name: mssql_version
+        part: version
+        regex: ['(?m)^version=Microsoft SQL Server\s+([^\r\n]+)']
+        group: 1
+      - type: regex
+        name: mssql_user
+        part: current_user
+        regex: ['(?m)^user=(\S+)']
+        group: 1
+      - type: regex
+        name: mssql_sysadmin
+        part: is_sysadmin
+        regex: ['(?m)^sysadmin=([01])']
+        group: 1
+      - type: regex
+        name: mssql_execution_configs
+        part: feature_config
+        regex: ['(?m)^config=(xp_cmdshell|Ole Automation Procedures|clr enabled):([01])']
+      - type: regex
+        name: mssql_trustworthy_db
+        part: trustworthy
+        regex: ['(?m)^trustworthy=([^:\r\n]+):([01])']
+      - type: regex
+        name: mssql_kitmain_present
+        part: clr_proc
+        regex: ['(?m)^kitmain=(yes|no)']
+        group: 1

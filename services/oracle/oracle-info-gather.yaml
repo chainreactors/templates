@@ -1,0 +1,27 @@
+id: oracle-info-gather
+service: [oracle]
+info:
+  name: Oracle Information Gathering
+  severity: info
+  tags: oracle,post-exploit,gather
+
+services:
+  - ops:
+      - db: "SELECT banner FROM v$version WHERE ROWNUM = 1"
+        name: version
+      - db: "SELECT SYS_CONTEXT('USERENV','SESSION_USER') FROM dual"
+        name: current_user
+      - db: "SHOW DATABASES"
+        name: schemas
+      - db: "SELECT username, account_status FROM dba_users WHERE account_status = 'OPEN'"
+        name: active_users
+    extractors:
+      - type: regex
+        name: oracle_version
+        part: version
+        regex: ['Oracle Database\s+(\S+)']
+        group: 1
+      - type: regex
+        name: user_list
+        part: active_users
+        regex: ['(\w+)\tOPEN']

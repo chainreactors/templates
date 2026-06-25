@@ -1,0 +1,42 @@
+id: oracle-mdut-capability-check
+service: [oracle]
+info:
+  name: Oracle MDUT Java and Scheduler Capability Check
+  severity: high
+  tags: oracle,post-exploit,mdut,rce,privesc
+
+services:
+  - ops:
+      - db: "SELECT 'version=' || banner FROM v$version WHERE ROWNUM = 1"
+        name: version
+      - db: "SELECT 'is_dba=' || userenv('ISDBA') FROM dual"
+        name: is_dba
+      - db: "SELECT 'priv=' || privilege FROM session_privs WHERE privilege IN ('CREATE JOB','CREATE EXTERNAL JOB','CREATE ANY JOB','CREATE PROCEDURE','CREATE ANY PROCEDURE','EXECUTE ANY PROCEDURE','CREATE JAVA')"
+        name: privs
+      - db: "SELECT 'role=' || granted_role FROM user_role_privs WHERE granted_role IN ('DBA','JAVAUSERPRIV','JAVASYSPRIV','SCHEDULER_ADMIN')"
+        name: roles
+      - db: "SELECT 'mdut_object=' || object_name FROM all_objects WHERE object_name IN ('SHELLRUN','FILERUN')"
+        name: mdut_objects
+    extractors:
+      - type: regex
+        name: oracle_version
+        part: version
+        regex: ['(?m)^version=Oracle Database\s+(\S+)']
+        group: 1
+      - type: regex
+        name: oracle_is_dba
+        part: is_dba
+        regex: ['(?m)^is_dba=(TRUE|FALSE|YES|NO)']
+        group: 1
+      - type: regex
+        name: oracle_scheduler_java_privs
+        part: privs
+        regex: ['(?m)^priv=(CREATE JOB|CREATE EXTERNAL JOB|CREATE ANY JOB|CREATE PROCEDURE|CREATE ANY PROCEDURE|EXECUTE ANY PROCEDURE|CREATE JAVA)']
+      - type: regex
+        name: oracle_admin_roles
+        part: roles
+        regex: ['(?m)^role=(DBA|JAVAUSERPRIV|JAVASYSPRIV|SCHEDULER_ADMIN)']
+      - type: regex
+        name: oracle_mdut_functions
+        part: mdut_objects
+        regex: ['(?m)^mdut_object=(SHELLRUN|FILERUN)']

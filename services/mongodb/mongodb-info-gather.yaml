@@ -1,0 +1,19 @@
+id: mongodb-info-gather
+service: [mongodb]
+info:
+  name: MongoDB Information Gathering
+  severity: info
+  tags: mongodb,post-exploit,gather
+
+services:
+  - ops:
+      - db: "SHOW DATABASES"
+        name: databases
+    matchers:
+      - type: dsl
+        dsl: ["len(databases) > 0"]
+    extractors:
+      - type: regex
+        name: db_list
+        part: databases
+        regex: ['(\S+)']

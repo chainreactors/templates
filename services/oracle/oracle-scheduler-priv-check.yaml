@@ -1,0 +1,28 @@
+id: oracle-scheduler-priv-check
+service: [oracle]
+info:
+  name: Oracle Scheduler and Execution Privilege Check
+  severity: high
+  tags: oracle,post-exploit,rce,check
+
+services:
+  - ops:
+      - db: "SELECT 'sched_priv=' || privilege FROM session_privs WHERE privilege IN ('CREATE JOB','CREATE EXTERNAL JOB','CREATE ANY JOB','MANAGE SCHEDULER')"
+        name: sched_privs
+      - db: "SELECT 'exec_priv=' || privilege FROM session_privs WHERE privilege IN ('CREATE PROCEDURE','CREATE ANY PROCEDURE','EXECUTE ANY PROCEDURE','CREATE JAVA','CREATE JAVA SOURCE')"
+        name: exec_privs
+      - db: "SELECT 'role=' || granted_role FROM user_role_privs WHERE granted_role IN ('DBA','JAVAUSERPRIV','JAVASYSPRIV','SCHEDULER_ADMIN')"
+        name: exec_roles
+    extractors:
+      - type: regex
+        name: oracle_scheduler_privs
+        part: sched_privs
+        regex: ['(?m)^sched_priv=(.+)$']
+      - type: regex
+        name: oracle_exec_privs
+        part: exec_privs
+        regex: ['(?m)^exec_priv=(.+)$']
+      - type: regex
+        name: oracle_exec_roles
+        part: exec_roles
+        regex: ['(?m)^role=(.+)$']

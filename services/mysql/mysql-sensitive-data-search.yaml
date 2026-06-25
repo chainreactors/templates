@@ -1,0 +1,20 @@
+id: mysql-sensitive-data-search
+service: [mysql]
+info:
+  name: MySQL Sensitive Column Discovery
+  severity: high
+  tags: mysql,post-exploit,credential,sensitive
+
+services:
+  - ops:
+      - db: "SELECT CONCAT('col=', TABLE_SCHEMA, '.', TABLE_NAME, '.', COLUMN_NAME) FROM INFORMATION_SCHEMA.COLUMNS WHERE (LOWER(COLUMN_NAME) LIKE '%password%' OR LOWER(COLUMN_NAME) LIKE '%passwd%' OR LOWER(COLUMN_NAME) LIKE '%secret%' OR LOWER(COLUMN_NAME) LIKE '%credential%' OR LOWER(COLUMN_NAME) LIKE '%token%' OR LOWER(COLUMN_NAME) LIKE '%api_key%' OR LOWER(COLUMN_NAME) LIKE '%apikey%' OR LOWER(COLUMN_NAME) LIKE '%ssn%' OR LOWER(COLUMN_NAME) LIKE '%credit_card%') AND TABLE_SCHEMA NOT IN ('mysql','information_schema','performance_schema','sys')"
+        name: columns
+    matchers:
+      - type: word
+        part: columns
+        words: ["col="]
+    extractors:
+      - type: regex
+        name: mysql_sensitive_columns
+        part: columns
+        regex: ['(?m)^col=(.+)$']

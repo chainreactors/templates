@@ -1,0 +1,37 @@
+id: ssh-docker-escape
+service: [ssh]
+info:
+  name: SSH Docker Container Escape Check
+  severity: high
+  tags: ssh,post-exploit,container
+
+services:
+  - ops:
+      - shell: "cat /proc/1/cgroup 2>/dev/null"
+        name: cgroup
+      - shell: "ls -la /.dockerenv 2>/dev/null"
+        name: dockerenv
+      - shell: "cat /proc/self/mountinfo 2>/dev/null | grep docker"
+        name: mountinfo
+    matchers-condition: or
+    matchers:
+      - type: word
+        part: cgroup
+        words: ["docker", "kubepods", "containerd"]
+        condition: or
+      - type: dsl
+        dsl: ["len(dockerenv) > 0"]
+
+  - ops:
+      - shell: "fdisk -l 2>/dev/null"
+        name: disks
+      - shell: "ls /dev/sd* /dev/vd* /dev/xvd* 2>/dev/null"
+        name: block_devs
+      - shell: "cat /proc/1/status 2>/dev/null | grep -i cap"
+        name: capabilities
+    extractors:
+      - type: regex
+        name: cap_flags
+        part: capabilities
+        regex: ['CapEff:\s+(\S+)']
+        group: 1

@@ -1,0 +1,45 @@
+id: redis-mdut-rogue-prereq-check
+service: [redis]
+info:
+  name: Redis MDUT Rogue Module Prerequisite Check
+  severity: high
+  tags: redis,post-exploit,mdut,rce
+
+services:
+  - ops:
+      - kv: "INFO server"
+        name: server_info
+      - kv: "CONFIG GET dir"
+        name: dir
+      - kv: "CONFIG GET dbfilename"
+        name: dbfilename
+      - kv: "CONFIG GET replica-read-only"
+        name: replica_read_only
+      - kv: "MODULE LIST"
+        name: modules
+    extractors:
+      - type: regex
+        name: redis_version
+        part: server_info
+        regex: ['redis_version:(\S+)']
+        group: 1
+      - type: regex
+        name: redis_arch_bits
+        part: server_info
+        regex: ['arch_bits:(\d+)']
+        group: 1
+      - type: regex
+        name: redis_dir
+        part: dir
+        regex: ['dir\s+([^\]\r\n]+)']
+        group: 1
+      - type: regex
+        name: redis_dbfilename
+        part: dbfilename
+        regex: ['dbfilename\s+([^\]\r\n]+)']
+        group: 1
+      - type: regex
+        name: redis_replica_read_only
+        part: replica_read_only
+        regex: ['replica-read-only\s+([^\]\s]+)']
+        group: 1

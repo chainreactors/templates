@@ -1,0 +1,44 @@
+id: mysql-udf-check
+service: [mysql]
+info:
+  name: MySQL UDF Privilege Escalation Check
+  severity: critical
+  tags: mysql,post-exploit,privesc
+
+services:
+  - ops:
+      - db: "SELECT @@version"
+        name: version
+      - db: "SELECT @@plugin_dir"
+        name: plugin_dir
+      - db: "SHOW VARIABLES LIKE 'secure_file_priv'"
+        name: file_priv
+    matchers:
+      - type: dsl
+        dsl: ["len(plugin_dir) > 0"]
+    extractors:
+      - type: regex
+        name: mysql_version
+        internal: true
+        part: version
+        regex: ['(\d+\.\d+\.\d+)']
+        group: 1
+      - type: regex
+        name: mysql_plugin_dir
+        part: plugin_dir
+        regex: ['([/\\\\].+)']
+        group: 1
+
+  - ops:
+      - db: "SELECT COUNT(*) AS cnt FROM mysql.func WHERE name='sys_exec'"
+        name: udf_exists
+    matchers:
+      - type: word
+        part: udf_exists
+        words: ["0"]
+        negative: true
+    extractors:
+      - type: regex
+        name: existing_udf
+        part: udf_exists
+        regex: ['(\d+)']

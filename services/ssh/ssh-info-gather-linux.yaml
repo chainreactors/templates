@@ -1,0 +1,46 @@
+id: ssh-info-gather-linux
+service: [ssh]
+info:
+  name: SSH Linux Information Gathering
+  severity: info
+  tags: ssh,post-exploit,gather,linux
+
+services:
+  - ops:
+      - shell: "uname -s 2>/dev/null"
+        name: os_check
+    matchers:
+      - type: word
+        part: os_check
+        words: ["Linux", "Darwin", "FreeBSD"]
+        condition: or
+
+  - ops:
+      - shell: "id"
+        name: whoami
+      - shell: "hostname"
+        name: hostname
+      - shell: "uname -a"
+        name: uname
+      - shell: "cat /etc/os-release 2>/dev/null | head -5"
+        name: os_release
+      - shell: "ip addr show 2>/dev/null || ifconfig 2>/dev/null"
+        name: network
+      - shell: "ss -tlnp 2>/dev/null || netstat -tlnp 2>/dev/null"
+        name: listening_ports
+    extractors:
+      - type: regex
+        name: uid
+        part: whoami
+        regex: ['uid=(\d+)']
+        group: 1
+      - type: regex
+        name: username
+        part: whoami
+        regex: ['uid=\d+\((\w+)\)']
+        group: 1
+      - type: regex
+        name: kernel
+        part: uname
+        regex: ['Linux\s+\S+\s+(\S+)']
+        group: 1

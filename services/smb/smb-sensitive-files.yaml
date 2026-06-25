@@ -1,0 +1,44 @@
+id: smb-sensitive-files
+service: [smb]
+info:
+  name: SMB Sensitive File Discovery
+  severity: medium
+  tags: smb,post-exploit,credential
+
+services:
+  - ops:
+      - file:
+          list: "/"
+        name: shares
+    extractors:
+      - type: regex
+        name: share_list
+        internal: true
+        part: shares
+        regex: ['(\S+)']
+
+  - ops:
+      - file:
+          list: "/SYSVOL"
+        name: sysvol
+    matchers:
+      - type: dsl
+        dsl: ["len(sysvol) > 0"]
+    extractors:
+      - type: regex
+        name: sysvol_entries
+        part: sysvol
+        regex: ['(.+)']
+
+  - ops:
+      - file:
+          list: "/NETLOGON"
+        name: netlogon
+    matchers:
+      - type: dsl
+        dsl: ["len(netlogon) > 0"]
+    extractors:
+      - type: regex
+        name: netlogon_entries
+        part: netlogon
+        regex: ['(.+)']

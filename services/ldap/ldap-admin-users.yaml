@@ -1,0 +1,21 @@
+id: ldap-admin-users
+service: [ldap]
+info:
+  name: LDAP Domain Admin Discovery
+  severity: high
+  tags: ldap,post-exploit,ad
+
+services:
+  - ops:
+      - ldap:
+          base-dn: "{{base_dn}}"
+          filter: "(&(objectCategory=person)(objectClass=user)(memberOf=CN=Domain Admins,CN=Users,{{base_dn}}))"
+          attrs: [sAMAccountName, cn, mail, memberOf]
+    matchers:
+      - type: word
+        words: ["sAMAccountName"]
+    extractors:
+      - type: regex
+        name: admin_accounts
+        regex: ['sAMAccountName:\s*(\S+)']
+        group: 1

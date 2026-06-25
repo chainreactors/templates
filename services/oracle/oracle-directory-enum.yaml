@@ -1,0 +1,16 @@
+id: oracle-directory-enum
+service: [oracle]
+info:
+  name: Oracle Directory Object Enumeration
+  severity: medium
+  tags: oracle,post-exploit,discovery
+
+services:
+  - ops:
+      - db: "SELECT 'dir=' || DIRECTORY_NAME || ':' || DIRECTORY_PATH FROM ALL_DIRECTORIES ORDER BY DIRECTORY_NAME"
+        name: directories
+    extractors:
+      - type: regex
+        name: oracle_directories
+        part: directories
+        regex: ['(?m)^dir=(.+)$']

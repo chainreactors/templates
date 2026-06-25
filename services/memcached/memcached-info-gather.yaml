@@ -1,0 +1,19 @@
+id: memcached-info-gather
+service: [memcached]
+info:
+  name: Memcached Information Gathering
+  severity: info
+  tags: memcached,post-exploit,gather
+
+services:
+  - ops:
+      - kv: "KEYS *"
+        name: all_keys
+    matchers:
+      - type: dsl
+        dsl: ["len(all_keys) > 0"]
+    extractors:
+      - type: regex
+        name: key_list
+        part: all_keys
+        regex: ['(\S+)']

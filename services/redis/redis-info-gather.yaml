@@ -1,0 +1,41 @@
+id: redis-info-gather
+service: [redis]
+info:
+  name: Redis Information Gathering
+  severity: info
+  tags: redis,post-exploit,gather
+
+services:
+  - ops:
+      - kv: "INFO server"
+        name: server_info
+      - kv: "INFO keyspace"
+        name: keyspace
+      - kv: "CONFIG GET requirepass"
+        name: requirepass
+      - kv: "CONFIG GET bind"
+        name: bind
+    extractors:
+      - type: regex
+        name: redis_version
+        part: server_info
+        regex: ['redis_version:(\S+)']
+        group: 1
+      - type: regex
+        name: os_info
+        part: server_info
+        regex: ['os:(.+)']
+        group: 1
+      - type: regex
+        name: bound_address
+        part: bind
+        regex: ['bind\s+(\S+)']
+        group: 1
+
+  - ops:
+      - kv: "KEYS *"
+        name: all_keys
+    extractors:
+      - type: dsl
+        name: key_count
+        dsl: ['len(all_keys)']

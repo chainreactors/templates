@@ -1,0 +1,20 @@
+id: smb-share-enum
+service: [smb]
+info:
+  name: SMB Share Enumeration
+  severity: info
+  tags: smb,post-exploit,gather
+
+services:
+  - ops:
+      - file:
+          list: "/"
+        name: shares
+    matchers:
+      - type: dsl
+        dsl: ["len(shares) > 0"]
+    extractors:
+      - type: regex
+        name: share_list
+        part: shares
+        regex: ['(\S+)']

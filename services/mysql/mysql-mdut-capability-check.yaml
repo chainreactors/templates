@@ -1,0 +1,48 @@
+id: mysql-mdut-capability-check
+service: [mysql]
+info:
+  name: MySQL MDUT UDF and File Capability Check
+  severity: high
+  tags: mysql,post-exploit,mdut,privesc,file-write
+
+services:
+  - ops:
+      - db: "SELECT CONCAT('udfinfo=', CONCAT_WS('~', VERSION(), @@version_compile_os, @@version_compile_machine))"
+        name: udfinfo
+      - db: "SELECT CONCAT('plugin_dir=', @@plugin_dir)"
+        name: plugin_dir
+      - db: "SELECT CONCAT('secure_file_priv=', IF(@@secure_file_priv IS NULL, '<NULL>', IF(@@secure_file_priv = '', '<empty>', @@secure_file_priv)))"
+        name: secure_file_priv
+      - db: "SELECT CONCAT('file_privilege=', IF(EXISTS(SELECT 1 FROM information_schema.user_privileges WHERE GRANTEE = CONCAT(\"'\", REPLACE(CURRENT_USER(), '@', \"'@'\"), \"'\") AND PRIVILEGE_TYPE = 'FILE'), 'yes', 'no'))"
+        name: file_privilege
+    extractors:
+      - type: regex
+        name: mysql_udf_platform
+        part: udfinfo
+        regex: ['(?m)^udfinfo=([^\r\n]+~[^\r\n]+~[^\r\n]+)']
+        group: 1
+      - type: regex
+        name: mysql_plugin_dir
+        part: plugin_dir
+        regex: ['(?m)^plugin_dir=([^\r\n]+)']
+        group: 1
+      - type: regex
+        name: mysql_secure_file_priv
+        part: secure_file_priv
+        regex: ['(?m)^secure_file_priv=(<NULL>|<empty>|[^\r\n]+)']
+        group: 1
+      - type: regex
+        name: mysql_file_privilege
+        part: file_privilege
+        regex: ['(?m)^file_privilege=(yes|no)']
+        group: 1
+
+  - ops:
+      - db: "SELECT CONCAT('udf_function_count=', COUNT(*)) FROM mysql.func WHERE name IN ('sys_eval','sys_exec','backshell')"
+        name: udf_functions
+    extractors:
+      - type: regex
+        name: mysql_existing_udf_functions
+        part: udf_functions
+        regex: ['(?m)^udf_function_count=(\d+)']
+        group: 1

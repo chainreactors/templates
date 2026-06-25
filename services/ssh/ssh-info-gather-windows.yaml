@@ -1,0 +1,38 @@
+id: ssh-info-gather-windows
+service: [ssh]
+info:
+  name: SSH Windows Information Gathering
+  severity: info
+  tags: ssh,post-exploit,gather,windows
+
+services:
+  - ops:
+      - shell: "whoami 2>nul"
+        name: os_check
+    matchers:
+      - type: word
+        part: os_check
+        words: ["\\"]
+
+  - ops:
+      - shell: "whoami"
+        name: whoami
+      - shell: "hostname"
+        name: hostname
+      - shell: "systeminfo | findstr /B /C:\"OS Name\" /C:\"OS Version\" /C:\"System Type\""
+        name: sysinfo
+      - shell: "ipconfig"
+        name: network
+      - shell: "netstat -ano | findstr LISTENING"
+        name: listening_ports
+    extractors:
+      - type: regex
+        name: username
+        part: whoami
+        regex: ['\\\\(\S+)']
+        group: 1
+      - type: regex
+        name: os_version
+        part: sysinfo
+        regex: ['OS Name:\s+(.+)']
+        group: 1

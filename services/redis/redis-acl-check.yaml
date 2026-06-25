@@ -1,0 +1,23 @@
+id: redis-acl-check
+service: [redis]
+info:
+  name: Redis ACL Permission Check
+  severity: medium
+  tags: redis,post-exploit,auth
+
+services:
+  - ops:
+      - kv: "ACL WHOAMI"
+        name: current_user
+      - kv: "ACL LIST"
+        name: acl_rules
+    extractors:
+      - type: regex
+        name: redis_current_user
+        part: current_user
+        regex: ['(?m)^(.+)$']
+        group: 1
+      - type: regex
+        name: redis_acl_rules
+        part: acl_rules
+        regex: ['(?m)^(.+)$']

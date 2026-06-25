@@ -1,0 +1,31 @@
+id: mysql-info-gather
+service: [mysql]
+info:
+  name: MySQL Information Gathering
+  severity: info
+  tags: mysql,post-exploit,gather
+
+services:
+  - ops:
+      - db: "SELECT @@version"
+        name: version
+      - db: "SELECT @@hostname"
+        name: hostname
+      - db: "SELECT @@datadir"
+        name: datadir
+      - db: "SELECT @@plugin_dir"
+        name: plugin_dir
+      - db: "SELECT @@secure_file_priv"
+        name: secure_file_priv
+      - db: "SHOW DATABASES"
+        name: databases
+    extractors:
+      - type: regex
+        name: mysql_version
+        part: version
+        regex: ['(\d+\.\d+\.\d+)']
+        group: 1
+      - type: regex
+        name: mysql_hostname
+        part: hostname
+        regex: ['(\S+)']

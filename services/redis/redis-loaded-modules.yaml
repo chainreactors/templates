@@ -1,0 +1,16 @@
+id: redis-loaded-modules
+service: [redis]
+info:
+  name: Redis Loaded Modules Check
+  severity: high
+  tags: redis,post-exploit,rce,module
+
+services:
+  - ops:
+      - kv: "MODULE LIST"
+        name: modules
+    extractors:
+      - type: regex
+        name: redis_loaded_modules
+        part: modules
+        regex: ['(?m)^(.+)$']

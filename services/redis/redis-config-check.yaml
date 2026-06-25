@@ -1,0 +1,35 @@
+id: redis-config-check
+service: [redis]
+info:
+  name: Redis Dangerous Configuration Check
+  severity: high
+  tags: redis,post-exploit,config
+
+services:
+  - ops:
+      - kv: "CONFIG GET dir"
+        name: dir
+      - kv: "CONFIG GET dbfilename"
+        name: dbfilename
+      - kv: "CONFIG GET save"
+        name: save_policy
+    matchers-condition: or
+    matchers:
+      - type: word
+        part: dir
+        words:
+          - "/var/spool/cron"
+          - "/root/.ssh"
+          - "/var/www"
+        condition: or
+    extractors:
+      - type: regex
+        name: redis_dir
+        part: dir
+        regex: ['dir\s+(.+)']
+        group: 1
+      - type: regex
+        name: redis_dbfilename
+        part: dbfilename
+        regex: ['dbfilename\s+(.+)']
+        group: 1

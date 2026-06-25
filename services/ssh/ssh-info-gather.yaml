@@ -1,0 +1,19 @@
+id: ssh-info-gather
+service: [ssh]
+chain: [ssh-info-gather-linux, ssh-info-gather-windows]
+info:
+  name: SSH Post-Auth OS Detection & Info Gathering
+  severity: info
+  tags: ssh,post-exploit,gather
+
+services:
+  - ops:
+      - shell: "uname -s 2>/dev/null || echo WINDOWS"
+        name: os_detect
+    extractors:
+      - type: regex
+        name: os_type
+        internal: true
+        part: os_detect
+        regex: ['(Linux|Darwin|FreeBSD|WINDOWS)']
+        group: 1
