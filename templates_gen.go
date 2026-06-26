@@ -266,7 +266,7 @@ func main() {
 			"port", "workflow", "neutron", "extract",
 		}
 	} else if *need == "spray" {
-		needs = []string{"spray_rule", "spray_common", "spray_dict", "extract", "spray_proton", "found_keys", "port"}
+		needs = []string{"spray_rule", "spray_common", "spray_dict", "extract", "spray_proton", "port"}
 	} else if *need == "zombie" {
 		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template", "zombie_service", "zombie_loot", "port", "socket", "http"}
 	} else if *need == "found" {

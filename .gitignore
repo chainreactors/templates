@@ -32,3 +32,5 @@ gen
 /script
 /v2/pkg/templates.go
 /fingers.json
+/dist/
+/templates
