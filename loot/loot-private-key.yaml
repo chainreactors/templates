@@ -1,0 +1,18 @@
+id: loot-private-key
+info:
+  name: Private Key
+  severity: high
+  tags: loot,credential,private-key
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "BEGIN"
+          - "KEY"
+        condition: and
+    extractors:
+      - type: regex
+        regex:
+          - '-----BEGIN (?:RSA |EC |DSA |OPENSSH |PGP )?PRIVATE KEY(?:\sBLOCK)?-----'

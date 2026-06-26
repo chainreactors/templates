@@ -1,0 +1,12 @@
+id: loot-connection-string
+info:
+  name: Database Connection String
+  severity: high
+  tags: loot,credential,connection
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        regex:
+          - '(?:mysql|postgres|postgresql|mongodb|mongodb\+srv|redis|oracle|sqlserver)://[^\s"''<>]{8,}'

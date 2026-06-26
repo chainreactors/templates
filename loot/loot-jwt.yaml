@@ -1,0 +1,16 @@
+id: loot-jwt
+info:
+  name: JWT Token
+  severity: high
+  tags: loot,credential,jwt
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "eyJ"
+    extractors:
+      - type: regex
+        regex:
+          - 'eyJ[A-Za-z0-9_-]{10,}\.eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}'

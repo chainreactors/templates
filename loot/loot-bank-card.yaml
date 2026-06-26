@@ -1,0 +1,12 @@
+id: loot-bank-card
+info:
+  name: Bank Card Number
+  severity: high
+  tags: loot,pii,bank-card
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        regex:
+          - '\b(?:\d[ -]?){13,19}\b'

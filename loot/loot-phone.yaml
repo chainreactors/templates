@@ -1,0 +1,12 @@
+id: loot-phone-cn
+info:
+  name: Chinese Phone Number
+  severity: medium
+  tags: loot,pii,phone
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        regex:
+          - '(?:\+?86[-\s]?)?1[3-9]\d{9}'

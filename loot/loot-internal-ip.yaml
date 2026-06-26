@@ -1,0 +1,12 @@
+id: loot-internal-ip
+info:
+  name: Internal IP Address
+  severity: low
+  tags: loot,network,internal-ip
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        regex:
+          - '\b(?:10\.(?:25[0-5]|2[0-4]\d|1?\d?\d)\.(?:25[0-5]|2[0-4]\d|1?\d?\d)\.(?:25[0-5]|2[0-4]\d|1?\d?\d)|172\.(?:1[6-9]|2\d|3[01])\.(?:25[0-5]|2[0-4]\d|1?\d?\d)\.(?:25[0-5]|2[0-4]\d|1?\d?\d)|192\.168\.(?:25[0-5]|2[0-4]\d|1?\d?\d)\.(?:25[0-5]|2[0-4]\d|1?\d?\d))\b'

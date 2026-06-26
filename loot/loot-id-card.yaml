@@ -1,0 +1,12 @@
+id: loot-id-card
+info:
+  name: Chinese ID Card Number
+  severity: high
+  tags: loot,pii,id-card
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        regex:
+          - '\b\d{17}[\dxX]\b'

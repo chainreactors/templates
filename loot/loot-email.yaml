@@ -1,0 +1,12 @@
+id: loot-email
+info:
+  name: Email Address
+  severity: medium
+  tags: loot,pii,email
+file:
+  - extensions:
+      - all
+    extractors:
+      - type: regex
+        regex:
+          - '(?i)[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}'
