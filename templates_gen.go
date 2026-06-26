@@ -217,6 +217,10 @@ func parser(key string) []byte {
 		return loadRawFiles("zombie/rule")
 	case "zombie_template":
 		return recuLoadPoc("neutron/login")
+	case "zombie_service":
+		return recuLoadPoc("services")
+	case "zombie_loot":
+		return recuLoadPoc("zombie/loot")
 	case "found_keys":
 		return recuLoadPoc("found/keys")
 	case "found_spray":
@@ -264,7 +268,7 @@ func main() {
 	} else if *need == "spray" {
 		needs = []string{"spray_rule", "spray_common", "spray_dict", "extract", "proton_rules", "port"}
 	} else if *need == "zombie" {
-		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template", "port", "socket", "http"}
+		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template", "zombie_service", "zombie_loot", "port", "socket", "http"}
 	} else if *need == "found" {
 		needs = []string{"found_keys", "found_spray", "found_auto", "found_filter_ext", "found_filter_dir"}
 	} else {
