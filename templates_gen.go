@@ -207,8 +207,8 @@ func parser(key string) []byte {
 		return loadRawFiles("spray/dict")
 	case "extract":
 		return loadYamlFile("extract.yaml")
-	case "proton_rules":
-		return recuLoadPoc("proton_rules")
+	case "spray_proton":
+		return recuLoadPoc("spray/proton")
 	case "zombie_common":
 		return loadYamlFile("zombie/keywords.yaml")
 	case "zombie_default":
@@ -266,7 +266,7 @@ func main() {
 			"port", "workflow", "neutron", "extract",
 		}
 	} else if *need == "spray" {
-		needs = []string{"spray_rule", "spray_common", "spray_dict", "extract", "proton_rules", "found_keys", "port"}
+		needs = []string{"spray_rule", "spray_common", "spray_dict", "extract", "spray_proton", "found_keys", "port"}
 	} else if *need == "zombie" {
 		needs = []string{"zombie_default", "zombie_common", "zombie_rule", "zombie_template", "zombie_service", "zombie_loot", "port", "socket", "http"}
 	} else if *need == "found" {
