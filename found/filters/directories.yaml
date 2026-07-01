@@ -96,3 +96,8 @@ skip:
   # Build output
   - ".terraform"
   - ".serverless"
+
+# Path prefixes skipped at walk level.
+# Supports $VAR, ${VAR}, %VAR%, and ~ expansion.
+skip_paths:
+  - "%APPDATA%"
