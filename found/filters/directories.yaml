@@ -4,12 +4,12 @@
 # .git is intentionally NOT listed because history may contain leaked credentials.
 
 skip_globs:
-  # Windows application data scope
+  # Windows per-user application data and temp scope
+  - "%USERPROFILE%/AppData/**"
   - "%APPDATA%/**"
-  - "%LOCALAPPDATA%/npm-cache/**"
-  - "%LOCALAPPDATA%/Yarn/Cache/**"
-  - "%LOCALAPPDATA%/pnpm-store/**"
-  - "%LOCALAPPDATA%/go-build/**"
+  - "%LOCALAPPDATA%/**"
+  - "%TEMP%/**"
+  - "%TMP%/**"
   - "%USERPROFILE%/go/pkg/mod/**"
 
   # Node / JavaScript package stores and dependency trees
