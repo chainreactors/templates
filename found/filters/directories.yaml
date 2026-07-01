@@ -1,103 +1,155 @@
-# Directories unconditionally skipped at walk level.
-# Matched by basename — any directory with this name is skipped regardless of depth.
-# .git is intentionally NOT listed — history may contain leaked credentials.
+# Glob patterns skipped at walk level.
+# Matched case-insensitively against slash-normalized full paths.
+# Directory patterns use /** so both the directory itself and its contents are pruned.
+# .git is intentionally NOT listed because history may contain leaked credentials.
 
-skip:
-  # Package managers — dependency directories
-  - "node_modules"
-  - "bower_components"
-  - "vendor"         # Go/PHP/Ruby vendor (third-party code)
-  - "site-packages"  # Python installed packages
+skip_globs:
+  # Windows application data scope
+  - "%APPDATA%/**"
+  - "%LOCALAPPDATA%/npm-cache/**"
+  - "%LOCALAPPDATA%/Yarn/Cache/**"
+  - "%LOCALAPPDATA%/pnpm-store/**"
+  - "%LOCALAPPDATA%/go-build/**"
+  - "%USERPROFILE%/go/pkg/mod/**"
 
-  # Package manager caches (dotdirs)
-  - ".npm"
-  - ".yarn"
-  - ".pnpm-store"
+  # Node / JavaScript package stores and dependency trees
+  - "**/node_modules/**"
+  - "**/bower_components/**"
+  - "**/jspm_packages/**"
+  - "**/web_modules/**"
+  - "**/npm-cache/**"
+  - "**/_cacache/**"
+  - "**/.npm/**"
+  - "**/.pnpm-store/**"
+  - "**/pnpm-store/**"
+  - "**/.yarn/cache/**"
+  - "**/.yarn/unplugged/**"
+  - "**/.yarn/install-state.gz"
+  - "**/.bun/install/cache/**"
+  - "**/.deno/**"
 
-  # Python
-  - "__pycache__"
-  - ".tox"
-  - ".eggs"
-  - ".mypy_cache"
-  - ".pytest_cache"
-  - ".venv"
-  - "venv"
-  - ".uv"
+  # Python environments, bytecode, and package caches
+  - "**/__pycache__/**"
+  - "**/.venv/**"
+  - "**/venv/**"
+  - "**/.tox/**"
+  - "**/.nox/**"
+  - "**/.eggs/**"
+  - "**/.mypy_cache/**"
+  - "**/.pytest_cache/**"
+  - "**/.ruff_cache/**"
+  - "**/.hypothesis/**"
+  - "**/__pypackages__/**"
+  - "**/.pyre/**"
+  - "**/.pytype/**"
+  - "**/.uv/cache/**"
+  - "**/.rye/**"
+  - "**/.pdm-build/**"
+  - "**/.pdm-python/**"
+  - "**/.cache/pip/**"
+  - "**/.cache/pypoetry/**"
+  - "**/.cache/pdm/**"
+  - "**/.cache/uv/**"
+  - "**/pip-cache/**"
+  - "**/conda/pkgs/**"
+  - "**/anaconda3/pkgs/**"
+  - "**/miniconda3/pkgs/**"
 
-  # Go
-  - ".goenv"
-  - "pkg"            # Go module cache (inside GOPATH)
+  # Go module and build caches
+  - "**/go/pkg/mod/**"
+  - "**/go-build/**"
 
-  # Rust
-  - ".cargo"
-  - ".rustup"
-  - "target"         # Rust build output
+  # Rust package/build artifacts
+  - "**/target/**"
+  - "**/.cargo/registry/**"
+  - "**/.cargo/git/**"
+  - "**/.rustup/toolchains/**"
 
-  # Ruby
-  - ".rbenv"
-  - ".gem"
-  - ".bundle"
+  # Java / JVM dependency caches and build outputs
+  - "**/.gradle/caches/**"
+  - "**/.gradle/daemon/**"
+  - "**/.gradle/native/**"
+  - "**/.gradle/wrapper/dists/**"
+  - "**/.m2/repository/**"
+  - "**/.ivy2/cache/**"
+  - "**/.sdkman/candidates/**"
+  - "**/target/**"
 
-  # Node/JS
-  - ".nvm"
+  # .NET package cache and build intermediates
+  - "**/.nuget/packages/**"
+  - "**/obj/**"
 
-  # Java/JVM
-  - ".gradle"
-  - ".m2"
-  - ".ivy2"
-  - ".sdkman"
+  # PHP / Composer dependency and cache directories
+  - "**/vendor/**"
+  - "**/.composer/cache/**"
 
-  # .NET
-  - ".nuget"
+  # Ruby gems and bundler caches
+  - "**/vendor/bundle/**"
+  - "**/.bundle/cache/**"
+  - "**/.gem/ruby/**"
 
-  # PHP
-  - ".composer"
+  # Elixir / Erlang
+  - "**/deps/**"
+  - "**/_build/**"
+  - "**/.hex/packages/**"
+  - "**/.mix/archives/**"
 
-  # Elixir/Erlang
-  - ".hex"
-  - ".mix"
+  # Haskell / Stack / Cabal
+  - "**/.stack-work/**"
+  - "**/.stack/snapshots/**"
+  - "**/.cabal/store/**"
+  - "**/dist-newstyle/**"
 
-  # Haskell
-  - ".stack"
-  - ".cabal"
+  # OCaml / opam
+  - "**/_opam/**"
+  - "**/.opam/**"
 
-  # OCaml
-  - ".opam"
+  # Julia package artifacts
+  - "**/.julia/artifacts/**"
+  - "**/.julia/compiled/**"
+  - "**/.julia/packages/**"
 
-  # Julia
-  - ".julia"
-
-  # Dart/Flutter
-  - ".pub-cache"
-  - ".dartServer"
-
-  # Python (uv, rye, pdm)
-  - ".rye"
-  - ".pdm-build"
+  # Dart / Flutter
+  - "**/.pub-cache/**"
+  - "**/.dart_tool/**"
+  - "**/.dartServer/**"
 
   # Perl
-  - ".cpan"
+  - "**/.cpan/build/**"
 
-  # Generic caches — catches uv/cache, pip cache, go-build, etc.
-  - "cache"
-  - ".cache"
-  - ".local"
+  # C/C++ and native build package managers
+  - "**/.conan/data/**"
+  - "**/.conan2/p/**"
+  - "**/.conan2/b/**"
+  - "**/vcpkg_installed/**"
+  - "**/_deps/**"
+  - "**/CMakeFiles/**"
 
-  # VCS (non-git)
-  - ".svn"
-  - ".hg"
+  # Swift / Apple package managers
+  - "**/.build/**"
+  - "**/.swiftpm/**"
+  - "**/Carthage/Build/**"
+  - "**/Pods/**"
 
-  # IDE / Editor
-  - ".idea"
-  - ".vscode"
-  - ".eclipse"
-  - ".vs"
+  # Bazel
+  - "**/bazel-bin/**"
+  - "**/bazel-out/**"
+  - "**/bazel-testlogs/**"
 
-  # Build output
-  - ".terraform"
-  - ".serverless"
+  # R package libraries
+  - "**/renv/library/**"
+  - "**/packrat/lib*/**"
 
-# Path prefixes skipped at walk level.
-# Supports $VAR, ${VAR}, %VAR%, and ~ expansion.
-skip_paths:
-  - "%APPDATA%"
+  # VCS metadata other than git
+  - "**/.svn/**"
+  - "**/.hg/**"
+
+  # IDE / editor indexes
+  - "**/.idea/**"
+  - "**/.vscode/**"
+  - "**/.eclipse/**"
+  - "**/.vs/**"
+
+  # IaC and deployment plugin/build outputs
+  - "**/.terraform/**"
+  - "**/.serverless/**"
