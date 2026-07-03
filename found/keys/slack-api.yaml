@@ -9,7 +9,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         regex:
           - "xox[baprs]-([0-9a-zA-Z]{10,48})?"

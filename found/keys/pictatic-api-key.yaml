@@ -9,7 +9,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         regex:
           - "sk_live_[0-9a-z]{32}"

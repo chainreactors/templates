@@ -9,7 +9,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         regex:
           - "key-[0-9a-zA-Z]{32}"

@@ -16,7 +16,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         regex:
           - SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8

@@ -9,7 +9,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         regex:
           - "[0-9a-f]{32}-us[0-9]{1,2}"

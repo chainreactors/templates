@@ -16,9 +16,8 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
-        part: body
         regex:
           - thingsboard\.cloud/api/v1/([a-z0-9]{20})
 # digest: 4a0a00473045022100c6f302b59b901ba37f594c8351b788ceaadab352716d4ea53ca70557a7208d43022020f33fbc3fe1137daad257248a32f84475ab646f2254801436c45aa068a86dd3:922c64590222798bb761d5b6d8e72950

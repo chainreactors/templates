@@ -9,7 +9,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         regex:
           - "shpat_[a-fA-F0-9]{32}"

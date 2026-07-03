@@ -26,7 +26,6 @@ skip:
 
   # Go
   - ".goenv"
-  - "pkg"            # Go module cache (inside GOPATH)
 
   # Rust
   - ".cargo"
@@ -78,10 +77,46 @@ skip:
   # Perl
   - ".cpan"
 
-  # Generic caches — catches uv/cache, pip cache, go-build, etc.
-  - "cache"
+  # Swift/iOS
+  - ".swiftpm"
+  - "Pods"
+  - ".build"        # Swift build output
+
+  # Scala
+  - ".sbt"
+  - ".bloop"
+  - ".metals"
+
+  # C/C++
+  - ".conan"
+  - "vcpkg_installed"
+
+  # Zig
+  - ".zig-cache"
+
+  # Deno / Bun
+  - ".deno"
+  - ".bun"
+
+  # Conda / Mamba / Pixi
+  - ".conda"
+  - ".mamba"
+  - ".pixi"
+
+  # Android
+  - ".android"
+
+  # Lua
+  - ".luarocks"
+
+  # Build framework caches
+  - ".nx"
+  - ".turbo"
+  - ".parcel-cache"
+  - ".next"
+
+  # Generic caches
   - ".cache"
-  - ".local"
 
   # VCS (non-git)
   - ".svn"
@@ -93,6 +128,129 @@ skip:
   - ".eclipse"
   - ".vs"
 
+  # VS Code remote
+  - ".vscode-server"
+
   # Build output
   - ".terraform"
   - ".serverless"
+
+skip_globs:
+  # Windows system directories
+  - "%APPDATA%/**"
+  - "%LOCALAPPDATA%/**"
+  - "%USERPROFILE%/AppData/**"
+
+  # Package managers
+  - "**/node_modules/"
+  - "**/bower_components/"
+  - "**/vendor/"
+  - "**/site-packages/"
+
+  # Package manager caches
+  - "**/npm-cache/"
+  - "**/_cacache/"
+  - "**/.pnpm-store/"
+
+  # Build artifacts
+  - "**/CMakeFiles/"
+  - "**/target/"
+
+  # Python
+  - "**/__pycache__/"
+  - "**/.tox/"
+  - "**/.eggs/"
+  - "**/.mypy_cache/"
+  - "**/.pytest_cache/"
+  - "**/.venv/"
+  - "**/venv/"
+  - "**/.uv/"
+  - "**/*.dist-info/"
+  - "**/*.egg-info/"
+
+  # Go
+  - "**/.goenv/"
+  - "**/pkg/mod/"
+
+  # Rust
+  - "**/.cargo/"
+  - "**/.rustup/"
+
+  # Ruby
+  - "**/.rbenv/"
+  - "**/.gem/"
+  - "**/.bundle/"
+
+  # Node/JS
+  - "**/.nvm/"
+  - "**/.npm/"
+  - "**/.yarn/"
+
+  # Java/JVM
+  - "**/.gradle/"
+  - "**/.m2/"
+  - "**/.ivy2/"
+  - "**/.sdkman/"
+
+  # .NET
+  - "**/.nuget/"
+
+  # IDE / Editor
+  - "**/.idea/"
+  - "**/.vscode/"
+  - "**/.eclipse/"
+  - "**/.vs/"
+  - "**/.vscode-server/"
+
+  # VCS (non-git)
+  - "**/.svn/"
+  - "**/.hg/"
+
+  # Swift/iOS
+  - "**/.swiftpm/"
+  - "**/Pods/"
+  - "**/.build/"
+
+  # Scala
+  - "**/.sbt/"
+  - "**/.bloop/"
+  - "**/.metals/"
+
+  # C/C++
+  - "**/.conan/"
+  - "**/vcpkg_installed/"
+
+  # Zig
+  - "**/.zig-cache/"
+
+  # Deno / Bun
+  - "**/.deno/"
+  - "**/.bun/"
+
+  # Conda / Mamba / Pixi
+  - "**/.conda/"
+  - "**/.mamba/"
+  - "**/.pixi/"
+
+  # Android
+  - "**/.android/"
+
+  # Lua
+  - "**/.luarocks/"
+
+  # Build framework caches
+  - "**/.nx/"
+  - "**/.turbo/"
+  - "**/.parcel-cache/"
+  - "**/.next/"
+
+  # Generic caches
+  - "**/.cache/"
+
+  # Build output
+  - "**/.terraform/"
+  - "**/.serverless/"
+
+  # System shared docs
+  - "**/share/doc/"
+  - "**/share/man/"

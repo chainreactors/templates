@@ -9,7 +9,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         regex:
           - "SG\\.[a-zA-Z0-9]{22}\\.[a-zA-Z0-9]{43}"

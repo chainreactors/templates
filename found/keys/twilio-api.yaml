@@ -9,7 +9,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         regex:
           - "(?i)twilio(.{0,20})?SK[0-9a-f]{32}"

@@ -15,7 +15,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         regex:
           - "(?i)(facebook|fb)(.{0,20})?['\"][0-9]{13,17}['\"]"

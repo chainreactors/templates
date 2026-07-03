@@ -20,9 +20,8 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
-        part: body
         regex:
           - '\bcio[a-zA-Z0-9]{32}\b'
 

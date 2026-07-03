@@ -9,7 +9,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         regex:
           - "\b((?:ghu|ghs)_[a-zA-Z0-9]{36})\b"

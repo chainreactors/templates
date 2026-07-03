@@ -11,15 +11,33 @@ file:
   - extensions:
       - all
 
+    matchers:
+      - type: word
+        words:
+          - "mysql://"
+          - "postgres://"
+          - "postgresql://"
+          - "mongodb://"
+          - "mongodb+srv://"
+          - "redis://"
+          - "rediss://"
+          - "amqp://"
+          - "mssql://"
+          - "sqlserver://"
+          - "oracle://"
+          - "mariadb://"
+          - "cockroachdb://"
+          - "jdbc:"
+          - "Password="
+          - "password="
+          - "Pwd="
+        condition: or
+
     extractors:
       - type: regex
         regex:
-          # Generic URI with credentials: proto://user:pass@host
           - "(?:mysql|postgres(?:ql)?|mongodb(?:\\+srv)?|redis(?:s)?|amqp|mssql|sqlserver|oracle|mariadb|cockroachdb)://[^\\s:]+:([^@\\s]+)@[^\\s]+"
-          # JDBC with credentials: jdbc:mysql://user:pass@host or ;user=x;password=y
           - "jdbc:[a-z]+://[^\\s:]+:([^@\\s]+)@[^\\s]+"
           - "jdbc:[a-z]+://[^\\s]*[;?](?:user|username)=[^;\\s]+[;?]password=([^;\\s]+)"
-          # ODBC/ADO.NET: Password=xxx or Pwd=xxx
           - "(?i)(?:Server|Data\\s*Source)=[^;]+;[^;]*(?:Password|Pwd)=([^;\\s]+)"
-          # DSN format: host=x password=y
           - "(?:host|server)=[^\\s]+\\s[^\\n]*password=([^\\s]+)"

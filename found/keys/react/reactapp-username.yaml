@@ -16,9 +16,8 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
-        part: body
         regex:
           - \bREACT_APP(?:_[A-Z0-9]+)*_USER(?:\s+NAME)?\s*=\s*['"]?([^\s'"$]{3,})(?:[\s'"$]|$)
 # digest: 4b0a00483046022100866e00acd09062801a53483e1309d50027869ac1923ef82a8f9834160878d761022100f85b7972d3982adef12631734f551774af1e36bd2d2fce5c34c43909a25a51c2:922c64590222798bb761d5b6d8e72950

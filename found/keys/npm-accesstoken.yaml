@@ -16,9 +16,8 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
-        part: body
         regex:
           - "\b(npm_[A-Za-z0-9]{36})\b"
 # digest: 4b0a00483046022100bd9dfe404f077477d6595c20c441212efbb7f9d32e28d0bb39bd0f426b049da30221008dc3cf8cc167688d5554eff601676cb14673f550785a957134c05e3f6a3eb652:922c64590222798bb761d5b6d8e72950

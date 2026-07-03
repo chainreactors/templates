@@ -15,9 +15,8 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
-        part: body
         regex:
           - '\b(EAACEdEose0cBA[a-zA-Z0-9]+)\b'
 # digest: 490a00463044022067dd517ff9475f2ad235b6b33b7639be9e2eedb4429606b7cef447e9b91909760220344184f684a82dcd6e6e5aa4760ccb0df1601739e2609a82f47049b77ed2a180:922c64590222798bb761d5b6d8e72950

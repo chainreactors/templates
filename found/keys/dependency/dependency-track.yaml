@@ -17,9 +17,8 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
-        part: body
         regex:
           - \b(odt_[A-Za-z0-9]{32,255})\b
 # digest: 4a0a00473045022100ac582bfa9d350ed3721f35066ad2d6c028a9ec39c7e9dec94671b57aea3673b202205dd0e8acaae691561cbac86ea7b62ed65cdff7cd6810b69a4b33d492c002e3bc:922c64590222798bb761d5b6d8e72950

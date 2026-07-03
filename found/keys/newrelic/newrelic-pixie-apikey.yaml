@@ -14,9 +14,8 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
-        part: body
         regex:
           - "(px-api-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})"
 # digest: 4a0a00473045022100f0ae9b8b43d5a57ebfac052b61680369dd90254521c3913a2e7e34cc649d304502202c761bded55b7150c88e54645ea68e447b0cf1d29979369eddf8a760c858cce7:922c64590222798bb761d5b6d8e72950

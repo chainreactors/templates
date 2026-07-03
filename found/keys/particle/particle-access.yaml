@@ -15,9 +15,8 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
-        part: body
         regex:
           - 'https://api\.particle\.io/v1/[a-zA-Z0-9_\-\s/"\\?]*(?:access_token=|Authorization:\s*Bearer\s*)\b([a-zA-Z0-9]{40})\b'
           - '(?:access_token=|Authorization:\s*Bearer\s*)\b([a-zA-Z0-9]{40})\b[\s"\\]*https://api\.particle\.io/v1'

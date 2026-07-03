@@ -15,7 +15,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         name: amazon-sns-topic
         regex:

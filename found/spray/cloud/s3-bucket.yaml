@@ -1,7 +1,7 @@
 id: spray-s3-bucket
 info:
   name: AWS S3 Bucket
-  severity: medium
+  severity: info
   description: Detect AWS S3 bucket URLs and references in web content
   tags: spray, pentest, cloud
 

@@ -12,7 +12,7 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
         regex:
           - "rzp_(live|test)_.{14}"

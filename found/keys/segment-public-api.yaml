@@ -15,9 +15,8 @@ file:
   - extensions:
       - all
 
-    extractors:
+    matchers:
       - type: regex
-        part: body
         regex:
           - '(sgp_[a-zA-Z0-9]{64})'
 # digest: 4a0a0047304502202781d5fc51179615c6c4c10c4fd8eec90dc4c682c8cbe5e8ef52b17d5fc8176a022100a3a0d4424e49090d806e5fadb4a4dbc26701886eeb7115355193e60757a1300c:922c64590222798bb761d5b6d8e72950
