@@ -304,6 +304,8 @@ import (
 	"github.com/chainreactors/utils/encode"
 )
 
+var RandomDir = "/g8kZMwp4oeKsL2in"
+
 func loadEmbeddedConfig(typ string) []byte {
 	%s
 	return nil
@@ -354,6 +356,8 @@ import (
 
 	"github.com/chainreactors/utils/encode"
 )
+
+var RandomDir = "/g8kZMwp4oeKsL2in"
 
 %s
 func loadEmbeddedConfig(typ string) []byte {
