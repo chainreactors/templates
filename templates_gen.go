@@ -264,7 +264,6 @@ func main() {
 		needs = []string{
 			"socket", "http",
 			"fingerprinthub_web",
-			"nmap_service_probes", "nmap_services",
 			"port", "workflow", "neutron", "extract",
 		}
 	} else if *need == "spray" {
