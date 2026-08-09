@@ -1,0 +1,16 @@
+field_patterns:
+  - password
+  - passwd
+  - secret
+  - token
+  - api_key
+  - apikey
+  - credential
+  - phone
+  - mobile
+  - email
+  - id_card
+  - idcard
+  - credit_card
+  - bank_card
+  - ssn
